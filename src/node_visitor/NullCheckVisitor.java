@@ -117,7 +117,7 @@ public class NullCheckVisitor extends ASTVisitor{
 					}
 					// complex if statements
 					else if (parent instanceof InfixExpression){
-						System.out.println(findSourceForNode(parent));
+						//System.out.println(findSourceForNode(parent));
 						
 						// TODO HERE - account for possiblity of assert statement in method dec too!
 						if (getIfStatement(parent) != null) {

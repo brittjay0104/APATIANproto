@@ -311,7 +311,7 @@ public class ModelRepository {
 
 				for (String check: checks){
 					if (!(countedChecks.contains(check))){
-						developer.incrementNullCount();
+						developer.incrementAddedNullCounts();
 					}
 				}
 
@@ -321,7 +321,8 @@ public class ModelRepository {
 		}
 
 		System.out.println("****Analysis complete for first commit****");
-		System.out.println(devName + " null count = " + developer.getNullCount() + " in repository " + repoName);
+		System.out.println(devName + " added null count = " + developer.getAddedNullCounts() + " in repository " + repoName);
+		System.out.println(devName + " removed null count = " + developer.getRemovedNullCounts() + " in repository " + repoName);
 		System.out.println(devName + " deref count = " + developer.getDerefCount() + " in repository " + repoName);
 
 
@@ -356,6 +357,7 @@ public class ModelRepository {
 				System.out.println("\n" + "Reverted to commit " + newHash + "\n");
 
 				setAndParseSource(directory, i, oldHash, newHash, dev);
+				
 
 			} catch (NoMessageException e) {
 				System.out.println("NoMessageException thrown!");
@@ -647,7 +649,7 @@ public class ModelRepository {
 									System.out.println("Null check was removed at revision " + newHash);
 
 									if (developer.getCommits().contains(newHash)){
-										developer.incrementNullCount();
+										developer.incrementRemovedNullCounts();
 									}
 
 									countedChecks.add(check);
@@ -662,7 +664,7 @@ public class ModelRepository {
 									addedNullChecks.add(check);
 
 									if (developer.getCommits().contains(newHash)){
-										developer.incrementNullCount();
+										developer.incrementAddedNullCounts();
 									}
 
 									countedChecks.add(check);

@@ -7,7 +7,8 @@ import code_parser.ModelRepository;
 
 public class ModelDeveloper {
 
-	private int nullCounts;
+	private int removedNullCounts;
+	private int addedNullCounts;
 	private int derefCounts;
 	private String name;
 	private String username;
@@ -17,7 +18,8 @@ public class ModelDeveloper {
 	public int linesRemoved;
 	
 	public ModelDeveloper (String id) {
-		nullCounts = 0;
+		removedNullCounts = 0;
+		addedNullCounts = 0;
 		setDevName(id);
 		commits = new ArrayList<String>();
 		repositories = new ArrayList<ModelRepository>();
@@ -58,8 +60,12 @@ public class ModelDeveloper {
 		return commits;
 	}
 	
-	public int getNullCount(){
-		return nullCounts;
+	public int getRemovedNullCounts(){
+		return removedNullCounts;
+	}
+	
+	public int getAddedNullCounts(){
+		return addedNullCounts;
 	}
 	
 	public int getDerefCount(){
@@ -74,8 +80,12 @@ public class ModelDeveloper {
 		return linesRemoved;
 	}
 	
-	public void incrementNullCount(){
-		nullCounts += 1;
+	public void incrementRemovedNullCounts(){
+		removedNullCounts += 1;
+	}
+	
+	public void incrementAddedNullCounts(){
+		addedNullCounts += 1;
 	}
 	
 	public void incrementDerefCount(){
