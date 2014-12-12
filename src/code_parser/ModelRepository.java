@@ -361,6 +361,8 @@ public class ModelRepository {
 				System.out.println("Added null checks = " + dev.getAddedNullCounts());
 				System.out.println("Removed null checks = " + dev.getRemovedNullCounts());
 				System.out.println("Null dereferences checked for null = " + dev.getDerefCount());
+				
+				// HERE! :) - need to remove other print statements and do some runs (archive in separate folder)
 
 			} catch (NoMessageException e) {
 				System.out.println("NoMessageException thrown!");
@@ -375,9 +377,6 @@ public class ModelRepository {
 				System.out.println(e.getLocalizedMessage());
 			}
 		}
-
-		// TODO iterate through all files in repository and check what's left in variables/fields
-		// (if not checked for null, bad!)
 
 	}
 
