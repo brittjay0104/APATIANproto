@@ -358,6 +358,9 @@ public class ModelRepository {
 
 				setAndParseSource(directory, i, oldHash, newHash, dev);
 				
+				System.out.println("Added null checks = " + dev.getAddedNullCounts());
+				System.out.println("Removed null checks = " + dev.getRemovedNullCounts());
+				System.out.println("Null dereferences checked for null = " + dev.getDerefCount());
 
 			} catch (NoMessageException e) {
 				System.out.println("NoMessageException thrown!");
