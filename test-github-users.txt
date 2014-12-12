@@ -1,0 +1,111 @@
+pierre
+brianm
+wspeirs
+fluxroot
+takuo
+lukeFalsina
+liaohuqiu
+daimajia
+
+0
+Pierre-Alexandre Meyer
+0
+https://github.com/pierre/meteo.git
+https://github.com/pierre/collector.git
+https://github.com/pierre/hfind.git
+https://github.com/pierre/eventtracker.git
+https://github.com/pierre/ning-service-skeleton.git
+https://github.com/pierre/action-core.git
+https://github.com/pierre/serialization.git
+https://github.com/pierre/goodwill.git
+https://github.com/pierre/goodwill-access.git
+
+goodwill*
+eventtracker
+collector
+hfind
+ning-service-skeleton
+action-core
+serialization
+goodwill-access
+
+
+
+0
+Brian McCallister
+0
+https://github.com/brianm/jdbi.git
+https://github.com/brianm/gressil.git
+https://github.com/brianm/config-magic.git
+https://github.com/brianm/dwarf.git
+https://github.com/brianm/sculptor.git
+https://github.com/brianm/dx.git
+
+dx*
+jdbi
+config-magic
+gressil
+dwarf
+sculptor
+
+
+
+
+
+0
+William Speirs
+0
+https://github.com/wspeirs/chess.git
+https://github.com/wspeirs/PHAAAS.git
+
+chess*
+PHAAAS
+
+
+
+0
+Phokham Nonava
+0
+https://github.com/fluxroot/flux.git
+https://github.com/fluxroot/pulse.git
+https://github.com/fluxroot/jcpi.git
+https://github.com/fluxroot/lexica.git
+https://github.com/fluxroot/mdid.git
+https://github.com/fluxroot/seeker.git
+flux*
+pulse
+jcpi
+lexica
+mdid
+seeker
+
+--------------------------------------------
+
+Takuo Kitame
+https://github.com/takuo/twicca_evernote_plugin.git
+https://github.com/takuo/android_MmsReq.git
+twicca_evernote_plugin - 92
+android_MmsReq - 74
+
+Luke Falsina
+https://github.com/lukeFalsina/Grab-n-Run.git
+Grab-n-Run - 128
+
+Huqiu Liao
+https://github.com/liaohuqiu/android-Ultra-Pull-To-Refresh.git
+android-Ultra-Pull-To-Refresh - 48
+
+daimajia
+https://github.com/daimajia/AndroidSwipeLayout.git
+https://github.com/daimajia/AndroidImageSlider.git
+https://github.com/daimajia/AndroidViewAnimations.git
+https://github.com/daimajia/AnimeTaste.git
+https://github.com/daimajia/AndroidViewHover.git
+AndroidSwipeLayout - 58
+AndroidImageSlider - 77
+AndroidViewAnimations - 66
+AnimeTaste - 114
+AndroidViewHover - 23
+
+
+

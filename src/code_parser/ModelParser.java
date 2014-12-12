@@ -1,0 +1,409 @@
+package code_parser;
+
+import static code_parser.ModelRepository.CHECK_SEPERATOR;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import node_visitor.Log4JVisitor;
+import node_visitor.NoNullCheckVisitor;
+import node_visitor.NullCheckVisitor;
+
+import org.eclipse.core.resources.IFolder;
+import org.eclipse.core.resources.IProject;
+import org.eclipse.core.resources.IProjectDescription;
+import org.eclipse.core.resources.IWorkspaceRoot;
+import org.eclipse.core.resources.ResourcesPlugin;
+import org.eclipse.jdt.core.IClasspathEntry;
+import org.eclipse.jdt.core.ICompilationUnit;
+import org.eclipse.jdt.core.IJavaProject;
+import org.eclipse.jdt.core.IPackageFragment;
+import org.eclipse.jdt.core.IPackageFragmentRoot;
+import org.eclipse.jdt.core.IType;
+import org.eclipse.jdt.core.JavaCore;
+import org.eclipse.jdt.core.dom.AST;
+import org.eclipse.jdt.core.dom.ASTParser;
+import org.eclipse.jdt.core.dom.CompilationUnit;
+
+public class ModelParser {
+
+	ASTParser parser;
+	List<String> expressions;
+	List<String> ifAndNext;
+	List<String> nullVariables;
+	List<String> nullFields;
+
+	/**
+	 * Creates new ModelParser (and list of methods/startPositions for comparison after each
+	 * analysis)
+	 */
+	public ModelParser() {
+		expressions = new ArrayList<String>();
+		ifAndNext = new ArrayList<String>();
+		nullVariables = new ArrayList<String>();
+		nullFields = new ArrayList<String>();
+
+	}
+	
+	public void printSomething(){
+		System.out.println("I'm happy :)");
+	}
+
+
+	/**
+	 *
+	 * Parses a source file for null checks and stores each unique null check found
+	 * (with method it was found in and the start position) into an ongoing list, saved
+	 *  with the file that was passed in, as well as in the list for null checks found in this
+	 *  current revision.
+	 *
+	 * @param file - ModelSourceFile that is being parsed for null checks
+	 * @param commit - String of the revision hash for the current revision of the file
+	 * being parsed
+	 *
+	 * @return List of null check objects created during parsing
+	 * @throws IOException
+	 */
+	public List<String> parseForNull(ModelSourceFile file, String commit) throws IOException {
+		ASTParser parser = ASTParser.newParser(AST.JLS4);
+
+		String src = readFiletoString(file.getSourceFile().getCanonicalPath());
+
+		file.setSource(src.toCharArray());
+
+		parser.setResolveBindings(true);
+		parser.setStatementsRecovery(true);
+		parser.setSource(src.toCharArray());
+		parser.setKind(ASTParser.K_COMPILATION_UNIT);
+
+		CompilationUnit cu = (CompilationUnit) parser.createAST(null);
+
+
+		NullCheckVisitor visitor = new NullCheckVisitor(file);
+		cu.accept(visitor);
+
+		// add to file's list of null checks (if not already there)
+		//ArrayList<String> fileNullChecks = file.getNullChecks();
+
+		for (String check: visitor.getNullChecks()){
+			file.addNullCheck(check);
+//			if (file.hasThisCheck(check) == false){
+//			}
+		}
+
+		ArrayList<String> methods = file.getNullMethods();
+		setIfAndNext(visitor.getIfAndNext());
+		
+		parseForNoNullCheck(file);
+
+		return ifAndNext;
+
+	}
+	
+	
+
+	public void parseForNoNullCheck(ModelSourceFile file) throws IOException{
+		ASTParser parser = ASTParser.newParser(AST.JLS4);
+
+		String src = readFiletoString(file.getSourceFile().getCanonicalPath());
+
+		file.setSource(src.toCharArray());
+		
+		 Map options = JavaCore.getOptions();
+		 JavaCore.setComplianceOptions(JavaCore.VERSION_1_6, options);
+		 parser.setCompilerOptions(options);
+
+		parser.setResolveBindings(true);
+		parser.setStatementsRecovery(true);
+		parser.setSource(src.toCharArray());
+		parser.setUnitName(file.getName());
+		parser.setKind(ASTParser.K_COMPILATION_UNIT);
+
+		CompilationUnit cu = (CompilationUnit) parser.createAST(null);
+
+		NoNullCheckVisitor visitor = new NoNullCheckVisitor(file);
+		cu.accept(visitor);
+
+		// store variables, fields, assignments with file
+		
+		transferNullFields(file, visitor);
+
+		transferNullVariables(file, visitor);		
+		
+		transferNullAssignments(file, visitor);
+
+
+	}
+
+
+	private void transferNullAssignments(ModelSourceFile file,
+			NoNullCheckVisitor visitor) {
+		HashMap<String, ArrayList<String>> assigned = visitor.getNullAssignments();
+		Iterator<Entry<String, ArrayList<String>>> it3 = assigned.entrySet().iterator();
+		
+		while (it3.hasNext()){
+			Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it3.next();
+			
+			String methodDec = pairs.getKey();
+
+			for (String var: pairs.getValue()){
+				file.addNullAssignment(methodDec, var);
+			}
+		}
+		
+	}
+
+
+	private void transferNullFields(ModelSourceFile file, NoNullCheckVisitor visitor) {
+		HashMap<String, ArrayList<String>> invocs =  visitor.getInvocations();
+		Iterator<Entry<String, ArrayList<String>>> it2 = invocs.entrySet().iterator();
+
+		// check all invocations and use to find possible null pointer exceptions
+		while (it2.hasNext()){
+			Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it2.next();
+			//System.out.println("\n\n\nMethod invocations in " + pairs.getKey() + " ==> ");
+
+			for (String invocation: pairs.getValue()){
+				ArrayList<String> nullFields = findNullFields(visitor, invocation);
+
+				for (String field: nullFields){
+					file.addNullField(field);
+					//System.out.println("POTENTIALLY NULL FIELD: " + field);
+				}
+			}
+		}
+		
+		
+		List<String> assignments = visitor.getAssignments();
+		
+		for (String assign: assignments){
+			file.addAssignment(assign);
+		}	
+		
+		
+	}
+
+
+	private void transferNullVariables(ModelSourceFile file,
+			NoNullCheckVisitor visitor) {
+		// getting map of potentially null variables and methods they are in
+		HashMap<String, ArrayList<String>> vars = visitor.getNullVariables();
+		Iterator<Entry<String, ArrayList<String>>> it1 = vars.entrySet().iterator();
+
+		while (it1.hasNext()){
+			Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it1.next();
+
+			String methodDec = pairs.getKey();
+
+			for (String var: pairs.getValue()){
+				file.addNullVariable(methodDec, var);			}
+
+		}
+	}
+
+	// TODO finish testing this LATER (after migrate to Maven and convert into plugin)
+	public void foo(ModelSourceFile file) throws Exception {
+		
+		IWorkspaceRoot root = ResourcesPlugin.getWorkspace().getRoot();
+		IProject project = root.getProject("sampleProject");
+		project.create(null);
+		project.open(null);
+		
+		//set the Java nature
+		IProjectDescription description = project.getDescription();
+		description.setNatureIds(new String[] { JavaCore.NATURE_ID });
+		
+		//create the project
+		project.setDescription(description, null);
+		IJavaProject javaProject = JavaCore.create(project);
+		
+		//set the build path
+		IClasspathEntry[] buildPath = {
+				JavaCore.newSourceEntry(project.getFullPath().append("src")) };
+		
+		javaProject.setRawClasspath(buildPath, project.getFullPath().append(
+				"bin"), null);
+		
+		//create folder by using resources package
+		IFolder folder = project.getFolder("src");
+		folder.create(true, true, null);
+		
+		//Add folder to Java element
+		IPackageFragmentRoot srcFolder = javaProject
+				.getPackageFragmentRoot(folder);
+		
+		//create package fragment
+		IPackageFragment fragment = srcFolder.createPackageFragment(
+				"com.programcreek", true, null);
+		
+		//init code string and create compilation unit
+		String str = "package com.programcreek;" + "\n"
+				+ "public class Test  {" + "\n" + " private boolean foo() {return Boolean.FALSE;}"
+				+ "\n" + "}";
+		
+		ICompilationUnit icu = fragment.createCompilationUnit("Test.java", str, false, null);
+		
+		ASTParser parser = ASTParser.newParser(AST.JLS4);
+		parser.setSource(icu);
+		parser.setResolveBindings(true);
+		parser.setStatementsRecovery(true);
+		parser.setUnitName("Test.java");
+		parser.setProject(javaProject);
+		
+		CompilationUnit cu = (CompilationUnit) parser.createAST(null);
+		
+		System.out.println(cu.getJavaElement());
+		
+		
+		NoNullCheckVisitor visitor = new NoNullCheckVisitor(file);
+		cu.accept(visitor);
+	}
+
+	private ArrayList<String> findNullFields(NoNullCheckVisitor visitor, String invocation) {
+		ArrayList<String> nullFields = new ArrayList<String>();
+
+		if (invocation != null){
+			String field = isPotentiallyNullField(invocation, visitor.getNullFields());
+			if ( field != null){
+				List<String> assignments = visitor.getAssignments();
+
+				// determines if field was initialized; if not, possible NPE (value deduction)
+				if (isInitialized(field, assignments) == false){
+
+					//System.out.println("DEDUCT FROM KNOWLEDGE VALUE --> POSSIBLE NULL POINTER EXCEPTION --> " + field);
+
+					this.nullFields.add(field);
+					nullFields.add(field);
+
+
+				}
+			}
+
+
+			//System.out.println("			" + invocation);
+		}
+		return nullFields;
+
+	}
+
+	public List<String> getNullFields(){
+		return nullFields;
+	}
+
+	public List<String> getNullVariables(){
+		return nullVariables;
+	}
+
+	private boolean isInitialized(String field, List<String> assignments) {
+		for (String assignment: assignments){
+			if (assignment.contains(field)){
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+
+	private String isPotentiallyNullField(String invocation, List<String> fields) {
+		for (String field: fields){
+			if (invocation.contains(field)){
+				return field;
+			}
+		}
+
+		return null;
+	}
+
+
+	public List<String> parseForLogger(ModelSourceFile file, String commit) throws IOException{
+		ASTParser parser = ASTParser.newParser(AST.JLS4);
+
+		String src = readFiletoString(file.getSourceFile().getCanonicalPath());
+
+		file.setSource(src.toCharArray());
+
+		parser.setResolveBindings(true);
+		parser.setStatementsRecovery(true);
+		parser.setSource(src.toCharArray());
+		parser.setKind(ASTParser.K_COMPILATION_UNIT);
+
+		CompilationUnit cu = (CompilationUnit) parser.createAST(null);
+
+
+		Log4JVisitor visitor = new Log4JVisitor();
+		cu.accept(visitor);
+
+		return visitor.getMethodCalls();
+	}
+
+	public void setIfAndNext(List<String> ifAndNext){
+		this.ifAndNext = ifAndNext;
+	}
+
+	public void addIfAndNextStatement(String s){
+		ifAndNext.add(s);
+	}
+
+	public List<String> getIfAndNext(){
+		return ifAndNext;
+	}
+
+	/**
+	 *
+	 * Returns a string that stores the contents of the file passed in.
+	 *
+	 * @param filename
+	 * @return
+	 */
+	public static String readFiletoString(String filename) {
+		StringBuffer sb = new StringBuffer();
+		for(String s: readFile(filename))
+		{
+			sb.append(s);
+			sb.append("\n");
+		}
+		return sb.toString();
+
+	}
+
+	/**
+	 *
+	 * Helper method for readFileToString (reads file to List of Strings)
+	 *
+	 * @param file
+	 * @return
+	 */
+	public static List<String> readFile(String file) {
+		List<String> retList = new ArrayList<String>();
+		BufferedReader br = null;
+		try {
+			br = new BufferedReader(new FileReader(file));
+			String line;
+			while ((line = br.readLine()) != null) {
+				retList.add(line);
+			}
+		} catch (Exception e) {
+			retList = new ArrayList<String>();
+			e.printStackTrace();
+		} finally {
+			if (br != null) {
+				try {
+					br.close();
+				} catch (IOException e) {
+					retList = new ArrayList<String>();
+					e.printStackTrace();
+				}
+			}
+		}
+		return retList;
+	}
+
+}

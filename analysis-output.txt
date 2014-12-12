@@ -1,0 +1,4 @@
+Null check found!
+Location in repository: developer_creator/RunAnalysis
+Start line: 194
+End line: 194

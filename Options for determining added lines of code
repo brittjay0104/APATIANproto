@@ -1,0 +1,24 @@
+Options for determining added lines of code
+
+
+- http://stackoverflow.com/questions/2528111/how-can-i-calculate-the-number-of-lines-changed-between-two-commits-in-git
+	-- git diff --numstat <commit 1> <commit 2> provides lines added and removed between commits (numbers) for a given file
+	-- one step ahead of using JGit because I will have the hashes I want to compare and the counts will be done for me; just need to store and add new value each time repo is reverted
+
+	analyze then revert until at first commit (newHash) --> oldHash is previous so want to diff new and old until there is no new?
+
+
+
+- JGit (http://stackoverflow.com/questions/19467305/using-the-jgit-how-can-i-retrieve-the-line-numbers-of-added-deleted-lines)
+	-- DiffFormater (already using) can return only lines added and removed (think I'm already doing this too)
+	-- could parse and count each line, but requires some overhead to loop (not much memory, but time)
+
+
+------------------------------------------------------------
+
+- git API --> statistics
+	-- https://developer.github.com/v3/repos/statistics/
+
+	-- C:/SW/CommandLine/GnuWin32/bin/wget --no-check-certificate -O commits.txt https://api.github.com/users/
+	-- [/repos/:bijohnso/:model-builder/stats/contributors]
+	** DOESN'T SEEM LIKE IT'S GOING TO BE ABLE TO GIVE ME WHAT I NEED (ONLY LOOKING AT OTHER CONTRIBUTORS TO THE REPO, NOT OWNER)

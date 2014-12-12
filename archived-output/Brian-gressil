@@ -1,0 +1,4244 @@
+Brian-gressil
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added DaemonCommand.java to ./gressil/ repository source files.
+Added DaemonStatus.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added Main.java to ./gressil/ repository source files.
+Added MicroC.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added MacARGVFinderTest.java to ./gressil/ repository source files.
+
+Reverted to commit 7de419940d318da4cf73eeb38c607c4a1b0a999d
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added DaemonCommand.java to ./gressil/ repository source files.
+Added DaemonStatus.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added Main.java to ./gressil/ repository source files.
+Added MicroC.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added MacARGVFinderTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+Reverted to commit 3623970f683a4f97f676cfb4676475ec47ab38bc
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added DaemonCommand.java to ./gressil/ repository source files.
+Added DaemonStatus.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added Main.java to ./gressil/ repository source files.
+Added MicroC.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added MacARGVFinderTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+Reverted to commit bc8057a9fed5c7e7a4eca815006d116bc13db35e
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added DaemonCommand.java to ./gressil/ repository source files.
+Added DaemonStatus.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added Main.java to ./gressil/ repository source files.
+Added MicroC.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added MacARGVFinderTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+Reverted to commit 7a58d9e472f8e46b22c65fbd9667522fa469660c
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added DaemonCommand.java to ./gressil/ repository source files.
+Added DaemonStatus.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added Main.java to ./gressil/ repository source files.
+Added MicroC.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added MacARGVFinderTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+Reverted to commit a698d282a06647e39a0893b25535f0d261001945
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added DaemonCommand.java to ./gressil/ repository source files.
+Added DaemonStatus.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added Main.java to ./gressil/ repository source files.
+Added MicroC.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added MacARGVFinderTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+Reverted to commit beddf384d6e8ab4de8b1fa61351fbb71f258556c
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added DaemonCommand.java to ./gressil/ repository source files.
+Added DaemonStatus.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added Main.java to ./gressil/ repository source files.
+Added MicroC.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added MacARGVFinderTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+Reverted to commit d309d5c0c6c1c6d873fb4938d5c1596fa08190e8
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added DaemonStatus.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added MicroC.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added MacARGVFinderTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+Reverted to commit 0a3c68a32729afe11f65b44ab721759bb5ef472f
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added MicroC.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added MacARGVFinderTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+Reverted to commit 56f80d70f4224f1436dab67f02f8cec54fdfd53b
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added MicroC.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added MacARGVFinderTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+GitAPIException thrown!
+Cannot revert commit 'faa43d0adb428708231df4bec495a05c6ac7b3a9' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 12805b79bb0c1d805c06529322ba3711d4d68735
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added MicroC.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added MacARGVFinderTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+Reverted to commit 319c87dbe178c7caeb79a90c764b38f41f030bed
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added MicroC.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added MacARGVFinderTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+Reverted to commit 25acac5506fd6685f4ac15d3fa9a3a69d1858f7f
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added MicroC.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added MacARGVFinderTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+Reverted to commit aaf895015224dc913888215dcf8c39a5f375252a
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added MicroC.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added MacARGVFinderTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+Reverted to commit af3608ef203296f8305567dccf707c191e3521b8
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added MicroC.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added MacARGVFinderTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+Reverted to commit a41372d20d02f1e45d000134bdb4da6a3a7a0929
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added MicroC.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added MacARGVFinderTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+Reverted to commit 384b9ded3e8f5707c4f1dbeaa349d6c1bc720e94
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added MicroC.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added MacARGVFinderTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+Reverted to commit 89b9bccc4df7eb5cb45004357f3bcb16295e83b9
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added MicroC.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added MacARGVFinderTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+Reverted to commit d38ac8028225ba6b64ed2a1d89fac628d5160181
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added MicroC.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added MacARGVFinderTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+Reverted to commit a9df7b01f87144001b855572ec1000efa0660436
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 60148bbd124f61e15c798ceadc06dbfa4f49b727
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> jvm  found in testFoo
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 49ff88eb1c29748a2fb579a3c0dbebd568781440
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 07a16cbf47fa801b3396c850cd4bc2bc4ff9ca87
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 44702251b6b1da879e8c9c29c1a119bf485f86a1
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 981a9fba796b115e01255c2493a0ae05fab8436b
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit fdf8e6e9fa79872dbc1232de9239136af99c7ef1
+
+Added ArgvFinder.java to ./gressil/ repository source files.
+Added Daemon.java to ./gressil/ repository source files.
+Added JvmBasedArgvFinder.java to ./gressil/ repository source files.
+Added LinuxArgvFinder.java to ./gressil/ repository source files.
+Added MacARGVFinder.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit e84171e90d95575201348e163f3f1d9066e6cdc0
+
+Added Spawn.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added SpawnTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Null check was removed at revision e84171e90d95575201348e163f3f1d9066e6cdc0
+Null check was removed at revision e84171e90d95575201348e163f3f1d9066e6cdc0
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit '13d6f85297280df178ee7bb8c460dedc66122aea' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 57b963a369fadd9e7d45fbd78907e29fc1647652
+
+Added Spawn.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added SpawnTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 4c0ba672b255fb30e6c00b9d21d08952c206932b
+
+Added Spawn.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added SpawnTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 24a4007819fdd981243ebf229fb1796cef145900
+
+Added Spawn.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added SpawnTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit c6159a604e228af1a23fd615ca97bfdfcc766437
+
+Added Spawn.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added SpawnTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit b18f01570c76f56af9afb2159c217a9548d9b0f1
+
+Added Spawn.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added SpawnTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 4616911cf5d87f424faaed8f0eae8a92e531b999
+
+Added Spawn.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added SpawnTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 02f7a2122f6588844cdd0fdac845b8e50d5cd16e
+
+Added Spawn.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added SpawnTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 065967b3e89724b90551ec22f2ff12f0a4671eb5
+
+Added Spawn.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added SpawnTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 037f2cee1e0111ba562d35b4405c1e4df7f8a898
+
+Added Spawn.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added SpawnTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 28fa909737256cccc217635644c1d68ba7e2b385
+
+Added Spawn.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added SpawnTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 6b0529ba806b18d5351139ee97512cadbba0025f
+
+Added Daemon.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Null check was removed at revision 6b0529ba806b18d5351139ee97512cadbba0025f
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit e16a8c2421e362a4cbcaf6d8de96d7eaec8252b1
+
+Added Daemon.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 08e0de0154e6b119fc1da17e5b8aa49dab0ddb33
+
+Added Daemon.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit e8113855c90cf639f3b57ec4784f9c7c72e8245f
+
+Added Daemon.java to ./gressil/ repository source files.
+Added Status.java to ./gressil/ repository source files.
+Added ChattyDaemon.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 007e55a865d96c4271abfe8e66fbc1e6e91f3ba0
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Null check was removed at revision 007e55a865d96c4271abfe8e66fbc1e6e91f3ba0
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 53500499fcb8222709b92ec8885fb8c19fb0993f
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit '2aa7ca04f725e064a441e5bf52a0d9c726b66529' because it has 0 parents, only commits with exactly one parent are supported
+
+Reverted to commit 7de419940d318da4cf73eeb38c607c4a1b0a999d
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 3623970f683a4f97f676cfb4676475ec47ab38bc
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit bc8057a9fed5c7e7a4eca815006d116bc13db35e
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 7a58d9e472f8e46b22c65fbd9667522fa469660c
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit a698d282a06647e39a0893b25535f0d261001945
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit beddf384d6e8ab4de8b1fa61351fbb71f258556c
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit d309d5c0c6c1c6d873fb4938d5c1596fa08190e8
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 0a3c68a32729afe11f65b44ab721759bb5ef472f
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 56f80d70f4224f1436dab67f02f8cec54fdfd53b
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit 'faa43d0adb428708231df4bec495a05c6ac7b3a9' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 12805b79bb0c1d805c06529322ba3711d4d68735
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 319c87dbe178c7caeb79a90c764b38f41f030bed
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 25acac5506fd6685f4ac15d3fa9a3a69d1858f7f
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit aaf895015224dc913888215dcf8c39a5f375252a
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit af3608ef203296f8305567dccf707c191e3521b8
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit a41372d20d02f1e45d000134bdb4da6a3a7a0929
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 384b9ded3e8f5707c4f1dbeaa349d6c1bc720e94
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 89b9bccc4df7eb5cb45004357f3bcb16295e83b9
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit d38ac8028225ba6b64ed2a1d89fac628d5160181
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit a9df7b01f87144001b855572ec1000efa0660436
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 60148bbd124f61e15c798ceadc06dbfa4f49b727
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 49ff88eb1c29748a2fb579a3c0dbebd568781440
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 07a16cbf47fa801b3396c850cd4bc2bc4ff9ca87
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 44702251b6b1da879e8c9c29c1a119bf485f86a1
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 981a9fba796b115e01255c2493a0ae05fab8436b
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit fdf8e6e9fa79872dbc1232de9239136af99c7ef1
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit e84171e90d95575201348e163f3f1d9066e6cdc0
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit '13d6f85297280df178ee7bb8c460dedc66122aea' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 57b963a369fadd9e7d45fbd78907e29fc1647652
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 4c0ba672b255fb30e6c00b9d21d08952c206932b
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 24a4007819fdd981243ebf229fb1796cef145900
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit c6159a604e228af1a23fd615ca97bfdfcc766437
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit b18f01570c76f56af9afb2159c217a9548d9b0f1
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 4616911cf5d87f424faaed8f0eae8a92e531b999
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 02f7a2122f6588844cdd0fdac845b8e50d5cd16e
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 065967b3e89724b90551ec22f2ff12f0a4671eb5
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 037f2cee1e0111ba562d35b4405c1e4df7f8a898
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 28fa909737256cccc217635644c1d68ba7e2b385
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 6b0529ba806b18d5351139ee97512cadbba0025f
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit e16a8c2421e362a4cbcaf6d8de96d7eaec8252b1
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 08e0de0154e6b119fc1da17e5b8aa49dab0ddb33
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit e8113855c90cf639f3b57ec4784f9c7c72e8245f
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 007e55a865d96c4271abfe8e66fbc1e6e91f3ba0
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+Null check was removed at revision 007e55a865d96c4271abfe8e66fbc1e6e91f3ba0
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+Null check was removed at revision 007e55a865d96c4271abfe8e66fbc1e6e91f3ba0
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+Null check was removed at revision 007e55a865d96c4271abfe8e66fbc1e6e91f3ba0
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 53500499fcb8222709b92ec8885fb8c19fb0993f
+
+Added Daemon.java to ./gressil/ repository source files.
+Added MyPosixHandler.java to ./gressil/ repository source files.
+Added DaemonTest.java to ./gressil/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> out  found in daemonize
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Brian introduced null checks upon creation of the repository.
+****Analysis complete for first commit****
+Brian null count = 7 in repository gressil
+Brian deref count = 0 in repository gressil
+GitAPIException thrown!
+Cannot revert commit '2aa7ca04f725e064a441e5bf52a0d9c726b66529' because it has 0 parents, only commits with exactly one parent are supported

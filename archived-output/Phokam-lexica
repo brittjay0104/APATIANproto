@@ -1,0 +1,3277 @@
+Phokam-lexica
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+GitAPIException thrown!
+Cannot revert commit '7948d561b85ad6a863a8c632318892e8741577e4' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 550054a554b360cc9890f4fd9f4e96f851af3e5f
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit '65f502be58f3e47d6eea9b153c0499abafb38773' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 669f32657c23ab5e290e6025e182bde1eae928cb
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit 'df258a890484f8b498d9727fe7011a1ef455a0fe' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 1d9c8629870e28c0d4ac3fa8b26ffdf4aa8449b0
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit 'd4fb9c897ef62f538fd1f5d35545eec3542b66b9' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 095f9c37528f34414e43773e3c0a1c1e1a6a9e3a
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit '3c834f927bb8d7209ddb3c3335d6f54888c98168' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit b347b74989301369998e05141f43d1ec0404fceb
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit 'cb5ca8d91b0c7f41550663203df585047e331be0' because it has 2 parents, only commits with exactly one parent are supported
+GitAPIException thrown!
+Cannot revert commit '4760b7110c710c0d769e050e394c76642faa7aec' because it has 2 parents, only commits with exactly one parent are supported
+GitAPIException thrown!
+Cannot revert commit '62238d4150be9cf6de0e210f5b504454e4c9d9b8' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 407f5089a6a5e7469b906d599f54ac2ca45c358c
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 2d7c90da311019618e6f244cf214d12d5a3b4dc0
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 01c80759cd945512f1871954d0d00b15ccca16b9
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 043e11abc0da1069993067fa2528f4d6cf6729f5
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 5b8e1fce44686697da61c89792b3966089a901a9
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit '1cbbc7db752073032afd9f364e81a06a6a164908' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 9567e53d92c83687330ac7d730224e68f71de383
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 68f1fc680f91199149ed2edf6f5a1164926606ba
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 91fcb1c68a9ff39d42d66fd862886acf8423f03f
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 9fb09f86b6af3d4101481019073487ec1c8c9078
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit cf0df05a23485e2986e8ddb103ce880b39dd8a8a
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit '9d644d5019e8b9eda14bf75cb0bdf8d62fdb74c2' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 89f0dcd3ddaaf620a998b9d66d559deb27885891
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 07a6d5e22bb02263ef12a47f8c4813ad24cd05e1
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 06b7f88087c95e5483fd575d9c76328896f461a1
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 637e4a5b66aa8f4ce4c8a70824a60496f6f5942e
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 424fbeac96bc4baba0f17c84e1bf29ef73d73721
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit a4828c4809679511464e0e85cd6cada1321230d7
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 7171c527e0d6c7eca32ee877cd2754d5f58541b5
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added Token.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 1287ec44a2067e88ec0c4751c1b82d10ec969616
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added Token.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 94dab74735bac26472be51e3c87a9a20c7494807
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added FileInfo.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added Token.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+Null check was removed at revision 94dab74735bac26472be51e3c87a9a20c7494807
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+Null check was removed at revision 94dab74735bac26472be51e3c87a9a20c7494807
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 4ae62f3038f882c32b8e5e8898a3fe061fd3de55
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added FileInfo.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added Token.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+		--> path  found in parseArguments
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 4196673c5d90becbe8aa71e699a8e182b9dff360
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added FileInfo.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added Token.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+		--> path  found in parseArguments
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 21d86c6426d20a4d78967bcdc4d9a7faf9377bff
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added FileInfo.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added Token.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 31b3c70cf3e5877083a917e54e43f6650b80c7d2
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added FileInfo.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added Token.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 27070d292b0bffa9f617eeb877873e756dda8f08
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added FileInfo.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added Token.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 23012cdb200810fdb190ed29c3306bdc52d25dfd
+
+Added AnalyzeMode.java to ./lexica/ repository source files.
+Added Configuration.java to ./lexica/ repository source files.
+Added FileInfo.java to ./lexica/ repository source files.
+Added Graph.java to ./lexica/ repository source files.
+Added IOperationMode.java to ./lexica/ repository source files.
+Added Lexica.java to ./lexica/ repository source files.
+Added OptionException.java to ./lexica/ repository source files.
+Added Parser.java to ./lexica/ repository source files.
+Added ScanMode.java to ./lexica/ repository source files.
+Added SourceFileVisitor.java to ./lexica/ repository source files.
+Added Token.java to ./lexica/ repository source files.
+Added LexicaTest.java to ./lexica/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+filePattern
+
+
+Null Fields: 
+
+Null variables: 
+		--> path  found in parseArguments
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> prevName  found in parse
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit cf79d20f7e0fd8eb5accd2236fed970414dc83a4
+
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 82a30dde3511e4ab1a2aa0e18b314b9f00aaa26d
+
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 5c1b94a26734dbfe1b0c128581635513af894986
+
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 4e7409dba7c69628922ec1cd15b2097e24178b20
+
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit '8ecfe3cc0a701aece23152d91100256d0ffd046f' because it has 0 parents, only commits with exactly one parent are supported
+GitAPIException thrown!
+Cannot revert commit '7948d561b85ad6a863a8c632318892e8741577e4' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 550054a554b360cc9890f4fd9f4e96f851af3e5f
+
+GitAPIException thrown!
+Cannot revert commit '65f502be58f3e47d6eea9b153c0499abafb38773' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 669f32657c23ab5e290e6025e182bde1eae928cb
+
+GitAPIException thrown!
+Cannot revert commit 'df258a890484f8b498d9727fe7011a1ef455a0fe' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 1d9c8629870e28c0d4ac3fa8b26ffdf4aa8449b0
+
+GitAPIException thrown!
+Cannot revert commit 'd4fb9c897ef62f538fd1f5d35545eec3542b66b9' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 095f9c37528f34414e43773e3c0a1c1e1a6a9e3a
+
+GitAPIException thrown!
+Cannot revert commit '3c834f927bb8d7209ddb3c3335d6f54888c98168' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit b347b74989301369998e05141f43d1ec0404fceb
+
+GitAPIException thrown!
+Cannot revert commit 'cb5ca8d91b0c7f41550663203df585047e331be0' because it has 2 parents, only commits with exactly one parent are supported
+GitAPIException thrown!
+Cannot revert commit '4760b7110c710c0d769e050e394c76642faa7aec' because it has 2 parents, only commits with exactly one parent are supported
+GitAPIException thrown!
+Cannot revert commit '62238d4150be9cf6de0e210f5b504454e4c9d9b8' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 407f5089a6a5e7469b906d599f54ac2ca45c358c
+
+
+Reverted to commit 2d7c90da311019618e6f244cf214d12d5a3b4dc0
+
+
+Reverted to commit 01c80759cd945512f1871954d0d00b15ccca16b9
+
+
+Reverted to commit 043e11abc0da1069993067fa2528f4d6cf6729f5
+
+
+Reverted to commit 5b8e1fce44686697da61c89792b3966089a901a9
+
+GitAPIException thrown!
+Cannot revert commit '1cbbc7db752073032afd9f364e81a06a6a164908' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 9567e53d92c83687330ac7d730224e68f71de383
+
+
+Reverted to commit 68f1fc680f91199149ed2edf6f5a1164926606ba
+
+
+Reverted to commit 91fcb1c68a9ff39d42d66fd862886acf8423f03f
+
+
+Reverted to commit 9fb09f86b6af3d4101481019073487ec1c8c9078
+
+
+Reverted to commit cf0df05a23485e2986e8ddb103ce880b39dd8a8a
+
+GitAPIException thrown!
+Cannot revert commit '9d644d5019e8b9eda14bf75cb0bdf8d62fdb74c2' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 89f0dcd3ddaaf620a998b9d66d559deb27885891
+
+
+Reverted to commit 07a6d5e22bb02263ef12a47f8c4813ad24cd05e1
+
+
+Reverted to commit 06b7f88087c95e5483fd575d9c76328896f461a1
+
+
+Reverted to commit 637e4a5b66aa8f4ce4c8a70824a60496f6f5942e
+
+
+Reverted to commit 424fbeac96bc4baba0f17c84e1bf29ef73d73721
+
+
+Reverted to commit a4828c4809679511464e0e85cd6cada1321230d7
+
+
+Reverted to commit 7171c527e0d6c7eca32ee877cd2754d5f58541b5
+
+
+Reverted to commit 1287ec44a2067e88ec0c4751c1b82d10ec969616
+
+
+Reverted to commit 94dab74735bac26472be51e3c87a9a20c7494807
+
+
+Reverted to commit 4ae62f3038f882c32b8e5e8898a3fe061fd3de55
+
+
+Reverted to commit 4196673c5d90becbe8aa71e699a8e182b9dff360
+
+
+Reverted to commit 21d86c6426d20a4d78967bcdc4d9a7faf9377bff
+
+
+Reverted to commit 31b3c70cf3e5877083a917e54e43f6650b80c7d2
+
+
+Reverted to commit 27070d292b0bffa9f617eeb877873e756dda8f08
+
+
+Reverted to commit 23012cdb200810fdb190ed29c3306bdc52d25dfd
+
+
+Reverted to commit cf79d20f7e0fd8eb5accd2236fed970414dc83a4
+
+
+Reverted to commit 82a30dde3511e4ab1a2aa0e18b314b9f00aaa26d
+
+
+Reverted to commit 5c1b94a26734dbfe1b0c128581635513af894986
+
+
+Reverted to commit 4e7409dba7c69628922ec1cd15b2097e24178b20
+
+
+Phokam introduced null checks upon creation of the repository.
+****Analysis complete for first commit****
+Phokam null count = 2 in repository lexica
+Phokam deref count = 0 in repository lexica
+GitAPIException thrown!
+Cannot revert commit '8ecfe3cc0a701aece23152d91100256d0ffd046f' because it has 0 parents, only commits with exactly one parent are supported

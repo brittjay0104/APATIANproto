@@ -1,0 +1,3702 @@
+Phokam-mdid
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+GitAPIException thrown!
+Cannot revert commit 'ce422be8c26117536042741a937006dc816bdb08' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 0f6c968d54d27d3e988cf088b3c939ea826860d2
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit 'a3363be6803ee219a4a8c76f48ca106eb707b97e' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit c715a31896b18c4ea2907391823e254256b69b60
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+Reverted to commit 29f68cecdc8db1855a8bdc5408b4d0c895beb794
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit 'beb5aec5f17f88144092ddf116d8e5d7480940a1' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 94ef88b619511a0825f1cf6ef97e8daccce54681
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+Reverted to commit 50a1cb879e419ea0468542b8e88dbf9dc5a7d024
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+Reverted to commit 512f7a98bee255f3c566bcf0a2cee6c16c27bdf6
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+Reverted to commit 75f4deffadb970af959a8008493dbdefd8600187
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit 'a377ada940ebb9ceeeba8ae1ca0d4294743bb8d4' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 21334bcce7aae4d327572fc38ec12beda913781f
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit '648bccbedb7797633deda491408601f813d6aab6' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit ab251a22bd1c24ab5b547d93861d756a619d2dd9
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit '68871ddb1ef4e4e120901809514d3488bab8016b' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 5ab04de6774686e9792399a200738175900a07c2
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit 'cb9260807cecfed6550582af9d761ecf804ca1bb' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 400cb34ccaeec538f8d8d341d41180b36506c1fe
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit '9c29b0aaf66e8500f9086c71c8dbc56a7560e98d' because it has 2 parents, only commits with exactly one parent are supported
+GitAPIException thrown!
+Cannot revert commit 'c5d9f10fee701dc68b5684e9f2a1df8d783156f6' because it has 2 parents, only commits with exactly one parent are supported
+GitAPIException thrown!
+Cannot revert commit '95013d0c8136eddb38e6c82bab11a260efe08f12' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 06c5b25dc1d13bc60249a3dd22f445ed760af324
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+Reverted to commit 29b63372d75f0e2d1d6ba5cc10e06271229f599a
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+Reverted to commit ff4e93924d872e0c8cf696c1799975cc5be5cff9
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+Reverted to commit b7ba03684706b267e2e58a69f76864e1d2eedcc2
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit '7b5c6a1bb5208ea6f2e63804b1faa41cf8d914dd' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 7be9e0f4514e809a15c97175c7272a3cfe7c6196
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+Reverted to commit 1fd1d53dc4ac4b7a4c270e39823f06ec7d37ff7d
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+Reverted to commit 41f29ca3fd9140d76c3622ab668c442443d23376
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+Reverted to commit 169d329c5d81c25d4f1341bb92344987c39caac8
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+Reverted to commit da4ec78b6df23ad97bc2eadefa030a54c788ba84
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+Reverted to commit 1b079e23de9dbedae40843c6198ea70d0edb7b97
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit '0a2c5596c5270dd721af0440973ca3245d2f0b19' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 2c66bfd6cfae5fc23319fbc162194574141681c2
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+Reverted to commit 382cef2f610c5644316a5f0a549e0275f3102523
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+Reverted to commit 20d8f39c4f4a6b283358eea37046891dd4ea60fa
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+Reverted to commit 8d976a12d31ff524b2b64a7cd8d6c79902e55b78
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+Reverted to commit e9a5cadd159ea57e1e4ca7c5e9fb2dbc3ed3d300
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+Reverted to commit 1bda6483708556c66ad7cc684d5e5510576e4ed9
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+Reverted to commit 9c86d792a2958013792abe3a1aea11618eb393e0
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+Reverted to commit dd255fff0a9a9684eda03de77f4ad476825f03a5
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+Reverted to commit 3f77c05b30ec3a8c6039039f4364fa44d5255e5d
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+Reverted to commit 3072e3f2965d7efec8a6b5cdc3a4e9360d8741cf
+
+Added AbstractOperationMode.java to ./mdid/ repository source files.
+Added AnalysisMode.java to ./mdid/ repository source files.
+Added Configuration.java to ./mdid/ repository source files.
+Added ExceptionDatabase.java to ./mdid/ repository source files.
+Added HashDatabase.java to ./mdid/ repository source files.
+Added IndexingMode.java to ./mdid/ repository source files.
+Added Mdid.java to ./mdid/ repository source files.
+Added OptionException.java to ./mdid/ repository source files.
+Added PathConverter.java to ./mdid/ repository source files.
+Added UpdateMode.java to ./mdid/ repository source files.
+Added ExceptionDatabaseTest.java to ./mdid/ repository source files.
+Added HashDatabaseTest.java to ./mdid/ repository source files.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+mode
+path
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+oldTableHash != null && oldMarksHash != null
+oldTableHash != null && oldMarksHash != null
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+exceptionFile
+
+
+Null Fields: 
+Nothing added to knowledge value.
+tempDirectory
+hashFile
+
+
+Null Fields: 
+
+Reverted to commit f43c43311b2842bc0e9543cf892aa6c797a2c2f1
+
+Added Mdid.java to ./mdid/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> exceptionDatabase  found in parseArgumens
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Reverted to commit a39a41c9832a2162bfd24f9c24c1425cce13041c
+
+Added Mdid.java to ./mdid/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 8098cd95409c9b2bad16c95e6805f98368393b4b
+
+Added Mdid.java to ./mdid/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 33e30b56b9b6fc647896d56f008bd63ddc6a579b
+
+
+
+Null Fields: 
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit 'b3a5175d7283fdae61a921a78ae065ab90a97ea0' because it has 0 parents, only commits with exactly one parent are supported
+GitAPIException thrown!
+Cannot revert commit 'ce422be8c26117536042741a937006dc816bdb08' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 0f6c968d54d27d3e988cf088b3c939ea826860d2
+
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit 'a3363be6803ee219a4a8c76f48ca106eb707b97e' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit c715a31896b18c4ea2907391823e254256b69b60
+
+
+Reverted to commit 29f68cecdc8db1855a8bdc5408b4d0c895beb794
+
+GitAPIException thrown!
+Cannot revert commit 'beb5aec5f17f88144092ddf116d8e5d7480940a1' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 94ef88b619511a0825f1cf6ef97e8daccce54681
+
+
+Reverted to commit 50a1cb879e419ea0468542b8e88dbf9dc5a7d024
+
+
+Reverted to commit 512f7a98bee255f3c566bcf0a2cee6c16c27bdf6
+
+
+Reverted to commit 75f4deffadb970af959a8008493dbdefd8600187
+
+GitAPIException thrown!
+Cannot revert commit 'a377ada940ebb9ceeeba8ae1ca0d4294743bb8d4' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 21334bcce7aae4d327572fc38ec12beda913781f
+
+GitAPIException thrown!
+Cannot revert commit '648bccbedb7797633deda491408601f813d6aab6' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit ab251a22bd1c24ab5b547d93861d756a619d2dd9
+
+GitAPIException thrown!
+Cannot revert commit '68871ddb1ef4e4e120901809514d3488bab8016b' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 5ab04de6774686e9792399a200738175900a07c2
+
+GitAPIException thrown!
+Cannot revert commit 'cb9260807cecfed6550582af9d761ecf804ca1bb' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 400cb34ccaeec538f8d8d341d41180b36506c1fe
+
+GitAPIException thrown!
+Cannot revert commit '9c29b0aaf66e8500f9086c71c8dbc56a7560e98d' because it has 2 parents, only commits with exactly one parent are supported
+GitAPIException thrown!
+Cannot revert commit 'c5d9f10fee701dc68b5684e9f2a1df8d783156f6' because it has 2 parents, only commits with exactly one parent are supported
+GitAPIException thrown!
+Cannot revert commit '95013d0c8136eddb38e6c82bab11a260efe08f12' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 06c5b25dc1d13bc60249a3dd22f445ed760af324
+
+
+Reverted to commit 29b63372d75f0e2d1d6ba5cc10e06271229f599a
+
+
+Reverted to commit ff4e93924d872e0c8cf696c1799975cc5be5cff9
+
+
+Reverted to commit b7ba03684706b267e2e58a69f76864e1d2eedcc2
+
+GitAPIException thrown!
+Cannot revert commit '7b5c6a1bb5208ea6f2e63804b1faa41cf8d914dd' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 7be9e0f4514e809a15c97175c7272a3cfe7c6196
+
+
+Reverted to commit 1fd1d53dc4ac4b7a4c270e39823f06ec7d37ff7d
+
+
+Reverted to commit 41f29ca3fd9140d76c3622ab668c442443d23376
+
+
+Reverted to commit 169d329c5d81c25d4f1341bb92344987c39caac8
+
+
+Reverted to commit da4ec78b6df23ad97bc2eadefa030a54c788ba84
+
+
+Reverted to commit 1b079e23de9dbedae40843c6198ea70d0edb7b97
+
+GitAPIException thrown!
+Cannot revert commit '0a2c5596c5270dd721af0440973ca3245d2f0b19' because it has 2 parents, only commits with exactly one parent are supported
+
+Reverted to commit 2c66bfd6cfae5fc23319fbc162194574141681c2
+
+
+Reverted to commit 382cef2f610c5644316a5f0a549e0275f3102523
+
+
+Reverted to commit 20d8f39c4f4a6b283358eea37046891dd4ea60fa
+
+
+Reverted to commit 8d976a12d31ff524b2b64a7cd8d6c79902e55b78
+
+
+Reverted to commit e9a5cadd159ea57e1e4ca7c5e9fb2dbc3ed3d300
+
+
+Reverted to commit 1bda6483708556c66ad7cc684d5e5510576e4ed9
+
+
+Reverted to commit 9c86d792a2958013792abe3a1aea11618eb393e0
+
+
+Reverted to commit dd255fff0a9a9684eda03de77f4ad476825f03a5
+
+
+Reverted to commit 3f77c05b30ec3a8c6039039f4364fa44d5255e5d
+
+
+Reverted to commit 3072e3f2965d7efec8a6b5cdc3a4e9360d8741cf
+
+
+Reverted to commit f43c43311b2842bc0e9543cf892aa6c797a2c2f1
+
+
+Reverted to commit a39a41c9832a2162bfd24f9c24c1425cce13041c
+
+
+Reverted to commit 8098cd95409c9b2bad16c95e6805f98368393b4b
+
+
+Reverted to commit 33e30b56b9b6fc647896d56f008bd63ddc6a579b
+
+
+Phokam introduced null checks upon creation of the repository.
+****Analysis complete for first commit****
+Phokam null count = 0 in repository mdid
+Phokam deref count = 0 in repository mdid
+GitAPIException thrown!
+Cannot revert commit 'b3a5175d7283fdae61a921a78ae065ab90a97ea0' because it has 0 parents, only commits with exactly one parent are supported

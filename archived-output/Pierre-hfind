@@ -1,0 +1,9099 @@
+Pierre-hfind
+
+Added HdfsConfig.java to ./hfind/ repository source files.
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added FsItem.java to ./hfind/ repository source files.
+Added HdfsAccess.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandFactory.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added PrinterConfig.java to ./hfind/ repository source files.
+Added PushbackIterator.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+Added StubFsItem.java to ./hfind/ repository source files.
+Added TestPrinter.java to ./hfind/ repository source files.
+
+Reverted to commit 5a6207e32b55daa71e71c25e0b7f48a022f89ed2
+
+Added HdfsConfig.java to ./hfind/ repository source files.
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added FsItem.java to ./hfind/ repository source files.
+Added HdfsAccess.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandFactory.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added PrinterConfig.java to ./hfind/ repository source files.
+Added PushbackIterator.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+Added StubFsItem.java to ./hfind/ repository source files.
+Added TestPrinter.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit da716fc7c454300c2917e1cebc5f748ad3152a6b
+
+Added HdfsConfig.java to ./hfind/ repository source files.
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added FsItem.java to ./hfind/ repository source files.
+Added HdfsAccess.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandFactory.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added PrinterConfig.java to ./hfind/ repository source files.
+Added PushbackIterator.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+Added StubFsItem.java to ./hfind/ repository source files.
+Added TestPrinter.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 8bfc137ca74172501e7981c4023fada5cc23964e
+
+Added HdfsConfig.java to ./hfind/ repository source files.
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added FsItem.java to ./hfind/ repository source files.
+Added HdfsAccess.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandFactory.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added PrinterConfig.java to ./hfind/ repository source files.
+Added PushbackIterator.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+Added StubFsItem.java to ./hfind/ repository source files.
+Added TestPrinter.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit a82a1d5b51551174d0c857c1674458e57f1ffac8
+
+Added HdfsConfig.java to ./hfind/ repository source files.
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added FsItem.java to ./hfind/ repository source files.
+Added HdfsAccess.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandFactory.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added PrinterConfig.java to ./hfind/ repository source files.
+Added PushbackIterator.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+Added StubFsItem.java to ./hfind/ repository source files.
+Added TestPrinter.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 7b519396119c47e29e1283ad39afec775f8b3aac
+
+Added HdfsConfig.java to ./hfind/ repository source files.
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added FsItem.java to ./hfind/ repository source files.
+Added HdfsAccess.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandFactory.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added PrinterConfig.java to ./hfind/ repository source files.
+Added PushbackIterator.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+Added StubFsItem.java to ./hfind/ repository source files.
+Added TestPrinter.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit b80cdba24e64473290b2f7037d3788f0de0e60da
+
+Added HdfsConfig.java to ./hfind/ repository source files.
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added FsItem.java to ./hfind/ repository source files.
+Added HdfsAccess.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandFactory.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added PrinterConfig.java to ./hfind/ repository source files.
+Added PushbackIterator.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+Added StubFsItem.java to ./hfind/ repository source files.
+Added TestPrinter.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 5133a437d12fa23cf6e4988867b076daa53fb734
+
+Added HdfsConfig.java to ./hfind/ repository source files.
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added FsItem.java to ./hfind/ repository source files.
+Added HdfsAccess.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandFactory.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added PrinterConfig.java to ./hfind/ repository source files.
+Added PushbackIterator.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+Added StubFsItem.java to ./hfind/ repository source files.
+Added TestPrinter.java to ./hfind/ repository source files.
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 82bd2d0a0d3c6cacd3a7ab5b4e348e153d7b62e2
+
+Added HdfsConfig.java to ./hfind/ repository source files.
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added FsItem.java to ./hfind/ repository source files.
+Added HdfsAccess.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandFactory.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added PrinterConfig.java to ./hfind/ repository source files.
+Added PushbackIterator.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+Added StubFsItem.java to ./hfind/ repository source files.
+Added TestPrinter.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit f595f027df0acf4f00c1b77066216bef3f688e73
+
+Added HdfsConfig.java to ./hfind/ repository source files.
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added FsItem.java to ./hfind/ repository source files.
+Added HdfsAccess.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandFactory.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added PrinterConfig.java to ./hfind/ repository source files.
+Added PushbackIterator.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+Added StubFsItem.java to ./hfind/ repository source files.
+Added TestPrinter.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit ebe75557c236abe5d51b0c1514ce0a97feb2c536
+
+Added HdfsConfig.java to ./hfind/ repository source files.
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added FsItem.java to ./hfind/ repository source files.
+Added HdfsAccess.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandFactory.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added PrinterConfig.java to ./hfind/ repository source files.
+Added PushbackIterator.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+Added StubFsItem.java to ./hfind/ repository source files.
+Added TestPrinter.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 03ad17c3258b345c84633d139197c0639c197cdc
+
+Added HdfsConfig.java to ./hfind/ repository source files.
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added FsItem.java to ./hfind/ repository source files.
+Added HdfsAccess.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandFactory.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added PrinterConfig.java to ./hfind/ repository source files.
+Added PushbackIterator.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+Added StubFsItem.java to ./hfind/ repository source files.
+Added TestPrinter.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit d505253758d109f126481b07bfd007f59ad4ff0c
+
+Added HdfsConfig.java to ./hfind/ repository source files.
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added FsItem.java to ./hfind/ repository source files.
+Added HdfsAccess.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandFactory.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added PrinterConfig.java to ./hfind/ repository source files.
+Added PushbackIterator.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+Added StubFsItem.java to ./hfind/ repository source files.
+Added TestPrinter.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 9aadcfd6ca694d67a265fd3e690a9519fae52f6f
+
+Added HdfsConfig.java to ./hfind/ repository source files.
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added FsItem.java to ./hfind/ repository source files.
+Added HdfsAccess.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandFactory.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added PrinterConfig.java to ./hfind/ repository source files.
+Added PushbackIterator.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+Added StubFsItem.java to ./hfind/ repository source files.
+Added TestPrinter.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+fs
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 51cc1ef056051dc9db0d3c1d5bf5748e0656a13e
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added FsItem.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandFactory.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added PrinterConfig.java to ./hfind/ repository source files.
+Added PushbackIterator.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+Added StubFsItem.java to ./hfind/ repository source files.
+Added TestPrinter.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit f4362b1d01ba308dec5e2fca935e252a6e085c3f
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added FsItem.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandFactory.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added PrinterConfig.java to ./hfind/ repository source files.
+Added PushbackIterator.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+Added StubFsItem.java to ./hfind/ repository source files.
+Added TestPrinter.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+lastPathName
+
+
+Null Fields: 
+
+Reverted to commit 6163d0fa53dc11de577ceb4cf79afb3b43090a26
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added FsItem.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandFactory.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added PrinterConfig.java to ./hfind/ repository source files.
+Added PushbackIterator.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+Added StubFsItem.java to ./hfind/ repository source files.
+Added TestPrinter.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+lastPathName
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+lastPathName
+
+
+Null Fields: 
+
+Reverted to commit 667d2a1ffaa5291556e808761569e84554134d96
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandFactory.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added PushbackIterator.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 3cefb506a10777eb91d9fa3a3c95a3a50f57ac7d
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandFactory.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added PushbackIterator.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 2ccad1330497b990950a22eb5e4116d5cb12a3b6
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandFactory.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added PushbackIterator.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit b47e62d92b80034c93ca72c1169921f304e2506a
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandFactory.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added PushbackIterator.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit fbd58fade6401218a9f7eac571aa1188c52064d9
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandFactory.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added PushbackIterator.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+last
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit bb58510e51f27a62f0573a8988417b2f07ef1e71
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit af50ebf5cd5546bd5a544fb95c4d66bf22051878
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 0311d61d3f64f3d3a4fbaa377c627cf2b9bdf231
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+Added TestNamePrimary.java to ./hfind/ repository source files.
+Added StubFileAttributes.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit bd4b4b1226ce788e3da2ba4d73145a07ccbe34ca
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit b938290d515525c8dab6ee70fa8cafcaf175d45e
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added AtimePrimary.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 859823f56efe787d6779e061b5b06efa419cbccc
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 315bf5f7d6449b05643d638114426d37d6195c9f
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit e43ccfde1dff7f8f58b6bbdebbda3e931d422159
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit ebc141f8a06586a672841b8925d92ed4aff8896f
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 9ad24aaeedecb920ddd7e8d2743d6cfcdd6a80d4
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit a909c022db9879ec4f8a55e1866ac95884c88b51
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added ExpressionFactory.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+Null check was removed at revision a909c022db9879ec4f8a55e1866ac95884c88b51
+Null check was added at revision a909c022db9879ec4f8a55e1866ac95884c88b51
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 672d5306e804a299c904f606509ddb70a1fc578c
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added EmptyPrimary.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Null check was removed at revision 672d5306e804a299c904f606509ddb70a1fc578c
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Null check was removed at revision 672d5306e804a299c904f606509ddb70a1fc578c
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 63ad375546bb3915ca79805a2319ea59303e092a
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 90755fd698d6e8b08c1fd468e83ae7b962ba36fa
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 012a1a56f93589364aece3b31fedd1ff1d81febf
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 15337f7a3e8f1952047e8e73dfde0f0ad3b409ad
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit ce4e2f660043528be0767e1e9418022e55422420
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit a75bcc0971cf5802751945cfb54eb447e00c6bcf
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit be4812dd0075f004d212fe34a3fbd9f63c389e2c
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added MtimePrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 145fd435e8e18091d03f78b181d8523cdf4b43a2
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OperandModifier.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 3e7d23012290b4dde967f550fb0c38be59c1b13c
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added AndOperand.java to ./hfind/ repository source files.
+Added Expression.java to ./hfind/ repository source files.
+Added GroupPrimary.java to ./hfind/ repository source files.
+Added NamePrimary.java to ./hfind/ repository source files.
+Added NoGroupPrimary.java to ./hfind/ repository source files.
+Added NoUserPrimary.java to ./hfind/ repository source files.
+Added Operand.java to ./hfind/ repository source files.
+Added OrOperand.java to ./hfind/ repository source files.
+Added Primary.java to ./hfind/ repository source files.
+Added PrimaryFactory.java to ./hfind/ repository source files.
+Added SizePrimary.java to ./hfind/ repository source files.
+Added TypePrimary.java to ./hfind/ repository source files.
+Added UserPrimary.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 306d54b29cbb6587320cd54637a464f13759594b
+
+Added HFindConfig.java to ./hfind/ repository source files.
+Added FileAttributes.java to ./hfind/ repository source files.
+Added FileAttributesFilter.java to ./hfind/ repository source files.
+Added FileStatusAttributes.java to ./hfind/ repository source files.
+Added Find.java to ./hfind/ repository source files.
+Added HdfsItem.java to ./hfind/ repository source files.
+Added Printer.java to ./hfind/ repository source files.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Null variables: 
+		--> expression  found in main
+		--> expression  found in main
+		--> expression  found in main
+Nothing added to knowledge value.
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit d3e3fd03d06febe608182663820a31d329f2118b
+
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+GitAPIException thrown!
+Cannot revert commit '0f90054fe36c76205e78b9163466e82bea941daa' because it has 0 parents, only commits with exactly one parent are supported
+
+Reverted to commit 5a6207e32b55daa71e71c25e0b7f48a022f89ed2
+
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit da716fc7c454300c2917e1cebc5f748ad3152a6b
+
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+
+Null Fields: 
+
+Reverted to commit 8bfc137ca74172501e7981c4023fada5cc23964e
+
+
+
+Null Fields: 
+
+Reverted to commit a82a1d5b51551174d0c857c1674458e57f1ffac8
+
+
+Reverted to commit 7b519396119c47e29e1283ad39afec775f8b3aac
+
+
+Reverted to commit b80cdba24e64473290b2f7037d3788f0de0e60da
+
+
+Reverted to commit 5133a437d12fa23cf6e4988867b076daa53fb734
+
+
+Reverted to commit 82bd2d0a0d3c6cacd3a7ab5b4e348e153d7b62e2
+
+
+Reverted to commit f595f027df0acf4f00c1b77066216bef3f688e73
+
+
+Reverted to commit ebe75557c236abe5d51b0c1514ce0a97feb2c536
+
+
+Reverted to commit 03ad17c3258b345c84633d139197c0639c197cdc
+
+
+Reverted to commit d505253758d109f126481b07bfd007f59ad4ff0c
+
+
+Reverted to commit 9aadcfd6ca694d67a265fd3e690a9519fae52f6f
+
+
+Reverted to commit 51cc1ef056051dc9db0d3c1d5bf5748e0656a13e
+
+
+Reverted to commit f4362b1d01ba308dec5e2fca935e252a6e085c3f
+
+
+Reverted to commit 6163d0fa53dc11de577ceb4cf79afb3b43090a26
+
+
+Reverted to commit 667d2a1ffaa5291556e808761569e84554134d96
+
+
+Reverted to commit 3cefb506a10777eb91d9fa3a3c95a3a50f57ac7d
+
+
+Reverted to commit 2ccad1330497b990950a22eb5e4116d5cb12a3b6
+
+
+Reverted to commit b47e62d92b80034c93ca72c1169921f304e2506a
+
+
+Reverted to commit fbd58fade6401218a9f7eac571aa1188c52064d9
+
+
+Reverted to commit bb58510e51f27a62f0573a8988417b2f07ef1e71
+
+
+Reverted to commit af50ebf5cd5546bd5a544fb95c4d66bf22051878
+
+
+Reverted to commit 0311d61d3f64f3d3a4fbaa377c627cf2b9bdf231
+
+
+Reverted to commit bd4b4b1226ce788e3da2ba4d73145a07ccbe34ca
+
+
+Reverted to commit b938290d515525c8dab6ee70fa8cafcaf175d45e
+
+
+Reverted to commit 859823f56efe787d6779e061b5b06efa419cbccc
+
+
+Reverted to commit 315bf5f7d6449b05643d638114426d37d6195c9f
+
+
+Reverted to commit e43ccfde1dff7f8f58b6bbdebbda3e931d422159
+
+
+Reverted to commit ebc141f8a06586a672841b8925d92ed4aff8896f
+
+
+Reverted to commit 9ad24aaeedecb920ddd7e8d2743d6cfcdd6a80d4
+
+
+Reverted to commit a909c022db9879ec4f8a55e1866ac95884c88b51
+
+
+Reverted to commit 672d5306e804a299c904f606509ddb70a1fc578c
+
+
+Reverted to commit 63ad375546bb3915ca79805a2319ea59303e092a
+
+
+Reverted to commit 90755fd698d6e8b08c1fd468e83ae7b962ba36fa
+
+
+Reverted to commit 012a1a56f93589364aece3b31fedd1ff1d81febf
+
+
+Reverted to commit 15337f7a3e8f1952047e8e73dfde0f0ad3b409ad
+
+
+Reverted to commit ce4e2f660043528be0767e1e9418022e55422420
+
+
+Reverted to commit a75bcc0971cf5802751945cfb54eb447e00c6bcf
+
+
+Reverted to commit be4812dd0075f004d212fe34a3fbd9f63c389e2c
+
+
+Reverted to commit 145fd435e8e18091d03f78b181d8523cdf4b43a2
+
+
+Reverted to commit 3e7d23012290b4dde967f550fb0c38be59c1b13c
+
+
+Reverted to commit 306d54b29cbb6587320cd54637a464f13759594b
+
+
+Reverted to commit d3e3fd03d06febe608182663820a31d329f2118b
+
+
+Pierre introduced null checks upon creation of the repository.
+****Analysis complete for first commit****
+Pierre null count = 4 in repository hfind
+Pierre deref count = 0 in repository hfind
+GitAPIException thrown!
+Cannot revert commit '0f90054fe36c76205e78b9163466e82bea941daa' because it has 0 parents, only commits with exactly one parent are supported
