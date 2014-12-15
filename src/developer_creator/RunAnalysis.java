@@ -208,7 +208,7 @@ public class RunAnalysis {
 				for (ModelSourceFile f: repository.getSourceFiles()) {
 					repository.setFileRevisionHistory(gitHub, f);
 				}
-				
+								
 				//Analyze ASTs for all revisions (right now for null checks)
 				repository.revertAndAnalyzeForNull(gitHub, dir, dev, repoName);
 		

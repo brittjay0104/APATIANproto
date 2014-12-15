@@ -415,48 +415,48 @@ public class ModelRepository {
 
 			calculateNullValues(f, dev, newHash);
 			
-			System.out.println("************ For file " + f.getName() + "************\n");
-			
-			System.out.println("Null checks:");
-			for (String check: checks){
-				System.out.println(check);
-			}
-			
-			System.out.println("\nNull fields: ");
-			for (String field: f.getNullFields()){
-				System.out.println("	--> " + field);
-			}
-			
-			HashMap<String, ArrayList<String>> nullVars = f.getNullVars();
-			Iterator<Entry<String, ArrayList<String>>> it = nullVars.entrySet().iterator();
-			
-			System.out.println("\nNull variables: ");
-			while (it.hasNext()){
-				Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it.next();
-				
-				String methodDec = pairs.getKey();
-				
-				System.out.println("In method " + methodDec + " found:");
-				for (String var: pairs.getValue()){
-					System.out.println("	--> " + var);
-				}				
-				
-			}
-			
-			HashMap<String, ArrayList<String>> nullAssign = f.getNullAssignments();
-			Iterator<Entry<String, ArrayList<String>>> it2 = nullAssign.entrySet().iterator();
-			
-			System.out.println("Null assignments");
-			while (it2.hasNext()){
-				Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it2.next();
-				
-				String methodDec = pairs.getKey();
-				
-				System.out.println("In method " + methodDec + " found: ");
-				for (String var: pairs.getValue()){
-					System.out.println("	--> " + var);
-				}
-			}
+//			System.out.println("************ For file " + f.getName() + "************\n");
+//			
+//			System.out.println("Null checks:");
+//			for (String check: checks){
+//				System.out.println(check);
+//			}
+//			
+//			System.out.println("\nNull fields: ");
+//			for (String field: f.getNullFields()){
+//				System.out.println("	--> " + field);
+//			}
+//			
+//			HashMap<String, ArrayList<String>> nullVars = f.getNullVars();
+//			Iterator<Entry<String, ArrayList<String>>> it = nullVars.entrySet().iterator();
+//			
+//			System.out.println("\nNull variables: ");
+//			while (it.hasNext()){
+//				Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it.next();
+//				
+//				String methodDec = pairs.getKey();
+//				
+//				System.out.println("In method " + methodDec + " found:");
+//				for (String var: pairs.getValue()){
+//					System.out.println("	--> " + var);
+//				}				
+//				
+//			}
+//			
+//			HashMap<String, ArrayList<String>> nullAssign = f.getNullAssignments();
+//			Iterator<Entry<String, ArrayList<String>>> it2 = nullAssign.entrySet().iterator();
+//			
+//			System.out.println("Null assignments");
+//			while (it2.hasNext()){
+//				Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it2.next();
+//				
+//				String methodDec = pairs.getKey();
+//				
+//				System.out.println("In method " + methodDec + " found: ");
+//				for (String var: pairs.getValue()){
+//					System.out.println("	--> " + var);
+//				}
+//			}
 
 
 
@@ -648,7 +648,7 @@ public class ModelRepository {
 		}
 	}
 
-	private void diff(String directory, String filename, List<String> checks, String oldH, String newH, ModelDeveloper developer) {
+	public void diff(String directory, String filename, List<String> checks, String oldH, String newH, ModelDeveloper developer) {
 		File repoDir = new File(directory);
 
 		List<String> addedNullChecks = new ArrayList<String>();
