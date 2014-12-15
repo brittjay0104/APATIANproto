@@ -173,7 +173,6 @@ public class NoNullCheckVisitor extends ASTVisitor{
 						String variable = LHS.substring(i+1, LHS.length());
 						potentialNullVariables.add(variable);
 						
-//					System.out.println("Variable Declaration --> Potentially null variable (declared as null): " + variable + " in " + decMethod);
 						
 						if (nullVariables.get(decMethod) == null){
 							nullVariables.put(decMethod, new ArrayList<String>());
@@ -201,9 +200,9 @@ public class NoNullCheckVisitor extends ASTVisitor{
 
 						int i = LHS.trim().indexOf(" ");
 						String variable = LHS.substring(i+1, LHS.length());
+						System.out.println("	--> " + variable);
 						potentialNullVariables.add(variable);
 						
-//					System.out.println("Variable Declaration --> Potentially null variable (declared as null): " + variable + " in " + decMethod);
 						
 						if (nullVariables.get(typeDec) == null){
 							nullVariables.put(typeDec, new ArrayList<String>());
@@ -261,11 +260,11 @@ public class NoNullCheckVisitor extends ASTVisitor{
 					String variable = "";
 					int startIndex = s.indexOf(" ");
 					
-					while (s.indexOf(" ") > 0){
-						startIndex = s.indexOf(" ");
+					while (s.indexOf(" ") != -1){
+						startIndex = s.indexOf(" "); 
 						variable = s.substring(startIndex, s.length());
 						s = variable.trim();
-						//System.out.println(s);
+						System.out.println("	Substring of LHS --> " + s);
 					} 
 					
 					//System.out.println(variable.trim());
@@ -278,7 +277,7 @@ public class NoNullCheckVisitor extends ASTVisitor{
 				
 			} 
 			// know these are set to null;
-			else if (statement.contains(";")){
+			else if (statement.contains(";") && !(statement.contains("="))){
 				int index = statement.indexOf(";");
 				String LHS = statement.substring(0, index);
 				
