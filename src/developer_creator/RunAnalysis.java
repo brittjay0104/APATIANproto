@@ -178,18 +178,18 @@ public class RunAnalysis {
 			
 			Runtime rt = Runtime.getRuntime();
 			
-			String repo = "./android-Ultra-Pull-To-Refresh/.git";
+			String repo = "./twicca_evernote_plugin/.git";
 			File repoGit = new File(repo);
-			ModelDeveloper dev = new ModelDeveloper("Huqiu");
-			dev.setUserName("liaohuqiu");
-			String repoName = "android-Ultra-Pull-To-Refresh";
-			String dir = "./android-Ultra-Pull-To-Refresh/";
+			ModelDeveloper dev = new ModelDeveloper("Takuo Kitame");
+			dev.setUserName("takuo");
+			String repoName = "twicca_evernote_plugin";
+			String dir = "./twicca_evernote_plugin/";
 			File directory = new File (dir);
 			
 			clearOutDirectory(directory);
 			directory.delete();
 			
-			Process p3 = rt.exec("git clone https://github.com/liaohuqiu/android-Ultra-Pull-To-Refresh.git");
+			Process p3 = rt.exec("git clone https://github.com/takuo/twicca_evernote_plugin.git");
 			System.out.println(p3.waitFor());
 			
 			//set repository history
@@ -199,7 +199,19 @@ public class RunAnalysis {
 			if (repository.setRepositoryRevisionHistory(gitHub, dev) != null){
 				repository.setRepositoryRevisionHistory(gitHub, dev);
 				
-				ArrayList<RevCommit> commits = repository.getRevisions();
+				//ArrayList<RevCommit> commits = repository.getRevisions();
+
+				//set source files for each directory
+				repository.setSourceFiles(dir);
+				
+				//set history for each file
+				for (ModelSourceFile f: repository.getSourceFiles()) {
+					repository.setFileRevisionHistory(gitHub, f);
+				}
+				
+				//Analyze ASTs for all revisions (right now for null checks)
+				repository.revertAndAnalyzeForNull(gitHub, dir, dev, repoName);
+		
 				
 //				for (int i=0; i<commits.size(); i++){
 //					String current = ObjectId.toString(commits.get(i).getId());
@@ -207,27 +219,16 @@ public class RunAnalysis {
 //					
 //				}
 				
-				String current = ObjectId.toString(commits.get(0).getId());
-				String previous = ObjectId.toString(commits.get(1).getId());
-				System.out.println(previous);
-				System.out.println(current);
-				// "git diff --numstat " + previous + " " + current + " > outputfile.txt"
-				ProcessBuilder pb = new ProcessBuilder("git diff", "--numstat", previous, current, "> outputfile.txt");
-				pb.directory(directory);
-				pb.start();
+//				String current = ObjectId.toString(commits.get(0).getId());
+//				String previous = ObjectId.toString(commits.get(1).getId());
+//				System.out.println(previous);
+//				System.out.println(current);
+//				// "git diff --numstat " + previous + " " + current + " > outputfile.txt"
+//				ProcessBuilder pb = new ProcessBuilder("git diff", "--numstat", previous, current, "> outputfile.txt");
+//				pb.directory(directory);
+//				pb.start();
 				
 				
-//				//set source files for each directory
-//				repository.setSourceFiles(dir);
-//				
-//				//set history for each file
-//				for (ModelSourceFile f: repository.getSourceFiles()) {
-//					repository.setFileRevisionHistory(gitHub, f);
-//				}
-//				
-//				//Analyze ASTs for all revisions (right now for null checks)
-//				repository.revertAndAnalyzeForNull(gitHub, dir, dev, repoName);
-//				
 			}
 
 		}

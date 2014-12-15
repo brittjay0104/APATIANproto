@@ -215,7 +215,7 @@ public class NoNullCheckVisitor extends ASTVisitor{
 					String variable = LHS.substring(i2+1, LHS.length());
 					potentialNullVariables.add(variable);
 					
-					System.out.println("Variable Declaration (no init) --> Potentially null variable: " + variable + " in " + typeDec);
+					//System.out.println("Variable Declaration (no init) --> Potentially null variable: " + variable + " in " + typeDec);
 					
 					if (nullVariables.get(typeDec) == null){
 						nullVariables.put(typeDec, new ArrayList<String>());
@@ -259,7 +259,7 @@ public class NoNullCheckVisitor extends ASTVisitor{
 						//System.out.println(s);
 					} 
 					
-					System.out.println(variable.trim());
+					//System.out.println(variable.trim());
 					potentialNullFields.add(variable.trim());						
 					
 					

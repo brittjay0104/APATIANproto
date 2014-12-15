@@ -220,11 +220,15 @@ public class ModelRepository {
 
 			for (Iterator<RevCommit> iterator = log.iterator(); iterator.hasNext(); ) {
 				RevCommit rev = iterator.next();
-				
+
 				if (rev.getCommitterIdent().getName().equals(developer.getDevName()) || rev.getCommitterIdent().getName().equals(developer.getUserName())){
-					developer.addCommit(ObjectId.toString(rev.getId()));
+					if (!(developer.getCommits().contains(ObjectId.toString(rev.getId())))){
+						System.out.println(developer.getDevName() + " is responsible for commit " + ObjectId.toString(rev.getId()));
+						developer.addCommit(ObjectId.toString(rev.getId()));						
+					}
 				}
 
+				// TODO potentially remove this? Only analyzing from list of commits developer contributed
 				revisions.add(rev);
 			}
 			
@@ -339,13 +343,14 @@ public class ModelRepository {
 	 */
 	public void revertAndAnalyzeForNull(Git git, String directory, ModelDeveloper dev, String repoName) throws IOException{
 
-		for (int i = 0; i <= revisions.size()-1; i++) {
+		ArrayList<String> commits = dev.getCommits();
+		
+		for (int i = 0; i <= commits.size()-1; i++) {
 
-			//
-			String newHash = ObjectId.toString(revisions.get(i).getId());
+			String newHash = commits.get(i);
 			String oldHash = "";
-			if (!((revisions.get(i)) == revisions.get(revisions.size()-1))){
-				oldHash = ObjectId.toString(revisions.get(i+1).getId());
+			if (!((commits.get(i)).equals(commits.get(commits.size()-1)))){
+				oldHash = commits.get(i+1);
 			} else {
 				analyzeForNull(git, newHash, dev, repoName);
 			}
@@ -353,14 +358,20 @@ public class ModelRepository {
 			try {
 
 				// revert the repository
-				git.revert().include(revisions.get(i)).call();
+				for (RevCommit rev: revisions){
+					if (ObjectId.toString(rev.getId()).equals(commits.get(i))){
+						RevCommit revert = rev;
+						git.revert().include(revert).call();
+					}
+				}
 				System.out.println("\n" + "Reverted to commit " + newHash + "\n");
 
 				setAndParseSource(directory, i, oldHash, newHash, dev);
 				
-				System.out.println("Added null checks = " + dev.getAddedNullCounts());
-				System.out.println("Removed null checks = " + dev.getRemovedNullCounts());
-				System.out.println("Null dereferences checked for null = " + dev.getDerefCount());
+				System.out.println("/nDiff of " + oldHash + " and " + newHash + ":");
+				System.out.println("	--> Added null checks = " + dev.getAddedNullCounts());
+				System.out.println("	--> Removed null checks = " + dev.getRemovedNullCounts());
+				System.out.println("	--> Null dereferences checked for null = " + dev.getDerefCount());
 				
 				// HERE! :) - need to remove other print statements and do some runs (archive in separate folder)
 
@@ -404,7 +415,48 @@ public class ModelRepository {
 
 			calculateNullValues(f, dev, newHash);
 			
+			System.out.println("************ For file " + f.getName() + "************\n");
 			
+			System.out.println("Null checks:");
+			for (String check: checks){
+				System.out.println(check);
+			}
+			
+			System.out.println("\nNull fields: ");
+			for (String field: f.getNullFields()){
+				System.out.println("	--> " + field);
+			}
+			
+			HashMap<String, ArrayList<String>> nullVars = f.getNullVars();
+			Iterator<Entry<String, ArrayList<String>>> it = nullVars.entrySet().iterator();
+			
+			System.out.println("\nNull variables: ");
+			while (it.hasNext()){
+				Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it.next();
+				
+				String methodDec = pairs.getKey();
+				
+				System.out.println("In method " + methodDec + " found:");
+				for (String var: pairs.getValue()){
+					System.out.println("	--> " + var);
+				}				
+				
+			}
+			
+			HashMap<String, ArrayList<String>> nullAssign = f.getNullAssignments();
+			Iterator<Entry<String, ArrayList<String>>> it2 = nullAssign.entrySet().iterator();
+			
+			System.out.println("Null assignments");
+			while (it2.hasNext()){
+				Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it2.next();
+				
+				String methodDec = pairs.getKey();
+				
+				System.out.println("In method " + methodDec + " found: ");
+				for (String var: pairs.getValue()){
+					System.out.println("	--> " + var);
+				}
+			}
 
 
 
@@ -423,15 +475,15 @@ public class ModelRepository {
 		List<String> addAssignmentsForFile = new ArrayList<String>();
 				
 				
-		System.out.println("\n\nNull Fields: ");
+		//System.out.println("\n\nNull Fields: ");
 				
 		for (String field: fields){
-			System.out.println("		--> " + field);
+			//System.out.println("		--> " + field);
 					
 			for (String assign: assignments){
 				addAssignmentsForFile.add(assign);
 				if (assign.contains(field)){
-					System.out.println("Field assigned a value. Addition to knowledge value!");
+					//System.out.println("Field assigned a value. Addition to knowledge value!");
 					if (dev.getCommits().contains(newHash)){
 						dev.incrementDerefCount();
 						removeFields.add(field);						
@@ -440,10 +492,10 @@ public class ModelRepository {
 			}
 		}
 			
-		if (!(file.getNullFields().isEmpty())){
-			// TODO deduct value?
-			System.out.println("Nothing added to knowledge value.");
-		}
+//		if (!(file.getNullFields().isEmpty())){
+//			// TODO deduct value?
+//			System.out.println("Nothing added to knowledge value.");
+//		}
 		
 		removeFields(fields, removeFields);
 		addAssignments(addAssignmentsForFile, file);
@@ -467,18 +519,18 @@ public class ModelRepository {
 
 			String methodDec = pairs.getKey();
 			
-			System.out.println("\nNull variables: ");
+			//System.out.println("\nNull variables: ");
 			for (String var: pairs.getValue()){
-				System.out.println("		--> " + var + " found in " + methodDec);
+				//System.out.println("		--> " + var + " found in " + methodDec);
 				
 				for (String check: checks){
 					//System.out.println(check.substring(0, check.indexOf(CHECK_SEPERATOR)));
 					
 					if (check.contains(methodDec)){
-						System.out.println("Null check in " + methodDec);
+					//	System.out.println("Null check in " + methodDec);
 						
 						if (check.contains(var)){
-							System.out.println("Null check for null var. Add to value!");
+						//	System.out.println("Null check for null var. Add to value!");
 							
 							if (dev.getCommits().contains(newHash)){
 								dev.incrementDerefCount();
@@ -498,10 +550,11 @@ public class ModelRepository {
 				}
 								
 			}
-			if(!(file.getNullVars().isEmpty())){
-				// TODO deduct?
-				System.out.println("Nothing added to knowledge value.");				
-			}
+			
+//			if(!(file.getNullVars().isEmpty())){
+//				// TODO deduct?
+//				System.out.println("Nothing added to knowledge value.");				
+//			}
 			
 
 		}
@@ -522,7 +575,7 @@ public class ModelRepository {
 			
 			String methodDec = pairs.getKey();
 			
-			System.out.println("\nNull assignments: ");
+			//System.out.println("\nNull assignments: ");
 			for (String assign: pairs.getValue()){
 				
 				for (String check: checks){
@@ -533,7 +586,7 @@ public class ModelRepository {
 						//System.out.println("Null check in " + methodDec);
 						
 						if (check.contains(assign)){
-							System.out.println("Null check for null assignment. Add to value!");
+							//System.out.println("Null check for null assignment. Add to value!");
 							
 							if (dev.getCommits().contains(newHash)){
 								dev.incrementDerefCount();								
@@ -549,16 +602,16 @@ public class ModelRepository {
 
 					}
 				}
-				System.out.println("		--> " + assign + " found in " + methodDec);
+				//System.out.println("		--> " + assign + " found in " + methodDec);
 				
 			}
 			
 		}
 		
-		if (!(file.getNullAssignments().isEmpty())){
-			// TODO deduct value?
-			System.out.println("Nothing added to knowledge value.");
-		}	
+//		if (!(file.getNullAssignments().isEmpty())){
+//			// TODO deduct value?
+//			System.out.println("Nothing added to knowledge value.");
+//		}	
 		
 		// remove necessary fields
 		removeVariables(assignedFile, removeAssigned);

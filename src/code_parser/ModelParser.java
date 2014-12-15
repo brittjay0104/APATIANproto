@@ -259,7 +259,7 @@ public class ModelParser {
 		
 		CompilationUnit cu = (CompilationUnit) parser.createAST(null);
 		
-		System.out.println(cu.getJavaElement());
+		//System.out.println(cu.getJavaElement());
 		
 		
 		NoNullCheckVisitor visitor = new NoNullCheckVisitor(file);
