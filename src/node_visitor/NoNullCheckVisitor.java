@@ -91,7 +91,6 @@ public class NoNullCheckVisitor extends ASTVisitor{
 	public List<String> assignments = new ArrayList<String>();
 	public HashMap<String, ArrayList<String>> nullAssignments = new HashMap<String, ArrayList<String>>();
 	
-	// CHECK TO SEE IF VARIABLE ASSIGNED NULL VALUE (then check if used before checked for null??)
 	public boolean visit (Assignment node){
 		
 		Expression eL = node.getLeftHandSide();
@@ -101,12 +100,12 @@ public class NoNullCheckVisitor extends ASTVisitor{
 		String assignment = findSourceForNode(node);
 		assignments.add(assignment);
 		
-		//System.out.println("Assignment Node --> Left: " + eL + " Right: " + eR);
 		
 		if (getMethodDeclaration(node) != null){
 			String decMethod = findSourceForNode(getMethodDeclaration(node).getName());
 			
 			if (findSourceForNode(eR).contains("null")){			
+				System.out.println("Left side of assignment to null ==> " + findSourceForNode(eL));
 				
 				if (nullAssignments.get(decMethod) == null){
 					nullAssignments.put(decMethod, new ArrayList<String>());
@@ -125,7 +124,8 @@ public class NoNullCheckVisitor extends ASTVisitor{
 			String typeDec = findSourceForNode(getTypeDeclaration(node).getName());
 			
 			if (findSourceForNode(eR).contains("null")){
-				
+				System.out.println("Left side of assignment to null ==> " + findSourceForNode(eL));
+
 				if (nullAssignments.get(typeDec) == null){
 					nullAssignments.put(typeDec, new ArrayList<String>());
 				}
@@ -164,9 +164,12 @@ public class NoNullCheckVisitor extends ASTVisitor{
 					String RHS = statement.substring(index+1, statement.length());
 					String LHS = statement.substring(0, index);
 					
+					
 					// know these are set to null  
 					if (RHS.contains("null")){
-						int i = LHS.indexOf(" ");
+						System.out.println("Left hand side of variable declared null ==> " + LHS.trim());
+
+						int i = LHS.trim().indexOf(" ");
 						String variable = LHS.substring(i+1, LHS.length());
 						potentialNullVariables.add(variable);
 						
@@ -194,7 +197,9 @@ public class NoNullCheckVisitor extends ASTVisitor{
 					
 					// know these are set to null  
 					if (RHS.contains("null")){
-						int i = LHS.indexOf(" ");
+						System.out.println("Left hand side of variable declared null ==> " + LHS.trim());
+
+						int i = LHS.trim().indexOf(" ");
 						String variable = LHS.substring(i+1, LHS.length());
 						potentialNullVariables.add(variable);
 						
@@ -210,6 +215,9 @@ public class NoNullCheckVisitor extends ASTVisitor{
 				} else {
 					int index = statement.indexOf(";");
 					String LHS = statement.substring(0, index);
+					
+					System.out.println("Left hand side of variable declared ==> " + LHS.trim());
+
 					
 					int i2 = LHS.lastIndexOf(" ");
 					String variable = LHS.substring(i2+1, LHS.length());
@@ -241,9 +249,10 @@ public class NoNullCheckVisitor extends ASTVisitor{
 				
 				String RHS = statement.substring(index+1, statement.length());
 				String LHS = statement.substring(0, index-1);
-				
+								
 				// know these are set to null  				
 				if (RHS.contains("null")){
+					System.out.println("Field declared null ==> " + statement);
 					//int j = 1;
 					String s = LHS.trim();
 					
