@@ -25,6 +25,7 @@ public class ModelSourceFile {
 	public ArrayList<String> nullChecks;
 	public HashMap<String, ArrayList<String>> nullVars;
 	public HashMap<String, ArrayList<String>> nullAssignments;
+	public HashMap<String, ArrayList<String>> invocs;
 	public ArrayList<String> nullFields;
 	public ArrayList<String> assignments;
 
@@ -57,6 +58,7 @@ public class ModelSourceFile {
 		nullFields = new ArrayList<String>();
 		assignments = new ArrayList<String>();
 		nullAssignments = new HashMap<String, ArrayList<String>>();
+		invocs = new HashMap<String, ArrayList<String>>();
 
 		commits = new ArrayList<ModelCommit>();
 		methods = new ArrayList<String>();
@@ -204,6 +206,10 @@ public class ModelSourceFile {
 		return nullAssignments;
 	}
 	
+	public HashMap<String, ArrayList<String>> getInvocations(){
+		return invocs;
+	}
+	
 	public void setNullChecks(ArrayList<String> checks){
 		nullChecks = checks;
 	}
@@ -235,7 +241,9 @@ public class ModelSourceFile {
 	 *            containing a null check
 	 */
 	public void addMethod(String method) {
-		methods.add(method);
+		if (!(method.contains(method))){
+			methods.add(method);			
+		}
 	}
 
 	public void addNullCheck(String check) {
@@ -243,7 +251,9 @@ public class ModelSourceFile {
 	}
 	
 	public void addNullField(String field) {
-		nullFields.add(field);
+		if (!(nullFields.contains(field))){
+			nullFields.add(field);			
+		}
 	}
 	
 	public void removeNullField(String field){
@@ -251,7 +261,9 @@ public class ModelSourceFile {
 	}
 	
 	public void addAssignment(String assign){
-		assignments.add(assign);
+		if (!(assignments.contains(assign))){
+			assignments.add(assign);			
+		}
 	}
 	
 	public void addNullAssignment(String method, String assign){
@@ -259,7 +271,9 @@ public class ModelSourceFile {
 			nullAssignments.put(method, new ArrayList<String>());
 		}
 		
-		nullAssignments.get(method).add(assign);
+		if (!(nullAssignments.get(method).contains(assign))){
+			nullAssignments.get(method).add(assign);			
+		}
 		
 	}
 	
@@ -269,12 +283,24 @@ public class ModelSourceFile {
 		}
 	}
 	
+	public void addInvocation(String method, String invoc){
+		if (invocs.get(method) == null){
+			invocs.put(method, new ArrayList<String>());
+		}
+		
+		if (!(invocs.get(method).contains(invoc))){
+			invocs.get(method).add(invoc);			
+		}
+	} 
+	
 	public void addNullVariable(String decMethod, String variable){
 		if (nullVars.get(decMethod) == null){
 			nullVars.put(decMethod, new ArrayList<String>());
 		}
 		
-		nullVars.get(decMethod).add(variable);
+		if (!(nullVars.get(decMethod).contains(variable))){
+			nullVars.get(decMethod).add(variable);			
+		}
 	}
 	
 	public void removeNullVariable(String method, String assign){

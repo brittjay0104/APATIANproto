@@ -169,14 +169,26 @@ public class ModelParser {
 		while (it2.hasNext()){
 			Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it2.next();
 			//System.out.println("\n\n\nMethod invocations in " + pairs.getKey() + " ==> ");
+			
+			String method = pairs.getKey();
 
 			for (String invocation: pairs.getValue()){
-				ArrayList<String> nullFields = findNullFields(visitor, invocation);
-
-				for (String field: nullFields){
-					file.addNullField(field);
-					//System.out.println("POTENTIALLY NULL FIELD: " + field);
+				
+				file.addInvocation(method, invocation);
+				
+				// for each invocation, see if it contains the field of interest (need to iterate through them)
+				for (String field: visitor.getNullFields()){
+					if (invocation.contains(field)){
+						file.addNullField(field);
+					}
 				}
+				
+//				ArrayList<String> nullFields = findNullFields(visitor, invocation);
+//
+//				for (String field: nullFields){
+//					file.addNullField(field);
+//					//System.out.println("POTENTIALLY NULL FIELD: " + field);
+//				}
 			}
 		}
 		
@@ -266,6 +278,7 @@ public class ModelParser {
 		cu.accept(visitor);
 	}
 
+	// TODO maybe don't need this method (seeing if initialized but really should just see if checked for null before use)
 	private ArrayList<String> findNullFields(NoNullCheckVisitor visitor, String invocation) {
 		ArrayList<String> nullFields = new ArrayList<String>();
 

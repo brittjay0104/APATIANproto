@@ -368,12 +368,11 @@ public class ModelRepository {
 
 				setAndParseSource(directory, i, oldHash, newHash, dev);
 				
-				System.out.println("/nDiff of " + oldHash + " and " + newHash + ":");
+				System.out.println("\nDiff of " + oldHash + " and " + newHash + ":");
 				System.out.println("	--> Added null checks = " + dev.getAddedNullCounts());
 				System.out.println("	--> Removed null checks = " + dev.getRemovedNullCounts());
 				System.out.println("	--> Null dereferences checked for null = " + dev.getDerefCount());
 				
-				// HERE! :) - need to remove other print statements and do some runs (archive in separate folder)
 
 			} catch (NoMessageException e) {
 				System.out.println("NoMessageException thrown!");
@@ -446,7 +445,7 @@ public class ModelRepository {
 			HashMap<String, ArrayList<String>> nullAssign = f.getNullAssignments();
 			Iterator<Entry<String, ArrayList<String>>> it2 = nullAssign.entrySet().iterator();
 			
-			System.out.println("Null assignments");
+			System.out.println("Null assignments: ");
 			while (it2.hasNext()){
 				Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it2.next();
 				
@@ -467,40 +466,39 @@ public class ModelRepository {
 		
 		// **************** FIELDS (not initialized) ********************
 		List<String> fields = file.getNullFields();
-		// All assignments (for seeing if fields initialized) 
-		List<String> assignments = file.getAssignments();
-		
+		List<String> nullChecks = file.getNullChecks();
 		List<String> removeFields = new ArrayList<String>();
+		HashMap<String, ArrayList<String>> invocs = file.getInvocations();
 		
-		List<String> addAssignmentsForFile = new ArrayList<String>();
-				
-				
-		//System.out.println("\n\nNull Fields: ");
-				
+		// if invocation found, see if null check in that same method for that field
+		Iterator<Entry<String, ArrayList<String>>> it = invocs.entrySet().iterator();
+
 		for (String field: fields){
-			//System.out.println("		--> " + field);
-					
-			for (String assign: assignments){
-				addAssignmentsForFile.add(assign);
-				if (assign.contains(field)){
-					//System.out.println("Field assigned a value. Addition to knowledge value!");
-					if (dev.getCommits().contains(newHash)){
-						dev.incrementDerefCount();
-						removeFields.add(field);						
+			while (it.hasNext()){
+				Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it.next();
+				
+				String method = pairs.getKey();
+				
+				for (String invoc: pairs.getValue()){
+					if (invoc.contains(field)){
+						for (String check: nullChecks){
+							if (check.contains(method)){
+								if (check.contains(field)){
+									removeFields.add(field);
+									if (dev.getCommits().contains(newHash)){
+										dev.incrementDerefCount();
+									}
+								}
+								
+							}
+						}
 					}
 				}
-			}
+			}			
 		}
 			
-//		if (!(file.getNullFields().isEmpty())){
-//			// TODO deduct value?
-//			System.out.println("Nothing added to knowledge value.");
-//		}
 		
-		removeFields(fields, removeFields);
-		addAssignments(addAssignmentsForFile, file);
-		
-		
+		removeFields(fields, removeFields);		
 			
 		
 		
@@ -550,11 +548,6 @@ public class ModelRepository {
 				}
 								
 			}
-			
-//			if(!(file.getNullVars().isEmpty())){
-//				// TODO deduct?
-//				System.out.println("Nothing added to knowledge value.");				
-//			}
 			
 
 		}
@@ -607,11 +600,7 @@ public class ModelRepository {
 			}
 			
 		}
-		
-//		if (!(file.getNullAssignments().isEmpty())){
-//			// TODO deduct value?
-//			System.out.println("Nothing added to knowledge value.");
-//		}	
+
 		
 		// remove necessary fields
 		removeVariables(assignedFile, removeAssigned);
@@ -619,11 +608,6 @@ public class ModelRepository {
 
 	}
 
-	private void addAssignments(List<String> assignments, ModelSourceFile file) {
-		for (String assign: assignments){
-			file.addAssignment(assign);
-		}
-	}
 
 	private void removeFields(List<String> fields, List<String> removeFields) {
 		
