@@ -178,18 +178,18 @@ public class RunAnalysis {
 			
 			Runtime rt = Runtime.getRuntime();
 			
-			String repo = "./twicca_evernote_plugin/.git";
+			String repo = "./Grab-n-Run/.git";
 			File repoGit = new File(repo);
-			ModelDeveloper dev = new ModelDeveloper("Takuo Kitame");
-			dev.setUserName("takuo");
-			String repoName = "twicca_evernote_plugin";
-			String dir = "./twicca_evernote_plugin/";
+			ModelDeveloper dev = new ModelDeveloper("Luca Falsina");
+			dev.setUserName("lukeFalsina");
+			String repoName = "Grab-n-Run";
+			String dir = "./Grab-n-Run/";
 			File directory = new File (dir);
 			
 			clearOutDirectory(directory);
 			directory.delete();
 			
-			Process p3 = rt.exec("git clone https://github.com/takuo/twicca_evernote_plugin.git");
+			Process p3 = rt.exec("git clone https://github.com/lukeFalsina/Grab-n-Run.git");
 			System.out.println(p3.waitFor());
 			
 			//set repository history
@@ -211,25 +211,10 @@ public class RunAnalysis {
 								
 				//Analyze ASTs for all revisions (right now for null checks)
 				repository.revertAndAnalyzeForNull(gitHub, dir, dev, repoName);
-		
-				
-//				for (int i=0; i<commits.size(); i++){
-//					String current = ObjectId.toString(commits.get(i).getId());
-//					String previous = ObjectId.toString(commits.get(i + 1).getId());
-//					
-//				}
-				
-//				String current = ObjectId.toString(commits.get(0).getId());
-//				String previous = ObjectId.toString(commits.get(1).getId());
-//				System.out.println(previous);
-//				System.out.println(current);
-//				// "git diff --numstat " + previous + " " + current + " > outputfile.txt"
-//				ProcessBuilder pb = new ProcessBuilder("git diff", "--numstat", previous, current, "> outputfile.txt");
-//				pb.directory(directory);
-//				pb.start();
+		}	
 				
 				
-			}
+
 
 		}
 		

@@ -161,16 +161,22 @@ public class NoNullCheckVisitor extends ASTVisitor{
 					if (RHS.contains("null")){
 //						System.out.println("Left hand side of variable declared null ==> " + LHS.trim());
 
-						int i = LHS.trim().indexOf(" ");
-						String variable = LHS.substring(i+1, LHS.length());
-						potentialNullVariables.add(variable);
+						String variable = "";
+						String s = LHS.trim();
+						int startIndex = s.indexOf(" ");
 						
+						while (startIndex != -1){
+							variable = s.substring(startIndex, s.length());
+							s = variable.trim();
+							startIndex = s.indexOf(" "); 
+						} 
+												
 						
 						if (nullVariables.get(decMethod) == null){
 							nullVariables.put(decMethod, new ArrayList<String>());
 						}
 						
-						nullVariables.get(decMethod).add(variable);
+						nullVariables.get(decMethod).add(s.trim());
 						
 					}				
 				}	
@@ -190,35 +196,46 @@ public class NoNullCheckVisitor extends ASTVisitor{
 					if (RHS.contains("null")){
 						//System.out.println("Left hand side of variable declared null ==> " + LHS.trim());
 
-						int i = LHS.trim().indexOf(" ");
-						String variable = LHS.substring(i+1, LHS.length());
+						String variable = "";
+						String s = LHS.trim();
+						int startIndex = s.indexOf(" ");
+						
+						while (startIndex != -1){
+							variable = s.substring(startIndex, s.length());
+							s = variable.trim();
+							startIndex = s.indexOf(" "); 
+						} 
 						//System.out.println("	--> " + variable);
-						potentialNullVariables.add(variable);
 						
 						
 						if (nullVariables.get(typeDec) == null){
 							nullVariables.put(typeDec, new ArrayList<String>());
 						}
 						
-						nullVariables.get(typeDec).add(variable);
+						nullVariables.get(typeDec).add(s.trim());
 						
 					}	
 				} else {
 					int index = statement.indexOf(";");
 					String LHS = statement.substring(0, index);
 					
-					//System.out.println("Left hand side of variable declared ==> " + LHS.trim());
-
+					//System.out.println("Left hand side of variable declared ==> " + LHS.trim());					
 					
-					int i2 = LHS.lastIndexOf(" ");
-					String variable = LHS.substring(i2+1, LHS.length());
-					potentialNullVariables.add(variable);
+					String variable = "";
+					String s = LHS.trim();
+					int startIndex = s.indexOf(" ");
+					
+					while (startIndex != -1){
+						variable = s.substring(startIndex, s.length());
+						s = variable.trim();
+						startIndex = s.indexOf(" "); 
+					} 
 										
 					if (nullVariables.get(typeDec) == null){
 						nullVariables.put(typeDec, new ArrayList<String>());
 					}
 										
-					nullVariables.get(typeDec).add(variable);
+					nullVariables.get(typeDec).add(s.trim());
 					
 				}
 			}
@@ -249,10 +266,10 @@ public class NoNullCheckVisitor extends ASTVisitor{
 					String variable = "";
 					int startIndex = s.indexOf(" ");
 					
-					while (s.indexOf(" ") != -1){
-						startIndex = s.indexOf(" "); 
+					while (startIndex != -1){
 						variable = s.substring(startIndex, s.length());
 						s = variable.trim();
+						startIndex = s.indexOf(" "); 
 					} 
 					
 					//System.out.println(variable.trim());

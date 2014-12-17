@@ -307,17 +307,17 @@ public class ModelRepository {
 		String devName = developer.getDevName();
 
 		if(developer.getCommits().contains(newH)){
-			System.out.println("\n" + devName + " introduced null checks upon creation of the repository.");
+			System.out.println("Null checks found in initial commit -- added at creation of the repository.");
 
 			for (ModelSourceFile file: getSourceFiles()) {
 				// parse the files AST for null checks
 				List<String> checks = parser.parseForNull(file, newH);
 
-				for (String check: checks){
-					if (!(countedChecks.contains(check))){
-						developer.incrementAddedNullCounts();
-					}
-				}
+//				for (String check: checks){
+//					if (!(countedChecks.contains(check))){
+//						developer.incrementAddedNullCounts();
+//					}
+//				}
 
 				//System.out.println("Number introduced in " + file.getName() +  " by " + devName + ": " + developer.getNullCount());
 
@@ -410,97 +410,77 @@ public class ModelRepository {
 			List <String> checks = parser.parseForNull(f, oldHash);
 
 			// diff the current and older revision
-			diff(directory, f.getName(), checks, oldHash, newHash, dev);
+			diff(directory, f, checks, oldHash, newHash, dev);
 
-			calculateNullValues(f, dev, newHash);
+			//calculateNullValues(f, dev, newHash);
 			
-			System.out.println("************ For file " + f.getName() + "************\n");
-			
-			System.out.println("Null checks:");
-			for (String check: checks){
-				System.out.println(check);
-			}
-			
-			System.out.println("\nNull fields: ");
-			for (String field: f.getNullFields()){
-				System.out.println("	--> " + field);
-			}
-			
-			HashMap<String, ArrayList<String>> nullVars = f.getNullVars();
-			Iterator<Entry<String, ArrayList<String>>> it = nullVars.entrySet().iterator();
-			
-			System.out.println("\nNull variables: ");
-			while (it.hasNext()){
-				Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it.next();
-				
-				String methodDec = pairs.getKey();
-				
-				System.out.println("In method " + methodDec + " found:");
-				for (String var: pairs.getValue()){
-					System.out.println("	--> " + var);
-				}				
-				
-			}
-			
-			HashMap<String, ArrayList<String>> nullAssign = f.getNullAssignments();
-			Iterator<Entry<String, ArrayList<String>>> it2 = nullAssign.entrySet().iterator();
-			
-			System.out.println("Null assignments: ");
-			while (it2.hasNext()){
-				Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it2.next();
-				
-				String methodDec = pairs.getKey();
-				
-				System.out.println("In method " + methodDec + " found: ");
-				for (String var: pairs.getValue()){
-					System.out.println("	--> " + var);
-				}
-			}
+//			System.out.println("************ For file " + f.getName() + "************\n");
+//			
+//			System.out.println("Null checks:");
+//			for (String check: checks){
+//				System.out.println(check);
+//			}
+//			
+//			System.out.println("\nNull fields: ");
+//			for (String field: f.getNullFields()){
+//				System.out.println("	--> " + field);
+//			}
+//			
+//			HashMap<String, ArrayList<String>> nullVars = f.getNullVars();
+//			Iterator<Entry<String, ArrayList<String>>> it = nullVars.entrySet().iterator();
+//			
+//			System.out.println("\nNull variables: ");
+//			while (it.hasNext()){
+//				Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it.next();
+//				
+//				String methodDec = pairs.getKey();
+//				
+//				System.out.println("In method " + methodDec + " found:");
+//				for (String var: pairs.getValue()){
+//					System.out.println("	--> " + var);
+//				}				
+//				
+//			}
+//			
+//			HashMap<String, ArrayList<String>> nullAssign = f.getNullAssignments();
+//			Iterator<Entry<String, ArrayList<String>>> it2 = nullAssign.entrySet().iterator();
+//			
+//			System.out.println("Null assignments: ");
+//			while (it2.hasNext()){
+//				Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it2.next();
+//				
+//				String methodDec = pairs.getKey();
+//				
+//				System.out.println("In method " + methodDec + " found: ");
+//				for (String var: pairs.getValue()){
+//					System.out.println("	--> " + var);
+//				}
+//			}
 
 
 
 		}
 	}
 
-	private void calculateNullValues(ModelSourceFile file, ModelDeveloper dev, String newHash) {
+	private void calculateNullValues(ModelSourceFile file, String check, ModelDeveloper dev) {		
 		
 		// **************** FIELDS (not initialized) ********************
 		List<String> fields = file.getNullFields();
-		List<String> nullChecks = file.getNullChecks();
-		List<String> removeFields = new ArrayList<String>();
-		HashMap<String, ArrayList<String>> invocs = file.getInvocations();
 		
-		// if invocation found, see if null check in that same method for that field
-		Iterator<Entry<String, ArrayList<String>>> it = invocs.entrySet().iterator();
-
+		// if field found in null check, remove from ongoing list and increment dev deref count
 		for (String field: fields){
-			while (it.hasNext()){
-				Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it.next();
-				
-				String method = pairs.getKey();
-				
-				for (String invoc: pairs.getValue()){
-					if (invoc.contains(field)){
-						for (String check: nullChecks){
-							if (check.contains(method)){
-								if (check.contains(field)){
-									removeFields.add(field);
-									if (dev.getCommits().contains(newHash)){
-										dev.incrementDerefCount();
-									}
-								}
-								
-							}
-						}
-					}
-				}
-			}			
+			if (check.contains(field)){
+				dev.incrementDerefCount();
+				file.addRemovedField(field);
+			}
 		}
 			
+		removeFields(file);		
+
 		
-		removeFields(fields, removeFields);		
-			
 		
+		// if var declared null found in null check (check method too), remove from ongoing list and increment dev deref count
+
 		
 		// ******************** VARIABLES (declared null; with method) ********************
 		HashMap<String, ArrayList<String>> variables = file.getNullVars();
@@ -508,8 +488,6 @@ public class ModelRepository {
 		
 		// Null Checks
 		List<String> checks = file.getNullChecks();
-		// HashMap for variables to remove after iterating over list
-		HashMap<String, ArrayList<String>> removeVars = new HashMap<String, ArrayList<String>>();
 		
 
 		while (it2.hasNext()){
@@ -521,47 +499,37 @@ public class ModelRepository {
 			for (String var: pairs.getValue()){
 				//System.out.println("		--> " + var + " found in " + methodDec);
 				
-				for (String check: checks){
-					//System.out.println(check.substring(0, check.indexOf(CHECK_SEPERATOR)));
-					
-					if (check.contains(methodDec)){
-					//	System.out.println("Null check in " + methodDec);
-						
-						if (check.contains(var)){
-						//	System.out.println("Null check for null var. Add to value!");
+				for (String nullCheck: checks){
+					if (nullCheck.contains(check.substring(0, check.indexOf(CHECK_SEPERATOR)))){
+						if (nullCheck.contains(methodDec)){
+							//	System.out.println("Null check in " + methodDec);
 							
-							if (dev.getCommits().contains(newHash)){
+							if (nullCheck.contains(var)){
+								//	System.out.println("Null check for null var. Add to value!");
 								dev.incrementDerefCount();
-							}
-							
-							if (removeVars.get(methodDec) == null){
-								removeVars.put(methodDec, new ArrayList<String>());
-							}
-							
-							// add to list of vars to be removed from file's list
-							removeVars.get(methodDec).add(var);								
-						}
-
-					}
-					//System.out.println("Null check found in file: " + check);
-	
-				}
 								
+								file.addRemovedVar(methodDec, var);							
+							}
+							
+						}
+						//System.out.println("Null check found in file: " + check);
+					}	
+				}							
 			}
-			
-
 		}
 		
 		// iterate over hashmap and remove the necessary variables
-		removeVariables(variables, removeVars);
+		removeVariables(file);
 		
+		
+		// if var assigned null found in null check (check method too), remove from ongoing list and increment dev deref count
+
 		
 		// ******************** VARIABLES (assigned null; with method) ********************
 		
 		HashMap<String, ArrayList<String>> assignedFile = file.getNullAssignments();
 		Iterator<Entry<String, ArrayList<String>>> it3 = assignedFile.entrySet().iterator();
 		
-		HashMap<String, ArrayList<String>> removeAssigned = new HashMap<String, ArrayList<String>>();
 		
 		while (it2.hasNext()){
 			Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it3.next();
@@ -571,28 +539,19 @@ public class ModelRepository {
 			//System.out.println("\nNull assignments: ");
 			for (String assign: pairs.getValue()){
 				
-				for (String check: checks){
-					//System.out.println(check.substring(0, check.indexOf(CHECK_SEPERATOR)));
-					
-					if (check.contains(methodDec)){
-						
-						//System.out.println("Null check in " + methodDec);
-						
-						if (check.contains(assign)){
-							//System.out.println("Null check for null assignment. Add to value!");
+				for (String nullCheck: checks){
+					if (nullCheck.contains(check.substring(0, check.indexOf(CHECK_SEPERATOR)))){
+						if (nullCheck.contains(methodDec)){
+							//	System.out.println("Null check in " + methodDec);
 							
-							if (dev.getCommits().contains(newHash)){
-								dev.incrementDerefCount();								
+							if (nullCheck.contains(assign)){
+								//	System.out.println("Null check for null var. Add to value!");
+								dev.incrementDerefCount();
+								file.addRemovedAssign(methodDec, assign);							
 							}
-							
-							if (removeAssigned.get(methodDec) == null){
-								removeAssigned.put(methodDec, new ArrayList<String>());
-							}
-							
-							removeAssigned.get(methodDec).add(assign);
 							
 						}
-
+						//System.out.println("Null check found in file: " + check);
 					}
 				}
 				//System.out.println("		--> " + assign + " found in " + methodDec);
@@ -603,36 +562,102 @@ public class ModelRepository {
 
 		
 		// remove necessary fields
-		removeVariables(assignedFile, removeAssigned);
+		removeAssigns(file);
 		
 
 	}
 
 
-	private void removeFields(List<String> fields, List<String> removeFields) {
+	private void removeFields(ModelSourceFile file) {
 		
-		for (String field: removeFields){
-			fields.remove(field);
+		ArrayList<String> fields = new ArrayList<String>();
+		
+		for (String field: file.getRemovedFields()){
+			if (file.getRemovedFields().contains(field)){
+				fields.add(field);
+			}
+		}
+		
+		
+		for (String field: fields){
+			file.removeNullField(field);
 		}
 		
 	}
 
-	public void removeVariables(HashMap<String, ArrayList<String>> variables, HashMap<String, ArrayList<String>> removeVars) {
-
-		Iterator<Entry<String, ArrayList<String>>> it = removeVars.entrySet().iterator();
+	public void removeVariables(ModelSourceFile file) {
+		
+		HashMap<String, ArrayList<String>> remove = new HashMap<String, ArrayList<String>>();
+		
+		Iterator<Entry<String, ArrayList<String>>> it = file.getRemovedVars().entrySet().iterator();
 		
 		while (it.hasNext()){
 			Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it.next();
 			
 			String methodDec = pairs.getKey();
 			
-			for (String var: removeVars.get(methodDec)){
-				variables.get(methodDec).remove(var);
+			for (String var: file.getRemovedVars().get(methodDec)){
+				if (remove.get(methodDec) == null){
+					remove.put(methodDec, new ArrayList<String>());
+				}
+				
+				remove.get(methodDec).add(var);
 			}
 		}
+		
+		// iterate through remove and call  file.removeNullVariable(methodDec, var);
+		
+		Iterator<Entry<String, ArrayList<String>>> it2 = remove.entrySet().iterator();
+		
+		while (it2.hasNext()){
+			Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it2.next();
+			
+			String methodDec = pairs.getKey();
+			
+			for (String var: remove.get(methodDec)){
+				file.removeNullVariable(methodDec, var);
+			}	
+		}
+
+	}
+	
+	public void removeAssigns(ModelSourceFile file){
+		
+		HashMap<String, ArrayList<String>> remove = new HashMap<String, ArrayList<String>>();
+		
+		Iterator<Entry<String, ArrayList<String>>> it = file.getRemovedAssigns().entrySet().iterator();
+		
+		while (it.hasNext()){
+			Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it.next();
+			
+			String methodDec = pairs.getKey();
+			
+			for (String assign: file.getRemovedAssigns().get(methodDec)){
+				if (remove.get(methodDec) == null){
+					remove.put(methodDec, new ArrayList<String>());
+				}
+				
+				remove.get(methodDec).add(assign); 
+			}
+		}
+		
+		// iterate through remove and call file.removeNullAssignment(methodDec, assign);
+		
+		Iterator<Entry<String, ArrayList<String>>> it2 = remove.entrySet().iterator();
+		
+		while (it2.hasNext()){
+			Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it2.next();
+			
+			String methodDec = pairs.getKey();
+			
+			for (String assign: remove.get(methodDec)){
+				file.removeNullAssignment(methodDec, assign);
+			}	
+		}
+		
 	}
 
-	public void diff(String directory, String filename, List<String> checks, String oldH, String newH, ModelDeveloper developer) {
+	public void diff(String directory, ModelSourceFile file, List<String> checks, String oldH, String newH, ModelDeveloper developer) {
 		File repoDir = new File(directory);
 
 		List<String> addedNullChecks = new ArrayList<String>();
@@ -672,7 +697,7 @@ public class ModelRepository {
 				diff.getOldId();
 				String diffText = out.toString("UTF-8");
 
-				if (diffText.contains(filename)){
+				if (diffText.contains(file.getName())){
 
 					BufferedReader br = new BufferedReader(new StringReader(diffText));
 					String line = null;
@@ -701,11 +726,16 @@ public class ModelRepository {
 
 									// list for added null checks added here (only add if not already there?)
 									addedNullChecks.add(check);
+									
 
 									if (developer.getCommits().contains(newHash)){
 										developer.incrementAddedNullCounts();
+										// now see if this null check is related to any null fields, variables, or assignments
+										calculateNullValues(file, check, developer);
 									}
-
+									
+									
+									
 									countedChecks.add(check);
 
 								}

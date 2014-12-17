@@ -22,12 +22,15 @@ public class ModelSourceFile {
 	public char[] source;
 	private ArrayList<ModelCommit> commits;
 
-	public ArrayList<String> nullChecks;
+	public HashMap<String, ArrayList<String>> invocs;
 	public HashMap<String, ArrayList<String>> nullVars;
 	public HashMap<String, ArrayList<String>> nullAssignments;
-	public HashMap<String, ArrayList<String>> invocs;
 	public ArrayList<String> nullFields;
+	public ArrayList<String> nullChecks;
 	public ArrayList<String> assignments;
+	public ArrayList<String> removedFields;
+	public HashMap<String, ArrayList<String>> removedVars;
+	public HashMap<String, ArrayList<String>> removedAssigns;
 
 	// ArrayList for keeping track of locations of null checks as they appear
 	// and disappear from the
@@ -59,6 +62,9 @@ public class ModelSourceFile {
 		assignments = new ArrayList<String>();
 		nullAssignments = new HashMap<String, ArrayList<String>>();
 		invocs = new HashMap<String, ArrayList<String>>();
+		removedFields = new ArrayList<String>();
+		removedVars = new HashMap<String, ArrayList<String>>();
+		removedAssigns = new HashMap<String, ArrayList<String>>();
 
 		commits = new ArrayList<ModelCommit>();
 		methods = new ArrayList<String>();
@@ -257,7 +263,9 @@ public class ModelSourceFile {
 	}
 	
 	public void removeNullField(String field){
-		nullFields.remove(field);
+		if (nullFields.contains(field)){
+			nullFields.remove(field);
+		}
 	}
 	
 	public void addAssignment(String assign){
@@ -316,6 +324,49 @@ public class ModelSourceFile {
 		
 		return false;
 	}
+	
+	public ArrayList<String> getRemovedFields(){
+		return removedFields;
+	}
+	
+	
+	public void addRemovedField(String field){
+		if (!(removedFields.contains(field))){
+			removedFields.add(field);			
+		}
+	}
+	
+	public HashMap<String, ArrayList<String>> getRemovedVars(){
+		return removedVars;
+	}
+	
+	public void addRemovedVar(String method, String var){
+		if (removedVars.get(method) == null){
+			removedVars.put(method, new ArrayList<String>());
+		}
+		
+		removedVars.get(method).add(var);
+	}
+	
+	public HashMap<String, ArrayList<String>> getRemovedAssigns(){
+		return removedAssigns;
+	}
+	
+	public void addRemovedAssign(String method, String assign){
+		if (removedAssigns.get(method) == null){
+			removedAssigns.put(method, new ArrayList<String>());
+		}
+		
+		removedAssigns.get(method).add(assign);
+	}
+//	
+//	public boolean isRemovedField(String field){
+//		if (removedFields.contains(field)){
+//			return true;
+//		}
+//		
+//		return false;
+//	}	
 
 
 	/**

@@ -178,8 +178,10 @@ public class ModelParser {
 				
 				// for each invocation, see if it contains the field of interest (need to iterate through them)
 				for (String field: visitor.getNullFields()){
-					if (invocation.contains(field)){
-						file.addNullField(field);
+					if (!(file.getRemovedFields().contains(field))){
+						if (invocation.contains(field)){
+							file.addNullField(field);
+						}						
 					}
 				}
 				
