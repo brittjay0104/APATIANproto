@@ -178,18 +178,18 @@ public class RunAnalysis {
 			
 			Runtime rt = Runtime.getRuntime();
 			
-			String repo = "./Grab-n-Run/.git";
+			String repo = "./android-Ultra-Pull-To-Refresh/.git";
 			File repoGit = new File(repo);
-			ModelDeveloper dev = new ModelDeveloper("Luca Falsina");
-			dev.setUserName("lukeFalsina");
-			String repoName = "Grab-n-Run";
-			String dir = "./Grab-n-Run/";
+			ModelDeveloper dev = new ModelDeveloper("Huqiu Liao");
+			dev.setUserName("liaohuqiu");
+			String repoName = "android-Ultra-Pull-To-Refresh";
+			String dir = "./android-Ultra-Pull-To-Refresh/";
 			File directory = new File (dir);
 			
 			clearOutDirectory(directory);
 			directory.delete();
 			
-			Process p3 = rt.exec("git clone https://github.com/lukeFalsina/Grab-n-Run.git");
+			Process p3 = rt.exec("git clone https://github.com/liaohuqiu/android-Ultra-Pull-To-Refresh.git");
 			System.out.println(p3.waitFor());
 			
 			//set repository history
