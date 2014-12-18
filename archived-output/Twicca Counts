@@ -1,0 +1,1866 @@
+Twicca Counts 
+
+- deref counts high again (but potentially more accurate -- double check removal for variables and assignments [fields was wrong])
+
+0
+Takuo Kitame is responsible for commit 70ec4e663402ef2f7fd1b4c0639b4e6cf0647046
+Takuo Kitame is responsible for commit 711b0db0d9600fa779488cfa802e444c132c780b
+Takuo Kitame is responsible for commit 7b34550b2c322638912b5e5bec8c02433d4ab576
+Takuo Kitame is responsible for commit 63199b2ad618941dfe41ac9abf3652ef3d8ecdf0
+Takuo Kitame is responsible for commit fd8a719facac7b436acf8afc9a08adc04e0510d7
+Takuo Kitame is responsible for commit cd75dd3bc43a43a9a5ee563fd40852ab1ffae0d7
+Takuo Kitame is responsible for commit 6fe5c33ba114672f68d8749ad3ea83dd52f0c221
+Takuo Kitame is responsible for commit 10ad77d542845c34cee913cc23b9c44d559fa09a
+Takuo Kitame is responsible for commit f7d8d4de4f103f51afd954a0f9a2eaa92ed61989
+Takuo Kitame is responsible for commit b0292c83b699066339f7109f0d418034481e2f09
+Takuo Kitame is responsible for commit 40dd22dab05ac49d06319504eaf8526b7b9d765b
+Takuo Kitame is responsible for commit 8423b796f496d92028314c49d57348546b94f510
+Takuo Kitame is responsible for commit 775d80688e322aa8dbf52dab6f4d503b61dc7436
+Takuo Kitame is responsible for commit e5591eb9df268f8b8131b92b52944d86d881ae41
+Takuo Kitame is responsible for commit 05bd5896ad6b568eec37f97fdc37d4acf6aee1f0
+Takuo Kitame is responsible for commit 53fa6a0bebd093c1b43a0e2ef7e008b9ebdf05c4
+Takuo Kitame is responsible for commit 3f135f43413d3353367565ad566ac0b5346f4833
+Takuo Kitame is responsible for commit 88a02f165575f4e8f7cdd719da455d96d9d1f9a5
+Takuo Kitame is responsible for commit c62a452962e55bca197812903a427ec12cb162c5
+Takuo Kitame is responsible for commit c2466fe310951a2223e86f71268952524123545c
+Takuo Kitame is responsible for commit 6c2adf66bcb107331b262bfaaa5cf3acde5c1ebd
+Takuo Kitame is responsible for commit d2ad26d6ac90e7c547791304acfc1db58018df98
+Takuo Kitame is responsible for commit 831195d63a713069d14a833834fb6f555a808a3e
+Takuo Kitame is responsible for commit 2f47f93b2535fde8cb6533e6415546db55866eee
+Takuo Kitame is responsible for commit 0a7ce278f0dcdb81b48d965effb42e9c2e8852ae
+Takuo Kitame is responsible for commit 60f9195a089bb6010e0acb74cfcd3c31ce5d0238
+Takuo Kitame is responsible for commit f33d6fb8bfb8e614916d478ad5cd92ff6f68242b
+Takuo Kitame is responsible for commit cbf706fbcc5f4c35da6219009bf18a7f51cba932
+Takuo Kitame is responsible for commit 0668574688f11c4e883950fdb0cdb060bad5542d
+Takuo Kitame is responsible for commit 797c961aa001ef343113040a0888abfcfd630b92
+Takuo Kitame is responsible for commit 7a7a7fb460dc30691dbf71a7385116d1a8c2a588
+Takuo Kitame is responsible for commit f867c0f0bb46f389eb030fcee0d5a64e994ee040
+Takuo Kitame is responsible for commit 4eeb78ab5ddae577c2200d0dd40a223cb4b6bd46
+Takuo Kitame is responsible for commit c25a62c3c5e7ac2ce05ffc58f7c1810fb79b7158
+Takuo Kitame is responsible for commit 6e425b05f8dc3cc33ef466fd390233e06bc422ce
+Takuo Kitame is responsible for commit d6d26fa1a685ed0e27416a5d8c85a1466bbf85b8
+Takuo Kitame is responsible for commit fffde938d7090e245b23e7822f785dfb441fd7a7
+Takuo Kitame is responsible for commit 3f75d5543588e6cbb138caf52c4da7c39b706986
+Takuo Kitame is responsible for commit b55456df21e970f2cfda664ff84d651a45cf7b49
+Takuo Kitame is responsible for commit 3a9c5d3c3eb7e3a3ab70f625cb2c80d778dc51fb
+Takuo Kitame is responsible for commit 4e58d3468cc21c85256890403e8b4a3cffd4e8b2
+Takuo Kitame is responsible for commit 413bcf586d9bdbef2675f35336fda7d715d778c4
+Takuo Kitame is responsible for commit c38c4af0cb5a0a8a8a852e2e5583e6a41bd75870
+Takuo Kitame is responsible for commit 3ea883186ff846a917bf52f3bbef260d48b17d41
+Takuo Kitame is responsible for commit fde93faa3400d3d5348b9966551b68d5f2b2db3f
+Takuo Kitame is responsible for commit 088f07af4432cb0dfa9ff377ecbc0320c82bac38
+Takuo Kitame is responsible for commit 1b98e4d44845c21dde2336ecf1c84f5888ab5d6e
+Takuo Kitame is responsible for commit 58b37338ea7e3e02070018d1d701d211b7b8be2b
+Takuo Kitame is responsible for commit 995bdf7621d392ccd4b69221463d17f324e6fc46
+Takuo Kitame is responsible for commit 8ef53445ae9073149a5f3600af6bf2cf74c57d8a
+Takuo Kitame is responsible for commit d63eee9670fd4eaf5d995561650a00f2909fb92a
+Takuo Kitame is responsible for commit 9f5f2b4958de4dda229d0a58e0f996b8c08ebfe0
+Takuo Kitame is responsible for commit c59c624cf55282fb8d866e3c73bb6ea025472607
+Takuo Kitame is responsible for commit 87a9fdb3b58d14be73385d3df4a11feedf8d2439
+Takuo Kitame is responsible for commit 2f15d1eb1172c908c8b5808c07a2b9325d9ca4bc
+Takuo Kitame is responsible for commit f596cc60dd3f6cf634a88476d9f4ba0f33024083
+Takuo Kitame is responsible for commit bdfaf73ae8e99fd905c9f03747d5ebe3584dacf7
+Takuo Kitame is responsible for commit 80cbe192517b2a9448e732622ba4acc4c011da3d
+Takuo Kitame is responsible for commit a4ebd9f28cc47a1f1f16f45cb2b865dd29a3f7aa
+Takuo Kitame is responsible for commit f905bb1f1b76757625bf8e1df34ccdab14f07644
+Takuo Kitame is responsible for commit 1c49c438ef71a789cf64d4e53182ab29cc47426d
+Takuo Kitame is responsible for commit a57618f56d58a9ad249a39b50cf6b014ef291fd2
+Takuo Kitame is responsible for commit 6be2cc01c5d15b2dd3829e5c0cb20ce0133163e0
+Takuo Kitame is responsible for commit ade73087d4ba7a1f0e1f2111f605b6b825a364cd
+Takuo Kitame is responsible for commit a2971c0c3ed77cac82ee13f858ba565652c88123
+Takuo Kitame is responsible for commit 7edd0e335d1bd7b2b87477506cf0a5a41eaa60db
+Takuo Kitame is responsible for commit ea02a655666d6be8cd8303d354c88facf4838ad6
+Takuo Kitame is responsible for commit 259d75b23e6c6d6b8e5e1c90c7c7eed7049eb980
+Takuo Kitame is responsible for commit c2a46e653478594721128c80c0e7ac2eacafcaf8
+Takuo Kitame is responsible for commit cfa0a400e408d83b9d3128278f58fd8f28a41700
+Takuo Kitame is responsible for commit 92986b6f92e54d5b13782c45a4515b77c93acc36
+Takuo Kitame is responsible for commit 6886f0d3d18700254a9dbecc41f57454cf20e8d6
+Takuo Kitame is responsible for commit 8e97483270e69df4e35ef43e0ed1e1a814b909ce
+Takuo Kitame is responsible for commit 05c67257a622c92d3daf49055235a8616ceb1741
+Takuo Kitame is responsible for commit db2229f074a5ff4fc8e3158ac698651318a01611
+Takuo Kitame is responsible for commit 082df9098fff4bcfe33f4bd868af8f96573cf0af
+Takuo Kitame is responsible for commit 3dd38bd2db98b1d6cb86dd6156ae12215fe93c4c
+Takuo Kitame is responsible for commit b5008b5d2abb508aa07cba4a6b6fb89aab12a3dc
+Takuo Kitame is responsible for commit 06e423c034ee8d4eb4709a15fd5a10026cac9c73
+Takuo Kitame is responsible for commit c84ffb28eca9b16dd41e883a35e354c3bcccbd18
+Takuo Kitame is responsible for commit e87b606cad71f228a3a7830bbfead2a971a42c01
+Takuo Kitame is responsible for commit 7ec5c2aa83d53319d36630a881920afab119334e
+Takuo Kitame is responsible for commit 34d90562e8de42e6a581dec9ec0bb76f6144da7c
+Takuo Kitame is responsible for commit 33954e111fb457624e8aedc9f6ea03e1f6ce6865
+Takuo Kitame is responsible for commit 6b64c8c1df5667f919bd709561a4ec91f9dcedd6
+Takuo Kitame is responsible for commit 0a3335c6ee54d57e6c7b08e3a4e65916db275b47
+Takuo Kitame is responsible for commit ad3c6a5987411d1d6a0666b950f4534c051a0be9
+Takuo Kitame is responsible for commit f81ca153213f58cc486cb4f7c7f7d23dddb8c931
+Takuo Kitame is responsible for commit fd0cb8164640fc132fc5314d5621be868f5ba608
+Takuo Kitame is responsible for commit eb36509601876477d5fdd8caf82986119f747027
+Takuo Kitame is responsible for commit 461f3cff58cb92a5369aa0ca0255ed7a19b7e6c1
+Takuo Kitame is responsible for commit 337b18a9bd91849a7bd3f8c35d9a06284a6f2a55
+Added ApplicationInfo.java to ./twicca_evernote_plugin/ repository source files.
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TEvernoteHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added AuthenticationResult.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteOAuthActivity.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteSession.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteAuthToken.java to ./twicca_evernote_plugin/ repository source files.
+Added YinxiangApi.java to ./twicca_evernote_plugin/ repository source files.
+Added TimeUtils.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Reverted to commit 70ec4e663402ef2f7fd1b4c0639b4e6cf0647046
+
+Added ApplicationInfo.java to ./twicca_evernote_plugin/ repository source files.
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TEvernoteHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added AuthenticationResult.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteOAuthActivity.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteSession.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteAuthToken.java to ./twicca_evernote_plugin/ repository source files.
+Added YinxiangApi.java to ./twicca_evernote_plugin/ repository source files.
+Added TimeUtils.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 711b0db0d9600fa779488cfa802e444c132c780b and 70ec4e663402ef2f7fd1b4c0639b4e6cf0647046:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 13
+
+Reverted to commit 711b0db0d9600fa779488cfa802e444c132c780b
+
+Added ApplicationInfo.java to ./twicca_evernote_plugin/ repository source files.
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TEvernoteHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added AuthenticationResult.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteOAuthActivity.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteSession.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteAuthToken.java to ./twicca_evernote_plugin/ repository source files.
+Added YinxiangApi.java to ./twicca_evernote_plugin/ repository source files.
+Added TimeUtils.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 7b34550b2c322638912b5e5bec8c02433d4ab576 and 711b0db0d9600fa779488cfa802e444c132c780b:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 37
+
+Reverted to commit 7b34550b2c322638912b5e5bec8c02433d4ab576
+
+Added ApplicationInfo.java to ./twicca_evernote_plugin/ repository source files.
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TEvernoteHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added AuthenticationResult.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteOAuthActivity.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteSession.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteAuthToken.java to ./twicca_evernote_plugin/ repository source files.
+Added YinxiangApi.java to ./twicca_evernote_plugin/ repository source files.
+Added TimeUtils.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 63199b2ad618941dfe41ac9abf3652ef3d8ecdf0 and 7b34550b2c322638912b5e5bec8c02433d4ab576:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 73
+
+Reverted to commit 63199b2ad618941dfe41ac9abf3652ef3d8ecdf0
+
+Added ApplicationInfo.java to ./twicca_evernote_plugin/ repository source files.
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TEvernoteHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added AuthenticationResult.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteOAuthActivity.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteSession.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteAuthToken.java to ./twicca_evernote_plugin/ repository source files.
+Added YinxiangApi.java to ./twicca_evernote_plugin/ repository source files.
+Added TimeUtils.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of fd8a719facac7b436acf8afc9a08adc04e0510d7 and 63199b2ad618941dfe41ac9abf3652ef3d8ecdf0:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 109
+
+Reverted to commit fd8a719facac7b436acf8afc9a08adc04e0510d7
+
+Added ApplicationInfo.java to ./twicca_evernote_plugin/ repository source files.
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TEvernoteHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added AuthenticationResult.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteOAuthActivity.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteSession.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteAuthToken.java to ./twicca_evernote_plugin/ repository source files.
+Added YinxiangApi.java to ./twicca_evernote_plugin/ repository source files.
+Added TimeUtils.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of cd75dd3bc43a43a9a5ee563fd40852ab1ffae0d7 and fd8a719facac7b436acf8afc9a08adc04e0510d7:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 146
+
+Reverted to commit cd75dd3bc43a43a9a5ee563fd40852ab1ffae0d7
+
+Added ApplicationInfo.java to ./twicca_evernote_plugin/ repository source files.
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TEvernoteHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added AuthenticationResult.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteOAuthActivity.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteSession.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteAuthToken.java to ./twicca_evernote_plugin/ repository source files.
+Added YinxiangApi.java to ./twicca_evernote_plugin/ repository source files.
+Added TimeUtils.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 6fe5c33ba114672f68d8749ad3ea83dd52f0c221 and cd75dd3bc43a43a9a5ee563fd40852ab1ffae0d7:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 190
+
+Reverted to commit 6fe5c33ba114672f68d8749ad3ea83dd52f0c221
+
+Added ApplicationInfo.java to ./twicca_evernote_plugin/ repository source files.
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TEvernoteHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added AuthenticationResult.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteOAuthActivity.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteSession.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteAuthToken.java to ./twicca_evernote_plugin/ repository source files.
+Added YinxiangApi.java to ./twicca_evernote_plugin/ repository source files.
+Added TimeUtils.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 10ad77d542845c34cee913cc23b9c44d559fa09a and 6fe5c33ba114672f68d8749ad3ea83dd52f0c221:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 226
+
+Reverted to commit 10ad77d542845c34cee913cc23b9c44d559fa09a
+
+Added ApplicationInfo.java to ./twicca_evernote_plugin/ repository source files.
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TEvernoteHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added AuthenticationResult.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteOAuthActivity.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteSession.java to ./twicca_evernote_plugin/ repository source files.
+Added EvernoteAuthToken.java to ./twicca_evernote_plugin/ repository source files.
+Added YinxiangApi.java to ./twicca_evernote_plugin/ repository source files.
+Added TimeUtils.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of f7d8d4de4f103f51afd954a0f9a2eaa92ed61989 and 10ad77d542845c34cee913cc23b9c44d559fa09a:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 262
+
+Reverted to commit f7d8d4de4f103f51afd954a0f9a2eaa92ed61989
+
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of b0292c83b699066339f7109f0d418034481e2f09 and f7d8d4de4f103f51afd954a0f9a2eaa92ed61989:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 270
+
+Reverted to commit b0292c83b699066339f7109f0d418034481e2f09
+
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 40dd22dab05ac49d06319504eaf8526b7b9d765b and b0292c83b699066339f7109f0d418034481e2f09:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 278
+
+Reverted to commit 40dd22dab05ac49d06319504eaf8526b7b9d765b
+
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 8423b796f496d92028314c49d57348546b94f510 and 40dd22dab05ac49d06319504eaf8526b7b9d765b:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 286
+
+Reverted to commit 8423b796f496d92028314c49d57348546b94f510
+
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 775d80688e322aa8dbf52dab6f4d503b61dc7436 and 8423b796f496d92028314c49d57348546b94f510:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 296
+
+Reverted to commit 775d80688e322aa8dbf52dab6f4d503b61dc7436
+
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of e5591eb9df268f8b8131b92b52944d86d881ae41 and 775d80688e322aa8dbf52dab6f4d503b61dc7436:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 304
+
+Reverted to commit e5591eb9df268f8b8131b92b52944d86d881ae41
+
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 05bd5896ad6b568eec37f97fdc37d4acf6aee1f0 and e5591eb9df268f8b8131b92b52944d86d881ae41:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 314
+
+Reverted to commit 05bd5896ad6b568eec37f97fdc37d4acf6aee1f0
+
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 53fa6a0bebd093c1b43a0e2ef7e008b9ebdf05c4 and 05bd5896ad6b568eec37f97fdc37d4acf6aee1f0:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 326
+
+Reverted to commit 53fa6a0bebd093c1b43a0e2ef7e008b9ebdf05c4
+
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 3f135f43413d3353367565ad566ac0b5346f4833 and 53fa6a0bebd093c1b43a0e2ef7e008b9ebdf05c4:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 330
+
+Reverted to commit 3f135f43413d3353367565ad566ac0b5346f4833
+
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 88a02f165575f4e8f7cdd719da455d96d9d1f9a5 and 3f135f43413d3353367565ad566ac0b5346f4833:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 334
+
+Reverted to commit 88a02f165575f4e8f7cdd719da455d96d9d1f9a5
+
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+Null check was removed at revision 88a02f165575f4e8f7cdd719da455d96d9d1f9a5
+
+Diff of c62a452962e55bca197812903a427ec12cb162c5 and 88a02f165575f4e8f7cdd719da455d96d9d1f9a5:
+	--> Added null checks = 0
+	--> Removed null checks = 1
+	--> Null dereferences checked for null = 338
+
+Reverted to commit c62a452962e55bca197812903a427ec12cb162c5
+
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of c2466fe310951a2223e86f71268952524123545c and c62a452962e55bca197812903a427ec12cb162c5:
+	--> Added null checks = 0
+	--> Removed null checks = 1
+	--> Null dereferences checked for null = 342
+
+Reverted to commit c2466fe310951a2223e86f71268952524123545c
+
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 6c2adf66bcb107331b262bfaaa5cf3acde5c1ebd and c2466fe310951a2223e86f71268952524123545c:
+	--> Added null checks = 0
+	--> Removed null checks = 1
+	--> Null dereferences checked for null = 346
+
+Reverted to commit 6c2adf66bcb107331b262bfaaa5cf3acde5c1ebd
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+Null check was removed at revision 6c2adf66bcb107331b262bfaaa5cf3acde5c1ebd
+Null check was removed at revision 6c2adf66bcb107331b262bfaaa5cf3acde5c1ebd
+Null check was removed at revision 6c2adf66bcb107331b262bfaaa5cf3acde5c1ebd
+Null check was removed at revision 6c2adf66bcb107331b262bfaaa5cf3acde5c1ebd
+Null check was removed at revision 6c2adf66bcb107331b262bfaaa5cf3acde5c1ebd
+Null check was removed at revision 6c2adf66bcb107331b262bfaaa5cf3acde5c1ebd
+Null check was removed at revision 6c2adf66bcb107331b262bfaaa5cf3acde5c1ebd
+Null check was removed at revision 6c2adf66bcb107331b262bfaaa5cf3acde5c1ebd
+Null check was removed at revision 6c2adf66bcb107331b262bfaaa5cf3acde5c1ebd
+Null check was removed at revision 6c2adf66bcb107331b262bfaaa5cf3acde5c1ebd
+Null check was removed at revision 6c2adf66bcb107331b262bfaaa5cf3acde5c1ebd
+Null check was removed at revision 6c2adf66bcb107331b262bfaaa5cf3acde5c1ebd
+Null check was removed at revision 6c2adf66bcb107331b262bfaaa5cf3acde5c1ebd
+Null check was removed at revision 6c2adf66bcb107331b262bfaaa5cf3acde5c1ebd
+Null check was removed at revision 6c2adf66bcb107331b262bfaaa5cf3acde5c1ebd
+Null check was removed at revision 6c2adf66bcb107331b262bfaaa5cf3acde5c1ebd
+Null check was removed at revision 6c2adf66bcb107331b262bfaaa5cf3acde5c1ebd
+
+Diff of d2ad26d6ac90e7c547791304acfc1db58018df98 and 6c2adf66bcb107331b262bfaaa5cf3acde5c1ebd:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 358
+
+Reverted to commit d2ad26d6ac90e7c547791304acfc1db58018df98
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 831195d63a713069d14a833834fb6f555a808a3e and d2ad26d6ac90e7c547791304acfc1db58018df98:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 370
+
+Reverted to commit 831195d63a713069d14a833834fb6f555a808a3e
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 2f47f93b2535fde8cb6533e6415546db55866eee and 831195d63a713069d14a833834fb6f555a808a3e:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 400
+
+Reverted to commit 2f47f93b2535fde8cb6533e6415546db55866eee
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 0a7ce278f0dcdb81b48d965effb42e9c2e8852ae and 2f47f93b2535fde8cb6533e6415546db55866eee:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 451
+
+Reverted to commit 0a7ce278f0dcdb81b48d965effb42e9c2e8852ae
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 60f9195a089bb6010e0acb74cfcd3c31ce5d0238 and 0a7ce278f0dcdb81b48d965effb42e9c2e8852ae:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 478
+
+Reverted to commit 60f9195a089bb6010e0acb74cfcd3c31ce5d0238
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of f33d6fb8bfb8e614916d478ad5cd92ff6f68242b and 60f9195a089bb6010e0acb74cfcd3c31ce5d0238:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 509
+
+Reverted to commit f33d6fb8bfb8e614916d478ad5cd92ff6f68242b
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of cbf706fbcc5f4c35da6219009bf18a7f51cba932 and f33d6fb8bfb8e614916d478ad5cd92ff6f68242b:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 526
+
+Reverted to commit cbf706fbcc5f4c35da6219009bf18a7f51cba932
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 0668574688f11c4e883950fdb0cdb060bad5542d and cbf706fbcc5f4c35da6219009bf18a7f51cba932:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 538
+
+Reverted to commit 0668574688f11c4e883950fdb0cdb060bad5542d
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 797c961aa001ef343113040a0888abfcfd630b92 and 0668574688f11c4e883950fdb0cdb060bad5542d:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 550
+
+Reverted to commit 797c961aa001ef343113040a0888abfcfd630b92
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 7a7a7fb460dc30691dbf71a7385116d1a8c2a588 and 797c961aa001ef343113040a0888abfcfd630b92:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 562
+
+Reverted to commit 7a7a7fb460dc30691dbf71a7385116d1a8c2a588
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of f867c0f0bb46f389eb030fcee0d5a64e994ee040 and 7a7a7fb460dc30691dbf71a7385116d1a8c2a588:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 574
+
+Reverted to commit f867c0f0bb46f389eb030fcee0d5a64e994ee040
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 4eeb78ab5ddae577c2200d0dd40a223cb4b6bd46 and f867c0f0bb46f389eb030fcee0d5a64e994ee040:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 586
+
+Reverted to commit 4eeb78ab5ddae577c2200d0dd40a223cb4b6bd46
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of c25a62c3c5e7ac2ce05ffc58f7c1810fb79b7158 and 4eeb78ab5ddae577c2200d0dd40a223cb4b6bd46:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 598
+
+Reverted to commit c25a62c3c5e7ac2ce05ffc58f7c1810fb79b7158
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 6e425b05f8dc3cc33ef466fd390233e06bc422ce and c25a62c3c5e7ac2ce05ffc58f7c1810fb79b7158:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 610
+
+Reverted to commit 6e425b05f8dc3cc33ef466fd390233e06bc422ce
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of d6d26fa1a685ed0e27416a5d8c85a1466bbf85b8 and 6e425b05f8dc3cc33ef466fd390233e06bc422ce:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 622
+
+Reverted to commit d6d26fa1a685ed0e27416a5d8c85a1466bbf85b8
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of fffde938d7090e245b23e7822f785dfb441fd7a7 and d6d26fa1a685ed0e27416a5d8c85a1466bbf85b8:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 634
+
+Reverted to commit fffde938d7090e245b23e7822f785dfb441fd7a7
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 3f75d5543588e6cbb138caf52c4da7c39b706986 and fffde938d7090e245b23e7822f785dfb441fd7a7:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 644
+
+Reverted to commit 3f75d5543588e6cbb138caf52c4da7c39b706986
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of b55456df21e970f2cfda664ff84d651a45cf7b49 and 3f75d5543588e6cbb138caf52c4da7c39b706986:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 654
+
+Reverted to commit b55456df21e970f2cfda664ff84d651a45cf7b49
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 3a9c5d3c3eb7e3a3ab70f625cb2c80d778dc51fb and b55456df21e970f2cfda664ff84d651a45cf7b49:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 664
+
+Reverted to commit 3a9c5d3c3eb7e3a3ab70f625cb2c80d778dc51fb
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 4e58d3468cc21c85256890403e8b4a3cffd4e8b2 and 3a9c5d3c3eb7e3a3ab70f625cb2c80d778dc51fb:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 674
+
+Reverted to commit 4e58d3468cc21c85256890403e8b4a3cffd4e8b2
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added MultiAutoCompleteEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added NotebookPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 413bcf586d9bdbef2675f35336fda7d715d778c4 and 4e58d3468cc21c85256890403e8b4a3cffd4e8b2:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 684
+
+Reverted to commit 413bcf586d9bdbef2675f35336fda7d715d778c4
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of c38c4af0cb5a0a8a8a852e2e5583e6a41bd75870 and 413bcf586d9bdbef2675f35336fda7d715d778c4:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 694
+
+Reverted to commit c38c4af0cb5a0a8a8a852e2e5583e6a41bd75870
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 3ea883186ff846a917bf52f3bbef260d48b17d41 and c38c4af0cb5a0a8a8a852e2e5583e6a41bd75870:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 704
+
+Reverted to commit 3ea883186ff846a917bf52f3bbef260d48b17d41
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of fde93faa3400d3d5348b9966551b68d5f2b2db3f and 3ea883186ff846a917bf52f3bbef260d48b17d41:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 732
+
+Reverted to commit fde93faa3400d3d5348b9966551b68d5f2b2db3f
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 088f07af4432cb0dfa9ff377ecbc0320c82bac38 and fde93faa3400d3d5348b9966551b68d5f2b2db3f:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 763
+
+Reverted to commit 088f07af4432cb0dfa9ff377ecbc0320c82bac38
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 1b98e4d44845c21dde2336ecf1c84f5888ab5d6e and 088f07af4432cb0dfa9ff377ecbc0320c82bac38:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 798
+
+Reverted to commit 1b98e4d44845c21dde2336ecf1c84f5888ab5d6e
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 58b37338ea7e3e02070018d1d701d211b7b8be2b and 1b98e4d44845c21dde2336ecf1c84f5888ab5d6e:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 838
+
+Reverted to commit 58b37338ea7e3e02070018d1d701d211b7b8be2b
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 995bdf7621d392ccd4b69221463d17f324e6fc46 and 58b37338ea7e3e02070018d1d701d211b7b8be2b:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 878
+
+Reverted to commit 995bdf7621d392ccd4b69221463d17f324e6fc46
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 8ef53445ae9073149a5f3600af6bf2cf74c57d8a and 995bdf7621d392ccd4b69221463d17f324e6fc46:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 918
+
+Reverted to commit 8ef53445ae9073149a5f3600af6bf2cf74c57d8a
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of d63eee9670fd4eaf5d995561650a00f2909fb92a and 8ef53445ae9073149a5f3600af6bf2cf74c57d8a:
+	--> Added null checks = 0
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 958
+
+Reverted to commit d63eee9670fd4eaf5d995561650a00f2909fb92a
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+Null check was removed at revision d63eee9670fd4eaf5d995561650a00f2909fb92a
+Null check was added at revision d63eee9670fd4eaf5d995561650a00f2909fb92a
+Null check was removed at revision d63eee9670fd4eaf5d995561650a00f2909fb92a
+Null check was added at revision d63eee9670fd4eaf5d995561650a00f2909fb92a
+
+Diff of 9f5f2b4958de4dda229d0a58e0f996b8c08ebfe0 and d63eee9670fd4eaf5d995561650a00f2909fb92a:
+	--> Added null checks = 2
+	--> Removed null checks = 20
+	--> Null dereferences checked for null = 1000
+
+Reverted to commit 9f5f2b4958de4dda229d0a58e0f996b8c08ebfe0
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of c59c624cf55282fb8d866e3c73bb6ea025472607 and 9f5f2b4958de4dda229d0a58e0f996b8c08ebfe0:
+	--> Added null checks = 2
+	--> Removed null checks = 20
+	--> Null dereferences checked for null = 1043
+
+Reverted to commit c59c624cf55282fb8d866e3c73bb6ea025472607
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 87a9fdb3b58d14be73385d3df4a11feedf8d2439 and c59c624cf55282fb8d866e3c73bb6ea025472607:
+	--> Added null checks = 2
+	--> Removed null checks = 20
+	--> Null dereferences checked for null = 1086
+
+Reverted to commit 87a9fdb3b58d14be73385d3df4a11feedf8d2439
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 2f15d1eb1172c908c8b5808c07a2b9325d9ca4bc and 87a9fdb3b58d14be73385d3df4a11feedf8d2439:
+	--> Added null checks = 2
+	--> Removed null checks = 20
+	--> Null dereferences checked for null = 1129
+
+Reverted to commit 2f15d1eb1172c908c8b5808c07a2b9325d9ca4bc
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of f596cc60dd3f6cf634a88476d9f4ba0f33024083 and 2f15d1eb1172c908c8b5808c07a2b9325d9ca4bc:
+	--> Added null checks = 2
+	--> Removed null checks = 20
+	--> Null dereferences checked for null = 1172
+
+Reverted to commit f596cc60dd3f6cf634a88476d9f4ba0f33024083
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of bdfaf73ae8e99fd905c9f03747d5ebe3584dacf7 and f596cc60dd3f6cf634a88476d9f4ba0f33024083:
+	--> Added null checks = 2
+	--> Removed null checks = 20
+	--> Null dereferences checked for null = 1215
+
+Reverted to commit bdfaf73ae8e99fd905c9f03747d5ebe3584dacf7
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+Null check was removed at revision bdfaf73ae8e99fd905c9f03747d5ebe3584dacf7
+Null check was removed at revision bdfaf73ae8e99fd905c9f03747d5ebe3584dacf7
+
+Diff of 80cbe192517b2a9448e732622ba4acc4c011da3d and bdfaf73ae8e99fd905c9f03747d5ebe3584dacf7:
+	--> Added null checks = 2
+	--> Removed null checks = 22
+	--> Null dereferences checked for null = 1252
+
+Reverted to commit 80cbe192517b2a9448e732622ba4acc4c011da3d
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of a4ebd9f28cc47a1f1f16f45cb2b865dd29a3f7aa and 80cbe192517b2a9448e732622ba4acc4c011da3d:
+	--> Added null checks = 2
+	--> Removed null checks = 22
+	--> Null dereferences checked for null = 1289
+
+Reverted to commit a4ebd9f28cc47a1f1f16f45cb2b865dd29a3f7aa
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added ECacheManager.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of f905bb1f1b76757625bf8e1df34ccdab14f07644 and a4ebd9f28cc47a1f1f16f45cb2b865dd29a3f7aa:
+	--> Added null checks = 2
+	--> Removed null checks = 22
+	--> Null dereferences checked for null = 1326
+
+Reverted to commit f905bb1f1b76757625bf8e1df34ccdab14f07644
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 1c49c438ef71a789cf64d4e53182ab29cc47426d and f905bb1f1b76757625bf8e1df34ccdab14f07644:
+	--> Added null checks = 2
+	--> Removed null checks = 22
+	--> Null dereferences checked for null = 1363
+
+Reverted to commit 1c49c438ef71a789cf64d4e53182ab29cc47426d
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of a57618f56d58a9ad249a39b50cf6b014ef291fd2 and 1c49c438ef71a789cf64d4e53182ab29cc47426d:
+	--> Added null checks = 2
+	--> Removed null checks = 22
+	--> Null dereferences checked for null = 1400
+
+Reverted to commit a57618f56d58a9ad249a39b50cf6b014ef291fd2
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 6be2cc01c5d15b2dd3829e5c0cb20ce0133163e0 and a57618f56d58a9ad249a39b50cf6b014ef291fd2:
+	--> Added null checks = 2
+	--> Removed null checks = 22
+	--> Null dereferences checked for null = 1421
+
+Reverted to commit 6be2cc01c5d15b2dd3829e5c0cb20ce0133163e0
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of ade73087d4ba7a1f0e1f2111f605b6b825a364cd and 6be2cc01c5d15b2dd3829e5c0cb20ce0133163e0:
+	--> Added null checks = 2
+	--> Removed null checks = 22
+	--> Null dereferences checked for null = 1439
+
+Reverted to commit ade73087d4ba7a1f0e1f2111f605b6b825a364cd
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of a2971c0c3ed77cac82ee13f858ba565652c88123 and ade73087d4ba7a1f0e1f2111f605b6b825a364cd:
+	--> Added null checks = 2
+	--> Removed null checks = 22
+	--> Null dereferences checked for null = 1453
+
+Reverted to commit a2971c0c3ed77cac82ee13f858ba565652c88123
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 7edd0e335d1bd7b2b87477506cf0a5a41eaa60db and a2971c0c3ed77cac82ee13f858ba565652c88123:
+	--> Added null checks = 2
+	--> Removed null checks = 22
+	--> Null dereferences checked for null = 1462
+
+Reverted to commit 7edd0e335d1bd7b2b87477506cf0a5a41eaa60db
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClippingService.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of ea02a655666d6be8cd8303d354c88facf4838ad6 and 7edd0e335d1bd7b2b87477506cf0a5a41eaa60db:
+	--> Added null checks = 2
+	--> Removed null checks = 22
+	--> Null dereferences checked for null = 1471
+
+Reverted to commit ea02a655666d6be8cd8303d354c88facf4838ad6
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClipUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+Null check was removed at revision ea02a655666d6be8cd8303d354c88facf4838ad6
+Null check was removed at revision ea02a655666d6be8cd8303d354c88facf4838ad6
+
+Diff of 259d75b23e6c6d6b8e5e1c90c7c7eed7049eb980 and ea02a655666d6be8cd8303d354c88facf4838ad6:
+	--> Added null checks = 2
+	--> Removed null checks = 24
+	--> Null dereferences checked for null = 1480
+
+Reverted to commit 259d75b23e6c6d6b8e5e1c90c7c7eed7049eb980
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClipUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of c2a46e653478594721128c80c0e7ac2eacafcaf8 and 259d75b23e6c6d6b8e5e1c90c7c7eed7049eb980:
+	--> Added null checks = 2
+	--> Removed null checks = 24
+	--> Null dereferences checked for null = 1489
+
+Reverted to commit c2a46e653478594721128c80c0e7ac2eacafcaf8
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClipUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of cfa0a400e408d83b9d3128278f58fd8f28a41700 and c2a46e653478594721128c80c0e7ac2eacafcaf8:
+	--> Added null checks = 2
+	--> Removed null checks = 24
+	--> Null dereferences checked for null = 1499
+
+Reverted to commit cfa0a400e408d83b9d3128278f58fd8f28a41700
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClipUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 92986b6f92e54d5b13782c45a4515b77c93acc36 and cfa0a400e408d83b9d3128278f58fd8f28a41700:
+	--> Added null checks = 2
+	--> Removed null checks = 24
+	--> Null dereferences checked for null = 1509
+
+Reverted to commit 92986b6f92e54d5b13782c45a4515b77c93acc36
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClipUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 6886f0d3d18700254a9dbecc41f57454cf20e8d6 and 92986b6f92e54d5b13782c45a4515b77c93acc36:
+	--> Added null checks = 2
+	--> Removed null checks = 24
+	--> Null dereferences checked for null = 1519
+
+Reverted to commit 6886f0d3d18700254a9dbecc41f57454cf20e8d6
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added ClipUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 8e97483270e69df4e35ef43e0ed1e1a814b909ce and 6886f0d3d18700254a9dbecc41f57454cf20e8d6:
+	--> Added null checks = 2
+	--> Removed null checks = 24
+	--> Null dereferences checked for null = 1529
+
+Reverted to commit 8e97483270e69df4e35ef43e0ed1e1a814b909ce
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+Null check was removed at revision 8e97483270e69df4e35ef43e0ed1e1a814b909ce
+Null check was removed at revision 8e97483270e69df4e35ef43e0ed1e1a814b909ce
+Null check was removed at revision 8e97483270e69df4e35ef43e0ed1e1a814b909ce
+
+Diff of 05c67257a622c92d3daf49055235a8616ceb1741 and 8e97483270e69df4e35ef43e0ed1e1a814b909ce:
+	--> Added null checks = 2
+	--> Removed null checks = 27
+	--> Null dereferences checked for null = 1540
+
+Reverted to commit 05c67257a622c92d3daf49055235a8616ceb1741
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of db2229f074a5ff4fc8e3158ac698651318a01611 and 05c67257a622c92d3daf49055235a8616ceb1741:
+	--> Added null checks = 2
+	--> Removed null checks = 27
+	--> Null dereferences checked for null = 1557
+
+Reverted to commit db2229f074a5ff4fc8e3158ac698651318a01611
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 082df9098fff4bcfe33f4bd868af8f96573cf0af and db2229f074a5ff4fc8e3158ac698651318a01611:
+	--> Added null checks = 2
+	--> Removed null checks = 27
+	--> Null dereferences checked for null = 1608
+
+Reverted to commit 082df9098fff4bcfe33f4bd868af8f96573cf0af
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 3dd38bd2db98b1d6cb86dd6156ae12215fe93c4c and 082df9098fff4bcfe33f4bd868af8f96573cf0af:
+	--> Added null checks = 2
+	--> Removed null checks = 27
+	--> Null dereferences checked for null = 1671
+
+Reverted to commit 3dd38bd2db98b1d6cb86dd6156ae12215fe93c4c
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of b5008b5d2abb508aa07cba4a6b6fb89aab12a3dc and 3dd38bd2db98b1d6cb86dd6156ae12215fe93c4c:
+	--> Added null checks = 2
+	--> Removed null checks = 27
+	--> Null dereferences checked for null = 1734
+
+Reverted to commit b5008b5d2abb508aa07cba4a6b6fb89aab12a3dc
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 06e423c034ee8d4eb4709a15fd5a10026cac9c73 and b5008b5d2abb508aa07cba4a6b6fb89aab12a3dc:
+	--> Added null checks = 2
+	--> Removed null checks = 27
+	--> Null dereferences checked for null = 1797
+
+Reverted to commit 06e423c034ee8d4eb4709a15fd5a10026cac9c73
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added CryptEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added SimpleCrypt.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+Null check was removed at revision 06e423c034ee8d4eb4709a15fd5a10026cac9c73
+
+Diff of c84ffb28eca9b16dd41e883a35e354c3bcccbd18 and 06e423c034ee8d4eb4709a15fd5a10026cac9c73:
+	--> Added null checks = 2
+	--> Removed null checks = 28
+	--> Null dereferences checked for null = 1860
+
+Reverted to commit c84ffb28eca9b16dd41e883a35e354c3bcccbd18
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added CryptEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of e87b606cad71f228a3a7830bbfead2a971a42c01 and c84ffb28eca9b16dd41e883a35e354c3bcccbd18:
+	--> Added null checks = 2
+	--> Removed null checks = 28
+	--> Null dereferences checked for null = 1929
+
+Reverted to commit e87b606cad71f228a3a7830bbfead2a971a42c01
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added CryptEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 7ec5c2aa83d53319d36630a881920afab119334e and e87b606cad71f228a3a7830bbfead2a971a42c01:
+	--> Added null checks = 2
+	--> Removed null checks = 28
+	--> Null dereferences checked for null = 1992
+
+Reverted to commit 7ec5c2aa83d53319d36630a881920afab119334e
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added CryptEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 34d90562e8de42e6a581dec9ec0bb76f6144da7c and 7ec5c2aa83d53319d36630a881920afab119334e:
+	--> Added null checks = 2
+	--> Removed null checks = 28
+	--> Null dereferences checked for null = 2055
+
+Reverted to commit 34d90562e8de42e6a581dec9ec0bb76f6144da7c
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added CryptEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 33954e111fb457624e8aedc9f6ea03e1f6ce6865 and 34d90562e8de42e6a581dec9ec0bb76f6144da7c:
+	--> Added null checks = 2
+	--> Removed null checks = 28
+	--> Null dereferences checked for null = 2118
+
+Reverted to commit 33954e111fb457624e8aedc9f6ea03e1f6ce6865
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added CryptEditTextPreference.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 6b64c8c1df5667f919bd709561a4ec91f9dcedd6 and 33954e111fb457624e8aedc9f6ea03e1f6ce6865:
+	--> Added null checks = 2
+	--> Removed null checks = 28
+	--> Null dereferences checked for null = 2181
+
+Reverted to commit 6b64c8c1df5667f919bd709561a4ec91f9dcedd6
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 0a3335c6ee54d57e6c7b08e3a4e65916db275b47 and 6b64c8c1df5667f919bd709561a4ec91f9dcedd6:
+	--> Added null checks = 2
+	--> Removed null checks = 28
+	--> Null dereferences checked for null = 2242
+
+Reverted to commit 0a3335c6ee54d57e6c7b08e3a4e65916db275b47
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of ad3c6a5987411d1d6a0666b950f4534c051a0be9 and 0a3335c6ee54d57e6c7b08e3a4e65916db275b47:
+	--> Added null checks = 2
+	--> Removed null checks = 28
+	--> Null dereferences checked for null = 2305
+
+Reverted to commit ad3c6a5987411d1d6a0666b950f4534c051a0be9
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of f81ca153213f58cc486cb4f7c7f7d23dddb8c931 and ad3c6a5987411d1d6a0666b950f4534c051a0be9:
+	--> Added null checks = 2
+	--> Removed null checks = 28
+	--> Null dereferences checked for null = 2329
+
+Reverted to commit f81ca153213f58cc486cb4f7c7f7d23dddb8c931
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of fd0cb8164640fc132fc5314d5621be868f5ba608 and f81ca153213f58cc486cb4f7c7f7d23dddb8c931:
+	--> Added null checks = 2
+	--> Removed null checks = 28
+	--> Null dereferences checked for null = 2342
+
+Reverted to commit fd0cb8164640fc132fc5314d5621be868f5ba608
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of eb36509601876477d5fdd8caf82986119f747027 and fd0cb8164640fc132fc5314d5621be868f5ba608:
+	--> Added null checks = 2
+	--> Removed null checks = 28
+	--> Null dereferences checked for null = 2356
+
+Reverted to commit eb36509601876477d5fdd8caf82986119f747027
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 461f3cff58cb92a5369aa0ca0255ed7a19b7e6c1 and eb36509601876477d5fdd8caf82986119f747027:
+	--> Added null checks = 2
+	--> Removed null checks = 28
+	--> Null dereferences checked for null = 2365
+
+Reverted to commit 461f3cff58cb92a5369aa0ca0255ed7a19b7e6c1
+
+Added DiskBackedByteStore.java to ./twicca_evernote_plugin/ repository source files.
+Added EDAMUtil.java to ./twicca_evernote_plugin/ repository source files.
+Added FileData.java to ./twicca_evernote_plugin/ repository source files.
+Added FileDataException.java to ./twicca_evernote_plugin/ repository source files.
+Added TAndroidHttpClient.java to ./twicca_evernote_plugin/ repository source files.
+Added UriData.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaEvernoteUploader.java to ./twicca_evernote_plugin/ repository source files.
+Added TwiccaPluginSettings.java to ./twicca_evernote_plugin/ repository source files.
+
+Diff of 337b18a9bd91849a7bd3f8c35d9a06284a6f2a55 and 461f3cff58cb92a5369aa0ca0255ed7a19b7e6c1:
+	--> Added null checks = 2
+	--> Removed null checks = 28
+	--> Null dereferences checked for null = 2374
+
+Takuo Kitame introduced null checks upon creation of the repository.
+****Analysis complete for first commit****
+Takuo Kitame added null count = 17 in repository twicca_evernote_plugin
+Takuo Kitame removed null count = 28 in repository twicca_evernote_plugin
+Takuo Kitame deref count = 2374 in repository twicca_evernote_plugin
+GitAPIException thrown!
+Cannot revert commit '337b18a9bd91849a7bd3f8c35d9a06284a6f2a55' because it has 0 parents, only commits with exactly one parent are supported
