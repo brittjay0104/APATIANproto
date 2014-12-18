@@ -178,18 +178,18 @@ public class RunAnalysis {
 			
 			Runtime rt = Runtime.getRuntime();
 			
-			String repo = "./android-Ultra-Pull-To-Refresh/.git";
+			String repo = "./goodwill/.git";
 			File repoGit = new File(repo);
-			ModelDeveloper dev = new ModelDeveloper("Huqiu Liao");
-			dev.setUserName("liaohuqiu");
-			String repoName = "android-Ultra-Pull-To-Refresh";
-			String dir = "./android-Ultra-Pull-To-Refresh/";
+			ModelDeveloper dev = new ModelDeveloper("Pierre-Alexandre Meyer");
+			dev.setUserName("pierre");
+			String repoName = "goodwill";
+			String dir = "./goodwill/";
 			File directory = new File (dir);
 			
 			clearOutDirectory(directory);
 			directory.delete();
 			
-			Process p3 = rt.exec("git clone https://github.com/liaohuqiu/android-Ultra-Pull-To-Refresh.git");
+			Process p3 = rt.exec("git clone https://github.com/pierre/goodwill.git");
 			System.out.println(p3.waitFor());
 			
 			//set repository history
