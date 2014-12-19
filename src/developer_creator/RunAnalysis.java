@@ -178,18 +178,18 @@ public class RunAnalysis {
 			
 			Runtime rt = Runtime.getRuntime();
 			
-			String repo = "./goodwill/.git";
+			String repo = "./ning-service-skeleton/.git";
 			File repoGit = new File(repo);
 			ModelDeveloper dev = new ModelDeveloper("Pierre-Alexandre Meyer");
 			dev.setUserName("pierre");
-			String repoName = "goodwill";
-			String dir = "./goodwill/";
+			String repoName = "ning-service-skeleton";
+			String dir = "./ning-service-skeleton/";
 			File directory = new File (dir);
 			
 			clearOutDirectory(directory);
 			directory.delete();
 			
-			Process p3 = rt.exec("git clone https://github.com/pierre/goodwill.git");
+			Process p3 = rt.exec("git clone https://github.com/pierre/ning-service-skeleton.git");
 			System.out.println(p3.waitFor());
 			
 			//set repository history
