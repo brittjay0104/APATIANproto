@@ -178,18 +178,18 @@ public class RunAnalysis {
 			
 			Runtime rt = Runtime.getRuntime();
 			
-			String repo = "./eventtracker/.git";
+			String repo = "./config-magic/.git";
 			File repoGit = new File(repo);
-			ModelDeveloper dev = new ModelDeveloper("Pierre-Alexandre Meyer");
-			dev.setUserName("pierre");
-			String repoName = "eventtracker";
-			String dir = "./eventtracker/";
+			ModelDeveloper dev = new ModelDeveloper("Brian McCallister");
+			dev.setUserName("brianm");
+			String repoName = "config-magic";
+			String dir = "./config-magic/";
 			File directory = new File (dir);
 			
 			clearOutDirectory(directory);
 			directory.delete();
 			
-			Process p3 = rt.exec("git clone https://github.com/pierre/eventtracker.git");
+			Process p3 = rt.exec("git clone https://github.com/brianm/config-magic.git");
 			System.out.println(p3.waitFor());
 			
 			//set repository history
