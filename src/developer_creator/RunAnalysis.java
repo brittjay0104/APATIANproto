@@ -178,18 +178,18 @@ public class RunAnalysis {
 			
 			Runtime rt = Runtime.getRuntime();
 			
-			String repo = "./ning-service-skeleton/.git";
+			String repo = "./eventtracker/.git";
 			File repoGit = new File(repo);
 			ModelDeveloper dev = new ModelDeveloper("Pierre-Alexandre Meyer");
 			dev.setUserName("pierre");
-			String repoName = "ning-service-skeleton";
-			String dir = "./ning-service-skeleton/";
+			String repoName = "eventtracker";
+			String dir = "./eventtracker/";
 			File directory = new File (dir);
 			
 			clearOutDirectory(directory);
 			directory.delete();
 			
-			Process p3 = rt.exec("git clone https://github.com/pierre/ning-service-skeleton.git");
+			Process p3 = rt.exec("git clone https://github.com/pierre/eventtracker.git");
 			System.out.println(p3.waitFor());
 			
 			//set repository history
