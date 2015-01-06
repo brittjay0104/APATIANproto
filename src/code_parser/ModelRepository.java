@@ -661,13 +661,15 @@ public class ModelRepository {
 		List<String> addedNullChecks = new ArrayList<String>();
 
 		Git git;
+		String oldHash = "";
+		//current revision
+		String newHash = newH;
 
 		try {
 			git = Git.open(repoDir);
 			// next to current revision (older)
-			String oldHash = oldH;
-			// current revision
-			String newHash = newH;
+			oldHash = getOldHash(newH, oldHash);
+
 
 			ObjectId headId = git.getRepository().resolve(newHash + "^{tree}");
 			ObjectId oldId = git.getRepository().resolve(oldHash + "^{tree}");
@@ -704,6 +706,8 @@ public class ModelRepository {
 						line = line.trim();
 						//System.out.println(line);
 						for (String check: checks){
+							// TODO all newHash should be oldHash here??
+							
 							if (line.startsWith("-") && line.contains(check.substring(0, check.indexOf(CHECK_SEPERATOR)))){
 								developer.incrementLinesRemovedCount();
 								// continue reading to find next line of null check make sure still there when line contains (-) and (+)
@@ -751,6 +755,19 @@ public class ModelRepository {
 		} catch (GitAPIException e) {
 			System.out.println("GitAPIException caught!");
 		}
+	}
+
+	private String getOldHash(String newH, String oldHash) {
+		for (int i=0; i < this.getRevisions().size()-1; i++){
+			RevCommit rev = this.getRevisions().get(i);
+			String hash = ObjectId.toString(rev.getId());
+			
+			if (newH.equals(hash)){
+				oldHash = ObjectId.toString(this.getRevisions().get(i+1));
+			}
+			
+		}
+		return oldHash;
 	}
 
 	private boolean isAddition(String diff, String check) {

@@ -175,7 +175,6 @@ public class RunAnalysis {
 
 			System.setOut(new PrintStream(new FileOutputStream("console-output.txt")));
 			
-			
 			Runtime rt = Runtime.getRuntime();
 			
 			String repo = "./dx/.git";
@@ -214,7 +213,6 @@ public class RunAnalysis {
 		}	
 				
 				
-
 
 		}
 		
