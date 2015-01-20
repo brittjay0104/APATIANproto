@@ -84,13 +84,25 @@ public class ModelDeveloper {
 		removedNullCounts += 1;
 	}
 	
+	public void addToRemovedCounts(int num){
+		removedNullCounts = removedNullCounts + num;
+	}
+	
 	public void incrementAddedNullCounts(){
 		addedNullCounts += 1;
+	}
+	
+	public void addToAddedNullCounts(int num){
+		addedNullCounts = addedNullCounts + num;
 	}
 	
 	public void incrementDerefCount(){
 		derefCounts += 1;
 	}	
+	
+	public void addToDerefCount(int num){
+		derefCounts = derefCounts + num;
+	}
 	
 	public void incrementLinesAddedCount(){
 		linesAdded += 1;

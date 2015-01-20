@@ -220,6 +220,8 @@ public class ModelRepository {
 
 			for (Iterator<RevCommit> iterator = log.iterator(); iterator.hasNext(); ) {
 				RevCommit rev = iterator.next();
+				// TODO potentially remove this? Only analyzing from list of commits developer contributed
+				revisions.add(rev);
 
 				if (rev.getCommitterIdent().getName().equals(developer.getDevName()) || rev.getCommitterIdent().getName().equals(developer.getUserName())){
 					if (!(developer.getCommits().contains(ObjectId.toString(rev.getId())))){
@@ -228,8 +230,6 @@ public class ModelRepository {
 					}
 				}
 
-				// TODO potentially remove this? Only analyzing from list of commits developer contributed
-				revisions.add(rev);
 			}
 			
 
@@ -411,64 +411,22 @@ public class ModelRepository {
 
 			// diff the current and older revision
 			diff(directory, f, checks, oldHash, newHash, dev);
-			
-			System.out.println("************ For file " + f.getName() + "************\n");
-			
-			System.out.println("Null checks:");
-			for (String check: checks){
-				System.out.println(check);
-			}
-			
-			System.out.println("\nNull fields: ");
-			for (String field: f.getNullFields()){
-				System.out.println("	--> " + field);
-			}
-			
-			HashMap<String, ArrayList<String>> nullVars = f.getNullVars();
-			Iterator<Entry<String, ArrayList<String>>> it = nullVars.entrySet().iterator();
-			
-			System.out.println("\nNull variables: ");
-			while (it.hasNext()){
-				Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it.next();
-				
-				String methodDec = pairs.getKey();
-				
-				System.out.println("In method " + methodDec + " found:");
-				for (String var: pairs.getValue()){
-					System.out.println("	--> " + var);
-				}				
-				
-			}
-			
-			HashMap<String, ArrayList<String>> nullAssign = f.getNullAssignments();
-			Iterator<Entry<String, ArrayList<String>>> it2 = nullAssign.entrySet().iterator();
-			
-			System.out.println("Null assignments: ");
-			while (it2.hasNext()){
-				Map.Entry<String, ArrayList<String>> pairs = (Map.Entry<String, ArrayList<String>>)it2.next();
-				
-				String methodDec = pairs.getKey();
-				
-				System.out.println("In method " + methodDec + " found: ");
-				for (String var: pairs.getValue()){
-					System.out.println("	--> " + var);
-				}
-			}
 
 
 
 		}
 	}
 
-	private void calculateNullValues(ModelSourceFile file, String check, ModelDeveloper dev) {		
-		
+	private int calculateNullValues(ModelSourceFile file, String check, ModelDeveloper dev, int deref) {		
+				
 		// **************** FIELDS (not initialized) ********************
 		List<String> fields = file.getNullFields();
 		
 		// if field found in null check, remove from ongoing list and increment dev deref count
 		for (String field: fields){
 			if (check.contains(field)){
-				dev.incrementDerefCount();
+				deref +=1;
+				//dev.incrementDerefCount();
 				file.addRemovedField(field);
 			}
 		}
@@ -504,7 +462,8 @@ public class ModelRepository {
 							
 							if (nullCheck.contains(var)){
 								//	System.out.println("Null check for null var. Add to value!");
-								dev.incrementDerefCount();
+								deref +=1;
+								//dev.incrementDerefCount();
 								
 								file.addRemovedVar(methodDec, var);							
 							}
@@ -544,7 +503,8 @@ public class ModelRepository {
 							
 							if (nullCheck.contains(assign)){
 								//	System.out.println("Null check for null var. Add to value!");
-								dev.incrementDerefCount();
+								deref +=1;
+								// dev.incrementDerefCount();
 								file.addRemovedAssign(methodDec, assign);							
 							}
 							
@@ -561,6 +521,8 @@ public class ModelRepository {
 		
 		// remove necessary fields
 		removeAssigns(file);
+		
+		return deref;
 		
 
 	}
@@ -659,16 +621,18 @@ public class ModelRepository {
 		File repoDir = new File(directory);
 
 		List<String> addedNullChecks = new ArrayList<String>();
-
+		int added = 0;
+		int removed = 0;
+		int deref = 0;
+		
 		Git git;
-		String oldHash = "";
 		//current revision
 		String newHash = newH;
 
 		try {
 			git = Git.open(repoDir);
 			// next to current revision (older)
-			oldHash = getOldHash(newH, oldHash);
+			String oldHash = getOldHash(newH);
 
 
 			ObjectId headId = git.getRepository().resolve(newHash + "^{tree}");
@@ -706,17 +670,14 @@ public class ModelRepository {
 						line = line.trim();
 						//System.out.println(line);
 						for (String check: checks){
-							// TODO all newHash should be oldHash here??
 							
 							if (line.startsWith("-") && line.contains(check.substring(0, check.indexOf(CHECK_SEPERATOR)))){
 								developer.incrementLinesRemovedCount();
 								// continue reading to find next line of null check make sure still there when line contains (-) and (+)
 								if (isRemoval(diffText, check)){
 									System.out.println("Null check was removed at revision " + newHash);
-
-									if (developer.getCommits().contains(newHash)){
-										developer.incrementRemovedNullCounts();
-									}
+									
+									removed +=1;
 
 									countedChecks.add(check);
 								}
@@ -729,11 +690,11 @@ public class ModelRepository {
 									// list for added null checks added here (only add if not already there?)
 									addedNullChecks.add(check);
 									
+									added +=1;
 
 									if (developer.getCommits().contains(newHash)){
-										developer.incrementAddedNullCounts();
 										// now see if this null check is related to any null fields, variables, or assignments
-										calculateNullValues(file, check, developer);
+										deref = calculateNullValues(file, check, developer, deref);
 									}
 									
 									
@@ -750,6 +711,25 @@ public class ModelRepository {
 
 				out.reset();
 			}
+			
+			if (removed <= 10){
+				if (developer.getCommits().contains(newHash)){
+					developer.addToRemovedCounts(removed);
+				}
+			}
+			
+			if (added <= 10){
+				if (developer.getCommits().contains(newHash)){
+					developer.addToAddedNullCounts(added);
+				}
+			}
+			
+			if (deref <= 10){
+				if (developer.getCommits().contains(newHash)){
+					developer.addToDerefCount(deref);
+				}
+			}
+			
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		} catch (GitAPIException e) {
@@ -757,13 +737,15 @@ public class ModelRepository {
 		}
 	}
 
-	private String getOldHash(String newH, String oldHash) {
-		for (int i=0; i < this.getRevisions().size()-1; i++){
-			RevCommit rev = this.getRevisions().get(i);
+	private String getOldHash(String newH) {
+		String oldHash = "";
+		
+		for (int i=0; i < revisions.size()-1; i++){
+			RevCommit rev = revisions.get(i);
 			String hash = ObjectId.toString(rev.getId());
 			
-			if (newH.equals(hash)){
-				oldHash = ObjectId.toString(this.getRevisions().get(i+1));
+			if (hash.equals(newH)){
+				oldHash = ObjectId.toString(revisions.get(i+1));
 			}
 			
 		}
