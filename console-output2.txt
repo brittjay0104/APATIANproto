@@ -1,0 +1,38 @@
+0
+Brittany Johnson is responsible for commit c8bdd148ad6771063af7f04477fe4caf24603879
+Brittany Johnson is responsible for commit e763fb158283681846660088daebdb0d88b2835a
+Brittany Johnson is responsible for commit 1f30c38bb6fafbea347edcb6e17d5459d0701ed4
+Brittany Johnson is responsible for commit 9e479e0e086d05bd3b9655bd76f55141d185459e
+Brittany Johnson is responsible for commit e4d6b0770925d5c52949739375c435ce67b742b3
+Brittany Johnson is responsible for commit e48842310d97ce6c4a9a7394b83e068079cfaf94
+Added LoggerExample.java to ./APATIANproto/ repository source files.
+Added ModelCommit.java to ./APATIANproto/ repository source files.
+Added ModelParser.java to ./APATIANproto/ repository source files.
+Added ModelRepository.java to ./APATIANproto/ repository source files.
+Added ModelSourceFile.java to ./APATIANproto/ repository source files.
+Added ModelXMLCreator.java to ./APATIANproto/ repository source files.
+Added ModelDeveloper.java to ./APATIANproto/ repository source files.
+Added RunAnalysis.java to ./APATIANproto/ repository source files.
+Added Log4JVisitor.java to ./APATIANproto/ repository source files.
+Added NoNullCheckVisitor.java to ./APATIANproto/ repository source files.
+Added NullCheckVisitor.java to ./APATIANproto/ repository source files.
+Added ModelParserTest.java to ./APATIANproto/ repository source files.
+Added ModelRepositoryTest.java to ./APATIANproto/ repository source files.
+Added ModelSourceFileTest.java to ./APATIANproto/ repository source files.
+
+Reverted to commit c8bdd148ad6771063af7f04477fe4caf24603879
+
+Added LoggerExample.java to ./APATIANproto/ repository source files.
+Added ModelCommit.java to ./APATIANproto/ repository source files.
+Added ModelParser.java to ./APATIANproto/ repository source files.
+Added ModelRepository.java to ./APATIANproto/ repository source files.
+Added ModelSourceFile.java to ./APATIANproto/ repository source files.
+Added ModelXMLCreator.java to ./APATIANproto/ repository source files.
+Added ModelDeveloper.java to ./APATIANproto/ repository source files.
+Added RunAnalysis.java to ./APATIANproto/ repository source files.
+Added Log4JVisitor.java to ./APATIANproto/ repository source files.
+Added NoNullCheckVisitor.java to ./APATIANproto/ repository source files.
+Added NullCheckVisitor.java to ./APATIANproto/ repository source files.
+Added ModelParserTest.java to ./APATIANproto/ repository source files.
+Added ModelRepositoryTest.java to ./APATIANproto/ repository source files.
+Added ModelSourceFileTest.java to ./APATIANproto/ repository source files.

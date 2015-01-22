@@ -16,6 +16,7 @@ public class ModelDeveloper {
 	public ArrayList<ModelRepository> repositories;
 	public int linesAdded;
 	public int linesRemoved;
+	public String pseudoName;
 	
 	public ModelDeveloper (String id) {
 		removedNullCounts = 0;
@@ -26,6 +27,10 @@ public class ModelDeveloper {
 	}
 	
 	public ModelDeveloper() {
+	}
+	
+	public void setPseudoName(String name){
+		pseudoName = name;
 	}
 	
 	public void addRepository(ModelRepository repo){
