@@ -7,7 +7,9 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.io.PrintStream;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -173,48 +175,56 @@ public class RunAnalysis {
 //			br.close();
 
 
-			System.setOut(new PrintStream(new FileOutputStream("console-output.txt")));
+			//System.setOut(new PrintStream(new FileOutputStream("console-output.txt")));
 			
 			Runtime rt = Runtime.getRuntime();
 			
-			String repo = "./APATIANproto/.git";
+			String repo = "./sc326-203-project-team03/.git";
 			File repoGit = new File(repo);
-			ModelDeveloper dev = new ModelDeveloper("Brittany Johnson");
-			dev.setUserName("brittjay0104");
+			ModelDeveloper dev = new ModelDeveloper("kxbui");
+			dev.setUserName("kxbui");
 			// TODO add pseudo name to reporting?
-			//dev.setPseudoName("Jia");
-			String repoName = "APATIANproto";
-			String dir = "./APATIANproto/";
+			dev.setPseudoName("Jia");
+			String repoName = "sc326-203-project-team03";
+			String dir = "./sc326-203-project-team03/";
 			File directory = new File (dir);
 			
 			clearOutDirectory(directory);
 			directory.delete();
 			
-			Process p3 = rt.exec("git clone https://github.com/brittjay0104/APATIANproto.git");
+			Process p3 = rt.exec("git clone https://github.ncsu.edu/engr-csc326-fall2014/csc326-203-project-team03.git");
+//			OutputStream pout = p3.getOutputStream();
+//			PrintWriter username = new PrintWriter(pout);
+//			username.println("bijohnso");
+//			OutputStream pout2 = p3.getOutputStream();
+//			PrintWriter password = new PrintWriter(pout2);
+//			password.println("Research14");
 			System.out.println(p3.waitFor());
 			
-			//set repository history
-			ModelRepository repository = new ModelRepository(repoGit);
-			Git gitHub = repository.getGitRepository();
+			System.out.println("Project cloned!");
 			
-			if (repository.setRepositoryRevisionHistory(gitHub, dev) != null){
-				repository.setRepositoryRevisionHistory(gitHub, dev);
-				
-				//ArrayList<RevCommit> commits = repository.getRevisions();
-
-				//set source files for each directory
-				repository.setSourceFiles(dir);
-				
-				//set history for each file
-				for (ModelSourceFile f: repository.getSourceFiles()) {
-					repository.setFileRevisionHistory(gitHub, f);
-				}
-								
-				//Analyze ASTs for all revisions (right now for null checks)
-				repository.revertAndAnalyzeForNull(gitHub, dir, dev, repoName);
-		}	
-				
-				
+//			//set repository history
+//			ModelRepository repository = new ModelRepository(repoGit);
+//			Git gitHub = repository.getGitRepository();
+//			
+//			if (repository.setRepositoryRevisionHistory(gitHub, dev) != null){
+//				repository.setRepositoryRevisionHistory(gitHub, dev);
+//				
+//				//ArrayList<RevCommit> commits = repository.getRevisions();
+//
+//				//set source files for each directory
+//				repository.setSourceFiles(dir);
+//				
+//				//set history for each file
+//				for (ModelSourceFile f: repository.getSourceFiles()) {
+//					repository.setFileRevisionHistory(gitHub, f);
+//				}
+//								
+//				//Analyze ASTs for all revisions (right now for null checks)
+//				repository.revertAndAnalyzeForNull(gitHub, dir, dev, repoName);
+//		}	
+//				
+//				
 
 		}
 		
