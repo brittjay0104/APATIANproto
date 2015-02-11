@@ -712,23 +712,23 @@ public class ModelRepository {
 				out.reset();
 			}
 			
-			if (removed <= 10){
-				if (developer.getCommits().contains(newHash)){
-					developer.addToRemovedCounts(removed);
-				}
+			if (developer.getCommits().contains(newHash)){
+				developer.addToRemovedCounts(removed);
 			}
+//			if (removed <= 10){
+//			}
 			
-			if (added <= 10){
-				if (developer.getCommits().contains(newHash)){
-					developer.addToAddedNullCounts(added);
-				}
+			if (developer.getCommits().contains(newHash)){
+				developer.addToAddedNullCounts(added);
 			}
+//			if (added <= 10){
+//			}
 			
-			if (deref <= 10){
-				if (developer.getCommits().contains(newHash)){
-					developer.addToDerefCount(deref);
-				}
+			if (developer.getCommits().contains(newHash)){
+				developer.addToDerefCount(deref);
 			}
+//			if (deref <= 10){
+//			}
 			
 		} catch (IOException e1) {
 			e1.printStackTrace();
