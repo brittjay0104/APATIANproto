@@ -5,6 +5,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.StringReader;
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -25,13 +26,16 @@ import org.eclipse.jgit.api.errors.UnmergedPathsException;
 import org.eclipse.jgit.api.errors.WrongRepositoryStateException;
 import org.eclipse.jgit.diff.DiffEntry;
 import org.eclipse.jgit.diff.DiffFormatter;
+import org.eclipse.jgit.diff.RawTextComparator;
 import org.eclipse.jgit.errors.RepositoryNotFoundException;
 import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.ObjectReader;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
+import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
 import org.eclipse.jgit.treewalk.CanonicalTreeParser;
+import org.eclipse.jgit.util.io.DisabledOutputStream;
 import org.apache.commons.lang.StringUtils;
 
 import com.gitblit.models.PathModel.PathChangeModel;
@@ -48,6 +52,7 @@ public class ModelRepository {
 	private Git git;
 	private ArrayList<ModelSourceFile> sourceFiles;
 	private ArrayList<RevCommit> revisions;
+	private ArrayList<ModelSourceFile> changedFiles;
 
 	// for creating developers and attaching analysis results (only developer with results will show up here)
 	private List<ModelDeveloper> developers;
@@ -75,6 +80,7 @@ public class ModelRepository {
 		developers = new ArrayList<ModelDeveloper>();
 		devs = new ArrayList<String>();
 		countedChecks = new ArrayList<String>();
+		changedFiles = new ArrayList<ModelSourceFile>();
 
 		try {
 			this.repoPath = repoPath;
@@ -195,11 +201,21 @@ public class ModelRepository {
 		for (Iterator<File> files = FileUtils.iterateFiles(f, extensions, true); files.hasNext();){
 			ModelSourceFile file = new ModelSourceFile(files.next());
 			sourceFiles.add(file);
-			System.out.println("Added " + file.source_file.getName() + " to " + directory + " repository source files.");
+			//System.out.println("Added " + file.source_file.getName() + " to " + directory + " repository source files.");
 			//file.setRepository(repository);
 		}
 
 	}
+	
+	public void addChangedFile(ModelSourceFile file){
+		changedFiles.add(file);		
+		
+	}
+	
+	public ArrayList<ModelSourceFile> getChangedFiles(){
+		return changedFiles;
+	}
+	
 
 
 	/**
@@ -309,7 +325,7 @@ public class ModelRepository {
 		if(developer.getCommits().contains(newH)){
 			System.out.println("Null checks found in initial commit -- added at creation of the repository.");
 
-			for (ModelSourceFile file: getSourceFiles()) {
+			for (ModelSourceFile file: getChangedFiles()) {
 				// parse the files AST for null checks
 				List<String> checks = parser.parseForNull(file, newH);
 
@@ -349,6 +365,7 @@ public class ModelRepository {
 
 			String newHash = commits.get(i);
 			String oldHash = "";
+			
 			if (!((commits.get(i)).equals(commits.get(commits.size()-1)))){
 				oldHash = commits.get(i+1);
 			} else {
@@ -364,14 +381,22 @@ public class ModelRepository {
 						git.revert().include(revert).call();
 					}
 				}
-				System.out.println("\n" + "Reverted to commit " + newHash + "\n");
-
-				setAndParseSource(directory, i, oldHash, newHash, dev);
 				
-				System.out.println("\nDiff of " + oldHash + " and " + newHash + ":");
-				System.out.println("	--> Added null checks = " + dev.getAddedNullCounts());
-				System.out.println("	--> Removed null checks = " + dev.getRemovedNullCounts());
-				System.out.println("	--> Null dereferences checked for null = " + dev.getDerefCount());
+				System.out.println("\n" + "Reverted to commit " + newHash + "\n");
+				
+				for (RevCommit rev: revisions){
+					//System.out.println(ObjectId.toString(rev.getId()));
+					if (ObjectId.toString(rev.getId()).equals(newHash)){
+						
+						setAndParseSource(directory, i, oldHash, newHash, dev, rev);
+						
+						System.out.println("\nDiff of " + oldHash + " and " + newHash + ":");
+						System.out.println("	--> Added null checks = " + dev.getAddedNullCounts());
+						System.out.println("	--> Removed null checks = " + dev.getRemovedNullCounts());
+						System.out.println("	--> Null dereferences checked for null = " + dev.getDerefCount());
+					}
+				}
+
 				
 
 			} catch (NoMessageException e) {
@@ -396,28 +421,49 @@ public class ModelRepository {
 	 * @param oldHash
 	 * @throws IOException
 	 */
-	private void setAndParseSource(String directory, int i, String oldHash, String newHash, ModelDeveloper dev) throws IOException {
+	private void setAndParseSource(String directory, int i, String oldHash, String newHash, ModelDeveloper dev, RevCommit newRev) throws IOException {
 
 		setSourceFiles(directory);
+		
+		System.out.println("****Parsing at revision " + newHash + "****");
 
-
-		for (ModelSourceFile f: getSourceFiles()) {
+		for (ModelSourceFile f: getChangedFiles()) {
+			
 			setFileRevisionHistory(git, f);
 
 			ModelParser parser = new ModelParser();
 
 			// parse the files AST for null checks
 			List <String> checks = parser.parseForNull(f, oldHash);
-
+			
 			// diff the current and older revision
 			diff(directory, f, checks, oldHash, newHash, dev);
+			
+			//System.out.println(f.getName());
+			
+//			ModelParser parser = new ModelParser();
+//
+//			// parse the files AST for null checks
+////			List <String> checks = parser.parseForNull(f, oldHash);
+			
+//			System.out.println("FROM SOURCE FILES LIST:");
+//			
+//			System.out.println(f.getName());
+//			
+//			if (changedFiles.contains(f.getName())){
+//				System.out.println("FROM CHANGES FILES LIST:");
+//				System.out.println(f.getName());
+//				
+
+//				
+//			}
 
 
 
 		}
 	}
 
-	private int calculateNullValues(ModelSourceFile file, String check, ModelDeveloper dev, int deref) {		
+	private int calculateDerefValue(ModelSourceFile file, String check, ModelDeveloper dev, int deref) {		
 				
 		// **************** FIELDS (not initialized) ********************
 		List<String> fields = file.getNullFields();
@@ -616,6 +662,74 @@ public class ModelRepository {
 		}
 		
 	}
+	
+	public void diff2(String directory, ModelSourceFile file, String oldH, String newH, ModelDeveloper developer) {
+		File repoDir = new File(directory);
+
+//		List<String> addedNullChecks = new ArrayList<String>();
+//		int added = 0;
+//		int removed = 0;
+//		int deref = 0;
+		
+		
+		Git git;
+		//current revision
+		String newHash = newH;
+
+		try {
+			git = Git.open(repoDir);
+			// next to current revision (older)
+			String oldHash = getOldHash(newH);
+
+
+			ObjectId headId = git.getRepository().resolve(newHash + "^{tree}");
+			ObjectId oldId = git.getRepository().resolve(oldHash + "^{tree}");
+
+			ObjectReader reader = git.getRepository().newObjectReader();
+
+			CanonicalTreeParser oldTreeIter = new CanonicalTreeParser();
+			oldTreeIter.reset(reader, oldId);
+			CanonicalTreeParser newTreeIter = new CanonicalTreeParser();
+			newTreeIter.reset(reader, headId);
+
+			List<DiffEntry> diffs;
+			diffs = git.diff()
+					.setNewTree(newTreeIter)
+					.setOldTree(oldTreeIter)
+					.call();
+
+			ByteArrayOutputStream out = new ByteArrayOutputStream();
+			DiffFormatter df = new DiffFormatter(out);
+			df.setRepository(git.getRepository());
+
+			for(DiffEntry diff : diffs){
+				df.format(diff);
+				diff.getOldId();
+				String diffText = out.toString("UTF-8");
+
+				if (diffText.contains(file.getName())){
+					ModelParser parser = new ModelParser();
+					List<String> checks = parser.parseForNull(file, oldHash);
+
+//					BufferedReader br = new BufferedReader(new StringReader(diffText));
+//					String line = null;
+//
+//					while((line = br.readLine())!= null){
+//						line = line.trim();
+//						
+//						if (line.contains("null")){
+//							System.out.println(line);
+//						}
+//					}
+				}
+			}
+			
+		} catch (Exception e){
+			System.out.println("Exception caught at line 713!");
+		}
+				
+			
+		}
 
 	public void diff(String directory, ModelSourceFile file, List<String> checks, String oldH, String newH, ModelDeveloper developer) {
 		File repoDir = new File(directory);
@@ -694,7 +808,7 @@ public class ModelRepository {
 
 									if (developer.getCommits().contains(newHash)){
 										// now see if this null check is related to any null fields, variables, or assignments
-										deref = calculateNullValues(file, check, developer, deref);
+										deref = calculateDerefValue(file, check, developer, deref);
 									}
 									
 									

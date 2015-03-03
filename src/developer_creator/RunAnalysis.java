@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintStream;
 import java.io.PrintWriter;
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -21,9 +22,15 @@ import node_visitor.NoNullCheckVisitor;
 
 import org.apache.commons.lang.StringUtils;
 import org.eclipse.jgit.api.Git;
+import org.eclipse.jgit.diff.DiffEntry;
+import org.eclipse.jgit.diff.DiffFormatter;
+import org.eclipse.jgit.diff.RawTextComparator;
 import org.eclipse.jgit.errors.RepositoryNotFoundException;
 import org.eclipse.jgit.lib.ObjectId;
+import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
+import org.eclipse.jgit.revwalk.RevWalk;
+import org.eclipse.jgit.util.io.DisabledOutputStream;
 
 import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
 
@@ -34,6 +41,99 @@ import code_parser.ModelSourceFile;
 public class RunAnalysis {
 
 		public static void main(String[] args) throws Exception {
+			
+System.setOut(new PrintStream(new FileOutputStream("console-output.txt")));
+			
+			Runtime rt = Runtime.getRuntime();
+			
+			String repo = "./csc326-202-hw3-team01/.git";
+			File repoGit = new File(repo);
+			ModelDeveloper dev = new ModelDeveloper("gldaniel");
+			dev.setUserName("gldaniel");
+			// TODO add pseudo name to reporting?
+			dev.setPseudoName("Joyce");
+			String repoName = "csc326-202-hw3-team01";
+			String dir = "./csc326-202-hw3-team01/";
+			File directory = new File (dir);
+			
+			clearOutDirectory(directory);
+			directory.delete();
+			
+			Process p3 = rt.exec("git clone https://github.ncsu.edu/engr-csc326-fall2014/csc326-202-hw3-team01.git");
+			System.out.println(p3.waitFor());
+			
+			//System.out.println("Project cloned!");
+			
+			
+			//set repository history
+			ModelRepository repository = new ModelRepository(repoGit);
+			Git gitHub = repository.getGitRepository();
+			
+			if (repository.setRepositoryRevisionHistory(gitHub, dev) != null){
+				repository.setRepositoryRevisionHistory(gitHub, dev);
+				
+				//ArrayList<RevCommit> commits = repository.getRevisions();
+
+				//set source files for each directory
+				repository.setSourceFiles(dir);
+				
+				//set history for each file
+				for (ModelSourceFile f: repository.getSourceFiles()) {
+					repository.setFileRevisionHistory(gitHub, f);
+				}
+				
+				List<String> changedFiles = new ArrayList<>();
+
+				
+				for (int i=1; i < repository.getRevisions().size(); i++ ){
+					Repository repo_git = repository.getRepo();
+					
+					RevCommit commit = repository.getRevisions().get(i);
+					
+					RevCommit parent = repository.getRevisions().get(i-1);
+					DiffFormatter df = new DiffFormatter(DisabledOutputStream.INSTANCE);
+					df.setRepository(repo_git);
+					df.setDiffComparator(RawTextComparator.DEFAULT);
+					df.setDetectRenames(true);
+					List<DiffEntry> diffs = df.scan(parent.getTree(), commit.getTree());
+					
+					//System.out.println("***FILES CHANGED IN COMMIT " + ObjectId.toString(commit.getId()) + "***");
+										
+					for (DiffEntry diff: diffs){
+						String fullPath = MessageFormat.format("({0} {1} {2}", diff.getChangeType().name(), diff.getNewMode().getBits(), diff.getNewPath());
+						if (fullPath.contains("/")){
+							int index = fullPath.lastIndexOf("/");
+							String file = fullPath.substring(index+1, fullPath.length());
+							if (file.contains("java")){
+								//System.out.println(file);
+								if (!(changedFiles.contains(file))){
+									changedFiles.add(file);						
+								}
+							}
+						}
+					}
+				}
+				
+				for (String file: changedFiles){
+					for (ModelSourceFile file2: repository.getSourceFiles()){
+						if (file2.getName().equals(file)){
+							repository.addChangedFile(file2);
+						}
+					}						
+				}			
+				
+//				System.out.println("ALL CHANGED FILES:");
+//				for (ModelSourceFile change: repository.getChangedFiles()){
+//					System.out.println(change.getName());
+//				}
+	
+								
+				//Analyze ASTs for all revisions (right now for null checks)
+				repository.revertAndAnalyzeForNull(gitHub, dir, dev, repoName);
+		}	
+				
+				
+
 			
 //			File users = new File("test-github-users.txt");
 //			FileReader in1 = new FileReader(users);
@@ -175,52 +275,7 @@ public class RunAnalysis {
 //			br.close();
 
 
-			System.setOut(new PrintStream(new FileOutputStream("console-output.txt")));
 			
-			Runtime rt = Runtime.getRuntime();
-			
-			String repo = "./Telecine/.git";
-			File repoGit = new File(repo);
-			ModelDeveloper dev = new ModelDeveloper("Jake Wharton");
-			dev.setUserName("JakeWharton");
-			// TODO add pseudo name to reporting?
-			//dev.setPseudoName("Jia");
-			String repoName = "Telecine";
-			String dir = "./Telecine/";
-			File directory = new File (dir);
-			
-			clearOutDirectory(directory);
-			directory.delete();
-			
-			Process p3 = rt.exec("git clone https://github.com/JakeWharton/Telecine.git");
-			System.out.println(p3.waitFor());
-			
-			//System.out.println("Project cloned!");
-			
-			
-			//set repository history
-			ModelRepository repository = new ModelRepository(repoGit);
-			Git gitHub = repository.getGitRepository();
-			
-			if (repository.setRepositoryRevisionHistory(gitHub, dev) != null){
-				repository.setRepositoryRevisionHistory(gitHub, dev);
-				
-				//ArrayList<RevCommit> commits = repository.getRevisions();
-
-				//set source files for each directory
-				repository.setSourceFiles(dir);
-				
-				//set history for each file
-				for (ModelSourceFile f: repository.getSourceFiles()) {
-					repository.setFileRevisionHistory(gitHub, f);
-				}
-								
-				//Analyze ASTs for all revisions (right now for null checks)
-				repository.revertAndAnalyzeForNull(gitHub, dir, dev, repoName);
-		}	
-				
-				
-
 		}
 		
 

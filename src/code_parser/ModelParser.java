@@ -92,7 +92,10 @@ public class ModelParser {
 		// add to file's list of null checks (if not already there)
 		//ArrayList<String> fileNullChecks = file.getNullChecks();
 
+		System.out.println("********Null checks found in " + file.getName() + "********");
+		
 		for (String check: visitor.getNullChecks()){
+			System.out.println(check);
 			file.addNullCheck(check);
 //			if (file.hasThisCheck(check) == false){
 //			}
