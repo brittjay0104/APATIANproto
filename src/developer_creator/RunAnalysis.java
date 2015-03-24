@@ -42,7 +42,7 @@ public class RunAnalysis {
 
 		public static void main(String[] args) throws Exception {
 			
-System.setOut(new PrintStream(new FileOutputStream("console-output.txt")));
+			System.setOut(new PrintStream(new FileOutputStream("console-output.txt")));
 			
 			Runtime rt = Runtime.getRuntime();
 			
@@ -81,55 +81,10 @@ System.setOut(new PrintStream(new FileOutputStream("console-output.txt")));
 				for (ModelSourceFile f: repository.getSourceFiles()) {
 					repository.setFileRevisionHistory(gitHub, f);
 				}
-				
-				List<String> changedFiles = new ArrayList<>();
-
-				
-				for (int i=1; i < repository.getRevisions().size(); i++ ){
-					Repository repo_git = repository.getRepo();
-					
-					RevCommit commit = repository.getRevisions().get(i);
-					
-					RevCommit parent = repository.getRevisions().get(i-1);
-					DiffFormatter df = new DiffFormatter(DisabledOutputStream.INSTANCE);
-					df.setRepository(repo_git);
-					df.setDiffComparator(RawTextComparator.DEFAULT);
-					df.setDetectRenames(true);
-					List<DiffEntry> diffs = df.scan(parent.getTree(), commit.getTree());
-					
-					//System.out.println("***FILES CHANGED IN COMMIT " + ObjectId.toString(commit.getId()) + "***");
-										
-					for (DiffEntry diff: diffs){
-						String fullPath = MessageFormat.format("({0} {1} {2}", diff.getChangeType().name(), diff.getNewMode().getBits(), diff.getNewPath());
-						if (fullPath.contains("/")){
-							int index = fullPath.lastIndexOf("/");
-							String file = fullPath.substring(index+1, fullPath.length());
-							if (file.contains("java")){
-								//System.out.println(file);
-								if (!(changedFiles.contains(file))){
-									changedFiles.add(file);						
-								}
-							}
-						}
-					}
-				}
-				
-				for (String file: changedFiles){
-					for (ModelSourceFile file2: repository.getSourceFiles()){
-						if (file2.getName().equals(file)){
-							repository.addChangedFile(file2);
-						}
-					}						
-				}			
-				
-//				System.out.println("ALL CHANGED FILES:");
-//				for (ModelSourceFile change: repository.getChangedFiles()){
-//					System.out.println(change.getName());
-//				}
-	
 								
 				//Analyze ASTs for all revisions (right now for null checks)
 				repository.revertAndAnalyzeForNull(gitHub, dir, dev, repoName);
+			}	
 		}	
 				
 				
@@ -273,63 +228,6 @@ System.setOut(new PrintStream(new FileOutputStream("console-output.txt")));
 //			}
 //			
 //			br.close();
-
-
-<<<<<<< HEAD
-			
-=======
-			//System.setOut(new PrintStream(new FileOutputStream("console-output.txt")));
-			
-			Runtime rt = Runtime.getRuntime();
-			
-			String repo = "./sc326-203-project-team03/.git";
-			File repoGit = new File(repo);
-			ModelDeveloper dev = new ModelDeveloper("kxbui");
-			dev.setUserName("kxbui");
-			// TODO add pseudo name to reporting?
-			dev.setPseudoName("Jia");
-			String repoName = "sc326-203-project-team03";
-			String dir = "./sc326-203-project-team03/";
-			File directory = new File (dir);
-			
-			clearOutDirectory(directory);
-			directory.delete();
-			
-			Process p3 = rt.exec("git clone https://github.ncsu.edu/engr-csc326-fall2014/csc326-203-project-team03.git");
-//			OutputStream pout = p3.getOutputStream();
-//			PrintWriter username = new PrintWriter(pout);
-//			username.println("bijohnso");
-//			OutputStream pout2 = p3.getOutputStream();
-//			PrintWriter password = new PrintWriter(pout2);
-//			password.println("Research14");
-			System.out.println(p3.waitFor());
-			
-			System.out.println("Project cloned!");
-			
-//			//set repository history
-//			ModelRepository repository = new ModelRepository(repoGit);
-//			Git gitHub = repository.getGitRepository();
-//			
-//			if (repository.setRepositoryRevisionHistory(gitHub, dev) != null){
-//				repository.setRepositoryRevisionHistory(gitHub, dev);
-//				
-//				//ArrayList<RevCommit> commits = repository.getRevisions();
-//
-//				//set source files for each directory
-//				repository.setSourceFiles(dir);
-//				
-//				//set history for each file
-//				for (ModelSourceFile f: repository.getSourceFiles()) {
-//					repository.setFileRevisionHistory(gitHub, f);
-//				}
-//								
-//				//Analyze ASTs for all revisions (right now for null checks)
-//				repository.revertAndAnalyzeForNull(gitHub, dir, dev, repoName);
-//		}	
-//				
-//				
-
->>>>>>> parent of cab0c34... repo up to date to fix code on mac
 		}
 		
 
