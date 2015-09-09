@@ -291,24 +291,25 @@ public class ModelRepository {
 
 	}
 
-	/**
-	 *
-	 * Analyzes the current revision of the repository for Log4J API method usage.
-	 *
-	 * @param git - Git object that represents the repository to analyze.
-	 * @throws IOException
-	 */
-	public void analyzeForLogging(Git git) throws IOException {
+	
+	public void analyzeForMethodInvocations(Git git, String hash, ModelDeveloper dev, String repoName) throws IOException {
+		
 		ModelParser parser = new ModelParser();
-		 for (ModelSourceFile file: getSourceFiles()){
-			 //parse the files AST for null checks
-			 String hash = ObjectId.toString(revisions.get(0).getId());
-			 parser.parseForLogger(file, hash);
-		 }
-
-		 System.out.println("****Analysis complete for current revision****");
+		//String devName = dev.getDevName();
+		
+		for (ModelSourceFile file: getSourceFiles()){
+			
+			parser.parseForMethodInvocations(file);
+			System.out.println("Method Invocations in " + file.getName());
+			Map<String, Integer> methodInvocs = file.getMethodInvocs();
+			for (Map.Entry<String, Integer> entry: methodInvocs.entrySet()){
+				String key = entry.getKey();
+				Integer count = entry.getValue();
+				
+				System.out.println("	Method: " + key + "				" + count);
+			}
+		}
 	}
-
 
 	/**
 	 *
@@ -325,7 +326,7 @@ public class ModelRepository {
 		if(developer.getCommits().contains(newH)){
 			System.out.println("Null checks found in initial commit -- added at creation of the repository.");
 
-			for (ModelSourceFile file: getChangedFiles()) {
+			for (ModelSourceFile file: getSourceFiles()) {
 				// parse the files AST for null checks
 				List<String> checks = parser.parseForNull(file, newH);
 
@@ -427,7 +428,7 @@ public class ModelRepository {
 		
 		System.out.println("****Parsing at revision " + newHash + "****");
 
-		for (ModelSourceFile f: getChangedFiles()) {
+		for (ModelSourceFile f: getSourceFiles()) {
 			
 			setFileRevisionHistory(git, f);
 
@@ -662,74 +663,6 @@ public class ModelRepository {
 		}
 		
 	}
-	
-	public void diff2(String directory, ModelSourceFile file, String oldH, String newH, ModelDeveloper developer) {
-		File repoDir = new File(directory);
-
-//		List<String> addedNullChecks = new ArrayList<String>();
-//		int added = 0;
-//		int removed = 0;
-//		int deref = 0;
-		
-		
-		Git git;
-		//current revision
-		String newHash = newH;
-
-		try {
-			git = Git.open(repoDir);
-			// next to current revision (older)
-			String oldHash = getOldHash(newH);
-
-
-			ObjectId headId = git.getRepository().resolve(newHash + "^{tree}");
-			ObjectId oldId = git.getRepository().resolve(oldHash + "^{tree}");
-
-			ObjectReader reader = git.getRepository().newObjectReader();
-
-			CanonicalTreeParser oldTreeIter = new CanonicalTreeParser();
-			oldTreeIter.reset(reader, oldId);
-			CanonicalTreeParser newTreeIter = new CanonicalTreeParser();
-			newTreeIter.reset(reader, headId);
-
-			List<DiffEntry> diffs;
-			diffs = git.diff()
-					.setNewTree(newTreeIter)
-					.setOldTree(oldTreeIter)
-					.call();
-
-			ByteArrayOutputStream out = new ByteArrayOutputStream();
-			DiffFormatter df = new DiffFormatter(out);
-			df.setRepository(git.getRepository());
-
-			for(DiffEntry diff : diffs){
-				df.format(diff);
-				diff.getOldId();
-				String diffText = out.toString("UTF-8");
-
-				if (diffText.contains(file.getName())){
-					ModelParser parser = new ModelParser();
-					List<String> checks = parser.parseForNull(file, oldHash);
-
-//					BufferedReader br = new BufferedReader(new StringReader(diffText));
-//					String line = null;
-//
-//					while((line = br.readLine())!= null){
-//						line = line.trim();
-//						
-//						if (line.contains("null")){
-//							System.out.println(line);
-//						}
-//					}
-				}
-			}
-			
-		} catch (Exception e){
-			System.out.println("Exception caught at line 713!");
-		}
-				
-			
-		}
 
 	public void diff(String directory, ModelSourceFile file, List<String> checks, String oldH, String newH, ModelDeveloper developer) {
 		File repoDir = new File(directory);

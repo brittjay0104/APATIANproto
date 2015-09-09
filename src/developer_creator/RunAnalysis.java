@@ -18,6 +18,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import node_visitor.NODP_Visitor;
 import node_visitor.NoNullCheckVisitor;
 
 import org.apache.commons.lang.StringUtils;
@@ -44,47 +45,55 @@ public class RunAnalysis {
 			
 			System.setOut(new PrintStream(new FileOutputStream("console-output.txt")));
 			
-			Runtime rt = Runtime.getRuntime();
+//			Runtime rt = Runtime.getRuntime();
+//			
+//			String repo = "./wutson/.git";
+//			File repoGit = new File(repo);
+//			ModelDeveloper dev = new ModelDeveloper("Ataul Munim");
+//			dev.setUserName("ataulm");
+//			// TODO add pseudo name to reporting?
+//			//dev.setPseudoName("Joyce");
+//			String repoName = "wutson";
+//			String dir = "./wutson/";
+//			File directory = new File (dir);
+//			
+//			clearOutDirectory(directory);
+//			directory.delete();
+//			
+//			//Process p3 = rt.exec("git clone https://github.com/geftimov/MapReduce.git");
+//			Process p3 = rt.exec("git clone -b landing-strip https://github.com/ataulm/wutson.git"); 
+//			System.out.println(p3.waitFor());
+//			
+//			//System.out.println("Project cloned!");
+//			
+//			
+//			//set repository history
+//			ModelRepository repository = new ModelRepository(repoGit);
+//			Git gitHub = repository.getGitRepository();
 			
-			String repo = "./csc326-202-hw3-team01/.git";
-			File repoGit = new File(repo);
-			ModelDeveloper dev = new ModelDeveloper("gldaniel");
-			dev.setUserName("gldaniel");
-			// TODO add pseudo name to reporting?
-			dev.setPseudoName("Joyce");
-			String repoName = "csc326-202-hw3-team01";
-			String dir = "./csc326-202-hw3-team01/";
-			File directory = new File (dir);
+//			if (repository.setRepositoryRevisionHistory(gitHub, dev) != null){
+//				repository.setRepositoryRevisionHistory(gitHub, dev);
+//				
+//				//ArrayList<RevCommit> commits = repository.getRevisions();
+//
+//				//set source files for each directory
+//				repository.setSourceFiles(dir);
+//				
+//				//set history for each file
+//				for (ModelSourceFile f: repository.getSourceFiles()) {
+//					repository.setFileRevisionHistory(gitHub, f);
+//				}
+//								
+//				//Analyze ASTs for all revisions (right now for null checks)
+//				repository.revertAndAnalyzeForNull(gitHub, dir, dev, repoName);
+////				/repository.analyzeForMethodInvocations(gitHub, "", dev, repoName);
+//			}	
 			
-			clearOutDirectory(directory);
-			directory.delete();
+			ModelSourceFile f = new ModelSourceFile(new File ("./src/node_visitor/NullObjectPattern_test.java"));
 			
-			Process p3 = rt.exec("git clone https://github.ncsu.edu/engr-csc326-fall2014/csc326-202-hw3-team01.git");
-			System.out.println(p3.waitFor());
+			ModelParser p = new ModelParser();
+			p.parseForNODP(f);
 			
-			//System.out.println("Project cloned!");
-			
-			
-			//set repository history
-			ModelRepository repository = new ModelRepository(repoGit);
-			Git gitHub = repository.getGitRepository();
-			
-			if (repository.setRepositoryRevisionHistory(gitHub, dev) != null){
-				repository.setRepositoryRevisionHistory(gitHub, dev);
-				
-				//ArrayList<RevCommit> commits = repository.getRevisions();
-
-				//set source files for each directory
-				repository.setSourceFiles(dir);
-				
-				//set history for each file
-				for (ModelSourceFile f: repository.getSourceFiles()) {
-					repository.setFileRevisionHistory(gitHub, f);
-				}
-								
-				//Analyze ASTs for all revisions (right now for null checks)
-				repository.revertAndAnalyzeForNull(gitHub, dir, dev, repoName);
-			}	
 		}	
 				
 				
@@ -228,7 +237,7 @@ public class RunAnalysis {
 //			}
 //			
 //			br.close();
-		}
+		
 		
 
 

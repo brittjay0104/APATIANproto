@@ -5,6 +5,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.eclipse.jdt.core.dom.ASTNode;
 
@@ -36,6 +37,8 @@ public class ModelSourceFile {
 	// and disappear from the
 	// list of null checks returned from the visitor
 	public ArrayList<String> methods;
+	
+	public Map<String, Integer> methodInvocs;
 
 	List<ModelDeveloper> devs; // List of developers that touched this file
 
@@ -68,6 +71,7 @@ public class ModelSourceFile {
 
 		commits = new ArrayList<ModelCommit>();
 		methods = new ArrayList<String>();
+		methodInvocs = new HashMap<String, Integer>();
 	}
 
 	/**
@@ -235,6 +239,15 @@ public class ModelSourceFile {
 	 */
 	public ArrayList<String> getNullMethods() {
 		return methods;
+	}
+	
+	
+	public Map<String, Integer> getMethodInvocs(){
+		return methodInvocs;
+	}
+	
+	public void addMethodInvoc(String method, Integer count){
+		methodInvocs.put(method, count);
 	}
 	
 

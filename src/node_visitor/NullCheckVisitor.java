@@ -34,8 +34,6 @@ public class NullCheckVisitor extends ASTVisitor{
 	// null check and next line of code
 	ArrayList<String> ifAndNext;
 
-	String removedMethod;
-	String removedStartPos;
 	private char[] source;
 
 
@@ -68,7 +66,7 @@ public class NullCheckVisitor extends ASTVisitor{
 
 	@SuppressWarnings("unchecked")
 	public boolean visit(InfixExpression node){
-		
+				
 		Expression leftOperand = node.getLeftOperand();
 		Operator op = node.getOperator();
 		Expression rightOperand = node.getRightOperand();

@@ -13,8 +13,10 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import node_visitor.Log4JVisitor;
+import node_visitor.NODP_Visitor;
 import node_visitor.NoNullCheckVisitor;
 import node_visitor.NullCheckVisitor;
+import node_visitor.StringMethodVisitor;
 
 import org.eclipse.core.resources.IFolder;
 import org.eclipse.core.resources.IProject;
@@ -111,6 +113,39 @@ public class ModelParser {
 	}
 	
 	
+	public Map<String,Integer> parseForMethodInvocations(ModelSourceFile file) throws IOException{
+		ASTParser parser = ASTParser.newParser(AST.JLS4);
+
+		String src = readFiletoString(file.getSourceFile().getCanonicalPath());
+
+		file.setSource(src.toCharArray());
+
+		parser.setResolveBindings(true);
+		parser.setStatementsRecovery(true);
+		parser.setSource(src.toCharArray());
+		parser.setKind(ASTParser.K_COMPILATION_UNIT);
+
+		CompilationUnit cu = (CompilationUnit) parser.createAST(null);
+		
+		StringMethodVisitor visitor = new StringMethodVisitor(file);
+		cu.accept(visitor);
+		
+		Map<String, Integer> methods = visitor.getMethods();
+
+		Map<String, Integer> fileMethods = file.getMethodInvocs();
+		
+		for (Map.Entry<String, Integer> entry: methods.entrySet()){
+			String key = entry.getKey();
+			Integer count = entry.getValue();
+			
+			file.addMethodInvoc(key, count);
+		}
+		
+		
+		return methods;		
+		
+	}
+	
 
 	public void parseForNoNullCheck(ModelSourceFile file) throws IOException{
 		ASTParser parser = ASTParser.newParser(AST.JLS4);
@@ -145,6 +180,28 @@ public class ModelParser {
 
 	}
 
+	public void parseForNODP(ModelSourceFile file) throws IOException{
+		ASTParser parser = ASTParser.newParser(AST.JLS4);
+
+		String src = readFiletoString(file.getSourceFile().getCanonicalPath());
+
+		file.setSource(src.toCharArray());
+		
+		 Map options = JavaCore.getOptions();
+		 JavaCore.setComplianceOptions(JavaCore.VERSION_1_6, options);
+		 parser.setCompilerOptions(options);
+
+		parser.setResolveBindings(true);
+		parser.setStatementsRecovery(true);
+		parser.setSource(src.toCharArray());
+		parser.setUnitName(file.getName());
+		parser.setKind(ASTParser.K_COMPILATION_UNIT);
+
+		CompilationUnit cu = (CompilationUnit) parser.createAST(null);
+
+		NODP_Visitor visitor = new NODP_Visitor(file);
+		cu.accept(visitor);
+	}
 
 	private void transferNullAssignments(ModelSourceFile file,
 			NoNullCheckVisitor visitor) {
