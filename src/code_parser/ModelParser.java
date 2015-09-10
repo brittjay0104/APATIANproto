@@ -203,6 +203,9 @@ public class ModelParser {
 		NODP_Visitor visitor = new NODP_Visitor(file);
 		cu.accept(visitor);
 		// NODP only 
+		
+		// TODO add list for NODPs to file
+		// TODO attach NODPs to file
 	}
 	
 	public void parseForNPEAvoidance(ModelSourceFile file) throws IOException{
@@ -227,6 +230,9 @@ public class ModelParser {
 		NPE_Visitor visitor = new NPE_Visitor(file);
 		cu.accept(visitor);
 		// includes Collections, Optional, and Catch Blocks 
+		
+		// TODO add list for Collections, Optional and Catch blocks to file
+		// TODO attach each to file
 	}
 
 	private void transferNullAssignments(ModelSourceFile file,
