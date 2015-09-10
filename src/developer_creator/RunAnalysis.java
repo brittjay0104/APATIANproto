@@ -93,6 +93,7 @@ public class RunAnalysis {
 			
 			ModelParser p = new ModelParser();
 			p.parseForNODP(f);
+			p.parseForNPEAvoidance(f);
 			
 		}	
 				

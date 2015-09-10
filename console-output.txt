@@ -1,3 +1,1 @@
-Potential Singleton!
-Potential NODP!
-instance=new NullObjectPattern_test()
+NullObjectPattern_test-instance

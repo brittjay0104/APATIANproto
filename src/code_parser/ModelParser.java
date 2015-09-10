@@ -14,6 +14,7 @@ import java.util.Map.Entry;
 
 import node_visitor.Log4JVisitor;
 import node_visitor.NODP_Visitor;
+import node_visitor.NPE_Visitor;
 import node_visitor.NoNullCheckVisitor;
 import node_visitor.NullCheckVisitor;
 import node_visitor.StringMethodVisitor;
@@ -201,6 +202,31 @@ public class ModelParser {
 
 		NODP_Visitor visitor = new NODP_Visitor(file);
 		cu.accept(visitor);
+		// NODP only 
+	}
+	
+	public void parseForNPEAvoidance(ModelSourceFile file) throws IOException{
+		ASTParser parser = ASTParser.newParser(AST.JLS4);
+
+		String src = readFiletoString(file.getSourceFile().getCanonicalPath());
+
+		file.setSource(src.toCharArray());
+		
+		 Map options = JavaCore.getOptions();
+		 JavaCore.setComplianceOptions(JavaCore.VERSION_1_6, options);
+		 parser.setCompilerOptions(options);
+
+		parser.setResolveBindings(true);
+		parser.setStatementsRecovery(true);
+		parser.setSource(src.toCharArray());
+		parser.setUnitName(file.getName());
+		parser.setKind(ASTParser.K_COMPILATION_UNIT);
+
+		CompilationUnit cu = (CompilationUnit) parser.createAST(null);
+
+		NPE_Visitor visitor = new NPE_Visitor(file);
+		cu.accept(visitor);
+		// includes Collections, Optional, and Catch Blocks 
 	}
 
 	private void transferNullAssignments(ModelSourceFile file,
