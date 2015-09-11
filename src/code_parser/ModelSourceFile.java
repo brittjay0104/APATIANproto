@@ -32,6 +32,11 @@ public class ModelSourceFile {
 	public ArrayList<String> removedFields;
 	public HashMap<String, ArrayList<String>> removedVars;
 	public HashMap<String, ArrayList<String>> removedAssigns;
+	
+	public List<String> NODPs;
+	public List<String> collVars;
+	public List<String> optVars;
+	public List<String> catchBlocks;
 
 	// ArrayList for keeping track of locations of null checks as they appear
 	// and disappear from the
@@ -68,6 +73,10 @@ public class ModelSourceFile {
 		removedFields = new ArrayList<String>();
 		removedVars = new HashMap<String, ArrayList<String>>();
 		removedAssigns = new HashMap<String, ArrayList<String>>();
+		NODPs = new ArrayList<String>();
+		collVars = new ArrayList<String>();
+		optVars = new ArrayList<String>();
+		catchBlocks = new ArrayList<String>();
 
 		commits = new ArrayList<ModelCommit>();
 		methods = new ArrayList<String>();
@@ -272,6 +281,54 @@ public class ModelSourceFile {
 	public void addNullField(String field) {
 		if (!(nullFields.contains(field))){
 			nullFields.add(field);			
+		}
+	}
+	
+	public void addNODP(String nodp){
+		if (!(NODPs.contains(nodp))){
+			NODPs.add(nodp);
+		}
+	}
+	
+	public void addCollVar(String collVar){
+		if (!(collVars.contains(collVar))){
+			collVars.add(collVar);
+		}
+	}
+	
+	public void addOptVar(String optVar){
+		if (!(optVars.contains(optVar))){
+			optVars.add(optVar);
+		}
+	}
+	
+	public void addCatchBlock(String cblock){
+		if (!(catchBlocks.contains(cblock))){
+			catchBlocks.add(cblock);
+		}
+	}
+	
+	public void removeNODP(String nodp){
+		if (NODPs.contains(nodp)){
+			NODPs.remove(nodp);
+		}
+	}
+	
+	public void removeCollVar(String collVar){
+		if (collVars.contains(collVar)){
+			collVars.remove(collVar);
+		}
+	}
+	
+	public void removeOptVar(String optVar){
+		if (optVars.contains(optVar)){
+			optVars.remove(optVar);
+		}
+	}
+	
+	public void removeCatchBlock(String cblock){
+		if (catchBlocks.contains(cblock)){
+			catchBlocks.remove(cblock);
 		}
 	}
 	
