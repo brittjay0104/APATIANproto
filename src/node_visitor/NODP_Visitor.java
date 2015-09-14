@@ -17,6 +17,7 @@ import code_parser.ModelSourceFile;
 
 public class NODP_Visitor extends ASTVisitor{
 	
+	public static final char CHECK_SEPERATOR = Character.MAX_VALUE;
 	
 	List<String> NODPs = new ArrayList<String>();
 	List<String> fields =  new ArrayList<String>();
@@ -64,11 +65,12 @@ public class NODP_Visitor extends ASTVisitor{
 					//System.out.println(var);
 					
 					//Add type to field for uniqueness (required for Singleton/NODP)
-					String NODPVar = type + "-" + var;
+					String NODPVar = type + CHECK_SEPERATOR + var;
 					
 					// Add field that could be used in NODP
 					//System.out.println(NODPVar);
 					if (!fields.contains(NODPVar)){
+						//System.out.println(NODPVar + " added!");
 						fields.add(NODPVar);						
 					}
 				}
@@ -87,12 +89,14 @@ public class NODP_Visitor extends ASTVisitor{
 		//System.out.println(ret);
 		for (int i =0; i < fields.size(); i++){
 			String field = fields.get(i);
-			if (ret.contains(field)){
+			String var = field.substring(field.indexOf(CHECK_SEPERATOR)+1, field.length());
+			//System.out.println("Return variable: " + var);
+			if (ret.contains(var)){
 				MethodDeclaration md = getMethodDeclaration(node);
 				String m = md.modifiers().toString();
 				if (m.contains("static")){
-//					System.out.println("Static method that returns " + field);
-//					System.out.println(field + " might be used for NODP!");
+					//System.out.println("Static method that returns " + field);
+					//System.out.println(field + " might be used for NODP!");
 					
 					// Strong possibility NODP in play
 					NODPs.add(field);

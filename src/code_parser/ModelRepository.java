@@ -454,9 +454,6 @@ public class ModelRepository {
 
 			
 			List<String> nodps = parser.parseForNODP(f);
-			for (String nodp:nodps){
-				System.out.println("NODPs --> " + nodp);
-			}
 			//diff(directory, f, nodps, oldHash, newHash, dev);
 			
 			ArrayList<List<String>> npes = parser.parseForNPEAvoidance(f);

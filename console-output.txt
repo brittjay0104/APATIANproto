@@ -1,4 +1,7 @@
 0
+Brittany Johnson is responsible for commit cc3ddbeae6a07ca9dcff955414347eb6671973c2
+Brittany Johnson is responsible for commit 0a25aed5077f7ccea9a5fd250276f07b67c72e4d
+Brittany Johnson is responsible for commit 4881ebb49752c14fa1de653c04860f4795c6c018
 Brittany Johnson is responsible for commit 6888020f79e96019701b96fb6b6df877e1538774
 Brittany Johnson is responsible for commit 8f18d890450470134132334ae437e0533a8055ed
 Brittany Johnson is responsible for commit 857e116e048bf5716d69af47d569351703fe1482
@@ -23,9 +26,150 @@ Brittany Johnson is responsible for commit 0503095b786e41eeeec68f2fd05790d166e98
 Brittany Johnson is responsible for commit 0192df473e64d8d49a241f7a6413687f0d94d191
 Brittany Johnson is responsible for commit 72b7cc0d7791caa46f249a3b0695d3ec7e652482
 
+Reverted to commit cc3ddbeae6a07ca9dcff955414347eb6671973c2
+
+****Parsing at revision cc3ddbeae6a07ca9dcff955414347eb6671973c2****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
+
+Diff of 0a25aed5077f7ccea9a5fd250276f07b67c72e4d and cc3ddbeae6a07ca9dcff955414347eb6671973c2:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 0
+****Parsing at revision cc3ddbeae6a07ca9dcff955414347eb6671973c2****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
+
+Diff of 0a25aed5077f7ccea9a5fd250276f07b67c72e4d and cc3ddbeae6a07ca9dcff955414347eb6671973c2:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 0
+
+Reverted to commit 0a25aed5077f7ccea9a5fd250276f07b67c72e4d
+
+****Parsing at revision 0a25aed5077f7ccea9a5fd250276f07b67c72e4d****
+********Null checks found in NullObjectPattern_test.java********
+Return variable: instance
+Static method that returns NullObjectPattern_test￿instance
+NullObjectPattern_test￿instance might be used for NODP!
+Return variable: instance
+NODP from visitor -- NullObjectPattern_test￿instance
+NODPs --> NullObjectPattern_test￿instance
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
+
+Diff of 4881ebb49752c14fa1de653c04860f4795c6c018 and 0a25aed5077f7ccea9a5fd250276f07b67c72e4d:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 0
+****Parsing at revision 0a25aed5077f7ccea9a5fd250276f07b67c72e4d****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
+********Null checks found in NullObjectPattern_test.java********
+Return variable: instance
+Static method that returns NullObjectPattern_test￿instance
+NullObjectPattern_test￿instance might be used for NODP!
+Return variable: instance
+NODP from visitor -- NullObjectPattern_test￿instance
+NODPs --> NullObjectPattern_test￿instance
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
+
+Diff of 4881ebb49752c14fa1de653c04860f4795c6c018 and 0a25aed5077f7ccea9a5fd250276f07b67c72e4d:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 0
+
+Reverted to commit 4881ebb49752c14fa1de653c04860f4795c6c018
+
+****Parsing at revision 4881ebb49752c14fa1de653c04860f4795c6c018****
+********Null checks found in NullObjectPattern_test.java********
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
+
+Diff of 6888020f79e96019701b96fb6b6df877e1538774 and 4881ebb49752c14fa1de653c04860f4795c6c018:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 0
+****Parsing at revision 4881ebb49752c14fa1de653c04860f4795c6c018****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
+
+Diff of 6888020f79e96019701b96fb6b6df877e1538774 and 4881ebb49752c14fa1de653c04860f4795c6c018:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 0
+
 Reverted to commit 6888020f79e96019701b96fb6b6df877e1538774
 
 ****Parsing at revision 6888020f79e96019701b96fb6b6df877e1538774****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
 ********Null checks found in testClass.java********
 rowToJSONArray￿value == null
 rowToJSONObject￿ja != null
@@ -41,6 +185,15 @@ Diff of 8f18d890450470134132334ae437e0533a8055ed and 6888020f79e96019701b96fb6b6
 	--> Removed null checks = 0
 	--> Null dereferences checked for null = 0
 ****Parsing at revision 6888020f79e96019701b96fb6b6df877e1538774****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
 ********Null checks found in testClass.java********
 rowToJSONArray￿value == null
 rowToJSONObject￿ja != null
@@ -68,12 +221,30 @@ toJSONArray￿jo == null
 toString￿names != null
 toString￿names == null
 toString￿jo != null
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
 
 Diff of 857e116e048bf5716d69af47d569351703fe1482 and 8f18d890450470134132334ae437e0533a8055ed:
 	--> Added null checks = 0
 	--> Removed null checks = 0
 	--> Null dereferences checked for null = 0
 ****Parsing at revision 8f18d890450470134132334ae437e0533a8055ed****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
 ********Null checks found in testClass.java********
 rowToJSONArray￿value == null
 rowToJSONObject￿ja != null
@@ -101,12 +272,30 @@ toJSONArray￿jo == null
 toString￿names != null
 toString￿names == null
 toString￿jo != null
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
 
 Diff of 7ee29eab7603f2b6bfec1bd9ca08550210794cf1 and 857e116e048bf5716d69af47d569351703fe1482:
 	--> Added null checks = 0
 	--> Removed null checks = 0
 	--> Null dereferences checked for null = 0
 ****Parsing at revision 857e116e048bf5716d69af47d569351703fe1482****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
 ********Null checks found in testClass.java********
 rowToJSONArray￿value == null
 rowToJSONObject￿ja != null
@@ -136,12 +325,30 @@ toJSONArray￿jo == null
 toString￿names != null
 toString￿names == null
 toString￿jo != null
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
 
 Diff of 201a55b597f9e84f25dcdf30b0898516f7a2b089 and 9701c53d52f9314f3169b1a706adc8764c26e270:
 	--> Added null checks = 0
 	--> Removed null checks = 0
 	--> Null dereferences checked for null = 0
 ****Parsing at revision 9701c53d52f9314f3169b1a706adc8764c26e270****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
 ********Null checks found in testClass.java********
 rowToJSONArray￿value == null
 rowToJSONObject￿ja != null
@@ -169,12 +376,30 @@ toJSONArray￿jo == null
 toString￿names != null
 toString￿names == null
 toString￿jo != null
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
 
 Diff of 814dd1ef0e251136cb4290a51c100b73d8a1ae83 and 201a55b597f9e84f25dcdf30b0898516f7a2b089:
 	--> Added null checks = 0
 	--> Removed null checks = 0
 	--> Null dereferences checked for null = 0
 ****Parsing at revision 201a55b597f9e84f25dcdf30b0898516f7a2b089****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
 ********Null checks found in testClass.java********
 rowToJSONArray￿value == null
 rowToJSONObject￿ja != null
@@ -204,12 +429,6 @@ toString￿names == null
 toString￿jo != null
 Null usage pattern was removed at revision 814dd1ef0e251136cb4290a51c100b73d8a1ae83
 Null usage pattern was added at revision 814dd1ef0e251136cb4290a51c100b73d8a1ae83
-
-Diff of f93315ce0631a7587bec2a4d8f344f846ecc12e2 and 814dd1ef0e251136cb4290a51c100b73d8a1ae83:
-	--> Added null checks = 1
-	--> Removed null checks = 1
-	--> Null dereferences checked for null = 0
-****Parsing at revision 814dd1ef0e251136cb4290a51c100b73d8a1ae83****
 ********Null checks found in testClass.java********
 rowToJSONArray￿value == null
 rowToJSONObject￿ja != null
@@ -226,6 +445,34 @@ Diff of f93315ce0631a7587bec2a4d8f344f846ecc12e2 and 814dd1ef0e251136cb4290a51c1
 	--> Added null checks = 2
 	--> Removed null checks = 2
 	--> Null dereferences checked for null = 0
+****Parsing at revision 814dd1ef0e251136cb4290a51c100b73d8a1ae83****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
+Null usage pattern was removed at revision 814dd1ef0e251136cb4290a51c100b73d8a1ae83
+Null usage pattern was added at revision 814dd1ef0e251136cb4290a51c100b73d8a1ae83
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
+Null usage pattern was removed at revision 814dd1ef0e251136cb4290a51c100b73d8a1ae83
+Null usage pattern was added at revision 814dd1ef0e251136cb4290a51c100b73d8a1ae83
+
+Diff of f93315ce0631a7587bec2a4d8f344f846ecc12e2 and 814dd1ef0e251136cb4290a51c100b73d8a1ae83:
+	--> Added null checks = 4
+	--> Removed null checks = 4
+	--> Null dereferences checked for null = 0
 
 Reverted to commit f93315ce0631a7587bec2a4d8f344f846ecc12e2
 
@@ -239,12 +486,6 @@ toJSONArray￿jo == null
 toString￿names != null
 toString￿names == null
 toString￿jo != null
-
-Diff of b2cef330093522a2a7aeb23d58a15dd49011352e and f93315ce0631a7587bec2a4d8f344f846ecc12e2:
-	--> Added null checks = 2
-	--> Removed null checks = 2
-	--> Null dereferences checked for null = 0
-****Parsing at revision f93315ce0631a7587bec2a4d8f344f846ecc12e2****
 ********Null checks found in testClass.java********
 rowToJSONArray￿value == null
 rowToJSONObject￿ja != null
@@ -256,8 +497,32 @@ toString￿names == null
 toString￿jo != null
 
 Diff of b2cef330093522a2a7aeb23d58a15dd49011352e and f93315ce0631a7587bec2a4d8f344f846ecc12e2:
-	--> Added null checks = 2
-	--> Removed null checks = 2
+	--> Added null checks = 4
+	--> Removed null checks = 4
+	--> Null dereferences checked for null = 0
+****Parsing at revision f93315ce0631a7587bec2a4d8f344f846ecc12e2****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
+
+Diff of b2cef330093522a2a7aeb23d58a15dd49011352e and f93315ce0631a7587bec2a4d8f344f846ecc12e2:
+	--> Added null checks = 4
+	--> Removed null checks = 4
 	--> Null dereferences checked for null = 0
 
 Reverted to commit b2cef330093522a2a7aeb23d58a15dd49011352e
@@ -273,12 +538,6 @@ toString￿jo != null
 toString￿names != null
 toString￿names == null
 Null usage pattern was removed at revision b2cef330093522a2a7aeb23d58a15dd49011352e
-
-Diff of d52134e81daa853a32b16710d4bcc953e130b2d1 and b2cef330093522a2a7aeb23d58a15dd49011352e:
-	--> Added null checks = 2
-	--> Removed null checks = 3
-	--> Null dereferences checked for null = 0
-****Parsing at revision b2cef330093522a2a7aeb23d58a15dd49011352e****
 ********Null checks found in testClass.java********
 rowToJSONArray￿value == null
 rowToJSONObject￿ja != null
@@ -291,8 +550,34 @@ toString￿names == null
 Null usage pattern was removed at revision b2cef330093522a2a7aeb23d58a15dd49011352e
 
 Diff of d52134e81daa853a32b16710d4bcc953e130b2d1 and b2cef330093522a2a7aeb23d58a15dd49011352e:
-	--> Added null checks = 2
-	--> Removed null checks = 4
+	--> Added null checks = 4
+	--> Removed null checks = 6
+	--> Null dereferences checked for null = 0
+****Parsing at revision b2cef330093522a2a7aeb23d58a15dd49011352e****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿jo != null
+toString￿names != null
+toString￿names == null
+Null usage pattern was removed at revision b2cef330093522a2a7aeb23d58a15dd49011352e
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿jo != null
+toString￿names != null
+toString￿names == null
+Null usage pattern was removed at revision b2cef330093522a2a7aeb23d58a15dd49011352e
+
+Diff of d52134e81daa853a32b16710d4bcc953e130b2d1 and b2cef330093522a2a7aeb23d58a15dd49011352e:
+	--> Added null checks = 4
+	--> Removed null checks = 8
 	--> Null dereferences checked for null = 0
 
 Reverted to commit d52134e81daa853a32b16710d4bcc953e130b2d1
@@ -306,12 +591,6 @@ toJSONArray￿jo == null
 toString￿jo != null
 toString￿names != null
 toString￿names == null
-
-Diff of 03aab452bb755559dbb467f0a7933cf4d193099d and d52134e81daa853a32b16710d4bcc953e130b2d1:
-	--> Added null checks = 2
-	--> Removed null checks = 4
-	--> Null dereferences checked for null = 0
-****Parsing at revision d52134e81daa853a32b16710d4bcc953e130b2d1****
 ********Null checks found in testClass.java********
 rowToJSONArray￿value == null
 rowToJSONObject￿ja != null
@@ -322,8 +601,30 @@ toString￿names != null
 toString￿names == null
 
 Diff of 03aab452bb755559dbb467f0a7933cf4d193099d and d52134e81daa853a32b16710d4bcc953e130b2d1:
-	--> Added null checks = 2
-	--> Removed null checks = 4
+	--> Added null checks = 4
+	--> Removed null checks = 8
+	--> Null dereferences checked for null = 0
+****Parsing at revision d52134e81daa853a32b16710d4bcc953e130b2d1****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿jo != null
+toString￿names != null
+toString￿names == null
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿jo != null
+toString￿names != null
+toString￿names == null
+
+Diff of 03aab452bb755559dbb467f0a7933cf4d193099d and d52134e81daa853a32b16710d4bcc953e130b2d1:
+	--> Added null checks = 4
+	--> Removed null checks = 8
 	--> Null dereferences checked for null = 0
 
 Reverted to commit 03aab452bb755559dbb467f0a7933cf4d193099d
@@ -337,12 +638,6 @@ toJSONArray￿jo == null
 toString￿jo != null
 toString￿names != null
 toString￿names == null
-
-Diff of 4c2c27c33e064bcfbebe409c678e021cb648af5f and 03aab452bb755559dbb467f0a7933cf4d193099d:
-	--> Added null checks = 2
-	--> Removed null checks = 4
-	--> Null dereferences checked for null = 0
-****Parsing at revision 03aab452bb755559dbb467f0a7933cf4d193099d****
 ********Null checks found in testClass.java********
 rowToJSONArray￿value == null
 rowToJSONObject￿ja != null
@@ -353,8 +648,30 @@ toString￿names != null
 toString￿names == null
 
 Diff of 4c2c27c33e064bcfbebe409c678e021cb648af5f and 03aab452bb755559dbb467f0a7933cf4d193099d:
-	--> Added null checks = 2
-	--> Removed null checks = 4
+	--> Added null checks = 4
+	--> Removed null checks = 8
+	--> Null dereferences checked for null = 0
+****Parsing at revision 03aab452bb755559dbb467f0a7933cf4d193099d****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿jo != null
+toString￿names != null
+toString￿names == null
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿jo != null
+toString￿names != null
+toString￿names == null
+
+Diff of 4c2c27c33e064bcfbebe409c678e021cb648af5f and 03aab452bb755559dbb467f0a7933cf4d193099d:
+	--> Added null checks = 4
+	--> Removed null checks = 8
 	--> Null dereferences checked for null = 0
 
 Reverted to commit 4c2c27c33e064bcfbebe409c678e021cb648af5f
@@ -368,12 +685,6 @@ toJSONArray￿jo == null
 toString￿jo != null
 toString￿names != null
 toString￿names == null
-
-Diff of e7a40c32bb742d16175e643c49b99eded2110d07 and 4c2c27c33e064bcfbebe409c678e021cb648af5f:
-	--> Added null checks = 2
-	--> Removed null checks = 4
-	--> Null dereferences checked for null = 0
-****Parsing at revision 4c2c27c33e064bcfbebe409c678e021cb648af5f****
 ********Null checks found in testClass.java********
 rowToJSONArray￿value == null
 rowToJSONObject￿ja != null
@@ -384,8 +695,30 @@ toString￿names != null
 toString￿names == null
 
 Diff of e7a40c32bb742d16175e643c49b99eded2110d07 and 4c2c27c33e064bcfbebe409c678e021cb648af5f:
-	--> Added null checks = 2
-	--> Removed null checks = 4
+	--> Added null checks = 4
+	--> Removed null checks = 8
+	--> Null dereferences checked for null = 0
+****Parsing at revision 4c2c27c33e064bcfbebe409c678e021cb648af5f****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿jo != null
+toString￿names != null
+toString￿names == null
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿jo != null
+toString￿names != null
+toString￿names == null
+
+Diff of e7a40c32bb742d16175e643c49b99eded2110d07 and 4c2c27c33e064bcfbebe409c678e021cb648af5f:
+	--> Added null checks = 4
+	--> Removed null checks = 8
 	--> Null dereferences checked for null = 0
 
 Reverted to commit e7a40c32bb742d16175e643c49b99eded2110d07
@@ -401,12 +734,6 @@ toString￿jo != null
 toString￿names != null
 toString￿names == null
 Null usage pattern was removed at revision e7a40c32bb742d16175e643c49b99eded2110d07
-
-Diff of 539ab7e4e64e3d10349b11a45a73c1f15375248d and e7a40c32bb742d16175e643c49b99eded2110d07:
-	--> Added null checks = 2
-	--> Removed null checks = 5
-	--> Null dereferences checked for null = 0
-****Parsing at revision e7a40c32bb742d16175e643c49b99eded2110d07****
 ********Null checks found in testClass.java********
 rowToJSONArray￿value == null
 rowToJSONObject￿ja != null
@@ -419,8 +746,34 @@ toString￿names == null
 Null usage pattern was removed at revision e7a40c32bb742d16175e643c49b99eded2110d07
 
 Diff of 539ab7e4e64e3d10349b11a45a73c1f15375248d and e7a40c32bb742d16175e643c49b99eded2110d07:
-	--> Added null checks = 2
-	--> Removed null checks = 6
+	--> Added null checks = 4
+	--> Removed null checks = 10
+	--> Null dereferences checked for null = 0
+****Parsing at revision e7a40c32bb742d16175e643c49b99eded2110d07****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿jo != null
+toString￿names != null
+toString￿names == null
+Null usage pattern was removed at revision e7a40c32bb742d16175e643c49b99eded2110d07
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿jo != null
+toString￿names != null
+toString￿names == null
+Null usage pattern was removed at revision e7a40c32bb742d16175e643c49b99eded2110d07
+
+Diff of 539ab7e4e64e3d10349b11a45a73c1f15375248d and e7a40c32bb742d16175e643c49b99eded2110d07:
+	--> Added null checks = 4
+	--> Removed null checks = 12
 	--> Null dereferences checked for null = 0
 
 Reverted to commit 539ab7e4e64e3d10349b11a45a73c1f15375248d
@@ -436,12 +789,6 @@ toString￿names != null
 toString￿names == null
 toString￿jo != null
 Null usage pattern was added at revision 539ab7e4e64e3d10349b11a45a73c1f15375248d
-
-Diff of 1a6085ee279c938444a23dca670da8a0cd5d124c and 539ab7e4e64e3d10349b11a45a73c1f15375248d:
-	--> Added null checks = 3
-	--> Removed null checks = 6
-	--> Null dereferences checked for null = 0
-****Parsing at revision 539ab7e4e64e3d10349b11a45a73c1f15375248d****
 ********Null checks found in testClass.java********
 rowToJSONArray￿value == null
 rowToJSONObject￿ja != null
@@ -454,8 +801,34 @@ toString￿jo != null
 Null usage pattern was added at revision 539ab7e4e64e3d10349b11a45a73c1f15375248d
 
 Diff of 1a6085ee279c938444a23dca670da8a0cd5d124c and 539ab7e4e64e3d10349b11a45a73c1f15375248d:
-	--> Added null checks = 4
-	--> Removed null checks = 6
+	--> Added null checks = 6
+	--> Removed null checks = 12
+	--> Null dereferences checked for null = 0
+****Parsing at revision 539ab7e4e64e3d10349b11a45a73c1f15375248d****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
+Null usage pattern was added at revision 539ab7e4e64e3d10349b11a45a73c1f15375248d
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
+Null usage pattern was added at revision 539ab7e4e64e3d10349b11a45a73c1f15375248d
+
+Diff of 1a6085ee279c938444a23dca670da8a0cd5d124c and 539ab7e4e64e3d10349b11a45a73c1f15375248d:
+	--> Added null checks = 8
+	--> Removed null checks = 12
 	--> Null dereferences checked for null = 0
 
 Reverted to commit 1a6085ee279c938444a23dca670da8a0cd5d124c
@@ -470,12 +843,6 @@ toJSONArray￿jo == null
 toString￿names != null
 toString￿names == null
 toString￿jo != null
-
-Diff of b207d417a7d3500e1193a534e62274ac0fe3535a and 1a6085ee279c938444a23dca670da8a0cd5d124c:
-	--> Added null checks = 4
-	--> Removed null checks = 6
-	--> Null dereferences checked for null = 0
-****Parsing at revision 1a6085ee279c938444a23dca670da8a0cd5d124c****
 ********Null checks found in testClass.java********
 rowToJSONArray￿value == null
 rowToJSONObject￿ja != null
@@ -487,8 +854,32 @@ toString￿names == null
 toString￿jo != null
 
 Diff of b207d417a7d3500e1193a534e62274ac0fe3535a and 1a6085ee279c938444a23dca670da8a0cd5d124c:
-	--> Added null checks = 4
-	--> Removed null checks = 6
+	--> Added null checks = 8
+	--> Removed null checks = 12
+	--> Null dereferences checked for null = 0
+****Parsing at revision 1a6085ee279c938444a23dca670da8a0cd5d124c****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
+
+Diff of b207d417a7d3500e1193a534e62274ac0fe3535a and 1a6085ee279c938444a23dca670da8a0cd5d124c:
+	--> Added null checks = 8
+	--> Removed null checks = 12
 	--> Null dereferences checked for null = 0
 
 Reverted to commit b207d417a7d3500e1193a534e62274ac0fe3535a
@@ -503,12 +894,6 @@ toJSONArray￿jo == null
 toString￿names != null
 toString￿names == null
 toString￿jo != null
-
-Diff of 44e31529e53e84c9629cab7be23093a241da6431 and b207d417a7d3500e1193a534e62274ac0fe3535a:
-	--> Added null checks = 4
-	--> Removed null checks = 6
-	--> Null dereferences checked for null = 0
-****Parsing at revision b207d417a7d3500e1193a534e62274ac0fe3535a****
 ********Null checks found in testClass.java********
 rowToJSONArray￿value == null
 rowToJSONObject￿ja != null
@@ -520,8 +905,32 @@ toString￿names == null
 toString￿jo != null
 
 Diff of 44e31529e53e84c9629cab7be23093a241da6431 and b207d417a7d3500e1193a534e62274ac0fe3535a:
-	--> Added null checks = 4
-	--> Removed null checks = 6
+	--> Added null checks = 8
+	--> Removed null checks = 12
+	--> Null dereferences checked for null = 0
+****Parsing at revision b207d417a7d3500e1193a534e62274ac0fe3535a****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
+
+Diff of 44e31529e53e84c9629cab7be23093a241da6431 and b207d417a7d3500e1193a534e62274ac0fe3535a:
+	--> Added null checks = 8
+	--> Removed null checks = 12
 	--> Null dereferences checked for null = 0
 
 Reverted to commit 44e31529e53e84c9629cab7be23093a241da6431
@@ -537,12 +946,6 @@ toString￿jo != null
 toString￿names != null
 toString￿names == null
 Null usage pattern was removed at revision 44e31529e53e84c9629cab7be23093a241da6431
-
-Diff of d83c83c2b1981a72402fea329a53d8cde208ad20 and 44e31529e53e84c9629cab7be23093a241da6431:
-	--> Added null checks = 4
-	--> Removed null checks = 7
-	--> Null dereferences checked for null = 0
-****Parsing at revision 44e31529e53e84c9629cab7be23093a241da6431****
 ********Null checks found in testClass.java********
 rowToJSONArray￿value == null
 rowToJSONObject￿ja != null
@@ -555,8 +958,34 @@ toString￿names == null
 Null usage pattern was removed at revision 44e31529e53e84c9629cab7be23093a241da6431
 
 Diff of d83c83c2b1981a72402fea329a53d8cde208ad20 and 44e31529e53e84c9629cab7be23093a241da6431:
-	--> Added null checks = 4
-	--> Removed null checks = 8
+	--> Added null checks = 8
+	--> Removed null checks = 14
+	--> Null dereferences checked for null = 0
+****Parsing at revision 44e31529e53e84c9629cab7be23093a241da6431****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿jo != null
+toString￿names != null
+toString￿names == null
+Null usage pattern was removed at revision 44e31529e53e84c9629cab7be23093a241da6431
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿jo != null
+toString￿names != null
+toString￿names == null
+Null usage pattern was removed at revision 44e31529e53e84c9629cab7be23093a241da6431
+
+Diff of d83c83c2b1981a72402fea329a53d8cde208ad20 and 44e31529e53e84c9629cab7be23093a241da6431:
+	--> Added null checks = 8
+	--> Removed null checks = 16
 	--> Null dereferences checked for null = 0
 
 Reverted to commit d83c83c2b1981a72402fea329a53d8cde208ad20
@@ -570,12 +999,6 @@ toJSONArray￿jo == null
 toString￿jo != null
 toString￿names != null
 toString￿names == null
-
-Diff of 414efe814972c9c587309b9e2579aa900a1239c8 and d83c83c2b1981a72402fea329a53d8cde208ad20:
-	--> Added null checks = 4
-	--> Removed null checks = 8
-	--> Null dereferences checked for null = 0
-****Parsing at revision d83c83c2b1981a72402fea329a53d8cde208ad20****
 ********Null checks found in testClass.java********
 rowToJSONArray￿value == null
 rowToJSONObject￿ja != null
@@ -586,8 +1009,30 @@ toString￿names != null
 toString￿names == null
 
 Diff of 414efe814972c9c587309b9e2579aa900a1239c8 and d83c83c2b1981a72402fea329a53d8cde208ad20:
-	--> Added null checks = 4
-	--> Removed null checks = 8
+	--> Added null checks = 8
+	--> Removed null checks = 16
+	--> Null dereferences checked for null = 0
+****Parsing at revision d83c83c2b1981a72402fea329a53d8cde208ad20****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿jo != null
+toString￿names != null
+toString￿names == null
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿jo != null
+toString￿names != null
+toString￿names == null
+
+Diff of 414efe814972c9c587309b9e2579aa900a1239c8 and d83c83c2b1981a72402fea329a53d8cde208ad20:
+	--> Added null checks = 8
+	--> Removed null checks = 16
 	--> Null dereferences checked for null = 0
 
 Reverted to commit 414efe814972c9c587309b9e2579aa900a1239c8
@@ -601,12 +1046,6 @@ toJSONArray￿jo == null
 toString￿jo != null
 toString￿names != null
 toString￿names == null
-
-Diff of b84dce172eef402942a91a62740f542cbc74960d and 414efe814972c9c587309b9e2579aa900a1239c8:
-	--> Added null checks = 4
-	--> Removed null checks = 8
-	--> Null dereferences checked for null = 0
-****Parsing at revision 414efe814972c9c587309b9e2579aa900a1239c8****
 ********Null checks found in testClass.java********
 rowToJSONArray￿value == null
 rowToJSONObject￿ja != null
@@ -617,8 +1056,30 @@ toString￿names != null
 toString￿names == null
 
 Diff of b84dce172eef402942a91a62740f542cbc74960d and 414efe814972c9c587309b9e2579aa900a1239c8:
-	--> Added null checks = 4
-	--> Removed null checks = 8
+	--> Added null checks = 8
+	--> Removed null checks = 16
+	--> Null dereferences checked for null = 0
+****Parsing at revision 414efe814972c9c587309b9e2579aa900a1239c8****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿jo != null
+toString￿names != null
+toString￿names == null
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿jo != null
+toString￿names != null
+toString￿names == null
+
+Diff of b84dce172eef402942a91a62740f542cbc74960d and 414efe814972c9c587309b9e2579aa900a1239c8:
+	--> Added null checks = 8
+	--> Removed null checks = 16
 	--> Null dereferences checked for null = 0
 
 Reverted to commit b84dce172eef402942a91a62740f542cbc74960d
@@ -632,12 +1093,6 @@ toJSONArray￿jo == null
 toString￿jo != null
 toString￿names != null
 toString￿names == null
-
-Diff of 0503095b786e41eeeec68f2fd05790d166e98c14 and b84dce172eef402942a91a62740f542cbc74960d:
-	--> Added null checks = 4
-	--> Removed null checks = 8
-	--> Null dereferences checked for null = 0
-****Parsing at revision b84dce172eef402942a91a62740f542cbc74960d****
 ********Null checks found in testClass.java********
 rowToJSONArray￿value == null
 rowToJSONObject￿ja != null
@@ -648,8 +1103,30 @@ toString￿names != null
 toString￿names == null
 
 Diff of 0503095b786e41eeeec68f2fd05790d166e98c14 and b84dce172eef402942a91a62740f542cbc74960d:
-	--> Added null checks = 4
-	--> Removed null checks = 8
+	--> Added null checks = 8
+	--> Removed null checks = 16
+	--> Null dereferences checked for null = 0
+****Parsing at revision b84dce172eef402942a91a62740f542cbc74960d****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿jo != null
+toString￿names != null
+toString￿names == null
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿jo != null
+toString￿names != null
+toString￿names == null
+
+Diff of 0503095b786e41eeeec68f2fd05790d166e98c14 and b84dce172eef402942a91a62740f542cbc74960d:
+	--> Added null checks = 8
+	--> Removed null checks = 16
 	--> Null dereferences checked for null = 0
 
 Reverted to commit 0503095b786e41eeeec68f2fd05790d166e98c14
@@ -665,12 +1142,6 @@ toString￿jo != null
 toString￿names != null
 toString￿names == null
 Null usage pattern was removed at revision 0503095b786e41eeeec68f2fd05790d166e98c14
-
-Diff of 0192df473e64d8d49a241f7a6413687f0d94d191 and 0503095b786e41eeeec68f2fd05790d166e98c14:
-	--> Added null checks = 4
-	--> Removed null checks = 9
-	--> Null dereferences checked for null = 0
-****Parsing at revision 0503095b786e41eeeec68f2fd05790d166e98c14****
 ********Null checks found in testClass.java********
 rowToJSONArray￿value == null
 rowToJSONObject￿ja != null
@@ -683,8 +1154,34 @@ toString￿names == null
 Null usage pattern was removed at revision 0503095b786e41eeeec68f2fd05790d166e98c14
 
 Diff of 0192df473e64d8d49a241f7a6413687f0d94d191 and 0503095b786e41eeeec68f2fd05790d166e98c14:
-	--> Added null checks = 4
-	--> Removed null checks = 10
+	--> Added null checks = 8
+	--> Removed null checks = 18
+	--> Null dereferences checked for null = 0
+****Parsing at revision 0503095b786e41eeeec68f2fd05790d166e98c14****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿jo != null
+toString￿names != null
+toString￿names == null
+Null usage pattern was removed at revision 0503095b786e41eeeec68f2fd05790d166e98c14
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿jo != null
+toString￿names != null
+toString￿names == null
+Null usage pattern was removed at revision 0503095b786e41eeeec68f2fd05790d166e98c14
+
+Diff of 0192df473e64d8d49a241f7a6413687f0d94d191 and 0503095b786e41eeeec68f2fd05790d166e98c14:
+	--> Added null checks = 8
+	--> Removed null checks = 20
 	--> Null dereferences checked for null = 0
 
 Reverted to commit 0192df473e64d8d49a241f7a6413687f0d94d191
@@ -700,12 +1197,6 @@ toString￿names != null
 toString￿names == null
 toString￿jo != null
 Null usage pattern was added at revision 0192df473e64d8d49a241f7a6413687f0d94d191
-
-Diff of 72b7cc0d7791caa46f249a3b0695d3ec7e652482 and 0192df473e64d8d49a241f7a6413687f0d94d191:
-	--> Added null checks = 5
-	--> Removed null checks = 10
-	--> Null dereferences checked for null = 0
-****Parsing at revision 0192df473e64d8d49a241f7a6413687f0d94d191****
 ********Null checks found in testClass.java********
 rowToJSONArray￿value == null
 rowToJSONObject￿ja != null
@@ -718,12 +1209,38 @@ toString￿jo != null
 Null usage pattern was added at revision 0192df473e64d8d49a241f7a6413687f0d94d191
 
 Diff of 72b7cc0d7791caa46f249a3b0695d3ec7e652482 and 0192df473e64d8d49a241f7a6413687f0d94d191:
-	--> Added null checks = 6
-	--> Removed null checks = 10
+	--> Added null checks = 10
+	--> Removed null checks = 20
+	--> Null dereferences checked for null = 0
+****Parsing at revision 0192df473e64d8d49a241f7a6413687f0d94d191****
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
+Null usage pattern was added at revision 0192df473e64d8d49a241f7a6413687f0d94d191
+********Null checks found in testClass.java********
+rowToJSONArray￿value == null
+rowToJSONObject￿ja != null
+rowToString￿object != null
+toJSONArray￿names == null
+toJSONArray￿jo == null
+toString￿names != null
+toString￿names == null
+toString￿jo != null
+Null usage pattern was added at revision 0192df473e64d8d49a241f7a6413687f0d94d191
+
+Diff of 72b7cc0d7791caa46f249a3b0695d3ec7e652482 and 0192df473e64d8d49a241f7a6413687f0d94d191:
+	--> Added null checks = 12
+	--> Removed null checks = 20
 	--> Null dereferences checked for null = 0
 ****Analysis complete for first commit****
-Brittany Johnson added null count = 6 in repository dummy-repo
-Brittany Johnson removed null count = 10 in repository dummy-repo
+Brittany Johnson added null count = 12 in repository dummy-repo
+Brittany Johnson removed null count = 20 in repository dummy-repo
 Brittany Johnson deref count = 0 in repository dummy-repo
 GitAPIException thrown!
 Cannot revert commit '72b7cc0d7791caa46f249a3b0695d3ec7e652482' because it has 0 parents, only commits with exactly one parent are supported

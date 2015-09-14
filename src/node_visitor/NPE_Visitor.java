@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import jdk.internal.org.objectweb.asm.util.CheckAnnotationAdapter;
+
 import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.ASTVisitor;
 import org.eclipse.jdt.core.dom.CatchClause;
@@ -18,6 +20,8 @@ import code_parser.ModelSourceFile;
 
 public class NPE_Visitor extends ASTVisitor{
 
+	public static final char CHECK_SEPERATOR = Character.MAX_VALUE;
+	
 	// variables that use Collections
 	List<String> collectionsVars = new ArrayList<String>();
 	// variables that use Optional
@@ -70,7 +74,7 @@ public class NPE_Visitor extends ASTVisitor{
 				String s = parts.get(i).toString();
 				String var = s.substring(0, s.indexOf("="));
 				
-				String collVar = method + "-" + var;
+				String collVar = method + CHECK_SEPERATOR + var;
 				//System.out.println(collVar);
 				if (!collectionsVars.contains(collVar)){
 					collectionsVars.add(collVar);	
@@ -89,7 +93,7 @@ public class NPE_Visitor extends ASTVisitor{
 				String s = parts.get(i).toString();
 				String var = s.substring(0, s.indexOf("="));
 				
-				String optVar = method + "-" + var;
+				String optVar = method + CHECK_SEPERATOR + var;
 				//System.out.println(optVar);
 				if (!optionalVars.contains(optVar)){
 					optionalVars.add(optVar);
@@ -117,7 +121,7 @@ public class NPE_Visitor extends ASTVisitor{
 			if (ex.contains("NullPointerException")){
 				// make sure unique -- for now, check method
 				// TODO: improve this -- right now only allows one NPE per method
-				String catchBlock = method + "-NullPointerException";
+				String catchBlock = method + CHECK_SEPERATOR + "NullPointerException";
 				if (!catchMeths.contains(catchBlock)){
 					//System.out.println(catchBlock);	
 					catchMeths.add(catchBlock);					
