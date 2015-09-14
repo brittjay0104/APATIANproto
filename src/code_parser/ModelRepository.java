@@ -239,12 +239,17 @@ public class ModelRepository {
 				RevCommit rev = iterator.next();
 				// TODO potentially remove this? Only analyzing from list of commits developer contributed
 				revisions.add(rev);
+//				System.out.println(rev.toString());
+//				System.out.println(rev.getCommitterIdent().getName());
 
-				if (rev.getCommitterIdent().getName().equals(developer.getDevName()) || rev.getCommitterIdent().getName().equals(developer.getUserName())){
+				if (rev.getCommitterIdent().getName().equals(developer.getDevName()) || rev.getCommitterIdent().getName().equals(developer.getUserName()) 
+						|| developer.getDevName().contains(rev.getCommitterIdent().getName())){
+					
 					if (!(developer.getCommits().contains(ObjectId.toString(rev.getId())))){
 						System.out.println(developer.getDevName() + " is responsible for commit " + ObjectId.toString(rev.getId()));
 						developer.addCommit(ObjectId.toString(rev.getId()));						
 					}
+					
 				}
 
 			}
@@ -400,6 +405,8 @@ public class ModelRepository {
 						System.out.println("	--> Added null checks = " + dev.getAddedNullCounts());
 						System.out.println("	--> Removed null checks = " + dev.getRemovedNullCounts());
 						System.out.println("	--> Null dereferences checked for null = " + dev.getDerefCount());
+						//System.out.println("	--> Added Null Object Design Patterns = ");
+						
 						// TODO: add print statements for new patterns
 					}
 				}
@@ -441,20 +448,29 @@ public class ModelRepository {
 			ModelParser parser = new ModelParser();
 
 			// parse the files AST for null checks, nodps, coll/opt usage, catches with NPE
-			List <String> checks = parser.parseForNull(f, oldHash);
-			List<String> nodps = parser.parseForNODP(f);
-			ArrayList<List<String>> npes = parser.parseForNPEAvoidance(f);
-			List<String> colls = npes.get(0);
-			List<String> opts = npes.get(1);
-			List<String> catches = npes.get(2);
-			
-			
 			// diff the current and older revision
+			List <String> checks = parser.parseForNull(f, oldHash);
 			diff(directory, f, checks, oldHash, newHash, dev);
-			diff(directory, f, nodps, oldHash, newHash, dev);
+
+			
+			List<String> nodps = parser.parseForNODP(f);
+			for (String nodp:nodps){
+				System.out.println("NODPs --> " + nodp);
+			}
+			//diff(directory, f, nodps, oldHash, newHash, dev);
+			
+			ArrayList<List<String>> npes = parser.parseForNPEAvoidance(f);
+
+			List<String> colls = npes.get(0);
 			//diff(directory, f, colls, oldHash, newHash, dev);
+
+			List<String> opts = npes.get(1);
 			//diff(directory, f, opts, oldHash, newHash, dev);
+
+			List<String> catches = npes.get(2);
 			//diff(directory, f, catches, oldHash, newHash, dev);
+
+			
 			//System.out.println(f.getName());
 			
 //			ModelParser parser = new ModelParser();
@@ -752,16 +768,20 @@ public class ModelRepository {
 								// continue reading to find next line of null check make sure still there when line contains (-) and (+)
 																
 								if (file.getNODPs().contains(check)){
-									removedNODP = checkRemoval(removedNODP, newHash, diffText, check);
+									System.out.println("Removed NODP --> " + check);
+									//removedNODP = checkRemoval(removedNODP, newHash, diffText, check);
 									
 								} else if (file.getCollVars().contains(check)){
-									removedCollVar = checkRemoval(removedCollVar, newHash, diffText, check);
+									System.out.println("Removed Collections --> " + check);
+									//removedCollVar = checkRemoval(removedCollVar, newHash, diffText, check);
 									
 								} else if (file.getOptVars().contains(check)) {
-									removedOptVar = checkRemoval(removedOptVar, newHash, diffText, check);
+									System.out.println("Removed Optional --> " + check);
+									//removedOptVar = checkRemoval(removedOptVar, newHash, diffText, check);
 									
 								} else if (file.getCatchBlocks().contains(check)){
-									removedCatchBlock = checkRemoval(removedCatchBlock, newHash, diffText, check);
+									System.out.println("Removed Catch Block --> " + check);
+									//removedCatchBlock = checkRemoval(removedCatchBlock, newHash, diffText, check);
 									
 								} 
 								
@@ -771,16 +791,20 @@ public class ModelRepository {
 								developer.incrementLinesAddedCount();
 								
 								if (file.getNODPs().contains(check)){
-									addedNODP = checkAdded(addedNODP, newHash, diffText, check);
+									System.out.println("Added NODP --> " + check);
+									//addedNODP = checkAdded(addedNODP, newHash, diffText, check);
 									
 								} else if (file.getCollVars().contains(check)){
-									addedCollVar = checkAdded(addedCollVar, newHash, diffText, check);
+									System.out.println("Added Collections --> " + check);
+									//addedCollVar = checkAdded(addedCollVar, newHash, diffText, check);
 									
 								} else if (file.getOptVars().contains(check)) {
-									addedOptVar = checkAdded(addedOptVar, newHash, diffText, check);
+									System.out.println("Added Optional --> " + check);
+									//addedOptVar = checkAdded(addedOptVar, newHash, diffText, check);
 									
 								} else if (file.getCatchBlocks().contains(check)){
-									addedCatchBlock = checkAdded(addedCatchBlock, newHash, diffText, check);
+									System.out.println("Added Catch Blocks --> " + check);
+									//addedCatchBlock = checkAdded(addedCatchBlock, newHash, diffText, check);
 								} 
 								
 								addedNullChecks = checkAdded(addedNullChecks, newHash, diffText, check);

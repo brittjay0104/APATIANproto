@@ -117,7 +117,7 @@ public class NPE_Visitor extends ASTVisitor{
 			if (ex.contains("NullPointerException")){
 				// make sure unique -- for now, check method
 				// TODO: improve this -- right now only allows one NPE per method
-				String catchBlock = method + "-NPE";
+				String catchBlock = method + "-NullPointerException";
 				if (!catchMeths.contains(catchBlock)){
 					//System.out.println(catchBlock);	
 					catchMeths.add(catchBlock);					

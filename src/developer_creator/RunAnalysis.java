@@ -45,55 +45,55 @@ public class RunAnalysis {
 			
 			System.setOut(new PrintStream(new FileOutputStream("console-output.txt")));
 			
-//			Runtime rt = Runtime.getRuntime();
-//			
-//			String repo = "./wutson/.git";
-//			File repoGit = new File(repo);
-//			ModelDeveloper dev = new ModelDeveloper("Ataul Munim");
-//			dev.setUserName("ataulm");
-//			// TODO add pseudo name to reporting?
-//			//dev.setPseudoName("Joyce");
-//			String repoName = "wutson";
-//			String dir = "./wutson/";
-//			File directory = new File (dir);
-//			
-//			clearOutDirectory(directory);
-//			directory.delete();
-//			
-//			//Process p3 = rt.exec("git clone https://github.com/geftimov/MapReduce.git");
-//			Process p3 = rt.exec("git clone -b landing-strip https://github.com/ataulm/wutson.git"); 
-//			System.out.println(p3.waitFor());
-//			
-//			//System.out.println("Project cloned!");
-//			
-//			
-//			//set repository history
-//			ModelRepository repository = new ModelRepository(repoGit);
-//			Git gitHub = repository.getGitRepository();
+			Runtime rt = Runtime.getRuntime();
 			
-//			if (repository.setRepositoryRevisionHistory(gitHub, dev) != null){
-//				repository.setRepositoryRevisionHistory(gitHub, dev);
-//				
-//				//ArrayList<RevCommit> commits = repository.getRevisions();
-//
-//				//set source files for each directory
-//				repository.setSourceFiles(dir);
-//				
-//				//set history for each file
-//				for (ModelSourceFile f: repository.getSourceFiles()) {
-//					repository.setFileRevisionHistory(gitHub, f);
-//				}
-//								
-//				//Analyze ASTs for all revisions (right now for null checks)
-//				repository.revertAndAnalyzeForNull(gitHub, dir, dev, repoName);
-////				/repository.analyzeForMethodInvocations(gitHub, "", dev, repoName);
-//			}	
+			String repo = "./dummy-repo/.git";
+			File repoGit = new File(repo);
+			ModelDeveloper dev = new ModelDeveloper("Brittany Johnson");
+			dev.setUserName("brittjay0104");
+			// TODO add pseudo name to reporting?
+			//dev.setPseudoName("Joyce");
+			String repoName = "dummy-repo";
+			String dir = "./dummy-repo/";
+			File directory = new File (dir);
 			
-			ModelSourceFile f = new ModelSourceFile(new File ("./src/node_visitor/NullObjectPattern_test.java"));
+			clearOutDirectory(directory);
+			directory.delete();
 			
-			ModelParser p = new ModelParser();
-			p.parseForNODP(f);
-			p.parseForNPEAvoidance(f);
+			Process p3 = rt.exec("git clone https://github.com/brittjay0104/dummy-repo.git");
+			//Process p3 = rt.exec("git clone -b landing-strip https://github.com/ataulm/wutson.git"); 
+			System.out.println(p3.waitFor());
+									
+			//System.out.println("Project cloned!");
+			
+			
+			//set repository history
+			ModelRepository repository = new ModelRepository(repoGit);
+			Git gitHub = repository.getGitRepository();
+			
+			if (repository.setRepositoryRevisionHistory(gitHub, dev) != null){
+				repository.setRepositoryRevisionHistory(gitHub, dev);
+				
+				//ArrayList<RevCommit> commits = repository.getRevisions();
+
+				//set source files for each directory
+				repository.setSourceFiles(dir);
+				
+				//set history for each file
+				for (ModelSourceFile f: repository.getSourceFiles()) {
+					repository.setFileRevisionHistory(gitHub, f);
+				}
+								
+				//Analyze ASTs for all revisions (right now for null checks)
+				repository.revertAndAnalyzeForNull(gitHub, dir, dev, repoName);
+//				/repository.analyzeForMethodInvocations(gitHub, "", dev, repoName);
+			}	
+			
+//			ModelSourceFile f = new ModelSourceFile(new File ("./dummy-repo/NullObjectPattern_test.java"));
+//			
+//			ModelParser p = new ModelParser();
+//			p.parseForNODP(f);
+//			p.parseForNPEAvoidance(f);
 			
 		}	
 				
