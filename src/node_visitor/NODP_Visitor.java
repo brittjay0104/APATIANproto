@@ -104,4 +104,8 @@ public class NODP_Visitor extends ASTVisitor{
 		return true;
 	}
 	
+	public List<String> getNODPs(){
+		return NODPs;
+	}
+	
 }

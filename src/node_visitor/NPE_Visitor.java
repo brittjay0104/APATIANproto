@@ -128,4 +128,16 @@ public class NPE_Visitor extends ASTVisitor{
 		return true;
 	}
 	
+	public List<String> getCollVars(){
+		return collectionsVars;
+	}
+	
+	public List<String> getOptVars(){
+		return optionalVars;
+	}
+	
+	public List<String> getCatchBlocks(){
+		return catchMeths;
+	}
+	
 }

@@ -181,7 +181,7 @@ public class ModelParser {
 
 	}
 
-	public void parseForNODP(ModelSourceFile file) throws IOException{
+	public List<String> parseForNODP(ModelSourceFile file) throws IOException{
 		ASTParser parser = ASTParser.newParser(AST.JLS4);
 
 		String src = readFiletoString(file.getSourceFile().getCanonicalPath());
@@ -203,11 +203,17 @@ public class ModelParser {
 		NODP_Visitor visitor = new NODP_Visitor(file);
 		cu.accept(visitor);
 		// NODP only 
+				
+		List<String> nodp = visitor.getNODPs();
 		
-		// TODO attach NODPs to file
+		for (String dp: nodp){
+			file.addNODP(dp);
+		}
+		
+		return nodp;
 	}
 	
-	public void parseForNPEAvoidance(ModelSourceFile file) throws IOException{
+	public ArrayList<List<String>> parseForNPEAvoidance(ModelSourceFile file) throws IOException{
 		ASTParser parser = ASTParser.newParser(AST.JLS4);
 
 		String src = readFiletoString(file.getSourceFile().getCanonicalPath());
@@ -230,7 +236,28 @@ public class ModelParser {
 		cu.accept(visitor);
 		// includes Collections, Optional, and Catch Blocks 
 		
-		// TODO attach each to file
+		List<String> colls = visitor.getCollVars();
+		List<String> opts = visitor.getOptVars();
+		List<String> catches = visitor.getCatchBlocks();
+		
+		ArrayList<List<String>> allVars = new ArrayList<>();
+		allVars.add(colls);
+		allVars.add(opts);
+		allVars.add(catches);
+		
+		for (String coll:colls){
+			file.addCollVar(coll);
+		}
+		
+		for (String opt:opts){
+			file.addOptVar(opt);
+		}
+		
+		for (String c:catches){
+			file.addCatchBlock(c);
+		}
+		
+		return allVars;
 	}
 
 	private void transferNullAssignments(ModelSourceFile file,

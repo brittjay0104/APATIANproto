@@ -9,6 +9,15 @@ public class ModelDeveloper {
 
 	private int removedNullCounts;
 	private int addedNullCounts;
+	private int removedNODPCounts;
+	private int addedNODPCounts;
+	private int removedCollCounts;
+	private int addedCollCounts;
+	private int removedOptCounts;
+	private int addedOptCounts;
+	private int removedCatchCounts;
+	private int addedCatchCounts;
+	
 	private int derefCounts;
 	private String name;
 	private String username;
@@ -21,6 +30,15 @@ public class ModelDeveloper {
 	public ModelDeveloper (String id) {
 		removedNullCounts = 0;
 		addedNullCounts = 0;
+		removedNODPCounts = 0;
+		addedNODPCounts = 0;
+		removedCollCounts = 0;
+		addedCollCounts = 0;
+		removedOptCounts = 0;
+		addedOptCounts = 0;
+		removedCatchCounts = 0;
+		addedCatchCounts = 0;
+		
 		setDevName(id);
 		commits = new ArrayList<String>();
 		repositories = new ArrayList<ModelRepository>();
@@ -73,6 +91,70 @@ public class ModelDeveloper {
 		return addedNullCounts;
 	}
 	
+	public int getRemovedNODPCounts() {
+		return removedNODPCounts;
+	}
+
+	public void setRemovedNODPCounts(int removedNODP) {
+		removedNODPCounts = removedNODPCounts + removedNODP;
+	}
+
+	public int getAddedNODPCounts() {
+		return addedNODPCounts;
+	}
+
+	public void setAddedNODPCounts(int addedNODP) {
+		addedNODPCounts = addedNODPCounts + addedNODP;
+	}
+
+	public int getRemovedCollCounts() {
+		return removedCollCounts;
+	}
+
+	public void setRemovedCollCounts(int removedColls) {
+		removedCollCounts = removedCollCounts + removedColls;
+	}
+
+	public int getAddedCollCounts() {
+		return addedCollCounts;
+	}
+
+	public void setAddedCollCounts(int addedColls) {
+		addedCollCounts = addedCollCounts + addedColls;
+	}
+
+	public int getRemovedOptCounts() {
+		return removedOptCounts;
+	}
+
+	public void setRemovedOptCounts(int removedOpts) {
+		removedOptCounts = removedOptCounts + removedOpts;
+	}
+
+	public int getAddedOptCounts() {
+		return addedOptCounts;
+	}
+
+	public void setAddedOptCounts(int addedOpts) {
+		addedOptCounts = addedOptCounts + addedOpts;
+	}
+
+	public int getRemovedCatchCounts() {
+		return removedCatchCounts;
+	}
+
+	public void setRemovedCatchCounts(int removedCatchs) {
+		removedCatchCounts = removedCatchCounts + removedCatchs;
+	}
+
+	public int getAddedCatchCounts() {
+		return addedCatchCounts;
+	}
+
+	public void setAddedCatchCounts(int addedCatchs) {
+		addedCatchCounts = addedCatchCounts + addedCatchs;
+	}
+
 	public int getDerefCount(){
 		return derefCounts;
 	}
@@ -85,27 +167,15 @@ public class ModelDeveloper {
 		return linesRemoved;
 	}
 	
-	public void incrementRemovedNullCounts(){
-		removedNullCounts += 1;
-	}
-	
-	public void addToRemovedCounts(int num){
+	public void setRemovedCounts(int num){
 		removedNullCounts = removedNullCounts + num;
 	}
 	
-	public void incrementAddedNullCounts(){
-		addedNullCounts += 1;
-	}
-	
-	public void addToAddedNullCounts(int num){
+	public void setAddedNullCounts(int num){
 		addedNullCounts = addedNullCounts + num;
 	}
 	
-	public void incrementDerefCount(){
-		derefCounts += 1;
-	}	
-	
-	public void addToDerefCount(int num){
+	public void setDerefCount(int num){
 		derefCounts = derefCounts + num;
 	}
 	

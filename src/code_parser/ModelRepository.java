@@ -60,7 +60,8 @@ public class ModelRepository {
 	// for getting unique developers
 	private List<String> devs;
 
-	private List<String> countedChecks;
+	// TODO : do I need these??
+	private List<String> countedUsagePatterns;
 
 	// for testing
 
@@ -79,7 +80,7 @@ public class ModelRepository {
 	public ModelRepository(File repoPath) throws RepositoryNotFoundException {
 		developers = new ArrayList<ModelDeveloper>();
 		devs = new ArrayList<String>();
-		countedChecks = new ArrayList<String>();
+		countedUsagePatterns = new ArrayList<String>();
 		changedFiles = new ArrayList<ModelSourceFile>();
 
 		try {
@@ -161,7 +162,7 @@ public class ModelRepository {
 	}
 
 	public List<String> getCountedChecks(){
-		return countedChecks;
+		return countedUsagePatterns;
 	}
 
 	public List<ModelDeveloper> getDevelopers(){
@@ -324,27 +325,31 @@ public class ModelRepository {
 		String devName = developer.getDevName();
 
 		if(developer.getCommits().contains(newH)){
-			System.out.println("Null checks found in initial commit -- added at creation of the repository.");
+			//System.out.println("Null checks found in initial commit -- added at creation of the repository.");
 
-			for (ModelSourceFile file: getSourceFiles()) {
-				// parse the files AST for null checks
-				List<String> checks = parser.parseForNull(file, newH);
-
-//				for (String check: checks){
-//					if (!(countedChecks.contains(check))){
-//						developer.incrementAddedNullCounts();
-//					}
-//				}
-
-				//System.out.println("Number introduced in " + file.getName() +  " by " + devName + ": " + developer.getNullCount());
-
-			}
+			// TODO: is analysis contributing anything here anymore? Not counting anything found in initial commit
+//			for (ModelSourceFile file: getSourceFiles()) {
+//				// parse the files AST for null checks
+//				List<String> checks = parser.parseForNull(file, newH);
+//				parser.parseForNODP(file);
+//				//parser.parseForNPEAvoidance(file);
+//
+////				for (String check: checks){
+////					if (!(countedChecks.contains(check))){
+////						developer.incrementAddedNullCounts();
+////					}
+////				}
+//
+//				//System.out.println("Number introduced in " + file.getName() +  " by " + devName + ": " + developer.getNullCount());
+//
+//			}
 		}
 
 		System.out.println("****Analysis complete for first commit****");
 		System.out.println(devName + " added null count = " + developer.getAddedNullCounts() + " in repository " + repoName);
 		System.out.println(devName + " removed null count = " + developer.getRemovedNullCounts() + " in repository " + repoName);
 		System.out.println(devName + " deref count = " + developer.getDerefCount() + " in repository " + repoName);
+		// TODO
 
 
 }
@@ -395,6 +400,7 @@ public class ModelRepository {
 						System.out.println("	--> Added null checks = " + dev.getAddedNullCounts());
 						System.out.println("	--> Removed null checks = " + dev.getRemovedNullCounts());
 						System.out.println("	--> Null dereferences checked for null = " + dev.getDerefCount());
+						// TODO: add print statements for new patterns
 					}
 				}
 
@@ -434,12 +440,21 @@ public class ModelRepository {
 
 			ModelParser parser = new ModelParser();
 
-			// parse the files AST for null checks
+			// parse the files AST for null checks, nodps, coll/opt usage, catches with NPE
 			List <String> checks = parser.parseForNull(f, oldHash);
+			List<String> nodps = parser.parseForNODP(f);
+			ArrayList<List<String>> npes = parser.parseForNPEAvoidance(f);
+			List<String> colls = npes.get(0);
+			List<String> opts = npes.get(1);
+			List<String> catches = npes.get(2);
+			
 			
 			// diff the current and older revision
 			diff(directory, f, checks, oldHash, newHash, dev);
-			
+			diff(directory, f, nodps, oldHash, newHash, dev);
+			//diff(directory, f, colls, oldHash, newHash, dev);
+			//diff(directory, f, opts, oldHash, newHash, dev);
+			//diff(directory, f, catches, oldHash, newHash, dev);
 			//System.out.println(f.getName());
 			
 //			ModelParser parser = new ModelParser();
@@ -666,11 +681,22 @@ public class ModelRepository {
 
 	public void diff(String directory, ModelSourceFile file, List<String> checks, String oldH, String newH, ModelDeveloper developer) {
 		File repoDir = new File(directory);
-
-		List<String> addedNullChecks = new ArrayList<String>();
-		int added = 0;
-		int removed = 0;
-		int deref = 0;
+		
+		int addedNullChecks = 0;
+		int removedNullChecks = 0;
+		int derefNullChecks = 0;
+		
+		int addedNODP = 0;
+		int removedNODP = 0;
+		
+		int addedCollVar = 0;
+		int removedCollVar = 0;
+		
+		int addedOptVar = 0;
+		int removedOptVar = 0;
+		
+		int addedCatchBlock = 0;
+		int removedCatchBlock = 0;
 		
 		Git git;
 		//current revision
@@ -716,41 +742,56 @@ public class ModelRepository {
 					while((line = br.readLine())!= null){
 						line = line.trim();
 						//System.out.println(line);
+						 
+						
+						
 						for (String check: checks){
-							
+						
 							if (line.startsWith("-") && line.contains(check.substring(0, check.indexOf(CHECK_SEPERATOR)))){
 								developer.incrementLinesRemovedCount();
 								// continue reading to find next line of null check make sure still there when line contains (-) and (+)
-								if (isRemoval(diffText, check)){
-									System.out.println("Null check was removed at revision " + newHash);
+																
+								if (file.getNODPs().contains(check)){
+									removedNODP = checkRemoval(removedNODP, newHash, diffText, check);
 									
-									removed +=1;
-
-									countedChecks.add(check);
-								}
+								} else if (file.getCollVars().contains(check)){
+									removedCollVar = checkRemoval(removedCollVar, newHash, diffText, check);
+									
+								} else if (file.getOptVars().contains(check)) {
+									removedOptVar = checkRemoval(removedOptVar, newHash, diffText, check);
+									
+								} else if (file.getCatchBlocks().contains(check)){
+									removedCatchBlock = checkRemoval(removedCatchBlock, newHash, diffText, check);
+									
+								} 
+								
+								removedNullChecks = checkRemoval(removedNullChecks, newHash, diffText, check);
+								
 							} else if (line.startsWith("+") && line.contains(check.substring(0, check.indexOf(CHECK_SEPERATOR)))){
 								developer.incrementLinesAddedCount();
 								
-								if (isAddition(diffText, check)){
-									System.out.println("Null check was added at revision " + newHash);
-
-									// list for added null checks added here (only add if not already there?)
-									addedNullChecks.add(check);
+								if (file.getNODPs().contains(check)){
+									addedNODP = checkAdded(addedNODP, newHash, diffText, check);
 									
-									added +=1;
-
-									if (developer.getCommits().contains(newHash)){
-										// now see if this null check is related to any null fields, variables, or assignments
-										deref = calculateDerefValue(file, check, developer, deref);
-									}
+								} else if (file.getCollVars().contains(check)){
+									addedCollVar = checkAdded(addedCollVar, newHash, diffText, check);
 									
+								} else if (file.getOptVars().contains(check)) {
+									addedOptVar = checkAdded(addedOptVar, newHash, diffText, check);
 									
-									
-									countedChecks.add(check);
-
+								} else if (file.getCatchBlocks().contains(check)){
+									addedCatchBlock = checkAdded(addedCatchBlock, newHash, diffText, check);
+								} 
+								
+								addedNullChecks = checkAdded(addedNullChecks, newHash, diffText, check);
+								
+								if (developer.getCommits().contains(newHash)){
+									// now see if this null check is related to any null fields, variables, or assignments
+									derefNullChecks = calculateDerefValue(file, check, developer, derefNullChecks);
 								}
 							}
 						}
+						
 
 					}
 
@@ -759,21 +800,30 @@ public class ModelRepository {
 				out.reset();
 			}
 			
-			if (removed <= 10){
+			if (removedNullChecks <= 10 || removedNODP <= 10 || removedCollVar <= 10 || removedOptVar <= 10 || removedCatchBlock <= 10){
 				if (developer.getCommits().contains(newHash)){
-					developer.addToRemovedCounts(removed);
+					developer.setRemovedCounts(removedNullChecks);
+					developer.setRemovedNODPCounts(removedNODP);
+					developer.setRemovedCollCounts(removedCollVar);
+					developer.setRemovedOptCounts(removedOptVar);
+					developer.setRemovedCatchCounts(removedCatchBlock);
+					
 				}
 			}
 			
-			if (added <= 10){
+			if (addedNullChecks <= 10 || addedNODP <= 10 || addedCollVar <= 10 || addedOptVar <= 10 || addedCatchBlock <= 10){
 				if (developer.getCommits().contains(newHash)){
-					developer.addToAddedNullCounts(added);
+					developer.setAddedNullCounts(addedNullChecks);
+					developer.setAddedNODPCounts(addedNODP);
+					developer.setAddedCollCounts(addedCollVar);
+					developer.setAddedOptCounts(addedOptVar);
+					developer.setAddedCatchCounts(addedCatchBlock);
 				}
 			}
 			
-			if (deref <= 10){
+			if (derefNullChecks <= 10){
 				if (developer.getCommits().contains(newHash)){
-					developer.addToDerefCount(deref);
+					developer.setDerefCount(derefNullChecks);
 				}
 			}
 			
@@ -782,6 +832,30 @@ public class ModelRepository {
 		} catch (GitAPIException e) {
 			System.out.println("GitAPIException caught!");
 		}
+	}
+
+	private int checkAdded(int added, String newHash, String diffText, String check) {
+		if (isAddition(diffText, check)){
+			System.out.println("Null usage pattern was added at revision " + newHash);
+			
+			added +=1;			
+			
+			countedUsagePatterns.add(check);
+
+		}		
+		
+		return added;
+	}
+
+	private int checkRemoval(int removed, String newHash, String diffText, String check) {
+		if (isRemoval(diffText, check)){
+			System.out.println("Null usage pattern was removed at revision " + newHash);
+			
+			removed +=1;
+
+			countedUsagePatterns.add(check);
+		}
+		return removed;
 	}
 
 	private String getOldHash(String newH) {

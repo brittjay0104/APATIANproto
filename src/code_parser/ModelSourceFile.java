@@ -462,5 +462,21 @@ public class ModelSourceFile {
 	public void removeMethod(String method) {
 		methods.remove(method);
 	}
+	
+	public List<String> getNODPs (){
+		return NODPs;
+	}
+	
+	public List<String> getCollVars() {
+		return collVars;
+	}
+	
+	public List<String> getOptVars(){
+		return optVars;
+	}
+	
+	public List<String> getCatchBlocks(){
+		return catchBlocks;
+	}
 
 }
