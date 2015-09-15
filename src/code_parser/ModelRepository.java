@@ -449,23 +449,23 @@ public class ModelRepository {
  
 			// parse the files AST for null checks, nodps, coll/opt usage, catches with NPE
 			// diff the current and older revision
-			List <String> checks = parser.parseForNull(f, oldHash);
-			diff(directory, f, checks, oldHash, newHash, dev);
+//			List <String> checks = parser.parseForNull(f, oldHash);
+//			diff(directory, f, checks, oldHash, newHash, dev);
 
-			List<String> nodps = parser.parseForNODP(f);
-			//diff(directory, f, nodps, oldHash, newHash, dev); 
 
 			ArrayList<List<String>> npes = parser.parseForNPEAvoidance(f);
 			
 			List<String> colls = npes.get(0);
-			//diff(directory, f, colls, oldHash, newHash, dev);
+			diff(directory, f, colls, oldHash, newHash, dev);
 			
-			List<String> opts = npes.get(1);
-			//diff(directory, f, opts, oldHash, newHash, dev);
+//			List<String> opts = npes.get(1);
+//			diff(directory, f, opts, oldHash, newHash, dev);
 			
-			List<String> catches = npes.get(2);
-			//diff(directory, f, catches, oldHash, newHash, dev);
+//			List<String> catches = npes.get(2);
+//			diff(directory, f, catches, oldHash, newHash, dev);
 			
+//			List<String> nodps = parser.parseForNODP(f);
+//			diff(directory, f, nodps, oldHash, newHash, dev); 
 			
 			
 			
@@ -760,6 +760,8 @@ public class ModelRepository {
 						
 						
 						for (String check: checks){
+							System.out.println("Diff Line == " + line);
+							System.out.println("Check compare ==" + check);
 						
 							if (line.startsWith("-") && line.contains(check.substring(0, check.indexOf(CHECK_SEPERATOR)))){
 								developer.incrementLinesRemovedCount();

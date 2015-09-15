@@ -54,7 +54,7 @@ public class NODP_Visitor extends ASTVisitor{
 			//System.out.println("Potential Singleton!");
 			String type = node.getType().toString();
 			if (type.toLowerCase().contains("null")){
-				//System.out.println("Potential NODP!");
+				System.out.println("Potential NODP!");
 				
 				List decs = node.fragments();
 				
@@ -68,9 +68,9 @@ public class NODP_Visitor extends ASTVisitor{
 					String NODPVar = type + CHECK_SEPERATOR + var;
 					
 					// Add field that could be used in NODP
-					//System.out.println(NODPVar);
+					System.out.println(NODPVar);
 					if (!fields.contains(NODPVar)){
-						//System.out.println(NODPVar + " added!");
+						System.out.println(NODPVar + " added!");
 						fields.add(NODPVar);						
 					}
 				}

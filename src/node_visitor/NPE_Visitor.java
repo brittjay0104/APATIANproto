@@ -72,9 +72,9 @@ public class NPE_Visitor extends ASTVisitor{
 			
 			for (int i=0; i < parts.size(); i++){
 				String s = parts.get(i).toString();
-				String var = s.substring(0, s.indexOf("="));
+				//String var = s.substring(0, s.indexOf("="));
 				
-				String collVar = method + CHECK_SEPERATOR + var;
+				String collVar = method + CHECK_SEPERATOR + s;
 				//System.out.println(collVar);
 				if (!collectionsVars.contains(collVar)){
 					collectionsVars.add(collVar);	
@@ -91,9 +91,9 @@ public class NPE_Visitor extends ASTVisitor{
 			
 			for (int i=0; i < parts.size(); i++){
 				String s = parts.get(i).toString();
-				String var = s.substring(0, s.indexOf("="));
+				//String var = s.substring(0, s.indexOf("="));
 				
-				String optVar = method + CHECK_SEPERATOR + var;
+				String optVar = method + CHECK_SEPERATOR + s;
 				//System.out.println(optVar);
 				if (!optionalVars.contains(optVar)){
 					optionalVars.add(optVar);
@@ -115,13 +115,20 @@ public class NPE_Visitor extends ASTVisitor{
 		for (int i=0; i < clauses.size(); i++){
 			
 			CatchClause clause = (CatchClause) clauses.get(i);
+			String s = clause.toString();
+			String c = s.substring(0, s.indexOf("{"));
+					
+					
+			System.out.println("Catch Clause ---> " + c);
+			
 			SingleVariableDeclaration exception = clause.getException();
+			
 			String ex = findSourceForNode(exception);
 			
 			if (ex.contains("NullPointerException")){
 				// make sure unique -- for now, check method
 				// TODO: improve this -- right now only allows one NPE per method
-				String catchBlock = method + CHECK_SEPERATOR + "NullPointerException";
+				String catchBlock = method + CHECK_SEPERATOR + c;
 				if (!catchMeths.contains(catchBlock)){
 					//System.out.println(catchBlock);	
 					catchMeths.add(catchBlock);					
