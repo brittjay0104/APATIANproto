@@ -247,14 +247,17 @@ public class ModelParser {
 		allVars.add(catches);
 		
 		for (String coll:colls){
+			System.out.println("Collections usage -- " + coll);
 			file.addCollVar(coll);
 		}
 		
 		for (String opt:opts){
+			System.out.println("Optional usage -- " + opt);
 			file.addOptVar(opt);
 		}
 		
 		for (String c:catches){
+			System.out.println("Catch block -- " + c);
 			file.addCatchBlock(c);
 		}
 		

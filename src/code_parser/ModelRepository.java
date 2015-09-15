@@ -442,30 +442,31 @@ public class ModelRepository {
 		System.out.println("****Parsing at revision " + newHash + "****");
 
 		for (ModelSourceFile f: getSourceFiles()) {
+			System.out.println(f.getName());
 			
-			setFileRevisionHistory(git, f);
-
-			ModelParser parser = new ModelParser();
-
-			// parse the files AST for null checks, nodps, coll/opt usage, catches with NPE
-			// diff the current and older revision
-			List <String> checks = parser.parseForNull(f, oldHash);
-			diff(directory, f, checks, oldHash, newHash, dev);
-
-			
-			List<String> nodps = parser.parseForNODP(f);
-			//diff(directory, f, nodps, oldHash, newHash, dev);
-			
-			ArrayList<List<String>> npes = parser.parseForNPEAvoidance(f);
-
-			List<String> colls = npes.get(0);
-			//diff(directory, f, colls, oldHash, newHash, dev);
-
-			List<String> opts = npes.get(1);
-			//diff(directory, f, opts, oldHash, newHash, dev);
-
-			List<String> catches = npes.get(2);
-			//diff(directory, f, catches, oldHash, newHash, dev);
+//			setFileRevisionHistory(git, f);
+//
+//			ModelParser parser = new ModelParser();
+//
+//			// parse the files AST for null checks, nodps, coll/opt usage, catches with NPE
+//			// diff the current and older revision
+//			List <String> checks = parser.parseForNull(f, oldHash);
+//			diff(directory, f, checks, oldHash, newHash, dev);
+//
+//			
+//			List<String> nodps = parser.parseForNODP(f);
+//			//diff(directory, f, nodps, oldHash, newHash, dev);
+//			
+//			ArrayList<List<String>> npes = parser.parseForNPEAvoidance(f);
+//
+//			List<String> colls = npes.get(0);
+//			//diff(directory, f, colls, oldHash, newHash, dev);
+//
+//			List<String> opts = npes.get(1);
+//			//diff(directory, f, opts, oldHash, newHash, dev);
+//
+//			List<String> catches = npes.get(2);
+//			//diff(directory, f, catches, oldHash, newHash, dev);
 
 			
 			//System.out.println(f.getName());
