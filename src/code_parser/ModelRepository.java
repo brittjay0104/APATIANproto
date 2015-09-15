@@ -193,16 +193,14 @@ public class ModelRepository {
 		extensions[0] = "java";
 		// clean out the sourceFiles array (in case some file are no longer in the new revision)
 		if (!sourceFiles.isEmpty()){
-			for (int i = 0; i < sourceFiles.size(); i++){
-				sourceFiles.remove(i);
-			}
+			sourceFiles.clear();
 		}
 
 		// set source files for the repository at the current revision
 		for (Iterator<File> files = FileUtils.iterateFiles(f, extensions, true); files.hasNext();){
 			ModelSourceFile file = new ModelSourceFile(files.next());
 			sourceFiles.add(file);
-			System.out.println("Added " + file.source_file.getName() + " to " + directory + " repository source files.");
+			//System.out.println("Added " + file.source_file.getName() + " to " + directory + " repository source files.");
 			//file.setRepository(repository);
 		}
 
