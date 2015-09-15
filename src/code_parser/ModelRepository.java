@@ -437,7 +437,7 @@ public class ModelRepository {
 	 */
 	private void setAndParseSource(String directory, int i, String oldHash, String newHash, ModelDeveloper dev, RevCommit newRev) throws IOException {
 
-		setSourceFiles(directory);
+		//setSourceFiles(directory);
 		
 		System.out.println("****Parsing at revision " + newHash + "****");
 
