@@ -202,7 +202,7 @@ public class ModelRepository {
 		for (Iterator<File> files = FileUtils.iterateFiles(f, extensions, true); files.hasNext();){
 			ModelSourceFile file = new ModelSourceFile(files.next());
 			sourceFiles.add(file);
-			//System.out.println("Added " + file.source_file.getName() + " to " + directory + " repository source files.");
+			System.out.println("Added " + file.source_file.getName() + " to " + directory + " repository source files.");
 			//file.setRepository(repository);
 		}
 
@@ -399,6 +399,9 @@ public class ModelRepository {
 					//System.out.println(ObjectId.toString(rev.getId()));
 					if (ObjectId.toString(rev.getId()).equals(newHash)){
 						
+						// need this -- makes sure source files up to date after each revert
+						// TODO: make sure not keeping duplicates!
+						setSourceFiles(directory);
 						setAndParseSource(directory, i, oldHash, newHash, dev, rev);
 						
 						System.out.println("\nDiff of " + oldHash + " and " + newHash + ":");
@@ -436,38 +439,37 @@ public class ModelRepository {
 	 * @throws IOException
 	 */
 	private void setAndParseSource(String directory, int i, String oldHash, String newHash, ModelDeveloper dev, RevCommit newRev) throws IOException {
-
-		//setSourceFiles(directory);
 		
 		System.out.println("****Parsing at revision " + newHash + "****");
 
 		for (ModelSourceFile f: getSourceFiles()) {
-			System.out.println(f.getName());
+			//System.out.println(f.getName());
 			
-//			setFileRevisionHistory(git, f);
-//
-//			ModelParser parser = new ModelParser();
-//
-//			// parse the files AST for null checks, nodps, coll/opt usage, catches with NPE
-//			// diff the current and older revision
-//			List <String> checks = parser.parseForNull(f, oldHash);
-//			diff(directory, f, checks, oldHash, newHash, dev);
-//
-//			
-//			List<String> nodps = parser.parseForNODP(f);
-//			//diff(directory, f, nodps, oldHash, newHash, dev);
-//			
-//			ArrayList<List<String>> npes = parser.parseForNPEAvoidance(f);
-//
-//			List<String> colls = npes.get(0);
-//			//diff(directory, f, colls, oldHash, newHash, dev);
-//
-//			List<String> opts = npes.get(1);
-//			//diff(directory, f, opts, oldHash, newHash, dev);
-//
-//			List<String> catches = npes.get(2);
-//			//diff(directory, f, catches, oldHash, newHash, dev);
+			setFileRevisionHistory(git, f);
 
+			ModelParser parser = new ModelParser();
+ 
+			// parse the files AST for null checks, nodps, coll/opt usage, catches with NPE
+			// diff the current and older revision
+			List <String> checks = parser.parseForNull(f, oldHash);
+			diff(directory, f, checks, oldHash, newHash, dev);
+
+			List<String> nodps = parser.parseForNODP(f);
+			//diff(directory, f, nodps, oldHash, newHash, dev); 
+
+			ArrayList<List<String>> npes = parser.parseForNPEAvoidance(f);
+			
+			List<String> colls = npes.get(0);
+			//diff(directory, f, colls, oldHash, newHash, dev);
+			
+			List<String> opts = npes.get(1);
+			//diff(directory, f, opts, oldHash, newHash, dev);
+			
+			List<String> catches = npes.get(2);
+			//diff(directory, f, catches, oldHash, newHash, dev);
+			
+			
+			
 			
 			//System.out.println(f.getName());
 			

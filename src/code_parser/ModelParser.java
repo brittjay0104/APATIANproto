@@ -207,7 +207,7 @@ public class ModelParser {
 		List<String> nodp = visitor.getNODPs();
 		
 		for (String dp: nodp){
-			//System.out.println("NODP from visitor -- " + dp);
+			System.out.println("NODP -- " + dp);
 			file.addNODP(dp);
 		}
 		
