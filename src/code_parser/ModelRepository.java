@@ -398,7 +398,6 @@ public class ModelRepository {
 					if (ObjectId.toString(rev.getId()).equals(newHash)){
 						
 						// need this -- makes sure source files up to date after each revert
-						// TODO: make sure not keeping duplicates!
 						setSourceFiles(directory);
 						setAndParseSource(directory, i, oldHash, newHash, dev, rev);
 						
@@ -754,56 +753,60 @@ public class ModelRepository {
 					String line = null;
 
 					while((line = br.readLine())!= null){
-						line = line.trim();
+						line = line.trim().replace(" = ", "=");
 						//System.out.println(line);
 						 
 						
 						
 						for (String check: checks){
-							System.out.println("Diff Line == " + line);
-							System.out.println("Check compare ==" + check);
-						
-							if (line.startsWith("-") && line.contains(check.substring(0, check.indexOf(CHECK_SEPERATOR)))){
+							//System.out.println("Diff Line == " + line);
+							//System.out.println("Check compare ==" + );
+							String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());	
+							
+							
+							if (line.startsWith("-") && (line.contains(check.substring(0, check.indexOf(CHECK_SEPERATOR))) 
+									|| line.contains(pattern))){
 								developer.incrementLinesRemovedCount();
 								// continue reading to find next line of null check make sure still there when line contains (-) and (+)
 																
 								if (file.getNODPs().contains(check)){
-									System.out.println("Removed NODP --> " + check);
+									System.out.println("Removed NODP --> " + pattern);
 									//removedNODP = checkRemoval(removedNODP, newHash, diffText, check);
 									
 								} else if (file.getCollVars().contains(check)){
-									System.out.println("Removed Collections --> " + check);
+									System.out.println("Removed Collections --> " + pattern);
 									//removedCollVar = checkRemoval(removedCollVar, newHash, diffText, check);
 									
 								} else if (file.getOptVars().contains(check)) {
-									System.out.println("Removed Optional --> " + check);
+									System.out.println("Removed Optional --> " + pattern);
 									//removedOptVar = checkRemoval(removedOptVar, newHash, diffText, check);
 									
 								} else if (file.getCatchBlocks().contains(check)){
-									System.out.println("Removed Catch Block --> " + check);
+									System.out.println("Removed Catch Block --> " + pattern);
 									//removedCatchBlock = checkRemoval(removedCatchBlock, newHash, diffText, check);
 									
 								} 
 								
 								removedNullChecks = checkRemoval(removedNullChecks, newHash, diffText, check);
 								
-							} else if (line.startsWith("+") && line.contains(check.substring(0, check.indexOf(CHECK_SEPERATOR)))){
+							} else if (line.startsWith("+") && (line.contains(check.substring(0, check.indexOf(CHECK_SEPERATOR))) 
+									|| line.contains(pattern))){
 								developer.incrementLinesAddedCount();
 								
 								if (file.getNODPs().contains(check)){
-									System.out.println("Added NODP --> " + check);
+									System.out.println("Added NODP --> " + pattern);
 									//addedNODP = checkAdded(addedNODP, newHash, diffText, check);
 									
 								} else if (file.getCollVars().contains(check)){
-									System.out.println("Added Collections --> " + check);
+									System.out.println("Added Collections --> " + pattern);
 									//addedCollVar = checkAdded(addedCollVar, newHash, diffText, check);
 									
 								} else if (file.getOptVars().contains(check)) {
-									System.out.println("Added Optional --> " + check);
+									System.out.println("Added Optional --> " + pattern);
 									//addedOptVar = checkAdded(addedOptVar, newHash, diffText, check);
 									
 								} else if (file.getCatchBlocks().contains(check)){
-									System.out.println("Added Catch Blocks --> " + check);
+									System.out.println("Added Catch Blocks --> " + pattern);
 									//addedCatchBlock = checkAdded(addedCatchBlock, newHash, diffText, check);
 								} 
 								
