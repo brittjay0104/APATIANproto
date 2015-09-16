@@ -385,6 +385,8 @@ public class ModelRepository {
 
 				// revert the repository
 				for (RevCommit rev: revisions){
+					
+					System.out.println(ObjectId.toString(rev.getId()));
 					if (ObjectId.toString(rev.getId()).equals(commits.get(i))){
 						RevCommit revert = rev;
 						git.revert().include(revert).call();
@@ -394,21 +396,19 @@ public class ModelRepository {
 				System.out.println("\n" + "Reverted to commit " + newHash + "\n");
 				
 				for (RevCommit rev: revisions){
-					//System.out.println(ObjectId.toString(rev.getId()));
-					if (ObjectId.toString(rev.getId()).equals(newHash)){
-						
-						// need this -- makes sure source files up to date after each revert
-						setSourceFiles(directory);
-						setAndParseSource(directory, i, oldHash, newHash, dev, rev);
-						
-						System.out.println("\nDiff of " + oldHash + " and " + newHash + ":");
-						System.out.println("	--> Added null checks = " + dev.getAddedNullCounts());
-						System.out.println("	--> Removed null checks = " + dev.getRemovedNullCounts());
-						System.out.println("	--> Null dereferences checked for null = " + dev.getDerefCount());
-						//System.out.println("	--> Added Null Object Design Patterns = ");
-						
-						// TODO: add print statements for new patterns
-					}
+					System.out.println(ObjectId.toString(rev.getId()));
+//					if (ObjectId.toString(rev.getId()).equals(newHash)){
+//						
+//						setAndParseSource(directory, i, oldHash, newHash, dev, rev);
+//						
+//						System.out.println("\nDiff of " + oldHash + " and " + newHash + ":");
+//						System.out.println("	--> Added null checks = " + dev.getAddedNullCounts());
+//						System.out.println("	--> Removed null checks = " + dev.getRemovedNullCounts());
+//						System.out.println("	--> Null dereferences checked for null = " + dev.getDerefCount());
+//						//System.out.println("	--> Added Null Object Design Patterns = ");
+//						
+//						// TODO: add print statements for new patterns
+//					}
 				}
 
 				
@@ -439,6 +439,8 @@ public class ModelRepository {
 		
 		System.out.println("****Parsing at revision " + newHash + "****");
 
+		setSourceFiles(directory);
+		
 		for (ModelSourceFile f: getSourceFiles()) {
 			//System.out.println(f.getName());
 			
