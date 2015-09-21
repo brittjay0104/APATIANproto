@@ -13,6 +13,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import node_visitor.Log4JVisitor;
+import node_visitor.NODP;
 import node_visitor.NODP_Visitor;
 import node_visitor.NPE_Visitor;
 import node_visitor.NoNullCheckVisitor;
@@ -181,7 +182,7 @@ public class ModelParser {
 
 	}
 
-	public List<String> parseForNODP(ModelSourceFile file) throws IOException{
+	public void parseForNODP(ModelSourceFile file, String commit) throws IOException{
 		ASTParser parser = ASTParser.newParser(AST.JLS4);
 
 		String src = readFiletoString(file.getSourceFile().getCanonicalPath());
@@ -200,18 +201,46 @@ public class ModelParser {
 
 		CompilationUnit cu = (CompilationUnit) parser.createAST(null);
 
-		NODP_Visitor visitor = new NODP_Visitor(file);
+		NODP_Visitor visitor = new NODP_Visitor(file, commit, file.getNODPs());
 		cu.accept(visitor);
 		// NODP only 
-				
-		List<String> nodp = visitor.getNODPs();
 		
-		for (String dp: nodp){
-			System.out.println("NODP -- " + dp);
+		// TODO check here for what count is -- may need to pass in revision here and to visitor so can be tagged when number increases
+				
+		// built up from file to preserve counts
+		List<NODP> nodp = visitor.getNODPs();
+		// what was currently found (fields only)
+		List <NODP> currNodp = visitor.getCurrentNODPs();
+		
+		for (NODP dp: nodp){
+			// if field not found this go around, but in full list, removed? [super simplified]
+			if (!currNodp.isEmpty()){
+				boolean contains = containsField(currNodp, dp.getField(), dp.getType());
+				
+				if (!contains){
+					System.out.println("NODP removed at rev " + commit + "!");
+					dp.setRevRemoved(commit);
+				}
+			}
+			
+			System.out.println("NODP -- " + dp.getField());
+			
 			file.addNODP(dp);
 		}
 		
-		return nodp;
+		
+		//return nodp;
+	}
+	
+	public boolean containsField(List<NODP> currNodp, String field, String type){
+		
+		for (NODP n: currNodp){
+			if (n.getField().equals(field) && n.getType().equals(type)){
+				return true;
+			}
+		}
+		
+		return false;
 	}
 	
 	public ArrayList<List<String>> parseForNPEAvoidance(ModelSourceFile file) throws IOException{

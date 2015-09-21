@@ -7,6 +7,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import node_visitor.NODP;
+
 import org.eclipse.jdt.core.dom.ASTNode;
 
 import developer_creator.ModelDeveloper;
@@ -33,7 +35,7 @@ public class ModelSourceFile {
 	public HashMap<String, ArrayList<String>> removedVars;
 	public HashMap<String, ArrayList<String>> removedAssigns;
 	
-	public List<String> NODPs;
+	public List<NODP> NODPs;
 	public List<String> collVars;
 	public List<String> optVars;
 	public List<String> catchBlocks;
@@ -73,7 +75,7 @@ public class ModelSourceFile {
 		removedFields = new ArrayList<String>();
 		removedVars = new HashMap<String, ArrayList<String>>();
 		removedAssigns = new HashMap<String, ArrayList<String>>();
-		NODPs = new ArrayList<String>();
+		NODPs = new ArrayList<NODP>();
 		collVars = new ArrayList<String>();
 		optVars = new ArrayList<String>();
 		catchBlocks = new ArrayList<String>();
@@ -284,10 +286,20 @@ public class ModelSourceFile {
 		}
 	}
 	
-	public void addNODP(String nodp){
-		if (!(NODPs.contains(nodp))){
+	public void addNODP(NODP nodp){
+		
+		boolean there = false;
+		
+		for (NODP n: NODPs){
+			if (n.equals(nodp)){
+				there = true;
+			}
+		}
+
+		if (!there){
 			NODPs.add(nodp);
 		}
+
 	}
 	
 	public void addCollVar(String collVar){
@@ -463,7 +475,7 @@ public class ModelSourceFile {
 		methods.remove(method);
 	}
 	
-	public List<String> getNODPs (){
+	public List<NODP> getNODPs (){
 		return NODPs;
 	}
 	

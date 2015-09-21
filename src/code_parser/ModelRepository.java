@@ -15,6 +15,8 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.regex.Pattern;
 
+import node_visitor.NODP;
+
 import org.apache.commons.io.FileUtils;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.LogCommand;
@@ -235,7 +237,8 @@ public class ModelRepository {
 
 			for (Iterator<RevCommit> iterator = log.iterator(); iterator.hasNext(); ) {
 				RevCommit rev = iterator.next();
-				// TODO potentially remove this? Only analyzing from list of commits developer contributed
+
+				
 				revisions.add(rev);
 //				System.out.println(rev.toString());
 //				System.out.println(rev.getCommitterIdent().getName());
@@ -264,6 +267,12 @@ public class ModelRepository {
 
 		return o;
 
+	}
+	
+	public boolean revExists (RevCommit rev){
+		// TODO: code that checks the existing list to see if a RevCommit with the same ID/hash exists in the list
+		
+		return true;
 	}
 
 	/**
@@ -352,7 +361,7 @@ public class ModelRepository {
 		System.out.println(devName + " added null count = " + developer.getAddedNullCounts() + " in repository " + repoName);
 		System.out.println(devName + " removed null count = " + developer.getRemovedNullCounts() + " in repository " + repoName);
 		System.out.println(devName + " deref count = " + developer.getDerefCount() + " in repository " + repoName);
-		// TODO
+		// TODO add print statements for other patterns
 
 
 }
@@ -397,18 +406,18 @@ public class ModelRepository {
 				
 				for (RevCommit rev: revisions){
 					System.out.println(ObjectId.toString(rev.getId()));
-//					if (ObjectId.toString(rev.getId()).equals(newHash)){
+					if (ObjectId.toString(rev.getId()).equals(newHash)){
 //						
-//						setAndParseSource(directory, i, oldHash, newHash, dev, rev);
-//						
-//						System.out.println("\nDiff of " + oldHash + " and " + newHash + ":");
-//						System.out.println("	--> Added null checks = " + dev.getAddedNullCounts());
-//						System.out.println("	--> Removed null checks = " + dev.getRemovedNullCounts());
-//						System.out.println("	--> Null dereferences checked for null = " + dev.getDerefCount());
-//						//System.out.println("	--> Added Null Object Design Patterns = ");
+						setAndParseSource(directory, i, oldHash, newHash, dev, rev);
+						
+						System.out.println("\nDiff of " + oldHash + " and " + newHash + ":");
+						System.out.println("	--> Added null checks = " + dev.getAddedNullCounts());
+						System.out.println("	--> Removed null checks = " + dev.getRemovedNullCounts());
+						System.out.println("	--> Null dereferences checked for null = " + dev.getDerefCount());
+						System.out.println("	--> Added Null Object Design Patterns = " + dev.getAddedNODPCounts());
 //						
 //						// TODO: add print statements for new patterns
-//					}
+					}
 				}
 
 				
@@ -454,19 +463,36 @@ public class ModelRepository {
 //			diff(directory, f, checks, oldHash, newHash, dev);
 
 
-			ArrayList<List<String>> npes = parser.parseForNPEAvoidance(f);
 			
-			List<String> colls = npes.get(0);
-			diff(directory, f, colls, oldHash, newHash, dev);
+			parser.parseForNODP(f, newHash);
+			
+			// instead of diff, check revAdded on each NODP in list and see if it matches current/added by dev
+			for (NODP n : f.getNODPs()){
+				if (n.getRevAdded().equals(newHash)){
+					System.out.println("NODP named " + n.getType() + " in revision " + n.getRevAdded());
+					
+					if (dev.getCommits().contains(n.getRevAdded())){
+						System.out.println("NODP added by " + dev.getDevName());
+						dev.setAddedNODPCounts();
+					}
+				}
+			} 
+			// TODO : same for removed
+		
+//			ArrayList<List<String>> npes = parser.parseForNPEAvoidance(f);
+			
+//			List<String> catches = npes.get(2);
+			// TODO : instead of diff, check revAdded on each CatchBlock in list and see if it matches current?
+			// TODO : same for removed
+//			diff(directory, f, catches, oldHash, newHash, dev);
+
+			
+			// TODO works the same as null checks -- implement addition/removal
+//			List<String> colls = npes.get(0);
+//			diff(directory, f, colls, oldHash, newHash, dev);
 			
 //			List<String> opts = npes.get(1);
 //			diff(directory, f, opts, oldHash, newHash, dev);
-			
-//			List<String> catches = npes.get(2);
-//			diff(directory, f, catches, oldHash, newHash, dev);
-			
-//			List<String> nodps = parser.parseForNODP(f);
-//			diff(directory, f, nodps, oldHash, newHash, dev); 
 			
 			
 			
@@ -701,9 +727,6 @@ public class ModelRepository {
 		int removedNullChecks = 0;
 		int derefNullChecks = 0;
 		
-		int addedNODP = 0;
-		int removedNODP = 0;
-		
 		int addedCollVar = 0;
 		int removedCollVar = 0;
 		
@@ -829,10 +852,9 @@ public class ModelRepository {
 				out.reset();
 			}
 			
-			if (removedNullChecks <= 10 || removedNODP <= 10 || removedCollVar <= 10 || removedOptVar <= 10 || removedCatchBlock <= 10){
+			if (removedNullChecks <= 10 || removedCollVar <= 10 || removedOptVar <= 10 || removedCatchBlock <= 10){
 				if (developer.getCommits().contains(newHash)){
 					developer.setRemovedCounts(removedNullChecks);
-					developer.setRemovedNODPCounts(removedNODP);
 					developer.setRemovedCollCounts(removedCollVar);
 					developer.setRemovedOptCounts(removedOptVar);
 					developer.setRemovedCatchCounts(removedCatchBlock);
@@ -840,10 +862,9 @@ public class ModelRepository {
 				}
 			}
 			
-			if (addedNullChecks <= 10 || addedNODP <= 10 || addedCollVar <= 10 || addedOptVar <= 10 || addedCatchBlock <= 10){
+			if (addedNullChecks <= 10 || addedCollVar <= 10 || addedOptVar <= 10 || addedCatchBlock <= 10){
 				if (developer.getCommits().contains(newHash)){
 					developer.setAddedNullCounts(addedNullChecks);
-					developer.setAddedNODPCounts(addedNODP);
 					developer.setAddedCollCounts(addedCollVar);
 					developer.setAddedOptCounts(addedOptVar);
 					developer.setAddedCatchCounts(addedCatchBlock);

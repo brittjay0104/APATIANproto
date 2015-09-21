@@ -103,8 +103,8 @@ public class ModelDeveloper {
 		return addedNODPCounts;
 	}
 
-	public void setAddedNODPCounts(int addedNODP) {
-		addedNODPCounts = addedNODPCounts + addedNODP;
+	public void setAddedNODPCounts() {
+		addedNODPCounts = addedNODPCounts + 1;
 	}
 
 	public int getRemovedCollCounts() {
