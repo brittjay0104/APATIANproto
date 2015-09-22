@@ -431,8 +431,6 @@ public class ModelRepository {
 			// diff the current and older revision
 //			List <String> checks = parser.parseForNull(f, oldHash);
 //			diff(directory, f, checks, oldHash, newHash, dev);
-
-
 			
 			parser.parseForNODP(f, newHash);
 			
@@ -449,12 +447,12 @@ public class ModelRepository {
 			} 
 			// TODO : same for removed
 		
-//			ArrayList<List<String>> npes = parser.parseForNPEAvoidance(f);
+			ArrayList<List<String>> npes = parser.parseForNPEAvoidance(f);
 			
-//			List<String> catches = npes.get(2);
+			List<String> catches = npes.get(2);
 			// TODO : instead of diff, check revAdded on each CatchBlock in list and see if it matches current?
 			// TODO : same for removed
-//			diff(directory, f, catches, oldHash, newHash, dev);
+			diff(directory, f, catches, oldHash, newHash, dev);
 
 			
 			// TODO works the same as null checks -- implement addition/removal
@@ -758,27 +756,25 @@ public class ModelRepository {
 							//System.out.println("Check compare ==" + );
 							String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());	
 							
+							System.out.println("Usage Pattern --> " + pattern.replaceAll(" ", ""));
+							System.out.println("Code from Diff --> " + line.replaceAll(" ", ""));
 							
 							if (line.startsWith("-") && (line.contains(check.substring(0, check.indexOf(CHECK_SEPERATOR))) 
 									|| line.contains(pattern))){
 								developer.incrementLinesRemovedCount();
 								// continue reading to find next line of null check make sure still there when line contains (-) and (+)
 																
-								if (file.getNODPs().contains(check)){
-									System.out.println("Removed NODP --> " + pattern);
-									//removedNODP = checkRemoval(removedNODP, newHash, diffText, check);
+								if (file.getCatchBlocks().contains(check)){
+									System.out.println("Removed Catch Block --> " + pattern);
+									//removedCatchBlock = checkRemoval(removedCatchBlock, newHash, diffText, check);
 									
-								} else if (file.getCollVars().contains(check)){
+								}  else if (file.getCollVars().contains(check)){
 									System.out.println("Removed Collections --> " + pattern);
 									//removedCollVar = checkRemoval(removedCollVar, newHash, diffText, check);
 									
 								} else if (file.getOptVars().contains(check)) {
 									System.out.println("Removed Optional --> " + pattern);
 									//removedOptVar = checkRemoval(removedOptVar, newHash, diffText, check);
-									
-								} else if (file.getCatchBlocks().contains(check)){
-									System.out.println("Removed Catch Block --> " + pattern);
-									//removedCatchBlock = checkRemoval(removedCatchBlock, newHash, diffText, check);
 									
 								} 
 								
@@ -788,11 +784,10 @@ public class ModelRepository {
 									|| line.contains(pattern))){
 								developer.incrementLinesAddedCount();
 								
-								if (file.getNODPs().contains(check)){
-									System.out.println("Added NODP --> " + pattern);
-									//addedNODP = checkAdded(addedNODP, newHash, diffText, check);
-									
-								} else if (file.getCollVars().contains(check)){
+								if (file.getCatchBlocks().contains(check)){
+									System.out.println("Added Catch Blocks --> " + pattern);
+									addedCatchBlock = checkAdded(addedCatchBlock, newHash, diffText, pattern);
+								}  else if (file.getCollVars().contains(check)){
 									System.out.println("Added Collections --> " + pattern);
 									//addedCollVar = checkAdded(addedCollVar, newHash, diffText, check);
 									
@@ -800,9 +795,6 @@ public class ModelRepository {
 									System.out.println("Added Optional --> " + pattern);
 									//addedOptVar = checkAdded(addedOptVar, newHash, diffText, check);
 									
-								} else if (file.getCatchBlocks().contains(check)){
-									System.out.println("Added Catch Blocks --> " + pattern);
-									//addedCatchBlock = checkAdded(addedCatchBlock, newHash, diffText, check);
 								} 
 								
 								addedNullChecks = checkAdded(addedNullChecks, newHash, diffText, check);
@@ -854,13 +846,13 @@ public class ModelRepository {
 		}
 	}
 
-	private int checkAdded(int added, String newHash, String diffText, String check) {
-		if (isAddition(diffText, check)){
+	private int checkAdded(int added, String newHash, String diffText, String pattern) {
+		if (isAddition(diffText, pattern)){
 			System.out.println("Null usage pattern was added at revision " + newHash);
 			
 			added +=1;			
 			
-			countedUsagePatterns.add(check);
+			countedUsagePatterns.add(pattern);
 
 		}		
 		

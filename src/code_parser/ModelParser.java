@@ -204,14 +204,14 @@ public class ModelParser {
 		NODP_Visitor visitor = new NODP_Visitor(file, commit, file.getNODPs());
 		cu.accept(visitor);
 		// NODP only 
-		
-		// TODO check here for what count is -- may need to pass in revision here and to visitor so can be tagged when number increases
-				
+						
 		// built up from file to preserve counts
 		List<NODP> nodp = visitor.getNODPs();
 		// what was currently found (fields only)
 		List <NODP> currNodp = visitor.getCurrentNODPs();
 		
+		
+		// TODO fix NODP removal detection!
 		for (NODP dp: nodp){
 			// if field not found this go around, but in full list, removed? [super simplified]
 			if (!currNodp.isEmpty()){

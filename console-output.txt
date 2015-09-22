@@ -68,6 +68,7 @@ Diff of 6888020f79e96019701b96fb6b6df877e1538774 and 4881ebb49752c14fa1de653c048
 Reverted to commit 6888020f79e96019701b96fb6b6df877e1538774
 
 ****Parsing at revision 6888020f79e96019701b96fb6b6df877e1538774****
+Collections usage -- main￿a=java.util.Collections.emptyList()
 
 Diff of 8f18d890450470134132334ae437e0533a8055ed and 6888020f79e96019701b96fb6b6df877e1538774:
 	--> Added null checks = 0
@@ -78,6 +79,8 @@ Diff of 8f18d890450470134132334ae437e0533a8055ed and 6888020f79e96019701b96fb6b6
 Reverted to commit 8f18d890450470134132334ae437e0533a8055ed
 
 ****Parsing at revision 8f18d890450470134132334ae437e0533a8055ed****
+Collections usage -- main￿a=java.util.Collections.emptyList()
+Optional usage -- main￿possible=Optional.of(5)
 
 Diff of 857e116e048bf5716d69af47d569351703fe1482 and 8f18d890450470134132334ae437e0533a8055ed:
 	--> Added null checks = 0
@@ -88,6 +91,63 @@ Diff of 857e116e048bf5716d69af47d569351703fe1482 and 8f18d890450470134132334ae43
 Reverted to commit 857e116e048bf5716d69af47d569351703fe1482
 
 ****Parsing at revision 857e116e048bf5716d69af47d569351703fe1482****
+Collections usage -- main￿a=java.util.Collections.emptyList()
+Optional usage -- main￿possible=Optional.of(5)
+Catch block -- main￿catch (NullPointerException e) 
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> diff --git a/testClass.java b/testClass.java
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> index 5778f83..ef6b67d 100644
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> --- a/testClass.java
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> +++ b/testClass.java
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> @@ -296,8 +296,6 @@
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> public static void main(String[] args)
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> {
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> // TODO Auto-generated method stub
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> -        try
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> -        {
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> 
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> for (int i=0; i < 10; i++)
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> {
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> @@ -314,11 +312,8 @@
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> // nodes[9].next=nodes[3];
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> //Boolean abc= Check_Circular(nodes[0]);
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> //System.out.print(abc);
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> -        }
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> -        catch(NullPointerException e)
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> -        {
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> -            System.out.print("NullPointerException caught");
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> -        }
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> +
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> +
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> 
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> }
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> }
 
 Diff of 7ee29eab7603f2b6bfec1bd9ca08550210794cf1 and 857e116e048bf5716d69af47d569351703fe1482:
 	--> Added null checks = 0
@@ -100,6 +160,38 @@ Cannot revert commit '7ee29eab7603f2b6bfec1bd9ca08550210794cf1' because it has 2
 Reverted to commit 9701c53d52f9314f3169b1a706adc8764c26e270
 
 ****Parsing at revision 9701c53d52f9314f3169b1a706adc8764c26e270****
+Collections usage -- main￿a=java.util.Collections.emptyList()
+Catch block -- main￿catch (NullPointerException e) 
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> diff --git a/testClass.java b/testClass.java
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> index e38df13..71da7d5 100644
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> --- a/testClass.java
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> +++ b/testClass.java
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> @@ -288,6 +288,10 @@
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> {
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> // do something
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> java.util.List<String> a=java.util.Collections.emptyList();
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> +
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> +            	Optional<Integer> possible=Optional.of(5);
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> +            	possible.isPresent(); // returns true
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> +            	possible.get(); // returns 5
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> 
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> }
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> 
 
 Diff of 201a55b597f9e84f25dcdf30b0898516f7a2b089 and 9701c53d52f9314f3169b1a706adc8764c26e270:
 	--> Added null checks = 0
@@ -110,6 +202,37 @@ Diff of 201a55b597f9e84f25dcdf30b0898516f7a2b089 and 9701c53d52f9314f3169b1a706a
 Reverted to commit 201a55b597f9e84f25dcdf30b0898516f7a2b089
 
 ****Parsing at revision 201a55b597f9e84f25dcdf30b0898516f7a2b089****
+Catch block -- main￿catch (NullPointerException e) 
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> diff --git a/testClass.java b/testClass.java
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> index 9e43b91..e38df13 100644
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> --- a/testClass.java
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> +++ b/testClass.java
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> @@ -286,7 +286,9 @@
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> 
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> for (int i=0; i < 10; i++)
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> {
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> -               // do something
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> +               // do something
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> +            	java.util.List<String> a=java.util.Collections.emptyList();
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> +
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> }
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> 
+Usage Pattern --> catch (NullPointerException e)
+Code from Diff --> // Create loop;
 
 Diff of 814dd1ef0e251136cb4290a51c100b73d8a1ae83 and 201a55b597f9e84f25dcdf30b0898516f7a2b089:
 	--> Added null checks = 0

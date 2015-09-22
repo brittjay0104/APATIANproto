@@ -119,7 +119,7 @@ public class NPE_Visitor extends ASTVisitor{
 			String c = s.substring(0, s.indexOf("{"));
 					
 					
-			System.out.println("Catch Clause ---> " + c);
+			//System.out.println("Catch Clause ---> " + c);
 			
 			SingleVariableDeclaration exception = clause.getException();
 			
