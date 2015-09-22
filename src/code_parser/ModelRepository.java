@@ -8,11 +8,13 @@ import java.io.StringReader;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
 import java.util.regex.Pattern;
 
 import node_visitor.NODP;
@@ -229,7 +231,7 @@ public class ModelRepository {
 	public Object setRepositoryRevisionHistory(Git git, ModelDeveloper developer) {
 
 		Object o = "did it";
-		
+				
 		try {
 			LogCommand lc = git.log();
 			Iterable<RevCommit> log;
@@ -263,6 +265,9 @@ public class ModelRepository {
 			System.out.println("GitAPIException thrown!");
 		}
 
+			
+		
+		// TODO why is this here? incomplete?
 		devs = new ArrayList<String>(new LinkedHashSet<String>(devs));
 
 		return o;
@@ -326,48 +331,6 @@ public class ModelRepository {
 
 	/**
 	 *
-	 * Analyzes the current revision of the repository for null checks.
-	 *
-	 * @param git - Git object that represents the repository to analyze.
-	 * @throws IOException
-	 */
-	public void analyzeForNull(Git git, String newH, ModelDeveloper developer, String repoName) throws IOException {
-		ModelParser parser = new ModelParser();
-
-		String devName = developer.getDevName();
-
-		if(developer.getCommits().contains(newH)){
-			//System.out.println("Null checks found in initial commit -- added at creation of the repository.");
-
-			// TODO: is analysis contributing anything here anymore? Not counting anything found in initial commit
-//			for (ModelSourceFile file: getSourceFiles()) {
-//				// parse the files AST for null checks
-//				List<String> checks = parser.parseForNull(file, newH);
-//				parser.parseForNODP(file);
-//				//parser.parseForNPEAvoidance(file);
-//
-////				for (String check: checks){
-////					if (!(countedChecks.contains(check))){
-////						developer.incrementAddedNullCounts();
-////					}
-////				}
-//
-//				//System.out.println("Number introduced in " + file.getName() +  " by " + devName + ": " + developer.getNullCount());
-//
-//			}
-		}
-
-		System.out.println("****Analysis complete for first commit****");
-		System.out.println(devName + " added null count = " + developer.getAddedNullCounts() + " in repository " + repoName);
-		System.out.println(devName + " removed null count = " + developer.getRemovedNullCounts() + " in repository " + repoName);
-		System.out.println(devName + " deref count = " + developer.getDerefCount() + " in repository " + repoName);
-		// TODO add print statements for other patterns
-
-
-}
-
-	/**
-	 *
 	 * Reverts and analyzes source files in the repository at each revision (currently
 	 * parsing for null checks).
 	 *
@@ -378,6 +341,7 @@ public class ModelRepository {
 	public void revertAndAnalyzeForNull(Git git, String directory, ModelDeveloper dev, String repoName) throws IOException{
 
 		ArrayList<String> commits = dev.getCommits();
+		String devName = dev.getDevName();
 		
 		for (int i = 0; i <= commits.size()-1; i++) {
 
@@ -387,7 +351,12 @@ public class ModelRepository {
 			if (!((commits.get(i)).equals(commits.get(commits.size()-1)))){
 				oldHash = commits.get(i+1);
 			} else {
-				analyzeForNull(git, newHash, dev, repoName);
+				//analyzeForNull(git, newHash, dev, repoName);
+				System.out.println("****Analysis complete for first commit****");
+				System.out.println(devName + " added null count = " + dev.getAddedNullCounts() + " in repository " + repoName);
+				System.out.println(devName + " removed null count = " + dev.getRemovedNullCounts() + " in repository " + repoName);
+				System.out.println(devName + " deref count = " + dev.getDerefCount() + " in repository " + repoName);
+				// TODO add print statements for other patterns
 			}
 
 			try {
@@ -395,7 +364,7 @@ public class ModelRepository {
 				// revert the repository
 				for (RevCommit rev: revisions){
 					
-					System.out.println(ObjectId.toString(rev.getId()));
+					//System.out.println(ObjectId.toString(rev.getId()));
 					if (ObjectId.toString(rev.getId()).equals(commits.get(i))){
 						RevCommit revert = rev;
 						git.revert().include(revert).call();
@@ -404,21 +373,22 @@ public class ModelRepository {
 				
 				System.out.println("\n" + "Reverted to commit " + newHash + "\n");
 				
-				for (RevCommit rev: revisions){
-					System.out.println(ObjectId.toString(rev.getId()));
-					if (ObjectId.toString(rev.getId()).equals(newHash)){
-//						
-						setAndParseSource(directory, i, oldHash, newHash, dev, rev);
-						
-						System.out.println("\nDiff of " + oldHash + " and " + newHash + ":");
-						System.out.println("	--> Added null checks = " + dev.getAddedNullCounts());
-						System.out.println("	--> Removed null checks = " + dev.getRemovedNullCounts());
-						System.out.println("	--> Null dereferences checked for null = " + dev.getDerefCount());
-						System.out.println("	--> Added Null Object Design Patterns = " + dev.getAddedNODPCounts());
-//						
+				setAndParseSource(directory, i, oldHash, newHash, dev);
+				
+				System.out.println("\nDiff of " + oldHash + " and " + newHash + ":");
+				System.out.println("	--> Added null checks = " + dev.getAddedNullCounts());
+				System.out.println("	--> Removed null checks = " + dev.getRemovedNullCounts());
+				System.out.println("	--> Null dereferences checked for null = " + dev.getDerefCount());
+				System.out.println("	--> Added Null Object Design Patterns = " + dev.getAddedNODPCounts());
 //						// TODO: add print statements for new patterns
-					}
-				}
+
+//				for (String commit: commits){
+//					//System.out.println(ObjectId.toString(rev.getId()));
+//					if (commit.equals(newHash)){
+////						
+////						
+//					}
+//				}
 
 				
 
@@ -444,7 +414,7 @@ public class ModelRepository {
 	 * @param oldHash
 	 * @throws IOException
 	 */
-	private void setAndParseSource(String directory, int i, String oldHash, String newHash, ModelDeveloper dev, RevCommit newRev) throws IOException {
+	private void setAndParseSource(String directory, int i, String oldHash, String newHash, ModelDeveloper dev) throws IOException {
 		
 		System.out.println("****Parsing at revision " + newHash + "****");
 
