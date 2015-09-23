@@ -35,7 +35,7 @@ public class ModelSourceFile {
 	public HashMap<String, ArrayList<String>> removedVars;
 	public HashMap<String, ArrayList<String>> removedAssigns;
 	
-	public List<NODP> NODPs;
+	public List<String> NODPs;
 	public List<String> collVars;
 	public List<String> optVars;
 	public List<String> catchBlocks;
@@ -75,7 +75,7 @@ public class ModelSourceFile {
 		removedFields = new ArrayList<String>();
 		removedVars = new HashMap<String, ArrayList<String>>();
 		removedAssigns = new HashMap<String, ArrayList<String>>();
-		NODPs = new ArrayList<NODP>();
+		NODPs = new ArrayList<String>();
 		collVars = new ArrayList<String>();
 		optVars = new ArrayList<String>();
 		catchBlocks = new ArrayList<String>();
@@ -286,20 +286,11 @@ public class ModelSourceFile {
 		}
 	}
 	
-	public void addNODP(NODP nodp){
+	public void addNODP(String nodp){
 		
-		boolean there = false;
-		
-		for (NODP n: NODPs){
-			if (n.equals(nodp)){
-				there = true;
-			}
-		}
-
-		if (!there){
+		if (!NODPs.contains(nodp)){
 			NODPs.add(nodp);
 		}
-
 	}
 	
 	public void addCollVar(String collVar){
@@ -475,7 +466,7 @@ public class ModelSourceFile {
 		methods.remove(method);
 	}
 	
-	public List<NODP> getNODPs (){
+	public List<String> getNODPs (){
 		return NODPs;
 	}
 	

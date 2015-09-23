@@ -432,27 +432,14 @@ public class ModelRepository {
 //			List <String> checks = parser.parseForNull(f, oldHash);
 //			diff(directory, f, checks, oldHash, newHash, dev);
 			
-			parser.parseForNODP(f, newHash);
+			List<String> nodps = parser.parseForNODP(f, newHash);
+			diff(directory, f, nodps, oldHash, newHash, dev);
 			
-			// instead of diff, check revAdded on each NODP in list and see if it matches current/added by dev
-			for (NODP n : f.getNODPs()){
-				if (n.getRevAdded().equals(newHash)){
-					System.out.println("NODP named " + n.getType() + " in revision " + n.getRevAdded());
-					
-					if (dev.getCommits().contains(n.getRevAdded())){
-						System.out.println("NODP added by " + dev.getDevName());
-						dev.setAddedNODPCounts();
-					}
-				}
-			} 
-			// TODO : same for removed
 		
 			ArrayList<List<String>> npes = parser.parseForNPEAvoidance(f);
 			
 			List<String> catches = npes.get(2);
-			// TODO : instead of diff, check revAdded on each CatchBlock in list and see if it matches current?
-			// TODO : same for removed
-			diff(directory, f, catches, oldHash, newHash, dev);
+			//diff(directory, f, catches, oldHash, newHash, dev);
 
 			
 			// TODO works the same as null checks -- implement addition/removal
@@ -704,6 +691,8 @@ public class ModelRepository {
 		int addedCatchBlock = 0;
 		int removedCatchBlock = 0;
 		
+		int addedNODP = 0;
+		
 		Git git;
 		//current revision
 		String newHash = newH;
@@ -746,7 +735,7 @@ public class ModelRepository {
 					String line = null;
 
 					while((line = br.readLine())!= null){
-						line = line.trim().replace(" = ", "=");
+						//line = line.trim().replace(" = ", "=");
 						//System.out.println(line);
 						 
 						
@@ -756,8 +745,8 @@ public class ModelRepository {
 							//System.out.println("Check compare ==" + );
 							String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());	
 							
-							System.out.println("Usage Pattern --> " + pattern.replaceAll(" ", ""));
-							System.out.println("Code from Diff --> " + line.replaceAll(" ", ""));
+							System.out.println("Usage Pattern --> " + check);
+							System.out.println("Code from Diff --> " + line);
 							
 							if (line.startsWith("-") && (line.contains(check.substring(0, check.indexOf(CHECK_SEPERATOR))) 
 									|| line.contains(pattern))){
@@ -766,7 +755,7 @@ public class ModelRepository {
 																
 								if (file.getCatchBlocks().contains(check)){
 									System.out.println("Removed Catch Block --> " + pattern);
-									//removedCatchBlock = checkRemoval(removedCatchBlock, newHash, diffText, check);
+									removedCatchBlock = checkRemoval(removedCatchBlock, newHash, diffText, pattern);
 									
 								}  else if (file.getCollVars().contains(check)){
 									System.out.println("Removed Collections --> " + pattern);
@@ -795,9 +784,12 @@ public class ModelRepository {
 									System.out.println("Added Optional --> " + pattern);
 									//addedOptVar = checkAdded(addedOptVar, newHash, diffText, check);
 									
-								} 
+								} else if (file.getNODPs().contains(check)){
+									System.out.println("Added NODP --> " + pattern);
+									addedNODP = checkAdded(addedNODP, newHash, diffText, pattern);
+								}
 								
-								addedNullChecks = checkAdded(addedNullChecks, newHash, diffText, check);
+								addedNullChecks = checkAdded(addedNullChecks, newHash, diffText, pattern);
 								
 								if (developer.getCommits().contains(newHash)){
 									// now see if this null check is related to any null fields, variables, or assignments
@@ -824,12 +816,13 @@ public class ModelRepository {
 				}
 			}
 			
-			if (addedNullChecks <= 10 || addedCollVar <= 10 || addedOptVar <= 10 || addedCatchBlock <= 10){
+			if (addedNullChecks <= 10 || addedCollVar <= 10 || addedOptVar <= 10 || addedCatchBlock <= 10 || addedNODP <= 10){
 				if (developer.getCommits().contains(newHash)){
 					developer.setAddedNullCounts(addedNullChecks);
 					developer.setAddedCollCounts(addedCollVar);
 					developer.setAddedOptCounts(addedOptVar);
 					developer.setAddedCatchCounts(addedCatchBlock);
+					developer.setAddedNODPCounts(addedNODP);
 				}
 			}
 			
@@ -886,7 +879,22 @@ public class ModelRepository {
 	}
 
 	private boolean isAddition(String diff, String check) {
-		int count = StringUtils.countMatches(diff, check.substring(0, check.indexOf(CHECK_SEPERATOR)));
+		int count = 0;
+		
+		// for patterns with 3 parts, i.e. NODP
+		if (StringUtils.countMatches(check, Character.toString(CHECK_SEPERATOR)) == 2){
+			// TODO break string down into 3 parts to check for
+			
+			String type = check.substring(0, check.indexOf(CHECK_SEPERATOR));
+			System.out.println("Type for NODP addition check --> " + type);
+			String field = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.lastIndexOf(CHECK_SEPERATOR));
+			System.out.println("Field for NODP addition check --> " + field);
+			String ret = check.substring(check.lastIndexOf(CHECK_SEPERATOR), check.length()); 
+			System.out.println("Return for NODP addition check --> " + ret);
+			
+		}
+		
+		count = StringUtils.countMatches(diff, check.substring(0, check.indexOf(CHECK_SEPERATOR)));						
 
 		if (count == 1){
 			return true;
@@ -896,8 +904,16 @@ public class ModelRepository {
 	}
 
 	private boolean isRemoval(String diff, String check) {
-		String s2 = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
-		int count = StringUtils.countMatches(diff, check.substring(0, check.indexOf(CHECK_SEPERATOR)));
+		int count = 0;
+		String s2 = "";
+		
+		if (check.indexOf(CHECK_SEPERATOR) >=0){
+			s2 = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
+			count = StringUtils.countMatches(diff, check.substring(0, check.indexOf(CHECK_SEPERATOR)));			
+		}
+		
+		
+		
 
 		if (diff.contains(s2) && count == 1){
 			return true;

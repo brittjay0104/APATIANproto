@@ -47,20 +47,20 @@ public class RunAnalysis {
 			
 			Runtime rt = Runtime.getRuntime();
 			
-			String repo = "./dummy-repo/.git";
+			String repo = "./dummy-repo3/.git";
 			File repoGit = new File(repo);
 			ModelDeveloper dev = new ModelDeveloper("Brittany Johnson");
 			dev.setUserName("brittjay0104");
 			// TODO add pseudo name to reporting?
 			//dev.setPseudoName("Joyce");
-			String repoName = "dummy-repo";
-			String dir = "./dummy-repo/";
+			String repoName = "dummy-repo3";
+			String dir = "./dummy-repo3/";
 			File directory = new File (dir);
 			
 			clearOutDirectory(directory);
 			directory.delete();
 			
-			Process p3 = rt.exec("git clone https://github.com/brittjay0104/dummy-repo.git");
+			Process p3 = rt.exec("git clone https://github.com/brittjay0104/dummy-repo3.git");
 			//Process p3 = rt.exec("git clone -b landing-strip https://github.com/ataulm/wutson.git"); 
 			System.out.println(p3.waitFor());
 									

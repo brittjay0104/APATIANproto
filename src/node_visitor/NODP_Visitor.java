@@ -19,21 +19,15 @@ public class NODP_Visitor extends ASTVisitor{
 	
 	public static final char CHECK_SEPERATOR = Character.MAX_VALUE;
 	
-	List<NODP> NODPs = new ArrayList<NODP>();
-	//List<String> fields =  new ArrayList<String>();
+	List<String> NODPs = new ArrayList<String>();
+	List<String> fields =  new ArrayList<String>();
 	private char[] source;
 	String currentRev;
-	List<NODP> currentNODPs = new ArrayList<NODP>();
 	
-	public NODP_Visitor(ModelSourceFile file, String currentRevision, List<NODP> fileNODPs){
+	public NODP_Visitor(ModelSourceFile file, String currentRevision){
 		this.source = file.getSource();
 		currentRev = currentRevision;
-		
-		if (!fileNODPs.isEmpty()){
-			for (NODP n: fileNODPs){
-				NODPs.add(n);
-			}			
-		}
+
 	}
 	
 	private String findSourceForNode(ASTNode node) {
@@ -63,7 +57,7 @@ public class NODP_Visitor extends ASTVisitor{
 			//System.out.println("Potential Singleton!");
 			String type = node.getType().toString();
 			if (type.toLowerCase().contains("null")){
-				System.out.println("Potential NODP!");
+				//System.out.println("Potential NODP!");
 				
 				List decs = node.fragments();
 				
@@ -75,29 +69,12 @@ public class NODP_Visitor extends ASTVisitor{
 					//System.out.println(var);
 					
 					//Add type to field for uniqueness (required for Singleton/NODP)
-					NODP f = new NODP(var, type);
+					String NODPvar = type + CHECK_SEPERATOR + var;
 					
-					// if object with same field name and type already in there, flag it
-					// TODO -- here is where we might check for removal as well! if it's already there look at count number...? 
-					// Or at higher level (file level?) with saved list (compare values)
-					
-					currentNODPs.add(f);
-					
-					boolean there = false;
-					
-					for (NODP n: NODPs){
-						if (n.equals(f)){
-							System.out.println("NODP already exists!");
-							there = true;
-						}
-					}
-
-					// Increment count; part 1 of having an NODP implemented 
-					// Add NODP object that could be used in NODP
-					if (!there){
-						System.out.println("NODP field added!");
-						f.incrAttrCount();
-						NODPs.add(f);
+					//System.out.println(NODPvar);
+					if (!(fields.contains(NODPvar))){
+						//System.out.println(NODPvar + "added!");
+						fields.add(NODPvar);
 					}
 				}
 			}
@@ -111,11 +88,11 @@ public class NODP_Visitor extends ASTVisitor{
 		String ret = node.toString();
 		
 		//System.out.println(ret);
-		for (int i =0; i < NODPs.size(); i++){
-			NODP nodp = NODPs.get(i);
+		for (int i =0; i < fields.size(); i++){
+			String field = fields.get(i);
+			String var = field.substring(field.indexOf(CHECK_SEPERATOR)+1, field.length());
 			
-			String var = nodp.getField();
-			System.out.println("Return variable: " + var);
+			//System.out.println("Return variable: " + var);
 			
 			if (ret.contains(var)){
 				MethodDeclaration md = getMethodDeclaration(node);
@@ -125,17 +102,23 @@ public class NODP_Visitor extends ASTVisitor{
 					//System.out.println(field + " might be used for NODP!");
 					
 					// Strong possibility NODP in play
-					// here is where count would change to 2 (meaning both pieces are present)
 					
-					if (nodp.getAttrCount() < 2){
-						System.out.println("Increment count -- potential NODP!");
-						int count = nodp.incrAttrCount();
-						
-						if (count == 2){
-							System.out.println("Full implementation flagged at rev " + currentRev);
-							nodp.setRevAdded(currentRev);						
-						}						
+					String check = field + CHECK_SEPERATOR + ret;
+					fields.set(i, check);
+					if (!NODPs.contains(check)){
+						NODPs.add(check);						
 					}
+					
+					
+//					if (nodp.getAttrCount() < 2){
+//						System.out.println("Increment count -- potential NODP!");
+//						int count = nodp.incrAttrCount();
+//						
+//						if (count == 2){
+//							System.out.println("Full implementation flagged at rev " + currentRev);
+//							nodp.setRevAdded(currentRev);						
+//						}						
+//					}
 					
 				}
 				
@@ -145,12 +128,8 @@ public class NODP_Visitor extends ASTVisitor{
 		return true;
 	}
 	
-	public List<NODP> getNODPs(){
+	public List<String> getNODPs(){
 		return NODPs;
-	}
-	
-	public List<NODP> getCurrentNODPs()	{
-		return currentNODPs;
 	}
 	
 	

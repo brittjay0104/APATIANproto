@@ -182,7 +182,7 @@ public class ModelParser {
 
 	}
 
-	public void parseForNODP(ModelSourceFile file, String commit) throws IOException{
+	public List<String> parseForNODP(ModelSourceFile file, String commit) throws IOException{
 		ASTParser parser = ASTParser.newParser(AST.JLS4);
 
 		String src = readFiletoString(file.getSourceFile().getCanonicalPath());
@@ -201,35 +201,23 @@ public class ModelParser {
 
 		CompilationUnit cu = (CompilationUnit) parser.createAST(null);
 
-		NODP_Visitor visitor = new NODP_Visitor(file, commit, file.getNODPs());
+		NODP_Visitor visitor = new NODP_Visitor(file, commit);
 		cu.accept(visitor);
 		// NODP only 
 						
 		// built up from file to preserve counts
-		List<NODP> nodp = visitor.getNODPs();
-		// what was currently found (fields only)
-		List <NODP> currNodp = visitor.getCurrentNODPs();
+		List<String> nodp = visitor.getNODPs();
 		
 		
-		// TODO fix NODP removal detection!
-		for (NODP dp: nodp){
-			// if field not found this go around, but in full list, removed? [super simplified]
-			if (!currNodp.isEmpty()){
-				boolean contains = containsField(currNodp, dp.getField(), dp.getType());
-				
-				if (!contains){
-					System.out.println("NODP removed at rev " + commit + "!");
-					dp.setRevRemoved(commit);
-				}
-			}
+		for (String dp: nodp){
 			
-			System.out.println("NODP -- " + dp.getField());
+			System.out.println("NODP --> " + dp);
 			
 			file.addNODP(dp);
 		}
 		
 		
-		//return nodp;
+		return nodp;
 	}
 	
 	public boolean containsField(List<NODP> currNodp, String field, String type){
