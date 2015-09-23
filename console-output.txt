@@ -15,9 +15,8 @@ Brittany Johnson is responsible for commit dcf67baa545756ab03d2000c4edf326e09009
 Reverted to commit db0ec14a3940e0b2143e3ef5388e24df349cdab8
 
 ****Parsing at revision db0ec14a3940e0b2143e3ef5388e24df349cdab8****
-Potential NODP!
-NullObjectPattern_test￿instance
-NullObjectPattern_test￿instanceadded!
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
 NODP --> NullObjectPattern_test￿instance￿return instance;
 
 
@@ -30,9 +29,8 @@ Diff of 23de72296d40ecff16cc257be2895884dc0bfbed and db0ec14a3940e0b2143e3ef5388
 Reverted to commit 23de72296d40ecff16cc257be2895884dc0bfbed
 
 ****Parsing at revision 23de72296d40ecff16cc257be2895884dc0bfbed****
-Potential NODP!
-NullObjectPattern_test￿instance
-NullObjectPattern_test￿instanceadded!
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
 NODP --> NullObjectPattern_test￿instance￿return instance;
 
 Optional usage -- main￿possible=Optional.of(5)
@@ -46,9 +44,8 @@ Diff of 1103532657974d248d3fb11435d24517038aaee4 and 23de72296d40ecff16cc257be28
 Reverted to commit 1103532657974d248d3fb11435d24517038aaee4
 
 ****Parsing at revision 1103532657974d248d3fb11435d24517038aaee4****
-Potential NODP!
-NullObjectPattern_test￿instance
-NullObjectPattern_test￿instanceadded!
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
 NODP --> NullObjectPattern_test￿instance￿return instance;
 
 Collections usage -- main￿a=java.util.Collections.emptyList()
@@ -63,9 +60,8 @@ Diff of 365cc50fb28186309bcba1a14a373a06d349a51d and 1103532657974d248d3fb11435d
 Reverted to commit 365cc50fb28186309bcba1a14a373a06d349a51d
 
 ****Parsing at revision 365cc50fb28186309bcba1a14a373a06d349a51d****
-Potential NODP!
-NullObjectPattern_test￿instance
-NullObjectPattern_test￿instanceadded!
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
 NODP --> NullObjectPattern_test￿instance￿return instance;
 
 Collections usage -- main￿a=java.util.Collections.emptyList()
