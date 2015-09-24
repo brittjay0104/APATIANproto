@@ -12,7 +12,7 @@ import util.Configuration;
 
 public class RunAnalysis {
 
-	public static String repoName = "dummy-repo";
+	public static String repoName = "dummy-repo3";
 	public static String userName = "brittjay0104";
 	public static String developerName = "Brittany Johnson";
 	public static String github_url = "https://github.com/" + userName + "/" + repoName + ".git";
