@@ -21,8 +21,6 @@ NODP --> NullObjectPattern_test￿instance￿return instance;
 
 Returned from parser --> NullObjectPattern_test￿instance￿return instance;
 
-Into diff --> NullObjectPattern_test￿instance￿return instance;
-
 
 Diff of 23de72296d40ecff16cc257be2895884dc0bfbed and db0ec14a3940e0b2143e3ef5388e24df349cdab8:
 	--> Added null checks = 0
@@ -38,8 +36,6 @@ NODP in play! --> NullObjectPattern_test￿instance￿return instance;
 NODP --> NullObjectPattern_test￿instance￿return instance;
 
 Returned from parser --> NullObjectPattern_test￿instance￿return instance;
-
-Into diff --> NullObjectPattern_test￿instance￿return instance;
 
 Optional usage -- main￿possible=Optional.of(5)
 
@@ -57,8 +53,6 @@ NODP in play! --> NullObjectPattern_test￿instance￿return instance;
 NODP --> NullObjectPattern_test￿instance￿return instance;
 
 Returned from parser --> NullObjectPattern_test￿instance￿return instance;
-
-Into diff --> NullObjectPattern_test￿instance￿return instance;
 
 Collections usage -- main￿a=java.util.Collections.emptyList()
 Optional usage -- main￿possible=Optional.of(5)
@@ -78,8 +72,6 @@ NODP --> NullObjectPattern_test￿instance￿return instance;
 
 Returned from parser --> NullObjectPattern_test￿instance￿return instance;
 
-Into diff --> NullObjectPattern_test￿instance￿return instance;
-
 Collections usage -- main￿a=java.util.Collections.emptyList()
 Optional usage -- main￿possible=Optional.of(5)
 Catch block -- main￿catch (NullPointerException e) 
@@ -93,6 +85,8 @@ Diff of 6a9bda47c7c18265dcc682be5513a82db528cdfd and 365cc50fb28186309bcba1a14a3
 Reverted to commit 6a9bda47c7c18265dcc682be5513a82db528cdfd
 
 ****Parsing at revision 6a9bda47c7c18265dcc682be5513a82db528cdfd****
+Found relevant diff!
+Found relevant pattern!
 Collections usage -- main￿a=java.util.Collections.emptyList()
 Optional usage -- main￿possible=Optional.of(5)
 Catch block -- main￿catch (NullPointerException e) 

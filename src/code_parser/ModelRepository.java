@@ -421,7 +421,6 @@ public class ModelRepository {
 		setSourceFiles(directory);
 		
 		for (ModelSourceFile f: getSourceFiles()) {
-			//System.out.println(f.getName());
 			
 			setFileRevisionHistory(git, f);
 
@@ -702,6 +701,7 @@ public class ModelRepository {
 		String newHash = newH;
 
 		try {
+		
 			git = Git.open(repoDir);
 			// next to current revision (older)
 			String oldHash = getOldHash(newH);
@@ -726,94 +726,39 @@ public class ModelRepository {
 			ByteArrayOutputStream out = new ByteArrayOutputStream();
 			DiffFormatter df = new DiffFormatter(out);
 			df.setRepository(git.getRepository());
+			
 
 			for(DiffEntry diff : diffs)
 			{
+				
 				df.format(diff);
 				diff.getOldId();
 				String diffText = out.toString("UTF-8");
-
-				if (diffText.contains(file.getName())){
-					
-					for (String check: checks){
-						System.out.println("Usage Pattern --> " + check);
-						// TODO HERE! :)
-					}					
-
-					BufferedReader br = new BufferedReader(new StringReader(diffText));
-					String line = null;
-
-					while((line = br.readLine())!= null){
-						//line = line.trim().replace(" = ", "=");
-						//System.out.println(line);
-						 
-						
-						
-						for (String check: checks){
-							//System.out.println("Diff Line == " + line);
-							//System.out.println("Check compare ==" + );
-							String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());	
-							
-							System.out.println("Usage Pattern --> " + check);
-							System.out.println("Code from Diff --> " + line);
-							
-							if (line.startsWith("-") && (line.contains(check.substring(0, check.indexOf(CHECK_SEPERATOR))) 
-									|| line.contains(pattern))){
-								developer.incrementLinesRemovedCount();
-								// continue reading to find next line of null check make sure still there when line contains (-) and (+)
-																
-								if (file.getCatchBlocks().contains(check)){
-									System.out.println("Removed Catch Block --> " + pattern);
-									removedCatchBlock = checkRemoval(removedCatchBlock, newHash, diffText, pattern);
-									
-								}  else if (file.getCollVars().contains(check)){
-									System.out.println("Removed Collections --> " + pattern);
-									//removedCollVar = checkRemoval(removedCollVar, newHash, diffText, check);
-									
-								} else if (file.getOptVars().contains(check)) {
-									System.out.println("Removed Optional --> " + pattern);
-									//removedOptVar = checkRemoval(removedOptVar, newHash, diffText, check);
-									
-								} 
-								
-								removedNullChecks = checkRemoval(removedNullChecks, newHash, diffText, check);
-								
-							} else if (line.startsWith("+") && (line.contains(check.substring(0, check.indexOf(CHECK_SEPERATOR))) 
-									|| line.contains(pattern))){
-								developer.incrementLinesAddedCount();
-								
-								if (file.getCatchBlocks().contains(check)){
-									System.out.println("Added Catch Blocks --> " + pattern);
-									addedCatchBlock = checkAdded(addedCatchBlock, newHash, diffText, pattern);
-								}  else if (file.getCollVars().contains(check)){
-									System.out.println("Added Collections --> " + pattern);
-									//addedCollVar = checkAdded(addedCollVar, newHash, diffText, check);
-									
-								} else if (file.getOptVars().contains(check)) {
-									System.out.println("Added Optional --> " + pattern);
-									//addedOptVar = checkAdded(addedOptVar, newHash, diffText, check);
-									
-								} else if (file.getNODPs().contains(check)){
-									//String pattern = check.substring(beginIndex, endIndex)
-									System.out.println("Added NODP --> " + pattern);
-									addedNODP = checkAdded(addedNODP, newHash, diffText, pattern);
-								}
-								
-								addedNullChecks = checkAdded(addedNullChecks, newHash, diffText, pattern);
-								
-								if (developer.getCommits().contains(newHash)){
-									// now see if this null check is related to any null fields, variables, or assignments
-									derefNullChecks = calculateDerefValue(file, check, developer, derefNullChecks);
-								}
-							}
-						}
-						
-
+				
+				// HERE!
+//				System.out.println(file.getName());
+//				System.out.println(diffText);
+				
+//				for (int i=0; i<checks.size(); i++){
+//					String c = checks.get(i);
+//					String type = c.substring(0, c.indexOf(CHECK_SEPERATOR));
+//					System.out.println("Type for NODP addition check --> " + type);
+//					String field = c.substring(c.indexOf(CHECK_SEPERATOR)+1, c.lastIndexOf(CHECK_SEPERATOR));
+//					System.out.println("Field for NODP addition check --> " + field);
+//					String ret = c.substring(c.lastIndexOf(CHECK_SEPERATOR)+1, c.length()); 
+//					System.out.println("Return for NODP addition check --> " + ret);
+//					
+//				}
+				 
+				if (diffText.contains("NullObjectPattern_test.java")){
+					System.out.println("Found relevant diff!");
+					//System.out.println(diffText);
+					if (diffText.contains("return instance;")){
+						System.out.println("Found relevant pattern!");
 					}
-
 				}
+				
 
-				out.reset();
 			}
 			
 			if (removedNullChecks <= 10 || removedCollVar <= 10 || removedOptVar <= 10 || removedCatchBlock <= 10){
@@ -894,13 +839,6 @@ public class ModelRepository {
 		// for patterns with 3 parts, i.e. NODP
 		if (StringUtils.countMatches(check, Character.toString(CHECK_SEPERATOR)) == 2){
 			// TODO break string down into 3 parts to check for
-			
-			String type = check.substring(0, check.indexOf(CHECK_SEPERATOR));
-			System.out.println("Type for NODP addition check --> " + type);
-			String field = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.lastIndexOf(CHECK_SEPERATOR));
-			System.out.println("Field for NODP addition check --> " + field);
-			String ret = check.substring(check.lastIndexOf(CHECK_SEPERATOR), check.length()); 
-			System.out.println("Return for NODP addition check --> " + ret);
 			
 		}
 		
