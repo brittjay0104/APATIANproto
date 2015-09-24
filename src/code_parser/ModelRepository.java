@@ -365,12 +365,8 @@ public class ModelRepository {
 				
 				setAndParseSource(directory, i, oldHash, currHash, dev);
 				
-				System.out.println("\nDiff of " + oldHash + " and " + currHash + ":");
-				System.out.println("	--> Added null checks = " + dev.getAddedNullCounts());
-				System.out.println("	--> Removed null checks = " + dev.getRemovedNullCounts());
-				System.out.println("	--> Null dereferences checked for null = " + dev.getDerefCount());
-				System.out.println("	--> Added Null Object Design Patterns = " + dev.getAddedNODPCounts());
-//						// TODO: add print statements for new patterns
+				System.out.println(prettyPrint(dev, currHash, oldHash));
+//						
 
 //				for (String commit: commits){
 //					//System.out.println(ObjectId.toString(rev.getId()));
@@ -396,6 +392,26 @@ public class ModelRepository {
 			}
 		}
 
+	}
+
+	/**
+	 * Convenience method to Format Output String
+	 * @param dev
+	 * @param currHash
+	 * @param oldHash
+	 * @return
+	 */
+	private String prettyPrint(ModelDeveloper dev, String currHash, String oldHash) {
+		StringBuffer buff = new StringBuffer();
+		
+		buff.append("\nDiff of ").append(oldHash).append(" and ").append(currHash).append(":");
+		buff.append("\n	--> Added null checks = ").append(dev.getAddedNullCounts());
+		buff.append("\n	--> Removed null checks = ").append(dev.getRemovedNullCounts());
+		buff.append("\n	--> Null dereferences checked for null = ").append(dev.getDerefCount());
+		buff.append("\n	--> Added Null Object Design Patterns = ").append(dev.getAddedNODPCounts());
+		// TODO: add print statements for new patterns
+		
+		return buff.toString();
 	}
 
 	/**
