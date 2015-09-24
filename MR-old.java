@@ -416,10 +416,6 @@ public class ModelRepository {
 	 */
 	private void setAndParseSource(String directory, int i, String oldHash, String newHash, ModelDeveloper dev) throws IOException {
 		
-		if(newHash.equalsIgnoreCase("6a9bda47c7c18265dcc682be5513a82db528cdfd"))
-		{
-			System.out.println("Here");
-		}
 		System.out.println("****Parsing at revision " + newHash + "****");
 
 		setSourceFiles(directory);
@@ -435,8 +431,7 @@ public class ModelRepository {
 //			List <String> checks = parser.parseForNull(f, oldHash);
 //			diff(directory, f, checks, oldHash, newHash, dev);
 			
-			System.out.println(f.getName());
-			List<String> nodps = parser.parseForNODP(f, oldHash);
+			List<String> nodps = parser.parseForNODP(f, newHash);
 			for (String n: nodps){
 				System.out.println("Returned from parser --> " + n);
 			}
@@ -740,31 +735,28 @@ public class ModelRepository {
 				diff.getOldId();
 				String diffText = out.toString("UTF-8");
 				
-				//System.out.println(diffText);
+				// HERE!
+//				System.out.println(file.getName());
+//				System.out.println(diffText);
 				
-				for (String check: checks){
-					
-//					if (StringUtils.countMatches(check, Character.toString(CHECK_SEPERATOR)) == 2){
-//						String type = check.substring(0, check.indexOf(CHECK_SEPERATOR));
-//						System.out.println("Type for NODP addition check --> " + type);
-//						String field = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.lastIndexOf(CHECK_SEPERATOR));
-//						System.out.println("Field for NODP addition check --> " + field);
-//						String ret = check.substring(check.lastIndexOf(CHECK_SEPERATOR)+1, check.length()); 
-//						System.out.println("Return for NODP addition check --> " + ret);
-//
-//						// HERE!
-//						if (diffText.contains(type)){
-//							System.out.println(diffText);
-//						}	
-//					} else {
-//						// null checks, catch blocks, collections, optional (only 1 separator, method - pattern)
-//						
-//					}
-					
-					
-					
+//				for (int i=0; i<checks.size(); i++){
+//					String c = checks.get(i);
+//					String type = c.substring(0, c.indexOf(CHECK_SEPERATOR));
+//					System.out.println("Type for NODP addition check --> " + type);
+//					String field = c.substring(c.indexOf(CHECK_SEPERATOR)+1, c.lastIndexOf(CHECK_SEPERATOR));
+//					System.out.println("Field for NODP addition check --> " + field);
+//					String ret = c.substring(c.lastIndexOf(CHECK_SEPERATOR)+1, c.length()); 
+//					System.out.println("Return for NODP addition check --> " + ret);
+//					
+//				}
+				 
+				if (diffText.contains("NullObjectPattern_test.java")){
+					System.out.println("Found relevant diff!");
+					//System.out.println(diffText);
+					if (diffText.contains("return instance;")){
+						System.out.println("Found relevant pattern!");
+					}
 				}
-				
 				
 
 			}

@@ -15,12 +15,14 @@ Brittany Johnson is responsible for commit dcf67baa545756ab03d2000c4edf326e09009
 Reverted to commit db0ec14a3940e0b2143e3ef5388e24df349cdab8
 
 ****Parsing at revision db0ec14a3940e0b2143e3ef5388e24df349cdab8****
+NullObjectPattern_test.java
 NODP in play! --> NullObjectPattern_test￿instance￿return instance;
 
 NODP --> NullObjectPattern_test￿instance￿return instance;
 
 Returned from parser --> NullObjectPattern_test￿instance￿return instance;
 
+testClass.java
 
 Diff of 23de72296d40ecff16cc257be2895884dc0bfbed and db0ec14a3940e0b2143e3ef5388e24df349cdab8:
 	--> Added null checks = 0
@@ -31,12 +33,14 @@ Diff of 23de72296d40ecff16cc257be2895884dc0bfbed and db0ec14a3940e0b2143e3ef5388
 Reverted to commit 23de72296d40ecff16cc257be2895884dc0bfbed
 
 ****Parsing at revision 23de72296d40ecff16cc257be2895884dc0bfbed****
+NullObjectPattern_test.java
 NODP in play! --> NullObjectPattern_test￿instance￿return instance;
 
 NODP --> NullObjectPattern_test￿instance￿return instance;
 
 Returned from parser --> NullObjectPattern_test￿instance￿return instance;
 
+testClass.java
 Optional usage -- main￿possible=Optional.of(5)
 
 Diff of 1103532657974d248d3fb11435d24517038aaee4 and 23de72296d40ecff16cc257be2895884dc0bfbed:
@@ -48,12 +52,14 @@ Diff of 1103532657974d248d3fb11435d24517038aaee4 and 23de72296d40ecff16cc257be28
 Reverted to commit 1103532657974d248d3fb11435d24517038aaee4
 
 ****Parsing at revision 1103532657974d248d3fb11435d24517038aaee4****
+NullObjectPattern_test.java
 NODP in play! --> NullObjectPattern_test￿instance￿return instance;
 
 NODP --> NullObjectPattern_test￿instance￿return instance;
 
 Returned from parser --> NullObjectPattern_test￿instance￿return instance;
 
+testClass.java
 Collections usage -- main￿a=java.util.Collections.emptyList()
 Optional usage -- main￿possible=Optional.of(5)
 
@@ -66,12 +72,14 @@ Diff of 365cc50fb28186309bcba1a14a373a06d349a51d and 1103532657974d248d3fb11435d
 Reverted to commit 365cc50fb28186309bcba1a14a373a06d349a51d
 
 ****Parsing at revision 365cc50fb28186309bcba1a14a373a06d349a51d****
+NullObjectPattern_test.java
 NODP in play! --> NullObjectPattern_test￿instance￿return instance;
 
 NODP --> NullObjectPattern_test￿instance￿return instance;
 
 Returned from parser --> NullObjectPattern_test￿instance￿return instance;
 
+testClass.java
 Collections usage -- main￿a=java.util.Collections.emptyList()
 Optional usage -- main￿possible=Optional.of(5)
 Catch block -- main￿catch (NullPointerException e) 
@@ -84,84 +92,9 @@ Diff of 6a9bda47c7c18265dcc682be5513a82db528cdfd and 365cc50fb28186309bcba1a14a3
 
 Reverted to commit 6a9bda47c7c18265dcc682be5513a82db528cdfd
 
+Here
 ****Parsing at revision 6a9bda47c7c18265dcc682be5513a82db528cdfd****
-Found relevant diff!
-Found relevant pattern!
+testClass.java
 Collections usage -- main￿a=java.util.Collections.emptyList()
 Optional usage -- main￿possible=Optional.of(5)
 Catch block -- main￿catch (NullPointerException e) 
-
-Diff of 8cf75c0547a098c00681bfde63fc246f4e278696 and 6a9bda47c7c18265dcc682be5513a82db528cdfd:
-	--> Added null checks = 0
-	--> Removed null checks = 0
-	--> Null dereferences checked for null = 0
-	--> Added Null Object Design Patterns = 0
-
-Reverted to commit 8cf75c0547a098c00681bfde63fc246f4e278696
-
-****Parsing at revision 8cf75c0547a098c00681bfde63fc246f4e278696****
-Collections usage -- main￿a=java.util.Collections.emptyList()
-Catch block -- main￿catch (NullPointerException e) 
-
-Diff of 6cc49806961fcbb536f5f386d3bdd0724f6beaff and 8cf75c0547a098c00681bfde63fc246f4e278696:
-	--> Added null checks = 0
-	--> Removed null checks = 0
-	--> Null dereferences checked for null = 0
-	--> Added Null Object Design Patterns = 0
-
-Reverted to commit 6cc49806961fcbb536f5f386d3bdd0724f6beaff
-
-****Parsing at revision 6cc49806961fcbb536f5f386d3bdd0724f6beaff****
-Catch block -- main￿catch (NullPointerException e) 
-
-Diff of 48ac7505f6c0c6a9c33c56514a6dcab2875917fc and 6cc49806961fcbb536f5f386d3bdd0724f6beaff:
-	--> Added null checks = 0
-	--> Removed null checks = 0
-	--> Null dereferences checked for null = 0
-	--> Added Null Object Design Patterns = 0
-
-Reverted to commit 48ac7505f6c0c6a9c33c56514a6dcab2875917fc
-
-****Parsing at revision 48ac7505f6c0c6a9c33c56514a6dcab2875917fc****
-
-Diff of 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db and 48ac7505f6c0c6a9c33c56514a6dcab2875917fc:
-	--> Added null checks = 0
-	--> Removed null checks = 0
-	--> Null dereferences checked for null = 0
-	--> Added Null Object Design Patterns = 0
-
-Reverted to commit 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db
-
-****Parsing at revision 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db****
-
-Diff of f29e26e40d3a244499ae41fb825264ffa230815b and 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db:
-	--> Added null checks = 0
-	--> Removed null checks = 0
-	--> Null dereferences checked for null = 0
-	--> Added Null Object Design Patterns = 0
-
-Reverted to commit f29e26e40d3a244499ae41fb825264ffa230815b
-
-****Parsing at revision f29e26e40d3a244499ae41fb825264ffa230815b****
-
-Diff of da6b1b03cc7d21c11e543c8549fcfda5b7511583 and f29e26e40d3a244499ae41fb825264ffa230815b:
-	--> Added null checks = 0
-	--> Removed null checks = 0
-	--> Null dereferences checked for null = 0
-	--> Added Null Object Design Patterns = 0
-
-Reverted to commit da6b1b03cc7d21c11e543c8549fcfda5b7511583
-
-****Parsing at revision da6b1b03cc7d21c11e543c8549fcfda5b7511583****
-
-Diff of dcf67baa545756ab03d2000c4edf326e09009f4e and da6b1b03cc7d21c11e543c8549fcfda5b7511583:
-	--> Added null checks = 0
-	--> Removed null checks = 0
-	--> Null dereferences checked for null = 0
-	--> Added Null Object Design Patterns = 0
-****Analysis complete for first commit****
-Brittany Johnson added null count = 0 in repository dummy-repo3
-Brittany Johnson removed null count = 0 in repository dummy-repo3
-Brittany Johnson deref count = 0 in repository dummy-repo3
-GitAPIException thrown!
-Cannot revert commit 'dcf67baa545756ab03d2000c4edf326e09009f4e' because it has 0 parents, only commits with exactly one parent are supported
