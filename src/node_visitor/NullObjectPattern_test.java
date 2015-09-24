@@ -1,7 +1,7 @@
 package node_visitor;
 
 import java.awt.List;
-import java.util.Optional;
+//import java.util.Optional;
 
 public class NullObjectPattern_test extends List {
 	
@@ -29,9 +29,9 @@ public class NullObjectPattern_test extends List {
 	               // do something
 	            	java.util.List<String> a = java.util.Collections.emptyList();
 
-	            	Optional<Integer> possible = Optional.of(5);
-	            	possible.isPresent(); // returns true
-	            	possible.get(); // returns 5
+//	            	Optional<Integer> possible = Optional.of(5);
+//	            	possible.isPresent(); // returns true
+//	            	possible.get(); // returns 5
 	          
 	            }
 

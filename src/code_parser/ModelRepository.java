@@ -433,6 +433,9 @@ public class ModelRepository {
 //			diff(directory, f, checks, oldHash, newHash, dev);
 			
 			List<String> nodps = parser.parseForNODP(f, newHash);
+			for (String n: nodps){
+				System.out.println("Returned from parser --> " + n);
+			}
 			diff(directory, f, nodps, oldHash, newHash, dev);
 			
 		
@@ -676,6 +679,7 @@ public class ModelRepository {
 	}
 
 	public void diff(String directory, ModelSourceFile file, List<String> checks, String oldH, String newH, ModelDeveloper developer) {
+		
 		File repoDir = new File(directory);
 		
 		int addedNullChecks = 0;
@@ -730,6 +734,11 @@ public class ModelRepository {
 				String diffText = out.toString("UTF-8");
 
 				if (diffText.contains(file.getName())){
+					
+					for (String check: checks){
+						System.out.println("Usage Pattern --> " + check);
+						// TODO HERE! :)
+					}					
 
 					BufferedReader br = new BufferedReader(new StringReader(diffText));
 					String line = null;
@@ -785,6 +794,7 @@ public class ModelRepository {
 									//addedOptVar = checkAdded(addedOptVar, newHash, diffText, check);
 									
 								} else if (file.getNODPs().contains(check)){
+									//String pattern = check.substring(beginIndex, endIndex)
 									System.out.println("Added NODP --> " + pattern);
 									addedNODP = checkAdded(addedNODP, newHash, diffText, pattern);
 								}
