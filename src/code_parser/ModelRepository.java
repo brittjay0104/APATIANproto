@@ -335,15 +335,13 @@ public class ModelRepository {
 		
 		for (int i = 0; i <= commits.size()-1; i++) {
 
-			String newHash = commits.get(i);
+			String currHash = commits.get(i);
 			String oldHash = "";
 			
-			if (!(newHash).equals(lastHash))
-			{
+			if (!(currHash).equals(lastHash)) {
 				oldHash = commits.get(i+1);
 			} 
-			else 
-			{
+			else {
 				//analyzeForNull(git, newHash, dev, repoName);
 				System.out.println("****Analysis complete for first commit****");
 				System.out.println(devName + " added null count = " + dev.getAddedNullCounts() + " in repository " + repoName);
@@ -356,19 +354,18 @@ public class ModelRepository {
 
 				// revert the repository
 				for (RevCommit rev: revisions){
-					
-					//System.out.println(ObjectId.toString(rev.getId()));
-					if (ObjectId.toString(rev.getId()).equals(commits.get(i))){
+					if (ObjectId.toString(rev.getId()).equals(currHash)) {
 						RevCommit revert = rev;
 						git.revert().include(revert).call();
+						break;
 					}
 				}
 				
-				System.out.println("\n" + "Reverted to commit " + newHash + "\n");
+				System.out.println("\n" + "Reverted to commit " + currHash + "\n");
 				
-				setAndParseSource(directory, i, oldHash, newHash, dev);
+				setAndParseSource(directory, i, oldHash, currHash, dev);
 				
-				System.out.println("\nDiff of " + oldHash + " and " + newHash + ":");
+				System.out.println("\nDiff of " + oldHash + " and " + currHash + ":");
 				System.out.println("	--> Added null checks = " + dev.getAddedNullCounts());
 				System.out.println("	--> Removed null checks = " + dev.getRemovedNullCounts());
 				System.out.println("	--> Null dereferences checked for null = " + dev.getDerefCount());
