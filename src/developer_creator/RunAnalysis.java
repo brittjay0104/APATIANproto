@@ -2,11 +2,9 @@ package developer_creator;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.PrintStream;
 
 import org.eclipse.jgit.api.Git;
-import org.eclipse.jgit.errors.RepositoryNotFoundException;
 
 import code_parser.ModelRepository;
 import code_parser.ModelSourceFile;
