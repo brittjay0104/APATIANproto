@@ -33,11 +33,10 @@ public class RunAnalysis {
 		ModelDeveloper dev = new ModelDeveloper(developerName);
 		dev.setUserName(userName);
 		// TODO add pseudo name to reporting?
-		// dev.setPseudoName("Joyce");
 
 		File directory = new File(localRepoDir);
 
-		clearOutDirectory(directory);
+		clearDirectory(directory);
 		directory.delete();
 
 		Process p3 = rt.exec(gitCloneCmd);
@@ -231,7 +230,7 @@ public class RunAnalysis {
 	// }
 	//
 	// br.close();
-
+/*
 	private static void dummyRepoRun(Runtime rt) throws IOException, InterruptedException, RepositoryNotFoundException {
 		String directory = "./dummy-repo2";
 		File repoDir = new File(directory);
@@ -267,16 +266,22 @@ public class RunAnalysis {
 		// Analyze ASTs for all revisions (right now for null checks)
 		repo.revertAndAnalyzeForNull(gitHub, directory, dev, repoName);
 	}
-
-	public static boolean clearOutDirectory(File rootDirectory) {
-		if (!rootDirectory.exists() || (rootDirectory.isDirectory() && rootDirectory.listFiles().length == 0)) {
+*/
+	
+	/**
+	 * Deletes a directory.
+	 * @param directory
+	 * @return {@code true} if directory has been deleted otherwise {@code false}
+	 */
+	public static boolean clearDirectory(File directory) {
+		if (!directory.exists() || (directory.isDirectory() && directory.listFiles().length == 0)) {
 			return true;
 		}
-		return recursivelyClearDirectory(rootDirectory);
+		return recursivelyClearDirectory(directory);
 	}
 
-	private static boolean recursivelyClearDirectory(File parentDirectory) {
-		for (File f : parentDirectory.listFiles()) {
+	private static boolean recursivelyClearDirectory(File directory) {
+		for (File f : directory.listFiles()) {
 			if (f.isDirectory()) {
 				if (!recursivelyClearDirectory(f))
 					return false;
@@ -285,7 +290,7 @@ public class RunAnalysis {
 				return false;
 			}
 		}
-		return parentDirectory.listFiles().length == 0;
+		return directory.listFiles().length == 0;
 	}
 
 }
