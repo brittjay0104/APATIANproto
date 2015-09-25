@@ -1,25 +1,18 @@
 package code_parser;
 
-import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
-import java.io.StringReader;
-import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Set;
-import java.util.regex.Pattern;
-
-import node_visitor.NODP;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang.StringUtils;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.LogCommand;
 import org.eclipse.jgit.api.errors.ConcurrentRefUpdateException;
@@ -30,21 +23,16 @@ import org.eclipse.jgit.api.errors.UnmergedPathsException;
 import org.eclipse.jgit.api.errors.WrongRepositoryStateException;
 import org.eclipse.jgit.diff.DiffEntry;
 import org.eclipse.jgit.diff.DiffFormatter;
-import org.eclipse.jgit.diff.RawTextComparator;
 import org.eclipse.jgit.errors.RepositoryNotFoundException;
 import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.ObjectReader;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
-import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
 import org.eclipse.jgit.treewalk.CanonicalTreeParser;
-import org.eclipse.jgit.util.io.DisabledOutputStream;
-import org.apache.commons.lang.StringUtils;
 
 import com.gitblit.models.PathModel.PathChangeModel;
 import com.gitblit.utils.JGitUtils;
-import com.sun.org.apache.xerces.internal.impl.xs.identity.Selector.Matcher;
 
 import developer_creator.ModelDeveloper;
 
@@ -343,14 +331,17 @@ public class ModelRepository {
 		ArrayList<String> commits = dev.getCommits();
 		String devName = dev.getDevName();
 		
+		String lastHash =  commits.get(commits.size()-1);
+		
 		for (int i = 0; i <= commits.size()-1; i++) {
 
-			String newHash = commits.get(i);
+			String currHash = commits.get(i);
 			String oldHash = "";
 			
-			if (!((commits.get(i)).equals(commits.get(commits.size()-1)))){
+			if (!(currHash).equals(lastHash)) {
 				oldHash = commits.get(i+1);
-			} else {
+			} 
+			else {
 				//analyzeForNull(git, newHash, dev, repoName);
 				System.out.println("****Analysis complete for first commit****");
 				System.out.println(devName + " added null count = " + dev.getAddedNullCounts() + " in repository " + repoName);
@@ -363,24 +354,19 @@ public class ModelRepository {
 
 				// revert the repository
 				for (RevCommit rev: revisions){
-					
-					//System.out.println(ObjectId.toString(rev.getId()));
-					if (ObjectId.toString(rev.getId()).equals(commits.get(i))){
+					if (ObjectId.toString(rev.getId()).equals(currHash)) {
 						RevCommit revert = rev;
 						git.revert().include(revert).call();
+						break;
 					}
 				}
 				
-				System.out.println("\n" + "Reverted to commit " + newHash + "\n");
+				System.out.println("\n" + "Reverted to commit " + currHash + "\n");
 				
-				setAndParseSource(directory, i, oldHash, newHash, dev);
+				setAndParseSource(directory, i, oldHash, currHash, dev);
 				
-				System.out.println("\nDiff of " + oldHash + " and " + newHash + ":");
-				System.out.println("	--> Added null checks = " + dev.getAddedNullCounts());
-				System.out.println("	--> Removed null checks = " + dev.getRemovedNullCounts());
-				System.out.println("	--> Null dereferences checked for null = " + dev.getDerefCount());
-				System.out.println("	--> Added Null Object Design Patterns = " + dev.getAddedNODPCounts());
-//						// TODO: add print statements for new patterns
+				System.out.println(prettyPrint(dev, currHash, oldHash));
+//						
 
 //				for (String commit: commits){
 //					//System.out.println(ObjectId.toString(rev.getId()));
@@ -406,6 +392,26 @@ public class ModelRepository {
 			}
 		}
 
+	}
+
+	/**
+	 * Convenience method to Format Output String
+	 * @param dev
+	 * @param currHash
+	 * @param oldHash
+	 * @return
+	 */
+	private String prettyPrint(ModelDeveloper dev, String currHash, String oldHash) {
+		StringBuffer buff = new StringBuffer();
+		
+		buff.append("\nDiff of ").append(oldHash).append(" and ").append(currHash).append(":");
+		buff.append("\n	--> Added null checks = ").append(dev.getAddedNullCounts());
+		buff.append("\n	--> Removed null checks = ").append(dev.getRemovedNullCounts());
+		buff.append("\n	--> Null dereferences checked for null = ").append(dev.getDerefCount());
+		buff.append("\n	--> Added Null Object Design Patterns = ").append(dev.getAddedNODPCounts());
+		// TODO: add print statements for new patterns
+		
+		return buff.toString();
 	}
 
 	/**

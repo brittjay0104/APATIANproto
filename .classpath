@@ -36,6 +36,6 @@
 	<classpathentry kind="lib" path="lib/jmock-legacy-2.6.0.jar"/>
 	<classpathentry kind="lib" path="lib/jmock-script-2.6.0.jar"/>
 	<classpathentry kind="lib" path="lib/objenesis-1.0.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

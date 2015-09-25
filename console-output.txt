@@ -98,3 +98,83 @@ testClass.java
 Collections usage -- main￿a=java.util.Collections.emptyList()
 Optional usage -- main￿possible=Optional.of(5)
 Catch block -- main￿catch (NullPointerException e) 
+
+Diff of 8cf75c0547a098c00681bfde63fc246f4e278696 and 6a9bda47c7c18265dcc682be5513a82db528cdfd:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 0
+	--> Added Null Object Design Patterns = 0
+
+Reverted to commit 8cf75c0547a098c00681bfde63fc246f4e278696
+
+****Parsing at revision 8cf75c0547a098c00681bfde63fc246f4e278696****
+testClass.java
+Collections usage -- main￿a=java.util.Collections.emptyList()
+Catch block -- main￿catch (NullPointerException e) 
+
+Diff of 6cc49806961fcbb536f5f386d3bdd0724f6beaff and 8cf75c0547a098c00681bfde63fc246f4e278696:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 0
+	--> Added Null Object Design Patterns = 0
+
+Reverted to commit 6cc49806961fcbb536f5f386d3bdd0724f6beaff
+
+****Parsing at revision 6cc49806961fcbb536f5f386d3bdd0724f6beaff****
+testClass.java
+Catch block -- main￿catch (NullPointerException e) 
+
+Diff of 48ac7505f6c0c6a9c33c56514a6dcab2875917fc and 6cc49806961fcbb536f5f386d3bdd0724f6beaff:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 0
+	--> Added Null Object Design Patterns = 0
+
+Reverted to commit 48ac7505f6c0c6a9c33c56514a6dcab2875917fc
+
+****Parsing at revision 48ac7505f6c0c6a9c33c56514a6dcab2875917fc****
+testClass.java
+
+Diff of 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db and 48ac7505f6c0c6a9c33c56514a6dcab2875917fc:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 0
+	--> Added Null Object Design Patterns = 0
+
+Reverted to commit 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db
+
+****Parsing at revision 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db****
+testClass.java
+
+Diff of f29e26e40d3a244499ae41fb825264ffa230815b and 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 0
+	--> Added Null Object Design Patterns = 0
+
+Reverted to commit f29e26e40d3a244499ae41fb825264ffa230815b
+
+****Parsing at revision f29e26e40d3a244499ae41fb825264ffa230815b****
+testClass.java
+
+Diff of da6b1b03cc7d21c11e543c8549fcfda5b7511583 and f29e26e40d3a244499ae41fb825264ffa230815b:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 0
+	--> Added Null Object Design Patterns = 0
+
+Reverted to commit da6b1b03cc7d21c11e543c8549fcfda5b7511583
+
+****Parsing at revision da6b1b03cc7d21c11e543c8549fcfda5b7511583****
+
+Diff of dcf67baa545756ab03d2000c4edf326e09009f4e and da6b1b03cc7d21c11e543c8549fcfda5b7511583:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 0
+	--> Added Null Object Design Patterns = 0
+****Analysis complete for first commit****
+Brittany Johnson added null count = 0 in repository dummy-repo3
+Brittany Johnson removed null count = 0 in repository dummy-repo3
+Brittany Johnson deref count = 0 in repository dummy-repo3
+GitAPIException thrown!
+Cannot revert commit 'dcf67baa545756ab03d2000c4edf326e09009f4e' because it has 0 parents, only commits with exactly one parent are supported
