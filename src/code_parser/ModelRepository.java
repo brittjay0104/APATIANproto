@@ -1,18 +1,25 @@
 package code_parser;
 
+import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
+import java.io.StringReader;
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
+import java.util.regex.Pattern;
+
+import node_visitor.NODP;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang.StringUtils;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.LogCommand;
 import org.eclipse.jgit.api.errors.ConcurrentRefUpdateException;
@@ -22,17 +29,23 @@ import org.eclipse.jgit.api.errors.NoMessageException;
 import org.eclipse.jgit.api.errors.UnmergedPathsException;
 import org.eclipse.jgit.api.errors.WrongRepositoryStateException;
 import org.eclipse.jgit.diff.DiffEntry;
+import org.eclipse.jgit.diff.DiffEntry.ChangeType;
 import org.eclipse.jgit.diff.DiffFormatter;
+import org.eclipse.jgit.diff.RawTextComparator;
 import org.eclipse.jgit.errors.RepositoryNotFoundException;
 import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.ObjectReader;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
+import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
 import org.eclipse.jgit.treewalk.CanonicalTreeParser;
+import org.eclipse.jgit.util.io.DisabledOutputStream;
+import org.apache.commons.lang.StringUtils;
 
 import com.gitblit.models.PathModel.PathChangeModel;
 import com.gitblit.utils.JGitUtils;
+import com.sun.org.apache.xerces.internal.impl.xs.identity.Selector.Matcher;
 
 import developer_creator.ModelDeveloper;
 
@@ -192,7 +205,7 @@ public class ModelRepository {
 		for (Iterator<File> files = FileUtils.iterateFiles(f, extensions, true); files.hasNext();){
 			ModelSourceFile file = new ModelSourceFile(files.next());
 			sourceFiles.add(file);
-			//System.out.println("Added " + file.source_file.getName() + " to " + directory + " repository source files.");
+			System.out.println("Added " + file.source_file.getName() + " to " + directory + " repository source files.");
 			//file.setRepository(repository);
 		}
 
@@ -331,17 +344,14 @@ public class ModelRepository {
 		ArrayList<String> commits = dev.getCommits();
 		String devName = dev.getDevName();
 		
-		String lastHash =  commits.get(commits.size()-1);
-		
 		for (int i = 0; i <= commits.size()-1; i++) {
 
-			String currHash = commits.get(i);
+			String newHash = commits.get(i);
 			String oldHash = "";
 			
-			if (!(currHash).equals(lastHash)) {
+			if (!((commits.get(i)).equals(commits.get(commits.size()-1)))){
 				oldHash = commits.get(i+1);
-			} 
-			else {
+			} else {
 				//analyzeForNull(git, newHash, dev, repoName);
 				System.out.println("****Analysis complete for first commit****");
 				System.out.println(devName + " added null count = " + dev.getAddedNullCounts() + " in repository " + repoName);
@@ -354,19 +364,26 @@ public class ModelRepository {
 
 				// revert the repository
 				for (RevCommit rev: revisions){
-					if (ObjectId.toString(rev.getId()).equals(currHash)) {
-						RevCommit revert = rev;
-						git.revert().include(revert).call();
-						break;
+					
+					//System.out.println(ObjectId.toString(rev.getId()) + " compared to " + newHash);
+					if (ObjectId.toString(rev.getId()).equals(newHash)){
+						git.revert().include(rev).call();
 					}
+					
 				}
+		
+				System.out.println("\n" + "Reverted to commit " + newHash + "\n");
 				
-				System.out.println("\n" + "Reverted to commit " + currHash + "\n");
+				setSourceFiles(directory);
+
+				setAndParseSource(directory, i, oldHash, newHash, dev);
 				
-				setAndParseSource(directory, i, oldHash, currHash, dev);
-				
-				System.out.println(prettyPrint(dev, currHash, oldHash));
-//						
+				System.out.println("\nDiff of " + oldHash + " and " + newHash + ":");
+				System.out.println("	--> Added null checks = " + dev.getAddedNullCounts());
+				System.out.println("	--> Removed null checks = " + dev.getRemovedNullCounts());
+				System.out.println("	--> Null dereferences checked for null = " + dev.getDerefCount());
+				System.out.println("	--> Added Null Object Design Patterns = " + dev.getAddedNODPCounts());
+//						// TODO: add print statements for new patterns
 
 //				for (String commit: commits){
 //					//System.out.println(ObjectId.toString(rev.getId()));
@@ -395,26 +412,6 @@ public class ModelRepository {
 	}
 
 	/**
-	 * Convenience method to Format Output String
-	 * @param dev
-	 * @param currHash
-	 * @param oldHash
-	 * @return
-	 */
-	private String prettyPrint(ModelDeveloper dev, String currHash, String oldHash) {
-		StringBuffer buff = new StringBuffer();
-		
-		buff.append("\nDiff of ").append(oldHash).append(" and ").append(currHash).append(":");
-		buff.append("\n	--> Added null checks = ").append(dev.getAddedNullCounts());
-		buff.append("\n	--> Removed null checks = ").append(dev.getRemovedNullCounts());
-		buff.append("\n	--> Null dereferences checked for null = ").append(dev.getDerefCount());
-		buff.append("\n	--> Added Null Object Design Patterns = ").append(dev.getAddedNODPCounts());
-		// TODO: add print statements for new patterns
-		
-		return buff.toString();
-	}
-
-	/**
 	 * @param directory
 	 * @param i
 	 * @param oldHash
@@ -422,15 +419,20 @@ public class ModelRepository {
 	 */
 	private void setAndParseSource(String directory, int i, String oldHash, String newHash, ModelDeveloper dev) throws IOException {
 		
-		if(newHash.equalsIgnoreCase("6a9bda47c7c18265dcc682be5513a82db528cdfd"))
-		{
-			System.out.println("Here");
-		}
 		System.out.println("****Parsing at revision " + newHash + "****");
 
-		setSourceFiles(directory);
+		
+		//setSourceFiles(directory);
+		
+//		if (newHash.equals("906f7aaff4b72be59893c7d19561680cf9eec15d")){
+//			System.out.println("Files in directory at revision 906f7aaff4b72be59893c7d19561680cf9eec15d: ");
+//			for (ModelSourceFile f: getSourceFiles()){
+//				System.out.println(f.getName());
+//			}
+//		}
 		
 		for (ModelSourceFile f: getSourceFiles()) {
+			System.out.println("File for diff --> " + f);
 			
 			setFileRevisionHistory(git, f);
 
@@ -441,18 +443,20 @@ public class ModelRepository {
 //			List <String> checks = parser.parseForNull(f, oldHash);
 //			diff(directory, f, checks, oldHash, newHash, dev);
 			
-			System.out.println(f.getName());
-			List<String> nodps = parser.parseForNODP(f, oldHash);
-			for (String n: nodps){
-				System.out.println("Returned from parser --> " + n);
-			}
-			diff(directory, f, nodps, oldHash, newHash, dev);
+//			List<String> nodps = parser.parseForNODP(f, newHash);
+//			for (String n: nodps){
+//				System.out.println("Returned from parser --> " + n);
+//			}
+//			diff(directory, f, nodps, oldHash, newHash, dev);
 			
 		
 			ArrayList<List<String>> npes = parser.parseForNPEAvoidance(f);
 			
 			List<String> catches = npes.get(2);
-			//diff(directory, f, catches, oldHash, newHash, dev);
+			for (String c: catches){
+				System.out.println("Returned from parser --> " + c);
+			}
+			diff(directory, f, catches, oldHash, newHash, dev);
 
 			
 			// TODO works the same as null checks -- implement addition/removal
@@ -463,28 +467,6 @@ public class ModelRepository {
 //			diff(directory, f, opts, oldHash, newHash, dev);
 			
 			
-			
-			//System.out.println(f.getName());
-			
-//			ModelParser parser = new ModelParser();
-//
-//			// parse the files AST for null checks
-////			List <String> checks = parser.parseForNull(f, oldHash);
-			
-//			System.out.println("FROM SOURCE FILES LIST:");
-//			
-//			System.out.println(f.getName());
-//			
-//			if (changedFiles.contains(f.getName())){
-//				System.out.println("FROM CHANGES FILES LIST:");
-//				System.out.println(f.getName());
-//				
-
-//				
-//			}
-
-
-
 		}
 	}
 
@@ -729,6 +711,7 @@ public class ModelRepository {
 			newTreeIter.reset(reader, headId);
 
 			List<DiffEntry> diffs;
+
 			diffs = git.diff()
 					.setNewTree(newTreeIter)
 					.setOldTree(oldTreeIter)
@@ -741,36 +724,55 @@ public class ModelRepository {
 
 			for(DiffEntry diff : diffs)
 			{
+//				// see if change is file added (need to analyze the file that's added)
+//				ChangeType change = diff.getChangeType();
+//				//System.out.println("Diff Change Type --> " + change.toString());
+//				if (change.toString().equals("ADD")){
+//					// gives me the file that was added 
+//					System.out.println(diff.getNewPath() + " is new to the repository!");
+//					
+//					for (ModelSourceFile f: getSourceFiles()){
+//						System.out.println("Files in model repository" + f.getName());
+//					}
+//				}	
 				
 				df.format(diff);
 				diff.getOldId();
 				String diffText = out.toString("UTF-8");
 				
+				// HERE!
 				//System.out.println(diffText);
-				
-				for (String check: checks){
+				 
+				if (diffText.contains(file.getName())){
 					
-//					if (StringUtils.countMatches(check, Character.toString(CHECK_SEPERATOR)) == 2){
-//						String type = check.substring(0, check.indexOf(CHECK_SEPERATOR));
-//						System.out.println("Type for NODP addition check --> " + type);
-//						String field = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.lastIndexOf(CHECK_SEPERATOR));
-//						System.out.println("Field for NODP addition check --> " + field);
-//						String ret = check.substring(check.lastIndexOf(CHECK_SEPERATOR)+1, check.length()); 
-//						System.out.println("Return for NODP addition check --> " + ret);
-//
-//						// HERE!
-//						if (diffText.contains(type)){
-//							System.out.println(diffText);
-//						}	
-//					} else {
-//						// null checks, catch blocks, collections, optional (only 1 separator, method - pattern)
-//						
-//					}
-					
-					
-					
+					for (String check: checks){
+						if (StringUtils.countMatches(check, Character.toString(CHECK_SEPERATOR)) == 2){
+							// TODO NODPs
+							
+							// type
+							// field
+							// return statement
+						}
+						
+
+						if (file.getCatchBlocks().contains(check)){
+							addedCatchBlock = checkAdded(addedCatchBlock, newHash, diffText, check);
+							removedCatchBlock = checkRemoval(removedCatchBlock, newHash, diffText, check);
+							
+						}	else if (file.getCollVars().contains(check)){
+							
+						}	else if (file.getOptVars().contains(check)){
+							
+						}	
+						
+						addedNullChecks = checkAdded(addedNullChecks, newHash, diffText, check);
+						removedNullChecks = checkRemoval(removedNullChecks, newHash, diffText, check);
+						
+					}
+
 				}
-				
+
+				out.reset();
 				
 
 			}
@@ -808,13 +810,13 @@ public class ModelRepository {
 		}
 	}
 
-	private int checkAdded(int added, String newHash, String diffText, String pattern) {
-		if (isAddition(diffText, pattern)){
+	private int checkAdded(int added, String newHash, String diffText, String check) {
+		if (isAddition(diffText, check)){
 			System.out.println("Null usage pattern was added at revision " + newHash);
 			
 			added +=1;			
 			
-			countedUsagePatterns.add(pattern);
+			countedUsagePatterns.add(check);
 
 		}		
 		
@@ -854,10 +856,21 @@ public class ModelRepository {
 		if (StringUtils.countMatches(check, Character.toString(CHECK_SEPERATOR)) == 2){
 			// TODO break string down into 3 parts to check for
 			
-		}
+			String type = check.substring(0, check.indexOf(CHECK_SEPERATOR));
+			System.out.println("Type for NODP addition check --> " + type);
+			String field = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.lastIndexOf(CHECK_SEPERATOR));
+			System.out.println("Field for NODP addition check --> " + field);
+			String ret = check.substring(check.lastIndexOf(CHECK_SEPERATOR), check.length()); 
+			System.out.println("Return for NODP addition check --> " + ret);
+			
+		} 
 		
-		count = StringUtils.countMatches(diff, check.substring(0, check.indexOf(CHECK_SEPERATOR)));						
-
+		// method
+		String method = check.substring(0, check.indexOf(CHECK_SEPERATOR));
+		// code (relevant pattern)
+		String pattern = check.substring(check.indexOf(CHECK_SEPERATOR) +1, check.length());
+		
+		// TODO change this to count matches of pattern (break down check) in diffText
 		if (count == 1){
 			return true;
 		}
@@ -869,14 +882,14 @@ public class ModelRepository {
 		int count = 0;
 		String s2 = "";
 		
+		// TODO change this to count matches of pattern (break down check) in diffText [model after isAddition]
+		
 		if (check.indexOf(CHECK_SEPERATOR) >=0){
 			s2 = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
 			count = StringUtils.countMatches(diff, check.substring(0, check.indexOf(CHECK_SEPERATOR)));			
 		}
 		
 		
-		
-
 		if (diff.contains(s2) && count == 1){
 			return true;
 		}

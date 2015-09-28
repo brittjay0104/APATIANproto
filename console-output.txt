@@ -1,4 +1,8 @@
 0
+Brittany Johnson is responsible for commit adcd7da1cb4a5da6f00d6402e7ad55e99ca6e5fe
+Brittany Johnson is responsible for commit 8bf78f65b9d7091fcf5801ccc9749fa95cad65dd
+Brittany Johnson is responsible for commit b1eb5c7913a48fc32b14ac574bb083bc4b8b420f
+Brittany Johnson is responsible for commit 906f7aaff4b72be59893c7d19561680cf9eec15d
 Brittany Johnson is responsible for commit db0ec14a3940e0b2143e3ef5388e24df349cdab8
 Brittany Johnson is responsible for commit 23de72296d40ecff16cc257be2895884dc0bfbed
 Brittany Johnson is responsible for commit 1103532657974d248d3fb11435d24517038aaee4
@@ -11,18 +15,69 @@ Brittany Johnson is responsible for commit 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f
 Brittany Johnson is responsible for commit f29e26e40d3a244499ae41fb825264ffa230815b
 Brittany Johnson is responsible for commit da6b1b03cc7d21c11e543c8549fcfda5b7511583
 Brittany Johnson is responsible for commit dcf67baa545756ab03d2000c4edf326e09009f4e
+Added NullObjectPattern_test.java to ./dummy-repo3/ repository source files.
+Added Test.java to ./dummy-repo3/ repository source files.
+Added testClass.java to ./dummy-repo3/ repository source files.
+
+Reverted to commit adcd7da1cb4a5da6f00d6402e7ad55e99ca6e5fe
+
+Added NullObjectPattern_test.java to ./dummy-repo3/ repository source files.
+Added Test.java to ./dummy-repo3/ repository source files.
+Added testClass.java to ./dummy-repo3/ repository source files.
+****Parsing at revision adcd7da1cb4a5da6f00d6402e7ad55e99ca6e5fe****
+
+Diff of 8bf78f65b9d7091fcf5801ccc9749fa95cad65dd and adcd7da1cb4a5da6f00d6402e7ad55e99ca6e5fe:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 0
+	--> Added Null Object Design Patterns = 0
+
+Reverted to commit 8bf78f65b9d7091fcf5801ccc9749fa95cad65dd
+
+Added NullObjectPattern_test.java to ./dummy-repo3/ repository source files.
+Added Test.java to ./dummy-repo3/ repository source files.
+Added testClass.java to ./dummy-repo3/ repository source files.
+****Parsing at revision 8bf78f65b9d7091fcf5801ccc9749fa95cad65dd****
+
+Diff of b1eb5c7913a48fc32b14ac574bb083bc4b8b420f and 8bf78f65b9d7091fcf5801ccc9749fa95cad65dd:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 0
+	--> Added Null Object Design Patterns = 0
+
+Reverted to commit b1eb5c7913a48fc32b14ac574bb083bc4b8b420f
+
+Added NullObjectPattern_test.java to ./dummy-repo3/ repository source files.
+Added Test.java to ./dummy-repo3/ repository source files.
+Added testClass.java to ./dummy-repo3/ repository source files.
+****Parsing at revision b1eb5c7913a48fc32b14ac574bb083bc4b8b420f****
+
+Diff of 906f7aaff4b72be59893c7d19561680cf9eec15d and b1eb5c7913a48fc32b14ac574bb083bc4b8b420f:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 0
+	--> Added Null Object Design Patterns = 0
+
+Reverted to commit 906f7aaff4b72be59893c7d19561680cf9eec15d
+
+Added NullObjectPattern_test.java to ./dummy-repo3/ repository source files.
+Added testClass.java to ./dummy-repo3/ repository source files.
+****Parsing at revision 906f7aaff4b72be59893c7d19561680cf9eec15d****
+Files in directory at revision 906f7aaff4b72be59893c7d19561680cf9eec15d: 
+NullObjectPattern_test.java
+testClass.java
+
+Diff of db0ec14a3940e0b2143e3ef5388e24df349cdab8 and 906f7aaff4b72be59893c7d19561680cf9eec15d:
+	--> Added null checks = 0
+	--> Removed null checks = 0
+	--> Null dereferences checked for null = 0
+	--> Added Null Object Design Patterns = 0
 
 Reverted to commit db0ec14a3940e0b2143e3ef5388e24df349cdab8
 
+Added NullObjectPattern_test.java to ./dummy-repo3/ repository source files.
+Added testClass.java to ./dummy-repo3/ repository source files.
 ****Parsing at revision db0ec14a3940e0b2143e3ef5388e24df349cdab8****
-NullObjectPattern_test.java
-NODP in play! --> NullObjectPattern_test￿instance￿return instance;
-
-NODP --> NullObjectPattern_test￿instance￿return instance;
-
-Returned from parser --> NullObjectPattern_test￿instance￿return instance;
-
-testClass.java
 
 Diff of 23de72296d40ecff16cc257be2895884dc0bfbed and db0ec14a3940e0b2143e3ef5388e24df349cdab8:
 	--> Added null checks = 0
@@ -32,16 +87,9 @@ Diff of 23de72296d40ecff16cc257be2895884dc0bfbed and db0ec14a3940e0b2143e3ef5388
 
 Reverted to commit 23de72296d40ecff16cc257be2895884dc0bfbed
 
+Added NullObjectPattern_test.java to ./dummy-repo3/ repository source files.
+Added testClass.java to ./dummy-repo3/ repository source files.
 ****Parsing at revision 23de72296d40ecff16cc257be2895884dc0bfbed****
-NullObjectPattern_test.java
-NODP in play! --> NullObjectPattern_test￿instance￿return instance;
-
-NODP --> NullObjectPattern_test￿instance￿return instance;
-
-Returned from parser --> NullObjectPattern_test￿instance￿return instance;
-
-testClass.java
-Optional usage -- main￿possible=Optional.of(5)
 
 Diff of 1103532657974d248d3fb11435d24517038aaee4 and 23de72296d40ecff16cc257be2895884dc0bfbed:
 	--> Added null checks = 0
@@ -51,17 +99,9 @@ Diff of 1103532657974d248d3fb11435d24517038aaee4 and 23de72296d40ecff16cc257be28
 
 Reverted to commit 1103532657974d248d3fb11435d24517038aaee4
 
+Added NullObjectPattern_test.java to ./dummy-repo3/ repository source files.
+Added testClass.java to ./dummy-repo3/ repository source files.
 ****Parsing at revision 1103532657974d248d3fb11435d24517038aaee4****
-NullObjectPattern_test.java
-NODP in play! --> NullObjectPattern_test￿instance￿return instance;
-
-NODP --> NullObjectPattern_test￿instance￿return instance;
-
-Returned from parser --> NullObjectPattern_test￿instance￿return instance;
-
-testClass.java
-Collections usage -- main￿a=java.util.Collections.emptyList()
-Optional usage -- main￿possible=Optional.of(5)
 
 Diff of 365cc50fb28186309bcba1a14a373a06d349a51d and 1103532657974d248d3fb11435d24517038aaee4:
 	--> Added null checks = 0
@@ -71,18 +111,9 @@ Diff of 365cc50fb28186309bcba1a14a373a06d349a51d and 1103532657974d248d3fb11435d
 
 Reverted to commit 365cc50fb28186309bcba1a14a373a06d349a51d
 
+Added NullObjectPattern_test.java to ./dummy-repo3/ repository source files.
+Added testClass.java to ./dummy-repo3/ repository source files.
 ****Parsing at revision 365cc50fb28186309bcba1a14a373a06d349a51d****
-NullObjectPattern_test.java
-NODP in play! --> NullObjectPattern_test￿instance￿return instance;
-
-NODP --> NullObjectPattern_test￿instance￿return instance;
-
-Returned from parser --> NullObjectPattern_test￿instance￿return instance;
-
-testClass.java
-Collections usage -- main￿a=java.util.Collections.emptyList()
-Optional usage -- main￿possible=Optional.of(5)
-Catch block -- main￿catch (NullPointerException e) 
 
 Diff of 6a9bda47c7c18265dcc682be5513a82db528cdfd and 365cc50fb28186309bcba1a14a373a06d349a51d:
 	--> Added null checks = 0
@@ -92,12 +123,8 @@ Diff of 6a9bda47c7c18265dcc682be5513a82db528cdfd and 365cc50fb28186309bcba1a14a3
 
 Reverted to commit 6a9bda47c7c18265dcc682be5513a82db528cdfd
 
-Here
+Added testClass.java to ./dummy-repo3/ repository source files.
 ****Parsing at revision 6a9bda47c7c18265dcc682be5513a82db528cdfd****
-testClass.java
-Collections usage -- main￿a=java.util.Collections.emptyList()
-Optional usage -- main￿possible=Optional.of(5)
-Catch block -- main￿catch (NullPointerException e) 
 
 Diff of 8cf75c0547a098c00681bfde63fc246f4e278696 and 6a9bda47c7c18265dcc682be5513a82db528cdfd:
 	--> Added null checks = 0
@@ -107,10 +134,8 @@ Diff of 8cf75c0547a098c00681bfde63fc246f4e278696 and 6a9bda47c7c18265dcc682be551
 
 Reverted to commit 8cf75c0547a098c00681bfde63fc246f4e278696
 
+Added testClass.java to ./dummy-repo3/ repository source files.
 ****Parsing at revision 8cf75c0547a098c00681bfde63fc246f4e278696****
-testClass.java
-Collections usage -- main￿a=java.util.Collections.emptyList()
-Catch block -- main￿catch (NullPointerException e) 
 
 Diff of 6cc49806961fcbb536f5f386d3bdd0724f6beaff and 8cf75c0547a098c00681bfde63fc246f4e278696:
 	--> Added null checks = 0
@@ -120,9 +145,8 @@ Diff of 6cc49806961fcbb536f5f386d3bdd0724f6beaff and 8cf75c0547a098c00681bfde63f
 
 Reverted to commit 6cc49806961fcbb536f5f386d3bdd0724f6beaff
 
+Added testClass.java to ./dummy-repo3/ repository source files.
 ****Parsing at revision 6cc49806961fcbb536f5f386d3bdd0724f6beaff****
-testClass.java
-Catch block -- main￿catch (NullPointerException e) 
 
 Diff of 48ac7505f6c0c6a9c33c56514a6dcab2875917fc and 6cc49806961fcbb536f5f386d3bdd0724f6beaff:
 	--> Added null checks = 0
@@ -132,8 +156,8 @@ Diff of 48ac7505f6c0c6a9c33c56514a6dcab2875917fc and 6cc49806961fcbb536f5f386d3b
 
 Reverted to commit 48ac7505f6c0c6a9c33c56514a6dcab2875917fc
 
+Added testClass.java to ./dummy-repo3/ repository source files.
 ****Parsing at revision 48ac7505f6c0c6a9c33c56514a6dcab2875917fc****
-testClass.java
 
 Diff of 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db and 48ac7505f6c0c6a9c33c56514a6dcab2875917fc:
 	--> Added null checks = 0
@@ -143,8 +167,8 @@ Diff of 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db and 48ac7505f6c0c6a9c33c56514a6
 
 Reverted to commit 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db
 
+Added testClass.java to ./dummy-repo3/ repository source files.
 ****Parsing at revision 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db****
-testClass.java
 
 Diff of f29e26e40d3a244499ae41fb825264ffa230815b and 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db:
 	--> Added null checks = 0
@@ -154,8 +178,8 @@ Diff of f29e26e40d3a244499ae41fb825264ffa230815b and 2285a05c8a6abe5489c6c9cc9dd
 
 Reverted to commit f29e26e40d3a244499ae41fb825264ffa230815b
 
+Added testClass.java to ./dummy-repo3/ repository source files.
 ****Parsing at revision f29e26e40d3a244499ae41fb825264ffa230815b****
-testClass.java
 
 Diff of da6b1b03cc7d21c11e543c8549fcfda5b7511583 and f29e26e40d3a244499ae41fb825264ffa230815b:
 	--> Added null checks = 0
