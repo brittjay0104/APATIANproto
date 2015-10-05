@@ -72,7 +72,7 @@ public class NPE_Visitor extends ASTVisitor{
 				String s = parts.get(i).toString();
 				//String var = s.substring(0, s.indexOf("="));
 				
-				String collVar = method + CHECK_SEPERATOR + s;
+				String collVar = method + CHECK_SEPERATOR + s.replace("=", " = ");
 				//System.out.println(collVar);
 				if (!collectionsVars.contains(collVar)){
 					collectionsVars.add(collVar);	
@@ -91,7 +91,7 @@ public class NPE_Visitor extends ASTVisitor{
 				String s = parts.get(i).toString();
 				//String var = s.substring(0, s.indexOf("="));
 				
-				String optVar = method + CHECK_SEPERATOR + s;
+				String optVar = method + CHECK_SEPERATOR + s.replace("=", " = ");
 				//System.out.println(optVar);
 				if (!optionalVars.contains(optVar)){
 					optionalVars.add(optVar);
@@ -127,7 +127,8 @@ public class NPE_Visitor extends ASTVisitor{
 				// make sure unique -- for now, check method
 				// TODO: improve this -- right now only allows one NPE per method
 				String catchBlock = method + CHECK_SEPERATOR + c;
-				if (!catchMeths.contains(catchBlock)){
+				// TODO remove "$missing$" check for full run?
+				if (!catchMeths.contains(catchBlock) && !catchBlock.contains("$missing$")){
 					//System.out.println(catchBlock);	
 					catchMeths.add(catchBlock);					
 				}

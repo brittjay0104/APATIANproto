@@ -263,16 +263,19 @@ public class ModelParser {
 		allVars.add(opts);
 		allVars.add(catches);
 		
+		System.out.println("********Collections usage found in " + file.getName() + "********");
 		for (String coll:colls){
-			System.out.println("Collections usage -- " + coll);
+			System.out.println(coll);
 			file.addCollVar(coll);
 		}
 		
+		System.out.println("********Optional Usage found in " + file.getName() + "********");
 		for (String opt:opts){
 			System.out.println("Optional usage -- " + opt);
 			file.addOptVar(opt);
 		}
-		
+			
+		System.out.println("********Catch Blocks found in " + file.getName() + "********");
 		for (String c:catches){
 			System.out.println("Catch block -- " + c);
 			file.addCatchBlock(c);
