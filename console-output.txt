@@ -97,6 +97,7 @@ NODP --> NullObjectPattern_test￿instance￿return instance;
 ********Optional Usage found in Test.java********
 ********Catch Blocks found in Test.java********
 Catch block -- getValue￿catch (NullPointerException e) 
+Null usage pattern was added at revision 8bf78f65b9d7091fcf5801ccc9749fa95cad65dd
 
  File for diff --> testClass.java
 
@@ -117,7 +118,7 @@ Diff of b1eb5c7913a48fc32b14ac574bb083bc4b8b420f and 8bf78f65b9d7091fcf5801ccc97
 	--> Added null checks = 0
 	--> Removed null checks = 0
 	--> Null dereferences checked for null = 0
-	--> Added Catch Blocks = 0
+	--> Added Catch Blocks = 1
 	--> Removed Catch Blocks = 0
 	--> Added Collections = 0
 	--> Removed Collections = 0
@@ -170,7 +171,7 @@ Diff of 906f7aaff4b72be59893c7d19561680cf9eec15d and b1eb5c7913a48fc32b14ac574bb
 	--> Added null checks = 0
 	--> Removed null checks = 0
 	--> Null dereferences checked for null = 0
-	--> Added Catch Blocks = 0
+	--> Added Catch Blocks = 1
 	--> Removed Catch Blocks = 0
 	--> Added Collections = 0
 	--> Removed Collections = 0
@@ -223,7 +224,7 @@ Diff of db0ec14a3940e0b2143e3ef5388e24df349cdab8 and 906f7aaff4b72be59893c7d1956
 	--> Added null checks = 0
 	--> Removed null checks = 0
 	--> Null dereferences checked for null = 0
-	--> Added Catch Blocks = 0
+	--> Added Catch Blocks = 1
 	--> Removed Catch Blocks = 0
 	--> Added Collections = 0
 	--> Removed Collections = 0
@@ -269,7 +270,7 @@ Diff of 23de72296d40ecff16cc257be2895884dc0bfbed and db0ec14a3940e0b2143e3ef5388
 	--> Added null checks = 1
 	--> Removed null checks = 0
 	--> Null dereferences checked for null = 0
-	--> Added Catch Blocks = 0
+	--> Added Catch Blocks = 1
 	--> Removed Catch Blocks = 0
 	--> Added Collections = 0
 	--> Removed Collections = 0
@@ -313,7 +314,7 @@ Diff of 1103532657974d248d3fb11435d24517038aaee4 and 23de72296d40ecff16cc257be28
 	--> Added null checks = 1
 	--> Removed null checks = 0
 	--> Null dereferences checked for null = 0
-	--> Added Catch Blocks = 0
+	--> Added Catch Blocks = 1
 	--> Removed Catch Blocks = 0
 	--> Added Collections = 0
 	--> Removed Collections = 0
@@ -358,7 +359,7 @@ Diff of 365cc50fb28186309bcba1a14a373a06d349a51d and 1103532657974d248d3fb11435d
 	--> Added null checks = 1
 	--> Removed null checks = 0
 	--> Null dereferences checked for null = 0
-	--> Added Catch Blocks = 0
+	--> Added Catch Blocks = 1
 	--> Removed Catch Blocks = 0
 	--> Added Collections = 0
 	--> Removed Collections = 0
@@ -404,7 +405,7 @@ Diff of 6a9bda47c7c18265dcc682be5513a82db528cdfd and 365cc50fb28186309bcba1a14a3
 	--> Added null checks = 1
 	--> Removed null checks = 0
 	--> Null dereferences checked for null = 0
-	--> Added Catch Blocks = 0
+	--> Added Catch Blocks = 1
 	--> Removed Catch Blocks = 0
 	--> Added Collections = 0
 	--> Removed Collections = 0
@@ -451,7 +452,7 @@ Diff of 8cf75c0547a098c00681bfde63fc246f4e278696 and 6a9bda47c7c18265dcc682be551
 	--> Added null checks = 1
 	--> Removed null checks = 0
 	--> Null dereferences checked for null = 0
-	--> Added Catch Blocks = 0
+	--> Added Catch Blocks = 1
 	--> Removed Catch Blocks = 0
 	--> Added Collections = 0
 	--> Removed Collections = 0
@@ -487,7 +488,7 @@ Diff of 6cc49806961fcbb536f5f386d3bdd0724f6beaff and 8cf75c0547a098c00681bfde63f
 	--> Added null checks = 1
 	--> Removed null checks = 0
 	--> Null dereferences checked for null = 0
-	--> Added Catch Blocks = 0
+	--> Added Catch Blocks = 1
 	--> Removed Catch Blocks = 0
 	--> Added Collections = 0
 	--> Removed Collections = 0
@@ -522,7 +523,7 @@ Diff of 48ac7505f6c0c6a9c33c56514a6dcab2875917fc and 6cc49806961fcbb536f5f386d3b
 	--> Added null checks = 1
 	--> Removed null checks = 0
 	--> Null dereferences checked for null = 0
-	--> Added Catch Blocks = 0
+	--> Added Catch Blocks = 1
 	--> Removed Catch Blocks = 0
 	--> Added Collections = 1
 	--> Removed Collections = 0
@@ -550,133 +551,3 @@ toString￿names == null
 ********Optional Usage found in testClass.java********
 ********Catch Blocks found in testClass.java********
 Catch block -- main￿catch (NullPointerException e) 
-
-Diff of 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db and 48ac7505f6c0c6a9c33c56514a6dcab2875917fc:
-	--> Added null checks = 1
-	--> Removed null checks = 0
-	--> Null dereferences checked for null = 0
-	--> Added Catch Blocks = 0
-	--> Removed Catch Blocks = 0
-	--> Added Collections = 1
-	--> Removed Collections = 0
-	--> Added Optional = 1
-	--> Removed Optional = 0
-
- Reverted revision 48ac7505f6c0c6a9c33c56514a6dcab2875917fc to 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db
-
-
-****Parsing at revision 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db****
-
-Added testClass.java to ./dummy-repo3/ repository source files.
-
- File for diff --> testClass.java
-
-********Null checks found in testClass.java********
-rowToJSONArray￿value == null
-rowToJSONObject￿ja != null
-toJSONArray￿names == null
-toJSONArray￿jo == null
-toString￿jo != null
-toString￿names != null
-toString￿names == null
-********Collections usage found in testClass.java********
-********Optional Usage found in testClass.java********
-********Catch Blocks found in testClass.java********
-
-Diff of f29e26e40d3a244499ae41fb825264ffa230815b and 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db:
-	--> Added null checks = 1
-	--> Removed null checks = 0
-	--> Null dereferences checked for null = 0
-	--> Added Catch Blocks = 0
-	--> Removed Catch Blocks = 0
-	--> Added Collections = 1
-	--> Removed Collections = 0
-	--> Added Optional = 1
-	--> Removed Optional = 0
-
- Reverted revision 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db to f29e26e40d3a244499ae41fb825264ffa230815b
-
-
-****Parsing at revision f29e26e40d3a244499ae41fb825264ffa230815b****
-
-Added testClass.java to ./dummy-repo3/ repository source files.
-
- File for diff --> testClass.java
-
-********Null checks found in testClass.java********
-rowToJSONArray￿value == null
-rowToJSONObject￿ja != null
-rowToString￿object != null
-toJSONArray￿names == null
-toJSONArray￿jo == null
-toString￿jo != null
-toString￿names != null
-toString￿names == null
-Null check pattern was added at revision f29e26e40d3a244499ae41fb825264ffa230815b
-Null check pattern was added at revision f29e26e40d3a244499ae41fb825264ffa230815b
-********Collections usage found in testClass.java********
-********Optional Usage found in testClass.java********
-********Catch Blocks found in testClass.java********
-
-Diff of da6b1b03cc7d21c11e543c8549fcfda5b7511583 and f29e26e40d3a244499ae41fb825264ffa230815b:
-	--> Added null checks = 3
-	--> Removed null checks = 0
-	--> Null dereferences checked for null = 0
-	--> Added Catch Blocks = 0
-	--> Removed Catch Blocks = 0
-	--> Added Collections = 1
-	--> Removed Collections = 0
-	--> Added Optional = 1
-	--> Removed Optional = 0
-
- Reverted revision f29e26e40d3a244499ae41fb825264ffa230815b to da6b1b03cc7d21c11e543c8549fcfda5b7511583
-
-
-****Parsing at revision da6b1b03cc7d21c11e543c8549fcfda5b7511583****
-
-Added testClass.java to ./dummy-repo3/ repository source files.
-
- File for diff --> testClass.java
-
-********Null checks found in testClass.java********
-rowToJSONArray￿value == null
-rowToJSONObject￿ja != null
-rowToString￿object != null
-toJSONArray￿names == null
-toJSONArray￿jo == null
-toString￿names != null
-toString￿names == null
-toString￿jo != null
-Null check pattern was added at revision da6b1b03cc7d21c11e543c8549fcfda5b7511583
-Null usage pattern was added at revision da6b1b03cc7d21c11e543c8549fcfda5b7511583
-Null usage pattern was added at revision da6b1b03cc7d21c11e543c8549fcfda5b7511583
-Null check pattern was added at revision da6b1b03cc7d21c11e543c8549fcfda5b7511583
-Null usage pattern was added at revision da6b1b03cc7d21c11e543c8549fcfda5b7511583
-Null usage pattern was added at revision da6b1b03cc7d21c11e543c8549fcfda5b7511583
-********Collections usage found in testClass.java********
-********Optional Usage found in testClass.java********
-********Catch Blocks found in testClass.java********
-
-Diff of dcf67baa545756ab03d2000c4edf326e09009f4e and da6b1b03cc7d21c11e543c8549fcfda5b7511583:
-	--> Added null checks = 9
-	--> Removed null checks = 0
-	--> Null dereferences checked for null = 0
-	--> Added Catch Blocks = 0
-	--> Removed Catch Blocks = 0
-	--> Added Collections = 1
-	--> Removed Collections = 0
-	--> Added Optional = 1
-	--> Removed Optional = 0
-
- Reverted revision da6b1b03cc7d21c11e543c8549fcfda5b7511583 to dcf67baa545756ab03d2000c4edf326e09009f4e
-
-****Analysis complete for first commit****
-Brittany Johnson added null count = 9 in repository dummy-repo3
-Brittany Johnson removed null count = 0 in repository dummy-repo3
-Brittany Johnson deref count = 0 in repository dummy-repo3
-Brittany Johnson added catch blocks count = 0
-Brittany Johnson removed catch blocks count = 0
-Brittany Johnson added collections count = 1
-Brittany Johnson removed collections count = 0
-Brittany Johnson added optional count = 1
-Brittany Johnson removed optional count = 0

@@ -788,6 +788,8 @@ public class ModelRepository {
 					while((line = br.readLine())!= null){ 
 						line = line.trim();
 						
+						line = line.replaceAll("\t", " ");
+						
 						// TODO method for incrementing total LOC
 						// TODO method for decrementing total LOC
 						
@@ -795,10 +797,13 @@ public class ModelRepository {
 							
 							if (file.getCatchBlocks().contains(check)){
 								String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
+								pattern = pattern.trim();
 								
 								if (line.startsWith("-") && line.contains(pattern)){
 									removedCatchBlock = checkRemoval(removedCatchBlock, currentHash, diffText, check);									
-								} else if (line.startsWith("+") && line.contains(pattern)){
+								} 
+								
+								if (line.startsWith("+") && line.contains(pattern)){
 									addedCatchBlock = checkAdded(addedCatchBlock, currentHash, diffText, check);
 								}
 								
@@ -974,10 +979,13 @@ public class ModelRepository {
 			// break string down into 3 parts to check for presence of pattern
 			
 			String type = check.substring(0, check.indexOf(CHECK_SEPERATOR));
+			type = type.trim();
 			//System.out.println("Type for NODP addition check --> " + type);
 			String field = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.lastIndexOf(CHECK_SEPERATOR));
+			field = field.trim();
 			//System.out.println("Field for NODP addition check --> " + field);
 			String ret = check.substring(check.lastIndexOf(CHECK_SEPERATOR), check.length()); 
+			ret = ret.trim();
 			//System.out.println("Return for NODP addition check --> " + ret);
 			
 			if (diff.contains(type) && diff.contains(field) && diff.contains(ret)){
@@ -992,6 +1000,7 @@ public class ModelRepository {
 		} else {
 			// code (relevant pattern)
 			String pattern = check.substring(check.indexOf(CHECK_SEPERATOR) +1, check.length());
+			pattern = pattern.trim();
 			
 			count = StringUtils.countMatches(diff, pattern);
 			
