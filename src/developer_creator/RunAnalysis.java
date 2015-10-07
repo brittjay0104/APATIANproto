@@ -3,8 +3,11 @@ package developer_creator;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
+import java.util.ArrayList;
 
 import org.eclipse.jgit.api.Git;
+import org.eclipse.jgit.lib.ObjectId;
+import org.eclipse.jgit.revwalk.RevCommit;
 
 import code_parser.ModelRepository;
 import code_parser.ModelSourceFile;
@@ -48,9 +51,10 @@ public class RunAnalysis {
 		Git gitHub = repository.getGitRepository();
 
 		if (repository.setRepositoryRevisionHistory(gitHub, dev) != null) {
-			repository.setRepositoryRevisionHistory(gitHub, dev);
-
-			// ArrayList<RevCommit> commits = repository.getRevisions();
+//			ArrayList<RevCommit> commits = repository.getRevisions();
+//			for (RevCommit commit: commits){
+//				System.out.println(ObjectId.toString(commit.getId()));
+//			}
 
 			// set source files for each directory
 			repository.setSourceFiles(localRepoDir);
@@ -62,8 +66,7 @@ public class RunAnalysis {
 
 			// Analyze ASTs for all revisions (right now for null checks)
 			repository.revertAndAnalyzeForNull(gitHub, localRepoDir, dev, repoName);
-			// /repository.analyzeForMethodInvocations(gitHub, "", dev,
-			// repoName);
+
 		}
 
 		// ModelSourceFile f = new ModelSourceFile(new File
