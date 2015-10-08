@@ -3,11 +3,8 @@ package developer_creator;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
-import java.util.ArrayList;
 
 import org.eclipse.jgit.api.Git;
-import org.eclipse.jgit.lib.ObjectId;
-import org.eclipse.jgit.revwalk.RevCommit;
 
 import code_parser.ModelRepository;
 import code_parser.ModelSourceFile;
