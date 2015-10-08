@@ -75,13 +75,6 @@ public class RunAnalysis {
 			repository.revertAndAnalyzeForNullRemoval(gitHub, localRepoDir, dev, repoName);
 		}
 
-		// ModelSourceFile f = new ModelSourceFile(new File
-		// ("./dummy-repo/NullObjectPattern_test.java"));
-		//
-		// ModelParser p = new ModelParser();
-		// p.parseForNODP(f);
-		// p.parseForNPEAvoidance(f);
-
 	}
 
 	// File users = new File("test-github-users.txt");
