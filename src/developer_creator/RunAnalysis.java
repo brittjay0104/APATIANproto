@@ -64,9 +64,18 @@ public class RunAnalysis {
 				repository.setFileRevisionHistory(gitHub, f);
 			}
 
-			// Analyze ASTs for all revisions (right now for null checks)
-			repository.revertAndAnalyzeForNull(gitHub, localRepoDir, dev, repoName);
-
+			// Analyze ASTs for all revisions for usage patterns (and addition)
+			System.out.println("\n ************ ANALYZING FOR USAGE PATTERN ADDITION ************\n");
+			repository.revertAndAnalyzeForNullAddition(gitHub, localRepoDir, dev, repoName);
+			
+			Process p4 = rt.exec(gitCloneCmd);
+			System.out.println(p4.waitFor());
+			
+			repository.setSourceFiles(localRepoDir);
+			
+			// Analyze all revisions for removal of usage patterns 
+			System.out.println("\n ************ ANALYZING FOR USAGE PATTERN REMOVAL ************\n");
+			repository.revertAndAnalyzeForNullRemoval(gitHub, localRepoDir, dev, repoName);
 		}
 
 		// ModelSourceFile f = new ModelSourceFile(new File
@@ -231,44 +240,7 @@ public class RunAnalysis {
 	// }
 	//
 	// br.close();
-/*
-	private static void dummyRepoRun(Runtime rt) throws IOException, InterruptedException, RepositoryNotFoundException {
-		String directory = "./dummy-repo2";
-		File repoDir = new File(directory);
 
-		clearOutDirectory(repoDir);
-		repoDir.delete();
-
-		Process p = rt.exec("git clone https://github.com/brittjay0104/dummy-repo2.git");
-		System.out.println(p.waitFor());
-
-		String repository = "./dummy-repo2/.git";
-		File repoGit = new File(repository);
-
-		String developer = "Brittany Johnson";
-		ModelDeveloper dev = new ModelDeveloper(developer);
-
-		String repoName = "dummy-repo2";
-
-		// Set repository history (all commits for the repository)
-		ModelRepository repo = new ModelRepository(repoGit);
-		Git gitHub = repo.getGitRepository();
-
-		repo.setRepositoryRevisionHistory(gitHub, dev);
-
-		// Set source files for directory/repository
-		repo.setSourceFiles(directory);
-
-		// Set history for each file in directory
-		for (ModelSourceFile f : repo.getSourceFiles()) {
-			repo.setFileRevisionHistory(gitHub, f);
-		}
-
-		// Analyze ASTs for all revisions (right now for null checks)
-		repo.revertAndAnalyzeForNull(gitHub, directory, dev, repoName);
-	}
-*/
-	
 	/**
 	 * Deletes a directory.
 	 * @param directory
