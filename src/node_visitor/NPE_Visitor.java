@@ -127,7 +127,6 @@ public class NPE_Visitor extends ASTVisitor{
 				// make sure unique -- for now, check method
 				// TODO: improve this -- right now only allows one NPE per method
 				String catchBlock = method + CHECK_SEPERATOR + c;
-				// TODO remove "$missing$" check for full run?
 				if (!catchMeths.contains(catchBlock) && !catchBlock.contains("$missing$")){
 					//System.out.println(catchBlock);	
 					catchMeths.add(catchBlock);					
