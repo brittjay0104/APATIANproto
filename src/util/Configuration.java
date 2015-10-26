@@ -6,6 +6,10 @@ package util;
  * 
  */
 public class Configuration {
-	public static final String opFile = "console-output.txt";
+	public static String opFile;
 
+	
+	public Configuration (String developer, String repo){
+		opFile = "output-" + developer + "-" + repo + ".txt";
+	}
 }

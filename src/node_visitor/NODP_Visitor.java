@@ -107,7 +107,7 @@ public class NODP_Visitor extends ASTVisitor{
 					fields.set(i, check);
 					if (!NODPs.contains(check)){
 						System.out.println("NODP in play! --> " + check);
-						NODPs.add(check);						
+						NODPs.add(check.trim());						
 					}
 					
 					

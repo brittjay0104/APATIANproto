@@ -1,10 +1,17 @@
 package developer_creator;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.io.PrintStream;
+import java.util.Scanner;
 
+import org.apache.commons.lang.StringUtils;
 import org.eclipse.jgit.api.Git;
+import org.eclipse.jgit.errors.RepositoryNotFoundException;
 
 import code_parser.ModelRepository;
 import code_parser.ModelSourceFile;
@@ -12,9 +19,9 @@ import util.Configuration;
 
 public class RunAnalysis {
 
-	public static String repoName = "dummy-repo3";
-	public static String userName = "brittjay0104";
-	public static String developerName = "Brittany Johnson";
+	public static String repoName = "L-Puzzle_Solver";
+	public static String userName = "kjlubick";
+	public static String developerName = "Kevin Lubick";
 	public static String github_url = "https://github.com/" + userName + "/" + repoName + ".git";
 	public static String gitCloneCmd = "git clone " + github_url;
 	public static String localRepoDir = "." + File.separator + repoName + File.separator;
@@ -23,7 +30,45 @@ public class RunAnalysis {
 	
 
 	public static void main(String[] args) throws Exception {
+		
+		File f1 = new File("repos.txt");
+		InputStream is = new FileInputStream(f1);
+		
+		try {
+			Scanner sc = new Scanner (f1);
+			
+			while (sc.hasNextLine()){
+				String line = sc.nextLine();
+				
+				// master branch
+				if (StringUtils.countMatches(line, ",") == 2){
+					
+					repoName = line.substring(0, line.indexOf(","));
+					userName = line.substring(line.indexOf(",")+2, line.lastIndexOf(","));
+					developerName = line.substring(line.lastIndexOf(",")+2, line.length());
+					
+					System.out.println(repoName + " -- " + userName + " -- " + developerName);
+					
+					runAnalysis();
+					
+					// TODO move file to folder for output
+					
+				}
+				
+				// other branches of current master branch (3 ','s)
+				// clone with url then checkout branch to analyze?
+			}
+			
+			sc.close();
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
 
+	}
+
+	private static void runAnalysis() throws FileNotFoundException,
+			IOException, InterruptedException, RepositoryNotFoundException {
 		System.setOut(new PrintStream(new FileOutputStream(Configuration.opFile)));
 
 		Runtime rt = Runtime.getRuntime();
@@ -48,10 +93,10 @@ public class RunAnalysis {
 		Git gitHub = repository.getGitRepository();
 
 		if (repository.setRepositoryRevisionHistory(gitHub, dev) != null) {
-//			ArrayList<RevCommit> commits = repository.getRevisions();
-//			for (RevCommit commit: commits){
-//				System.out.println(ObjectId.toString(commit.getId()));
-//			}
+//						ArrayList<RevCommit> commits = repository.getRevisions();
+//						for (RevCommit commit: commits){
+//							System.out.println(ObjectId.toString(commit.getId()));
+//						}
 
 			// set source files for each directory
 			repository.setSourceFiles(localRepoDir);
@@ -74,7 +119,6 @@ public class RunAnalysis {
 			System.out.println("\n ************ ANALYZING FOR USAGE PATTERN REMOVAL ************\n");
 			repository.revertAndAnalyzeForNullRemoval(gitHub, localRepoDir, dev, repoName);
 		}
-
 	}
 
 	// File users = new File("test-github-users.txt");

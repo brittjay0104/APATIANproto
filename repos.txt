@@ -1,0 +1,20 @@
+edu.dlf.refactoring.leecode, nkcsgexi, Xi Ge
+edu.dlf.refactoring.review, nkcsgexi, Xi Ge
+L-Puzzle_Solver, kjlubick, Kevin Lubick
+fb-contrib-eclipse-quick-fixes, kjlubick, Kevin Lubick
+RecommendationPresentation-Code, kjlubick, Kevin Lubick
+Pdf-Reviewer, kjlubick, Kevin Lubick
+Grab-n-Run, lukeFalsina, Luca Falsina
+Pdf-Reviewer, mpeterson2, Michael Peterson
+Pdf-Reviewer, legacy-google-app-engine, mpeterson2, Michael Peterson
+Whiteboard, mpeterson2, Michael Peterson
+java-httpserver, mpeterson2, Michael Peterson
+Telecine, JakeWharton, Jake Wharton
+Telecine, jw/video-quality, JakeWharton, Jake Wharton
+Telecine, jw/tutorial, JakeWharton, Jake Wharton
+Telecine, jw/gif, JakeWharton, Jake Wharton
+hugo, JakeWharton, Jake Wharton
+butterknife, JakeWharton, Jake Wharton
+butterknife, layout-injection, JakeWharton, Jake Wharton
+butterknife, jw/return, JakeWharton, Jake Wharton
+butterknife, jw/listeners-as-fields, JakeWharton, Jake Wharton

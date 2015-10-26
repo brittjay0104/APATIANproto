@@ -413,7 +413,7 @@ public class ModelRepository {
 	}
 
 	private void outputPrettyPrint(ModelDeveloper dev, String repoName, String devName) {
-		System.out.println("****Analysis complete for first commit****");
+		System.out.println("************Analysis complete************");
 		System.out.println(devName + " added null count = " + dev.getAddedNullCounts() + " in repository " + repoName);
 		System.out.println(devName + " removed null count = " + dev.getRemovedNullCounts() + " in repository " + repoName);
 		System.out.println(devName + " deref count = " + dev.getDerefCount() + " in repository " + repoName);
@@ -423,11 +423,11 @@ public class ModelRepository {
 		System.out.println(devName + " removed collections count = " + dev.getRemovedCollCounts());
 		System.out.println(devName + " added optional count = " + dev.getAddedOptCounts());
 		System.out.println(devName + " removed optional count = " + dev.getRemovedOptCounts());
-//				System.out.println(devName + "added Null Object Design Pattern count = " + dev.getAddedNODPCounts());
+		System.out.println(devName + "added Null Object Design Pattern count = " + dev.getAddedNODPCounts());
 	}
 
 	private void diffPrettyPrint(ModelDeveloper dev, String currentHash, String previousHash) {
-		System.out.println("\nDiff of " + previousHash + " and " + currentHash + ":");
+		System.out.println("\nDiff of " + currentHash + " and " + previousHash + ":");
 		System.out.println("	--> Added null checks = " + dev.getAddedNullCounts());
 		System.out.println("	--> Removed null checks = " + dev.getRemovedNullCounts());
 		System.out.println("	--> Null dereferences checked for null = " + dev.getDerefCount());
@@ -437,7 +437,7 @@ public class ModelRepository {
 		System.out.println("	--> Removed Collections = " + dev.getRemovedCollCounts());
 		System.out.println("	--> Added Optional = " + dev.getAddedOptCounts());
 		System.out.println("	--> Removed Optional = " + dev.getRemovedOptCounts());
-		//System.out.println("	--> Added Null Object Design Patterns = " + dev.getAddedNODPCounts());
+		System.out.println("	--> Added Null Object Design Patterns = " + dev.getAddedNODPCounts());
 	}
 
 	/**
@@ -508,7 +508,7 @@ public class ModelRepository {
 					allUsagePatterns.add(nodp);					
 				}
 			}
-//			diff(directory, f, nodps, oldHash, newHash, dev);
+			additionDiff(directory, f, nodps, previousHash, currentHash, dev);
 			
 		}
 	}
@@ -892,6 +892,10 @@ public class ModelRepository {
 				String diffText = out.toString("UTF-8");
 								 
 				if (diffText.contains(file.getName())){
+					// HERE! :)
+					if (currentHash.equals("6a9bda47c7c18265dcc682be5513a82db528cdfd") & file.getName().equals("NullObjectPattern_test.java")){
+						System.out.println(diffText);
+					}	
 					
 					BufferedReader br = new BufferedReader(new StringReader(diffText));
 					String line = null;
@@ -932,6 +936,7 @@ public class ModelRepository {
 										addedOptVar = checkAdded(addedOptVar, currentHash, diffText, check);
 									}
 								} else if (file.getNODPs().contains(check)){
+									// check for return statement addition (presumably last piece)
 									String pattern = check.substring(check.lastIndexOf(CHECK_SEPERATOR)+1, check.length());
 									pattern.trim();
 									
@@ -1059,19 +1064,15 @@ public class ModelRepository {
 			String type = check.substring(0, check.indexOf(CHECK_SEPERATOR));
 			type = type.trim();
 			//System.out.println("Type for NODP addition check --> " + type);
-			String field = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.lastIndexOf(CHECK_SEPERATOR));
-			field = field.trim();
-			//System.out.println("Field for NODP addition check --> " + field);
 			String ret = check.substring(check.lastIndexOf(CHECK_SEPERATOR), check.length()); 
 			ret = ret.trim();
 			//System.out.println("Return for NODP addition check --> " + ret);
 			
-			if (diff.contains(type) && diff.contains(field) && diff.contains(ret)){
+			if (diff.contains(type) && diff.contains(ret)){
 				count = StringUtils.countMatches(diff, type);
-				int count2 = StringUtils.countMatches(diff, field);
-				int count3 = StringUtils.countMatches(diff, ret);
+				int count2 = StringUtils.countMatches(diff, ret);
 				
-				if (count == 1 && count2 == 1 && count3 == 1)
+				if (count == 5 && count2 == 1)
 					return true;
 			}
 			
