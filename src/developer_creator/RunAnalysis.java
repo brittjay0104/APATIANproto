@@ -32,7 +32,11 @@ public class RunAnalysis {
 	public static void main(String[] args) throws Exception {
 		
 		File f1 = new File("repos.txt");
-		InputStream is = new FileInputStream(f1);
+		Configuration config = new Configuration(developerName, repoName);
+		String opFile = config.getOpFile();
+		System.setOut(new PrintStream(new FileOutputStream(opFile)));
+		
+		InputStream is = new FileInputStream("./archived-output/10-26-2015/" + opFile);
 		
 		try {
 			Scanner sc = new Scanner (f1);
@@ -69,7 +73,7 @@ public class RunAnalysis {
 
 	private static void runAnalysis() throws FileNotFoundException,
 			IOException, InterruptedException, RepositoryNotFoundException {
-		System.setOut(new PrintStream(new FileOutputStream(Configuration.opFile)));
+		
 
 		Runtime rt = Runtime.getRuntime();
 
