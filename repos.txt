@@ -18,3 +18,44 @@ butterknife, JakeWharton, Jake Wharton
 butterknife, layout-injection, JakeWharton, Jake Wharton
 butterknife, jw/return, JakeWharton, Jake Wharton
 butterknife, jw/listeners-as-fields, JakeWharton, Jake Wharton
+timber, JakeWharton, Jake Wharton
+u2020, JakeWharton, Jake Wharton
+u2020, jw/spinner, JakeWharton, Jake Wharton
+madge, JakeWharton, Jake Wharton
+resourcefs, JakeWharton, Jake Wharton
+twirl-maven-plugin, JakeWharton, Jake Wharton
+DiskLruCache, JakeWharton, Jake Wharton
+DiskLruCache, jw/evict-all, JakeWharton, Jake Wharton
+NineOldAndroids, JakeWharton, Jake Wharton
+NineOldAndroids, dev, JakeWharton, Jake Wharton
+NineOldAndroids, two-dot-five, JakeWharton, Jake Wharton
+scalpel, JakeWharton, Jake Wharton
+scalpel, jw/tree, JakeWharton, Jake Wharton
+javaparser, matozoid, Danny van Bruggen
+code-state-machine, matozoid, Danny van Bruggen
+amazing, matozoid, Danny van Bruggen
+android-draggable-viewpager, geftimov, Georgi Eftimov
+MapReduce, geftimov, Georgi Eftimov
+MapReduce, develop, geftimov, Georgi Eftimov
+MapReduce, feature/DummyFeature, geftimov, Georgi Eftimov
+android-pathview, geftimov, Georgi Eftimov
+Algorithms, geftimov, Georgi Eftimov
+android-patternview, geftimov, Georgi Eftimov
+android-viewpager-transformers, geftimov, Georgi Eftimov
+android-project-jokes, geftimov, Georgi Eftimov
+tutorials, reesjones, Mitch Rees-Jones
+scrabble, reesjones, Mitch Rees-Jones
+exercises, reesjones, Mitch Rees-Jones
+data-structures, reesjones, Mitch Rees-Jones
+AI-Smorgasbord, recardona, Rogelio E. Cardona-Rivera
+League-of-Legends-Viewer, recardona, Rogelio E. Cardona-Rivera
+wasp, orhanobut, Orhan Obut
+simplelistview, orhanobut, Orhan Obut
+dialogplus, orhanobut, Orhan Obut
+bee, orhanobut, Orhan Obut
+hawk, orhanobut, Orhan Obut
+android-blackboard, orhanobut, Orhan Obut
+rootchecker, orhanobut, Orhan Obut
+wutson, dev, ataulm, Ataul Munim
+wutson, episode_details, ataulm, Ataul Munim
+wutson, refresh, ataulm, Ataul Munim

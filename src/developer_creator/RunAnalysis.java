@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.io.PrintStream;
 import java.util.Scanner;
 
@@ -19,27 +20,22 @@ import util.Configuration;
 
 public class RunAnalysis {
 
-	public static String repoName = "L-Puzzle_Solver";
-	public static String userName = "kjlubick";
-	public static String developerName = "Kevin Lubick";
-	public static String github_url = "https://github.com/" + userName + "/" + repoName + ".git";
-	public static String gitCloneCmd = "git clone " + github_url;
-	public static String localRepoDir = "." + File.separator + repoName + File.separator;
-	public static String repoLocalFile = localRepoDir + ".git";
-	
+	public static String repoName = "";
+	public static String userName = "";
+	public static String developerName = "";
 	
 
 	public static void main(String[] args) throws Exception {
 		
-		File f1 = new File("repos.txt");
-		Configuration config = new Configuration(developerName, repoName);
-		String opFile = config.getOpFile();
-		System.setOut(new PrintStream(new FileOutputStream(opFile)));
+		File repos = new File("repos.txt");
 		
-		InputStream is = new FileInputStream("./archived-output/10-26-2015/" + opFile);
+		InputStream is = null;
+		OutputStream os = null;
+		
+		// read in list of repos; analyze for each line
+		Scanner sc = new Scanner (repos);
 		
 		try {
-			Scanner sc = new Scanner (f1);
 			
 			while (sc.hasNextLine()){
 				String line = sc.nextLine();
@@ -47,34 +43,68 @@ public class RunAnalysis {
 				// master branch
 				if (StringUtils.countMatches(line, ",") == 2){
 					
-					repoName = line.substring(0, line.indexOf(","));
-					userName = line.substring(line.indexOf(",")+2, line.lastIndexOf(","));
-					developerName = line.substring(line.lastIndexOf(",")+2, line.length());
+					RunAnalysis.setRepoName(line.substring(0, line.indexOf(",")));
+					RunAnalysis.setUserName(line.substring(line.indexOf(",")+2, line.lastIndexOf(",")));
+					RunAnalysis.setDeveloperName(line.substring(line.lastIndexOf(",")+2, line.length()));
 					
-					System.out.println(repoName + " -- " + userName + " -- " + developerName);
+					String dName = RunAnalysis.getDeveloperName();
+					String rName = RunAnalysis.getRepoName();
+					String uName = RunAnalysis.getUserName();
 					
-					runAnalysis();
+					Configuration config = new Configuration(dName, rName);
+					String opFile = config.getOpFile();
+					System.setOut(new PrintStream(new FileOutputStream(opFile)));
 					
-					// TODO move file to folder for output
+					// create files to populate after analysis
+					File f1 = new File(opFile);
+					File f2 = new File("./archived-output/10-26-2015/" + opFile);
 					
+					is = new FileInputStream(f1);
+					os = new FileOutputStream(f2);
+					
+					byte[] buffer = new byte[1024];
+					
+					System.out.println(rName + " -- " + uName + " -- " + dName);
+					
+					//runAnalysis("");
+					
+					// move file to folder for archived output
+					int length;
+					//copy file contents in bytes
+					while ((length = is.read(buffer)) > 0){
+						os.write(buffer, 0, length);
+					}
+					
+					f1.delete();
+					
+					System.out.println("File copied successfully!");
 				}
-				
-				// other branches of current master branch (3 ','s)
+
+				// TODO other branches of current master branch (3 ','s)
 				// clone with url then checkout branch to analyze?
 			}
-			
+
 			sc.close();
+			is.close();
+			os.close();
 			
 		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e){
 			e.printStackTrace();
 		}
 
 	}
-
-	private static void runAnalysis() throws FileNotFoundException,
+	
+	private static void runAnalysis(String branch) throws FileNotFoundException,
 			IOException, InterruptedException, RepositoryNotFoundException {
 		
 
+		String github_url = "https://github.com/" + userName + "/" + repoName + ".git";
+		String gitCloneCmd = "git clone " + github_url;
+		String localRepoDir = "." + File.separator + repoName + File.separator;
+		String repoLocalFile = localRepoDir + ".git";
+		
 		Runtime rt = Runtime.getRuntime();
 
 		ModelDeveloper dev = new ModelDeveloper(developerName);
@@ -123,6 +153,28 @@ public class RunAnalysis {
 			System.out.println("\n ************ ANALYZING FOR USAGE PATTERN REMOVAL ************\n");
 			repository.revertAndAnalyzeForNullRemoval(gitHub, localRepoDir, dev, repoName);
 		}
+	}
+	
+	private static void setUserName(String u){
+		userName = u;
+	}
+	
+	private static void setRepoName(String r){
+		repoName = r;
+	}
+	private static void setDeveloperName(String d){
+		developerName = d;
+	}
+	
+	private static String getUserName(){
+		return userName;
+	}
+	private static String getRepoName(){
+		return repoName;
+	}
+	
+	private static String getDeveloperName(){
+		return developerName;
 	}
 
 	// File users = new File("test-github-users.txt");
