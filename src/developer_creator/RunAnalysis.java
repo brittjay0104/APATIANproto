@@ -85,7 +85,7 @@ public class RunAnalysis {
 			}
 
 			sc.close();
-			is.close();
+			is.close();  
 			os.close();
 			
 		} catch (FileNotFoundException e) {
