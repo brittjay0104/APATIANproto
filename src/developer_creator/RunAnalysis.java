@@ -34,9 +34,10 @@ public class RunAnalysis {
 		File f1 = new File("repos.txt");
 		Configuration config = new Configuration(developerName, repoName);
 		String opFile = config.getOpFile();
+		
 		System.setOut(new PrintStream(new FileOutputStream(opFile)));
 		
-		InputStream is = new FileInputStream("./archived-output/10-26-2015/" + opFile);
+		InputStream is = new FileInputStream(opFile);
 		
 		try {
 			Scanner sc = new Scanner (f1);
