@@ -50,7 +50,7 @@ public class ModelSourceFile {
 	List<ModelDeveloper> devs; // List of developers that touched this file
 
 	public ModelSourceFile() {
-		this(null);
+		
 	}
 
 	/**
@@ -271,7 +271,7 @@ public class ModelSourceFile {
 	 *            containing a null check
 	 */
 	public void addMethod(String method) {
-		if (!(method.contains(method))){
+		if (!(methods.contains(method))){
 			methods.add(method);			
 		}
 	}

@@ -38,7 +38,6 @@ import org.eclipse.jdt.core.dom.CompilationUnit;
 
 public class ModelParser {
 
-	ASTParser parser;
 	List<String> expressions;
 	List<String> ifAndNext;
 	List<String> nullVariables;

@@ -795,9 +795,9 @@ public class ModelRepository {
 									}
 								} else if (StringUtils.countMatches(check, Character.toString(CHECK_SEPERATOR)) != 2){
 									String nullcheck = check.substring(0, check.indexOf(CHECK_SEPERATOR));
-									nullcheck.trim();
+									String nc = nullcheck.trim();
 									
-									if (line.contains(nullcheck)){
+									if (line.contains(nc)){
 										removedNullChecks = checkRemoval(removedNullChecks, currentHash, diffText, check);									
 									}
 								}
@@ -922,33 +922,33 @@ public class ModelRepository {
 									
 								} else if (file.getCollVars().contains(check)){
 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
-									pattern.trim();
+									String p = pattern.trim();
 									
-									if (line.contains(pattern)){
+									if (line.contains(p)){
 										addedCollVar = checkAdded(addedCollVar, currentHash, diffText, check);
 									}
 									
 								} else if (file.getOptVars().contains(check)){
 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
-									pattern.trim();
+									String p = pattern.trim();
 									
-									if (line.contains(pattern)){
+									if (line.contains(p)){
 										addedOptVar = checkAdded(addedOptVar, currentHash, diffText, check);
 									}
 								} else if (file.getNODPs().contains(check)){
 									// check for return statement addition (presumably last piece)
 									String pattern = check.substring(check.lastIndexOf(CHECK_SEPERATOR)+1, check.length());
-									pattern.trim();
+									String p = pattern.trim();
 									
-									if (line.contains(pattern)){
+									if (line.contains(p)){
 										addedNODP = checkAdded(addedNODP, currentHash, diffText, check);
 									} 
 									
 								} else {
 									String nullcheck = check.substring(0, check.indexOf(CHECK_SEPERATOR));
-									nullcheck.trim();
+									String nc = nullcheck.trim();
 									
-									if (line.contains(nullcheck)){
+									if (line.contains(nc)){
 										addedNullChecks = checkAdded(addedNullChecks, currentHash, diffText, check);
 										derefNullChecks = calculateDerefValue(file, check, developer, derefNullChecks);
 									}
