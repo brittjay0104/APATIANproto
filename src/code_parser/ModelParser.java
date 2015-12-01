@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import node_visitor.GenericsVisitor;
 import node_visitor.Log4JVisitor;
 import node_visitor.NODP;
 import node_visitor.NODP_Visitor;
@@ -217,6 +218,32 @@ public class ModelParser {
 		
 		
 		return nodp;
+	}
+	
+	public void parseForGenerics(ModelSourceFile file) throws IOException{
+		ASTParser parser = ASTParser.newParser(AST.JLS4);
+
+		String src = readFiletoString(file.getSourceFile().getCanonicalPath());
+
+		file.setSource(src.toCharArray());
+		
+		 Map options = JavaCore.getOptions();
+		 JavaCore.setComplianceOptions(JavaCore.VERSION_1_6, options);
+		 parser.setCompilerOptions(options);
+
+		parser.setResolveBindings(true);
+		parser.setStatementsRecovery(true);
+		parser.setSource(src.toCharArray());
+		parser.setUnitName(file.getName());
+		parser.setKind(ASTParser.K_COMPILATION_UNIT);
+
+		CompilationUnit cu = (CompilationUnit) parser.createAST(null);
+
+		GenericsVisitor visitor = new GenericsVisitor(file);
+		cu.accept(visitor);
+		
+		// TODO: get lists from visitor
+		// TODO: attach to file
 	}
 	
 	public boolean containsField(List<NODP> currNodp, String field, String type){
