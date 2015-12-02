@@ -6,13 +6,19 @@ import java.util.List;
 
 import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.ASTVisitor;
+import org.eclipse.jdt.core.dom.Expression;
 import org.eclipse.jdt.core.dom.FieldDeclaration;
+import org.eclipse.jdt.core.dom.IMethodBinding;
+import org.eclipse.jdt.core.dom.IVariableBinding;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
+import org.eclipse.jdt.core.dom.MethodInvocation;
 import org.eclipse.jdt.core.dom.Modifier;
+import org.eclipse.jdt.core.dom.ParameterizedType;
 import org.eclipse.jdt.core.dom.SimpleName;
 import org.eclipse.jdt.core.dom.Type;
 import org.eclipse.jdt.core.dom.TypeDeclaration;
 import org.eclipse.jdt.core.dom.TypeParameter;
+import org.eclipse.jdt.core.dom.VariableDeclaration;
 
 import code_parser.ModelSourceFile;
 
@@ -115,14 +121,41 @@ public class GenericsVisitor extends ASTVisitor {
 			
 			// see if parameterized type
 			for (TypeParameter dec: decs){
-				List<TypeDeclaration> bounds = dec.typeBounds();
-				for (TypeDeclaration bound: bounds){
-					
+				List<ParameterizedType> bounds = dec.typeBounds();
+				
+				// is this worth more? add another point if know how to do this?
+				if (!bounds.isEmpty()){
+					System.out.println("Parameterized Type Bound!");
 				}
 			}
 		}
 		// 
 		
+		
+		return true;
+	}
+	
+	public boolean visit(MethodInvocation node){
+		
+		IMethodBinding mb = node.resolveMethodBinding();
+		
+		if (mb != null){
+			if (mb.isParameterizedMethod()){
+				System.out.println("Parameterized method invocation!");
+			}
+		}
+		
+		return true;
+	}
+	
+	// TODO: same thing for method declarations!
+	public boolean visit(VariableDeclaration node) {
+		
+		String variableDec = findSourceForNode(node);
+		System.out.println("Variable Declaration: " + variableDec);
+		
+		IVariableBinding iv =  node.resolveBinding();
+		iv.getType();
 		
 		return true;
 	}
