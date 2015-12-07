@@ -11,6 +11,10 @@ public class Box<T> {
     return t;
   }
   
+  public <T> void method(T item){
+	  List<T> list = new ArrayList<T>();
+  }
+  
   // determines the largest of three Comparable objects
    public static <T extends Comparable<T>> T maximum(T x, T y, T z)
    {                      
@@ -39,6 +43,7 @@ public class Box<T> {
    }
 
   public static void main(String[] args) {
+	  
      Box<Integer> integerBox = new Box<Integer>();
      Box<String> stringBox = new Box<String>();
     
@@ -56,6 +61,10 @@ public class Box<T> {
 	
 	System.out.printf( "Max of %s, %s and %s is %s\n","pear",
 			"apple", "orange", maximum( "pear", "apple", "orange" ) );
+	
+	 o.<Number>method(new Integer(100), new Long(0));
+	 
+	 List<String> anEmptyStringList = Collections.<String>emptyList();
 
   }
 }

@@ -99,7 +99,7 @@ public class NODP_Visitor extends ASTVisitor{
 				String m = md.modifiers().toString();
 				if (m.contains("static")){
 					//System.out.println("Static method that returns " + field);
-					//System.out.println(field + " might be used for NODP!");
+					//System.out.println(field + " might be used for NODP!");f
 					
 					// Strong possibility NODP in play
 					
