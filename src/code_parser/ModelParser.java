@@ -242,7 +242,7 @@ public class ModelParser {
 		GenericsVisitor visitor = new GenericsVisitor(file);
 		cu.accept(visitor);
 		
-		// TODO: get lists from visitor
+		// TODO: get lists from visitor - genericFields, 
 		// TODO: attach to file
 	}
 	

@@ -34,7 +34,7 @@ public class GenericsVisitor extends ASTVisitor {
 
 	public ArrayList<String> genericFields = new ArrayList<>();
 	public ArrayList<String> genericMethods = new ArrayList<>();
-	public ArrayList<String> wildcardMethods = new ArrayList<>();
+	public ArrayList<String> genericInvocations = new ArrayList<>();
 	public List<String> types = new ArrayList<String>();
 	
 	private char[] source;
@@ -83,8 +83,8 @@ public class GenericsVisitor extends ASTVisitor {
 		return genericMethods;
 	}
 	
-	public List<String> getWildcardMethods(){
-		return wildcardMethods;
+	public List<String> getGenericInvocations(){
+		return genericInvocations;
 	}
 	
 	/**
@@ -94,7 +94,7 @@ public class GenericsVisitor extends ASTVisitor {
 	// DONE!
 	public boolean visit(FieldDeclaration node){
 		String fieldDec = findSourceForNode(node);
-		System.out.println("Field source: " + fieldDec);
+		//System.out.println("Field source: " + fieldDec);
 		
 		List<VariableDeclarationFragment> fields = node.fragments();
 		String name = "";
@@ -110,12 +110,12 @@ public class GenericsVisitor extends ASTVisitor {
 			
 			for (String s: types){
 				if (type.equals(s)){
-					System.out.println("Generic field!");
 					
 					// add field to list if not already found
 					genField = type + CHECK_SEPERATOR + name;
 					if (!genericFields.contains(genField)){
-						genericFields.add(genField);						
+						genericFields.add(genField);
+						System.out.println("Generic field: " + genField);
 					}
 				}			
 			}
@@ -130,12 +130,12 @@ public class GenericsVisitor extends ASTVisitor {
 		//String methodDec = findSourceForNode(node);
 	
 		String method = findSourceForNode(node.getName());
-		System.out.println("Method declaration: " + method);
+		//System.out.println("Method declaration: " + method);
 		
 		List<TypeParameter> decs = node.typeParameters();
 		
 		if (!decs.isEmpty()){
-			System.out.println("Generic method!");
+			//System.out.println("Generic method!");
 			
 			// see if parameterized type
 			for (TypeParameter dec: decs){
@@ -143,9 +143,16 @@ public class GenericsVisitor extends ASTVisitor {
 				
 				// is this worth more? add another point if know how to do this?
 				if (!bounds.isEmpty()){
-					System.out.println("Parameterized Type Bound!");
+					//System.out.println("Parameterized Type Bound!");
 					for (ParameterizedType t: bounds){
-						System.out.println("Type Bound: " + t.toString()); 
+						//System.out.println("Type Bound: " + t.toString()); 
+						String type = t.toString();
+						
+						String genMethDec =  type + CHECK_SEPERATOR + method;
+						System.out.println("Generic method declaration: " + genMethDec);
+						if (!genericMethods.contains(genMethDec)){
+							genericMethods.add(genMethDec);
+						}
 					}
 				}
 			}
@@ -215,7 +222,11 @@ public class GenericsVisitor extends ASTVisitor {
 			System.out.println("expression statement invoc: " + statement);	
 			
 			// TODO: which one will tell me the invoc has explicit type versus implicit type?
-			((MethodInvocation) e).isResolvedTypeInferredFromExpectedType();
+			
+			if (((MethodInvocation) e).isResolvedTypeInferredFromExpectedType()){
+				System.out.println("Type Inferred From Expected Type!");
+			}
+			
 			e.resolveTypeBinding();
 			((MethodInvocation) e).resolveMethodBinding();
 			((MethodInvocation) e).typeArguments();

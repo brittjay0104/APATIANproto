@@ -62,7 +62,7 @@ public class Box<T> {
 	System.out.printf( "Max of %s, %s and %s is %s\n","pear",
 			"apple", "orange", maximum( "pear", "apple", "orange" ) );
 	
-	 o.<Number>method(new Integer(100), new Long(0));
+	 this.<Number>method(new Integer(100));
 	 
 	 List<String> anEmptyStringList = Collections.<String>emptyList();
 

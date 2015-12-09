@@ -11,7 +11,8 @@ import java.util.Collections;
  */
 public class Configuration {
 	public String opFile;
-
+	
+	
 	public Configuration(){
 		
 	}
@@ -21,7 +22,8 @@ public class Configuration {
 	}
 	
 	
-	public String getOpFile(){
+	public String getOpFile(){		
 		return opFile;
 	}
+	
 }
