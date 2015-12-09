@@ -187,8 +187,14 @@ public class GenericsVisitor extends ASTVisitor {
 		IMethodBinding mb = node.resolveMethodBinding();
 		
 		if (mb != null){
+			if (mb.isGenericMethod()){
+				System.out.println("Generic method invocation!");
+			}
 			if (mb.isParameterizedMethod()){
 				System.out.println("Parameterized method invocation!");
+			}
+			if (mb.isRawMethod()){
+				System.out.println("Raw generic method invocation!");
 			}
 			
 			//get type arguments to see if invocation has explicit type
@@ -221,15 +227,24 @@ public class GenericsVisitor extends ASTVisitor {
 		if (e instanceof MethodInvocation){
 			System.out.println("expression statement invoc: " + statement);	
 			
+//			MethodInvocation meth = (MethodInvocation)e;
+//			String methodInvoc = findSourceForNode(meth.getName());
+//			System.out.println("Method Invocation: " + methodInvoc);
+//			
+//			IMethodBinding mb = meth.resolveMethodBinding();
+			
 			// TODO: which one will tell me the invoc has explicit type versus implicit type?
+				
+			// YES! -type argument for generic method invoc
+			for (Object t: ((MethodInvocation) e).typeArguments()){
+				System.out.println("Type argument: " + t.toString());
+			}
+			
 			
 			if (((MethodInvocation) e).isResolvedTypeInferredFromExpectedType()){
 				System.out.println("Type Inferred From Expected Type!");
 			}
-			
-			e.resolveTypeBinding();
-			((MethodInvocation) e).resolveMethodBinding();
-			((MethodInvocation) e).typeArguments();
+			//e.resolveTypeBinding();
 		}
 		
 		return true;

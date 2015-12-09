@@ -29,8 +29,9 @@ public class RunAnalysis {
 	
 
 	public static void main(String[] args) throws Exception {
-	
-		ModelSourceFile f = new ModelSourceFile(new File("Generics.java"));
+		
+		//ModelSourceFile f = new ModelSourceFile(new File("Generics.java"));
+		ModelSourceFile f = new ModelSourceFile(new File("src/util/Configuration.java"));
 		
 		ModelParser p = new ModelParser();
 		

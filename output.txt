@@ -1,0 +1,32 @@
+Generic field: T￿t
+Generic method declaration: Comparable<T>￿maximum
+Method Invocation: compareTo
+Method Invocation: compareTo
+Method Invocation: doubleValue
+expression statement invoc: System.out.print(obj + "::")
+Method Invocation: print
+expression statement invoc: integerBox.add(new Integer(10))
+Method Invocation: add
+expression statement invoc: stringBox.add(new String("Hello World"))
+Method Invocation: add
+expression statement invoc: System.out.printf("Integer Value :%d\n\n", integerBox.get())
+Method Invocation: printf
+Method Invocation: get
+expression statement invoc: System.out.printf("String Value :%s\n", stringBox.get())
+Method Invocation: printf
+Method Invocation: get
+expression statement invoc: System.out.printf( "Max of %d, %d and %d is %d\n\n", 
+             3, 4, 5, maximum( 3, 4, 5 ) )
+Method Invocation: printf
+Method Invocation: maximum
+expression statement invoc: System.out.printf( "Maxm of %.1f,%.1f and %.1f is %.1f\n\n",
+	             6.6, 8.8, 7.7, maximum( 6.6, 8.8, 7.7 ) )
+Method Invocation: printf
+Method Invocation: maximum
+expression statement invoc: System.out.printf( "Max of %s, %s and %s is %s\n","pear",
+			"apple", "orange", maximum( "pear", "apple", "orange" ) )
+Method Invocation: printf
+Method Invocation: maximum
+expression statement invoc: this.<Number>method(new Integer(100))
+Method Invocation: method
+Method Invocation: emptyList
