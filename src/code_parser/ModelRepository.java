@@ -317,7 +317,7 @@ public class ModelRepository {
 	 * @param directory - String path to the directory of the repository in file system (without .git)
 	 * @throws IOException
 	 */
-	public void revertAndAnalyzeForNullAddition(Git git, String directory, ModelDeveloper dev, String repoName) throws IOException{
+	public void revertAndAnalyzeForPatternAddition(Git git, String directory, ModelDeveloper dev, String repoName) throws IOException{
 
 		ArrayList<String> commits = dev.getCommits();
 		String devName = dev.getDevName();
@@ -363,7 +363,7 @@ public class ModelRepository {
 		}
 	}
 	
-	public void revertAndAnalyzeForNullRemoval(Git git, String directory, ModelDeveloper dev, String repoName) throws IOException{
+	public void revertAndAnalyzeForPatternRemoval(Git git, String directory, ModelDeveloper dev, String repoName) throws IOException{
 		
 		String devName = dev.getDevName();
 
@@ -509,6 +509,11 @@ public class ModelRepository {
 				}
 			}
 			additionDiff(directory, f, nodps, previousHash, currentHash, dev);
+			
+			// GENERICS
+			parser.parseForGenerics(f);
+			
+			
 			
 		}
 	}

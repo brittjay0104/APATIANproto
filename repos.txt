@@ -59,3 +59,6 @@ rootchecker, orhanobut, Orhan Obut
 wutson, dev, ataulm, Ataul Munim
 wutson, episode_details, ataulm, Ataul Munim
 wutson, refresh, ataulm, Ataul Munim
+azurite-eclipse, yyoon, YoungSeok Yoon
+flourite-eclipse, yyoon, YoungSeok Yoon
+teaser, nkraft, Nicholas A. Kraft

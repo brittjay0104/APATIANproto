@@ -39,6 +39,10 @@ public class ModelSourceFile {
 	public List<String> collVars;
 	public List<String> optVars;
 	public List<String> catchBlocks;
+	
+	public List<String> genericFields;
+	public List<String> genericMethods;
+	public List<String> genericInvocations;
 
 	// ArrayList for keeping track of locations of null checks as they appear
 	// and disappear from the
@@ -79,7 +83,10 @@ public class ModelSourceFile {
 		collVars = new ArrayList<String>();
 		optVars = new ArrayList<String>();
 		catchBlocks = new ArrayList<String>();
-
+		genericFields = new ArrayList<String>();
+		genericMethods = new ArrayList<String>();
+		genericInvocations = new ArrayList<String>();
+		
 		commits = new ArrayList<ModelCommit>();
 		methods = new ArrayList<String>();
 		methodInvocs = new HashMap<String, Integer>();
@@ -261,6 +268,18 @@ public class ModelSourceFile {
 		methodInvocs.put(method, count);
 	}
 	
+	public List<String> getGenericFields(){
+		return genericFields;
+	}
+	
+	public List<String> getGenericMethods(){
+		return genericMethods;
+	}
+	
+	public List<String> getGenericInvocations(){
+		return genericInvocations;
+	}
+	
 
 	/**
 	 * 
@@ -310,6 +329,7 @@ public class ModelSourceFile {
 			catchBlocks.add(cblock);
 		}
 	}
+
 	
 	public void removeNODP(String nodp){
 		if (NODPs.contains(nodp)){
@@ -387,6 +407,42 @@ public class ModelSourceFile {
 	public void removeNullVariable(String method, String assign){
 		if (nullVars.get(method) != null){
 			nullVars.get(method).remove(assign);
+		}
+	}
+	
+	public void addGenericField(String field){
+		if (!(genericFields.contains(field))){
+			genericFields.add(field);
+		}
+	}
+	
+	public void addGenericMethod(String method){
+		if (!(genericMethods.contains(method))){
+			genericMethods.add(method);
+		}
+	}
+	
+	public void addGenericInvoc(String invoc){
+		if (!(genericInvocations.contains(invoc))){
+			genericInvocations.add(invoc);
+		}
+	}
+	
+	public void removeGenericField(String field){
+		if (genericFields.contains(field)){
+			genericFields.remove(field);
+		}
+	}
+	
+	public void removeGenericMethod(String method){
+		if (genericMethods.contains(method)){
+			genericMethods.remove(method);
+		}
+	}
+	
+	public void removeGenericInvoc(String invoc){
+		if (genericInvocations.contains(invoc)){
+			genericInvocations.remove(invoc);
 		}
 	}
 	

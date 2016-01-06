@@ -152,7 +152,7 @@ public class RunAnalysis {
 
 			// Analyze ASTs for all revisions for usage patterns (and addition)
 			System.out.println("\n ************ ANALYZING FOR USAGE PATTERN ADDITION ************\n");
-			repository.revertAndAnalyzeForNullAddition(gitHub, localRepoDir, dev, repoName);
+			repository.revertAndAnalyzeForPatternAddition(gitHub, localRepoDir, dev, repoName);
 			
 			Process p4 = rt.exec(gitCloneCmd);
 			System.out.println(p4.waitFor());
@@ -161,7 +161,7 @@ public class RunAnalysis {
 			
 			// Analyze all revisions for removal of usage patterns 
 			System.out.println("\n ************ ANALYZING FOR USAGE PATTERN REMOVAL ************\n");
-			repository.revertAndAnalyzeForNullRemoval(gitHub, localRepoDir, dev, repoName);
+			repository.revertAndAnalyzeForPatternRemoval(gitHub, localRepoDir, dev, repoName);
 		}
 	}
 	

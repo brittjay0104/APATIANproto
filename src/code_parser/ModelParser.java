@@ -220,7 +220,7 @@ public class ModelParser {
 		return nodp;
 	}
 	
-	public void parseForGenerics(ModelSourceFile file) throws IOException{
+	public HashMap<String, List<String>> parseForGenerics(ModelSourceFile file) throws IOException{
 		ASTParser parser = ASTParser.newParser(AST.JLS4);
 
 		String src = readFiletoString(file.getSourceFile().getCanonicalPath());
@@ -241,9 +241,37 @@ public class ModelParser {
 
 		GenericsVisitor visitor = new GenericsVisitor(file);
 		cu.accept(visitor);
+				
+		List<String> fields = visitor.getGenericFields();
+		List<String> methods = visitor.getGenericMethods();
+		List<String> invocs = visitor.getGenericInvocations();
+				
+		for (String field: fields){
+			System.out.println("generic field --> " + field);
+			
+			file.addGenericField(field);
+		}
 		
-		// TODO: get lists from visitor - genericFields, 
-		// TODO: attach to file
+		for (String method: methods){
+			System.out.println("generic method --> " + method);
+			
+			file.addGenericMethod(method);
+		}
+		
+		for (String invoc: invocs){
+			System.out.println("generic invocation --> " + invoc);
+			
+			file.addGenericInvoc(invoc);
+		}
+		
+		// hashmap that stores all these; method should return map
+		
+		HashMap<String, List<String>> genericsMap = new HashMap<String, List<String>>();
+		genericsMap.put("fields", file.getGenericFields());
+		genericsMap.put("methods", file.getGenericMethods());
+		genericsMap.put("invocations", file.getGenericInvocations());
+		
+		return genericsMap;
 	}
 	
 	public boolean containsField(List<NODP> currNodp, String field, String type){
