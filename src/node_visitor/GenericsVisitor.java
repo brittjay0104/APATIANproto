@@ -19,6 +19,7 @@ import org.eclipse.jdt.core.dom.MethodInvocation;
 import org.eclipse.jdt.core.dom.Modifier;
 import org.eclipse.jdt.core.dom.ParameterizedType;
 import org.eclipse.jdt.core.dom.SimpleName;
+import org.eclipse.jdt.core.dom.SimpleType;
 import org.eclipse.jdt.core.dom.Type;
 import org.eclipse.jdt.core.dom.TypeDeclaration;
 import org.eclipse.jdt.core.dom.TypeParameter;
@@ -139,14 +140,13 @@ public class GenericsVisitor extends ASTVisitor {
 			
 			// see if parameterized type
 			for (TypeParameter dec: decs){
-				List<ParameterizedType> bounds = dec.typeBounds();
 				
-				// is this worth more? add another point if know how to do this?
-				if (!bounds.isEmpty()){
-					//System.out.println("Parameterized Type Bound!");
-					for (ParameterizedType t: bounds){
-						//System.out.println("Type Bound: " + t.toString()); 
-						String type = t.toString();
+				if (!(dec.typeBounds().isEmpty())){
+					for (int i = 0; i < dec.typeBounds().size(); i++ ){
+						//System.out.println("Generic Type Bound!");
+						String type = dec.typeBounds().get(i).toString();
+						//System.out.println("Type Bound: " + type); 
+
 						
 						String genMethDec =  type + CHECK_SEPERATOR + method;
 						System.out.println("Generic method declaration: " + genMethDec);
@@ -154,7 +154,7 @@ public class GenericsVisitor extends ASTVisitor {
 							genericMethods.add(genMethDec);
 						}
 					}
-				}
+				}				
 			}
 		}
 		
@@ -182,7 +182,7 @@ public class GenericsVisitor extends ASTVisitor {
 	public boolean visit(MethodInvocation node){
 		
 		String methodInvoc = findSourceForNode(node.getName());
-		System.out.println("Method Invocation: " + methodInvoc);
+		//System.out.println("Method Invocation: " + methodInvoc);
 		
 		IMethodBinding mb = node.resolveMethodBinding();
 		

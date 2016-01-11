@@ -414,30 +414,48 @@ public class ModelRepository {
 
 	private void outputPrettyPrint(ModelDeveloper dev, String repoName, String devName) {
 		System.out.println("************Analysis complete************");
-		System.out.println(devName + " added null count = " + dev.getAddedNullCounts() + " in repository " + repoName);
-		System.out.println(devName + " removed null count = " + dev.getRemovedNullCounts() + " in repository " + repoName);
-		System.out.println(devName + " deref count = " + dev.getDerefCount() + " in repository " + repoName);
-		System.out.println(devName + " added catch blocks count = " + dev.getAddedCatchCounts());
-		System.out.println(devName + " removed catch blocks count = " + dev.getRemovedCatchCounts());
-		System.out.println(devName + " added collections count = " + dev.getAddedCollCounts());
-		System.out.println(devName + " removed collections count = " + dev.getRemovedCollCounts());
-		System.out.println(devName + " added optional count = " + dev.getAddedOptCounts());
-		System.out.println(devName + " removed optional count = " + dev.getRemovedOptCounts());
-		System.out.println(devName + "added Null Object Design Pattern count = " + dev.getAddedNODPCounts());
+//		System.out.println(devName + " added null count = " + dev.getAddedNullCounts() + " in repository " + repoName);
+//		System.out.println(devName + " removed null count = " + dev.getRemovedNullCounts() + " in repository " + repoName);
+//		System.out.println(devName + " deref count = " + dev.getDerefCount() + " in repository " + repoName);
+//		System.out.println(devName + " added catch blocks count = " + dev.getAddedCatchCounts());
+//		System.out.println(devName + " removed catch blocks count = " + dev.getRemovedCatchCounts());
+//		System.out.println(devName + " added collections count = " + dev.getAddedCollCounts());
+//		System.out.println(devName + " removed collections count = " + dev.getRemovedCollCounts());
+//		System.out.println(devName + " added optional count = " + dev.getAddedOptCounts());
+//		System.out.println(devName + " removed optional count = " + dev.getRemovedOptCounts());
+//		System.out.println(devName + "added Null Object Design Pattern count = " + dev.getAddedNODPCounts());
+		
+		
+		// GENERICS
+		System.out.println(devName + " added generic field count = " + dev.getAddedGenericsFieldsCount() + " in repository " + repoName);
+		System.out.println(devName + " added generic method count = " + dev.getAddedGenericsMethodsCount() + " in repository " + repoName);
+		System.out.println(devName + " added generic invocations count = " + dev.getAddedGenericsInvocsCount() + " in repository " + repoName);
 	}
 
 	private void diffPrettyPrint(ModelDeveloper dev, String currentHash, String previousHash) {
 		System.out.println("\nDiff of " + currentHash + " and " + previousHash + ":");
-		System.out.println("	--> Added null checks = " + dev.getAddedNullCounts());
-		System.out.println("	--> Removed null checks = " + dev.getRemovedNullCounts());
-		System.out.println("	--> Null dereferences checked for null = " + dev.getDerefCount());
-		System.out.println("	--> Added Catch Blocks = " + dev.getAddedCatchCounts());
-		System.out.println("	--> Removed Catch Blocks = " + dev.getRemovedCatchCounts());
-		System.out.println("	--> Added Collections = " + dev.getAddedCollCounts());
-		System.out.println("	--> Removed Collections = " + dev.getRemovedCollCounts());
-		System.out.println("	--> Added Optional = " + dev.getAddedOptCounts());
-		System.out.println("	--> Removed Optional = " + dev.getRemovedOptCounts());
-		System.out.println("	--> Added Null Object Design Patterns = " + dev.getAddedNODPCounts());
+//		System.out.println("	--> Added null checks = " + dev.getAddedNullCounts());
+//		System.out.println("	--> Removed null checks = " + dev.getRemovedNullCounts());
+//		System.out.println("	--> Null dereferences checked for null = " + dev.getDerefCount());
+//		System.out.println("	--> Added Catch Blocks = " + dev.getAddedCatchCounts());
+//		System.out.println(" 	--> Removed Catch Blocks = " + dev.getRemovedCatchCounts());
+//		System.out.println("	--> Added Collections = " + dev.getAddedCollCounts());
+//		System.out.println("	--> Removed Collections = " + dev.getRemovedCollCounts());
+//		System.out.println("	--> Added Optional = " + dev.getAddedOptCounts());
+//		System.out.println("	--> Removed Optional = " + dev.getRemovedOptCounts());
+//		System.out.println("	--> Added Null Object Design Patterns = " + dev.getAddedNODPCounts());
+		
+		// GENERICS
+		System.out.println("	--> Added generic fields = " + dev.getAddedGenericsFieldsCount());
+		System.out.println("	--> Added generic methods = " + dev.getAddedGenericsMethodsCount());
+		System.out.println(" 	--> Added generic invocations = " + dev.getAddedGenericsInvocsCount());
+	}
+	
+	public boolean hasGenerics(){
+		
+		// TODO: analysis for if repository has any generics at all
+		
+		return false;
 	}
 
 	/**
@@ -446,7 +464,7 @@ public class ModelRepository {
 	 * @param previousHash
 	 * @throws IOException
 	 */
-	private void setAndParseSource(String directory, String previousHash, String currentHash, ModelDeveloper dev) throws IOException {
+	public void setAndParseSource(String directory, String previousHash, String currentHash, ModelDeveloper dev) throws IOException {
 		
 		System.out.println("\n****Parsing for addition at revision " + currentHash + "****\n");
 		
@@ -463,9 +481,7 @@ public class ModelRepository {
 			// diff the current and older revision
 			List <String> checks = parser.parseForNull(f, previousHash);
 			for (String check: checks){
-				if (!(allUsagePatterns.contains(check))){
-					allUsagePatterns.add(check);					
-				}
+				addUsagePattern(check);
 			}
 			// passing in ifAndNext
 			additionDiff(directory, f, checks, previousHash, currentHash, dev);
@@ -475,9 +491,7 @@ public class ModelRepository {
 			
 			List<String> catches = npes.get(2);
 			for (String c: catches){
-				if (!(allUsagePatterns.contains(c))){
-					allUsagePatterns.add(c);					
-				}
+				addUsagePattern(c);
 			}
 			
 			additionDiff(directory, f, catches, previousHash, currentHash, dev);
@@ -486,35 +500,51 @@ public class ModelRepository {
 			// works the same as null checks (except only with statement
 			List<String> colls = npes.get(0);
 			for (String coll: colls){
-				if (!(allUsagePatterns.contains(coll))){
-					allUsagePatterns.add(coll);					
-				}
+				addUsagePattern(coll);
 			}
 			
 			additionDiff(directory, f, colls, previousHash, currentHash, dev);
 			
 			List<String> opts = npes.get(1);
 			for (String opt: opts){
-				if (!(allUsagePatterns.contains(opt))){
-					allUsagePatterns.add(opt);					
-				}
+				addUsagePattern(opt);
 			}
 			additionDiff(directory, f, opts, previousHash, currentHash, dev);
 			
 			
 			List<String> nodps = parser.parseForNODP(f, currentHash);
 			for (String nodp: nodps){
-				if (!(allUsagePatterns.contains(nodp))){
-					allUsagePatterns.add(nodp);					
-				}
+				addUsagePattern(nodp);
 			}
 			additionDiff(directory, f, nodps, previousHash, currentHash, dev);
 			
 			// GENERICS
-			parser.parseForGenerics(f);
+			HashMap<String, List<String>> map = parser.parseForGenerics(f);
+			List<String> fields = map.get("fields");
+			List<String> methods = map.get("methods");
+			List<String> invocs = map.get("invocations");
 			
+			for (String field: fields){
+				addUsagePattern(field);
+			}
+			additionDiff(directory, f, fields, previousHash, currentHash, dev);
 			
+			for (String method: methods){
+				addUsagePattern(method);
+			}
+			additionDiff(directory, f, methods, previousHash, currentHash, dev);
 			
+			for (String invoc: invocs){
+				addUsagePattern(invoc);
+			}
+			additionDiff(directory, f, invocs, previousHash, currentHash, dev);
+			
+		}
+	}
+
+	private void addUsagePattern(String c) {
+		if (!(allUsagePatterns.contains(c))){
+			allUsagePatterns.add(c);					
 		}
 	}
 
@@ -855,6 +885,10 @@ public class ModelRepository {
 		int addedCatchBlock = 0;
 		int addedNODP = 0;
 		
+		int addedGenericFields = 0;
+		int addedGenericMethods = 0;
+		int addedGenericInvocs = 0;
+		
 		
 		Git git;
 		//current revision
@@ -949,7 +983,45 @@ public class ModelRepository {
 										addedNODP = checkAdded(addedNODP, currentHash, diffText, check);
 									} 
 									
-								} else {
+								} 
+								// GENERICS HERE!
+								else if (file.getGenericFields().contains(check)){
+									String pattern1 = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
+									String p1 = pattern1.trim();
+									
+									String pattern2 = check.substring(0, check.indexOf(CHECK_SEPERATOR));
+									String p2 = pattern2.trim();
+									
+									if (line.contains(p1) && line.contains(p2)){
+										addedGenericFields = checkAdded(addedGenericFields, currentHash, diffText, check);
+									}
+								}
+								else if (file.getGenericMethods().contains(check)){
+									String pattern1 = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
+									String p1 = pattern1.trim();
+									
+									String pattern2 = check.substring(0, check.indexOf(CHECK_SEPERATOR));
+									String p2 = pattern2.trim();
+									
+									if (line.contains(p1) && line.contains(p2)){
+										addedGenericMethods = checkAdded(addedGenericMethods, currentHash, diffText, check);
+									}
+								}
+								else if (file.getGenericInvocations().contains(check)){
+									String pattern1 = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
+									String p1 = pattern1.trim();
+									
+									String pattern2 = check.substring(0, check.indexOf(CHECK_SEPERATOR));
+									String p2 = pattern2.trim();
+									
+									if (line.contains(p1) && line.contains(p2)){
+										addedGenericInvocs = checkAdded(addedGenericInvocs, currentHash, diffText, check);
+									}
+								}
+								
+								
+								
+								else {
 									String nullcheck = check.substring(0, check.indexOf(CHECK_SEPERATOR));
 									String nc = nullcheck.trim();
 									
@@ -1005,6 +1077,24 @@ public class ModelRepository {
 				}
 			}
 			
+			if (addedGenericFields > 0 && addedGenericFields <= 10){
+				if (developer.getCommits().contains(currentHash)){
+					developer.setAddedGenericFields(addedGenericFields);
+				}
+			}
+			
+			if (addedGenericMethods >0 && addedGenericMethods <= 10){
+				if (developer.getCommits().contains(currentHash)){
+					developer.setAddedGenericMethods(addedGenericMethods);
+				}
+			}
+			
+			if (addedGenericInvocs > 0 && addedGenericInvocs <= 10){
+				if (developer.getCommits().contains(currentHash)){
+					developer.setAddedGenericInvocs(addedGenericInvocs);
+				}
+			}
+			
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		} catch (GitAPIException e) {
@@ -1024,7 +1114,11 @@ public class ModelRepository {
 			
 			added +=1;			
 			
-		}		
+		} else if (isGenericsAddition(diffText, check)){
+			System.out.println("Generics pattern was added at revision " + newHash);
+			
+			added +=1;
+		}
 		
 		return added;
 	}
@@ -1057,6 +1151,26 @@ public class ModelRepository {
 			
 		}
 		return oldHash;
+	}
+	
+	private boolean isGenericsAddition(String diff, String check){
+		
+		int count1 = 0;
+		int count2 = 0;
+		
+		// need both parts of check (front and back) to be added
+		String pattern1 = check.substring(check.indexOf(CHECK_SEPERATOR) +1, check.length());
+		pattern1 = pattern1.trim();
+		String pattern2 = check.substring(0, check.indexOf(CHECK_SEPERATOR));
+		pattern2 = pattern2.trim();
+		
+		count1 = StringUtils.countMatches(diff, pattern1);
+		count2 = StringUtils.countMatches(diff, pattern2);
+		
+		if (count1 == 1 && count2 == 1)
+			return true;
+		
+		return false;
 	}
 
 	private boolean isAddition(String diff, String check) {

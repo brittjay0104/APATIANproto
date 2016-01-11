@@ -57,44 +57,49 @@ public class NPE_Visitor extends ASTVisitor{
 				
 		String src = findSourceForNode(node);
 		MethodDeclaration md = getMethodDeclaration(node);
-		String method = md.getName().toString();
+		if(md != null){
+			
+			String method = md.getName().toString();			
+		
 		//System.out.println(method);
 		//System.out.println(src);
-		
-		if (src.contains("Collections.emptyList()") || src.contains("Collections.emptyMap()")
-				|| src.contains("Collections.emptySet()")){
 			
-			//System.out.println(src);
-			
-			List parts = node.fragments();
-			
-			for (int i=0; i < parts.size(); i++){
-				String s = parts.get(i).toString();
-				//String var = s.substring(0, s.indexOf("="));
+			if (src.contains("Collections.emptyList()") || src.contains("Collections.emptyMap()")
+					|| src.contains("Collections.emptySet()")){
 				
-				String collVar = method + CHECK_SEPERATOR + s.replace("=", " = ");
-				//System.out.println(collVar);
-				if (!collectionsVars.contains(collVar)){
-					collectionsVars.add(collVar);	
+				//System.out.println(src);
+				
+				List parts = node.fragments();
+				
+				for (int i=0; i < parts.size(); i++){
+					String s = parts.get(i).toString();
+					//String var = s.substring(0, s.indexOf("="));
+					
+					String collVar = method + CHECK_SEPERATOR + s.replace("=", " = ");
+					//System.out.println(collVar);
+					if (!collectionsVars.contains(collVar)){
+						collectionsVars.add(collVar);	
+					}
+				
 				}
-			
-			}
-			
-		}
-		
-		if (src.contains("Optional.of")){
-			//System.out.println(src);
-			
-			List parts = node.fragments();
-			
-			for (int i=0; i < parts.size(); i++){
-				String s = parts.get(i).toString();
-				//String var = s.substring(0, s.indexOf("="));
 				
-				String optVar = method + CHECK_SEPERATOR + s.replace("=", " = ");
-				//System.out.println(optVar);
-				if (!optionalVars.contains(optVar)){
-					optionalVars.add(optVar);
+			}
+		
+		
+			if (src.contains("Optional.of")){
+				//System.out.println(src);
+				
+				List parts = node.fragments();
+				
+				for (int i=0; i < parts.size(); i++){
+					String s = parts.get(i).toString();
+					//String var = s.substring(0, s.indexOf("="));
+					
+					String optVar = method + CHECK_SEPERATOR + s.replace("=", " = ");
+					//System.out.println(optVar);
+					if (!optionalVars.contains(optVar)){
+						optionalVars.add(optVar);
+					}
 				}
 			}
 		}
@@ -108,28 +113,30 @@ public class NPE_Visitor extends ASTVisitor{
 		
 		List clauses = node.catchClauses();
 		MethodDeclaration md = getMethodDeclaration(node);
-		String method = md.getName().toString();
-		
-		for (int i=0; i < clauses.size(); i++){
+		if (md != null){
+			String method = md.getName().toString();
 			
-			CatchClause clause = (CatchClause) clauses.get(i);
-			String s = clause.toString();
-			String c = s.substring(0, s.indexOf("{"));
-					
-					
-			//System.out.println("Catch Clause ---> " + c);
-			
-			SingleVariableDeclaration exception = clause.getException();
-			
-			String ex = findSourceForNode(exception);
-			
-			if (ex.contains("NullPointerException")){
-				// make sure unique -- for now, check method
-				// TODO: improve this -- right now only allows one NPE per method
-				String catchBlock = method + CHECK_SEPERATOR + c;
-				if (!catchMeths.contains(catchBlock) && !catchBlock.contains("$missing$")){
-					//System.out.println(catchBlock);	
-					catchMeths.add(catchBlock);					
+			for (int i=0; i < clauses.size(); i++){
+				
+				CatchClause clause = (CatchClause) clauses.get(i);
+				String s = clause.toString();
+				String c = s.substring(0, s.indexOf("{"));
+				
+				
+				//System.out.println("Catch Clause ---> " + c);
+				
+				SingleVariableDeclaration exception = clause.getException();
+				
+				String ex = findSourceForNode(exception);
+				
+				if (ex.contains("NullPointerException")){
+					// make sure unique -- for now, check method
+					// TODO: improve this -- right now only allows one NPE per method
+					String catchBlock = method + CHECK_SEPERATOR + c;
+					if (!catchMeths.contains(catchBlock) && !catchBlock.contains("$missing$")){
+						//System.out.println(catchBlock);	
+						catchMeths.add(catchBlock);					
+					}
 				}
 			}
 		}

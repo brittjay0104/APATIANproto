@@ -18,6 +18,10 @@ public class ModelDeveloper {
 	private int removedCatchCounts;
 	private int addedCatchCounts;
 	
+	private int addedGenericFields;
+	private int addedGenericMethods;
+	private int addedGenericInvocs;
+	
 	private int derefCounts;
 	private String name;
 	private String username;
@@ -38,6 +42,10 @@ public class ModelDeveloper {
 		addedOptCounts = 0;
 		removedCatchCounts = 0;
 		addedCatchCounts = 0;
+		
+		addedGenericFields = 0;
+		addedGenericInvocs = 0;
+		addedGenericMethods = 0;
 		
 		setDevName(id);
 		commits = new ArrayList<String>();
@@ -154,7 +162,31 @@ public class ModelDeveloper {
 	public void setAddedCatchCounts(int addedCatchs) {
 		addedCatchCounts = addedCatchCounts + addedCatchs;
 	}
+	
+	public void setAddedGenericFields(int addedFields){
+		addedGenericFields = addedGenericFields + addedFields;
+	}
+	
+	public void setAddedGenericMethods(int addedMethods){
+		addedGenericMethods = addedGenericMethods + addedMethods;
+	}
+	
+	public void setAddedGenericInvocs(int addedInvocs){
+		addedGenericInvocs = addedGenericInvocs + addedInvocs;
+	}
+	
+	public int getAddedGenericsFieldsCount(){
+		return addedGenericFields;
+	}
+	
+	public int getAddedGenericsMethodsCount(){
+		return addedGenericMethods;
+	}
 
+	public int getAddedGenericsInvocsCount(){
+		return addedGenericInvocs;
+	}
+	
 	public int getDerefCount(){
 		return derefCounts;
 	}
