@@ -43,6 +43,8 @@ public class ModelSourceFile {
 	public List<String> genericFields;
 	public List<String> genericMethods;
 	public List<String> genericInvocations;
+	public List<String> genericParameters;
+	public List<String> genericVarDeclarations;
 
 	// ArrayList for keeping track of locations of null checks as they appear
 	// and disappear from the
@@ -86,6 +88,8 @@ public class ModelSourceFile {
 		genericFields = new ArrayList<String>();
 		genericMethods = new ArrayList<String>();
 		genericInvocations = new ArrayList<String>();
+		genericParameters = new ArrayList<String>();
+		genericVarDeclarations = new ArrayList<String>();
 		
 		commits = new ArrayList<ModelCommit>();
 		methods = new ArrayList<String>();
@@ -280,6 +284,14 @@ public class ModelSourceFile {
 		return genericInvocations;
 	}
 	
+	public List<String> getGenericParameters(){
+		return genericParameters;
+	}
+	
+	public List<String> getGenericVarDeclarations(){
+		return genericVarDeclarations;
+	}
+	
 
 	/**
 	 * 
@@ -425,6 +437,18 @@ public class ModelSourceFile {
 	public void addGenericInvoc(String invoc){
 		if (!(genericInvocations.contains(invoc))){
 			genericInvocations.add(invoc);
+		}
+	}
+	
+	public void addGenericParam (String param){
+		if (!(genericParameters.contains(param))){
+			genericParameters.add(param);
+		}
+	}
+	
+	public void addGenericVarDeclaration(String varDec){
+		if (!(genericVarDeclarations.contains(varDec))){
+			genericVarDeclarations.add(varDec);
 		}
 	}
 	

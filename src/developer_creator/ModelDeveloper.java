@@ -21,6 +21,8 @@ public class ModelDeveloper {
 	private int addedGenericFields;
 	private int addedGenericMethods;
 	private int addedGenericInvocs;
+	private int addedGenericParams;
+	private int addedGenericVarDecs;
 	
 	private int derefCounts;
 	private String name;
@@ -46,6 +48,8 @@ public class ModelDeveloper {
 		addedGenericFields = 0;
 		addedGenericInvocs = 0;
 		addedGenericMethods = 0;
+		addedGenericParams = 0;
+		addedGenericVarDecs = 0;
 		
 		setDevName(id);
 		commits = new ArrayList<String>();
@@ -175,6 +179,14 @@ public class ModelDeveloper {
 		addedGenericInvocs = addedGenericInvocs + addedInvocs;
 	}
 	
+	public void setAddedGenericParams(int addedParams){
+		addedGenericParams = addedGenericParams + addedParams;
+	}
+	
+	public void setAddedGenericVarDecs(int addedVarDecs){
+		addedGenericVarDecs = addedGenericVarDecs + addedVarDecs;
+	}
+		
 	public int getAddedGenericsFieldsCount(){
 		return addedGenericFields;
 	}
@@ -185,6 +197,14 @@ public class ModelDeveloper {
 
 	public int getAddedGenericsInvocsCount(){
 		return addedGenericInvocs;
+	}
+	
+	public int getAddedGenericParamsCount(){
+		return addedGenericParams;
+	}
+	
+	public int getAddedGenericVarDecsCount(){
+		return addedGenericVarDecs;
 	}
 	
 	public int getDerefCount(){

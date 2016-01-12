@@ -3,6 +3,10 @@ public class Box<T> {
   private T t;
   private Object o; 
 
+  public Box(T k){
+	  // code
+  }
+  
   public void add(T t) {
     this.t = t;
   }

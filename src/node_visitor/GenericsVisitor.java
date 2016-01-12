@@ -20,6 +20,7 @@ import org.eclipse.jdt.core.dom.Modifier;
 import org.eclipse.jdt.core.dom.ParameterizedType;
 import org.eclipse.jdt.core.dom.SimpleName;
 import org.eclipse.jdt.core.dom.SimpleType;
+import org.eclipse.jdt.core.dom.SingleVariableDeclaration;
 import org.eclipse.jdt.core.dom.Type;
 import org.eclipse.jdt.core.dom.TypeDeclaration;
 import org.eclipse.jdt.core.dom.TypeParameter;
@@ -27,15 +28,19 @@ import org.eclipse.jdt.core.dom.VariableDeclaration;
 import org.eclipse.jdt.core.dom.VariableDeclarationFragment;
 import org.eclipse.jdt.core.dom.VariableDeclarationStatement;
 
+import com.sun.org.apache.bcel.internal.generic.NEWARRAY;
+
 import sun.reflect.generics.tree.TypeArgument;
 
 import code_parser.ModelSourceFile;
 
 public class GenericsVisitor extends ASTVisitor {
 
-	public ArrayList<String> genericFields = new ArrayList<>();
-	public ArrayList<String> genericMethods = new ArrayList<>();
-	public ArrayList<String> genericInvocations = new ArrayList<>();
+	public ArrayList<String> genericFields = new ArrayList<String>();
+	public ArrayList<String> genericMethods = new ArrayList<String>();
+	public ArrayList<String> genericInvocations = new ArrayList<String>();
+	public ArrayList<String> genericVarDecs = new ArrayList<String>();
+	public ArrayList<String> genericParameters = new ArrayList<String>();
 	public List<String> types = new ArrayList<String>();
 	
 	private char[] source;
@@ -88,6 +93,14 @@ public class GenericsVisitor extends ASTVisitor {
 		return genericInvocations;
 	}
 	
+	public List<String> getGenericVariableDecs(){
+		return genericVarDecs;
+	}
+	
+	public List<String> getGenericParameters(){
+		return genericParameters;
+	}
+	
 	/**
 	 * VISITORS
 	 */
@@ -125,7 +138,7 @@ public class GenericsVisitor extends ASTVisitor {
 		return true;
 	}
 	
-	
+	// methods with type bounds
 	public boolean visit(MethodDeclaration node) {
 		
 		//String methodDec = findSourceForNode(node);
@@ -159,7 +172,7 @@ public class GenericsVisitor extends ASTVisitor {
 		}
 		
 		
-		// TODO: find example to see if this works -- otherwise can probably remove
+		/*// TODO: find example to see if this works -- otherwise can probably remove
 		IMethodBinding mb = node.resolveBinding();
 		
 		if (mb != null){
@@ -171,7 +184,7 @@ public class GenericsVisitor extends ASTVisitor {
 					System.out.println("Type argument binding: " + arg.toString());
 				}			
 			}			
-		}
+		}*/
 		
 		// 
 		
@@ -210,9 +223,69 @@ public class GenericsVisitor extends ASTVisitor {
 		return true;
 	}
 	
+
+	// methods and constructors with generic parameters
+	public boolean visit(SingleVariableDeclaration node){
+		
+		String dec = findSourceForNode(node);
+					
+		String type = node.getType().toString();
+		
+		MethodDeclaration md = getMethodDeclaration(node);
+		String method = md.getName().toString();
+		
+		//System.out.println("Declaring method --> " + method);
+		
+		for (String t: types){
+			if (type.equals(t)){
+				String variable = dec.substring(dec.indexOf(" "), dec.length());
+				
+				String genParam = type + CHECK_SEPERATOR + variable + CHECK_SEPERATOR + method;
+				if (!(genericParameters.contains(genParam))){
+					genericParameters.add(genParam);
+				}
+			}
+		}
+		
+		return true;
+	}
+	
+	// instantiation of generic type
 	public boolean visit(VariableDeclarationStatement node){
 		
-		//  TODO test with collections example; looking for same thing as expression statement
+		String dec = findSourceForNode(node);
+		
+		String type = node.getType().toString().trim();
+		
+		for (String t: types){
+			if (type.equals(t)){
+				MethodDeclaration md = getMethodDeclaration(node);
+				String method = md.getName().toString().trim();
+				
+				String variable = dec.substring(dec.indexOf(" "), dec.indexOf("=")).trim();
+				
+				//System.out.println("Variable --> " + variable.trim());
+				
+				String genVarDec = type + CHECK_SEPERATOR + variable + CHECK_SEPERATOR + method; 
+				
+				if (!(genericVarDecs.contains(genVarDec))){
+					genericVarDecs.add(genVarDec);
+				}
+			}
+		}
+		
+		if (type.contains("<") && type.contains(">")){
+			MethodDeclaration md = getMethodDeclaration(node);
+			String method = md.getName().toString().trim();
+			
+			String variable = dec.substring(dec.indexOf(" "), dec.indexOf("=")).trim();
+			
+			String genVarDec = type + CHECK_SEPERATOR + variable + CHECK_SEPERATOR + method; 
+			
+			if (!(genericVarDecs.contains(genVarDec))){
+				genericVarDecs.add(genVarDec);
+			} 
+		}
 		
 		return true;
 	}
@@ -225,7 +298,7 @@ public class GenericsVisitor extends ASTVisitor {
 		String statement = findSourceForNode(e);
 		
 		if (e instanceof MethodInvocation){
-			System.out.println("expression statement invoc: " + statement);	
+			//System.out.println("expression statement invoc: " + statement);	
 			
 //			MethodInvocation meth = (MethodInvocation)e;
 //			String methodInvoc = findSourceForNode(meth.getName());

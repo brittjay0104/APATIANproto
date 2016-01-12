@@ -245,6 +245,8 @@ public class ModelParser {
 		List<String> fields = visitor.getGenericFields();
 		List<String> methods = visitor.getGenericMethods();
 		List<String> invocs = visitor.getGenericInvocations();
+		List<String> params = visitor.getGenericParameters();
+		List<String> varDecs = visitor.getGenericVariableDecs();
 				
 		for (String field: fields){
 			System.out.println("generic field --> " + field);
@@ -264,12 +266,26 @@ public class ModelParser {
 			file.addGenericInvoc(invoc);
 		}
 		
+		for (String param: params){
+			System.out.println("generic parameter --> " + param);
+			
+			file.addGenericParam(param);
+		}
+		
+		for (String varDec: varDecs){
+			System.out.println("generic variable declaration --> " + varDec);
+			
+			file.addGenericVarDeclaration(varDec);
+		}		
+		
 		// hashmap that stores all these; method should return map
 		
 		HashMap<String, List<String>> genericsMap = new HashMap<String, List<String>>();
 		genericsMap.put("fields", file.getGenericFields());
 		genericsMap.put("methods", file.getGenericMethods());
 		genericsMap.put("invocations", file.getGenericInvocations());
+		genericsMap.put("parameters", file.getGenericParameters());
+		genericsMap.put("varDecs", file.getGenericVarDeclarations());
 		
 		return genericsMap;
 	}

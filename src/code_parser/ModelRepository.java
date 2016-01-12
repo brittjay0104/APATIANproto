@@ -523,6 +523,9 @@ public class ModelRepository {
 			List<String> fields = map.get("fields");
 			List<String> methods = map.get("methods");
 			List<String> invocs = map.get("invocations");
+			List<String> params = map.get("parameters");
+			List<String> varDecs = map.get("varDecs");
+			
 			
 			for (String field: fields){
 				addUsagePattern(field);
@@ -538,6 +541,16 @@ public class ModelRepository {
 				addUsagePattern(invoc);
 			}
 			additionDiff(directory, f, invocs, previousHash, currentHash, dev);
+			
+			for (String param: params){
+				addUsagePattern(param);
+			}
+			additionDiff(directory, f, params, previousHash, currentHash, dev);
+			
+			for (String varDec: varDecs){
+				addUsagePattern(varDec);
+			}
+			additionDiff(directory, f, varDecs, previousHash, currentHash, dev);
 			
 		}
 	}
@@ -888,6 +901,8 @@ public class ModelRepository {
 		int addedGenericFields = 0;
 		int addedGenericMethods = 0;
 		int addedGenericInvocs = 0;
+		int addedGenericParams = 0;
+		int addedGenericVarDecs = 0;
 		
 		
 		Git git;
@@ -931,10 +946,9 @@ public class ModelRepository {
 				String diffText = out.toString("UTF-8");
 								 
 				if (diffText.contains(file.getName())){
-					// HERE! :)
-					if (currentHash.equals("6a9bda47c7c18265dcc682be5513a82db528cdfd") & file.getName().equals("NullObjectPattern_test.java")){
-						System.out.println(diffText);
-					}	
+//					if (currentHash.equals("6a9bda47c7c18265dcc682be5513a82db528cdfd") & file.getName().equals("NullObjectPattern_test.java")){
+//						System.out.println(diffText);
+//					}	
 					
 					BufferedReader br = new BufferedReader(new StringReader(diffText));
 					String line = null;
@@ -956,7 +970,7 @@ public class ModelRepository {
 									pattern = pattern.trim();
 									
 									if (line.contains(pattern)){
-										addedCatchBlock = checkAdded(addedCatchBlock, currentHash, diffText, check);
+										addedCatchBlock = checkAddedNull(addedCatchBlock, currentHash, diffText, check);
 									}
 									
 								} else if (file.getCollVars().contains(check)){
@@ -964,7 +978,7 @@ public class ModelRepository {
 									String p = pattern.trim();
 									
 									if (line.contains(p)){
-										addedCollVar = checkAdded(addedCollVar, currentHash, diffText, check);
+										addedCollVar = checkAddedNull(addedCollVar, currentHash, diffText, check);
 									}
 									
 								} else if (file.getOptVars().contains(check)){
@@ -972,7 +986,7 @@ public class ModelRepository {
 									String p = pattern.trim();
 									
 									if (line.contains(p)){
-										addedOptVar = checkAdded(addedOptVar, currentHash, diffText, check);
+										addedOptVar = checkAddedNull(addedOptVar, currentHash, diffText, check);
 									}
 								} else if (file.getNODPs().contains(check)){
 									// check for return statement addition (presumably last piece)
@@ -980,7 +994,7 @@ public class ModelRepository {
 									String p = pattern.trim();
 									
 									if (line.contains(p)){
-										addedNODP = checkAdded(addedNODP, currentHash, diffText, check);
+										addedNODP = checkAddedNull(addedNODP, currentHash, diffText, check);
 									} 
 									
 								} 
@@ -993,7 +1007,7 @@ public class ModelRepository {
 									String p2 = pattern2.trim();
 									
 									if (line.contains(p1) && line.contains(p2)){
-										addedGenericFields = checkAdded(addedGenericFields, currentHash, diffText, check);
+										addedGenericFields = checkAddedGenerics(addedGenericFields, currentHash, diffText, check);
 									}
 								}
 								else if (file.getGenericMethods().contains(check)){
@@ -1004,7 +1018,7 @@ public class ModelRepository {
 									String p2 = pattern2.trim();
 									
 									if (line.contains(p1) && line.contains(p2)){
-										addedGenericMethods = checkAdded(addedGenericMethods, currentHash, diffText, check);
+										addedGenericMethods = checkAddedGenerics(addedGenericMethods, currentHash, diffText, check);
 									}
 								}
 								else if (file.getGenericInvocations().contains(check)){
@@ -1015,18 +1029,35 @@ public class ModelRepository {
 									String p2 = pattern2.trim();
 									
 									if (line.contains(p1) && line.contains(p2)){
-										addedGenericInvocs = checkAdded(addedGenericInvocs, currentHash, diffText, check);
+										addedGenericInvocs = checkAddedGenerics(addedGenericInvocs, currentHash, diffText, check);
+									}
+								}
+								else if (file.getGenericParameters().contains(check)){
+									String type = check.substring(0, check.indexOf(CHECK_SEPERATOR)).trim();
+									String variable = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.lastIndexOf(CHECK_SEPERATOR)).trim();
+									String method = check.substring(check.lastIndexOf(CHECK_SEPERATOR)+1, check.length()).trim();
+									
+									if (line.contains(type) && line.contains(variable) && line.contains(method)){
+										addedGenericParams = checkAddedGenerics(addedGenericParams, currentHash, diffText, check);
 									}
 								}
 								
-								
+								else if (file.getGenericVarDeclarations().contains(check)){
+									String type = check.substring(0, check.indexOf(CHECK_SEPERATOR)).trim();
+									String variable = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.lastIndexOf(CHECK_SEPERATOR)).trim();
+									String method = check.substring(check.lastIndexOf(CHECK_SEPERATOR)+1, check.length()).trim();
+									
+									if (line.contains(type) && line.contains(variable) && line.contains(method)){
+										addedGenericVarDecs = checkAddedGenerics(addedGenericVarDecs, currentHash, diffText, check);
+									}
+								}
 								
 								else {
 									String nullcheck = check.substring(0, check.indexOf(CHECK_SEPERATOR));
 									String nc = nullcheck.trim();
 									
 									if (line.contains(nc)){
-										addedNullChecks = checkAdded(addedNullChecks, currentHash, diffText, check);
+										addedNullChecks = checkAddedNull(addedNullChecks, currentHash, diffText, check);
 										derefNullChecks = calculateDerefValue(file, check, developer, derefNullChecks);
 									}
 								}
@@ -1095,14 +1126,27 @@ public class ModelRepository {
 				}
 			}
 			
+			if (addedGenericParams > 0 && addedGenericParams <= 10){
+				if (developer.getCommits().contains(currentHash)){
+					developer.setAddedGenericParams(addedGenericParams);
+				}
+			}
+			
+			if (addedGenericVarDecs > 0 && addedGenericVarDecs <= 10){
+				if (developer.getCommits().contains(currentHash)){
+					developer.setAddedGenericParams(addedGenericVarDecs);
+				}
+			}
+			
+			
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		} catch (GitAPIException e) {
 			System.out.println("GitAPIException caught!");
 		}
 	}
-
-	private int checkAdded(int added, String newHash, String diffText, String check) {
+	
+	private int checkAddedNull(int added, String newHash, String diffText, String check){
 		if (isAddition(diffText, check)){
 			System.out.println("Null usage pattern was added at revision " + newHash);
 			
@@ -1112,9 +1156,14 @@ public class ModelRepository {
 		} else if (isCheckAddition(diffText, check)){
 			System.out.println("Null check pattern was added at revision " + newHash);
 			
-			added +=1;			
-			
-		} else if (isGenericsAddition(diffText, check)){
+			added +=1;
+		}
+		
+		return added;
+	}
+	
+	private int checkAddedGenerics(int added, String newHash, String diffText, String check){
+		if (isGenericsAddition(diffText, check)){
 			System.out.println("Generics pattern was added at revision " + newHash);
 			
 			added +=1;
@@ -1157,12 +1206,27 @@ public class ModelRepository {
 		
 		int count1 = 0;
 		int count2 = 0;
+		int count3 = 0;
+		
+		// parameters and variable dec -- 3 parts
+		if (StringUtils.countMatches(check, Character.toString(CHECK_SEPERATOR)) == 2){
+			String type = check.substring(0, check.indexOf(CHECK_SEPERATOR)).trim();
+			String variable = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.lastIndexOf(CHECK_SEPERATOR)).trim();
+			String method = check.substring(check.lastIndexOf(CHECK_SEPERATOR)+1, check.length()).trim();
+			
+			count1 = StringUtils.countMatches(diff, type);
+			count2 = StringUtils.countMatches(diff, variable);
+			count3 = StringUtils.countMatches(diff, method);
+			
+			if (count1 == 1 && count2 == 1 && count3 == 1){
+				return true;
+			}
+						
+		}
 		
 		// need both parts of check (front and back) to be added
-		String pattern1 = check.substring(check.indexOf(CHECK_SEPERATOR) +1, check.length());
-		pattern1 = pattern1.trim();
-		String pattern2 = check.substring(0, check.indexOf(CHECK_SEPERATOR));
-		pattern2 = pattern2.trim();
+		String pattern1 = check.substring(check.indexOf(CHECK_SEPERATOR) +1, check.length()).trim();
+		String pattern2 = check.substring(0, check.indexOf(CHECK_SEPERATOR)).trim();
 		
 		count1 = StringUtils.countMatches(diff, pattern1);
 		count2 = StringUtils.countMatches(diff, pattern2);

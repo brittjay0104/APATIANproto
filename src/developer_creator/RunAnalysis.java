@@ -30,14 +30,14 @@ public class RunAnalysis {
 
 	public static void main(String[] args) throws Exception {
 		
-		//ModelSourceFile f = new ModelSourceFile(new File("Generics.java"));
-//		ModelSourceFile f = new ModelSourceFile(new File("src/util/Configuration.java"));
+//		ModelSourceFile f = new ModelSourceFile(new File("Generics.java"));
+////		ModelSourceFile f = new ModelSourceFile(new File("src/util/Configuration.java"));
 //		
 //		ModelParser p = new ModelParser();
 //		
 //		p.parseForGenerics(f);
-		
-		
+//		
+
 		File repos = new File("repos.txt");
 		
 		InputStream is = null;
@@ -68,7 +68,7 @@ public class RunAnalysis {
 					
 					// create files to populate after analysis
 					File f1 = new File(opFile);
-					File f2 = new File("./archived-output/01-08-2016/" + opFile);
+					File f2 = new File("./archived-output/01-12-2016/" + opFile);
 					
 					is = new FileInputStream(f1);
 					os = new FileOutputStream(f2);
