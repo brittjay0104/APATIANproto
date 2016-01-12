@@ -430,6 +430,8 @@ public class ModelRepository {
 		System.out.println(devName + " added generic field count = " + dev.getAddedGenericsFieldsCount() + " in repository " + repoName);
 		System.out.println(devName + " added generic method count = " + dev.getAddedGenericsMethodsCount() + " in repository " + repoName);
 		System.out.println(devName + " added generic invocations count = " + dev.getAddedGenericsInvocsCount() + " in repository " + repoName);
+		System.out.println(devName + " added methods with generic parameters count = " + dev.getAddedGenericParamsCount() + " in repository " + repoName);
+		System.out.println(devName + " added generic variable declarations count = " + dev.getAddedGenericVarDecsCount() + " in repository " + repoName);
 	}
 
 	private void diffPrettyPrint(ModelDeveloper dev, String currentHash, String previousHash) {
@@ -447,13 +449,15 @@ public class ModelRepository {
 		
 		// GENERICS
 		System.out.println("	--> Added generic fields = " + dev.getAddedGenericsFieldsCount());
-		System.out.println("	--> Added generic methods = " + dev.getAddedGenericsMethodsCount());
+		System.out.println("	--> Added generic methods with type bounds = " + dev.getAddedGenericsMethodsCount());
 		System.out.println(" 	--> Added generic invocations = " + dev.getAddedGenericsInvocsCount());
+		System.out.println(" 	--> Added methods with generic parameters = " + dev.getAddedGenericParamsCount());
+		System.out.println(" 	--> Added generic variable declarations = " + dev.getAddedGenericVarDecsCount());
 	}
 	
 	public boolean hasGenerics(){
 		
-		// TODO: analysis for if repository has any generics at all
+		// TODO: analysis for if repository or file has any generics at all
 		
 		return false;
 	}

@@ -229,16 +229,16 @@ public class GenericsVisitor extends ASTVisitor {
 		
 		String dec = findSourceForNode(node);
 					
-		String type = node.getType().toString();
+		String type = node.getType().toString().trim();
 		
 		MethodDeclaration md = getMethodDeclaration(node);
-		String method = md.getName().toString();
+		String method = md.getName().toString().trim();
 		
 		//System.out.println("Declaring method --> " + method);
 		
 		for (String t: types){
 			if (type.equals(t)){
-				String variable = dec.substring(dec.indexOf(" "), dec.length());
+				String variable = dec.substring(dec.indexOf(" "), dec.length()).trim();
 				
 				String genParam = type + CHECK_SEPERATOR + variable + CHECK_SEPERATOR + method;
 				if (!(genericParameters.contains(genParam))){
