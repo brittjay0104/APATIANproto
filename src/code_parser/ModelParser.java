@@ -249,31 +249,31 @@ public class ModelParser {
 		List<String> varDecs = visitor.getGenericVariableDecs();
 				
 		for (String field: fields){
-			System.out.println("generic field --> " + field);
+			//System.out.println("generic field --> " + field);
 			
 			file.addGenericField(field);
 		}
 		
 		for (String method: methods){
-			System.out.println("generic method --> " + method);
+			//System.out.println("generic method --> " + method);
 			
 			file.addGenericMethod(method);
 		}
 		
 		for (String invoc: invocs){
-			System.out.println("generic invocation --> " + invoc);
+			//System.out.println("generic invocation --> " + invoc);
 			
 			file.addGenericInvoc(invoc);
 		}
 		
 		for (String param: params){
-			System.out.println("generic parameter --> " + param);
+			//System.out.println("generic parameter --> " + param);
 			
 			file.addGenericParam(param);
 		}
 		
 		for (String varDec: varDecs){
-			System.out.println("generic variable declaration --> " + varDec);
+			//System.out.println("generic variable declaration --> " + varDec);
 			
 			file.addGenericVarDeclaration(varDec);
 		}		

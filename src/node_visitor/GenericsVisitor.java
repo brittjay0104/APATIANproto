@@ -107,32 +107,30 @@ public class GenericsVisitor extends ASTVisitor {
 	
 	// DONE!
 	public boolean visit(FieldDeclaration node){
-		String fieldDec = findSourceForNode(node);
+		String fieldDec = findSourceForNode(node).trim();
 		//System.out.println("Field source: " + fieldDec);
 		
 		List<VariableDeclarationFragment> fields = node.fragments();
-		String name = "";
-		String genField = "";
 		
 		if (!fields.isEmpty()){
 			for (VariableDeclarationFragment field: fields){
 				// field name
-				name = findSourceForNode(field);
+				//name = findSourceForNode(field).trim();
+				Type t = node.getType();
+				String type = t.toString().trim();
+				
+				for (String s: types){
+					if (type.equals(s)){
+						
+						// add field to list if not already found
+						//genField = type + CHECK_SEPERATOR + name;
+						if (!genericFields.contains(fieldDec)){
+							genericFields.add(fieldDec);
+							System.out.println("Generic field: " + fieldDec);
+						}
+					}			
+				}
 			}			
-			Type t = node.getType();
-			String type = t.toString();
-			
-			for (String s: types){
-				if (type.equals(s)){
-					
-					// add field to list if not already found
-					genField = type + CHECK_SEPERATOR + name;
-					if (!genericFields.contains(genField)){
-						genericFields.add(genField);
-						System.out.println("Generic field: " + genField);
-					}
-				}			
-			}
 		}
 		
 		return true;
@@ -143,7 +141,7 @@ public class GenericsVisitor extends ASTVisitor {
 		
 		//String methodDec = findSourceForNode(node);
 	
-		String method = findSourceForNode(node.getName());
+		String method = findSourceForNode(node.getName()).trim();
 		//System.out.println("Method declaration: " + method);
 		
 		List<TypeParameter> decs = node.typeParameters();
@@ -157,7 +155,7 @@ public class GenericsVisitor extends ASTVisitor {
 				if (!(dec.typeBounds().isEmpty())){
 					for (int i = 0; i < dec.typeBounds().size(); i++ ){
 						//System.out.println("Generic Type Bound!");
-						String type = dec.typeBounds().get(i).toString();
+						String type = dec.typeBounds().get(i).toString().trim();
 						//System.out.println("Type Bound: " + type); 
 
 						
@@ -295,7 +293,7 @@ public class GenericsVisitor extends ASTVisitor {
 		
 		Expression e = node.getExpression();
 		
-		String statement = findSourceForNode(e);
+		String statement = findSourceForNode(e).trim();
 		
 		if (e instanceof MethodInvocation){
 			//System.out.println("expression statement invoc: " + statement);	
@@ -310,7 +308,7 @@ public class GenericsVisitor extends ASTVisitor {
 			for (Object t: ((MethodInvocation) e).typeArguments()){
 				System.out.println("Type argument: " + t.toString());
 				
-				String genInvoc = t.toString() + CHECK_SEPERATOR + statement;
+				String genInvoc = t.toString().trim() + CHECK_SEPERATOR + statement;
 				
 				if (!(genericInvocations.contains(genInvoc))){
 					genericInvocations.add(genInvoc);

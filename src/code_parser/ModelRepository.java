@@ -532,27 +532,36 @@ public class ModelRepository {
 			
 			
 			for (String field: fields){
-				addUsagePattern(field);
+				addUsagePattern(field); 
+				System.out.println("Generic field: " + field);
 			}
 			additionDiff(directory, f, fields, previousHash, currentHash, dev);
 			
 			for (String method: methods){
 				addUsagePattern(method);
+				System.out.println("Generic method: " + method);
+
 			}
 			additionDiff(directory, f, methods, previousHash, currentHash, dev);
 			
 			for (String invoc: invocs){
 				addUsagePattern(invoc);
+				System.out.println("Generic invocation: " + invoc);
+
 			}
 			additionDiff(directory, f, invocs, previousHash, currentHash, dev);
 			
 			for (String param: params){
 				addUsagePattern(param);
+				System.out.println("Generic parameter: " + param);
+
 			}
 			additionDiff(directory, f, params, previousHash, currentHash, dev);
 			
 			for (String varDec: varDecs){
 				addUsagePattern(varDec);
+				System.out.println("Generic variable declaration: " + varDec);
+
 			}
 			additionDiff(directory, f, varDecs, previousHash, currentHash, dev);
 			
@@ -969,6 +978,9 @@ public class ModelRepository {
 							// TODO method for incrementing total LOC added?
 							for (String check: checks){
 								
+								System.out.println("Diff line --> " + line);
+								System.out.println("Usage pattern --> " + check);
+								
 								if (file.getCatchBlocks().contains(check)){
 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
 									pattern = pattern.trim();
@@ -1004,13 +1016,15 @@ public class ModelRepository {
 								} 
 								// GENERICS HERE!
 								else if (file.getGenericFields().contains(check)){
-									String pattern1 = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
-									String p1 = pattern1.trim();
+//									String pattern1 = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
+//									String p1 = pattern1.trim();
+//									
+//									String pattern2 = check.substring(0, check.indexOf(CHECK_SEPERATOR));
+//									String p2 = pattern2.trim();
 									
-									String pattern2 = check.substring(0, check.indexOf(CHECK_SEPERATOR));
-									String p2 = pattern2.trim();
+									System.out.println("Field Pattern 1 --> " + check);
 									
-									if (line.contains(p1) && line.contains(p2)){
+									if (line.contains(check)){
 										addedGenericFields = checkAddedGenerics(addedGenericFields, currentHash, diffText, check);
 									}
 								}
@@ -1041,6 +1055,10 @@ public class ModelRepository {
 									String variable = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.lastIndexOf(CHECK_SEPERATOR)).trim();
 									String method = check.substring(check.lastIndexOf(CHECK_SEPERATOR)+1, check.length()).trim();
 									
+									System.out.println("Parameter Pattern 1 (type) --> " + type);
+									System.out.println("Parameter Pattern 2 (variable) --> " + variable);
+									System.out.println("Parameter Pattern 3 (method) --> " + method);
+									
 									if (line.contains(type) && line.contains(variable) && line.contains(method)){
 										addedGenericParams = checkAddedGenerics(addedGenericParams, currentHash, diffText, check);
 									}
@@ -1050,6 +1068,10 @@ public class ModelRepository {
 									String type = check.substring(0, check.indexOf(CHECK_SEPERATOR)).trim();
 									String variable = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.lastIndexOf(CHECK_SEPERATOR)).trim();
 									String method = check.substring(check.lastIndexOf(CHECK_SEPERATOR)+1, check.length()).trim();
+									
+									System.out.println("Var Declaration Pattern 1 (type) --> " + type);
+									System.out.println("Var Declaration Pattern 2 (variable) --> " + variable);
+									System.out.println("Var Declaration Pattern 3 (method) --> " + method);
 									
 									if (line.contains(type) && line.contains(variable) && line.contains(method)){
 										addedGenericVarDecs = checkAddedGenerics(addedGenericVarDecs, currentHash, diffText, check);
@@ -1212,31 +1234,45 @@ public class ModelRepository {
 		int count2 = 0;
 		int count3 = 0;
 		
-		// parameters and variable dec -- 3 parts
-		if (StringUtils.countMatches(check, Character.toString(CHECK_SEPERATOR)) == 2){
-			String type = check.substring(0, check.indexOf(CHECK_SEPERATOR)).trim();
-			String variable = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.lastIndexOf(CHECK_SEPERATOR)).trim();
-			String method = check.substring(check.lastIndexOf(CHECK_SEPERATOR)+1, check.length()).trim();
-			
-			count1 = StringUtils.countMatches(diff, type);
-			count2 = StringUtils.countMatches(diff, variable);
-			count3 = StringUtils.countMatches(diff, method);
-			
-			if (count1 == 1 && count2 == 1 && count3 == 1){
-				return true;
+		if (check.contains(Character.toString(CHECK_SEPERATOR))){
+			// parameters and variable dec -- 3 parts
+			if (StringUtils.countMatches(check, Character.toString(CHECK_SEPERATOR)) > 1){
+				System.out.println("Parameter and Variable  Declaration Addition Detection!");
+				String type = check.substring(0, check.indexOf(CHECK_SEPERATOR)).trim();
+				String variable = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.lastIndexOf(CHECK_SEPERATOR)).trim();
+				String method = check.substring(check.lastIndexOf(CHECK_SEPERATOR)+1, check.length()).trim();
+				
+				count1 = StringUtils.countMatches(diff, type);
+				count2 = StringUtils.countMatches(diff, variable);
+				count3 = StringUtils.countMatches(diff, method);
+				
+				System.out.println();
+				
+				if (count1 == 1 && count2 == 1 && count3 == 1){
+					return true;
+				}
+				
 			}
-						
+			
+			// method bounds and invocations
+			String pattern1 = check.substring(check.indexOf(CHECK_SEPERATOR) +1, check.length()).trim();
+			String pattern2 = check.substring(0, check.indexOf(CHECK_SEPERATOR)).trim();
+			
+			count1 = StringUtils.countMatches(diff, pattern1);
+			count2 = StringUtils.countMatches(diff, pattern2);
+			
+			if (count1 == 1 && count2 == 1)
+				return true;
+			
 		}
 		
-		// need both parts of check (front and back) to be added
-		String pattern1 = check.substring(check.indexOf(CHECK_SEPERATOR) +1, check.length()).trim();
-		String pattern2 = check.substring(0, check.indexOf(CHECK_SEPERATOR)).trim();
 		
-		count1 = StringUtils.countMatches(diff, pattern1);
-		count2 = StringUtils.countMatches(diff, pattern2);
+		// generic field
+		count1 = StringUtils.countMatches(diff, check);
 		
-		if (count1 == 1 && count2 == 1)
+		if (count1 == 1){
 			return true;
+		}
 		
 		return false;
 	}
