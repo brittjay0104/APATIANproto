@@ -24,6 +24,7 @@ import org.eclipse.jgit.api.errors.UnmergedPathsException;
 import org.eclipse.jgit.api.errors.WrongRepositoryStateException;
 import org.eclipse.jgit.diff.DiffEntry;
 import org.eclipse.jgit.diff.DiffFormatter;
+import org.eclipse.jgit.diff.RenameDetector;
 import org.eclipse.jgit.errors.RepositoryNotFoundException;
 import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.ObjectReader;
@@ -31,11 +32,13 @@ import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
 import org.eclipse.jgit.treewalk.CanonicalTreeParser;
+import org.eclipse.jgit.treewalk.TreeWalk;
 import org.apache.commons.lang.StringUtils;
 
 import com.gitblit.models.PathModel.PathChangeModel;
 import com.gitblit.utils.JGitUtils;
 
+import bsh.StringUtil;
 import developer_creator.ModelDeveloper;
 
 public class ModelRepository {
@@ -310,7 +313,6 @@ public class ModelRepository {
 
 	/**
 	 *
-	 * Reverts and analyzes source files in the repository at each revision for usage patterns, focusing
 	 * on the addition of usage patterns.
 	 * 
 	 * @param git - Git object that represents the repository to analyze.
@@ -366,6 +368,10 @@ public class ModelRepository {
 	public void revertAndAnalyzeForPatternRemoval(Git git, String directory, ModelDeveloper dev, String repoName) throws IOException{
 		
 		String devName = dev.getDevName();
+		
+		for (String s: allUsagePatterns){
+			System.out.println("Usage pattern --> " + s);
+		}
 
 		for (int i=0; i<revisions.size(); i++){
 			RevCommit current = revisions.get(i);
@@ -432,6 +438,9 @@ public class ModelRepository {
 		System.out.println(devName + " added generic invocations count = " + dev.getAddedGenericsInvocsCount() + " in repository " + repoName);
 		System.out.println(devName + " added methods with generic parameters count = " + dev.getAddedGenericParamsCount() + " in repository " + repoName);
 		System.out.println(devName + " added generic variable declarations count = " + dev.getAddedGenericVarDecsCount() + " in repository " + repoName);
+		
+		System.out.println(devName + " removed generic field count = " + dev.getRemovedGenericsFieldsCount() + " in repository " + repoName);
+		System.out.println(devName + " removed generic variable declaration count = " + dev.getRemovedGenericVarDecsCount() + " in repository " + repoName);
 	}
 
 	private void diffPrettyPrint(ModelDeveloper dev, String currentHash, String previousHash) {
@@ -453,6 +462,9 @@ public class ModelRepository {
 		System.out.println(" 	--> Added generic invocations = " + dev.getAddedGenericsInvocsCount());
 		System.out.println(" 	--> Added methods with generic parameters = " + dev.getAddedGenericParamsCount());
 		System.out.println(" 	--> Added generic variable declarations = " + dev.getAddedGenericVarDecsCount());
+		
+		System.out.println(" 	--> Removed generic fields = " + dev.getRemovedGenericsFieldsCount());
+		System.out.println(" 	--> Removed generic variable declarations = " + dev.getRemovedGenericVarDecsCount());
 	}
 	
 	public boolean hasGenerics(){
@@ -522,48 +534,78 @@ public class ModelRepository {
 			}
 			additionDiff(directory, f, nodps, previousHash, currentHash, dev);
 			
+			
+			
 			// GENERICS
-			HashMap<String, List<String>> map = parser.parseForGenerics(f);
-			List<String> fields = map.get("fields");
-			List<String> methods = map.get("methods");
-			List<String> invocs = map.get("invocations");
-			List<String> params = map.get("parameters");
-			List<String> varDecs = map.get("varDecs");
-			
-			
-			for (String field: fields){
+			parser.parseForGenerics(f);
+
+			// generic fields
+			List<String> genericFields = f.getGenericFields();
+			for (String field: genericFields){
 				addUsagePattern(field); 
-				System.out.println("Generic field: " + field);
+				//System.out.println("Generic field: " + field);
 			}
-			additionDiff(directory, f, fields, previousHash, currentHash, dev);
+			additionDiff(directory, f, genericFields, previousHash, currentHash, dev);
 			
-			for (String method: methods){
+			// generic methods with type bounds
+			List<String> genericMethods = f.getGenericMethods();
+			for (String method: genericMethods){
 				addUsagePattern(method);
-				System.out.println("Generic method: " + method);
+				//System.out.println("Generic method: " + method);
 
 			}
-			additionDiff(directory, f, methods, previousHash, currentHash, dev);
+			additionDiff(directory, f, genericMethods, previousHash, currentHash, dev);
 			
-			for (String invoc: invocs){
+			// generic method invocations (explicit)
+			List<String> genericInvocations = f.getGenericInvocations();
+			for (String invoc: genericInvocations){
 				addUsagePattern(invoc);
-				System.out.println("Generic invocation: " + invoc);
+				//System.out.println("Generic invocation: " + invoc);
 
 			}
-			additionDiff(directory, f, invocs, previousHash, currentHash, dev);
+			additionDiff(directory, f, genericInvocations, previousHash, currentHash, dev);
 			
-			for (String param: params){
-				addUsagePattern(param);
-				System.out.println("Generic parameter: " + param);
-
-			}
-			additionDiff(directory, f, params, previousHash, currentHash, dev);
-			
-			for (String varDec: varDecs){
+			// generic variable declarations/class instantiations
+			List<String> genericVarDeclarations = f.getGenericVarDeclarations();
+			for (String varDec: genericVarDeclarations){
 				addUsagePattern(varDec);
-				System.out.println("Generic variable declaration: " + varDec);
+				//System.out.println("Generic variable declaration: " + varDec);
 
 			}
-			additionDiff(directory, f, varDecs, previousHash, currentHash, dev);
+			additionDiff(directory, f, genericVarDeclarations, previousHash, currentHash, dev);
+			
+			// methods and generic parameters
+			HashMap<String, List<String>> genericParameters = f.getGenericParameters();
+			
+			// list of methods with generic parameters
+			Iterator it = genericParameters.entrySet().iterator();
+			List<String> gMethods = new ArrayList<String>();
+			while (it.hasNext()){
+				Map.Entry<String, List<String>> pair = (Map.Entry<String, List<String>>) it.next();
+				
+				String method = pair.getKey();
+				StringBuilder sb = new StringBuilder(method);
+				
+				if (pair.getValue() != null){
+					for (String param: pair.getValue()){
+						sb.append(CHECK_SEPERATOR);
+						sb.append(param);
+					}					
+				}
+				
+				// pattern --> method-param1-param2...
+				String pattern = sb.toString();
+				//System.out.println("Method Pattern --> " + pattern);
+				gMethods.add(pattern);
+			}
+			
+			for (String gMethod: gMethods){
+				addUsagePattern(gMethod);
+				//System.out.println("Method with generic parameter(s): " + gMethod);
+
+			}
+			additionDiff(directory, f, gMethods, previousHash, currentHash, dev);
+			
 			
 		}
 	}
@@ -782,6 +824,9 @@ public class ModelRepository {
 		int removedOptVar = 0;
 		int removedCatchBlock = 0;
 		
+		int removedGenericVarDeclarations = 0;
+		int removedGenericFieldDeclarations = 0;
+		
 		Git git;
 		//current revision
 		String currentHash = newH;
@@ -814,13 +859,21 @@ public class ModelRepository {
 			DiffFormatter df = new DiffFormatter(out);
 			df.setRepository(git.getRepository());
 			
+			System.out.println("********************REMOVAL DIFF*************************");
+			
 			for (DiffEntry diff : diffs){
 				
 				df.format(diff);
 				diff.getOldId();
 				String diffText = out.toString("UTF-8");
 				
-				if (diffText.contains(file.getName())){
+				//System.out.println("Diff Text --> " + diffText);
+				
+				String fileName = file.getName();
+				//System.out.println("LOOK AT THIS --> " + fileName.substring(0, fileName.indexOf(".")));
+				if (diffText.contains(fileName) || diffText.contains(fileName.substring(0, fileName.indexOf(".")))){
+					
+					//System.out.println(diffText);
 					
 					BufferedReader br = new BufferedReader(new StringReader(diffText));
 					String line = null;	
@@ -838,29 +891,48 @@ public class ModelRepository {
 									pattern = pattern.trim();
 									
 									if (line.contains(pattern)){
-										removedCatchBlock = checkRemoval(removedCatchBlock, currentHash, diffText, check);
+										removedCatchBlock = checkNullRemoval(removedCatchBlock, currentHash, diffText, check);
 									}
 								} else if (check.contains("Collections")){
 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
 									pattern = pattern.trim();
 									
 									if (line.contains(pattern)){
-										removedCollVar = checkRemoval(removedCollVar, currentHash, diffText, check);
+										removedCollVar = checkNullRemoval(removedCollVar, currentHash, diffText, check);
 									}
 								} else if (check.contains("Optional")){
 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
 									pattern = pattern.trim();
 									
 									if (line.contains(pattern)){
-										removedOptVar = checkRemoval(removedOptVar, currentHash, diffText, check);
+										removedOptVar = checkNullRemoval(removedOptVar, currentHash, diffText, check);
 									}
-								} else if (StringUtils.countMatches(check, Character.toString(CHECK_SEPERATOR)) != 2){
+								} else if (StringUtils.countMatches(check, Character.toString(CHECK_SEPERATOR)) != 2 && check.contains("null")){
 									String nullcheck = check.substring(0, check.indexOf(CHECK_SEPERATOR));
 									String nc = nullcheck.trim();
 									
 									if (line.contains(nc)){
-										removedNullChecks = checkRemoval(removedNullChecks, currentHash, diffText, check);									
+										removedNullChecks = checkNullRemoval(removedNullChecks, currentHash, diffText, check);									
 									}
+								} 
+								
+								// GENERIC Variable and Field Declarations
+								else if (!(check.contains(Character.toString(CHECK_SEPERATOR)))) {
+//									System.out.println("Generic removal check: " + check);
+//									System.out.println("Generic removal line: " + line);
+									
+									if (line.contains(check)){
+										// field
+										if ((check.contains("public") || check.contains("private") || check.contains("protected"))){
+											System.out.println("*************** Checking for removal of generics field " + check + " ***************");
+											removedGenericFieldDeclarations = checkGenericsRemoval(removedGenericFieldDeclarations, currentHash, diffText, check);
+										}
+										
+										// variable
+										System.out.println("*************** Checking for removal of generics variable " + check + " ***************");
+										removedGenericVarDeclarations = checkGenericsRemoval(removedGenericVarDeclarations, currentHash, diffText, check);
+									
+									}									
 								}
 							}
 						}
@@ -889,6 +961,18 @@ public class ModelRepository {
 			if (removedCatchBlock > 0 && removedCatchBlock <= 10){
 				if (developer.getCommits().contains(currentHash)){
 					developer.setRemovedCatchCounts(removedCatchBlock);
+				}
+			}
+			
+			if (removedGenericFieldDeclarations > 0 && removedGenericFieldDeclarations <= 10){
+				if (developer.getCommits().contains(currentHash)){
+					developer.setRemovedGenericFields(removedGenericFieldDeclarations);
+				}
+			}
+			
+			if (removedGenericVarDeclarations > 0 && removedGenericVarDeclarations <= 10){
+				if (developer.getCommits().contains(currentHash)){
+					developer.setRemovedGenericVarDecs(removedGenericVarDeclarations);
 				}
 			}
 		
@@ -929,16 +1013,19 @@ public class ModelRepository {
 			String previousHash = getOldHash(newH);
 
 
-			ObjectId headId = git.getRepository().resolve(currentHash + "^{tree}");
-			ObjectId oldId = git.getRepository().resolve(previousHash + "^{tree}");
+			Repository repo = git.getRepository();
+			
+			ObjectId headId = repo.resolve(currentHash + "^{tree}");
+			ObjectId oldId = repo.resolve(previousHash + "^{tree}");
 
-			ObjectReader reader = git.getRepository().newObjectReader();
+			ObjectReader reader = repo.newObjectReader();
+			
 
 			CanonicalTreeParser oldTreeIter = new CanonicalTreeParser();
 			oldTreeIter.reset(reader, oldId);
 			CanonicalTreeParser newTreeIter = new CanonicalTreeParser();
 			newTreeIter.reset(reader, headId);
-
+			
 			List<DiffEntry> diffs;
 
 			diffs = git.diff()
@@ -948,16 +1035,28 @@ public class ModelRepository {
 
 			ByteArrayOutputStream out = new ByteArrayOutputStream();
 			DiffFormatter df = new DiffFormatter(out);
-			df.setRepository(git.getRepository());
+			df.setRepository(repo);
+			df.setDetectRenames(true);
+	
 			
-
+			System.out.println("******************** ADDITION DIFF *************************");
+			
+			
 			for(DiffEntry diff : diffs)
 			{
 				
+				RenameDetector rd = df.getRenameDetector();
+				
+				List<DiffEntry> compute = rd.compute();
+				
+//				if (!(compute.isEmpty())){
+//					System.out.println("This diff is a file rename!");
+//				}
+
 				df.format(diff);
 				diff.getOldId();
 				String diffText = out.toString("UTF-8");
-								 
+				
 				if (diffText.contains(file.getName())){
 //					if (currentHash.equals("6a9bda47c7c18265dcc682be5513a82db528cdfd") & file.getName().equals("NullObjectPattern_test.java")){
 //						System.out.println(diffText);
@@ -967,19 +1066,19 @@ public class ModelRepository {
 					String line = null;
 					
 					//System.out.println(diffText);
-
+					
 					while((line = br.readLine())!= null){ 
 						line = line.trim();
 						
 						line = line.replaceAll("\t", " ");
-											
+						
 						// iterate over parser checks for addition
 						if (line.startsWith("+")){
 							// TODO method for incrementing total LOC added?
 							for (String check: checks){
 								
-								System.out.println("Diff line --> " + line);
-								System.out.println("Usage pattern --> " + check);
+//								System.out.println("Diff line --> " + line);
+//								System.out.println("Usage pattern --> " + check);
 								
 								if (file.getCatchBlocks().contains(check)){
 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
@@ -1016,13 +1115,10 @@ public class ModelRepository {
 								} 
 								// GENERICS HERE!
 								else if (file.getGenericFields().contains(check)){
-//									String pattern1 = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
-//									String p1 = pattern1.trim();
-//									
-//									String pattern2 = check.substring(0, check.indexOf(CHECK_SEPERATOR));
-//									String p2 = pattern2.trim();
 									
-									System.out.println("Field Pattern 1 --> " + check);
+									System.out.println("*************** Checking for addition of the following generic field --> " + check + " ***************");
+									
+									//System.out.println("Field Pattern 1 --> " + check);
 									
 									if (line.contains(check)){
 										addedGenericFields = checkAddedGenerics(addedGenericFields, currentHash, diffText, check);
@@ -1035,6 +1131,8 @@ public class ModelRepository {
 									String pattern2 = check.substring(0, check.indexOf(CHECK_SEPERATOR));
 									String p2 = pattern2.trim();
 									
+									System.out.println("*************** Checking for addition of the following generic method --> " + check + " ***************");
+									
 									if (line.contains(p1) && line.contains(p2)){
 										addedGenericMethods = checkAddedGenerics(addedGenericMethods, currentHash, diffText, check);
 									}
@@ -1046,45 +1144,42 @@ public class ModelRepository {
 									String pattern2 = check.substring(0, check.indexOf(CHECK_SEPERATOR));
 									String p2 = pattern2.trim();
 									
+									System.out.println("*************** Checking for addition of the following generic invocation --> " + check + " ***************");
+									
 									if (line.contains(p1) && line.contains(p2)){
 										addedGenericInvocs = checkAddedGenerics(addedGenericInvocs, currentHash, diffText, check);
 									}
 								}
-								else if (file.getGenericParameters().contains(check)){
-									String type = check.substring(0, check.indexOf(CHECK_SEPERATOR)).trim();
-									String variable = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.lastIndexOf(CHECK_SEPERATOR)).trim();
-									String method = check.substring(check.lastIndexOf(CHECK_SEPERATOR)+1, check.length()).trim();
+								else if (check.contains(Character.toString(CHECK_SEPERATOR)) && file.getGenericParameters().get(check.substring(0, check.indexOf(CHECK_SEPERATOR))) != null){
 									
-									System.out.println("Parameter Pattern 1 (type) --> " + type);
-									System.out.println("Parameter Pattern 2 (variable) --> " + variable);
-									System.out.println("Parameter Pattern 3 (method) --> " + method);
+									String segments[] = check.split(Character.toString(CHECK_SEPERATOR));
+									String method = segments[0];
 									
-									if (line.contains(type) && line.contains(variable) && line.contains(method)){
+									System.out.println("*************** Checking for addition of the following generic method with parameters --> " + check + " ***************");
+									
+									if (line.contains(method)){
 										addedGenericParams = checkAddedGenerics(addedGenericParams, currentHash, diffText, check);
 									}
 								}
 								
 								else if (file.getGenericVarDeclarations().contains(check)){
-									String type = check.substring(0, check.indexOf(CHECK_SEPERATOR)).trim();
-									String variable = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.lastIndexOf(CHECK_SEPERATOR)).trim();
-									String method = check.substring(check.lastIndexOf(CHECK_SEPERATOR)+1, check.length()).trim();
 									
-									System.out.println("Var Declaration Pattern 1 (type) --> " + type);
-									System.out.println("Var Declaration Pattern 2 (variable) --> " + variable);
-									System.out.println("Var Declaration Pattern 3 (method) --> " + method);
+									System.out.println("*************** Checking for addition of the following generic variable declaration --> " + check + " ***************");
 									
-									if (line.contains(type) && line.contains(variable) && line.contains(method)){
+									if (line.contains(check)){
 										addedGenericVarDecs = checkAddedGenerics(addedGenericVarDecs, currentHash, diffText, check);
 									}
 								}
 								
 								else {
-									String nullcheck = check.substring(0, check.indexOf(CHECK_SEPERATOR));
-									String nc = nullcheck.trim();
-									
-									if (line.contains(nc)){
-										addedNullChecks = checkAddedNull(addedNullChecks, currentHash, diffText, check);
-										derefNullChecks = calculateDerefValue(file, check, developer, derefNullChecks);
+									if (check.contains(Character.toString(CHECK_SEPERATOR))){
+										String nullcheck = check.substring(0, check.indexOf(CHECK_SEPERATOR));
+										String nc = nullcheck.trim();
+										
+										if (line.contains(nc)){
+											addedNullChecks = checkAddedNull(addedNullChecks, currentHash, diffText, check);
+											derefNullChecks = calculateDerefValue(file, check, developer, derefNullChecks);
+										}
 									}
 								}
 								
@@ -1092,7 +1187,7 @@ public class ModelRepository {
 						}						
 					}
 				}
-
+				
 				out.reset();
 			}
 						
@@ -1160,7 +1255,7 @@ public class ModelRepository {
 			
 			if (addedGenericVarDecs > 0 && addedGenericVarDecs <= 10){
 				if (developer.getCommits().contains(currentHash)){
-					developer.setAddedGenericParams(addedGenericVarDecs);
+					developer.setAddedGenericVarDecs(addedGenericVarDecs);
 				}
 			}
 			
@@ -1190,27 +1285,100 @@ public class ModelRepository {
 	
 	private int checkAddedGenerics(int added, String newHash, String diffText, String check){
 		if (isGenericsAddition(diffText, check)){
-			System.out.println("Generics pattern was added at revision " + newHash);
+			System.out.println("\n Generics pattern " + check + " was added at revision " + newHash + "\n");
+			
+			System.out.println("******************** Diff Text ********************");
+			System.out.println(diffText);
+			
+			added +=1;
+		}
+		
+		else if (isGenericParameterAddition(diffText,check)){
+			System.out.println("\nGenerics pattern " + check + " was added at revision " + newHash + "\n");
+			
+			System.out.println("******************** Diff Text ********************");
+			System.out.println(diffText);
 			
 			added +=1;
 		}
 		
 		return added;
 	}
-	
-	private int checkRemoval(int removed, String newHash, String diffText, String check) {
+
+	private int checkNullRemoval(int removed, String newHash, String diffText, String check) {
 		if (isRemoval(diffText, check)){
-			System.out.println("Null usage pattern was removed at revision " + newHash);
+			//System.out.println("Null usage pattern was removed at revision " + newHash);
 			
 			removed +=1;
 
 		} else if (isCheckRemoval(diffText, check)){
-			System.out.println("Null usage pattern was removed at revision " + newHash);
+			//System.out.println("Null usage pattern was removed at revision " + newHash);
 			
 			removed +=1;
 
 		}
 		return removed;
+	}
+	
+	private int checkGenericsRemoval(int removed, String newHash, String diffText, String check){
+		if (check.contains("public") || check.contains("private") || check.contains("protected")){
+			if (isGenericsFieldRemoval(diffText, check)){
+				System.out.println("**** Generics usage pattern " + check + " was removed at revision " + newHash + " ****");
+				
+				System.out.println("******************** Diff Text ********************");
+				System.out.println(diffText);
+				
+				removed +=1;
+			}
+		}
+		
+		if (check.contains(">")){
+			if (isGenericsVariableRemoval(diffText, check)){
+				System.out.println("**** Generics usage pattern " + check + " was removed at revision " + newHash + " ****");
+				
+				System.out.println("******************** Diff Text ********************");
+				System.out.println(diffText);
+				
+				removed +=1;
+			} 			
+		}
+		
+		return removed;
+	}
+
+	private boolean isGenericsFieldRemoval(String diffText, String check) {
+		
+		String field = check.substring(check.lastIndexOf(" "), check.indexOf(";"));
+		
+		int count1 = StringUtils.countMatches(diffText, check);
+		
+		int count2 = StringUtils.countMatches(diffText, field);
+		
+		if (count1 == 1 && count2 >= 2){
+			return true;
+		}
+		
+		return false;
+	}
+
+	private boolean isGenericsVariableRemoval(String diffText, String check) {
+
+		//System.out.println(check);
+		
+
+		String variable = check.substring(check.indexOf(">")+1, check.indexOf("=")).trim();
+		String type = check.substring(0, check.indexOf(" "));
+		//System.out.println("Checking for removal of " + variable + "of type " + type);
+		
+		int count1 = StringUtils.countMatches(diffText, check);
+		int count2 = StringUtils.countMatches(diffText, variable);
+		int count3 = StringUtils.countMatches(diffText, type);
+		
+		if (count1 == 1 && count2 >= 2 && count3 >= 4){
+			return true;
+		}
+
+		return false;
 	}
 
 	private String getOldHash(String newH) {
@@ -1232,27 +1400,8 @@ public class ModelRepository {
 		
 		int count1 = 0;
 		int count2 = 0;
-		int count3 = 0;
 		
 		if (check.contains(Character.toString(CHECK_SEPERATOR))){
-			// parameters and variable dec -- 3 parts
-			if (StringUtils.countMatches(check, Character.toString(CHECK_SEPERATOR)) > 1){
-				System.out.println("Parameter and Variable  Declaration Addition Detection!");
-				String type = check.substring(0, check.indexOf(CHECK_SEPERATOR)).trim();
-				String variable = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.lastIndexOf(CHECK_SEPERATOR)).trim();
-				String method = check.substring(check.lastIndexOf(CHECK_SEPERATOR)+1, check.length()).trim();
-				
-				count1 = StringUtils.countMatches(diff, type);
-				count2 = StringUtils.countMatches(diff, variable);
-				count3 = StringUtils.countMatches(diff, method);
-				
-				System.out.println();
-				
-				if (count1 == 1 && count2 == 1 && count3 == 1){
-					return true;
-				}
-				
-			}
 			
 			// method bounds and invocations
 			String pattern1 = check.substring(check.indexOf(CHECK_SEPERATOR) +1, check.length()).trim();
@@ -1263,14 +1412,40 @@ public class ModelRepository {
 			
 			if (count1 == 1 && count2 == 1)
 				return true;
-			
 		}
 		
 		
-		// generic field
+		// generic field or variable declaration
 		count1 = StringUtils.countMatches(diff, check);
 		
 		if (count1 == 1){
+			return true;
+		}
+		
+		return false;
+	}
+	
+	private boolean isGenericParameterAddition(String diffText, String check) {
+		String segments[] = check.split(Character.toString(CHECK_SEPERATOR));
+		String method = segments[0];
+		
+		StringBuilder sb = new StringBuilder(method);
+		sb.append("(");
+		
+		for (int i=1; i < segments.length; i++){
+			sb.append(segments[i]);
+			
+			if (i < segments.length-1){
+				sb.append(",");
+			}
+		}
+		sb.append(")");
+		
+		String pattern = sb.toString().trim();
+		
+		int count = StringUtils.countMatches(diffText, pattern);
+		
+		if (count == 1){
 			return true;
 		}
 		

@@ -36,7 +36,8 @@ public class RunAnalysis {
 //		ModelParser p = new ModelParser();
 //		
 //		p.parseForGenerics(f);
-//		
+		
+
 
 		File repos = new File("repos.txt");
 		
@@ -52,11 +53,13 @@ public class RunAnalysis {
 				String line = sc.nextLine();
 				
 				// master branch
-				if (StringUtils.countMatches(line, ",") == 2){
+				if (StringUtils.countMatches(line, ",") == 2 || StringUtils.countMatches(line, ",") == 1){
 					
 					RunAnalysis.setRepoName(line.substring(0, line.indexOf(",")));
-					RunAnalysis.setUserName(line.substring(line.indexOf(",")+2, line.lastIndexOf(",")));
 					RunAnalysis.setDeveloperName(line.substring(line.lastIndexOf(",")+2, line.length()));
+					RunAnalysis.setUserName(line.substring(line.indexOf(",")+2, line.lastIndexOf(",")));
+					
+					//RunAnalysis.setUserName(line.substring(line.indexOf(",")+2, line.length()));
 					
 					String dName = RunAnalysis.getDeveloperName();
 					String rName = RunAnalysis.getRepoName();
@@ -64,11 +67,44 @@ public class RunAnalysis {
 					
 					Configuration config = new Configuration(dName, rName);
 					String opFile = config.getOpFile();
+					
+					String opFile2 = "";
+					File f1;
+					File f2;
+					
+//					if (line.contains("/")){
+//						opFile2 = opFile.replace("/", "-");
+//						System.setOut(new PrintStream(new FileOutputStream(opFile2)));
+//						
+//						// create files to populate after analysis
+//						f1 = new File(opFile2);
+//						f2 = new File("./archived-output/01-19-2016/" + opFile2);
+//						
+//						is = new FileInputStream(f1);
+//						os = new FileOutputStream(f2);
+//						
+//						byte[] buffer = new byte[1024];
+//						
+//						System.out.println(rName + " -- " + uName + " -- " + dName);
+//						
+//						runAnalysis("");
+//						
+//						// move file to folder for archived output
+//						int length;
+//						//copy file contents in bytes
+//						while ((length = is.read(buffer)) > 0){
+//							os.write(buffer, 0, length);
+//						}
+//						
+//						f1.delete();
+//						
+//						System.out.println("File copied successfully!");
+//					}
+					
 					System.setOut(new PrintStream(new FileOutputStream(opFile)));
 					
-					// create files to populate after analysis
-					File f1 = new File(opFile);
-					File f2 = new File("./archived-output/01-12-2016/" + opFile);
+					f1 = new File(opFile);
+					f2 = new File("./archived-output/01-25-2016/" + opFile);
 					
 					is = new FileInputStream(f1);
 					os = new FileOutputStream(f2);
@@ -112,9 +148,23 @@ public class RunAnalysis {
 		
 
 		String github_url = "https://github.com/" + userName + "/" + repoName + ".git";
-		String gitCloneCmd = "git clone " + github_url;
+		//String github_url = "https://github.com/" + repoName.trim() + ".git";
+		System.out.println(github_url);
+		String gitCloneCmd = "";
+//		if (!(branch.equals(""))){
+//			gitCloneCmd = "git clone -b " + branch + " " + github_url; 
+//		}
+		gitCloneCmd = "git clone " + github_url;
+		System.out.println(gitCloneCmd);
+		
+		// Remove repoName2 when not analyzing repo with different "username"
+		//String repoName2 = repoName.replace("/", "\\");
+		
 		String localRepoDir = "." + File.separator + repoName + File.separator;
+		//String localRepoDir = "." + File.separator + repoName.substring(repoName.indexOf("/"), repoName.length()) + File.separator;
+		System.out.println(localRepoDir);
 		String repoLocalFile = localRepoDir + ".git";
+		System.out.println(repoLocalFile);
 		
 		Runtime rt = Runtime.getRuntime();
 
@@ -131,17 +181,13 @@ public class RunAnalysis {
 
 		System.out.println(p3.waitFor());
 
-		// System.out.println("Project cloned!");
+		System.out.println("Project cloned!");
 
 		// set repository history
 		ModelRepository repository = new ModelRepository(new File(repoLocalFile));
 		Git gitHub = repository.getGitRepository();
 
 		if (repository.setRepositoryRevisionHistory(gitHub, dev) != null) {
-//						ArrayList<RevCommit> commits = repository.getRevisions();
-//						for (RevCommit commit: commits){
-//							System.out.println(ObjectId.toString(commit.getId()));
-//						}
 
 			// set source files for each directory
 			repository.setSourceFiles(localRepoDir);
@@ -155,14 +201,17 @@ public class RunAnalysis {
 			System.out.println("\n ************ ANALYZING FOR USAGE PATTERN ADDITION ************\n");
 			repository.revertAndAnalyzeForPatternAddition(gitHub, localRepoDir, dev, repoName);
 			
-//			Process p4 = rt.exec(gitCloneCmd);
-//			System.out.println(p4.waitFor());
-//			
-//			repository.setSourceFiles(localRepoDir);
-//			
-//			// Analyze all revisions for removal of usage patterns 
-//			System.out.println("\n ************ ANALYZING FOR USAGE PATTERN REMOVAL ************\n");
-//			repository.revertAndAnalyzeForPatternRemoval(gitHub, localRepoDir, dev, repoName);
+			clearDirectory(directory);
+			directory.delete();
+			
+			Process p4 = rt.exec(gitCloneCmd);
+			System.out.println(p4.waitFor());
+			
+			repository.setSourceFiles(localRepoDir);
+			
+			// Analyze all revisions for removal of usage patterns 
+			System.out.println("\n ************ ANALYZING FOR USAGE PATTERN REMOVAL ************\n");
+			repository.revertAndAnalyzeForPatternRemoval(gitHub, localRepoDir, dev, repoName);
 		}
 	}
 	

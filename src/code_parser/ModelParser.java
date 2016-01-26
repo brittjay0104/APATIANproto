@@ -96,10 +96,10 @@ public class ModelParser {
 		// add to file's list of null checks (if not already there)
 		//ArrayList<String> fileNullChecks = file.getNullChecks();
 
-		System.out.println("********Null checks found in " + file.getName() + "********");
+		//System.out.println("********Null checks found in " + file.getName() + "********");
 		
 		for (String check: visitor.getNullChecks()){
-			System.out.println(check);
+			//System.out.println(check);
 			file.addNullCheck(check);
 //			if (file.hasThisCheck(check) == false){
 //			}
@@ -211,7 +211,7 @@ public class ModelParser {
 		
 		for (String dp: nodp){
 			
-			System.out.println("NODP --> " + dp);
+			//System.out.println("NODP --> " + dp);
 			
 			file.addNODP(dp);
 		}
@@ -220,7 +220,7 @@ public class ModelParser {
 		return nodp;
 	}
 	
-	public HashMap<String, List<String>> parseForGenerics(ModelSourceFile file) throws IOException{
+	public void parseForGenerics(ModelSourceFile file) throws IOException{
 		ASTParser parser = ASTParser.newParser(AST.JLS4);
 
 		String src = readFiletoString(file.getSourceFile().getCanonicalPath());
@@ -245,7 +245,9 @@ public class ModelParser {
 		List<String> fields = visitor.getGenericFields();
 		List<String> methods = visitor.getGenericMethods();
 		List<String> invocs = visitor.getGenericInvocations();
-		List<String> params = visitor.getGenericParameters();
+		
+		HashMap<String, List<String>> params = visitor.getGenericParameters();
+		
 		List<String> varDecs = visitor.getGenericVariableDecs();
 				
 		for (String field: fields){
@@ -266,28 +268,20 @@ public class ModelParser {
 			file.addGenericInvoc(invoc);
 		}
 		
-		for (String param: params){
-			//System.out.println("generic parameter --> " + param);
+		Iterator it = params.entrySet().iterator();
+		while (it.hasNext()){
+			Map.Entry<String, List<String>> pair = (Map.Entry<String, List<String>>)it.next();
 			
-			file.addGenericParam(param);
+			file.addGenericParam(pair.getKey(), params);
 		}
+		
 		
 		for (String varDec: varDecs){
 			//System.out.println("generic variable declaration --> " + varDec);
 			
 			file.addGenericVarDeclaration(varDec);
 		}		
-		
-		// hashmap that stores all these; method should return map
-		
-		HashMap<String, List<String>> genericsMap = new HashMap<String, List<String>>();
-		genericsMap.put("fields", file.getGenericFields());
-		genericsMap.put("methods", file.getGenericMethods());
-		genericsMap.put("invocations", file.getGenericInvocations());
-		genericsMap.put("parameters", file.getGenericParameters());
-		genericsMap.put("varDecs", file.getGenericVarDeclarations());
-		
-		return genericsMap;
+
 	}
 	
 	public boolean containsField(List<NODP> currNodp, String field, String type){
@@ -333,21 +327,21 @@ public class ModelParser {
 		allVars.add(opts);
 		allVars.add(catches);
 		
-		System.out.println("********Collections usage found in " + file.getName() + "********");
+		//System.out.println("********Collections usage found in " + file.getName() + "********");
 		for (String coll:colls){
-			System.out.println(coll);
+			//System.out.println(coll);
 			file.addCollVar(coll);
 		}
 		
-		System.out.println("********Optional Usage found in " + file.getName() + "********");
+		//System.out.println("********Optional Usage found in " + file.getName() + "********");
 		for (String opt:opts){
-			System.out.println("Optional usage -- " + opt);
+			//System.out.println("Optional usage -- " + opt);
 			file.addOptVar(opt);
 		}
 			
-		System.out.println("********Catch Blocks found in " + file.getName() + "********");
+		//System.out.println("********Catch Blocks found in " + file.getName() + "********");
 		for (String c:catches){
-			System.out.println("Catch block -- " + c);
+			//System.out.println("Catch block -- " + c);
 			file.addCatchBlock(c);
 		}
 		

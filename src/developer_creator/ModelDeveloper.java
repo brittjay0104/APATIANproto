@@ -19,10 +19,12 @@ public class ModelDeveloper {
 	private int addedCatchCounts;
 	
 	private int addedGenericFields;
+	private int removedGenericFields;
 	private int addedGenericMethods;
 	private int addedGenericInvocs;
 	private int addedGenericParams;
 	private int addedGenericVarDecs;
+	private int removedGenericVarDecs;
 	
 	private int derefCounts;
 	private String name;
@@ -46,10 +48,12 @@ public class ModelDeveloper {
 		addedCatchCounts = 0;
 		
 		addedGenericFields = 0;
+		removedGenericFields = 0;
 		addedGenericInvocs = 0;
 		addedGenericMethods = 0;
 		addedGenericParams = 0;
 		addedGenericVarDecs = 0;
+		removedGenericVarDecs = 0;
 		
 		setDevName(id);
 		commits = new ArrayList<String>();
@@ -186,9 +190,21 @@ public class ModelDeveloper {
 	public void setAddedGenericVarDecs(int addedVarDecs){
 		addedGenericVarDecs = addedGenericVarDecs + addedVarDecs;
 	}
+	
+	public void setRemovedGenericFields(int removedFields){
+		removedGenericFields = removedGenericFields + removedFields;
+	}
+	
+	public void setRemovedGenericVarDecs (int removedVarDecs){
+		removedGenericVarDecs = removedGenericVarDecs + removedVarDecs;
+	}
 		
 	public int getAddedGenericsFieldsCount(){
 		return addedGenericFields;
+	}
+	
+	public int getRemovedGenericsFieldsCount(){
+		return removedGenericFields;
 	}
 	
 	public int getAddedGenericsMethodsCount(){
@@ -205,6 +221,10 @@ public class ModelDeveloper {
 	
 	public int getAddedGenericVarDecsCount(){
 		return addedGenericVarDecs;
+	}
+	
+	public int getRemovedGenericVarDecsCount(){
+		return removedGenericVarDecs;
 	}
 	
 	public int getDerefCount(){

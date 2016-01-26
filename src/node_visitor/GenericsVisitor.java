@@ -4,6 +4,7 @@ import static code_parser.ModelRepository.CHECK_SEPERATOR;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 import org.eclipse.jdt.core.dom.ASTNode;
@@ -40,7 +41,8 @@ public class GenericsVisitor extends ASTVisitor {
 	public ArrayList<String> genericMethods = new ArrayList<String>();
 	public ArrayList<String> genericInvocations = new ArrayList<String>();
 	public ArrayList<String> genericVarDecs = new ArrayList<String>();
-	public ArrayList<String> genericParameters = new ArrayList<String>();
+	public HashMap<String, List<String>> genericParameters = new HashMap<String, List<String>>(); 
+	//public ArrayList<String> genericParameters = new ArrayList<String>();
 	public List<String> types = new ArrayList<String>();
 	
 	private char[] source;
@@ -97,7 +99,7 @@ public class GenericsVisitor extends ASTVisitor {
 		return genericVarDecs;
 	}
 	
-	public List<String> getGenericParameters(){
+	public HashMap<String, List<String>> getGenericParameters(){
 		return genericParameters;
 	}
 	
@@ -126,7 +128,7 @@ public class GenericsVisitor extends ASTVisitor {
 						//genField = type + CHECK_SEPERATOR + name;
 						if (!genericFields.contains(fieldDec)){
 							genericFields.add(fieldDec);
-							System.out.println("Generic field: " + fieldDec);
+							//System.out.println("Generic field: " + fieldDec);
 						}
 					}			
 				}
@@ -160,7 +162,7 @@ public class GenericsVisitor extends ASTVisitor {
 
 						
 						String genMethDec =  type + CHECK_SEPERATOR + method;
-						System.out.println("Generic method declaration: " + genMethDec);
+						//System.out.println("Generic method declaration: " + genMethDec);
 						if (!genericMethods.contains(genMethDec)){
 							genericMethods.add(genMethDec);
 						}
@@ -225,24 +227,32 @@ public class GenericsVisitor extends ASTVisitor {
 	// methods and constructors with generic parameters
 	public boolean visit(SingleVariableDeclaration node){
 		
-		String dec = findSourceForNode(node);
-					
+		// make this a hashmap; method is the key, list of decs inside (T t for example)
+		// it doesn't matter how many..just having a method with a generic parameter counts
+		
+		String dec = findSourceForNode(node).trim();					
 		String type = node.getType().toString().trim();
 		
 		MethodDeclaration md = getMethodDeclaration(node);
-		String method = md.getName().toString().trim();
-		
-		//System.out.println("Declaring method --> " + method);
-		
-		for (String t: types){
-			if (type.equals(t)){
-				String variable = dec.substring(dec.indexOf(" "), dec.length()).trim();
-				
-				String genParam = type + CHECK_SEPERATOR + variable + CHECK_SEPERATOR + method;
-				if (!(genericParameters.contains(genParam))){
-					genericParameters.add(genParam);
+		if (md != null){
+			String method = md.getName().toString().trim();
+			
+			List<String> params = new ArrayList<String>();
+			//System.out.println("Declaring method --> " + method);
+			
+			for (String t: types){
+				if (type.equals(t)){
+					params.add(dec);
+					//System.out.println("Parameter set for " + method + " --> " + dec);
+					
+					if (genericParameters.get(method) == null)
+						genericParameters.put(method, new ArrayList<String>());
+					
+					genericParameters.get(method).add(dec);
+					
 				}
 			}
+			
 		}
 		
 		return true;
@@ -251,37 +261,22 @@ public class GenericsVisitor extends ASTVisitor {
 	// instantiation of generic type
 	public boolean visit(VariableDeclarationStatement node){
 		
-		String dec = findSourceForNode(node);
-		
+		String dec = findSourceForNode(node).trim();		
 		String type = node.getType().toString().trim();
 		
 		for (String t: types){
-			if (type.equals(t)){
-				MethodDeclaration md = getMethodDeclaration(node);
-				String method = md.getName().toString().trim();
+			if (type.equals(t)){		
 				
-				String variable = dec.substring(dec.indexOf(" "), dec.indexOf("=")).trim();
-				
-				//System.out.println("Variable --> " + variable.trim());
-				
-				String genVarDec = type + CHECK_SEPERATOR + variable + CHECK_SEPERATOR + method; 
-				
-				if (!(genericVarDecs.contains(genVarDec))){
-					genericVarDecs.add(genVarDec);
+				if (!(genericVarDecs.contains(dec))){
+					genericVarDecs.add(dec);
 				}
 			}
 		}
 		
 		if (type.contains("<") && type.contains(">")){
-			MethodDeclaration md = getMethodDeclaration(node);
-			String method = md.getName().toString().trim();
 			
-			String variable = dec.substring(dec.indexOf(" "), dec.indexOf("=")).trim();
-			
-			String genVarDec = type + CHECK_SEPERATOR + variable + CHECK_SEPERATOR + method; 
-			
-			if (!(genericVarDecs.contains(genVarDec))){
-				genericVarDecs.add(genVarDec);
+			if (!(genericVarDecs.contains(dec))){
+				genericVarDecs.add(dec);
 			} 
 		}
 		
@@ -306,7 +301,7 @@ public class GenericsVisitor extends ASTVisitor {
 							
 			// YES! -type argument for generic method invoc
 			for (Object t: ((MethodInvocation) e).typeArguments()){
-				System.out.println("Type argument: " + t.toString());
+				//System.out.println("Type argument: " + t.toString());
 				
 				String genInvoc = t.toString().trim() + CHECK_SEPERATOR + statement;
 				

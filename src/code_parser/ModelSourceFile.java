@@ -43,7 +43,8 @@ public class ModelSourceFile {
 	public List<String> genericFields;
 	public List<String> genericMethods;
 	public List<String> genericInvocations;
-	public List<String> genericParameters;
+	public HashMap<String, List<String>> genericParameters;
+	//public List<String> genericParameters;
 	public List<String> genericVarDeclarations;
 
 	// ArrayList for keeping track of locations of null checks as they appear
@@ -88,7 +89,7 @@ public class ModelSourceFile {
 		genericFields = new ArrayList<String>();
 		genericMethods = new ArrayList<String>();
 		genericInvocations = new ArrayList<String>();
-		genericParameters = new ArrayList<String>();
+		genericParameters = new HashMap<String, List<String>>();
 		genericVarDeclarations = new ArrayList<String>();
 		
 		commits = new ArrayList<ModelCommit>();
@@ -284,7 +285,7 @@ public class ModelSourceFile {
 		return genericInvocations;
 	}
 	
-	public List<String> getGenericParameters(){
+	public HashMap<String, List<String>> getGenericParameters(){
 		return genericParameters;
 	}
 	
@@ -440,10 +441,17 @@ public class ModelSourceFile {
 		}
 	}
 	
-	public void addGenericParam (String param){
-		if (!(genericParameters.contains(param))){
-			genericParameters.add(param);
+	public void addGenericParam (String method, HashMap<String, List<String>> params){
+		
+		if (genericParameters.get(method) == null)
+			genericParameters.put(method, new ArrayList<String>());
+		
+		List<String> parameters = params.get(method);
+		
+		for (String s: parameters){
+			genericParameters.get(method).add(s);
 		}
+		
 	}
 	
 	public void addGenericVarDeclaration(String varDec){
