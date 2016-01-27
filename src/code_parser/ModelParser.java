@@ -13,6 +13,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import node_visitor.GenericsVisitor;
+import node_visitor.GenericsVisitor_2;
 import node_visitor.Log4JVisitor;
 import node_visitor.NODP;
 import node_visitor.NODP_Visitor;
@@ -238,49 +239,52 @@ public class ModelParser {
 		parser.setKind(ASTParser.K_COMPILATION_UNIT);
 
 		CompilationUnit cu = (CompilationUnit) parser.createAST(null);
-
-		GenericsVisitor visitor = new GenericsVisitor(file);
+		
+		GenericsVisitor_2 visitor = new GenericsVisitor_2(file);
 		cu.accept(visitor);
-				
-		List<String> fields = visitor.getGenericFields();
-		List<String> methods = visitor.getGenericMethods();
-		List<String> invocs = visitor.getGenericInvocations();
-		
-		HashMap<String, List<String>> params = visitor.getGenericParameters();
-		
-		List<String> varDecs = visitor.getGenericVariableDecs();
-				
-		for (String field: fields){
-			//System.out.println("generic field --> " + field);
-			
-			file.addGenericField(field);
-		}
-		
-		for (String method: methods){
-			//System.out.println("generic method --> " + method);
-			
-			file.addGenericMethod(method);
-		}
-		
-		for (String invoc: invocs){
-			//System.out.println("generic invocation --> " + invoc);
-			
-			file.addGenericInvoc(invoc);
-		}
-		
-		Iterator it = params.entrySet().iterator();
-		while (it.hasNext()){
-			Map.Entry<String, List<String>> pair = (Map.Entry<String, List<String>>)it.next();
-			
-			file.addGenericParam(pair.getKey(), params);
-		}
-		
-		
-		for (String varDec: varDecs){
-			//System.out.println("generic variable declaration --> " + varDec);
-			
-			file.addGenericVarDeclaration(varDec);
-		}		
+
+//		GenericsVisitor visitor = new GenericsVisitor(file);
+//		cu.accept(visitor);
+//				
+//		List<String> fields = visitor.getGenericFields();
+//		List<String> methods = visitor.getGenericMethods();
+//		List<String> invocs = visitor.getGenericInvocations();
+//		
+//		HashMap<String, List<String>> params = visitor.getGenericParameters();
+//		
+//		List<String> varDecs = visitor.getGenericVariableDecs();
+//				
+//		for (String field: fields){
+//			//System.out.println("generic field --> " + field);
+//			
+//			file.addGenericField(field);
+//		}
+//		
+//		for (String method: methods){
+//			//System.out.println("generic method --> " + method);
+//			
+//			file.addGenericMethod(method);
+//		}
+//		
+//		for (String invoc: invocs){
+//			//System.out.println("generic invocation --> " + invoc);
+//			
+//			file.addGenericInvoc(invoc);
+//		}
+//		
+//		Iterator it = params.entrySet().iterator();
+//		while (it.hasNext()){
+//			Map.Entry<String, List<String>> pair = (Map.Entry<String, List<String>>)it.next();
+//			
+//			file.addGenericParam(pair.getKey(), params);
+//		}
+//		
+//		
+//		for (String varDec: varDecs){
+//			//System.out.println("generic variable declaration --> " + varDec);
+//			
+//			file.addGenericVarDeclaration(varDec);
+//		}		
 
 	}
 	
