@@ -12,11 +12,15 @@ public class Box<T> {
   }
 
   public T get() {
-    return t;
+	  return new Func1<Throwable, Event<T>>();
+  }
+  
+  public Observable<Event<T>> call (){
+	  
   }
   
   public <T> void method(T item){
-	  List<T> list = new ArrayList<T>();
+	  List<T> list = new ArrayList();
   }
   
   // determines the largest of three Comparable objects
