@@ -223,6 +223,7 @@ public class ModelParser {
 	
 	public void parseForGenerics(ModelSourceFile file) throws IOException{
 		ASTParser parser = ASTParser.newParser(AST.JLS4);
+		parser.setResolveBindings(true);
 
 		String src = readFiletoString(file.getSourceFile().getCanonicalPath());
 

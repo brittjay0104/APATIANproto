@@ -11,10 +11,10 @@ import org.eclipse.jdt.core.dom.ASTVisitor;
 import org.eclipse.jdt.core.dom.FieldDeclaration;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
 import org.eclipse.jdt.core.dom.ParameterizedType;
+import org.eclipse.jdt.core.dom.SimpleType;
 import org.eclipse.jdt.core.dom.Type;
 import org.eclipse.jdt.core.dom.TypeDeclaration;
 import org.eclipse.jdt.core.dom.TypeParameter;
-import org.eclipse.jdt.core.dom.VariableDeclaration;
 import org.eclipse.jdt.core.dom.VariableDeclarationFragment;
 import org.eclipse.jdt.core.dom.VariableDeclarationStatement;
 
@@ -109,6 +109,14 @@ public class GenericsVisitor_2 extends ASTVisitor {
 		}
 
 		System.out.println("Generic class --> " + sb.toString());
+		
+		return true;
+	}
+	
+	public boolean visit (SimpleType t){
+		
+		// TODO HERE! :) -- working towards removing check for field dec!
+		t.resolveBinding().isGenericType();
 		
 		return true;
 	}
