@@ -40,12 +40,12 @@ public class ModelSourceFile {
 	public List<String> optVars;
 	public List<String> catchBlocks;
 	
-	public List<String> genericFields;
-	public List<String> genericMethods;
-	public List<String> genericInvocations;
-	public HashMap<String, List<String>> genericParameters;
-	//public List<String> genericParameters;
-	public List<String> genericVarDeclarations;
+//	public List<String> genericFields;
+//	public List<String> genericMethods;
+//	public List<String> genericInvocations;
+//	public HashMap<String, List<String>> genericParameters;
+//	//public List<String> genericParameters;
+//	public List<String> genericVarDeclarations;
 	
 	// TODO propogate through file!
 	public HashMap<String, List<String>> simpleGenerics;
@@ -90,11 +90,22 @@ public class ModelSourceFile {
 		collVars = new ArrayList<String>();
 		optVars = new ArrayList<String>();
 		catchBlocks = new ArrayList<String>();
-		genericFields = new ArrayList<String>();
-		genericMethods = new ArrayList<String>();
-		genericInvocations = new ArrayList<String>();
-		genericParameters = new HashMap<String, List<String>>();
-		genericVarDeclarations = new ArrayList<String>();
+
+		simpleGenerics = new HashMap<String, List<String>>();
+		advancedGenerics = new HashMap<String, List<String>>();
+		
+		simpleGenerics.put("fields", new ArrayList<String>());
+		simpleGenerics.put("variables", new ArrayList<String>());
+		simpleGenerics.put("methods", new ArrayList<String>());
+		simpleGenerics.put("return", new ArrayList<String>());
+		
+		advancedGenerics.put("classes", new ArrayList<String>());
+		advancedGenerics.put("fields", new ArrayList<String>());
+		advancedGenerics.put("methods", new ArrayList<String>());
+		advancedGenerics.put("return", new ArrayList<String>());
+		advancedGenerics.put("nested", new ArrayList<String>());
+		advancedGenerics.put("parameters", new ArrayList<String>());
+		advancedGenerics.put("bounds", new ArrayList<String>());
 		
 		commits = new ArrayList<ModelCommit>();
 		methods = new ArrayList<String>();
@@ -277,24 +288,12 @@ public class ModelSourceFile {
 		methodInvocs.put(method, count);
 	}
 	
-	public List<String> getGenericFields(){
-		return genericFields;
-	}
+	public HashMap<String, List<String>> getSimpleGenerics(){
+		return simpleGenerics;
+	} 
 	
-	public List<String> getGenericMethods(){
-		return genericMethods;
-	}
-	
-	public List<String> getGenericInvocations(){
-		return genericInvocations;
-	}
-	
-	public HashMap<String, List<String>> getGenericParameters(){
-		return genericParameters;
-	}
-	
-	public List<String> getGenericVarDeclarations(){
-		return genericVarDeclarations;
+	public HashMap<String, List<String>> getAdvancedGenerics(){
+		return advancedGenerics;
 	}
 	
 
@@ -427,60 +426,35 @@ public class ModelSourceFile {
 		}
 	}
 	
-	public void addGenericField(String field){
-		if (!(genericFields.contains(field))){
-			genericFields.add(field);
-		}
-	}
-	
-	public void addGenericMethod(String method){
-		if (!(genericMethods.contains(method))){
-			genericMethods.add(method);
-		}
-	}
-	
-	public void addGenericInvoc(String invoc){
-		if (!(genericInvocations.contains(invoc))){
-			genericInvocations.add(invoc);
-		}
-	}
-	
-	public void addGenericParam (String method, HashMap<String, List<String>> params){
+
+	public void addSimpleGenerics (String key, HashMap<String, List<String>> generics){
 		
-		if (genericParameters.get(method) == null)
-			genericParameters.put(method, new ArrayList<String>());
+		List<String> g = generics.get(key);
 		
-		List<String> parameters = params.get(method);
+		for (String s: g){
+			simpleGenerics.get(key).add(s);
+		}
+	}
+	
+	public void addAdvancedGenerics (String key, HashMap<String, List<String>> generics){
+		List<String> g = generics.get(key);
 		
-		for (String s: parameters){
-			genericParameters.get(method).add(s);
-		}
-		
-	}
-	
-	public void addGenericVarDeclaration(String varDec){
-		if (!(genericVarDeclarations.contains(varDec))){
-			genericVarDeclarations.add(varDec);
+		for (String s: g){
+			advancedGenerics.get(key).add(s);
 		}
 	}
 	
-	public void removeGenericField(String field){
-		if (genericFields.contains(field)){
-			genericFields.remove(field);
-		}
-	}
-	
-	public void removeGenericMethod(String method){
-		if (genericMethods.contains(method)){
-			genericMethods.remove(method);
-		}
-	}
-	
-	public void removeGenericInvoc(String invoc){
-		if (genericInvocations.contains(invoc)){
-			genericInvocations.remove(invoc);
-		}
-	}
+//	public void removeGenericField(String field){
+//		if (genericFields.contains(field)){
+//			genericFields.remove(field);
+//		}
+//	}
+//	
+//	public void removeGenericInvoc(String invoc){
+//		if (genericInvocations.contains(invoc)){
+//			genericInvocations.remove(invoc);
+//		}
+//	}
 	
 	public boolean hasThisCheck(String check){
 		if (nullChecks.contains(check)){
