@@ -223,7 +223,6 @@ public class ModelParser {
 	
 	public void parseForGenerics(ModelSourceFile file) throws IOException{
 		ASTParser parser = ASTParser.newParser(AST.JLS4);
-		parser.setResolveBindings(true);
 
 		String src = readFiletoString(file.getSourceFile().getCanonicalPath());
 
@@ -243,7 +242,14 @@ public class ModelParser {
 		
 		GenericsVisitor_2 visitor = new GenericsVisitor_2(file);
 		cu.accept(visitor);
+		
+		// TODO modify MSF to take these hashmaps instead of different lists
+		HashMap<String, List<String>> simpleGenerics = visitor.getSimpleGenerics();
+		
+		HashMap<String, List<String>> advancedGenerics = visitor.getAdvancedGenerics();
 
+		// TODO assign hashmaps to file (check make sure everything there)
+		
 //		GenericsVisitor visitor = new GenericsVisitor(file);
 //		cu.accept(visitor);
 //				

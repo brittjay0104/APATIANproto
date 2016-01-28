@@ -16,7 +16,7 @@ public class Box<T> {
   }
   
   public Observable<Event<T>> call (){
-	  
+	  return new Observable<Event<String>>;
   }
   
   public <T> void method(T item){

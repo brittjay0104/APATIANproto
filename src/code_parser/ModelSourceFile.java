@@ -46,6 +46,10 @@ public class ModelSourceFile {
 	public HashMap<String, List<String>> genericParameters;
 	//public List<String> genericParameters;
 	public List<String> genericVarDeclarations;
+	
+	// TODO propogate through file!
+	public HashMap<String, List<String>> simpleGenerics;
+	public HashMap<String, List<String>> advancedGenerics;
 
 	// ArrayList for keeping track of locations of null checks as they appear
 	// and disappear from the
