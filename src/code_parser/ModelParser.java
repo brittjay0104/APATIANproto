@@ -247,39 +247,37 @@ public class ModelParser {
 		
 		HashMap<String, List<String>> advancedGenerics = visitor.getAdvancedGenerics();
 		
-		Iterator simpleIT = simpleGenerics.entrySet().iterator();
-		Iterator advancedIT = advancedGenerics.entrySet().iterator();
-		
+
 		// assign hashmaps to file 
 		
-		
-		while (simpleIT.hasNext()){
-			Map.Entry<String, List<String>> pair = (Map.Entry<String, List<String>>)simpleIT.next();
-			
-			System.out.println("***********Simple Generics under " + pair.getKey() + " category!***********");
-			
-			file.addSimpleGenerics(pair.getKey(), simpleGenerics);
-			
+		file.setSimpleGenerics(simpleGenerics);
+		file.setAdvancedGenerics(advancedGenerics);
+	
+
+//		Iterator  sfit = file.getSimpleGenerics().entrySet().iterator();
+//		
+//		while (sfit.hasNext()){
+//			Map.Entry<String, List<String>> pair = (Map.Entry<String, List<String>>)sfit.next();
+//			
+//			System.out.println("***********Simple Generics under " + pair.getKey() + " category" + file.getName() + "***********");
+//			
 //			for (String s: pair.getValue()){
 //				System.out.println(s);
 //			}
-		}
-		
-		// TODO print from file ot make sure attached
-		
-		while (advancedIT.hasNext()){
-			Map.Entry<String, List<String>> pair = (Map.Entry<String, List<String>>)advancedIT.next();
-			
-			System.out.println("***********Advanced Generics under " + pair.getKey() + " category!***********");
-			
-			file.addAdvancedGenerics(pair.getKey(), advancedGenerics);
-			
-			for (String s: pair.getValue()){
-				System.out.println(s);
-			}
-		}
-		
-		// TODO print from file ot make sure attached
+//			
+//		}
+//				
+//		Iterator afit = file.getAdvancedGenerics().entrySet().iterator();
+//		
+//		while (afit.hasNext()){
+//			Map.Entry<String, List<String>> pair = (Map.Entry<String, List<String>>)afit.next();
+//			
+//			System.out.println("***********Advanced Generics under " + pair.getKey() + " category" + file.getName() + "***********");
+//			
+//			for (String s: pair.getValue()){
+//				System.out.println(s);
+//			}			
+//		}
 
 	}
 	

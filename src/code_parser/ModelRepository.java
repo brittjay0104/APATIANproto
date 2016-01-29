@@ -539,6 +539,34 @@ public class ModelRepository {
 			// GENERICS
 			parser.parseForGenerics(f);
 			
+			// simple - fields
+			List<String> sFields = f.getSimpleGenerics().get("fields");
+			
+			// simple - variables
+			List<String> sVariables = f.getSimpleGenerics().get("variables");
+			
+			// simple - methods
+			List<String> sMethods = f.getSimpleGenerics().get("methods");
+			
+			// simple - return
+			List<String> sReturn = f.getSimpleGenerics().get("return");
+			
+			
+			// advanced - classes			
+			
+			// advanced - fields
+			
+			// advanced - methods
+			
+			// advanced - return
+			
+			// advanced - nested
+			
+			// advanced - params
+			
+			// advanced - bounds
+			
+			
 			
 
 //			// generic fields

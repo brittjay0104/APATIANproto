@@ -444,6 +444,17 @@ public class ModelSourceFile {
 		}
 	}
 	
+	public void setSimpleGenerics(HashMap<String, List<String>> map){
+		
+		simpleGenerics.putAll(map);
+		
+	}
+	
+	public void setAdvancedGenerics (HashMap<String, List<String>> map){
+		
+		advancedGenerics.putAll(map);
+		
+	}
 //	public void removeGenericField(String field){
 //		if (genericFields.contains(field)){
 //			genericFields.remove(field);
