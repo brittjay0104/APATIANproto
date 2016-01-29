@@ -538,73 +538,75 @@ public class ModelRepository {
 			
 			// GENERICS
 			parser.parseForGenerics(f);
+			
+			
 
-			// generic fields
-			List<String> genericFields = f.getGenericFields();
-			for (String field: genericFields){
-				addUsagePattern(field); 
-				//System.out.println("Generic field: " + field);
-			}
-			additionDiff(directory, f, genericFields, previousHash, currentHash, dev);
-			
-			// generic methods with type bounds
-			List<String> genericMethods = f.getGenericMethods();
-			for (String method: genericMethods){
-				addUsagePattern(method);
-				//System.out.println("Generic method: " + method);
-
-			}
-			additionDiff(directory, f, genericMethods, previousHash, currentHash, dev);
-			
-			// generic method invocations (explicit)
-			List<String> genericInvocations = f.getGenericInvocations();
-			for (String invoc: genericInvocations){
-				addUsagePattern(invoc);
-				//System.out.println("Generic invocation: " + invoc);
-
-			}
-			additionDiff(directory, f, genericInvocations, previousHash, currentHash, dev);
-			
-			// generic variable declarations/class instantiations
-			List<String> genericVarDeclarations = f.getGenericVarDeclarations();
-			for (String varDec: genericVarDeclarations){
-				addUsagePattern(varDec);
-				//System.out.println("Generic variable declaration: " + varDec);
-
-			}
-			additionDiff(directory, f, genericVarDeclarations, previousHash, currentHash, dev);
-			
-			// methods and generic parameters
-			HashMap<String, List<String>> genericParameters = f.getGenericParameters();
-			
-			// list of methods with generic parameters
-			Iterator it = genericParameters.entrySet().iterator();
-			List<String> gMethods = new ArrayList<String>();
-			while (it.hasNext()){
-				Map.Entry<String, List<String>> pair = (Map.Entry<String, List<String>>) it.next();
-				
-				String method = pair.getKey();
-				StringBuilder sb = new StringBuilder(method);
-				
-				if (pair.getValue() != null){
-					for (String param: pair.getValue()){
-						sb.append(CHECK_SEPERATOR);
-						sb.append(param);
-					}					
-				}
-				
-				// pattern --> method-param1-param2...
-				String pattern = sb.toString();
-				//System.out.println("Method Pattern --> " + pattern);
-				gMethods.add(pattern);
-			}
-			
-			for (String gMethod: gMethods){
-				addUsagePattern(gMethod);
-				//System.out.println("Method with generic parameter(s): " + gMethod);
-
-			}
-			additionDiff(directory, f, gMethods, previousHash, currentHash, dev);
+//			// generic fields
+//			List<String> genericFields = f.getGenericFields();
+//			for (String field: genericFields){
+//				addUsagePattern(field); 
+//				//System.out.println("Generic field: " + field);
+//			}
+//			additionDiff(directory, f, genericFields, previousHash, currentHash, dev);
+//			
+//			// generic methods with type bounds
+//			List<String> genericMethods = f.getGenericMethods();
+//			for (String method: genericMethods){
+//				addUsagePattern(method);
+//				//System.out.println("Generic method: " + method);
+//
+//			}
+//			additionDiff(directory, f, genericMethods, previousHash, currentHash, dev);
+//			
+//			// generic method invocations (explicit)
+//			List<String> genericInvocations = f.getGenericInvocations();
+//			for (String invoc: genericInvocations){
+//				addUsagePattern(invoc);
+//				//System.out.println("Generic invocation: " + invoc);
+//
+//			}
+//			additionDiff(directory, f, genericInvocations, previousHash, currentHash, dev);
+//			
+//			// generic variable declarations/class instantiations
+//			List<String> genericVarDeclarations = f.getGenericVarDeclarations();
+//			for (String varDec: genericVarDeclarations){
+//				addUsagePattern(varDec);
+//				//System.out.println("Generic variable declaration: " + varDec);
+//
+//			}
+//			additionDiff(directory, f, genericVarDeclarations, previousHash, currentHash, dev);
+//			
+//			// methods and generic parameters
+//			HashMap<String, List<String>> genericParameters = f.getGenericParameters();
+//			
+//			// list of methods with generic parameters
+//			Iterator it = genericParameters.entrySet().iterator();
+//			List<String> gMethods = new ArrayList<String>();
+//			while (it.hasNext()){
+//				Map.Entry<String, List<String>> pair = (Map.Entry<String, List<String>>) it.next();
+//				
+//				String method = pair.getKey();
+//				StringBuilder sb = new StringBuilder(method);
+//				
+//				if (pair.getValue() != null){
+//					for (String param: pair.getValue()){
+//						sb.append(CHECK_SEPERATOR);
+//						sb.append(param);
+//					}					
+//				}
+//				
+//				// pattern --> method-param1-param2...
+//				String pattern = sb.toString();
+//				//System.out.println("Method Pattern --> " + pattern);
+//				gMethods.add(pattern);
+//			}
+//			
+//			for (String gMethod: gMethods){
+//				addUsagePattern(gMethod);
+//				//System.out.println("Method with generic parameter(s): " + gMethod);
+//
+//			}
+//			additionDiff(directory, f, gMethods, previousHash, currentHash, dev);
 			
 			
 		}

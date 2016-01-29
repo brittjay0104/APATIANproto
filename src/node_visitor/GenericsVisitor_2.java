@@ -202,9 +202,10 @@ public class GenericsVisitor_2 extends ASTVisitor {
 			for (Object ta: typeArguments){
 				
 				// variable declaration
-				if (node.getParent() instanceof VariableDeclarationStatement){
+				ASTNode thisParent = node.getParent();
+				if (thisParent instanceof VariableDeclarationStatement){
 					
-					ASTNode parent = (VariableDeclarationStatement) node.getParent();
+					ASTNode parent = (VariableDeclarationStatement) thisParent;
 					
 					String varDec = findSourceForNode(parent);
 					
@@ -217,7 +218,7 @@ public class GenericsVisitor_2 extends ASTVisitor {
 				}
 				
 				
-				if (node.getParent() instanceof MethodDeclaration){
+				if (thisParent instanceof MethodDeclaration){
 					//System.out.println("Simple generics in method declaration! --> " + ta.toString());
 					
 					String generics = ta.toString() + CHECK_SEPERATOR + methDec;
@@ -259,15 +260,17 @@ public class GenericsVisitor_2 extends ASTVisitor {
 							
 							//System.out.println("Advanced Parameterized Type --> " + node.getParent().toString());
 							
-							// method
-							if (node.getParent() instanceof MethodDeclaration){
-								String meth = ta.toString() + CHECK_SEPERATOR + methDec;
-								advancedGenerics.get("methods").add(meth);
+							// other than method
+							if (! (thisParent instanceof MethodDeclaration)){
+								String paramType = methodDec + CHECK_SEPERATOR + thisParent.toString();
+								advancedGenerics.get("nested").add(paramType);
 							}
 							
-							// other						
-							String paramType = methodDec + CHECK_SEPERATOR + node.getParent().toString();
-							advancedGenerics.get("parameters").add(paramType);
+							// method
+							if (thisParent instanceof MethodDeclaration){
+								String meth = ta.toString() + CHECK_SEPERATOR + methDec;
+								advancedGenerics.get("nested").add(meth);								
+							}
 														
 						}
 					}
@@ -286,20 +289,22 @@ public class GenericsVisitor_2 extends ASTVisitor {
 		if (!(node.getParent() instanceof TypeDeclaration)){
 			MethodDeclaration md = getMethodDeclaration(node);
 			String methodDec = findSourceForNode(md.getName());
+			String s = findSourceForNode(md);
+			String meth = s.substring(0, s.indexOf("{"));
 			
 			List typeBounds = node.typeBounds();
 			
 			// type bounds
 			for (Object tb: typeBounds){
 				//System.out.println("Type bound --> " + tb.toString());
-				String methodTypeBound = methodDec + CHECK_SEPERATOR + tb.toString();
+				String methodTypeBound = tb.toString() + CHECK_SEPERATOR + meth ;
 				
 				advancedGenerics.get("bounds").add(methodTypeBound);
 			}
 			
 			// type parameters
 			String typeParam = node.toString();
-			String methodParam = methodDec + CHECK_SEPERATOR + typeParam;
+			String methodParam = typeParam + CHECK_SEPERATOR + meth;
 			
 			advancedGenerics.get("parameters").add(methodParam);
 			//System.out.println("Method Type Parameter --> " + typeParam);

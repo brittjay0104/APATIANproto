@@ -246,33 +246,40 @@ public class ModelParser {
 		HashMap<String, List<String>> simpleGenerics = visitor.getSimpleGenerics();
 		
 		HashMap<String, List<String>> advancedGenerics = visitor.getAdvancedGenerics();
-
-		// TODO assign hashmaps to file (check make sure everything there)
 		
 		Iterator simpleIT = simpleGenerics.entrySet().iterator();
 		Iterator advancedIT = advancedGenerics.entrySet().iterator();
-
+		
+		// assign hashmaps to file 
+		
+		
 		while (simpleIT.hasNext()){
-			// TODO -- print from each key...make sure everything coming across!
+			Map.Entry<String, List<String>> pair = (Map.Entry<String, List<String>>)simpleIT.next();
+			
+			System.out.println("***********Simple Generics under " + pair.getKey() + " category!***********");
+			
+			file.addSimpleGenerics(pair.getKey(), simpleGenerics);
+			
+//			for (String s: pair.getValue()){
+//				System.out.println(s);
+//			}
 		}
+		
+		// TODO print from file ot make sure attached
 		
 		while (advancedIT.hasNext()){
-			// TODO -- print from each key...make sure everything coming across!
+			Map.Entry<String, List<String>> pair = (Map.Entry<String, List<String>>)advancedIT.next();
+			
+			System.out.println("***********Advanced Generics under " + pair.getKey() + " category!***********");
+			
+			file.addAdvancedGenerics(pair.getKey(), advancedGenerics);
+			
+			for (String s: pair.getValue()){
+				System.out.println(s);
+			}
 		}
 		
-//		Iterator it = params.entrySet().iterator();
-//		while (it.hasNext()){
-//			Map.Entry<String, List<String>> pair = (Map.Entry<String, List<String>>)it.next();
-//			
-//			file.addGenericParam(pair.getKey(), params);
-//		}
-//		
-//		
-//		for (String varDec: varDecs){
-//			//System.out.println("generic variable declaration --> " + varDec);
-//			
-//			file.addGenericVarDeclaration(varDec);
-//		}		
+		// TODO print from file ot make sure attached
 
 	}
 	
