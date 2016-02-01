@@ -232,26 +232,27 @@ public class ModelParser {
 		 JavaCore.setComplianceOptions(JavaCore.VERSION_1_6, options);
 		 parser.setCompilerOptions(options);
 
-		parser.setResolveBindings(true);
-		parser.setStatementsRecovery(true);
-		parser.setSource(src.toCharArray());
-		parser.setUnitName(file.getName());
-		parser.setKind(ASTParser.K_COMPILATION_UNIT);
+		 
+		 parser.setResolveBindings(true);
+		 parser.setStatementsRecovery(true);
+		 parser.setSource(src.toCharArray());
+		 parser.setUnitName(file.getName());
+		 parser.setKind(ASTParser.K_COMPILATION_UNIT);
 
-		CompilationUnit cu = (CompilationUnit) parser.createAST(null);
+		 CompilationUnit cu = (CompilationUnit) parser.createAST(null);
 		
-		GenericsVisitor_2 visitor = new GenericsVisitor_2(file);
-		cu.accept(visitor);
+		 GenericsVisitor_2 visitor = new GenericsVisitor_2(file);
+		 cu.accept(visitor);
 		
-		HashMap<String, List<String>> simpleGenerics = visitor.getSimpleGenerics();
+		 HashMap<String, List<String>> simpleGenerics = visitor.getSimpleGenerics();
 		
-		HashMap<String, List<String>> advancedGenerics = visitor.getAdvancedGenerics();
+		 HashMap<String, List<String>> advancedGenerics = visitor.getAdvancedGenerics();
 		
 
-		// assign hashmaps to file 
+		 // assign hashmaps to file 
 		
-		file.setSimpleGenerics(simpleGenerics);
-		file.setAdvancedGenerics(advancedGenerics);
+		 file.setSimpleGenerics(simpleGenerics);
+		 file.setAdvancedGenerics(advancedGenerics);
 	
 
 //		Iterator  sfit = file.getSimpleGenerics().entrySet().iterator();

@@ -192,92 +192,95 @@ public class GenericsVisitor_2 extends ASTVisitor {
 	public boolean visit (ParameterizedType node){
 				
 		MethodDeclaration md = getMethodDeclaration(node);
-		String methodDec = findSourceForNode(md.getName());
-		String method = findSourceForNode(md);
-		String methDec = method.substring(0, method.indexOf("{"));
-		
-		List typeArguments = node.typeArguments();
-		
-		if (typeArguments != null){
-			for (Object ta: typeArguments){
-				
-				// variable declaration
-				ASTNode thisParent = node.getParent();
-				if (thisParent instanceof VariableDeclarationStatement){
+		if (md != null){
+			String methodDec = findSourceForNode(md.getName());
+			String method = findSourceForNode(md);
+			String methDec = method.substring(0, method.indexOf("{"));	
+			
+			List typeArguments = node.typeArguments();
+			
+			if (typeArguments != null){
+				for (Object ta: typeArguments){
 					
-					ASTNode parent = (VariableDeclarationStatement) thisParent;
-					
-					String varDec = findSourceForNode(parent);
-					
-					//System.out.println("Variable Declaration Generics --> " + varDec);
-					
-					String pt = methodDec + CHECK_SEPERATOR + varDec;
-					
-					simpleGenerics.get("variables").add(pt);
-					
-				}
-				
-				
-				if (thisParent instanceof MethodDeclaration){
-					//System.out.println("Simple generics in method declaration! --> " + ta.toString());
-					
-					String generics = ta.toString() + CHECK_SEPERATOR + methDec;
-					
-					// advanced (written)
-					if (stringContainsTypeParameter(ta.toString(), types)){						
-						advancedGenerics.get("methods").add(generics);
+					// variable declaration
+					ASTNode thisParent = node.getParent();
+					if (thisParent instanceof VariableDeclarationStatement){
+						
+						ASTNode parent = (VariableDeclarationStatement) thisParent;
+						
+						String varDec = findSourceForNode(parent);
+						
+						//System.out.println("Variable Declaration Generics --> " + varDec);
+						
+						String pt = methodDec + CHECK_SEPERATOR + varDec;
+						
+						simpleGenerics.get("variables").add(pt);
+						
 					}
 					
-					// simple (used)
-					simpleGenerics.get("methods").add(generics);
 					
-					
-				}
-				
-				ReturnStatement rt = getReturnStatement(node);
-				
-				if (rt != null && rt instanceof ReturnStatement){
-					
-					String ret = findSourceForNode(rt);
-					String generics = methodDec + CHECK_SEPERATOR + ta.toString() + CHECK_SEPERATOR + ret;
-					
-					// advanced
-					if (stringContainsTypeParameter(ta.toString(), types)){
-						advancedGenerics.get("return").add(generics);
+					if (thisParent instanceof MethodDeclaration){
+						//System.out.println("Simple generics in method declaration! --> " + ta.toString());
+						
+						String generics = ta.toString() + CHECK_SEPERATOR + methDec;
+						
+						// advanced (written)
+						if (stringContainsTypeParameter(ta.toString(), types)){						
+							advancedGenerics.get("methods").add(generics);
+						}
+						
+						// simple (used)
+						simpleGenerics.get("methods").add(generics);
+						
+						
 					}
 					
-					// simple
-					simpleGenerics.get("return").add(generics);
-				}						
-		
-				
-				// nested generics 
-				if (ta instanceof ParameterizedType){
-					ParameterizedType t = (ParameterizedType) ta;
-									
-					if (t.typeArguments() != null){
-						for (Object tta: t.typeArguments()){
-							
-							//System.out.println("Advanced Parameterized Type --> " + node.getParent().toString());
-							
-							// other than method
-							if (! (thisParent instanceof MethodDeclaration)){
-								String paramType = methodDec + CHECK_SEPERATOR + thisParent.toString();
-								advancedGenerics.get("nested").add(paramType);
+					ReturnStatement rt = getReturnStatement(node);
+					
+					if (rt != null && rt instanceof ReturnStatement){
+						
+						String ret = findSourceForNode(rt);
+						String generics = methodDec + CHECK_SEPERATOR + ta.toString() + CHECK_SEPERATOR + ret;
+						
+						// advanced
+						if (stringContainsTypeParameter(ta.toString(), types)){
+							advancedGenerics.get("return").add(generics);
+						}
+						
+						// simple
+						simpleGenerics.get("return").add(generics);
+					}						
+					
+					
+					// nested generics 
+					if (ta instanceof ParameterizedType){
+						ParameterizedType t = (ParameterizedType) ta;
+						
+						if (t.typeArguments() != null){
+							for (Object tta: t.typeArguments()){
+								
+								//System.out.println("Advanced Parameterized Type --> " + node.getParent().toString());
+								
+								// other than method
+								if (! (thisParent instanceof MethodDeclaration)){
+									String paramType = methodDec + CHECK_SEPERATOR + thisParent.toString();
+									advancedGenerics.get("nested").add(paramType);
+								}
+								
+								// method
+								if (thisParent instanceof MethodDeclaration){
+									String meth = ta.toString() + CHECK_SEPERATOR + methDec;
+									advancedGenerics.get("nested").add(meth);								
+								}
+								
 							}
-							
-							// method
-							if (thisParent instanceof MethodDeclaration){
-								String meth = ta.toString() + CHECK_SEPERATOR + methDec;
-								advancedGenerics.get("nested").add(meth);								
-							}
-														
 						}
 					}
+					
 				}
-				
 			}
 		}
+		
 		
 		return true;
 	}
@@ -304,7 +307,7 @@ public class GenericsVisitor_2 extends ASTVisitor {
 			
 			// type parameters
 			String typeParam = node.toString();
-			String methodParam = typeParam + CHECK_SEPERATOR + meth;
+			String methodParam = typeParam + CHECK_SEPERATOR + meth.trim();
 			
 			advancedGenerics.get("parameters").add(methodParam);
 			//System.out.println("Method Type Parameter --> " + typeParam);

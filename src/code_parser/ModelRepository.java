@@ -14,6 +14,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang.StringUtils;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.LogCommand;
 import org.eclipse.jgit.api.errors.ConcurrentRefUpdateException;
@@ -32,13 +33,10 @@ import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
 import org.eclipse.jgit.treewalk.CanonicalTreeParser;
-import org.eclipse.jgit.treewalk.TreeWalk;
-import org.apache.commons.lang.StringUtils;
 
 import com.gitblit.models.PathModel.PathChangeModel;
 import com.gitblit.utils.JGitUtils;
 
-import bsh.StringUtil;
 import developer_creator.ModelDeveloper;
 
 public class ModelRepository {
@@ -433,14 +431,25 @@ public class ModelRepository {
 		
 		
 		// GENERICS
-		System.out.println(devName + " added generic field count = " + dev.getAddedGenericsFieldsCount() + " in repository " + repoName);
-		System.out.println(devName + " added generic method count = " + dev.getAddedGenericsMethodsCount() + " in repository " + repoName);
-		System.out.println(devName + " added generic invocations count = " + dev.getAddedGenericsInvocsCount() + " in repository " + repoName);
-		System.out.println(devName + " added methods with generic parameters count = " + dev.getAddedGenericParamsCount() + " in repository " + repoName);
-		System.out.println(devName + " added generic variable declarations count = " + dev.getAddedGenericVarDecsCount() + " in repository " + repoName);
+		System.out.println("SIMPLE GENERICS:");
+		System.out.println(devName + " added " + dev.getAddedSimpleGenerics() + " instances of simple generics in repository " + repoName);
+		System.out.println(devName + " added simple generic field count = " + dev.getAddedSimpleFields());
+		System.out.println(devName + " added simple generic variables count =  " + dev.getAddedSimpleVariables());
+		System.out.println(devName + " added simple generic methods count =  " + dev.getAddedSimpleMethods());
+		System.out.println(devName + " added simple generic return count =  " + dev.getAddedSimpleReturn());
+		System.out.println("\n");
 		
-		System.out.println(devName + " removed generic field count = " + dev.getRemovedGenericsFieldsCount() + " in repository " + repoName);
-		System.out.println(devName + " removed generic variable declaration count = " + dev.getRemovedGenericVarDecsCount() + " in repository " + repoName);
+		
+		System.out.println("ADVANCED GENERICS:");
+		System.out.println(devName + " added " + dev.getAddedAdvancedGenerics() + " instances of advanced generics in repository " + repoName);
+		System.out.println(devName + " added advanced generic class count = " + dev.getAddedAdvancedClasses());
+		System.out.println(devName + " added advanced generic field count = " + dev.getAddedAdvancedFields());
+		System.out.println(devName + " added advanced generic method count = " + dev.getAddedAdvancedMethods());
+		System.out.println(devName + " added advanced generic return count = " + dev.getAddedAdvancedReturn());
+		System.out.println(devName + " added advanced generic nested count = " + dev.getAddedAdvancedNested());
+		System.out.println(devName + " added advanced generic parameters count = " + dev.getAddedAdvancedParameters());
+		System.out.println(devName + " added advanced generic bound count = " + dev.getAddedAdvancedBounds());
+		
 	}
 
 	private void diffPrettyPrint(ModelDeveloper dev, String currentHash, String previousHash) {
@@ -457,14 +466,21 @@ public class ModelRepository {
 //		System.out.println("	--> Added Null Object Design Patterns = " + dev.getAddedNODPCounts());
 		
 		// GENERICS
-		System.out.println("	--> Added generic fields = " + dev.getAddedGenericsFieldsCount());
-		System.out.println("	--> Added generic methods with type bounds = " + dev.getAddedGenericsMethodsCount());
-		System.out.println(" 	--> Added generic invocations = " + dev.getAddedGenericsInvocsCount());
-		System.out.println(" 	--> Added methods with generic parameters = " + dev.getAddedGenericParamsCount());
-		System.out.println(" 	--> Added generic variable declarations = " + dev.getAddedGenericVarDecsCount());
-		
-		System.out.println(" 	--> Removed generic fields = " + dev.getRemovedGenericsFieldsCount());
-		System.out.println(" 	--> Removed generic variable declarations = " + dev.getRemovedGenericVarDecsCount());
+		System.out.println("SIMPLE GENERICS = " + dev.getAddedSimpleGenerics());
+		System.out.println("	--> Added simple generic fields = " + dev.getAddedSimpleFields());
+		System.out.println("	--> Added simple generic variables  = " + dev.getAddedSimpleVariables());
+		System.out.println("	--> Added simple generic methods = " + dev.getAddedSimpleMethods());
+		System.out.println("	--> Added simple generic returns = " + dev.getAddedSimpleReturn());
+
+		System.out.println("ADVANCED GENERICS:");
+		System.out.println("	--> Added advanced generic classes = " + dev.getAddedAdvancedClasses());
+		System.out.println("	--> Added advanced generic fields = " + dev.getAddedAdvancedFields());
+		System.out.println("	--> Added advanced generic methods = " + dev.getAddedAdvancedMethods());
+		System.out.println("	--> Added advanced generic returns = " + dev.getAddedAdvancedReturn());
+		System.out.println("	--> Added advanced generic nested = " + dev.getAddedAdvancedNested());
+		System.out.println("	--> Added advanced generic parameters = " + dev.getAddedAdvancedParameters());
+		System.out.println("	--> Added advanced generic bounds = " + dev.getAddedAdvancedBounds());
+
 	}
 	
 	public boolean hasGenerics(){
@@ -542,99 +558,91 @@ public class ModelRepository {
 			// simple - fields
 			List<String> sFields = f.getSimpleGenerics().get("fields");
 			
+			for (String s: sFields){
+				addUsagePattern(s);
+			}
+			genericsAdditionDiff(directory, f, sFields, previousHash, currentHash, dev);
+			
 			// simple - variables
 			List<String> sVariables = f.getSimpleGenerics().get("variables");
+			
+			for (String s: sVariables){
+				addUsagePattern(s);
+			}
+			genericsAdditionDiff(directory, f, sVariables, previousHash, currentHash, dev);
 			
 			// simple - methods
 			List<String> sMethods = f.getSimpleGenerics().get("methods");
 			
+			for (String s: sMethods){
+				addUsagePattern(s);
+			}
+			genericsAdditionDiff(directory, f, sMethods, previousHash, currentHash, dev);
+			
 			// simple - return
 			List<String> sReturn = f.getSimpleGenerics().get("return");
 			
+			for (String s: sReturn){
+				addUsagePattern(s);
+			}
+			genericsAdditionDiff(directory, f, sReturn, previousHash, currentHash, dev);
 			
-			// advanced - classes			
+			// advanced - classes
+			List<String> aClass = f.getAdvancedGenerics().get("classes");
+			
+			for (String a: aClass){
+				addUsagePattern(a);
+			}
+			
+			genericsAdditionDiff(directory, f, aClass, previousHash, currentHash, dev);
 			
 			// advanced - fields
+			List<String> aFields = f.getAdvancedGenerics().get("fields"); 
+			
+			for (String a: aFields){
+				addUsagePattern(a);
+			}			
+			genericsAdditionDiff(directory, f, aFields, previousHash, currentHash, dev);
 			
 			// advanced - methods
+			List<String> aMethods = f.getAdvancedGenerics().get("methods");
+			
+			for (String a: aMethods){
+				addUsagePattern(a);
+			}
+			genericsAdditionDiff(directory, f, aMethods, previousHash, currentHash, dev);
 			
 			// advanced - return
+			List<String> aReturn = f.getAdvancedGenerics().get("return");
+			
+			for (String a: aReturn){
+				addUsagePattern(a);
+			}
+			genericsAdditionDiff(directory, f, aReturn, previousHash, currentHash, dev);
 			
 			// advanced - nested
+			List<String> aNested = f.getAdvancedGenerics().get("nested");
+			
+			for (String a: aNested){
+				addUsagePattern(a);
+			}
+			genericsAdditionDiff(directory, f, aNested, previousHash, currentHash, dev);
 			
 			// advanced - params
+			List<String> aParams = f.getAdvancedGenerics().get("parameters");
+			
+			for (String a: aParams){
+				addUsagePattern(a);
+			}
+			genericsAdditionDiff(directory, f, aParams, previousHash, currentHash, dev);
 			
 			// advanced - bounds
+			List<String> aBounds = f.getAdvancedGenerics().get("bounds");
 			
-			
-			
-
-//			// generic fields
-//			List<String> genericFields = f.getGenericFields();
-//			for (String field: genericFields){
-//				addUsagePattern(field); 
-//				//System.out.println("Generic field: " + field);
-//			}
-//			additionDiff(directory, f, genericFields, previousHash, currentHash, dev);
-//			
-//			// generic methods with type bounds
-//			List<String> genericMethods = f.getGenericMethods();
-//			for (String method: genericMethods){
-//				addUsagePattern(method);
-//				//System.out.println("Generic method: " + method);
-//
-//			}
-//			additionDiff(directory, f, genericMethods, previousHash, currentHash, dev);
-//			
-//			// generic method invocations (explicit)
-//			List<String> genericInvocations = f.getGenericInvocations();
-//			for (String invoc: genericInvocations){
-//				addUsagePattern(invoc);
-//				//System.out.println("Generic invocation: " + invoc);
-//
-//			}
-//			additionDiff(directory, f, genericInvocations, previousHash, currentHash, dev);
-//			
-//			// generic variable declarations/class instantiations
-//			List<String> genericVarDeclarations = f.getGenericVarDeclarations();
-//			for (String varDec: genericVarDeclarations){
-//				addUsagePattern(varDec);
-//				//System.out.println("Generic variable declaration: " + varDec);
-//
-//			}
-//			additionDiff(directory, f, genericVarDeclarations, previousHash, currentHash, dev);
-//			
-//			// methods and generic parameters
-//			HashMap<String, List<String>> genericParameters = f.getGenericParameters();
-//			
-//			// list of methods with generic parameters
-//			Iterator it = genericParameters.entrySet().iterator();
-//			List<String> gMethods = new ArrayList<String>();
-//			while (it.hasNext()){
-//				Map.Entry<String, List<String>> pair = (Map.Entry<String, List<String>>) it.next();
-//				
-//				String method = pair.getKey();
-//				StringBuilder sb = new StringBuilder(method);
-//				
-//				if (pair.getValue() != null){
-//					for (String param: pair.getValue()){
-//						sb.append(CHECK_SEPERATOR);
-//						sb.append(param);
-//					}					
-//				}
-//				
-//				// pattern --> method-param1-param2...
-//				String pattern = sb.toString();
-//				//System.out.println("Method Pattern --> " + pattern);
-//				gMethods.add(pattern);
-//			}
-//			
-//			for (String gMethod: gMethods){
-//				addUsagePattern(gMethod);
-//				//System.out.println("Method with generic parameter(s): " + gMethod);
-//
-//			}
-//			additionDiff(directory, f, gMethods, previousHash, currentHash, dev);
+			for (String a: aBounds){
+				addUsagePattern(a);
+			}
+			genericsAdditionDiff(directory, f, aBounds, previousHash, currentHash, dev);
 			
 			
 		}
@@ -994,23 +1002,189 @@ public class ModelRepository {
 				}
 			}
 			
-			if (removedGenericFieldDeclarations > 0 && removedGenericFieldDeclarations <= 10){
-				if (developer.getCommits().contains(currentHash)){
-					developer.setRemovedGenericFields(removedGenericFieldDeclarations);
-				}
-			}
-			
-			if (removedGenericVarDeclarations > 0 && removedGenericVarDeclarations <= 10){
-				if (developer.getCommits().contains(currentHash)){
-					developer.setRemovedGenericVarDecs(removedGenericVarDeclarations);
-				}
-			}
+//			if (removedGenericFieldDeclarations > 0 && removedGenericFieldDeclarations <= 10){
+//				if (developer.getCommits().contains(currentHash)){
+//					developer.setRemovedGenericFields(removedGenericFieldDeclarations);
+//				}
+//			}
+//			
+//			if (removedGenericVarDeclarations > 0 && removedGenericVarDeclarations <= 10){
+//				if (developer.getCommits().contains(currentHash)){
+//					developer.setRemovedGenericVarDecs(removedGenericVarDeclarations);
+//				}
+//			}
 		
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		} catch (GitAPIException e) {
 			System.out.println("GitAPIException caught!");
 		}
+	}
+	
+	public void genericsAdditionDiff(String directory, ModelSourceFile file, List<String> patterns, String prevH, String currH, ModelDeveloper developer) {
+		
+		File repoDir = new File(directory);
+		
+		int addedSimpleGenerics = 0;
+		int addedSimpleFields = 0;
+		int addedSimpleVariables = 0;
+		int addedSimpleMethods = 0;
+		int addedSimpleReturn = 0;
+		
+		int addedAdvancedGenerics = 0;
+		int addedAdvancedClasses = 0;
+		int addedAdvancedFields = 0;
+		int addedAdvancedMethods = 0;
+		int addedAdvancedReturn = 0;
+		int addedAdvancedNested = 0;
+		int addedAdvancedParams = 0;
+		int addedAdvancedBounds = 0;
+		
+		Git git;
+		//current revision
+		String currentHash = currH;
+		
+		try {
+			
+			git = Git.open(repoDir);
+			// next to current version in repository (older)
+			String previousHash = getOldHash(currH);
+
+
+			Repository repo = git.getRepository();
+			
+			ObjectId headId = repo.resolve(currentHash + "^{tree}");
+			ObjectId oldId = repo.resolve(previousHash + "^{tree}");
+
+			ObjectReader reader = repo.newObjectReader();
+			
+
+			CanonicalTreeParser oldTreeIter = new CanonicalTreeParser();
+			oldTreeIter.reset(reader, oldId);
+			CanonicalTreeParser newTreeIter = new CanonicalTreeParser();
+			newTreeIter.reset(reader, headId);
+			
+			List<DiffEntry> diffs;
+
+			diffs = git.diff()
+					.setNewTree(newTreeIter)
+					.setOldTree(oldTreeIter)
+					.call();
+
+			ByteArrayOutputStream out = new ByteArrayOutputStream();
+			DiffFormatter df = new DiffFormatter(out);
+			df.setRepository(repo);
+			df.setDetectRenames(true);
+	
+			
+			System.out.println("******************** GENERICS ADDITION DIFF *************************");
+			
+			for (DiffEntry diff: diffs){
+				// rename detection
+				// TODO set minimum score for rename??
+				RenameDetector rd = df.getRenameDetector();
+				//rd.addAll(diffs);
+				if (!(rd.compute().isEmpty())){
+					System.out.println("Rename happened!!");
+				}				
+				
+
+				df.format(diff);
+				diff.getOldId();
+				String diffText = out.toString("UTF-8");
+				
+				if (diffText.contains(file.getName())){
+					
+					BufferedReader br = new BufferedReader(new StringReader(diffText));
+					String line = null;
+					
+					while ((line = br.readLine()) != null){
+						
+						line = line.trim();
+						
+						line = line.replaceAll("\t", " ");
+						
+						// iterate over parser patterns for addition
+						if (line.startsWith("+")){
+							
+							for (String pattern: patterns){
+								// SIMPLE
+								if (file.getSimpleGenerics().get("fields").contains(pattern)){
+									// TODO fill in
+									System.out.println("Possible simple generic field added!");
+								} 
+								else if (file.getSimpleGenerics().get("variables").contains(pattern)){
+									// TODO fill in
+									System.out.println("Possible simple generic variable added!");
+								}
+								else if (file.getSimpleGenerics().get("methods").contains(pattern)){
+									// TODO fill in
+									System.out.println("Possible simple generic method added!");
+								}
+								else if (file.getSimpleGenerics().get("return").contains(pattern)){
+									// TODO fill in
+									System.out.println("Possible simple generic return added!");
+								}
+								//ADVANCED
+								else if (file.getAdvancedGenerics().get("classes").contains(pattern)){
+									// TODO fill in
+									System.out.println("Possible advanced generic class added!");
+								}
+								else if (file.getAdvancedGenerics().get("fields").contains(pattern)){
+									// TODO fill in
+									System.out.println("Possible advanced generic field added!");
+								}
+								else if (file.getAdvancedGenerics().get("methods").contains(pattern)){
+									// TODO fill in
+									System.out.println("Possible advanced generic method added!");
+								}
+								else if (file.getAdvancedGenerics().get("return").contains(pattern)){
+									// TODO fill in
+									System.out.println("Possible advanced generic return added!");
+								}
+								else if (file.getAdvancedGenerics().get("nested").contains(pattern)){
+									// TODO fill in
+									System.out.println("Possible advanced generic nested added!");
+								}
+								else if (file.getAdvancedGenerics().get("parameters").contains(pattern)){
+									// TODO fill in
+									System.out.println("Possible advanced generic parameter added!");
+								}
+								else if (file.getAdvancedGenerics().get("bounds").contains(pattern)){
+									// TODO fill in
+									System.out.println("Possible advanced generic bound added!");
+								}
+							}
+							
+						}
+						
+					}
+					
+				}
+				
+			out.reset();
+				
+		}
+			
+			// TODO calculate and attach counts!
+			// TODO see if rename detector is working; if so, can remove threshold!
+			// SIMPLE
+			
+			//ADVANCED
+			
+//			if (addedGenericVarDecs > 0 && addedGenericVarDecs <= 10){
+//				if (developer.getCommits().contains(currentHash)){
+//					developer.setAddedGenericVarDecs(addedGenericVarDecs);
+//				}
+//			}
+			
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		} catch (GitAPIException e) {
+			System.out.println("GitAPIException caught!");
+		}
+		
+		
 	}
 
 	public void additionDiff(String directory, ModelSourceFile file, List<String> checks, String oldH, String newH, ModelDeveloper developer) {
@@ -1024,12 +1198,6 @@ public class ModelRepository {
 		int addedOptVar = 0;		
 		int addedCatchBlock = 0;
 		int addedNODP = 0;
-		
-		int addedGenericFields = 0;
-		int addedGenericMethods = 0;
-		int addedGenericInvocs = 0;
-		int addedGenericParams = 0;
-		int addedGenericVarDecs = 0;
 		
 		
 		Git git;
@@ -1142,75 +1310,6 @@ public class ModelRepository {
 										addedNODP = checkAddedNull(addedNODP, currentHash, diffText, check);
 									} 
 									
-								} 
-								// GENERICS HERE!
-								else if (file.getGenericFields().contains(check)){
-									
-									System.out.println("*************** Checking for addition of the following generic field --> " + check + " ***************");
-									
-									//System.out.println("Field Pattern 1 --> " + check);
-									
-									if (line.contains(check)){
-										addedGenericFields = checkAddedGenerics(addedGenericFields, currentHash, diffText, check);
-									}
-								}
-								else if (file.getGenericMethods().contains(check)){
-									String pattern1 = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
-									String p1 = pattern1.trim();
-									
-									String pattern2 = check.substring(0, check.indexOf(CHECK_SEPERATOR));
-									String p2 = pattern2.trim();
-									
-									System.out.println("*************** Checking for addition of the following generic method --> " + check + " ***************");
-									
-									if (line.contains(p1) && line.contains(p2)){
-										addedGenericMethods = checkAddedGenerics(addedGenericMethods, currentHash, diffText, check);
-									}
-								}
-								else if (file.getGenericInvocations().contains(check)){
-									String pattern1 = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
-									String p1 = pattern1.trim();
-									
-									String pattern2 = check.substring(0, check.indexOf(CHECK_SEPERATOR));
-									String p2 = pattern2.trim();
-									
-									System.out.println("*************** Checking for addition of the following generic invocation --> " + check + " ***************");
-									
-									if (line.contains(p1) && line.contains(p2)){
-										addedGenericInvocs = checkAddedGenerics(addedGenericInvocs, currentHash, diffText, check);
-									}
-								}
-								else if (check.contains(Character.toString(CHECK_SEPERATOR)) && file.getGenericParameters().get(check.substring(0, check.indexOf(CHECK_SEPERATOR))) != null){
-									
-									String segments[] = check.split(Character.toString(CHECK_SEPERATOR));
-									String method = segments[0];
-									
-									System.out.println("*************** Checking for addition of the following generic method with parameters --> " + check + " ***************");
-									
-									if (line.contains(method)){
-										addedGenericParams = checkAddedGenerics(addedGenericParams, currentHash, diffText, check);
-									}
-								}
-								
-								else if (file.getGenericVarDeclarations().contains(check)){
-									
-									System.out.println("*************** Checking for addition of the following generic variable declaration --> " + check + " ***************");
-									
-									if (line.contains(check)){
-										addedGenericVarDecs = checkAddedGenerics(addedGenericVarDecs, currentHash, diffText, check);
-									}
-								}
-								
-								else {
-									if (check.contains(Character.toString(CHECK_SEPERATOR))){
-										String nullcheck = check.substring(0, check.indexOf(CHECK_SEPERATOR));
-										String nc = nullcheck.trim();
-										
-										if (line.contains(nc)){
-											addedNullChecks = checkAddedNull(addedNullChecks, currentHash, diffText, check);
-											derefNullChecks = calculateDerefValue(file, check, developer, derefNullChecks);
-										}
-									}
 								}
 								
 							}
@@ -1257,38 +1356,7 @@ public class ModelRepository {
 				if (developer.getCommits().contains(currentHash)){
 					developer.setDerefCount(derefNullChecks);
 				}
-			}
-			
-			if (addedGenericFields > 0 && addedGenericFields <= 10){
-				if (developer.getCommits().contains(currentHash)){
-					developer.setAddedGenericFields(addedGenericFields);
-				}
-			}
-			
-			if (addedGenericMethods >0 && addedGenericMethods <= 10){
-				if (developer.getCommits().contains(currentHash)){
-					developer.setAddedGenericMethods(addedGenericMethods);
-				}
-			}
-			
-			if (addedGenericInvocs > 0 && addedGenericInvocs <= 10){
-				if (developer.getCommits().contains(currentHash)){
-					developer.setAddedGenericInvocs(addedGenericInvocs);
-				}
-			}
-			
-			if (addedGenericParams > 0 && addedGenericParams <= 10){
-				if (developer.getCommits().contains(currentHash)){
-					developer.setAddedGenericParams(addedGenericParams);
-				}
-			}
-			
-			if (addedGenericVarDecs > 0 && addedGenericVarDecs <= 10){
-				if (developer.getCommits().contains(currentHash)){
-					developer.setAddedGenericVarDecs(addedGenericVarDecs);
-				}
-			}
-			
+			}			
 			
 		} catch (IOException e1) {
 			e1.printStackTrace();
@@ -1333,21 +1401,6 @@ public class ModelRepository {
 		}
 		
 		return added;
-	}
-
-	private int checkNullRemoval(int removed, String newHash, String diffText, String check) {
-		if (isRemoval(diffText, check)){
-			//System.out.println("Null usage pattern was removed at revision " + newHash);
-			
-			removed +=1;
-
-		} else if (isCheckRemoval(diffText, check)){
-			//System.out.println("Null usage pattern was removed at revision " + newHash);
-			
-			removed +=1;
-
-		}
-		return removed;
 	}
 	
 	private int checkGenericsRemoval(int removed, String newHash, String diffText, String check){
@@ -1409,6 +1462,21 @@ public class ModelRepository {
 		}
 
 		return false;
+	}
+
+	private int checkNullRemoval(int removed, String newHash, String diffText, String check) {
+		if (isRemoval(diffText, check)){
+			//System.out.println("Null usage pattern was removed at revision " + newHash);
+			
+			removed +=1;
+
+		} else if (isCheckRemoval(diffText, check)){
+			//System.out.println("Null usage pattern was removed at revision " + newHash);
+			
+			removed +=1;
+
+		}
+		return removed;
 	}
 
 	private String getOldHash(String newH) {

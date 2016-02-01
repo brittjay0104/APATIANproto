@@ -18,13 +18,21 @@ public class ModelDeveloper {
 	private int removedCatchCounts;
 	private int addedCatchCounts;
 	
-	private int addedGenericFields;
-	private int removedGenericFields;
-	private int addedGenericMethods;
-	private int addedGenericInvocs;
-	private int addedGenericParams;
-	private int addedGenericVarDecs;
-	private int removedGenericVarDecs;
+	
+	private int addedSimpleGenerics;
+	private int addedSimpleFields;
+	private int addedSimpleVariables;
+	private int addedSimpleMethods;
+	private int addedSimpleReturn;
+	
+	private int addedAdvancedGenerics;
+	private int addedAdvancedClasses;
+	private int addedAdvancedFields;
+	private int addedAdvancedMethods;
+	private int addedAdvancedReturn;
+	private int addedAdvancedNested;
+	private int addedAdvancedParameters;
+	private int addedAdvancedBounds;
 	
 	private int derefCounts;
 	private String name;
@@ -47,13 +55,20 @@ public class ModelDeveloper {
 		removedCatchCounts = 0;
 		addedCatchCounts = 0;
 		
-		addedGenericFields = 0;
-		removedGenericFields = 0;
-		addedGenericInvocs = 0;
-		addedGenericMethods = 0;
-		addedGenericParams = 0;
-		addedGenericVarDecs = 0;
-		removedGenericVarDecs = 0;
+		addedSimpleGenerics = 0;
+		addedSimpleFields = 0;
+		addedSimpleVariables = 0;
+		addedSimpleMethods = 0;
+		addedSimpleReturn = 0;
+		
+		addedAdvancedGenerics = 0;
+		addedAdvancedClasses = 0;
+		addedAdvancedFields = 0;
+		addedAdvancedMethods = 0;
+		addedAdvancedReturn = 0;
+		addedAdvancedNested = 0;
+		addedAdvancedParameters = 0;
+		addedAdvancedBounds = 0;
 		
 		setDevName(id);
 		commits = new ArrayList<String>();
@@ -97,6 +112,110 @@ public class ModelDeveloper {
 	
 	public ArrayList<String> getCommits(){
 		return commits;
+	}
+	
+	public void setAddedSimpleGenerics(int addedGenerics){
+		addedSimpleGenerics = addedSimpleGenerics + addedGenerics;
+	}
+	
+	public void setAddedSimpleFields (int addedGenerics){
+		addedSimpleFields = addedSimpleFields + addedGenerics;
+	}
+	
+	public void setAddedSimpleVariables (int addedGenerics){
+		addedSimpleVariables = addedSimpleVariables + addedGenerics;
+	}
+	
+	public void setAddedSimpleMethods (int addedGenerics){
+		addedSimpleMethods = addedSimpleMethods + addedGenerics;
+	}
+	
+	public void setAddedSimpleReturn (int addedGenerics){
+		addedSimpleReturn = addedSimpleReturn + addedGenerics;
+	}
+	
+	public void setAddedAdvancedGenerics (int addedGenerics){
+		addedAdvancedGenerics = addedAdvancedGenerics + addedGenerics;
+	}
+	
+	public void setAddedAdvancedClasses (int addedGenerics){
+		addedAdvancedClasses = addedAdvancedClasses + addedGenerics;
+	}
+	
+	public void setAddedAdvancedFields (int addedGenerics){
+		addedAdvancedFields = addedAdvancedFields + addedGenerics;
+	}
+	
+	public void setAddedAdvancedMethods (int addedGenerics){
+		addedAdvancedMethods = addedAdvancedMethods + addedGenerics;
+	}
+	
+	public void setAddedAdvancedReturn (int addedGenerics){
+		addedAdvancedReturn = addedAdvancedReturn + addedGenerics;
+	}
+	
+	public void setAddedAdvancedNested (int addedGenerics){
+		addedAdvancedNested = addedAdvancedNested + addedGenerics;
+	}
+	
+	public void setAddedAdvancedParameters (int addedGenerics){
+		addedAdvancedParameters = addedAdvancedParameters + addedGenerics;
+	}
+	
+	public void setAddedAdvancedBounds (int addedGenerics){
+		addedAdvancedBounds = addedAdvancedBounds + addedGenerics;
+	}
+	
+	public int getAddedSimpleGenerics(){
+		return addedSimpleGenerics;
+	}
+	
+	public int getAddedSimpleFields(){
+		return addedSimpleFields;
+	}
+	
+	public int getAddedSimpleVariables(){
+		return addedSimpleVariables;
+	}
+	
+	public int getAddedSimpleMethods(){
+		return addedSimpleMethods;
+	}
+	
+	public int getAddedSimpleReturn(){
+		return addedSimpleReturn;
+	}
+	
+	public int getAddedAdvancedGenerics(){
+		return addedAdvancedGenerics;
+	}
+	
+	public int getAddedAdvancedClasses(){
+		return addedAdvancedClasses;
+	}
+	
+	public int getAddedAdvancedFields(){
+		return addedAdvancedFields;
+	}
+	
+	public int getAddedAdvancedMethods(){
+		return addedAdvancedMethods;
+	}
+	
+	public int getAddedAdvancedReturn(){
+		return addedAdvancedReturn;
+	}
+	
+	public int getAddedAdvancedNested(){
+		return addedAdvancedNested;
+	}
+	
+	public int getAddedAdvancedParameters(){
+		return addedAdvancedParameters;
+	}
+	
+	public int getAddedAdvancedBounds(){
+		return addedAdvancedBounds;
 	}
 	
 	public int getRemovedNullCounts(){
@@ -171,61 +290,6 @@ public class ModelDeveloper {
 		addedCatchCounts = addedCatchCounts + addedCatchs;
 	}
 	
-	public void setAddedGenericFields(int addedFields){
-		addedGenericFields = addedGenericFields + addedFields;
-	}
-	
-	public void setAddedGenericMethods(int addedMethods){
-		addedGenericMethods = addedGenericMethods + addedMethods;
-	}
-	
-	public void setAddedGenericInvocs(int addedInvocs){
-		addedGenericInvocs = addedGenericInvocs + addedInvocs;
-	}
-	
-	public void setAddedGenericParams(int addedParams){
-		addedGenericParams = addedGenericParams + addedParams;
-	}
-	
-	public void setAddedGenericVarDecs(int addedVarDecs){
-		addedGenericVarDecs = addedGenericVarDecs + addedVarDecs;
-	}
-	
-	public void setRemovedGenericFields(int removedFields){
-		removedGenericFields = removedGenericFields + removedFields;
-	}
-	
-	public void setRemovedGenericVarDecs (int removedVarDecs){
-		removedGenericVarDecs = removedGenericVarDecs + removedVarDecs;
-	}
-		
-	public int getAddedGenericsFieldsCount(){
-		return addedGenericFields;
-	}
-	
-	public int getRemovedGenericsFieldsCount(){
-		return removedGenericFields;
-	}
-	
-	public int getAddedGenericsMethodsCount(){
-		return addedGenericMethods;
-	}
-
-	public int getAddedGenericsInvocsCount(){
-		return addedGenericInvocs;
-	}
-	
-	public int getAddedGenericParamsCount(){
-		return addedGenericParams;
-	}
-	
-	public int getAddedGenericVarDecsCount(){
-		return addedGenericVarDecs;
-	}
-	
-	public int getRemovedGenericVarDecsCount(){
-		return removedGenericVarDecs;
-	}
 	
 	public int getDerefCount(){
 		return derefCounts;
