@@ -19,27 +19,11 @@ import org.eclipse.jdt.core.dom.TypeDeclaration;
 import org.eclipse.jdt.core.dom.TypeParameter;
 import org.eclipse.jdt.core.dom.VariableDeclarationFragment;
 import org.eclipse.jdt.core.dom.VariableDeclarationStatement;
+import org.eclipse.jdt.core.dom.WildcardType;
 
 import code_parser.ModelSourceFile;
 
 public class GenericsVisitor_2 extends ASTVisitor {
-
-//	// type declaration
-//	public ArrayList<String> typeDecs = new ArrayList<String>();
-//	
-//	//fields
-//	public ArrayList<String> genericFields = new ArrayList<String>();
-//	
-//	//variables
-//	public ArrayList<String> genericVariables = new ArrayList<String>();
-//	
-//	// parameterized types
-//	public ArrayList<String> simpleParamTypes = new ArrayList<String>();
-//	public ArrayList<String> advancedParamTypes = new ArrayList<String>();
-//	
-//	// method declaration related generics
-//	public ArrayList<String> genericMethodDec = new ArrayList<String>();
-//	public ArrayList<String> erasureMethodDec = new ArrayList<String>();
 	
 	// simple generics: using generics in fields, methods, and variable declarations
 	public HashMap<String, List<String>> simpleGenerics = new HashMap<String, List<String>>();
@@ -74,6 +58,8 @@ public class GenericsVisitor_2 extends ASTVisitor {
 		advancedGenerics.put("nested", new ArrayList<String>());
 		advancedGenerics.put("parameters", new ArrayList<String>());
 		advancedGenerics.put("bounds", new ArrayList<String>());
+		advancedGenerics.put("wildcard", new ArrayList<>());
+		advancedGenerics.put("diamond", new ArrayList<String>());
 	}
 	
 	
@@ -117,6 +103,25 @@ public class GenericsVisitor_2 extends ASTVisitor {
 	
 	public HashMap<String, List<String>> getAdvancedGenerics(){
 		return advancedGenerics;
+	}
+	
+	// ?
+	public boolean visit (WildcardType node){
+		
+		// advanced
+		MethodDeclaration md = getMethodDeclaration(node);
+		
+		if (md != null){
+			String parent = node.getParent().toString();
+			System.out.println("Wildcard Type --> " + parent);	
+			String method = findSourceForNode(md.getName());
+			
+			String pattern = method + CHECK_SEPERATOR + parent;
+			
+			advancedGenerics.get("wildcard").add(pattern);
+		}
+		
+		return true;
 	}
 	
 	// public class Box<T>
@@ -198,6 +203,16 @@ public class GenericsVisitor_2 extends ASTVisitor {
 			String methDec = method.substring(0, method.indexOf("{"));	
 			
 			List typeArguments = node.typeArguments();
+			
+			if (typeArguments.size() == 0){
+				// diamond notation
+				ASTNode thisParent = node.getParent();
+				String source = findSourceForNode(thisParent);
+				
+				String pattern = methodDec + CHECK_SEPERATOR + source;
+				advancedGenerics.get("diamond").add(pattern);
+				
+			}
 			
 			if (typeArguments != null){
 				for (Object ta: typeArguments){
