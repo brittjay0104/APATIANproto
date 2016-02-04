@@ -58,7 +58,7 @@ public class GenericsVisitor_2 extends ASTVisitor {
 		advancedGenerics.put("nested", new ArrayList<String>());
 		advancedGenerics.put("parameters", new ArrayList<String>());
 		advancedGenerics.put("bounds", new ArrayList<String>());
-		advancedGenerics.put("wildcard", new ArrayList<>());
+		advancedGenerics.put("wildcard", new ArrayList<String>());
 		advancedGenerics.put("diamond", new ArrayList<String>());
 	}
 	

@@ -33,6 +33,8 @@ public class ModelDeveloper {
 	private int addedAdvancedNested;
 	private int addedAdvancedParameters;
 	private int addedAdvancedBounds;
+	private int addedAdvancedWildcard;
+	private int addedAdvancedDiamond;
 	
 	private int derefCounts;
 	private String name;
@@ -69,6 +71,8 @@ public class ModelDeveloper {
 		addedAdvancedNested = 0;
 		addedAdvancedParameters = 0;
 		addedAdvancedBounds = 0;
+		addedAdvancedWildcard = 0;
+		addedAdvancedDiamond = 0;
 		
 		setDevName(id);
 		commits = new ArrayList<String>();
@@ -166,6 +170,14 @@ public class ModelDeveloper {
 		addedAdvancedBounds = addedAdvancedBounds + addedGenerics;
 	}
 	
+	public void setAddedAdvancedWildcard (int addedGenerics){
+		addedAdvancedWildcard = addedAdvancedWildcard + addedGenerics;
+	}
+	
+	public void setAddedAdvancedDiamond (int addedGenerics){
+		addedAdvancedDiamond = addedAdvancedDiamond + addedGenerics;
+	}
+	
 	public int getAddedSimpleGenerics(){
 		return addedSimpleGenerics;
 	}
@@ -216,6 +228,14 @@ public class ModelDeveloper {
 	
 	public int getAddedAdvancedBounds(){
 		return addedAdvancedBounds;
+	}
+	
+	public int getAddedAdvancedWildcard(){
+		return addedAdvancedWildcard;
+	}
+	
+	public int getAddedAdvancedDiamond(){
+		return addedAdvancedDiamond;
 	}
 	
 	public int getRemovedNullCounts(){

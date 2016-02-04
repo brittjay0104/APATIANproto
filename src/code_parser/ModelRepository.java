@@ -449,6 +449,8 @@ public class ModelRepository {
 		System.out.println(devName + " added advanced generic nested count = " + dev.getAddedAdvancedNested());
 		System.out.println(devName + " added advanced generic parameters count = " + dev.getAddedAdvancedParameters());
 		System.out.println(devName + " added advanced generic bound count = " + dev.getAddedAdvancedBounds());
+		System.out.println(devName + " added advanced generic wildcard count = " + dev.getAddedAdvancedWildcard());
+		System.out.println(devName + " added advanced generic diamond count = " + dev.getAddedAdvancedDiamond());
 		
 	}
 
@@ -480,6 +482,8 @@ public class ModelRepository {
 		System.out.println("	--> Added advanced generic nested = " + dev.getAddedAdvancedNested());
 		System.out.println("	--> Added advanced generic parameters = " + dev.getAddedAdvancedParameters());
 		System.out.println("	--> Added advanced generic bounds = " + dev.getAddedAdvancedBounds());
+		System.out.println("	--> Added advanced generic wildcards = " + dev.getAddedAdvancedWildcard());
+		System.out.println("	--> Added advanced generic diamonds = " + dev.getAddedAdvancedDiamond());
 
 	}
 	
@@ -1120,88 +1124,70 @@ public class ModelRepository {
 							for (String pattern: patterns){
 								// SIMPLE
 								if (file.getSimpleGenerics().get("fields").contains(pattern)){
-									// TODO fill in
-									//System.out.println("Possible simple generic field added!");
 									//System.out.println(pattern);
 									
-									addedSimpleFields = checkAddedGenerics(addedSimpleFields, currH, diffText, pattern);
+									addedSimpleFields = checkAddedGenerics(addedSimpleFields, currH, diffText, line, pattern);
 								} 
 								else if (file.getSimpleGenerics().get("variables").contains(pattern)){
-									// TODO fill in
-									//System.out.println("Possible simple generic variable added!");
 									//System.out.println(pattern);
 									
-									addedSimpleVariables = checkAddedGenerics(addedSimpleVariables, currH, diffText, pattern);
+									addedSimpleVariables = checkAddedGenerics(addedSimpleVariables, currH, diffText, line, pattern);
 								}
 								else if (file.getSimpleGenerics().get("methods").contains(pattern)){
-									// TODO fill in
-									//System.out.println("Possible simple generic method added!");
 									//System.out.println(pattern);
 									
-									addedSimpleMethods = checkAddedGenerics(addedSimpleMethods, currH, diffText, pattern);
+									addedSimpleMethods = checkAddedGenerics(addedSimpleMethods, currH, diffText, line, pattern);
 								}
 								else if (file.getSimpleGenerics().get("return").contains(pattern)){
-									// TODO fill in
-									//System.out.println("Possible simple generic return added!");
 									//System.out.println(pattern);
 									
-									addedSimpleReturn = checkAddedGenerics(addedSimpleReturn, currH, diffText, pattern);
+									addedSimpleReturn = checkAddedGenerics(addedSimpleReturn, currH, diffText, line, pattern);
 								}
 								//ADVANCED
 								else if (file.getAdvancedGenerics().get("classes").contains(pattern)){
-//									System.out.println("Possible advanced generic class added!");
 //									System.out.println(pattern);
 									
-									addedAdvancedClasses = checkAddedGenerics(addedAdvancedClasses, currH, diffText, pattern);
+									addedAdvancedClasses = checkAddedGenerics(addedAdvancedClasses, currH, diffText, line, pattern);
 								}
 								else if (file.getAdvancedGenerics().get("fields").contains(pattern)){
-//									System.out.println("Possible advanced generic field added!");
 //									System.out.println(pattern);
 									
-									addedAdvancedFields = checkAddedGenerics(addedAdvancedFields, currH, diffText, pattern);
+									addedAdvancedFields = checkAddedGenerics(addedAdvancedFields, currH, diffText, line, pattern);
 								}
 								else if (file.getAdvancedGenerics().get("methods").contains(pattern)){
-//									System.out.println("Possible advanced generic method added!");
 //									System.out.println(pattern);
 									
-									addedAdvancedMethods = checkAddedGenerics(addedAdvancedMethods, currH, diffText, pattern);
+									addedAdvancedMethods = checkAddedGenerics(addedAdvancedMethods, currH, diffText, line, pattern);
 								}
 								else if (file.getAdvancedGenerics().get("return").contains(pattern)){
-//									System.out.println("Possible advanced generic return added!");
 //									System.out.println(pattern);
 									
-									addedAdvancedReturn = checkAddedGenerics(addedAdvancedReturn, currH, diffText, pattern);
+									addedAdvancedReturn = checkAddedGenerics(addedAdvancedReturn, currH, diffText, line, pattern);
 								}
 								else if (file.getAdvancedGenerics().get("nested").contains(pattern)){
-									// TODO fill in
-//									System.out.println("Possible advanced generic nested added!");
 //									System.out.println(pattern);
 									
-									addedAdvancedNested = checkAddedGenerics(addedAdvancedNested, currH, diffText, pattern);
+									addedAdvancedNested = checkAddedGenerics(addedAdvancedNested, currH, diffText, line, pattern);
 								}
 								else if (file.getAdvancedGenerics().get("parameters").contains(pattern)){
-//									System.out.println("Possible advanced generic parameter added!");
 //									System.out.println(pattern);
 									
-									addedAdvancedParams = checkAddedGenerics(addedAdvancedParams, currH, diffText, pattern);
+									addedAdvancedParams = checkAddedGenerics(addedAdvancedParams, currH, diffText, line, pattern);
 								}
 								else if (file.getAdvancedGenerics().get("bounds").contains(pattern)){
-//									System.out.println("Possible advanced generic bound added!");
 //									System.out.println(pattern);
 									
-									addedAdvancedBounds = checkAddedGenerics(addedAdvancedBounds, currH, diffText, pattern);
+									addedAdvancedBounds = checkAddedGenerics(addedAdvancedBounds, currH, diffText, line, pattern);
 								}
 								else if (file.getAdvancedGenerics().get("wildcard").contains(pattern)){
-//									System.out.println("Possible advanced generic wildcard added!");
 //									System.out.println(pattern);
 									
-									addedAdvancedWildCards = checkAddedGenerics(addedAdvancedWildCards, currH, diffText, pattern);
+									addedAdvancedWildCards = checkAddedGenerics(addedAdvancedWildCards, currH, diffText, line, pattern);
 								}
 								else if (file.getAdvancedGenerics().get("diamond").contains(pattern)){
-//									System.out.println("Possible advanced generic diamond added!");
 //									System.out.println(pattern);
 									
-									addedAdvancedDiamonds = checkAddedGenerics(addedAdvancedDiamonds, currH, diffText, pattern);
+									addedAdvancedDiamonds = checkAddedGenerics(addedAdvancedDiamonds, currH, diffText, line, pattern);
 								}
 							}
 							
@@ -1215,17 +1201,26 @@ public class ModelRepository {
 				
 		}
 			
-			// TODO calculate and attach counts!
-			// TODO see if rename detector is working; if so, can remove threshold!
-			// SIMPLE
-			
-			//ADVANCED
-			
-//			if (addedGenericVarDecs > 0 && addedGenericVarDecs <= 10){
-//				if (developer.getCommits().contains(currentHash)){
-//					developer.setAddedGenericVarDecs(addedGenericVarDecs);
-//				}
-//			}
+			// TODO might need 10 or less filter back! Run without and see what we get.
+			if (developer.getCommits().contains(currentHash)){
+				// SIMPLE
+				developer.setAddedSimpleFields(addedSimpleFields);
+				developer.setAddedSimpleMethods(addedSimpleMethods);
+				developer.setAddedSimpleVariables(addedSimpleVariables);
+				developer.setAddedSimpleReturn(addedSimpleReturn);
+				
+				//ADVANCED
+				developer.setAddedAdvancedClasses(addedAdvancedClasses);
+				developer.setAddedAdvancedFields(addedAdvancedFields);
+				developer.setAddedAdvancedMethods(addedAdvancedMethods);
+				developer.setAddedAdvancedNested(addedAdvancedNested);
+				developer.setAddedAdvancedParameters(addedAdvancedParams);
+				developer.setAddedAdvancedReturn(addedAdvancedReturn);
+				developer.setAddedAdvancedBounds(addedAdvancedBounds);
+				developer.setAddedAdvancedWildcard(addedAdvancedWildCards);
+				developer.setAddedAdvancedDiamond(addedAdvancedDiamonds);
+				
+			}
 			
 		} catch (IOException e1) {
 			e1.printStackTrace();
@@ -1430,11 +1425,21 @@ public class ModelRepository {
 		return added;
 	}
 	
-	private int checkAddedGenerics(int added, String newHash, String diffText, String check){		
+	private int checkAddedGenerics(int added, String newHash, String diffText, String line, String check){		
 		// get part after last checksep; that's what we search diff for
-		String code = check.substring(check.lastIndexOf(CHECK_SEPERATOR), check.length());
 		
-		if (isGenericsAddition(diffText, code)){
+		int count = StringUtils.countMatches(check, Character.toString(CHECK_SEPERATOR));
+		String code = "";
+		
+		if (count == 1){
+			code = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
+		}
+		
+		if (count == 2){
+			code = check.substring(check.lastIndexOf(CHECK_SEPERATOR)+1, check.length());			
+		}
+		
+		if (isGenericsAddition(diffText, line, code)){
 			System.out.println("\n Generics pattern " + code + " was added at revision " + newHash + "\n");
 			
 //			System.out.println("******************** Diff Text ********************");
@@ -1446,14 +1451,16 @@ public class ModelRepository {
 		return added;
 	}
 	
-	private boolean isGenericsAddition(String diff, String check){
+	private boolean isGenericsAddition(String diff, String line, String check){
 		
 		int count = 0;		
 		
-		count = StringUtils.countMatches(diff, check);
-		
-		if (count == 1){
-			return true;
+		if (line.contains(check)){
+			count = StringUtils.countMatches(diff, check);
+			
+			if (count == 1){
+				return true;
+			}			
 		}
 		
 		return false;
