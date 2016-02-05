@@ -1,8 +1,8 @@
 dummy-repo3 -- brittjay0104 -- Brittany Johnson
 https://github.com/brittjay0104/dummy-repo3.git
 git clone https://github.com/brittjay0104/dummy-repo3.git
-./dummy-repo3/
-./dummy-repo3/.git
+.\dummy-repo3\
+.\dummy-repo3\.git
 0
 Project cloned!
 Brittany Johnson is responsible for commit 03524a37d16323a98629d692948809b157956ec0
@@ -31,20 +31,4489 @@ Brittany Johnson is responsible for commit 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f
 Brittany Johnson is responsible for commit f29e26e40d3a244499ae41fb825264ffa230815b
 Brittany Johnson is responsible for commit da6b1b03cc7d21c11e543c8549fcfda5b7511583
 Brittany Johnson is responsible for commit dcf67baa545756ab03d2000c4edf326e09009f4e
-Added Box.java to ./dummy-repo3/ repository source files.
-Added NullObjectPattern_test.java to ./dummy-repo3/ repository source files.
-Added Test.java to ./dummy-repo3/ repository source files.
-Added testClass.java to ./dummy-repo3/ repository source files.
+Added Box.java to .\dummy-repo3\ repository source files.
+Added NullObjectPattern_test.java to .\dummy-repo3\ repository source files.
+Added Test.java to .\dummy-repo3\ repository source files.
+Added testClass.java to .\dummy-repo3\ repository source files.
 
  ************ ANALYZING FOR USAGE PATTERN ADDITION ************
 
 
 ****Parsing for addition at revision 03524a37d16323a98629d692948809b157956ec0****
 
-Added Box.java to ./dummy-repo3/ repository source files.
-Added NullObjectPattern_test.java to ./dummy-repo3/ repository source files.
-Added Test.java to ./dummy-repo3/ repository source files.
-Added testClass.java to ./dummy-repo3/ repository source files.
+Added Box.java to .\dummy-repo3\ repository source files.
+Added NullObjectPattern_test.java to .\dummy-repo3\ repository source files.
+Added Test.java to .\dummy-repo3\ repository source files.
+Added testClass.java to .\dummy-repo3\ repository source files.
 
  File for diff --> Box.java
 
+Wildcard Type --> List<? extends Number>
+Wildcard Type --> List<?>
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+
+ Generics pattern List<T> list = new ArrayList<T>(); was added at revision 03524a37d16323a98629d692948809b157956ec0
+
+
+ Generics pattern Box<Integer> integerBox = new Box<Integer>(); was added at revision 03524a37d16323a98629d692948809b157956ec0
+
+
+ Generics pattern Box<String> stringBox = new Box<String>(); was added at revision 03524a37d16323a98629d692948809b157956ec0
+
+
+ Generics pattern List<String> anEmptyStringList = Collections.<String>emptyList(); was added at revision 03524a37d16323a98629d692948809b157956ec0
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+
+ Generics pattern public <T> void method(T item) was added at revision 03524a37d16323a98629d692948809b157956ec0
+
+
+ Generics pattern public static <T extends Comparable<T>> T maximum(T x, T y, T z) was added at revision 03524a37d16323a98629d692948809b157956ec0
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+
+ Generics pattern public static <T extends Comparable<T>> T maximum(T x, T y, T z) was added at revision 03524a37d16323a98629d692948809b157956ec0
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+
+ Generics pattern List<? extends Number> was added at revision 03524a37d16323a98629d692948809b157956ec0
+
+
+ Generics pattern List<?> was added at revision 03524a37d16323a98629d692948809b157956ec0
+
+
+ File for diff --> NullObjectPattern_test.java
+
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+
+ File for diff --> Test.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Box.java
+Generics.java
+
+Diff of 03524a37d16323a98629d692948809b157956ec0 and acb3b873cd1727fb9dd90a0e5b19f4f9cd597b69:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 4
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 2
+	--> Added advanced generic bounds = 1
+	--> Added advanced generic wildcards = 2
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision 03524a37d16323a98629d692948809b157956ec0 to acb3b873cd1727fb9dd90a0e5b19f4f9cd597b69
+
+
+****Parsing for addition at revision acb3b873cd1727fb9dd90a0e5b19f4f9cd597b69****
+
+Added Generics.java to .\dummy-repo3\ repository source files.
+Added NullObjectPattern_test.java to .\dummy-repo3\ repository source files.
+Added Test.java to .\dummy-repo3\ repository source files.
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> Generics.java
+
+Wildcard Type --> List<? extends Number>
+Wildcard Type --> List<?>
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+ File for diff --> NullObjectPattern_test.java
+
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+ File for diff --> Test.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+.classpath
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+.project
+/dev/null
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+Diff of acb3b873cd1727fb9dd90a0e5b19f4f9cd597b69 and 97b840ac44bfada6438d81669b5e474c01094f7d:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 4
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 2
+	--> Added advanced generic bounds = 1
+	--> Added advanced generic wildcards = 2
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision acb3b873cd1727fb9dd90a0e5b19f4f9cd597b69 to 97b840ac44bfada6438d81669b5e474c01094f7d
+
+
+****Parsing for addition at revision 97b840ac44bfada6438d81669b5e474c01094f7d****
+
+Added Generics.java to .\dummy-repo3\ repository source files.
+Added NullObjectPattern_test.java to .\dummy-repo3\ repository source files.
+Added Test.java to .\dummy-repo3\ repository source files.
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> Generics.java
+
+Wildcard Type --> List<? extends Number>
+Wildcard Type --> List<?>
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+ Generics pattern Box<String> stringBox = new Box<String>(); was added at revision 97b840ac44bfada6438d81669b5e474c01094f7d
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+ File for diff --> NullObjectPattern_test.java
+
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+ File for diff --> Test.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+Diff of 97b840ac44bfada6438d81669b5e474c01094f7d and 4cadd07a27ed1b35b73d91abb9f5b990248f7f39:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 5
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 2
+	--> Added advanced generic bounds = 1
+	--> Added advanced generic wildcards = 2
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision 97b840ac44bfada6438d81669b5e474c01094f7d to 4cadd07a27ed1b35b73d91abb9f5b990248f7f39
+
+
+****Parsing for addition at revision 4cadd07a27ed1b35b73d91abb9f5b990248f7f39****
+
+Added Generics.java to .\dummy-repo3\ repository source files.
+Added NullObjectPattern_test.java to .\dummy-repo3\ repository source files.
+Added Test.java to .\dummy-repo3\ repository source files.
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> Generics.java
+
+Wildcard Type --> List<? extends Number>
+Wildcard Type --> List<?>
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+ File for diff --> NullObjectPattern_test.java
+
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+ File for diff --> Test.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+Diff of 4cadd07a27ed1b35b73d91abb9f5b990248f7f39 and 7b5c0f8636370f9c903d5cda5353949c5668e4dd:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 5
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 2
+	--> Added advanced generic bounds = 1
+	--> Added advanced generic wildcards = 2
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision 4cadd07a27ed1b35b73d91abb9f5b990248f7f39 to 7b5c0f8636370f9c903d5cda5353949c5668e4dd
+
+
+****Parsing for addition at revision 7b5c0f8636370f9c903d5cda5353949c5668e4dd****
+
+Added Generics.java to .\dummy-repo3\ repository source files.
+Added NullObjectPattern_test.java to .\dummy-repo3\ repository source files.
+Added Test.java to .\dummy-repo3\ repository source files.
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> Generics.java
+
+Wildcard Type --> List<? extends Number>
+Wildcard Type --> List<?>
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+ Generics pattern Box<Integer> integerBox = new Box<Integer>(); was added at revision 7b5c0f8636370f9c903d5cda5353949c5668e4dd
+
+
+ Generics pattern Box<String> stringBox = new Box<String>(); was added at revision 7b5c0f8636370f9c903d5cda5353949c5668e4dd
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+ File for diff --> NullObjectPattern_test.java
+
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+ File for diff --> Test.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+Diff of 7b5c0f8636370f9c903d5cda5353949c5668e4dd and 541010765841f100ae169617bef0b74658fcf45e:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 7
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 2
+	--> Added advanced generic bounds = 1
+	--> Added advanced generic wildcards = 2
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision 7b5c0f8636370f9c903d5cda5353949c5668e4dd to 541010765841f100ae169617bef0b74658fcf45e
+
+
+****Parsing for addition at revision 541010765841f100ae169617bef0b74658fcf45e****
+
+Added Generics.java to .\dummy-repo3\ repository source files.
+Added NullObjectPattern_test.java to .\dummy-repo3\ repository source files.
+Added Test.java to .\dummy-repo3\ repository source files.
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> Generics.java
+
+Wildcard Type --> List<? extends Number>
+Wildcard Type --> List<?>
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+ Generics pattern public static <T extends Comparable<T>> T maximum(T x, T y, T z) was added at revision 541010765841f100ae169617bef0b74658fcf45e
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+ Generics pattern public static <T extends Comparable<T>> T maximum(T x, T y, T z) was added at revision 541010765841f100ae169617bef0b74658fcf45e
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+ Generics pattern List<? extends Number> was added at revision 541010765841f100ae169617bef0b74658fcf45e
+
+
+ Generics pattern List<?> was added at revision 541010765841f100ae169617bef0b74658fcf45e
+
+
+ File for diff --> NullObjectPattern_test.java
+
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+ File for diff --> Test.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+Generics.java
+
+Diff of 541010765841f100ae169617bef0b74658fcf45e and 81e8e10db8eeb72947dce3a93ccf321b20fae0c5:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 7
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 3
+	--> Added advanced generic bounds = 2
+	--> Added advanced generic wildcards = 4
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision 541010765841f100ae169617bef0b74658fcf45e to 81e8e10db8eeb72947dce3a93ccf321b20fae0c5
+
+
+****Parsing for addition at revision 81e8e10db8eeb72947dce3a93ccf321b20fae0c5****
+
+Added Generics.java to .\dummy-repo3\ repository source files.
+Added NullObjectPattern_test.java to .\dummy-repo3\ repository source files.
+Added Test.java to .\dummy-repo3\ repository source files.
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> Generics.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+
+ Generics pattern List<T> list = new ArrayList<T>(); was added at revision 81e8e10db8eeb72947dce3a93ccf321b20fae0c5
+
+
+ Generics pattern List<String> anEmptyStringList = Collections.<String>emptyList(); was added at revision 81e8e10db8eeb72947dce3a93ccf321b20fae0c5
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+
+ Generics pattern public <T> void method(T item) was added at revision 81e8e10db8eeb72947dce3a93ccf321b20fae0c5
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+
+ File for diff --> NullObjectPattern_test.java
+
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+
+ File for diff --> Test.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Generics.java
+/dev/null
+
+Diff of 81e8e10db8eeb72947dce3a93ccf321b20fae0c5 and 8ae6f1b662a3b1bce3bc6d68a9280e51aa81b65b:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 9
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 4
+	--> Added advanced generic bounds = 2
+	--> Added advanced generic wildcards = 4
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision 81e8e10db8eeb72947dce3a93ccf321b20fae0c5 to 8ae6f1b662a3b1bce3bc6d68a9280e51aa81b65b
+
+
+****Parsing for addition at revision 8ae6f1b662a3b1bce3bc6d68a9280e51aa81b65b****
+
+Added NullObjectPattern_test.java to .\dummy-repo3\ repository source files.
+Added Test.java to .\dummy-repo3\ repository source files.
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> NullObjectPattern_test.java
+
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+
+ File for diff --> Test.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+
+Diff of 8ae6f1b662a3b1bce3bc6d68a9280e51aa81b65b and 1537817083c8156db730090728e770346c60e2de:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 9
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 4
+	--> Added advanced generic bounds = 2
+	--> Added advanced generic wildcards = 4
+	--> Added advanced generic diamonds = 0
+GitAPIException thrown!
+Cannot revert commit '8ae6f1b662a3b1bce3bc6d68a9280e51aa81b65b' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision 1537817083c8156db730090728e770346c60e2de****
+
+Added NullObjectPattern_test.java to .\dummy-repo3\ repository source files.
+Added Test.java to .\dummy-repo3\ repository source files.
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> NullObjectPattern_test.java
+
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+
+ File for diff --> Test.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+/dev/null
+Test.java
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+
+Diff of 1537817083c8156db730090728e770346c60e2de and ca6943e2c0d57ca0f7f93b50c43a66c67bb75584:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 9
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 4
+	--> Added advanced generic bounds = 2
+	--> Added advanced generic wildcards = 4
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision 1537817083c8156db730090728e770346c60e2de to ca6943e2c0d57ca0f7f93b50c43a66c67bb75584
+
+
+****Parsing for addition at revision ca6943e2c0d57ca0f7f93b50c43a66c67bb75584****
+
+Added NullObjectPattern_test.java to .\dummy-repo3\ repository source files.
+Added Test.java to .\dummy-repo3\ repository source files.
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> NullObjectPattern_test.java
+
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+
+ File for diff --> Test.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+
+Diff of ca6943e2c0d57ca0f7f93b50c43a66c67bb75584 and adcd7da1cb4a5da6f00d6402e7ad55e99ca6e5fe:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 9
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 4
+	--> Added advanced generic bounds = 2
+	--> Added advanced generic wildcards = 4
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision ca6943e2c0d57ca0f7f93b50c43a66c67bb75584 to adcd7da1cb4a5da6f00d6402e7ad55e99ca6e5fe
+
+
+****Parsing for addition at revision adcd7da1cb4a5da6f00d6402e7ad55e99ca6e5fe****
+
+Added NullObjectPattern_test.java to .\dummy-repo3\ repository source files.
+Added Test.java to .\dummy-repo3\ repository source files.
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> NullObjectPattern_test.java
+
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+
+ File for diff --> Test.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+
+Diff of adcd7da1cb4a5da6f00d6402e7ad55e99ca6e5fe and 8bf78f65b9d7091fcf5801ccc9749fa95cad65dd:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 9
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 4
+	--> Added advanced generic bounds = 2
+	--> Added advanced generic wildcards = 4
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision adcd7da1cb4a5da6f00d6402e7ad55e99ca6e5fe to 8bf78f65b9d7091fcf5801ccc9749fa95cad65dd
+
+
+****Parsing for addition at revision 8bf78f65b9d7091fcf5801ccc9749fa95cad65dd****
+
+Added NullObjectPattern_test.java to .\dummy-repo3\ repository source files.
+Added Test.java to .\dummy-repo3\ repository source files.
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> NullObjectPattern_test.java
+
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+
+ File for diff --> Test.java
+
+Null usage pattern was added at revision 8bf78f65b9d7091fcf5801ccc9749fa95cad65dd
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+
+Diff of 8bf78f65b9d7091fcf5801ccc9749fa95cad65dd and b1eb5c7913a48fc32b14ac574bb083bc4b8b420f:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 9
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 4
+	--> Added advanced generic bounds = 2
+	--> Added advanced generic wildcards = 4
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision 8bf78f65b9d7091fcf5801ccc9749fa95cad65dd to b1eb5c7913a48fc32b14ac574bb083bc4b8b420f
+
+
+****Parsing for addition at revision b1eb5c7913a48fc32b14ac574bb083bc4b8b420f****
+
+Added NullObjectPattern_test.java to .\dummy-repo3\ repository source files.
+Added Test.java to .\dummy-repo3\ repository source files.
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> NullObjectPattern_test.java
+
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+
+ File for diff --> Test.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+Test.java
+
+Diff of b1eb5c7913a48fc32b14ac574bb083bc4b8b420f and 906f7aaff4b72be59893c7d19561680cf9eec15d:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 9
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 4
+	--> Added advanced generic bounds = 2
+	--> Added advanced generic wildcards = 4
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision b1eb5c7913a48fc32b14ac574bb083bc4b8b420f to 906f7aaff4b72be59893c7d19561680cf9eec15d
+
+
+****Parsing for addition at revision 906f7aaff4b72be59893c7d19561680cf9eec15d****
+
+Added NullObjectPattern_test.java to .\dummy-repo3\ repository source files.
+Added Test.java to .\dummy-repo3\ repository source files.
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> NullObjectPattern_test.java
+
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+
+ File for diff --> Test.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+Test.java
+/dev/null
+
+Diff of 906f7aaff4b72be59893c7d19561680cf9eec15d and db0ec14a3940e0b2143e3ef5388e24df349cdab8:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 9
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 4
+	--> Added advanced generic bounds = 2
+	--> Added advanced generic wildcards = 4
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision 906f7aaff4b72be59893c7d19561680cf9eec15d to db0ec14a3940e0b2143e3ef5388e24df349cdab8
+
+
+****Parsing for addition at revision db0ec14a3940e0b2143e3ef5388e24df349cdab8****
+
+Added NullObjectPattern_test.java to .\dummy-repo3\ repository source files.
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> NullObjectPattern_test.java
+
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+
+Diff of db0ec14a3940e0b2143e3ef5388e24df349cdab8 and 23de72296d40ecff16cc257be2895884dc0bfbed:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 9
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 4
+	--> Added advanced generic bounds = 2
+	--> Added advanced generic wildcards = 4
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision db0ec14a3940e0b2143e3ef5388e24df349cdab8 to 23de72296d40ecff16cc257be2895884dc0bfbed
+
+
+****Parsing for addition at revision 23de72296d40ecff16cc257be2895884dc0bfbed****
+
+Added NullObjectPattern_test.java to .\dummy-repo3\ repository source files.
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> NullObjectPattern_test.java
+
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+
+Diff of 23de72296d40ecff16cc257be2895884dc0bfbed and 1103532657974d248d3fb11435d24517038aaee4:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 9
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 4
+	--> Added advanced generic bounds = 2
+	--> Added advanced generic wildcards = 4
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision 23de72296d40ecff16cc257be2895884dc0bfbed to 1103532657974d248d3fb11435d24517038aaee4
+
+
+****Parsing for addition at revision 1103532657974d248d3fb11435d24517038aaee4****
+
+Added NullObjectPattern_test.java to .\dummy-repo3\ repository source files.
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> NullObjectPattern_test.java
+
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+
+Diff of 1103532657974d248d3fb11435d24517038aaee4 and 365cc50fb28186309bcba1a14a373a06d349a51d:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 9
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 4
+	--> Added advanced generic bounds = 2
+	--> Added advanced generic wildcards = 4
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision 1103532657974d248d3fb11435d24517038aaee4 to 365cc50fb28186309bcba1a14a373a06d349a51d
+
+
+****Parsing for addition at revision 365cc50fb28186309bcba1a14a373a06d349a51d****
+
+Added NullObjectPattern_test.java to .\dummy-repo3\ repository source files.
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> NullObjectPattern_test.java
+
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+
+Diff of 365cc50fb28186309bcba1a14a373a06d349a51d and 6a9bda47c7c18265dcc682be5513a82db528cdfd:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 9
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 4
+	--> Added advanced generic bounds = 2
+	--> Added advanced generic wildcards = 4
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision 365cc50fb28186309bcba1a14a373a06d349a51d to 6a9bda47c7c18265dcc682be5513a82db528cdfd
+
+
+****Parsing for addition at revision 6a9bda47c7c18265dcc682be5513a82db528cdfd****
+
+Added NullObjectPattern_test.java to .\dummy-repo3\ repository source files.
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> NullObjectPattern_test.java
+
+NODP in play! --> NullObjectPattern_test￿instance￿return instance;
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+NullObjectPattern_test.java
+/dev/null
+
+Diff of 6a9bda47c7c18265dcc682be5513a82db528cdfd and 8cf75c0547a098c00681bfde63fc246f4e278696:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 9
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 4
+	--> Added advanced generic bounds = 2
+	--> Added advanced generic wildcards = 4
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision 6a9bda47c7c18265dcc682be5513a82db528cdfd to 8cf75c0547a098c00681bfde63fc246f4e278696
+
+
+****Parsing for addition at revision 8cf75c0547a098c00681bfde63fc246f4e278696****
+
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+
+Diff of 8cf75c0547a098c00681bfde63fc246f4e278696 and 6cc49806961fcbb536f5f386d3bdd0724f6beaff:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 9
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 4
+	--> Added advanced generic bounds = 2
+	--> Added advanced generic wildcards = 4
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision 8cf75c0547a098c00681bfde63fc246f4e278696 to 6cc49806961fcbb536f5f386d3bdd0724f6beaff
+
+
+****Parsing for addition at revision 6cc49806961fcbb536f5f386d3bdd0724f6beaff****
+
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+
+Diff of 6cc49806961fcbb536f5f386d3bdd0724f6beaff and 48ac7505f6c0c6a9c33c56514a6dcab2875917fc:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 9
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 4
+	--> Added advanced generic bounds = 2
+	--> Added advanced generic wildcards = 4
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision 6cc49806961fcbb536f5f386d3bdd0724f6beaff to 48ac7505f6c0c6a9c33c56514a6dcab2875917fc
+
+
+****Parsing for addition at revision 48ac7505f6c0c6a9c33c56514a6dcab2875917fc****
+
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+
+Diff of 48ac7505f6c0c6a9c33c56514a6dcab2875917fc and 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 9
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 4
+	--> Added advanced generic bounds = 2
+	--> Added advanced generic wildcards = 4
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision 48ac7505f6c0c6a9c33c56514a6dcab2875917fc to 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db
+
+
+****Parsing for addition at revision 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db****
+
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+
+Diff of 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db and f29e26e40d3a244499ae41fb825264ffa230815b:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 9
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 4
+	--> Added advanced generic bounds = 2
+	--> Added advanced generic wildcards = 4
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db to f29e26e40d3a244499ae41fb825264ffa230815b
+
+
+****Parsing for addition at revision f29e26e40d3a244499ae41fb825264ffa230815b****
+
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+testClass.java
+
+Diff of f29e26e40d3a244499ae41fb825264ffa230815b and da6b1b03cc7d21c11e543c8549fcfda5b7511583:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 9
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 4
+	--> Added advanced generic bounds = 2
+	--> Added advanced generic wildcards = 4
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision f29e26e40d3a244499ae41fb825264ffa230815b to da6b1b03cc7d21c11e543c8549fcfda5b7511583
+
+
+****Parsing for addition at revision da6b1b03cc7d21c11e543c8549fcfda5b7511583****
+
+Added testClass.java to .\dummy-repo3\ repository source files.
+
+ File for diff --> testClass.java
+
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+/dev/null
+Rename happened!
+MIGHT BE FILE NAME FOR COMPARISON:
+testClass.java
+/dev/null
+
+Diff of da6b1b03cc7d21c11e543c8549fcfda5b7511583 and dcf67baa545756ab03d2000c4edf326e09009f4e:
+SIMPLE GENERICS = 0
+	--> Added simple generic fields = 0
+	--> Added simple generic variables  = 9
+	--> Added simple generic methods = 0
+	--> Added simple generic returns = 0
+ADVANCED GENERICS:
+	--> Added advanced generic classes = 0
+	--> Added advanced generic fields = 0
+	--> Added advanced generic methods = 0
+	--> Added advanced generic returns = 0
+	--> Added advanced generic nested = 0
+	--> Added advanced generic parameters = 4
+	--> Added advanced generic bounds = 2
+	--> Added advanced generic wildcards = 4
+	--> Added advanced generic diamonds = 0
+
+ Reverted revision da6b1b03cc7d21c11e543c8549fcfda5b7511583 to dcf67baa545756ab03d2000c4edf326e09009f4e
+
+************Analysis complete************
+SIMPLE GENERICS:
+Brittany Johnson added 0 instances of simple generics in repository dummy-repo3
+Brittany Johnson added simple generic field count = 0
+Brittany Johnson added simple generic variables count =  9
+Brittany Johnson added simple generic methods count =  0
+Brittany Johnson added simple generic return count =  0
+
+
+ADVANCED GENERICS:
+Brittany Johnson added 0 instances of advanced generics in repository dummy-repo3
+Brittany Johnson added advanced generic class count = 0
+Brittany Johnson added advanced generic field count = 0
+Brittany Johnson added advanced generic method count = 0
+Brittany Johnson added advanced generic return count = 0
+Brittany Johnson added advanced generic nested count = 0
+Brittany Johnson added advanced generic parameters count = 4
+Brittany Johnson added advanced generic bound count = 2
+Brittany Johnson added advanced generic wildcard count = 4
+Brittany Johnson added advanced generic diamond count = 0
+File copied successfully!

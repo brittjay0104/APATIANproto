@@ -24,6 +24,7 @@ import org.eclipse.jgit.api.errors.NoMessageException;
 import org.eclipse.jgit.api.errors.UnmergedPathsException;
 import org.eclipse.jgit.api.errors.WrongRepositoryStateException;
 import org.eclipse.jgit.diff.DiffEntry;
+import org.eclipse.jgit.diff.DiffEntry.ChangeType;
 import org.eclipse.jgit.diff.DiffFormatter;
 import org.eclipse.jgit.diff.RenameDetector;
 import org.eclipse.jgit.errors.RepositoryNotFoundException;
@@ -1089,25 +1090,30 @@ public class ModelRepository {
 			DiffFormatter df = new DiffFormatter(out);
 			df.setRepository(repo);
 			df.setDetectRenames(true);
-	
+			df.scan(oldId, headId);
 			
+			RenameDetector rd = df.getRenameDetector();
+			
+			// RENAME DETECTION
+			List<DiffEntry> compute = rd.compute();
+			
+			if (!(compute.isEmpty())){
+				System.out.println("Rename happened!");
+			}
+			
+//			for (DiffEntry diff: compute){
+//				System.out.println("MIGHT BE FILE NAME FOR COMPARISON:");
+//				System.out.println(diff.getNewPath());
+//				System.out.println(diff.getOldPath());
+//			}
+//			
 			//System.out.println("******************** GENERICS ADDITION DIFF *************************");
 			
-			for (DiffEntry diff: diffs){
-				// rename detection
-				// TODO set minimum score for rename??
+			for (DiffEntry diff: diffs){							
 				
-				RenameDetector rd = df.getRenameDetector();
-				
-				List<DiffEntry> compute = rd.compute();
-				
-				if (compute.contains(diff)){
-					System.out.println("This diff is a file rename!");
-				}
-								
-//				if (!(rd.compute().isEmpty())){
-//					System.out.println("Rename happened!!");
-//				}				
+				System.out.println("MIGHT BE FILE NAME FOR RENAME:");
+				System.out.println(diff.getNewPath());
+				System.out.println(diff.getOldPath());
 				
 				df.format(diff);
 				diff.getOldId();
