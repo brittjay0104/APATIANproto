@@ -166,8 +166,15 @@ public class GenericsVisitor_2 extends ASTVisitor {
 				if (node.getParent() instanceof MethodDeclaration){
 					MethodDeclaration m = (MethodDeclaration) node.getParent();
 					String method = findSourceForNode(m);
-										
-					String meth = method.substring(0, method.indexOf("{")).trim();
+					String meth = "";
+					
+					if (method.contains("{")){
+						meth = method.substring(0, method.indexOf("{")).trim();						
+					}
+					
+					if (!(method.contains("{"))){
+						meth = method.substring(0, method.indexOf(";")).trim();
+					}
 					
 					//System.out.println("Advanced generic type in method --> " + meth);
 					
@@ -200,7 +207,15 @@ public class GenericsVisitor_2 extends ASTVisitor {
 		if (md != null){
 			String methodDec = findSourceForNode(md.getName());
 			String method = findSourceForNode(md);
-			String methDec = method.substring(0, method.indexOf("{"));	
+			String methDec = "";
+			
+			if (method.contains("{")){
+				methDec = method.substring(0, method.indexOf("{")).trim();	
+			}
+			
+			if (!(method.contains("{"))){
+				methDec = method.substring(0, method.indexOf(";")).trim();				
+			}
 			
 			List typeArguments = node.typeArguments();
 			
@@ -308,7 +323,14 @@ public class GenericsVisitor_2 extends ASTVisitor {
 			MethodDeclaration md = getMethodDeclaration(node);
 			String methodDec = findSourceForNode(md.getName());
 			String s = findSourceForNode(md);
-			String meth = s.substring(0, s.indexOf("{"));
+			String meth = "";
+			
+			if (s.contains("{")){
+				meth = s.substring(0, s.indexOf("{")).trim();				
+			}
+			if (!(s.contains("{"))){
+				meth = s.substring(0, s.indexOf(";")).trim();
+			}
 			
 			List typeBounds = node.typeBounds();
 			

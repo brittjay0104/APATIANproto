@@ -1091,18 +1091,24 @@ public class ModelRepository {
 			df.setDetectRenames(true);
 	
 			
-			System.out.println("******************** GENERICS ADDITION DIFF *************************");
+			//System.out.println("******************** GENERICS ADDITION DIFF *************************");
 			
 			for (DiffEntry diff: diffs){
 				// rename detection
 				// TODO set minimum score for rename??
-				RenameDetector rd = df.getRenameDetector();
-				//rd.addAll(diffs);
-				if (!(rd.compute().isEmpty())){
-					System.out.println("Rename happened!!");
-				}				
 				
-
+				RenameDetector rd = df.getRenameDetector();
+				
+				List<DiffEntry> compute = rd.compute();
+				
+				if (compute.contains(diff)){
+					System.out.println("This diff is a file rename!");
+				}
+								
+//				if (!(rd.compute().isEmpty())){
+//					System.out.println("Rename happened!!");
+//				}				
+				
 				df.format(diff);
 				diff.getOldId();
 				String diffText = out.toString("UTF-8");
@@ -1281,7 +1287,7 @@ public class ModelRepository {
 			df.setDetectRenames(true);
 	
 			
-			System.out.println("******************** ADDITION DIFF *************************");
+			//System.out.println("******************** ADDITION DIFF *************************");
 			
 			
 			for(DiffEntry diff : diffs)
@@ -1291,9 +1297,9 @@ public class ModelRepository {
 				
 				List<DiffEntry> compute = rd.compute();
 				
-//				if (!(compute.isEmpty())){
-//					System.out.println("This diff is a file rename!");
-//				}
+				if (!(compute.isEmpty())){
+					System.out.println("This diff is a file rename!");
+				}
 
 				df.format(diff);
 				diff.getOldId();
