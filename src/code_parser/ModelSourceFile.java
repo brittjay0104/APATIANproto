@@ -47,7 +47,8 @@ public class ModelSourceFile {
 //	//public List<String> genericParameters;
 //	public List<String> genericVarDeclarations;
 	
-	// TODO propogate through file!
+	//generics
+	public List<String> allGenerics;
 	public HashMap<String, List<String>> simpleGenerics;
 	public HashMap<String, List<String>> advancedGenerics;
 
@@ -91,6 +92,7 @@ public class ModelSourceFile {
 		optVars = new ArrayList<String>();
 		catchBlocks = new ArrayList<String>();
 
+		allGenerics = new ArrayList<String>();
 		simpleGenerics = new HashMap<String, List<String>>();
 		advancedGenerics = new HashMap<String, List<String>>();
 		
@@ -288,6 +290,10 @@ public class ModelSourceFile {
 		methodInvocs.put(method, count);
 	}
 	
+	public List<String> getAllGenerics(){
+		return allGenerics;
+	}
+	
 	public HashMap<String, List<String>> getSimpleGenerics(){
 		return simpleGenerics;
 	} 
@@ -441,6 +447,16 @@ public class ModelSourceFile {
 		
 		for (String s: g){
 			advancedGenerics.get(key).add(s);
+		}
+	}
+	
+	public void addGeneric (String generic){
+		allGenerics.add(generic);
+	}
+	
+	public void setAllGenerics(List<String> generics){
+		for (String s: generics){
+			allGenerics.add(s);
 		}
 	}
 	

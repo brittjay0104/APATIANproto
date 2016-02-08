@@ -25,6 +25,9 @@ import code_parser.ModelSourceFile;
 
 public class GenericsVisitor_2 extends ASTVisitor {
 	
+	//list of all (unique) code with generics
+	public List<String> allGenerics = new ArrayList<String>();
+	
 	// simple generics: using generics in fields, methods, and variable declarations
 	public HashMap<String, List<String>> simpleGenerics = new HashMap<String, List<String>>();
 	
@@ -97,6 +100,10 @@ public class GenericsVisitor_2 extends ASTVisitor {
 		return false;
 	}
 	
+	public List<String> getAllGenerics(){
+		return allGenerics;
+	}
+	
 	public HashMap<String, List<String>> getSimpleGenerics (){
 		return simpleGenerics;
 	}
@@ -117,6 +124,10 @@ public class GenericsVisitor_2 extends ASTVisitor {
 			String method = findSourceForNode(md.getName());
 			
 			String pattern = method + CHECK_SEPERATOR + parent;
+			
+			if (!(allGenerics.contains(parent))){
+				allGenerics.add(parent);
+			}
 			
 			advancedGenerics.get("wildcard").add(pattern);
 		}
@@ -150,7 +161,12 @@ public class GenericsVisitor_2 extends ASTVisitor {
 		}
 
 		//System.out.println("Generic class --> " + sb.toString());
-		advancedGenerics.get("classes").add(sb.toString());
+		String gClass = sb.toString();
+		if (!(allGenerics.contains(gClass))){
+			allGenerics.add(gClass);
+		}
+
+		advancedGenerics.get("classes").add(gClass);
 		
 		return true;
 	}
@@ -178,7 +194,12 @@ public class GenericsVisitor_2 extends ASTVisitor {
 					
 					//System.out.println("Advanced generic type in method --> " + meth);
 					
+					if (!(allGenerics.contains(meth))){
+						allGenerics.add(meth);
+					}
+					
 					advancedGenerics.get("parameters").add(meth);
+					
 				}
 				
 				// fields
@@ -189,6 +210,10 @@ public class GenericsVisitor_2 extends ASTVisitor {
 						String field = findSourceForNode(fd);
 						
 						//System.out.println("Advanced generic field --> " + field);
+						if (!(allGenerics.contains(field))){
+							allGenerics.add(field);
+						}
+						
 						advancedGenerics.get("fields").add(field);
 					}
 				}
@@ -225,6 +250,11 @@ public class GenericsVisitor_2 extends ASTVisitor {
 				String source = findSourceForNode(thisParent);
 				
 				String pattern = methodDec + CHECK_SEPERATOR + source;
+				
+				if (!(allGenerics.contains(source))){
+					allGenerics.add(source);
+				}
+				
 				advancedGenerics.get("diamond").add(pattern);
 				
 			}
@@ -244,6 +274,10 @@ public class GenericsVisitor_2 extends ASTVisitor {
 						
 						String pt = methodDec + CHECK_SEPERATOR + varDec;
 						
+						if (!(allGenerics.contains(varDec))){
+							allGenerics.add(varDec);
+						}
+						
 						simpleGenerics.get("variables").add(pt);
 						
 					}
@@ -255,11 +289,17 @@ public class GenericsVisitor_2 extends ASTVisitor {
 						String generics = ta.toString() + CHECK_SEPERATOR + methDec;
 						
 						// advanced (written)
-						if (stringContainsTypeParameter(ta.toString(), types)){						
+						if (stringContainsTypeParameter(ta.toString(), types)){	
+							if (!(allGenerics.contains(methDec))){
+								allGenerics.add(methDec);
+							}
 							advancedGenerics.get("methods").add(generics);
 						}
 						
 						// simple (used)
+						if (!(allGenerics.contains(methDec))){
+							allGenerics.add(methDec);
+						}
 						simpleGenerics.get("methods").add(generics);
 						
 						
@@ -274,10 +314,18 @@ public class GenericsVisitor_2 extends ASTVisitor {
 						
 						// advanced
 						if (stringContainsTypeParameter(ta.toString(), types)){
+							if (!(allGenerics.contains(ret))){
+								allGenerics.add(ret);
+							}
+							
 							advancedGenerics.get("return").add(generics);
 						}
 						
 						// simple
+						if (!(allGenerics.contains(ret))){
+							allGenerics.add(ret);
+						}
+						
 						simpleGenerics.get("return").add(generics);
 					}						
 					
@@ -293,13 +341,24 @@ public class GenericsVisitor_2 extends ASTVisitor {
 								
 								// other than method
 								if (! (thisParent instanceof MethodDeclaration)){
-									String paramType = methodDec + CHECK_SEPERATOR + thisParent.toString();
+									String parent = thisParent.toString();
+									String paramType = methodDec + CHECK_SEPERATOR + parent;
+									
+									if (!(allGenerics.contains(parent))){
+										allGenerics.add(parent);
+									}
+									
 									advancedGenerics.get("nested").add(paramType);
 								}
 								
 								// method
 								if (thisParent instanceof MethodDeclaration){
 									String meth = ta.toString() + CHECK_SEPERATOR + methDec;
+									
+									if (!(allGenerics.contains(methDec))){
+										allGenerics.add(methDec);
+									}
+									
 									advancedGenerics.get("nested").add(meth);								
 								}
 								
@@ -339,12 +398,20 @@ public class GenericsVisitor_2 extends ASTVisitor {
 				//System.out.println("Type bound --> " + tb.toString());
 				String methodTypeBound = tb.toString() + CHECK_SEPERATOR + meth ;
 				
+				if (!(allGenerics.contains(meth))){
+					allGenerics.add(meth);
+				}
+				
 				advancedGenerics.get("bounds").add(methodTypeBound);
 			}
 			
 			// type parameters
 			String typeParam = node.toString();
 			String methodParam = typeParam + CHECK_SEPERATOR + meth.trim();
+			
+			if (!(allGenerics.contains(meth.trim()))){
+				allGenerics.add(meth.trim());
+			}
 			
 			advancedGenerics.get("parameters").add(methodParam);
 			//System.out.println("Method Type Parameter --> " + typeParam);

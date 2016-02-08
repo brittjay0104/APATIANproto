@@ -432,6 +432,7 @@ public class ModelRepository {
 		
 		
 		// GENERICS
+		System.out.println("Added generics to repository " + repoName + " = " + dev.getAllAddedGenerics());
 		System.out.println("SIMPLE GENERICS:");
 		System.out.println(devName + " added " + dev.getAddedSimpleGenerics() + " instances of simple generics in repository " + repoName);
 		System.out.println(devName + " added simple generic field count = " + dev.getAddedSimpleFields());
@@ -559,6 +560,8 @@ public class ModelRepository {
 			
 			// GENERICS
 			parser.parseForGenerics(f);
+			
+			
 			
 			// simple - fields
 			List<String> sFields = f.getSimpleGenerics().get("fields");
@@ -1038,13 +1041,13 @@ public class ModelRepository {
 		
 		File repoDir = new File(directory);
 		
-		int addedSimpleGenerics = 0;
+		int addedGenerics = 0;
+		
 		int addedSimpleFields = 0;
 		int addedSimpleVariables = 0;
 		int addedSimpleMethods = 0;
 		int addedSimpleReturn = 0;
 		
-		int addedAdvancedGenerics = 0;
 		int addedAdvancedClasses = 0;
 		int addedAdvancedFields = 0;
 		int addedAdvancedMethods = 0;
@@ -1097,124 +1100,101 @@ public class ModelRepository {
 			// RENAME DETECTION
 			List<DiffEntry> compute = rd.compute();
 			
-			if (!(compute.isEmpty())){
-				System.out.println("Rename happened!");
-			}
-			
-//			for (DiffEntry diff: compute){
-//				System.out.println("MIGHT BE FILE NAME FOR COMPARISON:");
-//				System.out.println(diff.getNewPath());
-//				System.out.println(diff.getOldPath());
-//			}
-//			
-			//System.out.println("******************** GENERICS ADDITION DIFF *************************");
-			
-			for (DiffEntry diff: diffs){							
-				
-				System.out.println("MIGHT BE FILE NAME FOR RENAME:");
-				System.out.println(diff.getNewPath());
-				System.out.println(diff.getOldPath());
-				
+			for (DiffEntry diff: compute){
+				System.out.println("MIGHT BE FILE NAME FOR COMPARISON:");
 				df.format(diff);
-				diff.getOldId();
 				String diffText = out.toString("UTF-8");
 				
-				if (diffText.contains(file.getName())){
+				// checking if rename (paths won't equal if rename)
+				if (diff.getNewPath().equals(diff.getOldPath())){
 					
-					BufferedReader br = new BufferedReader(new StringReader(diffText));
-					String line = null;
-					
-					while ((line = br.readLine()) != null){
+					if (diffText.contains(file.getName())){
 						
-						line = line.trim();
+						BufferedReader br = new BufferedReader(new StringReader(diffText));
+						String line = null;
 						
-						line = line.replaceAll("\t", " ");
-						
-						// iterate over parser patterns for addition
-						if (line.startsWith("+")){
+						while ((line = br.readLine()) != null){
 							
-							for (String pattern: patterns){
-								// SIMPLE
-								if (file.getSimpleGenerics().get("fields").contains(pattern)){
-									//System.out.println(pattern);
+							line = line.trim();
+							
+							line = line.replaceAll("\t", " ");
+							
+							// iterate over parser patterns for addition
+							if (line.startsWith("+")){
+								
+								for (String pattern: patterns){		
 									
-									addedSimpleFields = checkAddedGenerics(addedSimpleFields, currH, diffText, line, pattern);
-								} 
-								else if (file.getSimpleGenerics().get("variables").contains(pattern)){
-									//System.out.println(pattern);
+									if (addedGenerics < checkAddedGenerics(addedGenerics, currentHash, diffText, pattern)){
+										addedGenerics = checkAddedGenerics(addedGenerics, currentHash, diffText, pattern);
+										
+										// simple generics iteration
+										Iterator sIT = file.getSimpleGenerics().entrySet().iterator();
+										while (sIT.hasNext()){
+											Map.Entry<String, List<String>> pair = (Map.Entry<String, List<String>>) sIT.next();
+											
+											//fields
+											addedSimpleFields = classifyAddedGenerics("fields", addedSimpleFields, pattern, pair);
+											
+											//variables
+											addedSimpleVariables = classifyAddedGenerics("variables", addedSimpleVariables, pattern, pair);
+											
+											//methods
+											addedSimpleMethods = classifyAddedGenerics("methods", addedSimpleMethods, pattern, pair);											
+											
+											//return
+											addedSimpleReturn = classifyAddedGenerics("return", addedSimpleReturn, pattern, pair);
+										}
+										
+										//advanced generics iteration
+										Iterator aIT = file.getAdvancedGenerics().entrySet().iterator();
+										while (aIT.hasNext()){
+											Map.Entry<String, List<String>> pair = (Map.Entry<String, List<String>>) aIT.next();
+											
+											//classes
+											addedAdvancedClasses = classifyAddedGenerics("classes", addedAdvancedClasses, pattern, pair);
 									
-									addedSimpleVariables = checkAddedGenerics(addedSimpleVariables, currH, diffText, line, pattern);
+											//fields
+											addedAdvancedFields = classifyAddedGenerics("fields", addedAdvancedFields, pattern, pair);
+											
+											//methods
+											addedAdvancedMethods = classifyAddedGenerics("methods", addedAdvancedMethods, pattern, pair);
+																						
+											//return
+											addedAdvancedReturn = classifyAddedGenerics("return", addedAdvancedReturn, pattern, pair);
+											
+											//nested
+											addedAdvancedNested = classifyAddedGenerics("nested", addedAdvancedNested, pattern, pair);
+																						
+											//parameters
+											addedAdvancedParams = classifyAddedGenerics("parameters", addedAdvancedParams, pattern, pair);
+																						
+											//bounds
+											addedAdvancedBounds = classifyAddedGenerics("bounds", addedAdvancedBounds, pattern, pair);
+																								
+											//wildcard
+											addedAdvancedWildCards = classifyAddedGenerics("wildcard", addedAdvancedWildCards, pattern, pair);
+																						
+											//diamond
+											addedAdvancedDiamonds = classifyAddedGenerics("diamond", addedAdvancedDiamonds, pattern, pair);
+											
+										}
+									}									
 								}
-								else if (file.getSimpleGenerics().get("methods").contains(pattern)){
-									//System.out.println(pattern);
-									
-									addedSimpleMethods = checkAddedGenerics(addedSimpleMethods, currH, diffText, line, pattern);
-								}
-								else if (file.getSimpleGenerics().get("return").contains(pattern)){
-									//System.out.println(pattern);
-									
-									addedSimpleReturn = checkAddedGenerics(addedSimpleReturn, currH, diffText, line, pattern);
-								}
-								//ADVANCED
-								else if (file.getAdvancedGenerics().get("classes").contains(pattern)){
-//									System.out.println(pattern);
-									
-									addedAdvancedClasses = checkAddedGenerics(addedAdvancedClasses, currH, diffText, line, pattern);
-								}
-								else if (file.getAdvancedGenerics().get("fields").contains(pattern)){
-//									System.out.println(pattern);
-									
-									addedAdvancedFields = checkAddedGenerics(addedAdvancedFields, currH, diffText, line, pattern);
-								}
-								else if (file.getAdvancedGenerics().get("methods").contains(pattern)){
-//									System.out.println(pattern);
-									
-									addedAdvancedMethods = checkAddedGenerics(addedAdvancedMethods, currH, diffText, line, pattern);
-								}
-								else if (file.getAdvancedGenerics().get("return").contains(pattern)){
-//									System.out.println(pattern);
-									
-									addedAdvancedReturn = checkAddedGenerics(addedAdvancedReturn, currH, diffText, line, pattern);
-								}
-								else if (file.getAdvancedGenerics().get("nested").contains(pattern)){
-//									System.out.println(pattern);
-									
-									addedAdvancedNested = checkAddedGenerics(addedAdvancedNested, currH, diffText, line, pattern);
-								}
-								else if (file.getAdvancedGenerics().get("parameters").contains(pattern)){
-//									System.out.println(pattern);
-									
-									addedAdvancedParams = checkAddedGenerics(addedAdvancedParams, currH, diffText, line, pattern);
-								}
-								else if (file.getAdvancedGenerics().get("bounds").contains(pattern)){
-//									System.out.println(pattern);
-									
-									addedAdvancedBounds = checkAddedGenerics(addedAdvancedBounds, currH, diffText, line, pattern);
-								}
-								else if (file.getAdvancedGenerics().get("wildcard").contains(pattern)){
-//									System.out.println(pattern);
-									
-									addedAdvancedWildCards = checkAddedGenerics(addedAdvancedWildCards, currH, diffText, line, pattern);
-								}
-								else if (file.getAdvancedGenerics().get("diamond").contains(pattern)){
-//									System.out.println(pattern);
-									
-									addedAdvancedDiamonds = checkAddedGenerics(addedAdvancedDiamonds, currH, diffText, line, pattern);
-								}
+								
 							}
 							
 						}
 						
 					}
 					
+				out.reset();
 				}
-				
-			out.reset();
-				
-		}
+			}
 			
-			// TODO might need 10 or less filter back! Run without and see what we get.
+			
 			if (developer.getCommits().contains(currentHash)){
+				developer.setAddedGenerics(addedGenerics);
+				
 				// SIMPLE
 				developer.setAddedSimpleFields(addedSimpleFields);
 				developer.setAddedSimpleMethods(addedSimpleMethods);
@@ -1241,6 +1221,20 @@ public class ModelRepository {
 		}
 		
 		
+	}
+
+	private int classifyAddedGenerics(String key, int addedGenerics, String pattern, Map.Entry<String, List<String>> pair) {
+		if (pair.getKey().equals(key)){
+			for (String s: pair.getValue()){
+				System.out.println("Pattern --> " + pattern);
+				System.out.println("Full Pattern --> " + s);
+				if (s.contains(pattern)){
+					
+					addedGenerics += 1;
+				}
+			}
+		}
+		return addedGenerics;
 	}
 
 	public void additionDiff(String directory, ModelSourceFile file, List<String> checks, String oldH, String newH, ModelDeveloper developer) {
@@ -1437,21 +1431,10 @@ public class ModelRepository {
 		return added;
 	}
 	
-	private int checkAddedGenerics(int added, String newHash, String diffText, String line, String check){		
+	private int checkAddedGenerics(int added, String newHash, String diffText, String code){		
 		// get part after last checksep; that's what we search diff for
-		
-		int count = StringUtils.countMatches(check, Character.toString(CHECK_SEPERATOR));
-		String code = "";
-		
-		if (count == 1){
-			code = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
-		}
-		
-		if (count == 2){
-			code = check.substring(check.lastIndexOf(CHECK_SEPERATOR)+1, check.length());			
-		}
-		
-		if (isGenericsAddition(diffText, line, code)){
+	
+		if (isGenericsAddition(diffText, code)){
 			System.out.println("\n Generics pattern " + code + " was added at revision " + newHash + "\n");
 			
 //			System.out.println("******************** Diff Text ********************");
@@ -1463,17 +1446,15 @@ public class ModelRepository {
 		return added;
 	}
 	
-	private boolean isGenericsAddition(String diff, String line, String check){
+	private boolean isGenericsAddition(String diff, String check){
 		
 		int count = 0;		
+
+		count = StringUtils.countMatches(diff, check);
 		
-		if (line.contains(check)){
-			count = StringUtils.countMatches(diff, check);
-			
-			if (count == 1){
-				return true;
-			}			
-		}
+		if (count == 1){
+			return true;
+		}			
 		
 		return false;
 	}

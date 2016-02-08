@@ -244,15 +244,26 @@ public class ModelParser {
 		 GenericsVisitor_2 visitor = new GenericsVisitor_2(file);
 		 cu.accept(visitor);
 		
+		 List<String> generics = visitor.getAllGenerics();
 		 HashMap<String, List<String>> simpleGenerics = visitor.getSimpleGenerics();
-		
 		 HashMap<String, List<String>> advancedGenerics = visitor.getAdvancedGenerics();
+		 
+		for (String s: generics){
+		 	//System.out.println("Generics usage --> " + s);
+		 	file.addGeneric(s);
+		}
 		
+		for (String s: file.getAllGenerics()){
+			System.out.println("Generics usage --> " + s);
+		}
 
 		 // assign hashmaps to file 
 		
 		 file.setSimpleGenerics(simpleGenerics);
 		 file.setAdvancedGenerics(advancedGenerics);
+		 //file.setAllGenerics(generics);
+
+		 
 	
 
 //		Iterator  sfit = file.getSimpleGenerics().entrySet().iterator();

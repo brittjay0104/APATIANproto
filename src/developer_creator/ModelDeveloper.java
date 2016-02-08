@@ -18,6 +18,7 @@ public class ModelDeveloper {
 	private int removedCatchCounts;
 	private int addedCatchCounts;
 	
+	private int allAddedGenerics;
 	
 	private int addedSimpleGenerics;
 	private int addedSimpleFields;
@@ -56,6 +57,8 @@ public class ModelDeveloper {
 		addedOptCounts = 0;
 		removedCatchCounts = 0;
 		addedCatchCounts = 0;
+		
+		allAddedGenerics = 0;
 		
 		addedSimpleGenerics = 0;
 		addedSimpleFields = 0;
@@ -176,6 +179,14 @@ public class ModelDeveloper {
 	
 	public void setAddedAdvancedDiamond (int addedGenerics){
 		addedAdvancedDiamond = addedAdvancedDiamond + addedGenerics;
+	}
+	
+	public void setAddedGenerics(int addedGenerics){
+		allAddedGenerics = allAddedGenerics + addedGenerics;
+	}
+	
+	public int getAllAddedGenerics(){
+		return allAddedGenerics;
 	}
 	
 	public int getAddedSimpleGenerics(){
