@@ -120,7 +120,7 @@ public class GenericsVisitor_2 extends ASTVisitor {
 		
 		if (md != null){
 			String parent = node.getParent().toString();
-			System.out.println("Wildcard Type --> " + parent);	
+			//System.out.println("Wildcard Type --> " + parent);	
 			String method = findSourceForNode(md.getName());
 			
 			String pattern = method + CHECK_SEPERATOR + parent;

@@ -1,1 +1,4 @@
-dummy-repo3, brittjay0104, Brittany Johnson
+vanadium/java, yyoon, YoungSeok Yoon
+CIRDLES/Topsoil, johnzeringue, John Zeringue
+CIRDLES/ET_Redux, johnzeringue, John Zeringue
+CIRDLES/CHRONI, johnzeringue, John Zeringue

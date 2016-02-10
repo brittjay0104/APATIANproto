@@ -252,18 +252,11 @@ public class ModelParser {
 		 	//System.out.println("Generics usage --> " + s);
 		 	file.addGeneric(s);
 		}
-		
-		for (String s: file.getAllGenerics()){
-			System.out.println("Generics usage --> " + s);
-		}
-
+	
 		 // assign hashmaps to file 
 		
 		 file.setSimpleGenerics(simpleGenerics);
 		 file.setAdvancedGenerics(advancedGenerics);
-		 //file.setAllGenerics(generics);
-
-		 
 	
 
 //		Iterator  sfit = file.getSimpleGenerics().entrySet().iterator();

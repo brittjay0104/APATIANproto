@@ -76,3 +76,6 @@ vanadium/java, yyoon, YoungSeok Yoon
 CIRDLES/Topsoil, johnzeringue, John Zeringue
 CIRDLES/ET_Redux, johnzeringue, John Zeringue
 CIRDLES/CHRONI, johnzeringue, John Zeringue
+DeveloperLiberationFront/Pdf-Reviewer, jssmith1
+DeveloperLiberationFront/Spreadsheet-Common-Crawler, jssmith1
+kjlubick/DevOps-Project, jssmith1

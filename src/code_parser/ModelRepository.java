@@ -509,7 +509,7 @@ public class ModelRepository {
 		setSourceFiles(directory);
 		
 		for (ModelSourceFile f: getSourceFiles()) {
-			System.out.println("\n File for diff --> " + f.getName() + "\n");
+			//System.out.println("\n File for diff --> " + f.getName() + "\n");
 			
 			//setFileRevisionHistory(git, f);
 
@@ -517,12 +517,12 @@ public class ModelRepository {
  
 			// parse the files AST for null checks, nodps, coll/opt usage, catches with NPE
 			// diff the current and older revision
-			List <String> checks = parser.parseForNull(f, previousHash);
-			for (String check: checks){
-				addUsagePattern(check);
-			}
-			// passing in ifAndNext
-			additionDiff(directory, f, checks, previousHash, currentHash, dev);
+			//List <String> checks = parser.parseForNull(f, previousHash);
+//			for (String check: checks){
+//				addUsagePattern(check);
+//			}
+//			// passing in ifAndNext
+//			additionDiff(directory, f, checks, previousHash, currentHash, dev);
 			
 		
 			ArrayList<List<String>> npes = parser.parseForNPEAvoidance(f);
@@ -561,106 +561,13 @@ public class ModelRepository {
 			// GENERICS
 			parser.parseForGenerics(f);
 			
+			List<String> generics = f.getAllGenerics();
 			
-			
-			// simple - fields
-			List<String> sFields = f.getSimpleGenerics().get("fields");
-			
-			for (String s: sFields){
+			for (String s: generics){
 				addUsagePattern(s);
 			}
-			genericsAdditionDiff(directory, f, sFields, previousHash, currentHash, dev);
-			
-			// simple - variables
-			List<String> sVariables = f.getSimpleGenerics().get("variables");
-			
-			for (String s: sVariables){
-				addUsagePattern(s);
-			}
-			genericsAdditionDiff(directory, f, sVariables, previousHash, currentHash, dev);
-			
-			// simple - methods
-			List<String> sMethods = f.getSimpleGenerics().get("methods");
-			
-			for (String s: sMethods){
-				addUsagePattern(s);
-			}
-			genericsAdditionDiff(directory, f, sMethods, previousHash, currentHash, dev);
-			
-			// simple - return
-			List<String> sReturn = f.getSimpleGenerics().get("return");
-			
-			for (String s: sReturn){
-				addUsagePattern(s);
-			}
-			genericsAdditionDiff(directory, f, sReturn, previousHash, currentHash, dev);
-			
-			// advanced - classes
-			List<String> aClass = f.getAdvancedGenerics().get("classes");
-			
-			for (String a: aClass){
-				addUsagePattern(a);
-			}
-			
-			genericsAdditionDiff(directory, f, aClass, previousHash, currentHash, dev);
-			
-			// advanced - fields
-			List<String> aFields = f.getAdvancedGenerics().get("fields"); 
-			
-			for (String a: aFields){
-				addUsagePattern(a);
-			}			
-			genericsAdditionDiff(directory, f, aFields, previousHash, currentHash, dev);
-			
-			// advanced - methods
-			List<String> aMethods = f.getAdvancedGenerics().get("methods");
-			
-			for (String a: aMethods){
-				addUsagePattern(a);
-			}
-			genericsAdditionDiff(directory, f, aMethods, previousHash, currentHash, dev);
-			
-			// advanced - return
-			List<String> aReturn = f.getAdvancedGenerics().get("return");
-			
-			for (String a: aReturn){
-				addUsagePattern(a);
-			}
-			genericsAdditionDiff(directory, f, aReturn, previousHash, currentHash, dev);
-			
-			// advanced - nested
-			List<String> aNested = f.getAdvancedGenerics().get("nested");
-			
-			for (String a: aNested){
-				addUsagePattern(a);
-			}
-			genericsAdditionDiff(directory, f, aNested, previousHash, currentHash, dev);
-			
-			// advanced - params
-			List<String> aParams = f.getAdvancedGenerics().get("parameters");
-			
-			for (String a: aParams){
-				addUsagePattern(a);
-			}
-			genericsAdditionDiff(directory, f, aParams, previousHash, currentHash, dev);
-			
-			// advanced - bounds
-			List<String> aBounds = f.getAdvancedGenerics().get("bounds");
-			
-			for (String a: aBounds){
-				addUsagePattern(a);
-			}
-			genericsAdditionDiff(directory, f, aBounds, previousHash, currentHash, dev);
-			
-			// advanced - wildcard
-			List<String> aWildcard = f.getAdvancedGenerics().get("wildcard");
-			
-			for (String a: aWildcard){
-				addUsagePattern(a);
-			}
-			genericsAdditionDiff(directory, f, aWildcard, previousHash, currentHash, dev);
-			
-			
+			genericsAdditionDiff(directory, f, generics, previousHash, currentHash, dev);			
+					
 		}
 	}
 
@@ -1101,7 +1008,7 @@ public class ModelRepository {
 			List<DiffEntry> compute = rd.compute();
 			
 			for (DiffEntry diff: compute){
-				System.out.println("MIGHT BE FILE NAME FOR COMPARISON:");
+				//System.out.println("MIGHT BE FILE NAME FOR COMPARISON:");
 				df.format(diff);
 				String diffText = out.toString("UTF-8");
 				
@@ -1124,7 +1031,8 @@ public class ModelRepository {
 								
 								for (String pattern: patterns){		
 									
-									if (addedGenerics < checkAddedGenerics(addedGenerics, currentHash, diffText, pattern)){
+									if (line.contains(pattern)){
+										
 										addedGenerics = checkAddedGenerics(addedGenerics, currentHash, diffText, pattern);
 										
 										// simple generics iteration
@@ -1152,33 +1060,35 @@ public class ModelRepository {
 											
 											//classes
 											addedAdvancedClasses = classifyAddedGenerics("classes", addedAdvancedClasses, pattern, pair);
-									
+											
 											//fields
 											addedAdvancedFields = classifyAddedGenerics("fields", addedAdvancedFields, pattern, pair);
 											
 											//methods
 											addedAdvancedMethods = classifyAddedGenerics("methods", addedAdvancedMethods, pattern, pair);
-																						
+											
 											//return
 											addedAdvancedReturn = classifyAddedGenerics("return", addedAdvancedReturn, pattern, pair);
 											
 											//nested
 											addedAdvancedNested = classifyAddedGenerics("nested", addedAdvancedNested, pattern, pair);
-																						
+											
 											//parameters
 											addedAdvancedParams = classifyAddedGenerics("parameters", addedAdvancedParams, pattern, pair);
-																						
+											
 											//bounds
 											addedAdvancedBounds = classifyAddedGenerics("bounds", addedAdvancedBounds, pattern, pair);
-																								
+											
 											//wildcard
 											addedAdvancedWildCards = classifyAddedGenerics("wildcard", addedAdvancedWildCards, pattern, pair);
-																						
+											
 											//diamond
 											addedAdvancedDiamonds = classifyAddedGenerics("diamond", addedAdvancedDiamonds, pattern, pair);
 											
-										}
-									}									
+										}									
+										
+									}
+									
 								}
 								
 							}
@@ -1226,10 +1136,10 @@ public class ModelRepository {
 	private int classifyAddedGenerics(String key, int addedGenerics, String pattern, Map.Entry<String, List<String>> pair) {
 		if (pair.getKey().equals(key)){
 			for (String s: pair.getValue()){
-				System.out.println("Pattern --> " + pattern);
 				System.out.println("Full Pattern --> " + s);
+				System.out.println("Pattern --> " + pattern);
 				if (s.contains(pattern)){
-					
+					System.out.println("Matched " + pattern + " to " + s + "!");
 					addedGenerics += 1;
 				}
 			}
