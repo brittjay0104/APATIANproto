@@ -30,6 +30,8 @@ public class GenericsVisitor_2 extends ASTVisitor {
 	//list of all (unique) code with generics
 	public List<String> allGenerics = new ArrayList<String>();
 	
+	public HashMap<String, List<String>> generics = new HashMap<String, List<String>>();
+	
 	// simple generics: using generics in fields, methods, and variable declarations
 	public HashMap<String, List<String>> simpleGenerics = new HashMap<String, List<String>>();
 	
@@ -50,6 +52,17 @@ public class GenericsVisitor_2 extends ASTVisitor {
 		types.add("V");
 		types.add("S");
 		types.add("?");
+		
+		generics.put("type argument methods", new ArrayList<String>());
+		generics.put("wildcard", new ArrayList<String>());
+		generics.put("type declarations", new ArrayList<String>());
+		generics.put("type parameter methods", new ArrayList<String>());
+		generics.put("type parameter fields", new ArrayList<String>());
+		generics.put("diamond", new ArrayList<String>());
+		generics.put("method invocations", new ArrayList<String>());
+		generics.put("class instantiation", new ArrayList<String>());
+		generics.put("nested", new ArrayList<String>());
+		
 		
 		simpleGenerics.put("fields", new ArrayList<String>());
 		simpleGenerics.put("class instances", new ArrayList<String>());
