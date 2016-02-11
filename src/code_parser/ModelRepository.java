@@ -433,26 +433,16 @@ public class ModelRepository {
 		
 		// GENERICS
 		System.out.println("Added generics to repository " + repoName + " = " + dev.getAllAddedGenerics());
-		System.out.println("SIMPLE GENERICS:");
-		System.out.println(devName + " added " + dev.getAddedSimpleGenerics() + " instances of simple generics in repository " + repoName);
-		System.out.println(devName + " added simple generic field count = " + dev.getAddedSimpleFields());
-		System.out.println(devName + " added simple generic variables count =  " + dev.getAddedSimpleVariables());
-		System.out.println(devName + " added simple generic methods count =  " + dev.getAddedSimpleMethods());
-		System.out.println(devName + " added simple generic return count =  " + dev.getAddedSimpleReturn());
-		System.out.println("\n");
-		
-		
-		System.out.println("ADVANCED GENERICS:");
-		System.out.println(devName + " added " + dev.getAddedAdvancedGenerics() + " instances of advanced generics in repository " + repoName);
-		System.out.println(devName + " added advanced generic class count = " + dev.getAddedAdvancedClasses());
-		System.out.println(devName + " added advanced generic field count = " + dev.getAddedAdvancedFields());
-		System.out.println(devName + " added advanced generic method count = " + dev.getAddedAdvancedMethods());
-		System.out.println(devName + " added advanced generic return count = " + dev.getAddedAdvancedReturn());
-		System.out.println(devName + " added advanced generic nested count = " + dev.getAddedAdvancedNested());
-		System.out.println(devName + " added advanced generic parameters count = " + dev.getAddedAdvancedParameters());
-		System.out.println(devName + " added advanced generic bound count = " + dev.getAddedAdvancedBounds());
-		System.out.println(devName + " added advanced generic wildcard count = " + dev.getAddedAdvancedWildcard());
-		System.out.println(devName + " added advanced generic diamond count = " + dev.getAddedAdvancedDiamond());
+		System.out.println(devName + " added type argument method count = " + dev.getAddedTypeArgumentMethods());
+		System.out.println(devName + " added wildcard count = " + dev.getAddedWildcard());
+		System.out.println(devName + " added type declaration count = " + dev.getAddedTypeDecs());
+		System.out.println(devName + " added type parameter method count = " + dev.getAddedTypeParamMethods());
+		System.out.println(devName + " added type parameter field count = " + dev.getAddedTypeParamFields());
+		System.out.println(devName + " added diamond count = " + dev.getAddedTypeParamMethods());
+		System.out.println(devName + " added method invocation count = " + dev.getAddedMethodInvocs());
+		System.out.println(devName + " added class instantiation method count = " + dev.getAddedClassInstances());
+		System.out.println(devName + " added nested count = " + dev.getAddedNested());
+		System.out.println(devName + " added bounds count = " + dev.getAddedBounds());
 		
 	}
 
@@ -470,22 +460,17 @@ public class ModelRepository {
 //		System.out.println("	--> Added Null Object Design Patterns = " + dev.getAddedNODPCounts());
 		
 		// GENERICS
-		System.out.println("SIMPLE GENERICS = " + dev.getAddedSimpleGenerics());
-		System.out.println("	--> Added simple generic fields = " + dev.getAddedSimpleFields());
-		System.out.println("	--> Added simple generic variables  = " + dev.getAddedSimpleVariables());
-		System.out.println("	--> Added simple generic methods = " + dev.getAddedSimpleMethods());
-		System.out.println("	--> Added simple generic returns = " + dev.getAddedSimpleReturn());
-
-		System.out.println("ADVANCED GENERICS:");
-		System.out.println("	--> Added advanced generic classes = " + dev.getAddedAdvancedClasses());
-		System.out.println("	--> Added advanced generic fields = " + dev.getAddedAdvancedFields());
-		System.out.println("	--> Added advanced generic methods = " + dev.getAddedAdvancedMethods());
-		System.out.println("	--> Added advanced generic returns = " + dev.getAddedAdvancedReturn());
-		System.out.println("	--> Added advanced generic nested = " + dev.getAddedAdvancedNested());
-		System.out.println("	--> Added advanced generic parameters = " + dev.getAddedAdvancedParameters());
-		System.out.println("	--> Added advanced generic bounds = " + dev.getAddedAdvancedBounds());
-		System.out.println("	--> Added advanced generic wildcards = " + dev.getAddedAdvancedWildcard());
-		System.out.println("	--> Added advanced generic diamonds = " + dev.getAddedAdvancedDiamond());
+		System.out.println("	--> Added type argument methods = " + dev.getAddedTypeArgumentMethods());
+		System.out.println("	--> Added wildcards = " + dev.getAddedWildcard());
+		System.out.println("	--> Added type declarations  = " + dev.getAddedTypeDecs());
+		System.out.println("	--> Added type parameter methods = " + dev.getAddedTypeParamMethods());
+		System.out.println("	--> Added type parameter fields = " + dev.getAddedTypeParamFields());
+		System.out.println("	--> Added diamonds = " + dev.getAddedDiamond());
+		System.out.println("	--> Added method invocations = " + dev.getAddedMethodInvocs());
+		System.out.println("	--> Added class instantiations = " + dev.getAddedClassInstances());
+		System.out.println("	--> Added nested = " + dev.getAddedNested());
+		System.out.println("	--> Added bounds = " + dev.getAddedBounds());
+	
 
 	}
 	
@@ -950,20 +935,17 @@ public class ModelRepository {
 		
 		int addedGenerics = 0;
 		
-		int addedSimpleFields = 0;
-		int addedSimpleVariables = 0;
-		int addedSimpleMethods = 0;
-		int addedSimpleReturn = 0;
+		int addedTypeArgumentMethods = 0;
+		int addedWildCards = 0;
+		int addedTypeDeclarations = 0;
+		int addedTypeParameterMethods = 0;
+		int addedTypeParameterFields = 0;
+		int addedDiamonds = 0;
+		int addedMethodInvocations = 0;
+		int addedClassInstatiations = 0;
+		int addedNested = 0;
+		int addedBounds = 0;
 		
-		int addedAdvancedClasses = 0;
-		int addedAdvancedFields = 0;
-		int addedAdvancedMethods = 0;
-		int addedAdvancedReturn = 0;
-		int addedAdvancedNested = 0;
-		int addedAdvancedParams = 0;
-		int addedAdvancedBounds = 0;
-		int addedAdvancedWildCards = 0;
-		int addedAdvancedDiamonds = 0;
 		
 		Git git;
 		//current revision
@@ -1035,56 +1017,30 @@ public class ModelRepository {
 										
 										addedGenerics = checkAddedGenerics(addedGenerics, currentHash, diffText, pattern);
 										
-										// simple generics iteration
-										Iterator sIT = file.getSimpleGenerics().entrySet().iterator();
-										while (sIT.hasNext()){
-											Map.Entry<String, List<String>> pair = (Map.Entry<String, List<String>>) sIT.next();
+										// generics iteration
+										Iterator it = file.getGenerics().entrySet().iterator();
+										while(it.hasNext()){
+											Map.Entry<String, List<String>> pair = (Map.Entry<String, List<String>>) it.next();
 											
-											//fields
-											addedSimpleFields = classifyAddedGenerics("fields", addedSimpleFields, pattern, pair);
+											addedTypeArgumentMethods = classifyAddedGenerics("type argument methods", addedTypeArgumentMethods, pattern, pair);
 											
-											//variables
-											addedSimpleVariables = classifyAddedGenerics("variables", addedSimpleVariables, pattern, pair);
+											addedWildCards = classifyAddedGenerics("wildcard", addedWildCards, pattern, pair);
 											
-											//methods
-											addedSimpleMethods = classifyAddedGenerics("methods", addedSimpleMethods, pattern, pair);											
+											addedTypeDeclarations = classifyAddedGenerics("type declarations", addedTypeDeclarations, pattern, pair);
 											
-											//return
-											addedSimpleReturn = classifyAddedGenerics("return", addedSimpleReturn, pattern, pair);
-										}
-										
-										//advanced generics iteration
-										Iterator aIT = file.getAdvancedGenerics().entrySet().iterator();
-										while (aIT.hasNext()){
-											Map.Entry<String, List<String>> pair = (Map.Entry<String, List<String>>) aIT.next();
+											addedTypeParameterMethods = classifyAddedGenerics("type parameter methods", addedTypeParameterMethods, pattern, pair);
 											
-											//classes
-											addedAdvancedClasses = classifyAddedGenerics("classes", addedAdvancedClasses, pattern, pair);
+											addedTypeParameterFields = classifyAddedGenerics("type parameter methods", addedTypeParameterFields, pattern, pair);
 											
-											//fields
-											addedAdvancedFields = classifyAddedGenerics("fields", addedAdvancedFields, pattern, pair);
+											addedDiamonds = classifyAddedGenerics("diamond", addedDiamonds, pattern, pair);
 											
-											//methods
-											addedAdvancedMethods = classifyAddedGenerics("methods", addedAdvancedMethods, pattern, pair);
+											addedMethodInvocations = classifyAddedGenerics("method invocations", addedMethodInvocations, pattern, pair);
 											
-											//return
-											addedAdvancedReturn = classifyAddedGenerics("return", addedAdvancedReturn, pattern, pair);
+											addedClassInstatiations = classifyAddedGenerics("class instantiation", addedClassInstatiations, pattern, pair);
 											
-											//nested
-											addedAdvancedNested = classifyAddedGenerics("nested", addedAdvancedNested, pattern, pair);
+											addedNested = classifyAddedGenerics("nested", addedNested, pattern, pair);
 											
-											//parameters
-											addedAdvancedParams = classifyAddedGenerics("parameters", addedAdvancedParams, pattern, pair);
-											
-											//bounds
-											addedAdvancedBounds = classifyAddedGenerics("bounds", addedAdvancedBounds, pattern, pair);
-											
-											//wildcard
-											addedAdvancedWildCards = classifyAddedGenerics("wildcard", addedAdvancedWildCards, pattern, pair);
-											
-											//diamond
-											addedAdvancedDiamonds = classifyAddedGenerics("diamond", addedAdvancedDiamonds, pattern, pair);
-											
+											addedBounds = classifyAddedGenerics("bounds", addedBounds, pattern, pair);
 										}									
 										
 									}
@@ -1105,22 +1061,17 @@ public class ModelRepository {
 			if (developer.getCommits().contains(currentHash)){
 				developer.setAddedGenerics(addedGenerics);
 				
-				// SIMPLE
-				developer.setAddedSimpleFields(addedSimpleFields);
-				developer.setAddedSimpleMethods(addedSimpleMethods);
-				developer.setAddedSimpleVariables(addedSimpleVariables);
-				developer.setAddedSimpleReturn(addedSimpleReturn);
 				
-				//ADVANCED
-				developer.setAddedAdvancedClasses(addedAdvancedClasses);
-				developer.setAddedAdvancedFields(addedAdvancedFields);
-				developer.setAddedAdvancedMethods(addedAdvancedMethods);
-				developer.setAddedAdvancedNested(addedAdvancedNested);
-				developer.setAddedAdvancedParameters(addedAdvancedParams);
-				developer.setAddedAdvancedReturn(addedAdvancedReturn);
-				developer.setAddedAdvancedBounds(addedAdvancedBounds);
-				developer.setAddedAdvancedWildcard(addedAdvancedWildCards);
-				developer.setAddedAdvancedDiamond(addedAdvancedDiamonds);
+				developer.setAddedTypeArgumentMethods(addedTypeArgumentMethods);
+				developer.setAddedWildcard(addedWildCards);
+				developer.setAddedTypeDeclarations(addedTypeDeclarations);
+				developer.setAddedTypeParameterMethods(addedTypeParameterMethods);
+				developer.setAddedTypeParameterFields(addedTypeParameterFields);
+				developer.setAddedDiamond(addedDiamonds);
+				developer.setAddedMethodInvocation(addedMethodInvocations);
+				developer.setAddedClassInstantiations(addedClassInstatiations);
+				developer.setAddedNested(addedNested);
+				developer.setAddedBounds(addedBounds);
 				
 			}
 			
@@ -1136,10 +1087,10 @@ public class ModelRepository {
 	private int classifyAddedGenerics(String key, int addedGenerics, String pattern, Map.Entry<String, List<String>> pair) {
 		if (pair.getKey().equals(key)){
 			for (String s: pair.getValue()){
-				System.out.println("Full Pattern --> " + s);
-				System.out.println("Pattern --> " + pattern);
+//				System.out.println("Full Pattern --> " + s);
+//				System.out.println("Pattern --> " + pattern);
 				if (s.contains(pattern)){
-					System.out.println("Matched " + pattern + " to " + s + "!");
+					//System.out.println("Matched " + pattern + " to " + s + "!");
 					addedGenerics += 1;
 				}
 			}

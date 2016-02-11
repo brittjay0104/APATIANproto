@@ -20,22 +20,16 @@ public class ModelDeveloper {
 	
 	private int allAddedGenerics;
 	
-	private int addedSimpleGenerics;
-	private int addedSimpleFields;
-	private int addedSimpleVariables;
-	private int addedSimpleMethods;
-	private int addedSimpleReturn;
-	
-	private int addedAdvancedGenerics;
-	private int addedAdvancedClasses;
-	private int addedAdvancedFields;
-	private int addedAdvancedMethods;
-	private int addedAdvancedReturn;
-	private int addedAdvancedNested;
-	private int addedAdvancedParameters;
-	private int addedAdvancedBounds;
-	private int addedAdvancedWildcard;
-	private int addedAdvancedDiamond;
+	private int addedTypeArgumentMethods;
+	private int addedWildcard;
+	private int addedTypeDeclarations;
+	private int addedTypeParameterMethods;
+	private int addedTypeParameterFields;
+	private int addedDiamond;
+	private int addedMethodInvocations;
+	private int addedClassInstantiation;
+	private int addedNested;
+	private int addedBounds;
 	
 	private int derefCounts;
 	private String name;
@@ -60,22 +54,17 @@ public class ModelDeveloper {
 		
 		allAddedGenerics = 0;
 		
-		addedSimpleGenerics = 0;
-		addedSimpleFields = 0;
-		addedSimpleVariables = 0;
-		addedSimpleMethods = 0;
-		addedSimpleReturn = 0;
 		
-		addedAdvancedGenerics = 0;
-		addedAdvancedClasses = 0;
-		addedAdvancedFields = 0;
-		addedAdvancedMethods = 0;
-		addedAdvancedReturn = 0;
-		addedAdvancedNested = 0;
-		addedAdvancedParameters = 0;
-		addedAdvancedBounds = 0;
-		addedAdvancedWildcard = 0;
-		addedAdvancedDiamond = 0;
+		addedTypeArgumentMethods = 0;
+		addedWildcard = 0;
+		addedTypeDeclarations = 0;
+		addedTypeParameterMethods = 0;
+		addedTypeParameterFields = 0;
+		addedDiamond = 0;
+		addedMethodInvocations = 0;
+		addedClassInstantiation = 0;
+		addedNested = 0;
+		addedBounds = 0;
 		
 		setDevName(id);
 		commits = new ArrayList<String>();
@@ -120,65 +109,45 @@ public class ModelDeveloper {
 	public ArrayList<String> getCommits(){
 		return commits;
 	}
-	
-	public void setAddedSimpleGenerics(int addedGenerics){
-		addedSimpleGenerics = addedSimpleGenerics + addedGenerics;
+
+	public void setAddedTypeArgumentMethods(int addedGenerics){
+		addedTypeArgumentMethods = addedTypeArgumentMethods + addedGenerics;
 	}
 	
-	public void setAddedSimpleFields (int addedGenerics){
-		addedSimpleFields = addedSimpleFields + addedGenerics;
+	public void setAddedWildcard(int addedGenerics){
+		addedWildcard = addedWildcard + addedGenerics;
 	}
 	
-	public void setAddedSimpleVariables (int addedGenerics){
-		addedSimpleVariables = addedSimpleVariables + addedGenerics;
+	public void setAddedTypeDeclarations(int addedGenerics){
+		addedTypeDeclarations = addedTypeDeclarations + addedGenerics;
 	}
 	
-	public void setAddedSimpleMethods (int addedGenerics){
-		addedSimpleMethods = addedSimpleMethods + addedGenerics;
+	public void setAddedTypeParameterMethods(int addedGenerics){
+		addedTypeParameterMethods = addedTypeParameterMethods + addedGenerics;
 	}
 	
-	public void setAddedSimpleReturn (int addedGenerics){
-		addedSimpleReturn = addedSimpleReturn + addedGenerics;
+	public void setAddedTypeParameterFields(int addedGenerics){
+		addedTypeParameterFields = addedTypeParameterFields + addedGenerics;
 	}
 	
-	public void setAddedAdvancedGenerics (int addedGenerics){
-		addedAdvancedGenerics = addedAdvancedGenerics + addedGenerics;
+	public void setAddedDiamond(int addedGenerics){
+		addedDiamond = addedDiamond + addedGenerics;
 	}
 	
-	public void setAddedAdvancedClasses (int addedGenerics){
-		addedAdvancedClasses = addedAdvancedClasses + addedGenerics;
+	public void setAddedMethodInvocation(int addedGenerics){
+		addedMethodInvocations = addedMethodInvocations + addedGenerics;
 	}
 	
-	public void setAddedAdvancedFields (int addedGenerics){
-		addedAdvancedFields = addedAdvancedFields + addedGenerics;
+	public void setAddedClassInstantiations(int addedGenerics){
+		addedClassInstantiation = addedClassInstantiation + addedGenerics;
 	}
 	
-	public void setAddedAdvancedMethods (int addedGenerics){
-		addedAdvancedMethods = addedAdvancedMethods + addedGenerics;
+	public void setAddedNested(int addedGenerics){
+		addedNested = addedNested + addedGenerics;
 	}
 	
-	public void setAddedAdvancedReturn (int addedGenerics){
-		addedAdvancedReturn = addedAdvancedReturn + addedGenerics;
-	}
-	
-	public void setAddedAdvancedNested (int addedGenerics){
-		addedAdvancedNested = addedAdvancedNested + addedGenerics;
-	}
-	
-	public void setAddedAdvancedParameters (int addedGenerics){
-		addedAdvancedParameters = addedAdvancedParameters + addedGenerics;
-	}
-	
-	public void setAddedAdvancedBounds (int addedGenerics){
-		addedAdvancedBounds = addedAdvancedBounds + addedGenerics;
-	}
-	
-	public void setAddedAdvancedWildcard (int addedGenerics){
-		addedAdvancedWildcard = addedAdvancedWildcard + addedGenerics;
-	}
-	
-	public void setAddedAdvancedDiamond (int addedGenerics){
-		addedAdvancedDiamond = addedAdvancedDiamond + addedGenerics;
+	public void setAddedBounds(int addedGenerics){
+		addedBounds = addedBounds + addedGenerics;
 	}
 	
 	public void setAddedGenerics(int addedGenerics){
@@ -189,64 +158,44 @@ public class ModelDeveloper {
 		return allAddedGenerics;
 	}
 	
-	public int getAddedSimpleGenerics(){
-		return addedSimpleGenerics;
+	public int getAddedTypeArgumentMethods(){
+		return addedTypeArgumentMethods;
 	}
 	
-	public int getAddedSimpleFields(){
-		return addedSimpleFields;
+	public int getAddedWildcard(){
+		return addedWildcard;
 	}
 	
-	public int getAddedSimpleVariables(){
-		return addedSimpleVariables;
+	public int getAddedTypeDecs(){
+		return addedTypeDeclarations;
 	}
 	
-	public int getAddedSimpleMethods(){
-		return addedSimpleMethods;
+	public int getAddedTypeParamMethods(){
+		return addedTypeParameterMethods;
 	}
 	
-	public int getAddedSimpleReturn(){
-		return addedSimpleReturn;
+	public int getAddedTypeParamFields(){
+		return addedTypeParameterFields;
 	}
 	
-	public int getAddedAdvancedGenerics(){
-		return addedAdvancedGenerics;
+	public int getAddedDiamond(){
+		return addedDiamond;
 	}
 	
-	public int getAddedAdvancedClasses(){
-		return addedAdvancedClasses;
+	public int getAddedMethodInvocs(){
+		return addedMethodInvocations;
 	}
 	
-	public int getAddedAdvancedFields(){
-		return addedAdvancedFields;
+	public int getAddedClassInstances(){
+		return addedClassInstantiation;
 	}
 	
-	public int getAddedAdvancedMethods(){
-		return addedAdvancedMethods;
+	public int getAddedNested(){
+		return addedNested;
 	}
 	
-	public int getAddedAdvancedReturn(){
-		return addedAdvancedReturn;
-	}
-	
-	public int getAddedAdvancedNested(){
-		return addedAdvancedNested;
-	}
-	
-	public int getAddedAdvancedParameters(){
-		return addedAdvancedParameters;
-	}
-	
-	public int getAddedAdvancedBounds(){
-		return addedAdvancedBounds;
-	}
-	
-	public int getAddedAdvancedWildcard(){
-		return addedAdvancedWildcard;
-	}
-	
-	public int getAddedAdvancedDiamond(){
-		return addedAdvancedDiamond;
+	public int getAddedBounds(){
+		return addedBounds;
 	}
 	
 	public int getRemovedNullCounts(){

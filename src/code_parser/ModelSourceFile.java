@@ -49,8 +49,9 @@ public class ModelSourceFile {
 	
 	//generics
 	public List<String> allGenerics;
-	public HashMap<String, List<String>> simpleGenerics;
-	public HashMap<String, List<String>> advancedGenerics;
+	public HashMap<String, List<String>> generics;
+//	public HashMap<String, List<String>> simpleGenerics;
+//	public HashMap<String, List<String>> advancedGenerics;
 
 	// ArrayList for keeping track of locations of null checks as they appear
 	// and disappear from the
@@ -93,21 +94,17 @@ public class ModelSourceFile {
 		catchBlocks = new ArrayList<String>();
 
 		allGenerics = new ArrayList<String>();
-		simpleGenerics = new HashMap<String, List<String>>();
-		advancedGenerics = new HashMap<String, List<String>>();
+		generics = new HashMap<String, List<String>>();
 		
-		simpleGenerics.put("fields", new ArrayList<String>());
-		simpleGenerics.put("variables", new ArrayList<String>());
-		simpleGenerics.put("methods", new ArrayList<String>());
-		simpleGenerics.put("return", new ArrayList<String>());
-		
-		advancedGenerics.put("classes", new ArrayList<String>());
-		advancedGenerics.put("fields", new ArrayList<String>());
-		advancedGenerics.put("methods", new ArrayList<String>());
-		advancedGenerics.put("return", new ArrayList<String>());
-		advancedGenerics.put("nested", new ArrayList<String>());
-		advancedGenerics.put("parameters", new ArrayList<String>());
-		advancedGenerics.put("bounds", new ArrayList<String>());
+		generics.put("type argument methods", new ArrayList<String>());
+		generics.put("wildcard", new ArrayList<String>());
+		generics.put("type declarations", new ArrayList<String>());
+		generics.put("type parameter methods", new ArrayList<String>());
+		generics.put("type parameter fields", new ArrayList<String>());
+		generics.put("diamond", new ArrayList<String>());
+		generics.put("method invocations", new ArrayList<String>());
+		generics.put("class instantiation", new ArrayList<String>());
+		generics.put("nested", new ArrayList<String>());
 		
 		commits = new ArrayList<ModelCommit>();
 		methods = new ArrayList<String>();
@@ -294,13 +291,9 @@ public class ModelSourceFile {
 		return allGenerics;
 	}
 	
-	public HashMap<String, List<String>> getSimpleGenerics(){
-		return simpleGenerics;
+	public HashMap<String, List<String>> getGenerics(){
+		return generics;
 	} 
-	
-	public HashMap<String, List<String>> getAdvancedGenerics(){
-		return advancedGenerics;
-	}
 	
 
 	/**
@@ -432,24 +425,6 @@ public class ModelSourceFile {
 		}
 	}
 	
-
-	public void addSimpleGenerics (String key, HashMap<String, List<String>> generics){
-		
-		List<String> g = generics.get(key);
-		
-		for (String s: g){
-			simpleGenerics.get(key).add(s);
-		}
-	}
-	
-	public void addAdvancedGenerics (String key, HashMap<String, List<String>> generics){
-		List<String> g = generics.get(key);
-		
-		for (String s: g){
-			advancedGenerics.get(key).add(s);
-		}
-	}
-	
 	public void addGeneric (String generic){
 		allGenerics.add(generic);
 	}
@@ -460,17 +435,10 @@ public class ModelSourceFile {
 		}
 	}
 	
-	public void setSimpleGenerics(HashMap<String, List<String>> map){
-		
-		simpleGenerics.putAll(map);
-		
+	public void setGenerics(HashMap<String, List<String>> map){
+		generics.putAll(map);
 	}
 	
-	public void setAdvancedGenerics (HashMap<String, List<String>> map){
-		
-		advancedGenerics.putAll(map);
-		
-	}
 //	public void removeGenericField(String field){
 //		if (genericFields.contains(field)){
 //			genericFields.remove(field);

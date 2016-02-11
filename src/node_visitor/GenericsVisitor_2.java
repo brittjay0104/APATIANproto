@@ -30,13 +30,8 @@ public class GenericsVisitor_2 extends ASTVisitor {
 	//list of all (unique) code with generics
 	public List<String> allGenerics = new ArrayList<String>();
 	
+	//generics separated by types
 	public HashMap<String, List<String>> generics = new HashMap<String, List<String>>();
-	
-	// simple generics: using generics in fields, methods, and variable declarations
-	public HashMap<String, List<String>> simpleGenerics = new HashMap<String, List<String>>();
-	
-	//advanced generics: writing generics and using nested generics
-	public HashMap<String, List<String>> advancedGenerics = new HashMap<String, List<String>>();
 	
 	public List<String> types = new ArrayList<String>();
 	private char[] source;
@@ -62,24 +57,7 @@ public class GenericsVisitor_2 extends ASTVisitor {
 		generics.put("method invocations", new ArrayList<String>());
 		generics.put("class instantiation", new ArrayList<String>());
 		generics.put("nested", new ArrayList<String>());
-		
-		
-		simpleGenerics.put("fields", new ArrayList<String>());
-		simpleGenerics.put("class instances", new ArrayList<String>());
-		simpleGenerics.put("method invocations", new ArrayList<String>());
-		//simpleGenerics.put("variables", new ArrayList<String>());
-		simpleGenerics.put("methods", new ArrayList<String>());
-		simpleGenerics.put("return", new ArrayList<String>());
-		
-		advancedGenerics.put("classes", new ArrayList<String>());
-		advancedGenerics.put("fields", new ArrayList<String>());
-		advancedGenerics.put("methods", new ArrayList<String>());
-		advancedGenerics.put("return", new ArrayList<String>());
-		advancedGenerics.put("nested", new ArrayList<String>());
-		advancedGenerics.put("parameters", new ArrayList<String>());
-		advancedGenerics.put("bounds", new ArrayList<String>());
-		advancedGenerics.put("wildcard", new ArrayList<String>());
-		advancedGenerics.put("diamond", new ArrayList<String>());
+		generics.put("bounds", new ArrayList<String>());
 	}
 	
 	
@@ -121,12 +99,8 @@ public class GenericsVisitor_2 extends ASTVisitor {
 		return allGenerics;
 	}
 	
-	public HashMap<String, List<String>> getSimpleGenerics (){
-		return simpleGenerics;
-	}
-	
-	public HashMap<String, List<String>> getAdvancedGenerics(){
-		return advancedGenerics;
+	public HashMap<String, List<String>> getGenerics(){
+		return generics;
 	}
 	
 	// ?
@@ -146,7 +120,7 @@ public class GenericsVisitor_2 extends ASTVisitor {
 				allGenerics.add(parent);
 			}
 			
-			advancedGenerics.get("wildcard").add(pattern);
+			this.generics.get("wildcard").add(pattern);
 		}
 		
 		return true;
@@ -184,7 +158,7 @@ public class GenericsVisitor_2 extends ASTVisitor {
 			allGenerics.add(gClass);
 		}
 
-		advancedGenerics.get("classes").add(gClass);
+		this.generics.get("type declarations").add(gClass);
 		
 		return true;
 	}
@@ -216,7 +190,7 @@ public class GenericsVisitor_2 extends ASTVisitor {
 						allGenerics.add(meth);
 					}
 					
-					advancedGenerics.get("parameters").add(meth);
+					this.generics.get("type parameter methods").add(meth);
 					
 				}
 				
@@ -231,8 +205,7 @@ public class GenericsVisitor_2 extends ASTVisitor {
 						if (!(allGenerics.contains(field))){
 							allGenerics.add(field);
 						}
-						
-						advancedGenerics.get("fields").add(field);
+						this.generics.get("type parameter fields").add(field);
 					}
 				}
 			}
@@ -273,7 +246,7 @@ public class GenericsVisitor_2 extends ASTVisitor {
 					allGenerics.add(source);
 				}
 				
-				advancedGenerics.get("diamond").add(pattern);
+				this.generics.get("diamond").add(pattern);
 				
 			}
 			
@@ -301,7 +274,7 @@ public class GenericsVisitor_2 extends ASTVisitor {
 							allGenerics.add(classInstance);
 						}
 						
-						simpleGenerics.get("class instances").add(pt);
+						this.generics.get("class instantiations").add(pt);
 						
 					}
 					
@@ -315,7 +288,8 @@ public class GenericsVisitor_2 extends ASTVisitor {
 							allGenerics.add(methodInvocation);
 						}
 						
-						simpleGenerics.get("method invocations").add(pt);
+						this.generics.get("method invocations").add(pt);
+						
 					}
 					
 					
@@ -329,7 +303,9 @@ public class GenericsVisitor_2 extends ASTVisitor {
 							if (!(allGenerics.contains(methDec))){
 								allGenerics.add(methDec);
 							}
-							advancedGenerics.get("methods").add(generics);
+							
+							this.generics.get("type argument methods").add(generics);
+							
 						}				
 						
 					}					
@@ -352,8 +328,8 @@ public class GenericsVisitor_2 extends ASTVisitor {
 									if (!(allGenerics.contains(parent))){
 										allGenerics.add(parent);
 									}
+									this.generics.get("nested").add(paramType);
 									
-									advancedGenerics.get("nested").add(paramType);
 								}
 								
 								// method
@@ -364,7 +340,7 @@ public class GenericsVisitor_2 extends ASTVisitor {
 										allGenerics.add(methDec);
 									}
 									
-									advancedGenerics.get("nested").add(meth);								
+									this.generics.get("nested").add(meth);								
 								}
 								
 							}
@@ -406,8 +382,8 @@ public class GenericsVisitor_2 extends ASTVisitor {
 				if (!(allGenerics.contains(meth))){
 					allGenerics.add(meth);
 				}
+				this.generics.get("bounds").add(methodTypeBound);
 				
-				advancedGenerics.get("bounds").add(methodTypeBound);
 			}
 			
 			// type parameters
@@ -418,7 +394,7 @@ public class GenericsVisitor_2 extends ASTVisitor {
 				allGenerics.add(meth.trim());
 			}
 			
-			advancedGenerics.get("parameters").add(methodParam);
+			this.generics.get("type parameter methods").add(methodParam);
 			//System.out.println("Method Type Parameter --> " + typeParam);
 		}
 				
