@@ -71,60 +71,60 @@ public class RunAnalysis {
 					String opFile2 = "";
 					File f1;
 					File f2;
+//					
+//					if (line.contains("/")){
+//						opFile2 = opFile.replace("/", "-");
+//						System.setOut(new PrintStream(new FileOutputStream(opFile2)));
+//						
+//						// create files to populate after analysis
+//						f1 = new File(opFile2);
+//						f2 = new File("./archived-output/02-08-2016/" + opFile2);
+//						
+//						is = new FileInputStream(f1);
+//						os = new FileOutputStream(f2);
+//						
+//						byte[] buffer = new byte[1024];
+//						
+//						System.out.println(rName + " -- " + uName + " -- " + dName);
+//						
+//						runAnalysis("");
+//						
+//						// move file to folder for archived output
+//						int length;
+//						//copy file contents in bytes
+//						while ((length = is.read(buffer)) > 0){
+//							os.write(buffer, 0, length);
+//						}
+//						
+//						f1.delete();
+//						
+//						System.out.println("File copied successfully!");
+//					}
 					
-					if (line.contains("/")){
-						opFile2 = opFile.replace("/", "-");
-						System.setOut(new PrintStream(new FileOutputStream(opFile2)));
-						
-						// create files to populate after analysis
-						f1 = new File(opFile2);
-						f2 = new File("./archived-output/02-08-2016/" + opFile2);
-						
-						is = new FileInputStream(f1);
-						os = new FileOutputStream(f2);
-						
-						byte[] buffer = new byte[1024];
-						
-						System.out.println(rName + " -- " + uName + " -- " + dName);
-						
-						runAnalysis("");
-						
-						// move file to folder for archived output
-						int length;
-						//copy file contents in bytes
-						while ((length = is.read(buffer)) > 0){
-							os.write(buffer, 0, length);
-						}
-						
-						f1.delete();
-						
-						System.out.println("File copied successfully!");
+					System.setOut(new PrintStream(new FileOutputStream(opFile)));
+					
+					f1 = new File(opFile);
+					f2 = new File("./archived-output/02-08-2016/" + opFile);
+					
+					is = new FileInputStream(f1);
+					os = new FileOutputStream(f2);
+					
+					byte[] buffer = new byte[1024];
+					
+					System.out.println(rName + " -- " + uName + " -- " + dName);
+					
+					runAnalysis("");
+					
+					// move file to folder for archived output
+					int length;
+					//copy file contents in bytes
+					while ((length = is.read(buffer)) > 0){
+						os.write(buffer, 0, length);
 					}
 					
-//					System.setOut(new PrintStream(new FileOutputStream(opFile)));
-//					
-//					f1 = new File(opFile);
-//					f2 = new File("./archived-output/02-08-2016/" + opFile);
-//					
-//					is = new FileInputStream(f1);
-//					os = new FileOutputStream(f2);
-//					
-//					byte[] buffer = new byte[1024];
-//					
-//					System.out.println(rName + " -- " + uName + " -- " + dName);
-//					
-//					runAnalysis("");
-//					
-//					// move file to folder for archived output
-//					int length;
-//					//copy file contents in bytes
-//					while ((length = is.read(buffer)) > 0){
-//						os.write(buffer, 0, length);
-//					}
-//					
-//					f1.delete();
-//					
-//					System.out.println("File copied successfully!");
+					f1.delete();
+					
+					System.out.println("File copied successfully!");
 				}
 
 				// TODO other branches of current master branch (3 ','s)
@@ -147,8 +147,8 @@ public class RunAnalysis {
 			IOException, InterruptedException, RepositoryNotFoundException {
 		
 
-		//String github_url = "https://github.com/" + userName + "/" + repoName + ".git";
-		String github_url = "https://github.com/" + repoName.trim() + ".git";
+		String github_url = "https://github.com/" + userName + "/" + repoName + ".git";
+		//String github_url = "https://github.com/" + repoName.trim() + ".git";
 		System.out.println(github_url);
 		String gitCloneCmd = "";
 //		if (!(branch.equals(""))){
@@ -157,11 +157,8 @@ public class RunAnalysis {
 		gitCloneCmd = "git clone " + github_url;
 		System.out.println(gitCloneCmd);
 		
-		// Remove repoName2 when not analyzing repo with different "username"
-		//String repoName2 = repoName.replace("/", "\\");
-		
-		//String localRepoDir = "." + File.separator + repoName + File.separator;
-		String localRepoDir = "." + File.separator + repoName.substring(repoName.indexOf("/"), repoName.length()) + File.separator;
+		String localRepoDir = "." + File.separator + repoName + File.separator;
+		//String localRepoDir = "." + File.separator + repoName.substring(repoName.indexOf("/"), repoName.length()) + File.separator;
 		System.out.println(localRepoDir);
 		String repoLocalFile = localRepoDir + ".git";
 		System.out.println(repoLocalFile);

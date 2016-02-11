@@ -9,8 +9,10 @@ import java.util.List;
 
 import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.ASTVisitor;
+import org.eclipse.jdt.core.dom.ClassInstanceCreation;
 import org.eclipse.jdt.core.dom.FieldDeclaration;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
+import org.eclipse.jdt.core.dom.MethodInvocation;
 import org.eclipse.jdt.core.dom.ParameterizedType;
 import org.eclipse.jdt.core.dom.ReturnStatement;
 import org.eclipse.jdt.core.dom.SimpleType;
@@ -50,7 +52,9 @@ public class GenericsVisitor_2 extends ASTVisitor {
 		types.add("?");
 		
 		simpleGenerics.put("fields", new ArrayList<String>());
-		simpleGenerics.put("variables", new ArrayList<String>());
+		simpleGenerics.put("class instances", new ArrayList<String>());
+		simpleGenerics.put("method invocations", new ArrayList<String>());
+		//simpleGenerics.put("variables", new ArrayList<String>());
 		simpleGenerics.put("methods", new ArrayList<String>());
 		simpleGenerics.put("return", new ArrayList<String>());
 		
@@ -147,9 +151,10 @@ public class GenericsVisitor_2 extends ASTVisitor {
 		
 		for (Object mod: node.modifiers()){
 			sb.append(mod.toString());
+			sb.append(" ");
 		}
 		
-		sb.append(" class ");
+		sb.append("class ");
 		sb.append(fullyQualifiedName);
 		
 		if (node.typeParameters() != null){
@@ -262,24 +267,42 @@ public class GenericsVisitor_2 extends ASTVisitor {
 			if (typeArguments != null){
 				for (Object ta: typeArguments){
 					
-					// variable declaration
+					// class instance creation
 					ASTNode thisParent = node.getParent();
-					if (thisParent instanceof VariableDeclarationStatement){
+					
+					if (thisParent instanceof ClassInstanceCreation){
 						
-						ASTNode parent = (VariableDeclarationStatement) thisParent;
+						ASTNode parent = (ClassInstanceCreation) thisParent;
 						
-						String varDec = findSourceForNode(parent);
+						String classInstance = findSourceForNode(parent);
 						
-						//System.out.println("Variable Declaration Generics --> " + varDec);
+						//System.out.println("Class Instance Creation Generics --> " + classInstance);
 						
-						String pt = methodDec + CHECK_SEPERATOR + varDec;
-						
-						if (!(allGenerics.contains(varDec))){
-							allGenerics.add(varDec);
+						if (classInstance.contains("{")){
+							classInstance = classInstance.substring(0, classInstance.indexOf("{")).trim();
 						}
 						
-						simpleGenerics.get("variables").add(pt);
+						String pt = methodDec + CHECK_SEPERATOR + classInstance;
 						
+						if (!(allGenerics.contains(classInstance))){
+							allGenerics.add(classInstance);
+						}
+						
+						simpleGenerics.get("class instances").add(pt);
+						
+					}
+					
+					if (thisParent instanceof MethodInvocation){
+						ASTNode parent = (MethodInvocation) thisParent;
+						String methodInvocation = findSourceForNode(parent);
+						
+						String pt = methodDec + CHECK_SEPERATOR + methodInvocation;
+						
+						if (!(allGenerics.contains(methodInvocation))){
+							allGenerics.add(methodInvocation);
+						}
+						
+						simpleGenerics.get("method invocations").add(pt);
 					}
 					
 					
@@ -294,40 +317,9 @@ public class GenericsVisitor_2 extends ASTVisitor {
 								allGenerics.add(methDec);
 							}
 							advancedGenerics.get("methods").add(generics);
-						}
+						}				
 						
-						// simple (used)
-						if (!(allGenerics.contains(methDec))){
-							allGenerics.add(methDec);
-						}
-						simpleGenerics.get("methods").add(generics);
-						
-						
-					}
-					
-					ReturnStatement rt = getReturnStatement(node);
-					
-					if (rt != null && rt instanceof ReturnStatement){
-						
-						String ret = findSourceForNode(rt);
-						String generics = methodDec + CHECK_SEPERATOR + ta.toString() + CHECK_SEPERATOR + ret;
-						
-						// advanced
-						if (stringContainsTypeParameter(ta.toString(), types)){
-							if (!(allGenerics.contains(ret))){
-								allGenerics.add(ret);
-							}
-							
-							advancedGenerics.get("return").add(generics);
-						}
-						
-						// simple
-						if (!(allGenerics.contains(ret))){
-							allGenerics.add(ret);
-						}
-						
-						simpleGenerics.get("return").add(generics);
-					}						
+					}					
 					
 					
 					// nested generics 
