@@ -5,6 +5,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.StringReader;
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -12,6 +13,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;
@@ -30,6 +32,7 @@ import org.eclipse.jgit.diff.RenameDetector;
 import org.eclipse.jgit.errors.RepositoryNotFoundException;
 import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.ObjectReader;
+import org.eclipse.jgit.lib.PersonIdent;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder;
@@ -58,7 +61,8 @@ public class ModelRepository {
 
 	private List<String> allUsagePatterns;
 
-	// for testing
+	// for recency
+	HashMap <String, String> recency = new HashMap<String, String>();
 
 
 	public ModelRepository() {
@@ -331,10 +335,46 @@ public class ModelRepository {
 			String currentHash = ObjectId.toString(current);
 			String previousHash = "";
 			
-			if (!(currentHash.equals(ObjectId.toString(revisions.get(revisions.size()-1))))){
+			// only analyze if developer made contribution to that commit
+			if (!(currentHash.equals(ObjectId.toString(revisions.get(revisions.size()-1)))) && commits.contains(currentHash)){
 				previousHash = ObjectId.toString(revisions.get(i+1));
 				
-				setAndParseSource(directory, previousHash, currentHash, dev);
+				PersonIdent author = current.getAuthorIdent();
+				java.util.Date authorDate = author.getWhen();
+								
+				java.util.Date currentDate = new java.util.Date();
+				
+				long duration = currentDate.getTime() - authorDate.getTime();
+				long diffInHours =TimeUnit.MILLISECONDS.toHours(duration);
+				
+ 				//System.out.println(diffInHours);
+ 				String difference = "";
+				 	
+ 				// last week
+ 				if (diffInHours <= 168){
+ 					difference = "week";
+ 				}
+ 				// last month
+ 				else if (diffInHours >= 169 && diffInHours <= 730){
+ 					difference = "month";
+ 				}
+ 				// more than month, less than 6 months
+ 				else if (diffInHours >= 731 && diffInHours <= 4380){
+ 					difference = "months";
+ 				}
+ 				// more than month, less than year
+ 				else if (diffInHours >= 4381 && diffInHours <= 8760){
+ 					difference = "year";
+ 				}
+ 				// more than a year
+ 				else if (diffInHours >= 8761){
+ 					difference = "years";
+ 				}
+ 				
+ 				//System.out.println(difference);
+ 				
+				//pass in how long ago commit made?
+				setAndParseSource(directory, previousHash, currentHash, dev, difference);
 				
 				diffPrettyPrint(dev, currentHash, previousHash);
 				
@@ -433,16 +473,27 @@ public class ModelRepository {
 		
 		// GENERICS
 		System.out.println("Added generics to repository " + repoName + " = " + dev.getAllAddedGenerics());
+		System.out.println("");
 		System.out.println(devName + " added type argument method count = " + dev.getAddedTypeArgumentMethods());
+		System.out.println("	--> recency = " + recency.get("type argument methods"));
 		System.out.println(devName + " added wildcard count = " + dev.getAddedWildcard());
+		System.out.println("	--> recency = " + recency.get("wildcards"));
 		System.out.println(devName + " added type declaration count = " + dev.getAddedTypeDecs());
+		System.out.println("	--> recency = " + recency.get("type declarations"));
 		System.out.println(devName + " added type parameter method count = " + dev.getAddedTypeParamMethods());
+		System.out.println("	--> recency = " + recency.get("type parameter methods"));
 		System.out.println(devName + " added type parameter field count = " + dev.getAddedTypeParamFields());
-		System.out.println(devName + " added diamond count = " + dev.getAddedTypeParamMethods());
+		System.out.println("	--> recency = " + recency.get("type parameter fields"));
+		System.out.println(devName + " added diamond count = " + dev.getAddedDiamond());
+		System.out.println("	--> recency = " + recency.get("diamonds"));
 		System.out.println(devName + " added method invocation count = " + dev.getAddedMethodInvocs());
-		System.out.println(devName + " added class instantiation method count = " + dev.getAddedClassInstances());
+		System.out.println("	--> recency = " + recency.get("method invocations"));
+		System.out.println(devName + " added class instantiation count = " + dev.getAddedClassInstances());
+		System.out.println("	--> recency = " + recency.get("class instantiations"));
 		System.out.println(devName + " added nested count = " + dev.getAddedNested());
+		System.out.println("	--> recency = " + recency.get("nested"));
 		System.out.println(devName + " added bounds count = " + dev.getAddedBounds());
+		System.out.println("	--> recency = " + recency.get("bounds"));
 		
 	}
 
@@ -461,15 +512,26 @@ public class ModelRepository {
 		
 		// GENERICS
 		System.out.println("	--> Added type argument methods = " + dev.getAddedTypeArgumentMethods());
+		System.out.println("	--> recency = " + recency.get("type argument methods"));
 		System.out.println("	--> Added wildcards = " + dev.getAddedWildcard());
+		System.out.println("	--> recency = " + recency.get("wildcards"));
 		System.out.println("	--> Added type declarations  = " + dev.getAddedTypeDecs());
+		System.out.println("	--> recency = " + recency.get("type declarations"));
 		System.out.println("	--> Added type parameter methods = " + dev.getAddedTypeParamMethods());
+		System.out.println("	--> recency = " + recency.get("type parameter methods"));
 		System.out.println("	--> Added type parameter fields = " + dev.getAddedTypeParamFields());
+		System.out.println("	--> recency = " + recency.get("type parameter fields"));
 		System.out.println("	--> Added diamonds = " + dev.getAddedDiamond());
+		System.out.println("	--> recency = " + recency.get("diamonds"));
 		System.out.println("	--> Added method invocations = " + dev.getAddedMethodInvocs());
+		System.out.println("	--> recency = " + recency.get("method invocations"));
 		System.out.println("	--> Added class instantiations = " + dev.getAddedClassInstances());
+		System.out.println("	--> recency = " + recency.get("class instantiations"));
 		System.out.println("	--> Added nested = " + dev.getAddedNested());
+		System.out.println("	--> recency = " + recency.get("nesteds"));
 		System.out.println("	--> Added bounds = " + dev.getAddedBounds());
+		System.out.println("	--> recency = " + recency.get("bounds"));
+		
 	
 
 	}
@@ -487,7 +549,7 @@ public class ModelRepository {
 	 * @param previousHash
 	 * @throws IOException
 	 */
-	public void setAndParseSource(String directory, String previousHash, String currentHash, ModelDeveloper dev) throws IOException {
+	public void setAndParseSource(String directory, String previousHash, String currentHash, ModelDeveloper dev, String timeDiff) throws IOException {
 		
 		System.out.println("\n****Parsing for addition at revision " + currentHash + "****\n");
 		
@@ -551,7 +613,7 @@ public class ModelRepository {
 			for (String s: generics){
 				addUsagePattern(s);
 			}
-			genericsAdditionDiff(directory, f, generics, previousHash, currentHash, dev);			
+			genericsAdditionDiff(directory, f, generics, previousHash, currentHash, dev, timeDiff);			
 					
 		}
 	}
@@ -929,7 +991,7 @@ public class ModelRepository {
 		}
 	}
 	
-	public void genericsAdditionDiff(String directory, ModelSourceFile file, List<String> patterns, String prevH, String currH, ModelDeveloper developer) {
+	public void genericsAdditionDiff(String directory, ModelSourceFile file, List<String> patterns, String prevH, String currH, ModelDeveloper developer, String timeDiff) {
 		
 		File repoDir = new File(directory);
 		
@@ -1013,7 +1075,7 @@ public class ModelRepository {
 								
 								for (String pattern: patterns){		
 									
-									if (line.contains(pattern)){
+									if (line.contains(pattern)){																				
 										
 										addedGenerics = checkAddedGenerics(addedGenerics, currentHash, diffText, pattern);
 										
@@ -1022,25 +1084,56 @@ public class ModelRepository {
 										while(it.hasNext()){
 											Map.Entry<String, List<String>> pair = (Map.Entry<String, List<String>>) it.next();
 											
-											addedTypeArgumentMethods = classifyAddedGenerics("type argument methods", addedTypeArgumentMethods, pattern, pair);
+																						
+											if (genericsClassified("type argument methods", pattern, pair)){
+												addedTypeArgumentMethods = classifyAddedGenerics("type argument methods", addedTypeArgumentMethods, pattern, pair);
+												recency.put("type argument methods", timeDiff);
+											}
 											
-											addedWildCards = classifyAddedGenerics("wildcard", addedWildCards, pattern, pair);
+											if (genericsClassified("wildcards", pattern, pair)){
+												addedWildCards = classifyAddedGenerics("wildcards", addedWildCards, pattern, pair);
+												recency.put("wildcards", timeDiff);
+											}
 											
-											addedTypeDeclarations = classifyAddedGenerics("type declarations", addedTypeDeclarations, pattern, pair);
+											if (genericsClassified("type declarations", pattern, pair)){
+												addedTypeDeclarations = classifyAddedGenerics("type declarations", addedTypeDeclarations, pattern, pair);
+												recency.put("type declarations", timeDiff);
+											}
 											
-											addedTypeParameterMethods = classifyAddedGenerics("type parameter methods", addedTypeParameterMethods, pattern, pair);
+											if (genericsClassified("type parameter methods", pattern, pair)){
+												addedTypeParameterMethods = classifyAddedGenerics("type parameter methods", addedTypeParameterMethods, pattern, pair);
+												recency.put("type parameter methods", timeDiff);
+											}
 											
-											addedTypeParameterFields = classifyAddedGenerics("type parameter methods", addedTypeParameterFields, pattern, pair);
+											if (genericsClassified("type parameter fields", pattern, pair)){
+												addedTypeParameterFields = classifyAddedGenerics("type parameter fields", addedTypeParameterFields, pattern, pair);
+												recency.put("type parameter fields", timeDiff);
+											}
 											
-											addedDiamonds = classifyAddedGenerics("diamond", addedDiamonds, pattern, pair);
+											if (genericsClassified("diamonds", pattern, pair)){
+												addedDiamonds = classifyAddedGenerics("diamonds", addedDiamonds, pattern, pair);
+												recency.put("diamonds", timeDiff);
+											}
 											
-											addedMethodInvocations = classifyAddedGenerics("method invocations", addedMethodInvocations, pattern, pair);
+											if (genericsClassified("method invocations", pattern, pair)){
+												addedMethodInvocations = classifyAddedGenerics("method invocations", addedMethodInvocations, pattern, pair);
+												recency.put("method invocations", timeDiff);
+											}
 											
-											addedClassInstatiations = classifyAddedGenerics("class instantiation", addedClassInstatiations, pattern, pair);
+											if (genericsClassified("class instantiations", pattern, pair)){
+												addedClassInstatiations = classifyAddedGenerics("class instantiations", addedClassInstatiations, pattern, pair);
+												recency.put("class instantiations", timeDiff);
+											}
 											
-											addedNested = classifyAddedGenerics("nested", addedNested, pattern, pair);
+											if (genericsClassified("nesteds", pattern, pair)){
+												addedNested = classifyAddedGenerics("nesteds", addedNested, pattern, pair);
+												recency.put("nesteds", timeDiff);
+											}
 											
-											addedBounds = classifyAddedGenerics("bounds", addedBounds, pattern, pair);
+											if (genericsClassified("bounds", pattern, pair)){
+												addedBounds = classifyAddedGenerics("bounds", addedBounds, pattern, pair);
+												recency.put("bounds", timeDiff);
+											}
 										}									
 										
 									}
@@ -1058,22 +1151,21 @@ public class ModelRepository {
 			}
 			
 			
-			if (developer.getCommits().contains(currentHash)){
-				developer.setAddedGenerics(addedGenerics);
+			developer.setAddedGenerics(addedGenerics);
+			
+			
+			developer.setAddedTypeArgumentMethods(addedTypeArgumentMethods);
+			developer.setAddedWildcard(addedWildCards);
+			developer.setAddedTypeDeclarations(addedTypeDeclarations);
+			developer.setAddedTypeParameterMethods(addedTypeParameterMethods);
+			developer.setAddedTypeParameterFields(addedTypeParameterFields);
+			developer.setAddedDiamond(addedDiamonds);
+			developer.setAddedMethodInvocation(addedMethodInvocations);
+			developer.setAddedClassInstantiations(addedClassInstatiations);
+			developer.setAddedNested(addedNested);
+			developer.setAddedBounds(addedBounds);
 				
-				
-				developer.setAddedTypeArgumentMethods(addedTypeArgumentMethods);
-				developer.setAddedWildcard(addedWildCards);
-				developer.setAddedTypeDeclarations(addedTypeDeclarations);
-				developer.setAddedTypeParameterMethods(addedTypeParameterMethods);
-				developer.setAddedTypeParameterFields(addedTypeParameterFields);
-				developer.setAddedDiamond(addedDiamonds);
-				developer.setAddedMethodInvocation(addedMethodInvocations);
-				developer.setAddedClassInstantiations(addedClassInstatiations);
-				developer.setAddedNested(addedNested);
-				developer.setAddedBounds(addedBounds);
-				
-			}
+			
 			
 		} catch (IOException e1) {
 			e1.printStackTrace();
@@ -1096,6 +1188,21 @@ public class ModelRepository {
 			}
 		}
 		return addedGenerics;
+	}
+	
+	private boolean genericsClassified(String key, String pattern, Map.Entry<String, List<String>> pair){
+		if (pair.getKey().equals(key)){
+			for (String s: pair.getValue()){
+//				System.out.println("Full Pattern --> " + s);
+//				System.out.println("Pattern --> " + pattern);
+				if (s.contains(pattern)){
+					//System.out.println("Matched " + pattern + " to " + s + "!");
+					return true;
+				}
+			}
+		}
+		
+		return false;
 	}
 
 	public void additionDiff(String directory, ModelSourceFile file, List<String> checks, String oldH, String newH, ModelDeveloper developer) {

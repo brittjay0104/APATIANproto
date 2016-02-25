@@ -60,13 +60,29 @@ wutson, ataulm, Ataul Munim
 wutson, dev, ataulm, Ataul Munim
 wutson, episode_details, ataulm, Ataul Munim
 wutson, refresh, ataulm, Ataul Munim
+
+novoda/spikes, ataulm, Ataul Munim
+ouchadam/lol-dr, ataulm, Ataul Munim
+novoda/merlin, ataulm, Ataul Munim
+novoda/landing-strip, ataulm, Ataul Munim
+
 dungeon, mafagafogigante, Bernardo Sulzbach
 photo, mafagafogigante, Bernardo Sulzbach
 flood, mafagafogigante, Bernardo Sulzbach
+
+iluwatar/java-design-patterns, mafagafogigante, Bernardo Sulzbach
+
 fluorite-eclipse, yyoon, YoungSeok Yoon
 azurite-eclipse, yyoon, YoungSeok Yoon
+
+vanadium/reader, yyoon, YoungSeok Yoon
+
 code-state-machine, matozoid, Danny van Bruggen 
 javaparser, matozoid, Danny van Bruggen
+
+laamella-gad/code-state-machine, matozoid, Danny van Bruggen
+laamella-gad/file-index, matozoid, Danny van Bruggen
+
 Topsoil, johnzeringue, John Zeringue
 ET_Redux, johnzeringue, John Zeringue
 ExtendsFX, johnzeringue, John Zeringue
@@ -76,6 +92,62 @@ vanadium/java, yyoon, YoungSeok Yoon
 CIRDLES/Topsoil, johnzeringue, John Zeringue
 CIRDLES/ET_Redux, johnzeringue, John Zeringue
 CIRDLES/CHRONI, johnzeringue, John Zeringue
+
+CIRDLES/Commons, johnzeringue, John Zeringue
+CIRDLES/MARS, johnzeringue, John Zeringue
+
 DeveloperLiberationFront/Pdf-Reviewer, jssmith1
 DeveloperLiberationFront/Spreadsheet-Common-Crawler, jssmith1
 kjlubick/DevOps-Project, jssmith1
+
+Run for generics:
+
+edu.dlf.refactoring.leecode, nkcsgexi, Xi Ge
+edu.dlf.refactoring.review, nkcsgexi, Xi Ge
+L-Puzzle_Solver, kjlubick, Kevin Lubick
+fb-contrib-eclipse-quick-fixes, kjlubick, Kevin Lubick
+RecommendationPresentation-Code, kjlubick, Kevin Lubick
+Pdf-Reviewer, kjlubick, Kevin Lubick
+Pdf-Reviewer, mpeterson2, Michael Peterson
+Pdf-Reviewer, legacy-google-app-engine, mpeterson2, Michael Peterson
+Whiteboard, mpeterson2, Michael Peterson
+java-httpserver, mpeterson2, Michael Peterson
+
+My LinkedIn:
+elcano/elcano, ptressel, Pat Tressel
+anacrowd, chrisparnin, Chris Parnin
+generic.tools, chrisparnin, Chris Parnin
+heapviz, eaftan, Eddie Aftandilian
+hprof-parser, eaftan, Eddie Aftandilian
+google/error-prone, eaftan, Eddie Aftandilian
+google/google-java-format, eaftan, Eddie Aftandilian
+google/guava, eaftan, Eddie Aftandilian
+bazelbuild/bazel, eaftan, Eddie Aftandilian
+google/auto, eaftan, Eddie Aftandilian
+marmoset, billpugh, Bill Pugh
+findbugsproject/findbugs, billpugh, Bill Pugh
+TodoBackend-Spring, pamo, Pamela Ocampo
+TWU-Biblioteca, JoyeNettles, Joye Nettles
+CHRONI, JoyeNettles, Joye Nettles
+RateAppDemo, JoyeNettles, Joye Nettles
+ChoiceNet, rnudechu, Rob Udechukwu
+czeidler/Lablet, jdddog, Jamie Diprose
+cupid, twschiller, Todd Schiller
+java-downconvert, twschiller, Todd Schiller
+VeriWeb, twschiller, Todd Schiller
+HoneyRJ, twschiller, Todd Schiller
+webdriver-demo, henryqdineen, Henry Dineen
+Tropicraft/Tropicraft, Cojomax99, Cory Scheviak
+
+Other LinkedIn:
+(Titus)
+asterixdb-analytics, sigmod, Yingyi Bu
+incubator-asterixdb, sigmod, Yingyi Bu
+	- both take long time to run; is data worth it?
+
+(Rahul)
+Virtual-Lab-Using-Drag-and-Drop, animesh1993, Animesh Das
+Big-Data, 9sau, Saurabh Jain
+OpenMRS, rohitmanohar, Rohit Manohar
+A-Sharp-Mind, ryan-joseph, Ryan Joseph
+Narvaro, ryan-joseph, Ryan Joseph

@@ -1,3 +1,5 @@
+import java.util.Collections;
+
 public class Box<T> {
 
   private T t;
@@ -20,7 +22,7 @@ public class Box<T> {
   }
   
   public <T> void method(T item){
-	  List<T> list = new ArrayList();
+	  List<T> list = Collections.emptyList();
   }
   
   // determines the largest of three Comparable objects

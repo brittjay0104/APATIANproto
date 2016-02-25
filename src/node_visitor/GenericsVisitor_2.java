@@ -9,7 +9,9 @@ import java.util.List;
 
 import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.ASTVisitor;
+import org.eclipse.jdt.core.dom.Assignment;
 import org.eclipse.jdt.core.dom.ClassInstanceCreation;
+import org.eclipse.jdt.core.dom.Expression;
 import org.eclipse.jdt.core.dom.FieldDeclaration;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
 import org.eclipse.jdt.core.dom.MethodInvocation;
@@ -19,6 +21,7 @@ import org.eclipse.jdt.core.dom.SimpleType;
 import org.eclipse.jdt.core.dom.Type;
 import org.eclipse.jdt.core.dom.TypeDeclaration;
 import org.eclipse.jdt.core.dom.TypeParameter;
+import org.eclipse.jdt.core.dom.VariableDeclaration;
 import org.eclipse.jdt.core.dom.VariableDeclarationFragment;
 import org.eclipse.jdt.core.dom.VariableDeclarationStatement;
 import org.eclipse.jdt.core.dom.WildcardType;
@@ -49,14 +52,15 @@ public class GenericsVisitor_2 extends ASTVisitor {
 		types.add("?");
 		
 		generics.put("type argument methods", new ArrayList<String>());
-		generics.put("wildcard", new ArrayList<String>());
+		generics.put("wildcards", new ArrayList<String>());
 		generics.put("type declarations", new ArrayList<String>());
 		generics.put("type parameter methods", new ArrayList<String>());
 		generics.put("type parameter fields", new ArrayList<String>());
-		generics.put("diamond", new ArrayList<String>());
+		generics.put("diamonds", new ArrayList<String>());
 		generics.put("method invocations", new ArrayList<String>());
-		generics.put("class instantiation", new ArrayList<String>());
-		generics.put("nested", new ArrayList<String>());
+		generics.put("implicit method invocations", new ArrayList<String>());
+		generics.put("class instantiations", new ArrayList<String>());
+		generics.put("nesteds", new ArrayList<String>());
 		generics.put("bounds", new ArrayList<String>());
 	}
 	
@@ -120,7 +124,7 @@ public class GenericsVisitor_2 extends ASTVisitor {
 				allGenerics.add(parent);
 			}
 			
-			this.generics.get("wildcard").add(pattern);
+			this.generics.get("wildcards").add(pattern);
 		}
 		
 		return true;
@@ -215,6 +219,38 @@ public class GenericsVisitor_2 extends ASTVisitor {
 		return true;
 	}
 	
+	// useful for usage of generic variable created
+//	public boolean visit (Assignment node){
+//		
+//		String source = findSourceForNode(node);
+//		
+//		System.out.println(source);
+//		
+//		return true;
+//	}
+	
+	public boolean visit (VariableDeclarationStatement node){
+		
+		for (Object o: node.fragments()){	
+			
+			VariableDeclarationFragment vdf = (VariableDeclarationFragment) o;
+			
+			if (vdf.getInitializer() instanceof MethodInvocation){
+				
+				System.out.println(o.toString());
+				
+				Expression e = vdf.getInitializer();
+				
+				
+			}
+		}
+		
+		String source = findSourceForNode(node);
+		
+		System.out.println(source);
+		
+		return true;
+	}
 	
 	//Comparable<T>; Box<String> ... 
 	public boolean visit (ParameterizedType node){
@@ -246,7 +282,7 @@ public class GenericsVisitor_2 extends ASTVisitor {
 					allGenerics.add(source);
 				}
 				
-				this.generics.get("diamond").add(pattern);
+				this.generics.get("diamonds").add(pattern);
 				
 			}
 			
@@ -255,6 +291,25 @@ public class GenericsVisitor_2 extends ASTVisitor {
 					
 					// class instance creation
 					ASTNode thisParent = node.getParent();
+					
+					if (thisParent instanceof VariableDeclarationStatement){
+						ASTNode parent = (VariableDeclarationStatement) thisParent;
+						
+						String methInvoc = findSourceForNode(parent);
+						
+						// implicit method invocation (variable dec)
+						if (!(methInvoc.contains("new"))){
+							System.out.println(methInvoc);
+							
+							if (!(allGenerics.contains(methInvoc))){
+								allGenerics.add(methInvoc);
+							}
+							
+							String pt = methodDec + CHECK_SEPERATOR + methInvoc;
+							
+							this.generics.get("implicit method invocations").add(pt);
+						}						
+					}
 					
 					if (thisParent instanceof ClassInstanceCreation){
 						
@@ -292,6 +347,15 @@ public class GenericsVisitor_2 extends ASTVisitor {
 						
 					}
 					
+//					if (thisParent instanceof VariableDeclarationFragment){
+//						ASTNode parent = (VariableDeclarationFragment) thisParent;
+//						
+//						String varDec = findSourceForNode(parent);
+//						
+//						System.out.println(varDec);
+//								
+//					}
+					
 					
 					if (thisParent instanceof MethodDeclaration){
 						//System.out.println("Simple generics in method declaration! --> " + ta.toString());
@@ -328,7 +392,7 @@ public class GenericsVisitor_2 extends ASTVisitor {
 									if (!(allGenerics.contains(parent))){
 										allGenerics.add(parent);
 									}
-									this.generics.get("nested").add(paramType);
+									this.generics.get("nesteds").add(paramType);
 									
 								}
 								
@@ -340,7 +404,7 @@ public class GenericsVisitor_2 extends ASTVisitor {
 										allGenerics.add(methDec);
 									}
 									
-									this.generics.get("nested").add(meth);								
+									this.generics.get("nesteds").add(meth);								
 								}
 								
 							}
