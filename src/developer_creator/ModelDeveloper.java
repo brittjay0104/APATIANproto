@@ -27,6 +27,7 @@ public class ModelDeveloper {
 	private int addedTypeParameterFields;
 	private int addedDiamond;
 	private int addedMethodInvocations;
+	private int addedImpMethInvocations;
 	private int addedClassInstantiation;
 	private int addedNested;
 	private int addedBounds;
@@ -62,6 +63,7 @@ public class ModelDeveloper {
 		addedTypeParameterFields = 0;
 		addedDiamond = 0;
 		addedMethodInvocations = 0;
+		addedImpMethInvocations = 0;
 		addedClassInstantiation = 0;
 		addedNested = 0;
 		addedBounds = 0;
@@ -138,6 +140,10 @@ public class ModelDeveloper {
 		addedMethodInvocations = addedMethodInvocations + addedGenerics;
 	}
 	
+	public void setAddedImpMethInvocations(int addedGenerics){
+		addedImpMethInvocations = addedImpMethInvocations + addedGenerics;
+	}
+	
 	public void setAddedClassInstantiations(int addedGenerics){
 		addedClassInstantiation = addedClassInstantiation + addedGenerics;
 	}
@@ -184,6 +190,10 @@ public class ModelDeveloper {
 	
 	public int getAddedMethodInvocs(){
 		return addedMethodInvocations;
+	}
+	
+	public int getAddedImpMethInvocs(){
+		return addedImpMethInvocations;
 	}
 	
 	public int getAddedClassInstances(){
