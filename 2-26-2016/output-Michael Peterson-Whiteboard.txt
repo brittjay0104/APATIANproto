@@ -1,0 +1,2393 @@
+Whiteboard -- mpeterson2 -- Michael Peterson
+https://github.com/mpeterson2/Whiteboard.git
+git clone https://github.com/mpeterson2/Whiteboard.git
+.\Whiteboard\
+.\Whiteboard\.git
+0
+Project cloned!
+Michael Peterson is responsible for commit 4fb032c5054f85d846c0c32211be9874042475b6
+Michael Peterson is responsible for commit 487d0cb1563f9e5423606ecb2cbd30c67ab12573
+Michael Peterson is responsible for commit 2062bd6f50e0ac5d8c7eea07d2f389df07a57040
+Michael Peterson is responsible for commit eb865f71ecb0ddf8d9bc40bc431d47e2e8e75fe2
+Michael Peterson is responsible for commit 5ad9d5e7d2d5577b02f010370af8e9e87471d015
+Michael Peterson is responsible for commit 3ad80a1e1ab1cfd6028b20cbfbee72724f56047a
+Michael Peterson is responsible for commit 473fe7f3e4df988172d82a73397ef1f314406a93
+Michael Peterson is responsible for commit 4a92ca86c6040718a13c1af5f19456daf7a5f578
+Michael Peterson is responsible for commit e66f4d7d77674edf11c1de66e4f4c2b3520350ed
+Michael Peterson is responsible for commit d8e6fae35baa618c405c7496c19c2c88f7850c60
+Michael Peterson is responsible for commit 6854a90d4627e0d363307c01942912d107ce09a1
+Michael Peterson is responsible for commit 0f748a8748b62ba84f5fb72e9db803bdaf05ec62
+Michael Peterson is responsible for commit 484027d5df5e656c5fef92b83c6f39fecf506dfd
+Michael Peterson is responsible for commit b07eb89d327559d0553732738c564c9804b1caa5
+Michael Peterson is responsible for commit 27fab461b91c9b72750b8ab3cb0d650fb97c1a39
+Michael Peterson is responsible for commit 4a44285b556ba4c3e25d6e875880fd2e53130941
+Michael Peterson is responsible for commit 6dfdb89b67f399f1c087b5d97dc92149ab2bf3b6
+Michael Peterson is responsible for commit 00865b9101dfe0df00b04615febc169b5543f821
+Michael Peterson is responsible for commit dc86fe82d21c6f1e0ae0259814fe431a8f6eaf26
+Michael Peterson is responsible for commit 9ea7e9f4b6c872873ed6a8c36bd1123b75bb31c9
+Michael Peterson is responsible for commit b6bfabca432963474317c19227671abe907f4867
+Michael Peterson is responsible for commit aa6827f3bcf62acb3fa63c53c72bcc7f6b4aabc2
+Michael Peterson is responsible for commit 14e24ccdbcd1a10a5a07ffc4c88f0c4af7e2f6f5
+Michael Peterson is responsible for commit c605aadd3098565f4f9319db426f9a8db921ba49
+Michael Peterson is responsible for commit da00a44b5c1d596c12dd2151f70b5ec22af60d08
+Michael Peterson is responsible for commit 845899fe2800038d2fdc9f24a1a6daac260d9567
+Michael Peterson is responsible for commit 9f7eba913c8b6c624150625c97437e1ed59a5dcb
+Michael Peterson is responsible for commit 3e6a20d14468aeec8adfe550f8c439f95e5299e5
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+
+ ************ ANALYZING FOR USAGE PATTERN ADDITION ************
+
+
+****Parsing for addition at revision 4fb032c5054f85d846c0c32211be9874042475b6****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of 4fb032c5054f85d846c0c32211be9874042475b6 and 487d0cb1563f9e5423606ecb2cbd30c67ab12573:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 4fb032c5054f85d846c0c32211be9874042475b6 to 487d0cb1563f9e5423606ecb2cbd30c67ab12573
+
+
+****Parsing for addition at revision 487d0cb1563f9e5423606ecb2cbd30c67ab12573****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of 487d0cb1563f9e5423606ecb2cbd30c67ab12573 and 2062bd6f50e0ac5d8c7eea07d2f389df07a57040:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 487d0cb1563f9e5423606ecb2cbd30c67ab12573 to 2062bd6f50e0ac5d8c7eea07d2f389df07a57040
+
+
+****Parsing for addition at revision 2062bd6f50e0ac5d8c7eea07d2f389df07a57040****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of 2062bd6f50e0ac5d8c7eea07d2f389df07a57040 and eb865f71ecb0ddf8d9bc40bc431d47e2e8e75fe2:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit '2062bd6f50e0ac5d8c7eea07d2f389df07a57040' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision eb865f71ecb0ddf8d9bc40bc431d47e2e8e75fe2****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of eb865f71ecb0ddf8d9bc40bc431d47e2e8e75fe2 and 5ad9d5e7d2d5577b02f010370af8e9e87471d015:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit 'eb865f71ecb0ddf8d9bc40bc431d47e2e8e75fe2' because it has 0 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision 5ad9d5e7d2d5577b02f010370af8e9e87471d015****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of 5ad9d5e7d2d5577b02f010370af8e9e87471d015 and 3ad80a1e1ab1cfd6028b20cbfbee72724f56047a:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 5ad9d5e7d2d5577b02f010370af8e9e87471d015 to 3ad80a1e1ab1cfd6028b20cbfbee72724f56047a
+
+
+****Parsing for addition at revision 3ad80a1e1ab1cfd6028b20cbfbee72724f56047a****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of 3ad80a1e1ab1cfd6028b20cbfbee72724f56047a and 473fe7f3e4df988172d82a73397ef1f314406a93:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 3ad80a1e1ab1cfd6028b20cbfbee72724f56047a to 473fe7f3e4df988172d82a73397ef1f314406a93
+
+
+****Parsing for addition at revision 473fe7f3e4df988172d82a73397ef1f314406a93****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of 473fe7f3e4df988172d82a73397ef1f314406a93 and 4a92ca86c6040718a13c1af5f19456daf7a5f578:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 473fe7f3e4df988172d82a73397ef1f314406a93 to 4a92ca86c6040718a13c1af5f19456daf7a5f578
+
+
+****Parsing for addition at revision 4a92ca86c6040718a13c1af5f19456daf7a5f578****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+
+ Generics pattern public class LocationPanel was added at revision 4a92ca86c6040718a13c1af5f19456daf7a5f578
+
+
+ Generics pattern new EventHandler<MouseEvent>() was added at revision 4a92ca86c6040718a13c1af5f19456daf7a5f578
+
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+
+ Generics pattern new EventHandler<ScrollEvent>() was added at revision 4a92ca86c6040718a13c1af5f19456daf7a5f578
+
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of 4a92ca86c6040718a13c1af5f19456daf7a5f578 and e66f4d7d77674edf11c1de66e4f4c2b3520350ed:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 1
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 2
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 4a92ca86c6040718a13c1af5f19456daf7a5f578 to e66f4d7d77674edf11c1de66e4f4c2b3520350ed
+
+
+****Parsing for addition at revision e66f4d7d77674edf11c1de66e4f4c2b3520350ed****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+
+ Generics pattern public class ZoomPanel was added at revision e66f4d7d77674edf11c1de66e4f4c2b3520350ed
+
+
+ Generics pattern new ChangeListener<Number>() was added at revision e66f4d7d77674edf11c1de66e4f4c2b3520350ed
+
+
+ Generics pattern ObservableValue<? extends Number> was added at revision e66f4d7d77674edf11c1de66e4f4c2b3520350ed
+
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of e66f4d7d77674edf11c1de66e4f4c2b3520350ed and d8e6fae35baa618c405c7496c19c2c88f7850c60:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 1
+	--> recency = years
+	--> Added type declarations  = 2
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 3
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision e66f4d7d77674edf11c1de66e4f4c2b3520350ed to d8e6fae35baa618c405c7496c19c2c88f7850c60
+
+
+****Parsing for addition at revision d8e6fae35baa618c405c7496c19c2c88f7850c60****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of d8e6fae35baa618c405c7496c19c2c88f7850c60 and 6854a90d4627e0d363307c01942912d107ce09a1:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 1
+	--> recency = years
+	--> Added type declarations  = 2
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 3
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision d8e6fae35baa618c405c7496c19c2c88f7850c60 to 6854a90d4627e0d363307c01942912d107ce09a1
+
+
+****Parsing for addition at revision 6854a90d4627e0d363307c01942912d107ce09a1****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of 6854a90d4627e0d363307c01942912d107ce09a1 and 0f748a8748b62ba84f5fb72e9db803bdaf05ec62:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 1
+	--> recency = years
+	--> Added type declarations  = 2
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 3
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 6854a90d4627e0d363307c01942912d107ce09a1 to 0f748a8748b62ba84f5fb72e9db803bdaf05ec62
+
+
+****Parsing for addition at revision 0f748a8748b62ba84f5fb72e9db803bdaf05ec62****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of 0f748a8748b62ba84f5fb72e9db803bdaf05ec62 and 484027d5df5e656c5fef92b83c6f39fecf506dfd:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 1
+	--> recency = years
+	--> Added type declarations  = 2
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 3
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 0f748a8748b62ba84f5fb72e9db803bdaf05ec62 to 484027d5df5e656c5fef92b83c6f39fecf506dfd
+
+
+****Parsing for addition at revision 484027d5df5e656c5fef92b83c6f39fecf506dfd****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+
+ Generics pattern new EventHandler<ActionEvent>() was added at revision 484027d5df5e656c5fef92b83c6f39fecf506dfd
+
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of 484027d5df5e656c5fef92b83c6f39fecf506dfd and b07eb89d327559d0553732738c564c9804b1caa5:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 1
+	--> recency = years
+	--> Added type declarations  = 2
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 6
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 484027d5df5e656c5fef92b83c6f39fecf506dfd to b07eb89d327559d0553732738c564c9804b1caa5
+
+
+****Parsing for addition at revision b07eb89d327559d0553732738c564c9804b1caa5****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of b07eb89d327559d0553732738c564c9804b1caa5 and 27fab461b91c9b72750b8ab3cb0d650fb97c1a39:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 1
+	--> recency = years
+	--> Added type declarations  = 2
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 6
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision b07eb89d327559d0553732738c564c9804b1caa5 to 27fab461b91c9b72750b8ab3cb0d650fb97c1a39
+
+
+****Parsing for addition at revision 27fab461b91c9b72750b8ab3cb0d650fb97c1a39****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of 27fab461b91c9b72750b8ab3cb0d650fb97c1a39 and 4a44285b556ba4c3e25d6e875880fd2e53130941:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 1
+	--> recency = years
+	--> Added type declarations  = 2
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 6
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 27fab461b91c9b72750b8ab3cb0d650fb97c1a39 to 4a44285b556ba4c3e25d6e875880fd2e53130941
+
+
+****Parsing for addition at revision 4a44285b556ba4c3e25d6e875880fd2e53130941****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of 4a44285b556ba4c3e25d6e875880fd2e53130941 and 6dfdb89b67f399f1c087b5d97dc92149ab2bf3b6:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 1
+	--> recency = years
+	--> Added type declarations  = 2
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 6
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 4a44285b556ba4c3e25d6e875880fd2e53130941 to 6dfdb89b67f399f1c087b5d97dc92149ab2bf3b6
+
+
+****Parsing for addition at revision 6dfdb89b67f399f1c087b5d97dc92149ab2bf3b6****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+
+ Generics pattern new LinkedList<Shape>() was added at revision 6dfdb89b67f399f1c087b5d97dc92149ab2bf3b6
+
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+
+ Generics pattern public class ToolsPanel was added at revision 6dfdb89b67f399f1c087b5d97dc92149ab2bf3b6
+
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+
+ Generics pattern public class Eraser was added at revision 6dfdb89b67f399f1c087b5d97dc92149ab2bf3b6
+
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of 6dfdb89b67f399f1c087b5d97dc92149ab2bf3b6 and 00865b9101dfe0df00b04615febc169b5543f821:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 1
+	--> recency = years
+	--> Added type declarations  = 4
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 13
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 6dfdb89b67f399f1c087b5d97dc92149ab2bf3b6 to 00865b9101dfe0df00b04615febc169b5543f821
+
+
+****Parsing for addition at revision 00865b9101dfe0df00b04615febc169b5543f821****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of 00865b9101dfe0df00b04615febc169b5543f821 and dc86fe82d21c6f1e0ae0259814fe431a8f6eaf26:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 1
+	--> recency = years
+	--> Added type declarations  = 4
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 13
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 00865b9101dfe0df00b04615febc169b5543f821 to dc86fe82d21c6f1e0ae0259814fe431a8f6eaf26
+
+
+****Parsing for addition at revision dc86fe82d21c6f1e0ae0259814fe431a8f6eaf26****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+ Generics pattern public class Mover was added at revision dc86fe82d21c6f1e0ae0259814fe431a8f6eaf26
+
+
+Diff of dc86fe82d21c6f1e0ae0259814fe431a8f6eaf26 and 9ea7e9f4b6c872873ed6a8c36bd1123b75bb31c9:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 1
+	--> recency = years
+	--> Added type declarations  = 5
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 13
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision dc86fe82d21c6f1e0ae0259814fe431a8f6eaf26 to 9ea7e9f4b6c872873ed6a8c36bd1123b75bb31c9
+
+
+****Parsing for addition at revision 9ea7e9f4b6c872873ed6a8c36bd1123b75bb31c9****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of 9ea7e9f4b6c872873ed6a8c36bd1123b75bb31c9 and b6bfabca432963474317c19227671abe907f4867:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 1
+	--> recency = years
+	--> Added type declarations  = 5
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 13
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 9ea7e9f4b6c872873ed6a8c36bd1123b75bb31c9 to b6bfabca432963474317c19227671abe907f4867
+
+
+****Parsing for addition at revision b6bfabca432963474317c19227671abe907f4867****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of b6bfabca432963474317c19227671abe907f4867 and aa6827f3bcf62acb3fa63c53c72bcc7f6b4aabc2:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 1
+	--> recency = years
+	--> Added type declarations  = 6
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 17
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision b6bfabca432963474317c19227671abe907f4867 to aa6827f3bcf62acb3fa63c53c72bcc7f6b4aabc2
+
+
+****Parsing for addition at revision aa6827f3bcf62acb3fa63c53c72bcc7f6b4aabc2****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of aa6827f3bcf62acb3fa63c53c72bcc7f6b4aabc2 and 14e24ccdbcd1a10a5a07ffc4c88f0c4af7e2f6f5:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 1
+	--> recency = years
+	--> Added type declarations  = 6
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 17
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision aa6827f3bcf62acb3fa63c53c72bcc7f6b4aabc2 to 14e24ccdbcd1a10a5a07ffc4c88f0c4af7e2f6f5
+
+
+****Parsing for addition at revision 14e24ccdbcd1a10a5a07ffc4c88f0c4af7e2f6f5****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+
+ Generics pattern public class Whiteboard was added at revision 14e24ccdbcd1a10a5a07ffc4c88f0c4af7e2f6f5
+
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of 14e24ccdbcd1a10a5a07ffc4c88f0c4af7e2f6f5 and c605aadd3098565f4f9319db426f9a8db921ba49:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 1
+	--> recency = years
+	--> Added type declarations  = 7
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 17
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 14e24ccdbcd1a10a5a07ffc4c88f0c4af7e2f6f5 to c605aadd3098565f4f9319db426f9a8db921ba49
+
+
+****Parsing for addition at revision c605aadd3098565f4f9319db426f9a8db921ba49****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of c605aadd3098565f4f9319db426f9a8db921ba49 and da00a44b5c1d596c12dd2151f70b5ec22af60d08:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 1
+	--> recency = years
+	--> Added type declarations  = 7
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 17
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision c605aadd3098565f4f9319db426f9a8db921ba49 to da00a44b5c1d596c12dd2151f70b5ec22af60d08
+
+
+****Parsing for addition at revision da00a44b5c1d596c12dd2151f70b5ec22af60d08****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of da00a44b5c1d596c12dd2151f70b5ec22af60d08 and 845899fe2800038d2fdc9f24a1a6daac260d9567:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 1
+	--> recency = years
+	--> Added type declarations  = 8
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 19
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision da00a44b5c1d596c12dd2151f70b5ec22af60d08 to 845899fe2800038d2fdc9f24a1a6daac260d9567
+
+
+****Parsing for addition at revision 845899fe2800038d2fdc9f24a1a6daac260d9567****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+
+ Generics pattern public class Defaults was added at revision 845899fe2800038d2fdc9f24a1a6daac260d9567
+
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of 845899fe2800038d2fdc9f24a1a6daac260d9567 and 9f7eba913c8b6c624150625c97437e1ed59a5dcb:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 1
+	--> recency = years
+	--> Added type declarations  = 9
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 23
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 845899fe2800038d2fdc9f24a1a6daac260d9567 to 9f7eba913c8b6c624150625c97437e1ed59a5dcb
+
+
+****Parsing for addition at revision 9f7eba913c8b6c624150625c97437e1ed59a5dcb****
+
+Added Canvas.java to .\Whiteboard\ repository source files.
+Added ColorPalette.java to .\Whiteboard\ repository source files.
+Added LocationPanel.java to .\Whiteboard\ repository source files.
+Added ToolsPanel.java to .\Whiteboard\ repository source files.
+Added Whiteboard.java to .\Whiteboard\ repository source files.
+Added WhiteboardMenu.java to .\Whiteboard\ repository source files.
+Added WidthPanel.java to .\Whiteboard\ repository source files.
+Added ZoomPanel.java to .\Whiteboard\ repository source files.
+Added Defaults.java to .\Whiteboard\ repository source files.
+Added Properties.java to .\Whiteboard\ repository source files.
+Added PropertiesListener.java to .\Whiteboard\ repository source files.
+Added Driver.java to .\Whiteboard\ repository source files.
+Added MyDriver.java to .\Whiteboard\ repository source files.
+Added ColorPicker.java to .\Whiteboard\ repository source files.
+Added Eraser.java to .\Whiteboard\ repository source files.
+Added Mover.java to .\Whiteboard\ repository source files.
+Added Pen.java to .\Whiteboard\ repository source files.
+Added Tool.java to .\Whiteboard\ repository source files.
+Label backLabel = new Label("Background");
+Label foreLabel = new Label("Foreground");
+
+ Generics pattern public class ColorPalette was added at revision 9f7eba913c8b6c624150625c97437e1ed59a5dcb
+
+
+ Generics pattern new EventHandler<ActionEvent>() was added at revision 9f7eba913c8b6c624150625c97437e1ed59a5dcb
+
+final Label locationLbl = new Label("Location: (X: 0, Y: 0)");
+int x = (int) (canvas.getLocationX() - e.getX()) * -1;
+int y = (int) (canvas.getLocationY() - e.getY()) * -1;
+Image img = new Image(getClass().getResourceAsStream(imgLocation), BTN_SIZE, BTN_SIZE, true, true);
+ImageView imgView = new ImageView(img);
+HBox topControls = new HBox();
+ToolsPanel toolsPanel = new ToolsPanel(tools, canvas);
+WidthPanel widthPanel = new WidthPanel();
+ColorPalette colorPalette = new ColorPalette();
+Region spacer = new Region();
+Menu file = new Menu("file");
+MenuItem screenShot = new MenuItem("Save Screen Shot");
+img=canvas.snapshot(new SnapshotParameters(),null)
+WritableImage img = canvas.snapshot(new SnapshotParameters(), null);
+buffImg=SwingFXUtils.fromFXImage(img,null)
+BufferedImage buffImg = SwingFXUtils.fromFXImage(img, null);
+file=fileChooser.showSaveDialog(null)
+File file = fileChooser.showSaveDialog(null);
+extension=file.getPath().substring(file.getPath().lastIndexOf('.') + 1)
+String extension = file.getPath().substring(file.getPath().lastIndexOf('.') + 1);
+val=newVal.intValue()
+int val = newVal.intValue();
+final Slider zoomSlider = new Slider(100, 1000, 100);
+final Label zoomLabel = new Label("Zoom: 100%");
+zoom=newVal.doubleValue()
+double zoom = newVal.doubleValue();
+screen=Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds()
+Rectangle2D screen = Screen.getScreens().get(Screen.getScreens().size() - 1).getBounds();
+img=getCanvas().snapshot(new SnapshotParameters(),null)
+WritableImage img = getCanvas().snapshot(new SnapshotParameters(), null);
+transX=getCanvas().getChildren().get(0).getTranslateX()
+double transX = getCanvas().getChildren().get(0).getTranslateX();
+transY=getCanvas().getChildren().get(0).getTranslateY()
+double transY = getCanvas().getChildren().get(0).getTranslateY();
+
+Diff of 9f7eba913c8b6c624150625c97437e1ed59a5dcb and 3e6a20d14468aeec8adfe550f8c439f95e5299e5:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 1
+	--> recency = years
+	--> Added type declarations  = 10
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 25
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 9f7eba913c8b6c624150625c97437e1ed59a5dcb to 3e6a20d14468aeec8adfe550f8c439f95e5299e5
+
+************Analysis complete************
+Added generics to repository Whiteboard = 15
+
+Michael Peterson added type argument method count = 0
+	--> recency = null
+Michael Peterson added wildcard count = 1
+	--> recency = years
+Michael Peterson added type declaration count = 10
+	--> recency = years
+Michael Peterson added type parameter method count = 0
+	--> recency = null
+Michael Peterson added type parameter field count = 0
+	--> recency = null
+Michael Peterson added diamond count = 0
+	--> recency = null
+Michael Peterson added method invocation count = 0
+	--> recency = null
+Michael Peterson added implicit method invocation count = 0
+	--> recency = null
+Michael Peterson added class instantiation count = 25
+	--> recency = years
+Michael Peterson added nested count = 0
+	--> recency = null
+Michael Peterson added bounds count = 0
+	--> recency = null
+File copied successfully!

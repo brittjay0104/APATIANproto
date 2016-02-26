@@ -1,0 +1,773 @@
+Big-Data -- 9sau -- Saurabh Jain
+https://github.com/9sau/Big-Data.git
+git clone https://github.com/9sau/Big-Data.git
+.\Big-Data\
+.\Big-Data\.git
+0
+Project cloned!
+Saurabh Jain is responsible for commit 5820f77428ede65965a859483890bcbf200fbbfc
+Saurabh Jain is responsible for commit b654a40999361b94bcd7bf41d24b89421645469e
+Saurabh Jain is responsible for commit 122be0a69f0273499be81d106f625cbf44eca926
+Saurabh Jain is responsible for commit d5bd3c9be31fe00c623e71a7c12b6d0b117c7eb2
+Saurabh Jain is responsible for commit 9297ea0d0675f6d94528edc862a987c89f7b0019
+Saurabh Jain is responsible for commit 6946713aae2f797a79420bd8f1add7e6e8bb09aa
+Saurabh Jain is responsible for commit 7da6469000f76ca5756de4e2f854b6f43597f9ac
+Added MaxTemperatureDriver.java to .\Big-Data\ repository source files.
+Added MaxTemperatureMapper.java to .\Big-Data\ repository source files.
+Added MaxTemperatureReducer.java to .\Big-Data\ repository source files.
+Added StubTest.java to .\Big-Data\ repository source files.
+Added PageRankDriver.java to .\Big-Data\ repository source files.
+Added PageRankMapper.java to .\Big-Data\ repository source files.
+Added PageRankReducer.java to .\Big-Data\ repository source files.
+Added PageRankDriverIterative.java to .\Big-Data\ repository source files.
+Added PageRankMapperIterative.java to .\Big-Data\ repository source files.
+Added PageRankReducerIterative.java to .\Big-Data\ repository source files.
+Added Data.java to .\Big-Data\ repository source files.
+Added WordCount.java to .\Big-Data\ repository source files.
+Added StubDriver.java to .\Big-Data\ repository source files.
+Added StubMapper.java to .\Big-Data\ repository source files.
+Added StubReducer.java to .\Big-Data\ repository source files.
+Added StubTest.java to .\Big-Data\ repository source files.
+
+ ************ ANALYZING FOR USAGE PATTERN ADDITION ************
+
+
+****Parsing for addition at revision 5820f77428ede65965a859483890bcbf200fbbfc****
+
+Added MaxTemperatureDriver.java to .\Big-Data\ repository source files.
+Added MaxTemperatureMapper.java to .\Big-Data\ repository source files.
+Added MaxTemperatureReducer.java to .\Big-Data\ repository source files.
+Added StubTest.java to .\Big-Data\ repository source files.
+Added PageRankDriver.java to .\Big-Data\ repository source files.
+Added PageRankMapper.java to .\Big-Data\ repository source files.
+Added PageRankReducer.java to .\Big-Data\ repository source files.
+Added PageRankDriverIterative.java to .\Big-Data\ repository source files.
+Added PageRankMapperIterative.java to .\Big-Data\ repository source files.
+Added PageRankReducerIterative.java to .\Big-Data\ repository source files.
+Added Data.java to .\Big-Data\ repository source files.
+Added WordCount.java to .\Big-Data\ repository source files.
+Added StubDriver.java to .\Big-Data\ repository source files.
+Added StubMapper.java to .\Big-Data\ repository source files.
+Added StubReducer.java to .\Big-Data\ repository source files.
+Added StubTest.java to .\Big-Data\ repository source files.
+Job job = new Job();
+success=job.waitForCompletion(true)
+boolean success = job.waitForCompletion(true);
+MaxTemperatureDriver driver = new MaxTemperatureDriver();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+year=line.substring(15,19)
+String year = line.substring(15, 19);
+int airTemperature;
+quality=line.substring(92,93)
+String quality = line.substring(92, 93);
+int maxValue = Integer.MIN_VALUE;
+MaxTemperatureMapper mapper = new MaxTemperatureMapper();
+MaxTemperatureReducer reducer = new MaxTemperatureReducer();
+job=Job.getInstance(getConf()," wordcount ")
+Job job = Job.getInstance(getConf(), " wordcount ");
+success=job.waitForCompletion(true)
+boolean success = job.waitForCompletion(true);
+PageRankDriver driver = new PageRankDriver();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+data[]=line.trim().split("\\s+")
+String data[] = line.trim().split("\\s+");
+double temp = Double.parseDouble(data[data.length - 1].trim())
+					/ (data.length - 2);
+double sum = 0;
+String str = "";
+temp=Double.parseDouble(val.toString())
+double temp = Double.parseDouble(val.toString());
+job=Job.getInstance(getConf()," PageRank Iterative ")
+Job job = Job.getInstance(getConf(), " PageRank Iterative ");
+PageRankDriverIterative driver = new PageRankDriverIterative();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+data[]=line.trim().split("\\s+")
+String data[] = line.trim().split("\\s+");
+double temp = Double.parseDouble(data[data.length - 1].trim())/ (data.length - 2);
+double sum = 0;
+String str = "";
+temp=Double.parseDouble(val.toString())
+double temp = Double.parseDouble(val.toString());
+res=ToolRunner.run(new WordCount(),args)
+int res = ToolRunner.run(new WordCount(), args);
+job=Job.getInstance(getConf()," wordcount ")
+Job job = Job.getInstance(getConf(), " wordcount ");
+line=lineText.toString()
+String line = lineText.toString();
+StringTokenizer tokenizer = new StringTokenizer(line);
+temp=tokenizer.nextToken().trim().toLowerCase()
+String temp = tokenizer.nextToken().trim().toLowerCase();
+int sum = 0;
+Job job = new Job();
+success=job.waitForCompletion(true)
+boolean success = job.waitForCompletion(true);
+StubDriver driver = new StubDriver();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+year=line.substring(15,19)
+String year = line.substring(15, 19);
+int airTemperature;
+quality=line.substring(92,93)
+String quality = line.substring(92, 93);
+int maxValue = Integer.MIN_VALUE;
+StubMapper mapper = new StubMapper();
+StubReducer reducer = new StubReducer();
+
+Diff of 5820f77428ede65965a859483890bcbf200fbbfc and b654a40999361b94bcd7bf41d24b89421645469e:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 5820f77428ede65965a859483890bcbf200fbbfc to b654a40999361b94bcd7bf41d24b89421645469e
+
+
+****Parsing for addition at revision b654a40999361b94bcd7bf41d24b89421645469e****
+
+Added MaxTemperatureDriver.java to .\Big-Data\ repository source files.
+Added MaxTemperatureMapper.java to .\Big-Data\ repository source files.
+Added MaxTemperatureReducer.java to .\Big-Data\ repository source files.
+Added StubTest.java to .\Big-Data\ repository source files.
+Added PageRankDriver.java to .\Big-Data\ repository source files.
+Added PageRankMapper.java to .\Big-Data\ repository source files.
+Added PageRankReducer.java to .\Big-Data\ repository source files.
+Added PageRankDriverIterative.java to .\Big-Data\ repository source files.
+Added PageRankMapperIterative.java to .\Big-Data\ repository source files.
+Added PageRankReducerIterative.java to .\Big-Data\ repository source files.
+Added Data.java to .\Big-Data\ repository source files.
+Added WordCount.java to .\Big-Data\ repository source files.
+Added StubDriver.java to .\Big-Data\ repository source files.
+Added StubMapper.java to .\Big-Data\ repository source files.
+Added StubReducer.java to .\Big-Data\ repository source files.
+Added StubTest.java to .\Big-Data\ repository source files.
+Job job = new Job();
+success=job.waitForCompletion(true)
+boolean success = job.waitForCompletion(true);
+MaxTemperatureDriver driver = new MaxTemperatureDriver();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+year=line.substring(15,19)
+String year = line.substring(15, 19);
+int airTemperature;
+quality=line.substring(92,93)
+String quality = line.substring(92, 93);
+int maxValue = Integer.MIN_VALUE;
+MaxTemperatureMapper mapper = new MaxTemperatureMapper();
+MaxTemperatureReducer reducer = new MaxTemperatureReducer();
+job=Job.getInstance(getConf()," wordcount ")
+Job job = Job.getInstance(getConf(), " wordcount ");
+success=job.waitForCompletion(true)
+boolean success = job.waitForCompletion(true);
+PageRankDriver driver = new PageRankDriver();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+data[]=line.trim().split("\\s+")
+String data[] = line.trim().split("\\s+");
+double temp = Double.parseDouble(data[data.length - 1].trim())
+					/ (data.length - 2);
+double sum = 0;
+String str = "";
+temp=Double.parseDouble(val.toString())
+double temp = Double.parseDouble(val.toString());
+job=Job.getInstance(getConf()," PageRank Iterative ")
+Job job = Job.getInstance(getConf(), " PageRank Iterative ");
+PageRankDriverIterative driver = new PageRankDriverIterative();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+data[]=line.trim().split("\\s+")
+String data[] = line.trim().split("\\s+");
+double temp = Double.parseDouble(data[data.length - 1].trim())/ (data.length - 2);
+double sum = 0;
+String str = "";
+temp=Double.parseDouble(val.toString())
+double temp = Double.parseDouble(val.toString());
+res=ToolRunner.run(new WordCount(),args)
+int res = ToolRunner.run(new WordCount(), args);
+job=Job.getInstance(getConf()," wordcount ")
+Job job = Job.getInstance(getConf(), " wordcount ");
+line=lineText.toString()
+String line = lineText.toString();
+StringTokenizer tokenizer = new StringTokenizer(line);
+temp=tokenizer.nextToken().trim().toLowerCase()
+String temp = tokenizer.nextToken().trim().toLowerCase();
+int sum = 0;
+Job job = new Job();
+success=job.waitForCompletion(true)
+boolean success = job.waitForCompletion(true);
+StubDriver driver = new StubDriver();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+year=line.substring(15,19)
+String year = line.substring(15, 19);
+int airTemperature;
+quality=line.substring(92,93)
+String quality = line.substring(92, 93);
+int maxValue = Integer.MIN_VALUE;
+StubMapper mapper = new StubMapper();
+StubReducer reducer = new StubReducer();
+
+Diff of b654a40999361b94bcd7bf41d24b89421645469e and 122be0a69f0273499be81d106f625cbf44eca926:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision b654a40999361b94bcd7bf41d24b89421645469e to 122be0a69f0273499be81d106f625cbf44eca926
+
+
+****Parsing for addition at revision 122be0a69f0273499be81d106f625cbf44eca926****
+
+Added MaxTemperatureDriver.java to .\Big-Data\ repository source files.
+Added MaxTemperatureMapper.java to .\Big-Data\ repository source files.
+Added MaxTemperatureReducer.java to .\Big-Data\ repository source files.
+Added StubTest.java to .\Big-Data\ repository source files.
+Added PageRankDriver.java to .\Big-Data\ repository source files.
+Added PageRankMapper.java to .\Big-Data\ repository source files.
+Added PageRankReducer.java to .\Big-Data\ repository source files.
+Added PageRankDriverIterative.java to .\Big-Data\ repository source files.
+Added PageRankMapperIterative.java to .\Big-Data\ repository source files.
+Added PageRankReducerIterative.java to .\Big-Data\ repository source files.
+Added Data.java to .\Big-Data\ repository source files.
+Added WordCount.java to .\Big-Data\ repository source files.
+Added StubDriver.java to .\Big-Data\ repository source files.
+Added StubMapper.java to .\Big-Data\ repository source files.
+Added StubReducer.java to .\Big-Data\ repository source files.
+Added StubTest.java to .\Big-Data\ repository source files.
+Job job = new Job();
+success=job.waitForCompletion(true)
+boolean success = job.waitForCompletion(true);
+MaxTemperatureDriver driver = new MaxTemperatureDriver();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+year=line.substring(15,19)
+String year = line.substring(15, 19);
+int airTemperature;
+quality=line.substring(92,93)
+String quality = line.substring(92, 93);
+int maxValue = Integer.MIN_VALUE;
+MaxTemperatureMapper mapper = new MaxTemperatureMapper();
+MaxTemperatureReducer reducer = new MaxTemperatureReducer();
+job=Job.getInstance(getConf()," wordcount ")
+Job job = Job.getInstance(getConf(), " wordcount ");
+success=job.waitForCompletion(true)
+boolean success = job.waitForCompletion(true);
+PageRankDriver driver = new PageRankDriver();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+data[]=line.trim().split("\\s+")
+String data[] = line.trim().split("\\s+");
+double temp = Double.parseDouble(data[data.length - 1].trim())
+					/ (data.length - 2);
+double sum = 0;
+String str = "";
+temp=Double.parseDouble(val.toString())
+double temp = Double.parseDouble(val.toString());
+job=Job.getInstance(getConf()," PageRank Iterative ")
+Job job = Job.getInstance(getConf(), " PageRank Iterative ");
+PageRankDriverIterative driver = new PageRankDriverIterative();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+data[]=line.trim().split("\\s+")
+String data[] = line.trim().split("\\s+");
+double temp = Double.parseDouble(data[data.length - 1].trim())/ (data.length - 2);
+double sum = 0;
+String str = "";
+temp=Double.parseDouble(val.toString())
+double temp = Double.parseDouble(val.toString());
+res=ToolRunner.run(new WordCount(),args)
+int res = ToolRunner.run(new WordCount(), args);
+job=Job.getInstance(getConf()," wordcount ")
+Job job = Job.getInstance(getConf(), " wordcount ");
+line=lineText.toString()
+String line = lineText.toString();
+StringTokenizer tokenizer = new StringTokenizer(line);
+temp=tokenizer.nextToken().trim().toLowerCase()
+String temp = tokenizer.nextToken().trim().toLowerCase();
+int sum = 0;
+Job job = new Job();
+success=job.waitForCompletion(true)
+boolean success = job.waitForCompletion(true);
+StubDriver driver = new StubDriver();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+year=line.substring(15,19)
+String year = line.substring(15, 19);
+int airTemperature;
+quality=line.substring(92,93)
+String quality = line.substring(92, 93);
+int maxValue = Integer.MIN_VALUE;
+StubMapper mapper = new StubMapper();
+StubReducer reducer = new StubReducer();
+
+Diff of 122be0a69f0273499be81d106f625cbf44eca926 and d5bd3c9be31fe00c623e71a7c12b6d0b117c7eb2:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 122be0a69f0273499be81d106f625cbf44eca926 to d5bd3c9be31fe00c623e71a7c12b6d0b117c7eb2
+
+
+****Parsing for addition at revision d5bd3c9be31fe00c623e71a7c12b6d0b117c7eb2****
+
+Added MaxTemperatureDriver.java to .\Big-Data\ repository source files.
+Added MaxTemperatureMapper.java to .\Big-Data\ repository source files.
+Added MaxTemperatureReducer.java to .\Big-Data\ repository source files.
+Added StubTest.java to .\Big-Data\ repository source files.
+Added PageRankDriver.java to .\Big-Data\ repository source files.
+Added PageRankMapper.java to .\Big-Data\ repository source files.
+Added PageRankReducer.java to .\Big-Data\ repository source files.
+Added PageRankDriverIterative.java to .\Big-Data\ repository source files.
+Added PageRankMapperIterative.java to .\Big-Data\ repository source files.
+Added PageRankReducerIterative.java to .\Big-Data\ repository source files.
+Added Data.java to .\Big-Data\ repository source files.
+Added WordCount.java to .\Big-Data\ repository source files.
+Added StubDriver.java to .\Big-Data\ repository source files.
+Added StubMapper.java to .\Big-Data\ repository source files.
+Added StubReducer.java to .\Big-Data\ repository source files.
+Added StubTest.java to .\Big-Data\ repository source files.
+Job job = new Job();
+success=job.waitForCompletion(true)
+boolean success = job.waitForCompletion(true);
+MaxTemperatureDriver driver = new MaxTemperatureDriver();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+year=line.substring(15,19)
+String year = line.substring(15, 19);
+int airTemperature;
+quality=line.substring(92,93)
+String quality = line.substring(92, 93);
+int maxValue = Integer.MIN_VALUE;
+MaxTemperatureMapper mapper = new MaxTemperatureMapper();
+MaxTemperatureReducer reducer = new MaxTemperatureReducer();
+job=Job.getInstance(getConf()," wordcount ")
+Job job = Job.getInstance(getConf(), " wordcount ");
+success=job.waitForCompletion(true)
+boolean success = job.waitForCompletion(true);
+PageRankDriver driver = new PageRankDriver();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+data[]=line.trim().split("\\s+")
+String data[] = line.trim().split("\\s+");
+double temp = Double.parseDouble(data[data.length - 1].trim())
+					/ (data.length - 2);
+double sum = 0;
+String str = "";
+temp=Double.parseDouble(val.toString())
+double temp = Double.parseDouble(val.toString());
+job=Job.getInstance(getConf()," PageRank Iterative ")
+Job job = Job.getInstance(getConf(), " PageRank Iterative ");
+PageRankDriverIterative driver = new PageRankDriverIterative();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+data[]=line.trim().split("\\s+")
+String data[] = line.trim().split("\\s+");
+double temp = Double.parseDouble(data[data.length - 1].trim())/ (data.length - 2);
+double sum = 0;
+String str = "";
+temp=Double.parseDouble(val.toString())
+double temp = Double.parseDouble(val.toString());
+res=ToolRunner.run(new WordCount(),args)
+int res = ToolRunner.run(new WordCount(), args);
+job=Job.getInstance(getConf()," wordcount ")
+Job job = Job.getInstance(getConf(), " wordcount ");
+line=lineText.toString()
+String line = lineText.toString();
+StringTokenizer tokenizer = new StringTokenizer(line);
+temp=tokenizer.nextToken().trim().toLowerCase()
+String temp = tokenizer.nextToken().trim().toLowerCase();
+int sum = 0;
+Job job = new Job();
+success=job.waitForCompletion(true)
+boolean success = job.waitForCompletion(true);
+StubDriver driver = new StubDriver();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+year=line.substring(15,19)
+String year = line.substring(15, 19);
+int airTemperature;
+quality=line.substring(92,93)
+String quality = line.substring(92, 93);
+int maxValue = Integer.MIN_VALUE;
+StubMapper mapper = new StubMapper();
+StubReducer reducer = new StubReducer();
+
+Diff of d5bd3c9be31fe00c623e71a7c12b6d0b117c7eb2 and 9297ea0d0675f6d94528edc862a987c89f7b0019:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision d5bd3c9be31fe00c623e71a7c12b6d0b117c7eb2 to 9297ea0d0675f6d94528edc862a987c89f7b0019
+
+
+****Parsing for addition at revision 9297ea0d0675f6d94528edc862a987c89f7b0019****
+
+Added MaxTemperatureDriver.java to .\Big-Data\ repository source files.
+Added MaxTemperatureMapper.java to .\Big-Data\ repository source files.
+Added MaxTemperatureReducer.java to .\Big-Data\ repository source files.
+Added StubTest.java to .\Big-Data\ repository source files.
+Added PageRankDriver.java to .\Big-Data\ repository source files.
+Added PageRankMapper.java to .\Big-Data\ repository source files.
+Added PageRankReducer.java to .\Big-Data\ repository source files.
+Added PageRankDriverIterative.java to .\Big-Data\ repository source files.
+Added PageRankMapperIterative.java to .\Big-Data\ repository source files.
+Added PageRankReducerIterative.java to .\Big-Data\ repository source files.
+Added Data.java to .\Big-Data\ repository source files.
+Added WordCount.java to .\Big-Data\ repository source files.
+Added StubDriver.java to .\Big-Data\ repository source files.
+Added StubMapper.java to .\Big-Data\ repository source files.
+Added StubReducer.java to .\Big-Data\ repository source files.
+Added StubTest.java to .\Big-Data\ repository source files.
+Job job = new Job();
+success=job.waitForCompletion(true)
+boolean success = job.waitForCompletion(true);
+MaxTemperatureDriver driver = new MaxTemperatureDriver();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+year=line.substring(15,19)
+String year = line.substring(15, 19);
+int airTemperature;
+quality=line.substring(92,93)
+String quality = line.substring(92, 93);
+int maxValue = Integer.MIN_VALUE;
+MaxTemperatureMapper mapper = new MaxTemperatureMapper();
+MaxTemperatureReducer reducer = new MaxTemperatureReducer();
+job=Job.getInstance(getConf()," wordcount ")
+Job job = Job.getInstance(getConf(), " wordcount ");
+success=job.waitForCompletion(true)
+boolean success = job.waitForCompletion(true);
+PageRankDriver driver = new PageRankDriver();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+data[]=line.trim().split("\\s+")
+String data[] = line.trim().split("\\s+");
+double temp = Double.parseDouble(data[data.length - 1].trim())
+					/ (data.length - 2);
+double sum = 0;
+String str = "";
+temp=Double.parseDouble(val.toString())
+double temp = Double.parseDouble(val.toString());
+job=Job.getInstance(getConf()," PageRank Iterative ")
+Job job = Job.getInstance(getConf(), " PageRank Iterative ");
+PageRankDriverIterative driver = new PageRankDriverIterative();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+data[]=line.trim().split("\\s+")
+String data[] = line.trim().split("\\s+");
+double temp = Double.parseDouble(data[data.length - 1].trim())/ (data.length - 2);
+double sum = 0;
+String str = "";
+temp=Double.parseDouble(val.toString())
+double temp = Double.parseDouble(val.toString());
+res=ToolRunner.run(new WordCount(),args)
+int res = ToolRunner.run(new WordCount(), args);
+job=Job.getInstance(getConf()," wordcount ")
+Job job = Job.getInstance(getConf(), " wordcount ");
+line=lineText.toString()
+String line = lineText.toString();
+StringTokenizer tokenizer = new StringTokenizer(line);
+temp=tokenizer.nextToken().trim().toLowerCase()
+String temp = tokenizer.nextToken().trim().toLowerCase();
+int sum = 0;
+Job job = new Job();
+success=job.waitForCompletion(true)
+boolean success = job.waitForCompletion(true);
+StubDriver driver = new StubDriver();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+year=line.substring(15,19)
+String year = line.substring(15, 19);
+int airTemperature;
+quality=line.substring(92,93)
+String quality = line.substring(92, 93);
+int maxValue = Integer.MIN_VALUE;
+StubMapper mapper = new StubMapper();
+StubReducer reducer = new StubReducer();
+
+Diff of 9297ea0d0675f6d94528edc862a987c89f7b0019 and 6946713aae2f797a79420bd8f1add7e6e8bb09aa:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 9297ea0d0675f6d94528edc862a987c89f7b0019 to 6946713aae2f797a79420bd8f1add7e6e8bb09aa
+
+
+****Parsing for addition at revision 6946713aae2f797a79420bd8f1add7e6e8bb09aa****
+
+Added MaxTemperatureDriver.java to .\Big-Data\ repository source files.
+Added MaxTemperatureMapper.java to .\Big-Data\ repository source files.
+Added MaxTemperatureReducer.java to .\Big-Data\ repository source files.
+Added StubTest.java to .\Big-Data\ repository source files.
+Added PageRankDriver.java to .\Big-Data\ repository source files.
+Added PageRankMapper.java to .\Big-Data\ repository source files.
+Added PageRankReducer.java to .\Big-Data\ repository source files.
+Added PageRankDriverIterative.java to .\Big-Data\ repository source files.
+Added PageRankMapperIterative.java to .\Big-Data\ repository source files.
+Added PageRankReducerIterative.java to .\Big-Data\ repository source files.
+Added Data.java to .\Big-Data\ repository source files.
+Added WordCount.java to .\Big-Data\ repository source files.
+Added StubDriver.java to .\Big-Data\ repository source files.
+Added StubMapper.java to .\Big-Data\ repository source files.
+Added StubReducer.java to .\Big-Data\ repository source files.
+Added StubTest.java to .\Big-Data\ repository source files.
+Job job = new Job();
+success=job.waitForCompletion(true)
+boolean success = job.waitForCompletion(true);
+MaxTemperatureDriver driver = new MaxTemperatureDriver();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+year=line.substring(15,19)
+String year = line.substring(15, 19);
+int airTemperature;
+quality=line.substring(92,93)
+String quality = line.substring(92, 93);
+int maxValue = Integer.MIN_VALUE;
+MaxTemperatureMapper mapper = new MaxTemperatureMapper();
+MaxTemperatureReducer reducer = new MaxTemperatureReducer();
+job=Job.getInstance(getConf()," wordcount ")
+Job job = Job.getInstance(getConf(), " wordcount ");
+success=job.waitForCompletion(true)
+boolean success = job.waitForCompletion(true);
+PageRankDriver driver = new PageRankDriver();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+data[]=line.trim().split("\\s+")
+String data[] = line.trim().split("\\s+");
+double temp = Double.parseDouble(data[data.length - 1].trim())
+					/ (data.length - 2);
+double sum = 0;
+String str = "";
+temp=Double.parseDouble(val.toString())
+double temp = Double.parseDouble(val.toString());
+job=Job.getInstance(getConf()," PageRank Iterative ")
+Job job = Job.getInstance(getConf(), " PageRank Iterative ");
+PageRankDriverIterative driver = new PageRankDriverIterative();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+data[]=line.trim().split("\\s+")
+String data[] = line.trim().split("\\s+");
+double temp = Double.parseDouble(data[data.length - 1].trim())/ (data.length - 2);
+double sum = 0;
+String str = "";
+temp=Double.parseDouble(val.toString())
+double temp = Double.parseDouble(val.toString());
+res=ToolRunner.run(new WordCount(),args)
+int res = ToolRunner.run(new WordCount(), args);
+job=Job.getInstance(getConf()," wordcount ")
+Job job = Job.getInstance(getConf(), " wordcount ");
+line=lineText.toString()
+String line = lineText.toString();
+StringTokenizer tokenizer = new StringTokenizer(line);
+temp=tokenizer.nextToken().trim().toLowerCase()
+String temp = tokenizer.nextToken().trim().toLowerCase();
+int sum = 0;
+Job job = new Job();
+success=job.waitForCompletion(true)
+boolean success = job.waitForCompletion(true);
+StubDriver driver = new StubDriver();
+exitCode=ToolRunner.run(driver,args)
+int exitCode = ToolRunner.run(driver, args);
+line=value.toString()
+String line = value.toString();
+year=line.substring(15,19)
+String year = line.substring(15, 19);
+int airTemperature;
+quality=line.substring(92,93)
+String quality = line.substring(92, 93);
+int maxValue = Integer.MIN_VALUE;
+StubMapper mapper = new StubMapper();
+StubReducer reducer = new StubReducer();
+
+Diff of 6946713aae2f797a79420bd8f1add7e6e8bb09aa and 7da6469000f76ca5756de4e2f854b6f43597f9ac:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 6946713aae2f797a79420bd8f1add7e6e8bb09aa to 7da6469000f76ca5756de4e2f854b6f43597f9ac
+
+************Analysis complete************
+Added generics to repository Big-Data = 0
+
+Saurabh Jain added type argument method count = 0
+	--> recency = null
+Saurabh Jain added wildcard count = 0
+	--> recency = null
+Saurabh Jain added type declaration count = 0
+	--> recency = null
+Saurabh Jain added type parameter method count = 0
+	--> recency = null
+Saurabh Jain added type parameter field count = 0
+	--> recency = null
+Saurabh Jain added diamond count = 0
+	--> recency = null
+Saurabh Jain added method invocation count = 0
+	--> recency = null
+Saurabh Jain added implicit method invocation count = 0
+	--> recency = null
+Saurabh Jain added class instantiation count = 0
+	--> recency = null
+Saurabh Jain added nested count = 0
+	--> recency = null
+Saurabh Jain added bounds count = 0
+	--> recency = null
+File copied successfully!

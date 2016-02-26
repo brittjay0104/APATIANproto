@@ -1,0 +1,1756 @@
+TodoBackend-Spring -- pamo -- Pamela Ocampo
+https://github.com/pamo/TodoBackend-Spring.git
+git clone https://github.com/pamo/TodoBackend-Spring.git
+.\TodoBackend-Spring\
+.\TodoBackend-Spring\.git
+0
+Project cloned!
+Pamela Ocampo is responsible for commit ccc7ad6148446d4286288eaabb4ec4b1c759da81
+Pamela Ocampo is responsible for commit b2a5df0c088b4ebf1adda6ace678a341fe388dbb
+Pamela Ocampo is responsible for commit 1509aa3eee5d9e9e938a00ecd0afc3e945cb2b90
+Pamela Ocampo is responsible for commit 574ca6a2aa2fff99cd2f95f1323a7dcc02402d87
+Pamela Ocampo is responsible for commit 65551bc6e106882069be641ac067909654f3b12c
+Pamela Ocampo is responsible for commit e9e6e6dca6628c17255040fceb90b01c359dd08e
+Pamela Ocampo is responsible for commit 11ecfe6cff72ac1263b89d5105e92d91a269524e
+Pamela Ocampo is responsible for commit b09386f9651914519e3fe8ed01f8584a8ad464ec
+Pamela Ocampo is responsible for commit d741678d88ead95adab653a3a51f9c74490ddd03
+Pamela Ocampo is responsible for commit 95754450cb72617429c619c42b9a8984c781029b
+Pamela Ocampo is responsible for commit 1b9f540225b1b131f7cd4af071267ca699b6e1ae
+Pamela Ocampo is responsible for commit fa01dbdd2a949be58e7b8bf50d7a59e860668895
+Pamela Ocampo is responsible for commit 339e5fa3a2d6612e6d7f749665d0db5ef94a959f
+Pamela Ocampo is responsible for commit d9c131a3343c0a0094d41f929b6c14111dd19a69
+Pamela Ocampo is responsible for commit 4854b175ab8ce316e92b6c1616d80a054c1e6887
+Pamela Ocampo is responsible for commit 9225ba53ca7223a1ac20ebf91e7547a2e77360fe
+Pamela Ocampo is responsible for commit 657e9e777b2bcb34e1e305e8043e8427407367af
+Pamela Ocampo is responsible for commit 9d1d25b90960bd4db153c5caee50ba1f12654785
+Pamela Ocampo is responsible for commit 5cb069a493839d3cf152fc97a32f1c505956f06d
+Pamela Ocampo is responsible for commit 73f334d49499046c91f68366a1ca850921c8913c
+Pamela Ocampo is responsible for commit f17309453c0dbcf403f70a15053b70c28cfbd20d
+Pamela Ocampo is responsible for commit 51343df87d60af7bd88e474490891559b0a455ab
+Pamela Ocampo is responsible for commit 8f4109ca65b4679734e0e84de04b3d7bb4fd002f
+Pamela Ocampo is responsible for commit 5f5014f91517f947fe638461fffa1dca11ea2169
+Pamela Ocampo is responsible for commit f3107677c4089f8f396e35593e09e5f0284bc758
+Pamela Ocampo is responsible for commit f0ecaf2123ec4022d94648736ddaec3bb5f734bd
+Pamela Ocampo is responsible for commit 2a37244e24d261de49d79acb718127501778e900
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+
+ ************ ANALYZING FOR USAGE PATTERN ADDITION ************
+
+
+****Parsing for addition at revision ccc7ad6148446d4286288eaabb4ec4b1c759da81****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of ccc7ad6148446d4286288eaabb4ec4b1c759da81 and b2a5df0c088b4ebf1adda6ace678a341fe388dbb:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision ccc7ad6148446d4286288eaabb4ec4b1c759da81 to b2a5df0c088b4ebf1adda6ace678a341fe388dbb
+
+
+****Parsing for addition at revision b2a5df0c088b4ebf1adda6ace678a341fe388dbb****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of b2a5df0c088b4ebf1adda6ace678a341fe388dbb and 1509aa3eee5d9e9e938a00ecd0afc3e945cb2b90:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision b2a5df0c088b4ebf1adda6ace678a341fe388dbb to 1509aa3eee5d9e9e938a00ecd0afc3e945cb2b90
+
+
+****Parsing for addition at revision 1509aa3eee5d9e9e938a00ecd0afc3e945cb2b90****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of 1509aa3eee5d9e9e938a00ecd0afc3e945cb2b90 and 574ca6a2aa2fff99cd2f95f1323a7dcc02402d87:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 1509aa3eee5d9e9e938a00ecd0afc3e945cb2b90 to 574ca6a2aa2fff99cd2f95f1323a7dcc02402d87
+
+
+****Parsing for addition at revision 574ca6a2aa2fff99cd2f95f1323a7dcc02402d87****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of 574ca6a2aa2fff99cd2f95f1323a7dcc02402d87 and 65551bc6e106882069be641ac067909654f3b12c:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 574ca6a2aa2fff99cd2f95f1323a7dcc02402d87 to 65551bc6e106882069be641ac067909654f3b12c
+
+
+****Parsing for addition at revision 65551bc6e106882069be641ac067909654f3b12c****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of 65551bc6e106882069be641ac067909654f3b12c and e9e6e6dca6628c17255040fceb90b01c359dd08e:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 65551bc6e106882069be641ac067909654f3b12c to e9e6e6dca6628c17255040fceb90b01c359dd08e
+
+
+****Parsing for addition at revision e9e6e6dca6628c17255040fceb90b01c359dd08e****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of e9e6e6dca6628c17255040fceb90b01c359dd08e and 11ecfe6cff72ac1263b89d5105e92d91a269524e:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision e9e6e6dca6628c17255040fceb90b01c359dd08e to 11ecfe6cff72ac1263b89d5105e92d91a269524e
+
+
+****Parsing for addition at revision 11ecfe6cff72ac1263b89d5105e92d91a269524e****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of 11ecfe6cff72ac1263b89d5105e92d91a269524e and b09386f9651914519e3fe8ed01f8584a8ad464ec:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 11ecfe6cff72ac1263b89d5105e92d91a269524e to b09386f9651914519e3fe8ed01f8584a8ad464ec
+
+
+****Parsing for addition at revision b09386f9651914519e3fe8ed01f8584a8ad464ec****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of b09386f9651914519e3fe8ed01f8584a8ad464ec and d741678d88ead95adab653a3a51f9c74490ddd03:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision b09386f9651914519e3fe8ed01f8584a8ad464ec to d741678d88ead95adab653a3a51f9c74490ddd03
+
+
+****Parsing for addition at revision d741678d88ead95adab653a3a51f9c74490ddd03****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of d741678d88ead95adab653a3a51f9c74490ddd03 and 95754450cb72617429c619c42b9a8984c781029b:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision d741678d88ead95adab653a3a51f9c74490ddd03 to 95754450cb72617429c619c42b9a8984c781029b
+
+
+****Parsing for addition at revision 95754450cb72617429c619c42b9a8984c781029b****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of 95754450cb72617429c619c42b9a8984c781029b and 1b9f540225b1b131f7cd4af071267ca699b6e1ae:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 95754450cb72617429c619c42b9a8984c781029b to 1b9f540225b1b131f7cd4af071267ca699b6e1ae
+
+
+****Parsing for addition at revision 1b9f540225b1b131f7cd4af071267ca699b6e1ae****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of 1b9f540225b1b131f7cd4af071267ca699b6e1ae and fa01dbdd2a949be58e7b8bf50d7a59e860668895:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 1b9f540225b1b131f7cd4af071267ca699b6e1ae to fa01dbdd2a949be58e7b8bf50d7a59e860668895
+
+
+****Parsing for addition at revision fa01dbdd2a949be58e7b8bf50d7a59e860668895****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of fa01dbdd2a949be58e7b8bf50d7a59e860668895 and 0eb73907e9dc509dd663042820ff9238171781fa:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision fa01dbdd2a949be58e7b8bf50d7a59e860668895 to 0eb73907e9dc509dd663042820ff9238171781fa
+
+************Analysis complete************
+Added generics to repository TodoBackend-Spring = 0
+
+Pamela Ocampo added type argument method count = 0
+	--> recency = null
+Pamela Ocampo added wildcard count = 0
+	--> recency = null
+Pamela Ocampo added type declaration count = 0
+	--> recency = null
+Pamela Ocampo added type parameter method count = 0
+	--> recency = null
+Pamela Ocampo added type parameter field count = 0
+	--> recency = null
+Pamela Ocampo added diamond count = 0
+	--> recency = null
+Pamela Ocampo added method invocation count = 0
+	--> recency = null
+Pamela Ocampo added implicit method invocation count = 0
+	--> recency = null
+Pamela Ocampo added class instantiation count = 0
+	--> recency = null
+Pamela Ocampo added nested count = 0
+	--> recency = null
+Pamela Ocampo added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository TodoBackend-Spring = 0
+
+Pamela Ocampo added type argument method count = 0
+	--> recency = null
+Pamela Ocampo added wildcard count = 0
+	--> recency = null
+Pamela Ocampo added type declaration count = 0
+	--> recency = null
+Pamela Ocampo added type parameter method count = 0
+	--> recency = null
+Pamela Ocampo added type parameter field count = 0
+	--> recency = null
+Pamela Ocampo added diamond count = 0
+	--> recency = null
+Pamela Ocampo added method invocation count = 0
+	--> recency = null
+Pamela Ocampo added implicit method invocation count = 0
+	--> recency = null
+Pamela Ocampo added class instantiation count = 0
+	--> recency = null
+Pamela Ocampo added nested count = 0
+	--> recency = null
+Pamela Ocampo added bounds count = 0
+	--> recency = null
+
+****Parsing for addition at revision 339e5fa3a2d6612e6d7f749665d0db5ef94a959f****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of 339e5fa3a2d6612e6d7f749665d0db5ef94a959f and a1214f8b734c59205418ad8f5ee0e6845c901f6d:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 339e5fa3a2d6612e6d7f749665d0db5ef94a959f to a1214f8b734c59205418ad8f5ee0e6845c901f6d
+
+************Analysis complete************
+Added generics to repository TodoBackend-Spring = 0
+
+Pamela Ocampo added type argument method count = 0
+	--> recency = null
+Pamela Ocampo added wildcard count = 0
+	--> recency = null
+Pamela Ocampo added type declaration count = 0
+	--> recency = null
+Pamela Ocampo added type parameter method count = 0
+	--> recency = null
+Pamela Ocampo added type parameter field count = 0
+	--> recency = null
+Pamela Ocampo added diamond count = 0
+	--> recency = null
+Pamela Ocampo added method invocation count = 0
+	--> recency = null
+Pamela Ocampo added implicit method invocation count = 0
+	--> recency = null
+Pamela Ocampo added class instantiation count = 0
+	--> recency = null
+Pamela Ocampo added nested count = 0
+	--> recency = null
+Pamela Ocampo added bounds count = 0
+	--> recency = null
+
+****Parsing for addition at revision d9c131a3343c0a0094d41f929b6c14111dd19a69****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of d9c131a3343c0a0094d41f929b6c14111dd19a69 and 4854b175ab8ce316e92b6c1616d80a054c1e6887:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision d9c131a3343c0a0094d41f929b6c14111dd19a69 to 4854b175ab8ce316e92b6c1616d80a054c1e6887
+
+
+****Parsing for addition at revision 4854b175ab8ce316e92b6c1616d80a054c1e6887****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of 4854b175ab8ce316e92b6c1616d80a054c1e6887 and 9225ba53ca7223a1ac20ebf91e7547a2e77360fe:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 4854b175ab8ce316e92b6c1616d80a054c1e6887 to 9225ba53ca7223a1ac20ebf91e7547a2e77360fe
+
+
+****Parsing for addition at revision 9225ba53ca7223a1ac20ebf91e7547a2e77360fe****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of 9225ba53ca7223a1ac20ebf91e7547a2e77360fe and cf7a725031b6279e3dac26eb11f6c841479f0a3a:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 9225ba53ca7223a1ac20ebf91e7547a2e77360fe to cf7a725031b6279e3dac26eb11f6c841479f0a3a
+
+************Analysis complete************
+Added generics to repository TodoBackend-Spring = 0
+
+Pamela Ocampo added type argument method count = 0
+	--> recency = null
+Pamela Ocampo added wildcard count = 0
+	--> recency = null
+Pamela Ocampo added type declaration count = 0
+	--> recency = null
+Pamela Ocampo added type parameter method count = 0
+	--> recency = null
+Pamela Ocampo added type parameter field count = 0
+	--> recency = null
+Pamela Ocampo added diamond count = 0
+	--> recency = null
+Pamela Ocampo added method invocation count = 0
+	--> recency = null
+Pamela Ocampo added implicit method invocation count = 0
+	--> recency = null
+Pamela Ocampo added class instantiation count = 0
+	--> recency = null
+Pamela Ocampo added nested count = 0
+	--> recency = null
+Pamela Ocampo added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository TodoBackend-Spring = 0
+
+Pamela Ocampo added type argument method count = 0
+	--> recency = null
+Pamela Ocampo added wildcard count = 0
+	--> recency = null
+Pamela Ocampo added type declaration count = 0
+	--> recency = null
+Pamela Ocampo added type parameter method count = 0
+	--> recency = null
+Pamela Ocampo added type parameter field count = 0
+	--> recency = null
+Pamela Ocampo added diamond count = 0
+	--> recency = null
+Pamela Ocampo added method invocation count = 0
+	--> recency = null
+Pamela Ocampo added implicit method invocation count = 0
+	--> recency = null
+Pamela Ocampo added class instantiation count = 0
+	--> recency = null
+Pamela Ocampo added nested count = 0
+	--> recency = null
+Pamela Ocampo added bounds count = 0
+	--> recency = null
+
+****Parsing for addition at revision 657e9e777b2bcb34e1e305e8043e8427407367af****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of 657e9e777b2bcb34e1e305e8043e8427407367af and 335beb7da4d20ae3461075c2e17b0c52efac5ae8:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 657e9e777b2bcb34e1e305e8043e8427407367af to 335beb7da4d20ae3461075c2e17b0c52efac5ae8
+
+************Analysis complete************
+Added generics to repository TodoBackend-Spring = 0
+
+Pamela Ocampo added type argument method count = 0
+	--> recency = null
+Pamela Ocampo added wildcard count = 0
+	--> recency = null
+Pamela Ocampo added type declaration count = 0
+	--> recency = null
+Pamela Ocampo added type parameter method count = 0
+	--> recency = null
+Pamela Ocampo added type parameter field count = 0
+	--> recency = null
+Pamela Ocampo added diamond count = 0
+	--> recency = null
+Pamela Ocampo added method invocation count = 0
+	--> recency = null
+Pamela Ocampo added implicit method invocation count = 0
+	--> recency = null
+Pamela Ocampo added class instantiation count = 0
+	--> recency = null
+Pamela Ocampo added nested count = 0
+	--> recency = null
+Pamela Ocampo added bounds count = 0
+	--> recency = null
+
+****Parsing for addition at revision 9d1d25b90960bd4db153c5caee50ba1f12654785****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of 9d1d25b90960bd4db153c5caee50ba1f12654785 and 5cb069a493839d3cf152fc97a32f1c505956f06d:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 9d1d25b90960bd4db153c5caee50ba1f12654785 to 5cb069a493839d3cf152fc97a32f1c505956f06d
+
+
+****Parsing for addition at revision 5cb069a493839d3cf152fc97a32f1c505956f06d****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of 5cb069a493839d3cf152fc97a32f1c505956f06d and 8fd4cdbce06f7fae0b8b56085701e0cad8c4e677:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 5cb069a493839d3cf152fc97a32f1c505956f06d to 8fd4cdbce06f7fae0b8b56085701e0cad8c4e677
+
+************Analysis complete************
+Added generics to repository TodoBackend-Spring = 0
+
+Pamela Ocampo added type argument method count = 0
+	--> recency = null
+Pamela Ocampo added wildcard count = 0
+	--> recency = null
+Pamela Ocampo added type declaration count = 0
+	--> recency = null
+Pamela Ocampo added type parameter method count = 0
+	--> recency = null
+Pamela Ocampo added type parameter field count = 0
+	--> recency = null
+Pamela Ocampo added diamond count = 0
+	--> recency = null
+Pamela Ocampo added method invocation count = 0
+	--> recency = null
+Pamela Ocampo added implicit method invocation count = 0
+	--> recency = null
+Pamela Ocampo added class instantiation count = 0
+	--> recency = null
+Pamela Ocampo added nested count = 0
+	--> recency = null
+Pamela Ocampo added bounds count = 0
+	--> recency = null
+
+****Parsing for addition at revision 73f334d49499046c91f68366a1ca850921c8913c****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of 73f334d49499046c91f68366a1ca850921c8913c and f17309453c0dbcf403f70a15053b70c28cfbd20d:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 73f334d49499046c91f68366a1ca850921c8913c to f17309453c0dbcf403f70a15053b70c28cfbd20d
+
+
+****Parsing for addition at revision f17309453c0dbcf403f70a15053b70c28cfbd20d****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of f17309453c0dbcf403f70a15053b70c28cfbd20d and 51343df87d60af7bd88e474490891559b0a455ab:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision f17309453c0dbcf403f70a15053b70c28cfbd20d to 51343df87d60af7bd88e474490891559b0a455ab
+
+
+****Parsing for addition at revision 51343df87d60af7bd88e474490891559b0a455ab****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of 51343df87d60af7bd88e474490891559b0a455ab and 8f4109ca65b4679734e0e84de04b3d7bb4fd002f:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 51343df87d60af7bd88e474490891559b0a455ab to 8f4109ca65b4679734e0e84de04b3d7bb4fd002f
+
+
+****Parsing for addition at revision 8f4109ca65b4679734e0e84de04b3d7bb4fd002f****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of 8f4109ca65b4679734e0e84de04b3d7bb4fd002f and 5f5014f91517f947fe638461fffa1dca11ea2169:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 8f4109ca65b4679734e0e84de04b3d7bb4fd002f to 5f5014f91517f947fe638461fffa1dca11ea2169
+
+
+****Parsing for addition at revision 5f5014f91517f947fe638461fffa1dca11ea2169****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+
+ Generics pattern new HashMap<Integer, Todo>() was added at revision 5f5014f91517f947fe638461fffa1dca11ea2169
+
+
+ Generics pattern new ArrayList<Todo>(todos.values()) was added at revision 5f5014f91517f947fe638461fffa1dca11ea2169
+
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of 5f5014f91517f947fe638461fffa1dca11ea2169 and f3107677c4089f8f396e35593e09e5f0284bc758:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 4
+	--> recency = years
+	--> Added class instantiations = 3
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 5f5014f91517f947fe638461fffa1dca11ea2169 to f3107677c4089f8f396e35593e09e5f0284bc758
+
+
+****Parsing for addition at revision f3107677c4089f8f396e35593e09e5f0284bc758****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of f3107677c4089f8f396e35593e09e5f0284bc758 and f0ecaf2123ec4022d94648736ddaec3bb5f734bd:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 4
+	--> recency = years
+	--> Added class instantiations = 3
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision f3107677c4089f8f396e35593e09e5f0284bc758 to f0ecaf2123ec4022d94648736ddaec3bb5f734bd
+
+
+****Parsing for addition at revision f0ecaf2123ec4022d94648736ddaec3bb5f734bd****
+
+Added SimpleCorsFilter.java to .\TodoBackend-Spring\ repository source files.
+Added Todo.java to .\TodoBackend-Spring\ repository source files.
+Added TodoController.java to .\TodoBackend-Spring\ repository source files.
+Added TodoControllerTest.java to .\TodoBackend-Spring\ repository source files.
+HttpServletResponse response = (HttpServletResponse) res;
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+TodoController controller = new TodoController();
+responseTodo=controller.createTodo(someTodo,new MockHttpServletRequest())
+Todo responseTodo = controller.createTodo(someTodo, new MockHttpServletRequest());
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+aBunchOfTodos=controller.getAll()
+List<Todo> aBunchOfTodos = controller.getAll();
+List<Todo> aBunchOfTodos = controller.getAll();
+MockHttpServletRequest mockRequest = new MockHttpServletRequest();
+url=controller.getTodoById(0).getUrl()
+URI url = controller.getTodoById(0).getUrl();
+savedTodo=controller.getTodoById(0)
+Todo savedTodo = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+updated=controller.getTodoById(0)
+Todo updated = controller.getTodoById(0);
+
+Diff of f0ecaf2123ec4022d94648736ddaec3bb5f734bd and 2a37244e24d261de49d79acb718127501778e900:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 4
+	--> recency = years
+	--> Added class instantiations = 3
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision f0ecaf2123ec4022d94648736ddaec3bb5f734bd to 2a37244e24d261de49d79acb718127501778e900
+
+************Analysis complete************
+Added generics to repository TodoBackend-Spring = 2
+
+Pamela Ocampo added type argument method count = 0
+	--> recency = null
+Pamela Ocampo added wildcard count = 0
+	--> recency = null
+Pamela Ocampo added type declaration count = 0
+	--> recency = null
+Pamela Ocampo added type parameter method count = 0
+	--> recency = null
+Pamela Ocampo added type parameter field count = 0
+	--> recency = null
+Pamela Ocampo added diamond count = 0
+	--> recency = null
+Pamela Ocampo added method invocation count = 0
+	--> recency = null
+Pamela Ocampo added implicit method invocation count = 4
+	--> recency = years
+Pamela Ocampo added class instantiation count = 3
+	--> recency = years
+Pamela Ocampo added nested count = 0
+	--> recency = null
+Pamela Ocampo added bounds count = 0
+	--> recency = null
+File copied successfully!

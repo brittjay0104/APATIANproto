@@ -1,0 +1,494 @@
+A-Sharp-Mind -- ryan-joseph -- Ryan Joseph
+https://github.com/ryan-joseph/A-Sharp-Mind.git
+git clone https://github.com/ryan-joseph/A-Sharp-Mind.git
+.\A-Sharp-Mind\
+.\A-Sharp-Mind\.git
+0
+Project cloned!
+Ryan Joseph is responsible for commit 82dca1e28703d0929c525373422caedf9e2f8c49
+Ryan Joseph is responsible for commit b6dd3206825688d91b1594b65243c2db46ac5e6d
+Ryan Joseph is responsible for commit c87aea06bf27611407dcc0106d861ef2a68bc218
+Ryan Joseph is responsible for commit 471a36b04260f592856a8ec0fb531525884b461f
+Ryan Joseph is responsible for commit ba4f31a0b3ebd9c1a986136404fb9c4a23b52c80
+Ryan Joseph is responsible for commit 8001fe67305b7f6986201b31896aff6e8f378a23
+Added CalculatorActivity.java to .\A-Sharp-Mind\ repository source files.
+Added PlaySound.java to .\A-Sharp-Mind\ repository source files.
+
+ ************ ANALYZING FOR USAGE PATTERN ADDITION ************
+
+
+****Parsing for addition at revision 82dca1e28703d0929c525373422caedf9e2f8c49****
+
+Added CalculatorActivity.java to .\A-Sharp-Mind\ repository source files.
+Added PlaySound.java to .\A-Sharp-Mind\ repository source files.
+StringBuilder stringBuilder = new StringBuilder();
+TextView answer = (TextView) findViewById(R.id.answer);
+Button zeroButton = (Button) findViewById(R.id.zero);
+Button oneButton = (Button) findViewById(R.id.one);
+Button twoButton = (Button) findViewById(R.id.two);
+Button threeButton = (Button) findViewById(R.id.three);
+Button fourButton = (Button) findViewById(R.id.four);
+Button fiveButton = (Button) findViewById(R.id.five);
+Button sixButton = (Button) findViewById(R.id.six);
+Button sevenButton = (Button) findViewById(R.id.seven);
+Button eightButton = (Button) findViewById(R.id.eight);
+Button nineButton = (Button) findViewById(R.id.nine);
+Button addButton = (Button) findViewById(R.id.addition);
+Button subButton = (Button) findViewById(R.id.subtraction);
+Button multButton = (Button) findViewById(R.id.multiplication);
+Button divButton = (Button) findViewById(R.id.division);
+Button decButton = (Button) findViewById(R.id.decimal);
+Button enterButton = (Button) findViewById(R.id.enter);
+Button openButton = (Button) findViewById(R.id.open);
+Button closeButton = (Button) findViewById(R.id.close);
+Button clearButton = (Button) findViewById(R.id.clear);
+Button saveButton = (Button) findViewById(R.id.save);
+TextView answer = (TextView) findViewById(R.id.answer);
+PlaySound playSound = new PlaySound();
+double dot = 1;
+double duration = .5;
+in=Character.getNumericValue(equation.charAt(i))
+int in = Character.getNumericValue(equation.charAt(i));
+rootNote=getSharedPreferences("Scale",Context.MODE_PRIVATE).getString("rootnote","c")
+String rootNote = getSharedPreferences("Scale", Context.MODE_PRIVATE).getString("rootnote", "c");
+scale=getSharedPreferences("Scale",Context.MODE_PRIVATE).getString("scale","major")
+String scale = getSharedPreferences("Scale", Context.MODE_PRIVATE).getString("scale", "major");
+RadioButton rbMajor = (RadioButton) findViewById(R.id.radioMajor);
+RadioButton rbMinor = (RadioButton) findViewById(R.id.radioMinor);
+EditText etRoot = (EditText) findViewById(R.id.editRoot);
+RadioGroup rgScale = (RadioGroup) findViewById(R.id.radioGroup);
+RadioButton rbMajor = (RadioButton) findViewById(R.id.radioMajor);
+RadioButton rbMinor = (RadioButton) findViewById(R.id.radioMinor);
+double root;
+EditText etRoot = (EditText) findViewById(R.id.editRoot);
+double[] major = {0, 1, 1.12245, 1.25993, 1.33484, 1.49829, 1.68179, 1.88775, 2, 2.24493};
+double[] minor = {0, 1, 1.12245, 1.18920, 1.33484, 1.49829, 1.58741, 1.78180, 2, 2.24493};
+int sampleRate = 8000;
+double dnumSamples = duration * sampleRate;
+int numSamples = (int) dnumSamples;
+double sample[] = new double[numSamples];
+byte generatedSnd[] = new byte[2 * numSamples];
+int idx = 0;
+int i = 0;
+int ramp = numSamples / 20;
+double dVal = sample[i];
+final short val = (short) ((dVal * 32767 * i / ramp));
+double dVal = sample[i];
+final short val = (short) ((dVal * 32767));
+double dVal = sample[i];
+final short val = (short) ((dVal * 32767 * (numSamples - i) / ramp));
+AudioTrack audioTrack = null;
+int x = 0;
+
+Diff of 82dca1e28703d0929c525373422caedf9e2f8c49 and b6dd3206825688d91b1594b65243c2db46ac5e6d:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 82dca1e28703d0929c525373422caedf9e2f8c49 to b6dd3206825688d91b1594b65243c2db46ac5e6d
+
+
+****Parsing for addition at revision b6dd3206825688d91b1594b65243c2db46ac5e6d****
+
+Added CalculatorActivity.java to .\A-Sharp-Mind\ repository source files.
+Added PlaySound.java to .\A-Sharp-Mind\ repository source files.
+StringBuilder stringBuilder = new StringBuilder();
+TextView answer = (TextView) findViewById(R.id.answer);
+Button zeroButton = (Button) findViewById(R.id.zero);
+Button oneButton = (Button) findViewById(R.id.one);
+Button twoButton = (Button) findViewById(R.id.two);
+Button threeButton = (Button) findViewById(R.id.three);
+Button fourButton = (Button) findViewById(R.id.four);
+Button fiveButton = (Button) findViewById(R.id.five);
+Button sixButton = (Button) findViewById(R.id.six);
+Button sevenButton = (Button) findViewById(R.id.seven);
+Button eightButton = (Button) findViewById(R.id.eight);
+Button nineButton = (Button) findViewById(R.id.nine);
+Button addButton = (Button) findViewById(R.id.addition);
+Button subButton = (Button) findViewById(R.id.subtraction);
+Button multButton = (Button) findViewById(R.id.multiplication);
+Button divButton = (Button) findViewById(R.id.division);
+Button decButton = (Button) findViewById(R.id.decimal);
+Button enterButton = (Button) findViewById(R.id.enter);
+Button openButton = (Button) findViewById(R.id.open);
+Button closeButton = (Button) findViewById(R.id.close);
+Button clearButton = (Button) findViewById(R.id.clear);
+Button saveButton = (Button) findViewById(R.id.save);
+TextView answer = (TextView) findViewById(R.id.answer);
+PlaySound playSound = new PlaySound();
+double dot = 1;
+double duration = .5;
+in=Character.getNumericValue(equation.charAt(i))
+int in = Character.getNumericValue(equation.charAt(i));
+rootNote=getSharedPreferences("Scale",Context.MODE_PRIVATE).getString("rootnote","c")
+String rootNote = getSharedPreferences("Scale", Context.MODE_PRIVATE).getString("rootnote", "c");
+scale=getSharedPreferences("Scale",Context.MODE_PRIVATE).getString("scale","major")
+String scale = getSharedPreferences("Scale", Context.MODE_PRIVATE).getString("scale", "major");
+RadioButton rbMajor = (RadioButton) findViewById(R.id.radioMajor);
+RadioButton rbMinor = (RadioButton) findViewById(R.id.radioMinor);
+EditText etRoot = (EditText) findViewById(R.id.editRoot);
+RadioGroup rgScale = (RadioGroup) findViewById(R.id.radioGroup);
+RadioButton rbMajor = (RadioButton) findViewById(R.id.radioMajor);
+RadioButton rbMinor = (RadioButton) findViewById(R.id.radioMinor);
+double root;
+EditText etRoot = (EditText) findViewById(R.id.editRoot);
+double[] major = {0, 1, 1.12245, 1.25993, 1.33484, 1.49829, 1.68179, 1.88775, 2, 2.24493};
+double[] minor = {0, 1, 1.12245, 1.18920, 1.33484, 1.49829, 1.58741, 1.78180, 2, 2.24493};
+int sampleRate = 8000;
+double dnumSamples = duration * sampleRate;
+int numSamples = (int) dnumSamples;
+double sample[] = new double[numSamples];
+byte generatedSnd[] = new byte[2 * numSamples];
+int idx = 0;
+int i = 0;
+int ramp = numSamples / 20;
+double dVal = sample[i];
+final short val = (short) ((dVal * 32767 * i / ramp));
+double dVal = sample[i];
+final short val = (short) ((dVal * 32767));
+double dVal = sample[i];
+final short val = (short) ((dVal * 32767 * (numSamples - i) / ramp));
+AudioTrack audioTrack = null;
+int x = 0;
+
+Diff of b6dd3206825688d91b1594b65243c2db46ac5e6d and c87aea06bf27611407dcc0106d861ef2a68bc218:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision b6dd3206825688d91b1594b65243c2db46ac5e6d to c87aea06bf27611407dcc0106d861ef2a68bc218
+
+
+****Parsing for addition at revision c87aea06bf27611407dcc0106d861ef2a68bc218****
+
+Added CalculatorActivity.java to .\A-Sharp-Mind\ repository source files.
+Added PlaySound.java to .\A-Sharp-Mind\ repository source files.
+StringBuilder stringBuilder = new StringBuilder();
+TextView answer = (TextView) findViewById(R.id.answer);
+Button zeroButton = (Button) findViewById(R.id.zero);
+Button oneButton = (Button) findViewById(R.id.one);
+Button twoButton = (Button) findViewById(R.id.two);
+Button threeButton = (Button) findViewById(R.id.three);
+Button fourButton = (Button) findViewById(R.id.four);
+Button fiveButton = (Button) findViewById(R.id.five);
+Button sixButton = (Button) findViewById(R.id.six);
+Button sevenButton = (Button) findViewById(R.id.seven);
+Button eightButton = (Button) findViewById(R.id.eight);
+Button nineButton = (Button) findViewById(R.id.nine);
+Button addButton = (Button) findViewById(R.id.addition);
+Button subButton = (Button) findViewById(R.id.subtraction);
+Button multButton = (Button) findViewById(R.id.multiplication);
+Button divButton = (Button) findViewById(R.id.division);
+Button decButton = (Button) findViewById(R.id.decimal);
+Button enterButton = (Button) findViewById(R.id.enter);
+Button openButton = (Button) findViewById(R.id.open);
+Button closeButton = (Button) findViewById(R.id.close);
+Button clearButton = (Button) findViewById(R.id.clear);
+Button saveButton = (Button) findViewById(R.id.save);
+TextView answer = (TextView) findViewById(R.id.answer);
+PlaySound playSound = new PlaySound();
+double dot = 1;
+double duration = .5;
+in=Character.getNumericValue(equation.charAt(i))
+int in = Character.getNumericValue(equation.charAt(i));
+rootNote=getSharedPreferences("Scale",Context.MODE_PRIVATE).getString("rootnote","c")
+String rootNote = getSharedPreferences("Scale", Context.MODE_PRIVATE).getString("rootnote", "c");
+scale=getSharedPreferences("Scale",Context.MODE_PRIVATE).getString("scale","major")
+String scale = getSharedPreferences("Scale", Context.MODE_PRIVATE).getString("scale", "major");
+RadioButton rbMajor = (RadioButton) findViewById(R.id.radioMajor);
+RadioButton rbMinor = (RadioButton) findViewById(R.id.radioMinor);
+EditText etRoot = (EditText) findViewById(R.id.editRoot);
+RadioGroup rgScale = (RadioGroup) findViewById(R.id.radioGroup);
+RadioButton rbMajor = (RadioButton) findViewById(R.id.radioMajor);
+RadioButton rbMinor = (RadioButton) findViewById(R.id.radioMinor);
+double root;
+EditText etRoot = (EditText) findViewById(R.id.editRoot);
+double[] major = {0, 1, 1.12245, 1.25993, 1.33484, 1.49829, 1.68179, 1.88775, 2, 2.24493};
+double[] minor = {0, 1, 1.12245, 1.18920, 1.33484, 1.49829, 1.58741, 1.78180, 2, 2.24493};
+int sampleRate = 8000;
+double dnumSamples = duration * sampleRate;
+int numSamples = (int) dnumSamples;
+double sample[] = new double[numSamples];
+byte generatedSnd[] = new byte[2 * numSamples];
+int idx = 0;
+int i = 0;
+int ramp = numSamples / 20;
+double dVal = sample[i];
+final short val = (short) ((dVal * 32767 * i / ramp));
+double dVal = sample[i];
+final short val = (short) ((dVal * 32767));
+double dVal = sample[i];
+final short val = (short) ((dVal * 32767 * (numSamples - i) / ramp));
+AudioTrack audioTrack = null;
+int x = 0;
+
+Diff of c87aea06bf27611407dcc0106d861ef2a68bc218 and 471a36b04260f592856a8ec0fb531525884b461f:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision c87aea06bf27611407dcc0106d861ef2a68bc218 to 471a36b04260f592856a8ec0fb531525884b461f
+
+
+****Parsing for addition at revision 471a36b04260f592856a8ec0fb531525884b461f****
+
+Added CalculatorActivity.java to .\A-Sharp-Mind\ repository source files.
+Added PlaySound.java to .\A-Sharp-Mind\ repository source files.
+StringBuilder stringBuilder = new StringBuilder();
+TextView answer = (TextView) findViewById(R.id.answer);
+Button zeroButton = (Button) findViewById(R.id.zero);
+Button oneButton = (Button) findViewById(R.id.one);
+Button twoButton = (Button) findViewById(R.id.two);
+Button threeButton = (Button) findViewById(R.id.three);
+Button fourButton = (Button) findViewById(R.id.four);
+Button fiveButton = (Button) findViewById(R.id.five);
+Button sixButton = (Button) findViewById(R.id.six);
+Button sevenButton = (Button) findViewById(R.id.seven);
+Button eightButton = (Button) findViewById(R.id.eight);
+Button nineButton = (Button) findViewById(R.id.nine);
+Button addButton = (Button) findViewById(R.id.addition);
+Button subButton = (Button) findViewById(R.id.subtraction);
+Button multButton = (Button) findViewById(R.id.multiplication);
+Button divButton = (Button) findViewById(R.id.division);
+Button decButton = (Button) findViewById(R.id.decimal);
+Button enterButton = (Button) findViewById(R.id.enter);
+Button openButton = (Button) findViewById(R.id.open);
+Button closeButton = (Button) findViewById(R.id.close);
+Button clearButton = (Button) findViewById(R.id.clear);
+Button saveButton = (Button) findViewById(R.id.save);
+TextView answer = (TextView) findViewById(R.id.answer);
+PlaySound playSound = new PlaySound();
+double dot = 1;
+double duration = .5;
+in=Character.getNumericValue(equation.charAt(i))
+int in = Character.getNumericValue(equation.charAt(i));
+rootNote=getSharedPreferences("Scale",Context.MODE_PRIVATE).getString("rootnote","c")
+String rootNote = getSharedPreferences("Scale", Context.MODE_PRIVATE).getString("rootnote", "c");
+scale=getSharedPreferences("Scale",Context.MODE_PRIVATE).getString("scale","major")
+String scale = getSharedPreferences("Scale", Context.MODE_PRIVATE).getString("scale", "major");
+RadioButton rbMajor = (RadioButton) findViewById(R.id.radioMajor);
+RadioButton rbMinor = (RadioButton) findViewById(R.id.radioMinor);
+EditText etRoot = (EditText) findViewById(R.id.editRoot);
+RadioGroup rgScale = (RadioGroup) findViewById(R.id.radioGroup);
+RadioButton rbMajor = (RadioButton) findViewById(R.id.radioMajor);
+RadioButton rbMinor = (RadioButton) findViewById(R.id.radioMinor);
+double root;
+EditText etRoot = (EditText) findViewById(R.id.editRoot);
+double[] major = {0, 1, 1.12245, 1.25993, 1.33484, 1.49829, 1.68179, 1.88775, 2, 2.24493};
+double[] minor = {0, 1, 1.12245, 1.18920, 1.33484, 1.49829, 1.58741, 1.78180, 2, 2.24493};
+int sampleRate = 8000;
+double dnumSamples = duration * sampleRate;
+int numSamples = (int) dnumSamples;
+double sample[] = new double[numSamples];
+byte generatedSnd[] = new byte[2 * numSamples];
+int idx = 0;
+int i = 0;
+int ramp = numSamples / 20;
+double dVal = sample[i];
+final short val = (short) ((dVal * 32767 * i / ramp));
+double dVal = sample[i];
+final short val = (short) ((dVal * 32767));
+double dVal = sample[i];
+final short val = (short) ((dVal * 32767 * (numSamples - i) / ramp));
+AudioTrack audioTrack = null;
+int x = 0;
+
+Diff of 471a36b04260f592856a8ec0fb531525884b461f and ba4f31a0b3ebd9c1a986136404fb9c4a23b52c80:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 471a36b04260f592856a8ec0fb531525884b461f to ba4f31a0b3ebd9c1a986136404fb9c4a23b52c80
+
+
+****Parsing for addition at revision ba4f31a0b3ebd9c1a986136404fb9c4a23b52c80****
+
+Added CalculatorActivity.java to .\A-Sharp-Mind\ repository source files.
+Added PlaySound.java to .\A-Sharp-Mind\ repository source files.
+StringBuilder stringBuilder = new StringBuilder();
+TextView answer = (TextView) findViewById(R.id.answer);
+Button zeroButton = (Button) findViewById(R.id.zero);
+Button oneButton = (Button) findViewById(R.id.one);
+Button twoButton = (Button) findViewById(R.id.two);
+Button threeButton = (Button) findViewById(R.id.three);
+Button fourButton = (Button) findViewById(R.id.four);
+Button fiveButton = (Button) findViewById(R.id.five);
+Button sixButton = (Button) findViewById(R.id.six);
+Button sevenButton = (Button) findViewById(R.id.seven);
+Button eightButton = (Button) findViewById(R.id.eight);
+Button nineButton = (Button) findViewById(R.id.nine);
+Button addButton = (Button) findViewById(R.id.addition);
+Button subButton = (Button) findViewById(R.id.subtraction);
+Button multButton = (Button) findViewById(R.id.multiplication);
+Button divButton = (Button) findViewById(R.id.division);
+Button decButton = (Button) findViewById(R.id.decimal);
+Button enterButton = (Button) findViewById(R.id.enter);
+Button openButton = (Button) findViewById(R.id.open);
+Button closeButton = (Button) findViewById(R.id.close);
+Button clearButton = (Button) findViewById(R.id.clear);
+Button saveButton = (Button) findViewById(R.id.save);
+TextView answer = (TextView) findViewById(R.id.answer);
+PlaySound playSound = new PlaySound();
+double dot = 1;
+double duration = .5;
+in=Character.getNumericValue(equation.charAt(i))
+int in = Character.getNumericValue(equation.charAt(i));
+rootNote=getSharedPreferences("Scale",Context.MODE_PRIVATE).getString("rootnote","c")
+String rootNote = getSharedPreferences("Scale", Context.MODE_PRIVATE).getString("rootnote", "c");
+scale=getSharedPreferences("Scale",Context.MODE_PRIVATE).getString("scale","major")
+String scale = getSharedPreferences("Scale", Context.MODE_PRIVATE).getString("scale", "major");
+RadioButton rbMajor = (RadioButton) findViewById(R.id.radioMajor);
+RadioButton rbMinor = (RadioButton) findViewById(R.id.radioMinor);
+EditText etRoot = (EditText) findViewById(R.id.editRoot);
+RadioGroup rgScale = (RadioGroup) findViewById(R.id.radioGroup);
+RadioButton rbMajor = (RadioButton) findViewById(R.id.radioMajor);
+RadioButton rbMinor = (RadioButton) findViewById(R.id.radioMinor);
+double root;
+EditText etRoot = (EditText) findViewById(R.id.editRoot);
+double[] major = {0, 1, 1.12245, 1.25993, 1.33484, 1.49829, 1.68179, 1.88775, 2, 2.24493};
+double[] minor = {0, 1, 1.12245, 1.18920, 1.33484, 1.49829, 1.58741, 1.78180, 2, 2.24493};
+int sampleRate = 8000;
+double dnumSamples = duration * sampleRate;
+int numSamples = (int) dnumSamples;
+double sample[] = new double[numSamples];
+byte generatedSnd[] = new byte[2 * numSamples];
+int idx = 0;
+int i = 0;
+int ramp = numSamples / 20;
+double dVal = sample[i];
+final short val = (short) ((dVal * 32767 * i / ramp));
+double dVal = sample[i];
+final short val = (short) ((dVal * 32767));
+double dVal = sample[i];
+final short val = (short) ((dVal * 32767 * (numSamples - i) / ramp));
+AudioTrack audioTrack = null;
+int x = 0;
+
+Diff of ba4f31a0b3ebd9c1a986136404fb9c4a23b52c80 and 8001fe67305b7f6986201b31896aff6e8f378a23:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision ba4f31a0b3ebd9c1a986136404fb9c4a23b52c80 to 8001fe67305b7f6986201b31896aff6e8f378a23
+
+************Analysis complete************
+Added generics to repository A-Sharp-Mind = 0
+
+Ryan Joseph added type argument method count = 0
+	--> recency = null
+Ryan Joseph added wildcard count = 0
+	--> recency = null
+Ryan Joseph added type declaration count = 0
+	--> recency = null
+Ryan Joseph added type parameter method count = 0
+	--> recency = null
+Ryan Joseph added type parameter field count = 0
+	--> recency = null
+Ryan Joseph added diamond count = 0
+	--> recency = null
+Ryan Joseph added method invocation count = 0
+	--> recency = null
+Ryan Joseph added implicit method invocation count = 0
+	--> recency = null
+Ryan Joseph added class instantiation count = 0
+	--> recency = null
+Ryan Joseph added nested count = 0
+	--> recency = null
+Ryan Joseph added bounds count = 0
+	--> recency = null
+File copied successfully!

@@ -1,0 +1,214 @@
+RateAppDemo -- JoyeNettles -- Joye Nettles
+https://github.com/JoyeNettles/RateAppDemo.git
+git clone https://github.com/JoyeNettles/RateAppDemo.git
+.\RateAppDemo\
+.\RateAppDemo\.git
+0
+Project cloned!
+Joye Nettles is responsible for commit 6f871d703a7b6cb4eff0b332636a8995e16c9b5e
+Joye Nettles is responsible for commit d1fff15b224a366b3e87df835f859424b006b353
+Joye Nettles is responsible for commit 6d84d3b7ac3b385b48323400260afbd93f708323
+Joye Nettles is responsible for commit 6e441791cbb8b532bb4c190c1a66cec5bc2d57cc
+Joye Nettles is responsible for commit 5d7d8bb17ba26904bddab489cca1f72a4f4faf3a
+Added ApplicationTest.java to .\RateAppDemo\ repository source files.
+Added MainActivity.java to .\RateAppDemo\ repository source files.
+
+ ************ ANALYZING FOR USAGE PATTERN ADDITION ************
+
+
+****Parsing for addition at revision 6f871d703a7b6cb4eff0b332636a8995e16c9b5e****
+
+Added ApplicationTest.java to .\RateAppDemo\ repository source files.
+Added MainActivity.java to .\RateAppDemo\ repository source files.
+Time now = new Time();
+Button yesButton = (Button) findViewById(R.id.yesButton);
+ParseObject rowObject = new ParseObject("Activity");
+Button kindaButton = (Button) findViewById(R.id.kindaButton);
+ParseObject rowObject = new ParseObject("Activity");
+Button noButton = (Button) findViewById(R.id.noButton);
+ParseObject rowObject = new ParseObject("Activity");
+location=LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient)
+Location location = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+id=item.getItemId()
+int id = item.getItemId();
+
+Diff of 6f871d703a7b6cb4eff0b332636a8995e16c9b5e and d1fff15b224a366b3e87df835f859424b006b353:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 6f871d703a7b6cb4eff0b332636a8995e16c9b5e to d1fff15b224a366b3e87df835f859424b006b353
+
+
+****Parsing for addition at revision d1fff15b224a366b3e87df835f859424b006b353****
+
+Added ApplicationTest.java to .\RateAppDemo\ repository source files.
+Added MainActivity.java to .\RateAppDemo\ repository source files.
+Time now = new Time();
+Button yesButton = (Button) findViewById(R.id.yesButton);
+ParseObject rowObject = new ParseObject("Activity");
+Button kindaButton = (Button) findViewById(R.id.kindaButton);
+ParseObject rowObject = new ParseObject("Activity");
+Button noButton = (Button) findViewById(R.id.noButton);
+ParseObject rowObject = new ParseObject("Activity");
+location=LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient)
+Location location = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+id=item.getItemId()
+int id = item.getItemId();
+
+Diff of d1fff15b224a366b3e87df835f859424b006b353 and 6d84d3b7ac3b385b48323400260afbd93f708323:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision d1fff15b224a366b3e87df835f859424b006b353 to 6d84d3b7ac3b385b48323400260afbd93f708323
+
+
+****Parsing for addition at revision 6d84d3b7ac3b385b48323400260afbd93f708323****
+
+Added ApplicationTest.java to .\RateAppDemo\ repository source files.
+Added MainActivity.java to .\RateAppDemo\ repository source files.
+Time now = new Time();
+Button yesButton = (Button) findViewById(R.id.yesButton);
+ParseObject rowObject = new ParseObject("Activity");
+Button kindaButton = (Button) findViewById(R.id.kindaButton);
+ParseObject rowObject = new ParseObject("Activity");
+Button noButton = (Button) findViewById(R.id.noButton);
+ParseObject rowObject = new ParseObject("Activity");
+location=LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient)
+Location location = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+id=item.getItemId()
+int id = item.getItemId();
+
+Diff of 6d84d3b7ac3b385b48323400260afbd93f708323 and 6e441791cbb8b532bb4c190c1a66cec5bc2d57cc:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 6d84d3b7ac3b385b48323400260afbd93f708323 to 6e441791cbb8b532bb4c190c1a66cec5bc2d57cc
+
+
+****Parsing for addition at revision 6e441791cbb8b532bb4c190c1a66cec5bc2d57cc****
+
+Added ApplicationTest.java to .\RateAppDemo\ repository source files.
+Added MainActivity.java to .\RateAppDemo\ repository source files.
+Button yesButton = (Button) findViewById(R.id.yesButton);
+ParseObject rowObject = new ParseObject("Activity");
+Button kindaButton = (Button) findViewById(R.id.kindaButton);
+ParseObject rowObject = new ParseObject("Activity");
+Button noButton = (Button) findViewById(R.id.noButton);
+ParseObject rowObject = new ParseObject("Activity");
+location=LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient)
+Location location = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+id=item.getItemId()
+int id = item.getItemId();
+
+Diff of 6e441791cbb8b532bb4c190c1a66cec5bc2d57cc and 5d7d8bb17ba26904bddab489cca1f72a4f4faf3a:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 6e441791cbb8b532bb4c190c1a66cec5bc2d57cc to 5d7d8bb17ba26904bddab489cca1f72a4f4faf3a
+
+************Analysis complete************
+Added generics to repository RateAppDemo = 0
+
+Joye Nettles added type argument method count = 0
+	--> recency = null
+Joye Nettles added wildcard count = 0
+	--> recency = null
+Joye Nettles added type declaration count = 0
+	--> recency = null
+Joye Nettles added type parameter method count = 0
+	--> recency = null
+Joye Nettles added type parameter field count = 0
+	--> recency = null
+Joye Nettles added diamond count = 0
+	--> recency = null
+Joye Nettles added method invocation count = 0
+	--> recency = null
+Joye Nettles added implicit method invocation count = 0
+	--> recency = null
+Joye Nettles added class instantiation count = 0
+	--> recency = null
+Joye Nettles added nested count = 0
+	--> recency = null
+Joye Nettles added bounds count = 0
+	--> recency = null
+File copied successfully!

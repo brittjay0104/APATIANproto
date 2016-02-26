@@ -1,0 +1,1460 @@
+OpenMRS -- rohitmanohar -- Rohit Manohar
+https://github.com/rohitmanohar/OpenMRS.git
+git clone https://github.com/rohitmanohar/OpenMRS.git
+.\OpenMRS\
+.\OpenMRS\.git
+0
+Project cloned!
+Rohit Manohar is responsible for commit 4bde5d3907fb99bf51cd537687407028251c8ccc
+Rohit Manohar is responsible for commit 6100db503979213b74cf47df51393561bea55216
+Rohit Manohar is responsible for commit 745b6c6d28e969541794c0909ecd8b1c60386b88
+Rohit Manohar is responsible for commit 7af26b75b724cf063f8833a38598e1fb685cf30c
+Rohit Manohar is responsible for commit 5fb99ea4de9f21419e8ba20b3717424b528da1f7
+Rohit Manohar is responsible for commit b79c4d2fb4717dc1fa46be18edcf70be1123b284
+Rohit Manohar is responsible for commit 72e0169de9109a03333cbd4fc661b4fde63ef002
+Rohit Manohar is responsible for commit 52131bb411a74a691ea5582a81e7286af085f8ca
+Rohit Manohar is responsible for commit 33c1577ca01a2c714d697fcb7320f2dc239f33f4
+Rohit Manohar is responsible for commit 0aa56040ed684590bf39e8a4feb650547007afed
+Rohit Manohar is responsible for commit 44716b0804aaeaa7c8ecd438ade73c70db647384
+Added AuditableInterceptor.java to .\OpenMRS\ repository source files.
+Added AuditableInterceptorTest.java to .\OpenMRS\ repository source files.
+Added AuditLog.java to .\OpenMRS\ repository source files.
+Added AuditLogDAO.java to .\OpenMRS\ repository source files.
+Added AuditLogService.java to .\OpenMRS\ repository source files.
+Added AuditLogServiceImpl.java to .\OpenMRS\ repository source files.
+Added AuditLogServiceTest.java to .\OpenMRS\ repository source files.
+Added Context.java to .\OpenMRS\ repository source files.
+Added HibernateAuditLogDAO.java to .\OpenMRS\ repository source files.
+Added ProviderValidator.java to .\OpenMRS\ repository source files.
+Added ServiceContext.java to .\OpenMRS\ repository source files.
+
+ ************ ANALYZING FOR USAGE PATTERN ADDITION ************
+
+
+****Parsing for addition at revision 4bde5d3907fb99bf51cd537687407028251c8ccc****
+
+Added AuditableInterceptor.java to .\OpenMRS\ repository source files.
+Added AuditableInterceptorTest.java to .\OpenMRS\ repository source files.
+Added AuditLog.java to .\OpenMRS\ repository source files.
+Added AuditLogDAO.java to .\OpenMRS\ repository source files.
+Added AuditLogService.java to .\OpenMRS\ repository source files.
+Added AuditLogServiceImpl.java to .\OpenMRS\ repository source files.
+Added AuditLogServiceTest.java to .\OpenMRS\ repository source files.
+Added Context.java to .\OpenMRS\ repository source files.
+Added HibernateAuditLogDAO.java to .\OpenMRS\ repository source files.
+Added ProviderValidator.java to .\OpenMRS\ repository source files.
+Added ServiceContext.java to .\OpenMRS\ repository source files.
+StringBuilder finalString = new StringBuilder();
+String propertyTagBegin = "<" + propertyNames[i].toString() + ">";
+String propertyTagEnd = "</" + propertyNames[i].toString() + ">";
+String checkFinalString = new String(finalString);
+String returnXML = new String(finalString);
+createBlob=org.hibernate.Hibernate.createBlob(returnXML.getBytes())
+java.sql.Blob createBlob = org.hibernate.Hibernate.createBlob(returnXML.getBytes());
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+modification=createXML(id,entity,null,currentState,propertyNames,"create")
+Blob modification = createXML(id, entity, null, currentState, propertyNames, "create");
+AuditLog auditLog = new AuditLog(entity.getClass().getName(), authenticatedUser, new Date(), modification);
+boolean objectWasChanged = false;
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+modification=createXML(id,entity,previousState,currentState,propertyNames,"update")
+Blob modification = createXML(id, entity, previousState, currentState, propertyNames, "update");
+AuditLog auditLog = new AuditLog(entity.getClass().getName(), authenticatedUser, new Date(), modification);
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+modification=createXML(id,entity,state,null,propertyNames,"delete")
+Blob modification = createXML(id, entity, state, null, propertyNames, "delete");
+AuditLog auditLog = new AuditLog(entity.getClass().getName(), authenticatedUser, new Date(), modification);
+boolean objectWasChanged = false;
+index=Arrays.asList(propertyNames).indexOf(propertyToSet)
+int index = Arrays.asList(propertyNames).indexOf(propertyToSet);
+AuditableInterceptor interceptor = new AuditableInterceptor();
+Object o = new Object();
+returnValue=interceptor.onFlushDirty(o,null,null,null,null,null)
+boolean returnValue = interceptor.onFlushDirty(o, null, null, null, null, null);
+AuditableInterceptor interceptor = new AuditableInterceptor();
+User u = new User();
+String[] propertyNames = new String[] { "changedBy", "dateChanged" };
+Object[] currentState = new Object[] { "", null };
+Object[] previousState = new Object[] { "", null };
+AuditableInterceptor interceptor = new AuditableInterceptor();
+User u = new User();
+String[] propertyNames = new String[] { "changedBy", "dateChanged" };
+Object[] currentState = new Object[] { "", null };
+Object[] previousState = new Object[] { "", null };
+AuditableInterceptor interceptor = new AuditableInterceptor();
+User u = new User();
+String[] propertyNames = new String[] { "changedBy", "dateChanged" };
+Object[] currentState = new Object[] { "", null };
+u=Context.getUserService().getUser(1)
+User u = Context.getUserService().getUser(1);
+beforeDate=u.getDateChanged()
+Date beforeDate = u.getDateChanged();
+afterDate=u.getDateChanged()
+Date afterDate = u.getDateChanged();
+weight=Context.getConceptService().getConceptNumeric(5089)
+ConceptNumeric weight = Context.getConceptService().getConceptNumeric(5089);
+dateChangedBefore=weight.getDateChanged()
+Date dateChangedBefore = weight.getDateChanged();
+AuditableInterceptor interceptor = new AuditableInterceptor();
+User u = new User();
+String[] propertyNames = new String[] { "creator", "dateCreated" };
+Object[] currentState = new Object[] { 0, null };
+result=interceptor.onSave(u,0,currentState,propertyNames,null)
+boolean result = interceptor.onSave(u, 0, currentState, propertyNames, null);
+AuditableInterceptor interceptor = new AuditableInterceptor();
+User u = new User();
+String[] propertyNames = new String[] { "creator", "dateCreated" };
+Object[] currentState = new Object[] { null, new Date() };
+result=interceptor.onSave(u,0,currentState,propertyNames,null)
+boolean result = interceptor.onSave(u, 0, currentState, propertyNames, null);
+AuditableInterceptor interceptor = new AuditableInterceptor();
+User u = new User();
+String[] propertyNames = new String[] { "creator", "dateCreated" };
+Object[] currentState = new Object[] { 0, new Date() };
+result=interceptor.onSave(u,0,currentState,propertyNames,null)
+boolean result = interceptor.onSave(u, 0, currentState, propertyNames, null);
+User u = new User();
+AuditableInterceptor interceptor = new AuditableInterceptor();
+Object o = new Object();
+returnValue=interceptor.onSave(o,null,null,null,null)
+boolean returnValue = interceptor.onSave(o, null, null, null, null);
+boolean check = false;
+Person person = new Person();
+Patient patient = new Patient(person);
+PatientService patientService = new PatientServiceImpl();
+AuditLogService auditLogService = new AuditLogServiceImpl();
+listAuditLog=auditLogService.getAuditLogsByType("Patient")
+List<AuditLog> listAuditLog = auditLogService.getAuditLogsByType("Patient");
+List<AuditLog> listAuditLog = auditLogService.getAuditLogsByType("Patient");
+iter=listAuditLog.iterator()
+java.util.Iterator<AuditLog> iter = listAuditLog.iterator();
+java.util.Iterator<AuditLog> iter = listAuditLog.iterator();
+auditLog=iter.next()
+AuditLog auditLog = iter.next();
+blob=auditLog.getModification()
+Blob blob = auditLog.getModification();
+bdata=blob.getBytes(1,(int)blob.length())
+byte[] bdata = blob.getBytes(1, (int) blob.length());
+String convertString = new String(bdata);
+boolean check = false;
+PatientServiceImpl patientServiceImpl = new PatientServiceImpl();
+patientList=patientServiceImpl.getAllPatients()
+List<Patient> patientList = patientServiceImpl.getAllPatients();
+List<Patient> patientList = patientServiceImpl.getAllPatients();
+patient=patientList.get(0)
+Patient patient = patientList.get(0);
+auditLogList=new AuditLogServiceImpl().getAuditLogsByType("Patient")
+List<AuditLog> auditLogList = new AuditLogServiceImpl().getAuditLogsByType("Patient");
+iter=auditLogList.iterator()
+Iterator<AuditLog> iter = auditLogList.iterator();
+Iterator<AuditLog> iter = auditLogList.iterator();
+auditLog=iter.next()
+AuditLog auditLog = iter.next();
+blob=auditLog.getModification()
+Blob blob = auditLog.getModification();
+bdata=blob.getBytes(1,(int)blob.length())
+byte[] bdata = blob.getBytes(1, (int) blob.length());
+String convertString = new String(bdata);
+boolean check = false;
+PatientServiceImpl patientServiceImpl = new PatientServiceImpl();
+patientList=patientServiceImpl.getAllPatients()
+List<Patient> patientList = patientServiceImpl.getAllPatients();
+List<Patient> patientList = patientServiceImpl.getAllPatients();
+patient=patientList.get(0)
+Patient patient = patientList.get(0);
+auditLogList=new AuditLogServiceImpl().getAuditLogsByType("Patient")
+List<AuditLog> auditLogList = new AuditLogServiceImpl().getAuditLogsByType("Patient");
+iter=auditLogList.iterator()
+Iterator<AuditLog> iter = auditLogList.iterator();
+Iterator<AuditLog> iter = auditLogList.iterator();
+auditLog=iter.next()
+AuditLog auditLog = iter.next();
+blob=auditLog.getModification()
+Blob blob = auditLog.getModification();
+bdata=blob.getBytes(1,(int)blob.length())
+byte[] bdata = blob.getBytes(1, (int) blob.length());
+String convertString = new String(bdata);
+String type = "Patient";
+listAuditLog=auditLogService.getAuditLogsByType(type)
+List<AuditLog> listAuditLog = auditLogService.getAuditLogsByType(type);
+List<AuditLog> listAuditLog = auditLogService.getAuditLogsByType(type);
+int id = 1;
+auditLog=auditLogService.getAuditLogByChangeId(id)
+AuditLog auditLog = auditLogService.getAuditLogByChangeId(id);
+Date date = new Date("2010-05-15 12:00:00");
+listAuditLog=auditLogService.getAuditLogsByDate(date)
+List<AuditLog> listAuditLog = auditLogService.getAuditLogsByDate(date);
+List<AuditLog> listAuditLog = auditLogService.getAuditLogsByDate(date);
+User user = new User(1);
+listAuditLog=auditLogService.getAuditLogsByUser(user)
+List<AuditLog> listAuditLog = auditLogService.getAuditLogsByUser(user);
+List<AuditLog> listAuditLog = auditLogService.getAuditLogsByUser(user);
+
+ Generics pattern public class AuditLogServiceTest was added at revision 4bde5d3907fb99bf51cd537687407028251c8ccc
+
+
+ Generics pattern List<AuditLog> listAuditLog = auditLogService.getAuditLogsByType(type); was added at revision 4bde5d3907fb99bf51cd537687407028251c8ccc
+
+
+ Generics pattern List<AuditLog> listAuditLog = auditLogService.getAuditLogsByDate(date); was added at revision 4bde5d3907fb99bf51cd537687407028251c8ccc
+
+
+ Generics pattern List<AuditLog> listAuditLog = auditLogService.getAuditLogsByUser(user); was added at revision 4bde5d3907fb99bf51cd537687407028251c8ccc
+
+Object[] arr = new Object[] { ctx };
+arr=userContextHolder.get()
+Object[] arr = userContextHolder.get();
+Properties props = new Properties();
+ms=getServiceContext().getMessageService()
+MessageService ms = getServiceContext().getMessageService();
+adminService=getAdministrationService()
+AdministrationService adminService = getAdministrationService();
+Properties props = new Properties();
+Authenticator auth = new Authenticator() {
+				
+				@Override
+				public PasswordAuthentication getPasswordAuthentication() {
+					return new PasswordAuthentication(getAdministrationService().getGlobalProperty("mail.user"),
+					        getAdministrationService().getGlobalProperty("mail.password"));
+				}
+			};
+@SuppressWarnings("unused")
+		AbstractApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext-service.xml");
+ContextDAO dao = null;
+Set<String> currentRoleNames = new HashSet<String>();
+map=OpenmrsUtil.getCoreRoles()
+Map<String, String> map = OpenmrsUtil.getCoreRoles();
+Map<String, String> map = OpenmrsUtil.getCoreRoles();
+Map<String, String> map = OpenmrsUtil.getCoreRoles();
+Role role = new Role();
+Set<String> currentPrivilegeNames = new HashSet<String>();
+map=OpenmrsUtil.getCorePrivileges()
+Map<String, String> map = OpenmrsUtil.getCorePrivileges();
+Map<String, String> map = OpenmrsUtil.getCorePrivileges();
+Map<String, String> map = OpenmrsUtil.getCorePrivileges();
+Privilege p = new Privilege();
+Set<String> currentPropNames = new HashSet<String>();
+Map<String, GlobalProperty> propsMissingDescription = new HashMap<String, GlobalProperty>();
+Map<String, GlobalProperty> propsMissingDatatype = new HashMap<String, GlobalProperty>();
+corePropName=coreProp.getProperty().toUpperCase()
+String corePropName = coreProp.getProperty().toUpperCase();
+propToUpdate=propsMissingDescription.get(corePropName)
+GlobalProperty propToUpdate = propsMissingDescription.get(corePropName);
+boolean updatesRequired = true;
+u=getAuthenticatedUser()
+User u = getAuthenticatedUser();
+myData=volatileUserData.get(u)
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+u=getAuthenticatedUser()
+User u = getAuthenticatedUser();
+myData=volatileUserData.get(u)
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+Provider provider = (Provider) obj;
+isUnique=Context.getProviderService().isProviderIdentifierUnique(provider)
+boolean isUnique = Context.getProviderService().isProviderIdentifierUnique(provider);
+int numFound = 0;
+Advised advisedService = (Advised) services.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+serviceClass=source.getClass()
+Class serviceClass = source.getClass();
+existingAdvisors=getAddedAdvisors(serviceClass)
+Set<Advisor> existingAdvisors = getAddedAdvisors(serviceClass);
+Set<Advisor> existingAdvisors = getAddedAdvisors(serviceClass);
+existingAdvice=getAddedAdvice(serviceClass)
+Set<Advice> existingAdvice = getAddedAdvice(serviceClass);
+Set<Advice> existingAdvice = getAddedAdvice(serviceClass);
+Advised advisedService = (Advised) services.get(cls);
+advisorsToRemove=addedAdvisors.get(cls)
+Set<Advisor> advisorsToRemove = addedAdvisors.get(cls);
+Set<Advisor> advisorsToRemove = addedAdvisors.get(cls);
+result=addedAdvisors.get(cls)
+Set<Advisor> result = addedAdvisors.get(cls);
+Set<Advisor> result = addedAdvisors.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+adviceToRemove=addedAdvice.get(cls)
+Set<Advice> adviceToRemove = addedAdvice.get(cls);
+Set<Advice> adviceToRemove = addedAdvice.get(cls);
+result=addedAdvice.get(cls)
+Set<Advice> result = addedAdvice.get(cls);
+Set<Advice> result = addedAdvice.get(cls);
+service=services.get(cls)
+Object service = services.get(cls);
+Advised cachedService = (Advised) services.get(cls);
+boolean noExistingService = cachedService == null;
+boolean replacingService = cachedService != null && cachedService != classInstance;
+boolean serviceAdvised = classInstance instanceof Advised;
+Advised advisedService;
+Class[] interfaces = { cls };
+ProxyFactory factory = new ProxyFactory(interfaces);
+String classString = (String) params.get(0);
+classInstance=params.get(1)
+Object classInstance = params.get(1);
+Class cls = null;
+m=getRegisteredComponents(applicationContext,type)
+Map<String, T> m = getRegisteredComponents(applicationContext, type);
+Map<String, T> m = getRegisteredComponents(applicationContext, type);
+Map<String, T> m = getRegisteredComponents(applicationContext, type);
+Map<String, T> components = new HashMap<String, T>();
+registeredComponents=context.getBeansOfType(type)
+Map registeredComponents = context.getBeansOfType(type);
+List<OpenmrsService> services = new ArrayList<OpenmrsService>();
+
+Diff of 4bde5d3907fb99bf51cd537687407028251c8ccc and 6100db503979213b74cf47df51393561bea55216:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 1
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 3
+	--> recency = years
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 4bde5d3907fb99bf51cd537687407028251c8ccc to 6100db503979213b74cf47df51393561bea55216
+
+
+****Parsing for addition at revision 6100db503979213b74cf47df51393561bea55216****
+
+Added AuditableInterceptor.java to .\OpenMRS\ repository source files.
+Added AuditLog.java to .\OpenMRS\ repository source files.
+Added AuditLogDAO.java to .\OpenMRS\ repository source files.
+Added AuditLogService.java to .\OpenMRS\ repository source files.
+Added AuditLogServiceImpl.java to .\OpenMRS\ repository source files.
+Added Context.java to .\OpenMRS\ repository source files.
+Added HibernateAuditLogDAO.java to .\OpenMRS\ repository source files.
+Added ProviderValidator.java to .\OpenMRS\ repository source files.
+Added ServiceContext.java to .\OpenMRS\ repository source files.
+StringBuilder finalString = new StringBuilder();
+String checkFinalString = new String(finalString);
+String returnXML = new String(finalString);
+createBlob=org.hibernate.Hibernate.createBlob(returnXML.getBytes())
+java.sql.Blob createBlob = org.hibernate.Hibernate.createBlob(returnXML
+				.getBytes());
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+modification=createXML(id,entity,null,state,propertyNames,"create")
+Blob modification = createXML(id, entity, null, state,
+					propertyNames, "create");
+AuditLog auditLog = new AuditLog(entity.getClass().getName(),
+					authenticatedUser, new Date(), modification);
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+modification=createXML(id,entity,previousState,currentState,propertyNames,"update")
+Blob modification = createXML(id, entity, previousState,
+					currentState, propertyNames, "update");
+AuditLog auditLog = new AuditLog(entity.getClass().getName(),
+						authenticatedUser, new Date(),
+						modification);
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+modification=createXML(id,entity,state,null,propertyNames,"delete")
+Blob modification = createXML(id, entity, state, null,
+					propertyNames, "delete");
+AuditLog auditLog = new AuditLog(entity.getClass().getName(),
+					authenticatedUser, new Date(), modification);
+Object[] arr = new Object[] { ctx };
+arr=userContextHolder.get()
+Object[] arr = userContextHolder.get();
+Properties props = new Properties();
+ms=getServiceContext().getMessageService()
+MessageService ms = getServiceContext().getMessageService();
+adminService=getAdministrationService()
+AdministrationService adminService = getAdministrationService();
+Properties props = new Properties();
+Authenticator auth = new Authenticator() {
+				
+				@Override
+				public PasswordAuthentication getPasswordAuthentication() {
+					return new PasswordAuthentication(getAdministrationService().getGlobalProperty("mail.user"),
+					        getAdministrationService().getGlobalProperty("mail.password"));
+				}
+			};
+@SuppressWarnings("unused")
+		AbstractApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext-service.xml");
+ContextDAO dao = null;
+Set<String> currentRoleNames = new HashSet<String>();
+map=OpenmrsUtil.getCoreRoles()
+Map<String, String> map = OpenmrsUtil.getCoreRoles();
+Map<String, String> map = OpenmrsUtil.getCoreRoles();
+Map<String, String> map = OpenmrsUtil.getCoreRoles();
+Role role = new Role();
+Set<String> currentPrivilegeNames = new HashSet<String>();
+map=OpenmrsUtil.getCorePrivileges()
+Map<String, String> map = OpenmrsUtil.getCorePrivileges();
+Map<String, String> map = OpenmrsUtil.getCorePrivileges();
+Map<String, String> map = OpenmrsUtil.getCorePrivileges();
+Privilege p = new Privilege();
+Set<String> currentPropNames = new HashSet<String>();
+Map<String, GlobalProperty> propsMissingDescription = new HashMap<String, GlobalProperty>();
+Map<String, GlobalProperty> propsMissingDatatype = new HashMap<String, GlobalProperty>();
+corePropName=coreProp.getProperty().toUpperCase()
+String corePropName = coreProp.getProperty().toUpperCase();
+propToUpdate=propsMissingDescription.get(corePropName)
+GlobalProperty propToUpdate = propsMissingDescription.get(corePropName);
+boolean updatesRequired = true;
+u=getAuthenticatedUser()
+User u = getAuthenticatedUser();
+myData=volatileUserData.get(u)
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+u=getAuthenticatedUser()
+User u = getAuthenticatedUser();
+myData=volatileUserData.get(u)
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+Provider provider = (Provider) obj;
+isUnique=Context.getProviderService().isProviderIdentifierUnique(provider)
+boolean isUnique = Context.getProviderService().isProviderIdentifierUnique(provider);
+int numFound = 0;
+Advised advisedService = (Advised) services.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+serviceClass=source.getClass()
+Class serviceClass = source.getClass();
+existingAdvisors=getAddedAdvisors(serviceClass)
+Set<Advisor> existingAdvisors = getAddedAdvisors(serviceClass);
+Set<Advisor> existingAdvisors = getAddedAdvisors(serviceClass);
+existingAdvice=getAddedAdvice(serviceClass)
+Set<Advice> existingAdvice = getAddedAdvice(serviceClass);
+Set<Advice> existingAdvice = getAddedAdvice(serviceClass);
+Advised advisedService = (Advised) services.get(cls);
+advisorsToRemove=addedAdvisors.get(cls)
+Set<Advisor> advisorsToRemove = addedAdvisors.get(cls);
+Set<Advisor> advisorsToRemove = addedAdvisors.get(cls);
+result=addedAdvisors.get(cls)
+Set<Advisor> result = addedAdvisors.get(cls);
+Set<Advisor> result = addedAdvisors.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+adviceToRemove=addedAdvice.get(cls)
+Set<Advice> adviceToRemove = addedAdvice.get(cls);
+Set<Advice> adviceToRemove = addedAdvice.get(cls);
+result=addedAdvice.get(cls)
+Set<Advice> result = addedAdvice.get(cls);
+Set<Advice> result = addedAdvice.get(cls);
+service=services.get(cls)
+Object service = services.get(cls);
+Advised cachedService = (Advised) services.get(cls);
+boolean noExistingService = cachedService == null;
+boolean replacingService = cachedService != null && cachedService != classInstance;
+boolean serviceAdvised = classInstance instanceof Advised;
+Advised advisedService;
+Class[] interfaces = { cls };
+ProxyFactory factory = new ProxyFactory(interfaces);
+String classString = (String) params.get(0);
+classInstance=params.get(1)
+Object classInstance = params.get(1);
+Class cls = null;
+m=getRegisteredComponents(applicationContext,type)
+Map<String, T> m = getRegisteredComponents(applicationContext, type);
+Map<String, T> m = getRegisteredComponents(applicationContext, type);
+Map<String, T> m = getRegisteredComponents(applicationContext, type);
+Map<String, T> components = new HashMap<String, T>();
+registeredComponents=context.getBeansOfType(type)
+Map registeredComponents = context.getBeansOfType(type);
+List<OpenmrsService> services = new ArrayList<OpenmrsService>();
+
+Diff of 6100db503979213b74cf47df51393561bea55216 and 745b6c6d28e969541794c0909ecd8b1c60386b88:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 1
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 3
+	--> recency = years
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 6100db503979213b74cf47df51393561bea55216 to 745b6c6d28e969541794c0909ecd8b1c60386b88
+
+
+****Parsing for addition at revision 745b6c6d28e969541794c0909ecd8b1c60386b88****
+
+Added AuditableInterceptor.java to .\OpenMRS\ repository source files.
+Added AuditLog.java to .\OpenMRS\ repository source files.
+Added AuditLogDAO.java to .\OpenMRS\ repository source files.
+Added AuditLogService.java to .\OpenMRS\ repository source files.
+Added AuditLogServiceImpl.java to .\OpenMRS\ repository source files.
+Added Context.java to .\OpenMRS\ repository source files.
+Added HibernateAuditLogDAO.java to .\OpenMRS\ repository source files.
+Added ProviderValidator.java to .\OpenMRS\ repository source files.
+Added ServiceContext.java to .\OpenMRS\ repository source files.
+StringBuilder finalString = new StringBuilder();
+String checkFinalString = new String(finalString);
+String returnXML = new String(finalString);
+createBlob=org.hibernate.Hibernate.createBlob(returnXML.getBytes())
+java.sql.Blob createBlob = org.hibernate.Hibernate.createBlob(returnXML
+				.getBytes());
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+modification=createXML(id,entity,null,state,propertyNames,"create")
+Blob modification = createXML(id, entity, null, state,
+					propertyNames, "create");
+AuditLog auditLog = new AuditLog(entity.getClass().getName(),
+					authenticatedUser, new Date(), modification);
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+modification=createXML(id,entity,previousState,currentState,propertyNames,"update")
+Blob modification = createXML(id, entity, previousState,
+					currentState, propertyNames, "update");
+AuditLog auditLog = new AuditLog(entity.getClass().getName(),
+						authenticatedUser, new Date(),
+						modification);
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+modification=createXML(id,entity,state,null,propertyNames,"delete")
+Blob modification = createXML(id, entity, state, null,
+					propertyNames, "delete");
+AuditLog auditLog = new AuditLog(entity.getClass().getName(),
+					authenticatedUser, new Date(), modification);
+Object[] arr = new Object[] { ctx };
+arr=userContextHolder.get()
+Object[] arr = userContextHolder.get();
+Properties props = new Properties();
+ms=getServiceContext().getMessageService()
+MessageService ms = getServiceContext().getMessageService();
+adminService=getAdministrationService()
+AdministrationService adminService = getAdministrationService();
+Properties props = new Properties();
+Authenticator auth = new Authenticator() {
+				
+				@Override
+				public PasswordAuthentication getPasswordAuthentication() {
+					return new PasswordAuthentication(getAdministrationService().getGlobalProperty("mail.user"),
+					        getAdministrationService().getGlobalProperty("mail.password"));
+				}
+			};
+@SuppressWarnings("unused")
+		AbstractApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext-service.xml");
+ContextDAO dao = null;
+Set<String> currentRoleNames = new HashSet<String>();
+map=OpenmrsUtil.getCoreRoles()
+Map<String, String> map = OpenmrsUtil.getCoreRoles();
+Map<String, String> map = OpenmrsUtil.getCoreRoles();
+Map<String, String> map = OpenmrsUtil.getCoreRoles();
+Role role = new Role();
+Set<String> currentPrivilegeNames = new HashSet<String>();
+map=OpenmrsUtil.getCorePrivileges()
+Map<String, String> map = OpenmrsUtil.getCorePrivileges();
+Map<String, String> map = OpenmrsUtil.getCorePrivileges();
+Map<String, String> map = OpenmrsUtil.getCorePrivileges();
+Privilege p = new Privilege();
+Set<String> currentPropNames = new HashSet<String>();
+Map<String, GlobalProperty> propsMissingDescription = new HashMap<String, GlobalProperty>();
+Map<String, GlobalProperty> propsMissingDatatype = new HashMap<String, GlobalProperty>();
+corePropName=coreProp.getProperty().toUpperCase()
+String corePropName = coreProp.getProperty().toUpperCase();
+propToUpdate=propsMissingDescription.get(corePropName)
+GlobalProperty propToUpdate = propsMissingDescription.get(corePropName);
+boolean updatesRequired = true;
+u=getAuthenticatedUser()
+User u = getAuthenticatedUser();
+myData=volatileUserData.get(u)
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+u=getAuthenticatedUser()
+User u = getAuthenticatedUser();
+myData=volatileUserData.get(u)
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+Provider provider = (Provider) obj;
+isUnique=Context.getProviderService().isProviderIdentifierUnique(provider)
+boolean isUnique = Context.getProviderService().isProviderIdentifierUnique(provider);
+int numFound = 0;
+Advised advisedService = (Advised) services.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+serviceClass=source.getClass()
+Class serviceClass = source.getClass();
+existingAdvisors=getAddedAdvisors(serviceClass)
+Set<Advisor> existingAdvisors = getAddedAdvisors(serviceClass);
+Set<Advisor> existingAdvisors = getAddedAdvisors(serviceClass);
+existingAdvice=getAddedAdvice(serviceClass)
+Set<Advice> existingAdvice = getAddedAdvice(serviceClass);
+Set<Advice> existingAdvice = getAddedAdvice(serviceClass);
+Advised advisedService = (Advised) services.get(cls);
+advisorsToRemove=addedAdvisors.get(cls)
+Set<Advisor> advisorsToRemove = addedAdvisors.get(cls);
+Set<Advisor> advisorsToRemove = addedAdvisors.get(cls);
+result=addedAdvisors.get(cls)
+Set<Advisor> result = addedAdvisors.get(cls);
+Set<Advisor> result = addedAdvisors.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+adviceToRemove=addedAdvice.get(cls)
+Set<Advice> adviceToRemove = addedAdvice.get(cls);
+Set<Advice> adviceToRemove = addedAdvice.get(cls);
+result=addedAdvice.get(cls)
+Set<Advice> result = addedAdvice.get(cls);
+Set<Advice> result = addedAdvice.get(cls);
+service=services.get(cls)
+Object service = services.get(cls);
+Advised cachedService = (Advised) services.get(cls);
+boolean noExistingService = cachedService == null;
+boolean replacingService = cachedService != null && cachedService != classInstance;
+boolean serviceAdvised = classInstance instanceof Advised;
+Advised advisedService;
+Class[] interfaces = { cls };
+ProxyFactory factory = new ProxyFactory(interfaces);
+String classString = (String) params.get(0);
+classInstance=params.get(1)
+Object classInstance = params.get(1);
+Class cls = null;
+m=getRegisteredComponents(applicationContext,type)
+Map<String, T> m = getRegisteredComponents(applicationContext, type);
+Map<String, T> m = getRegisteredComponents(applicationContext, type);
+Map<String, T> m = getRegisteredComponents(applicationContext, type);
+Map<String, T> components = new HashMap<String, T>();
+registeredComponents=context.getBeansOfType(type)
+Map registeredComponents = context.getBeansOfType(type);
+List<OpenmrsService> services = new ArrayList<OpenmrsService>();
+
+Diff of 745b6c6d28e969541794c0909ecd8b1c60386b88 and 7af26b75b724cf063f8833a38598e1fb685cf30c:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 1
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 3
+	--> recency = years
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 745b6c6d28e969541794c0909ecd8b1c60386b88 to 7af26b75b724cf063f8833a38598e1fb685cf30c
+
+
+****Parsing for addition at revision 7af26b75b724cf063f8833a38598e1fb685cf30c****
+
+Added AuditableInterceptor.java to .\OpenMRS\ repository source files.
+Added AuditLog.java to .\OpenMRS\ repository source files.
+Added AuditLogDAO.java to .\OpenMRS\ repository source files.
+Added AuditLogService.java to .\OpenMRS\ repository source files.
+Added AuditLogServiceImpl.java to .\OpenMRS\ repository source files.
+Added Context.java to .\OpenMRS\ repository source files.
+Added HibernateAuditLogDAO.java to .\OpenMRS\ repository source files.
+Added ProviderValidator.java to .\OpenMRS\ repository source files.
+Added ServiceContext.java to .\OpenMRS\ repository source files.
+StringBuilder finalString = new StringBuilder();
+String checkFinalString = new String(finalString);
+String returnXML = new String(finalString);
+createBlob=org.hibernate.Hibernate.createBlob(returnXML.getBytes())
+java.sql.Blob createBlob = org.hibernate.Hibernate.createBlob(returnXML
+				.getBytes());
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+modification=createXML(id,entity,null,state,propertyNames,"create")
+Blob modification = createXML(id, entity, null, state,
+					propertyNames, "create");
+AuditLog auditLog = new AuditLog(entity.getClass().getName(),
+					authenticatedUser, new Date(), modification);
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+modification=createXML(id,entity,previousState,currentState,propertyNames,"update")
+Blob modification = createXML(id, entity, previousState,
+					currentState, propertyNames, "update");
+AuditLog auditLog = new AuditLog(entity.getClass().getName(),
+						authenticatedUser, new Date(),
+						modification);
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+modification=createXML(id,entity,state,null,propertyNames,"delete")
+Blob modification = createXML(id, entity, state, null,
+					propertyNames, "delete");
+AuditLog auditLog = new AuditLog(entity.getClass().getName(),
+					authenticatedUser, new Date(), modification);
+Object[] arr = new Object[] { ctx };
+arr=userContextHolder.get()
+Object[] arr = userContextHolder.get();
+Properties props = new Properties();
+ms=getServiceContext().getMessageService()
+MessageService ms = getServiceContext().getMessageService();
+adminService=getAdministrationService()
+AdministrationService adminService = getAdministrationService();
+Properties props = new Properties();
+Authenticator auth = new Authenticator() {
+				
+				@Override
+				public PasswordAuthentication getPasswordAuthentication() {
+					return new PasswordAuthentication(getAdministrationService().getGlobalProperty("mail.user"),
+					        getAdministrationService().getGlobalProperty("mail.password"));
+				}
+			};
+@SuppressWarnings("unused")
+		AbstractApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext-service.xml");
+ContextDAO dao = null;
+Set<String> currentRoleNames = new HashSet<String>();
+map=OpenmrsUtil.getCoreRoles()
+Map<String, String> map = OpenmrsUtil.getCoreRoles();
+Map<String, String> map = OpenmrsUtil.getCoreRoles();
+Map<String, String> map = OpenmrsUtil.getCoreRoles();
+Role role = new Role();
+Set<String> currentPrivilegeNames = new HashSet<String>();
+map=OpenmrsUtil.getCorePrivileges()
+Map<String, String> map = OpenmrsUtil.getCorePrivileges();
+Map<String, String> map = OpenmrsUtil.getCorePrivileges();
+Map<String, String> map = OpenmrsUtil.getCorePrivileges();
+Privilege p = new Privilege();
+Set<String> currentPropNames = new HashSet<String>();
+Map<String, GlobalProperty> propsMissingDescription = new HashMap<String, GlobalProperty>();
+Map<String, GlobalProperty> propsMissingDatatype = new HashMap<String, GlobalProperty>();
+corePropName=coreProp.getProperty().toUpperCase()
+String corePropName = coreProp.getProperty().toUpperCase();
+propToUpdate=propsMissingDescription.get(corePropName)
+GlobalProperty propToUpdate = propsMissingDescription.get(corePropName);
+boolean updatesRequired = true;
+u=getAuthenticatedUser()
+User u = getAuthenticatedUser();
+myData=volatileUserData.get(u)
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+u=getAuthenticatedUser()
+User u = getAuthenticatedUser();
+myData=volatileUserData.get(u)
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+Provider provider = (Provider) obj;
+isUnique=Context.getProviderService().isProviderIdentifierUnique(provider)
+boolean isUnique = Context.getProviderService().isProviderIdentifierUnique(provider);
+int numFound = 0;
+Advised advisedService = (Advised) services.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+serviceClass=source.getClass()
+Class serviceClass = source.getClass();
+existingAdvisors=getAddedAdvisors(serviceClass)
+Set<Advisor> existingAdvisors = getAddedAdvisors(serviceClass);
+Set<Advisor> existingAdvisors = getAddedAdvisors(serviceClass);
+existingAdvice=getAddedAdvice(serviceClass)
+Set<Advice> existingAdvice = getAddedAdvice(serviceClass);
+Set<Advice> existingAdvice = getAddedAdvice(serviceClass);
+Advised advisedService = (Advised) services.get(cls);
+advisorsToRemove=addedAdvisors.get(cls)
+Set<Advisor> advisorsToRemove = addedAdvisors.get(cls);
+Set<Advisor> advisorsToRemove = addedAdvisors.get(cls);
+result=addedAdvisors.get(cls)
+Set<Advisor> result = addedAdvisors.get(cls);
+Set<Advisor> result = addedAdvisors.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+adviceToRemove=addedAdvice.get(cls)
+Set<Advice> adviceToRemove = addedAdvice.get(cls);
+Set<Advice> adviceToRemove = addedAdvice.get(cls);
+result=addedAdvice.get(cls)
+Set<Advice> result = addedAdvice.get(cls);
+Set<Advice> result = addedAdvice.get(cls);
+service=services.get(cls)
+Object service = services.get(cls);
+Advised cachedService = (Advised) services.get(cls);
+boolean noExistingService = cachedService == null;
+boolean replacingService = cachedService != null && cachedService != classInstance;
+boolean serviceAdvised = classInstance instanceof Advised;
+Advised advisedService;
+Class[] interfaces = { cls };
+ProxyFactory factory = new ProxyFactory(interfaces);
+String classString = (String) params.get(0);
+classInstance=params.get(1)
+Object classInstance = params.get(1);
+Class cls = null;
+m=getRegisteredComponents(applicationContext,type)
+Map<String, T> m = getRegisteredComponents(applicationContext, type);
+Map<String, T> m = getRegisteredComponents(applicationContext, type);
+Map<String, T> m = getRegisteredComponents(applicationContext, type);
+Map<String, T> components = new HashMap<String, T>();
+registeredComponents=context.getBeansOfType(type)
+Map registeredComponents = context.getBeansOfType(type);
+List<OpenmrsService> services = new ArrayList<OpenmrsService>();
+
+Diff of 7af26b75b724cf063f8833a38598e1fb685cf30c and 5fb99ea4de9f21419e8ba20b3717424b528da1f7:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 1
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 3
+	--> recency = years
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 7af26b75b724cf063f8833a38598e1fb685cf30c to 5fb99ea4de9f21419e8ba20b3717424b528da1f7
+
+
+****Parsing for addition at revision 5fb99ea4de9f21419e8ba20b3717424b528da1f7****
+
+Added AuditableInterceptor.java to .\OpenMRS\ repository source files.
+Added AuditLog.java to .\OpenMRS\ repository source files.
+Added AuditLogDAO.java to .\OpenMRS\ repository source files.
+Added AuditLogService.java to .\OpenMRS\ repository source files.
+Added AuditLogServiceImpl.java to .\OpenMRS\ repository source files.
+Added Context.java to .\OpenMRS\ repository source files.
+Added HibernateAuditLogDAO.java to .\OpenMRS\ repository source files.
+Added ProviderValidator.java to .\OpenMRS\ repository source files.
+Added ServiceContext.java to .\OpenMRS\ repository source files.
+StringBuilder finalString = new StringBuilder();
+String checkFinalString = new String(finalString);
+String returnXML = new String(finalString);
+createBlob=org.hibernate.Hibernate.createBlob(returnXML.getBytes())
+java.sql.Blob createBlob = org.hibernate.Hibernate.createBlob(returnXML
+				.getBytes());
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+modification=createXML(id,entity,null,state,propertyNames,"create")
+Blob modification = createXML(id, entity, null, state,
+					propertyNames, "create");
+AuditLog auditLog = new AuditLog(entity.getClass().getName(),
+					authenticatedUser, new Date(), modification);
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+modification=createXML(id,entity,previousState,currentState,propertyNames,"update")
+Blob modification = createXML(id, entity, previousState,
+					currentState, propertyNames, "update");
+AuditLog auditLog = new AuditLog(entity.getClass().getName(),
+						authenticatedUser, new Date(),
+						modification);
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+modification=createXML(id,entity,state,null,propertyNames,"delete")
+Blob modification = createXML(id, entity, state, null,
+					propertyNames, "delete");
+AuditLog auditLog = new AuditLog(entity.getClass().getName(),
+					authenticatedUser, new Date(), modification);
+Object[] arr = new Object[] { ctx };
+arr=userContextHolder.get()
+Object[] arr = userContextHolder.get();
+Properties props = new Properties();
+ms=getServiceContext().getMessageService()
+MessageService ms = getServiceContext().getMessageService();
+adminService=getAdministrationService()
+AdministrationService adminService = getAdministrationService();
+Properties props = new Properties();
+Authenticator auth = new Authenticator() {
+				
+				@Override
+				public PasswordAuthentication getPasswordAuthentication() {
+					return new PasswordAuthentication(getAdministrationService().getGlobalProperty("mail.user"),
+					        getAdministrationService().getGlobalProperty("mail.password"));
+				}
+			};
+@SuppressWarnings("unused")
+		AbstractApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext-service.xml");
+ContextDAO dao = null;
+Set<String> currentRoleNames = new HashSet<String>();
+map=OpenmrsUtil.getCoreRoles()
+Map<String, String> map = OpenmrsUtil.getCoreRoles();
+Map<String, String> map = OpenmrsUtil.getCoreRoles();
+Map<String, String> map = OpenmrsUtil.getCoreRoles();
+Role role = new Role();
+Set<String> currentPrivilegeNames = new HashSet<String>();
+map=OpenmrsUtil.getCorePrivileges()
+Map<String, String> map = OpenmrsUtil.getCorePrivileges();
+Map<String, String> map = OpenmrsUtil.getCorePrivileges();
+Map<String, String> map = OpenmrsUtil.getCorePrivileges();
+Privilege p = new Privilege();
+Set<String> currentPropNames = new HashSet<String>();
+Map<String, GlobalProperty> propsMissingDescription = new HashMap<String, GlobalProperty>();
+Map<String, GlobalProperty> propsMissingDatatype = new HashMap<String, GlobalProperty>();
+corePropName=coreProp.getProperty().toUpperCase()
+String corePropName = coreProp.getProperty().toUpperCase();
+propToUpdate=propsMissingDescription.get(corePropName)
+GlobalProperty propToUpdate = propsMissingDescription.get(corePropName);
+boolean updatesRequired = true;
+u=getAuthenticatedUser()
+User u = getAuthenticatedUser();
+myData=volatileUserData.get(u)
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+u=getAuthenticatedUser()
+User u = getAuthenticatedUser();
+myData=volatileUserData.get(u)
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+Provider provider = (Provider) obj;
+isUnique=Context.getProviderService().isProviderIdentifierUnique(provider)
+boolean isUnique = Context.getProviderService().isProviderIdentifierUnique(provider);
+int numFound = 0;
+Advised advisedService = (Advised) services.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+serviceClass=source.getClass()
+Class serviceClass = source.getClass();
+existingAdvisors=getAddedAdvisors(serviceClass)
+Set<Advisor> existingAdvisors = getAddedAdvisors(serviceClass);
+Set<Advisor> existingAdvisors = getAddedAdvisors(serviceClass);
+existingAdvice=getAddedAdvice(serviceClass)
+Set<Advice> existingAdvice = getAddedAdvice(serviceClass);
+Set<Advice> existingAdvice = getAddedAdvice(serviceClass);
+Advised advisedService = (Advised) services.get(cls);
+advisorsToRemove=addedAdvisors.get(cls)
+Set<Advisor> advisorsToRemove = addedAdvisors.get(cls);
+Set<Advisor> advisorsToRemove = addedAdvisors.get(cls);
+result=addedAdvisors.get(cls)
+Set<Advisor> result = addedAdvisors.get(cls);
+Set<Advisor> result = addedAdvisors.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+adviceToRemove=addedAdvice.get(cls)
+Set<Advice> adviceToRemove = addedAdvice.get(cls);
+Set<Advice> adviceToRemove = addedAdvice.get(cls);
+result=addedAdvice.get(cls)
+Set<Advice> result = addedAdvice.get(cls);
+Set<Advice> result = addedAdvice.get(cls);
+service=services.get(cls)
+Object service = services.get(cls);
+Advised cachedService = (Advised) services.get(cls);
+boolean noExistingService = cachedService == null;
+boolean replacingService = cachedService != null && cachedService != classInstance;
+boolean serviceAdvised = classInstance instanceof Advised;
+Advised advisedService;
+Class[] interfaces = { cls };
+ProxyFactory factory = new ProxyFactory(interfaces);
+String classString = (String) params.get(0);
+classInstance=params.get(1)
+Object classInstance = params.get(1);
+Class cls = null;
+m=getRegisteredComponents(applicationContext,type)
+Map<String, T> m = getRegisteredComponents(applicationContext, type);
+Map<String, T> m = getRegisteredComponents(applicationContext, type);
+Map<String, T> m = getRegisteredComponents(applicationContext, type);
+Map<String, T> components = new HashMap<String, T>();
+registeredComponents=context.getBeansOfType(type)
+Map registeredComponents = context.getBeansOfType(type);
+List<OpenmrsService> services = new ArrayList<OpenmrsService>();
+
+Diff of 5fb99ea4de9f21419e8ba20b3717424b528da1f7 and b79c4d2fb4717dc1fa46be18edcf70be1123b284:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 1
+	--> recency = years
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 3
+	--> recency = years
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 5fb99ea4de9f21419e8ba20b3717424b528da1f7 to b79c4d2fb4717dc1fa46be18edcf70be1123b284
+
+
+****Parsing for addition at revision b79c4d2fb4717dc1fa46be18edcf70be1123b284****
+
+Added AuditableInterceptor.java to .\OpenMRS\ repository source files.
+Added AuditLog.java to .\OpenMRS\ repository source files.
+Added AuditLogDAO.java to .\OpenMRS\ repository source files.
+Added AuditLogService.java to .\OpenMRS\ repository source files.
+Added AuditLogServiceImpl.java to .\OpenMRS\ repository source files.
+Added Context.java to .\OpenMRS\ repository source files.
+Added HibernateAuditLogDAO.java to .\OpenMRS\ repository source files.
+Added ProviderValidator.java to .\OpenMRS\ repository source files.
+Added ServiceContext.java to .\OpenMRS\ repository source files.
+StringBuilder finalString = new StringBuilder();
+String checkFinalString = new String(finalString);
+String returnXML = new String(finalString);
+createBlob=org.hibernate.Hibernate.createBlob(returnXML.getBytes())
+java.sql.Blob createBlob = org.hibernate.Hibernate.createBlob(returnXML
+				.getBytes());
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+modification=createXML(id,entity,null,state,propertyNames,"create")
+Blob modification = createXML(id, entity, null, state,
+					propertyNames, "create");
+AuditLog auditLog = new AuditLog(entity.getClass().getName(),
+					authenticatedUser.getChangedBy(), new Date(), modification);
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+modification=createXML(id,entity,previousState,currentState,propertyNames,"update")
+Blob modification = createXML(id, entity, previousState,
+					currentState, propertyNames, "update");
+AuditLog auditLog = new AuditLog(entity.getClass().getName(),
+						authenticatedUser.getChangedBy(), new Date(),
+						modification);
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+modification=createXML(id,entity,state,null,propertyNames,"delete")
+Blob modification = createXML(id, entity, state, null,
+					propertyNames, "delete");
+AuditLog auditLog = new AuditLog(entity.getClass().getName(),
+					authenticatedUser.getChangedBy(), new Date(), modification);
+
+ Generics pattern public class AuditLogService was added at revision b79c4d2fb4717dc1fa46be18edcf70be1123b284
+
+
+ Generics pattern public class AuditLogServiceImpl was added at revision b79c4d2fb4717dc1fa46be18edcf70be1123b284
+
+Object[] arr = new Object[] { ctx };
+arr=userContextHolder.get()
+Object[] arr = userContextHolder.get();
+Properties props = new Properties();
+ms=getServiceContext().getMessageService()
+MessageService ms = getServiceContext().getMessageService();
+adminService=getAdministrationService()
+AdministrationService adminService = getAdministrationService();
+Properties props = new Properties();
+Authenticator auth = new Authenticator() {
+				
+				@Override
+				public PasswordAuthentication getPasswordAuthentication() {
+					return new PasswordAuthentication(getAdministrationService().getGlobalProperty("mail.user"),
+					        getAdministrationService().getGlobalProperty("mail.password"));
+				}
+			};
+@SuppressWarnings("unused")
+		AbstractApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext-service.xml");
+ContextDAO dao = null;
+Set<String> currentRoleNames = new HashSet<String>();
+map=OpenmrsUtil.getCoreRoles()
+Map<String, String> map = OpenmrsUtil.getCoreRoles();
+Map<String, String> map = OpenmrsUtil.getCoreRoles();
+Map<String, String> map = OpenmrsUtil.getCoreRoles();
+Role role = new Role();
+Set<String> currentPrivilegeNames = new HashSet<String>();
+map=OpenmrsUtil.getCorePrivileges()
+Map<String, String> map = OpenmrsUtil.getCorePrivileges();
+Map<String, String> map = OpenmrsUtil.getCorePrivileges();
+Map<String, String> map = OpenmrsUtil.getCorePrivileges();
+Privilege p = new Privilege();
+Set<String> currentPropNames = new HashSet<String>();
+Map<String, GlobalProperty> propsMissingDescription = new HashMap<String, GlobalProperty>();
+Map<String, GlobalProperty> propsMissingDatatype = new HashMap<String, GlobalProperty>();
+corePropName=coreProp.getProperty().toUpperCase()
+String corePropName = coreProp.getProperty().toUpperCase();
+propToUpdate=propsMissingDescription.get(corePropName)
+GlobalProperty propToUpdate = propsMissingDescription.get(corePropName);
+boolean updatesRequired = true;
+u=getAuthenticatedUser()
+User u = getAuthenticatedUser();
+myData=volatileUserData.get(u)
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+u=getAuthenticatedUser()
+User u = getAuthenticatedUser();
+myData=volatileUserData.get(u)
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+Map<String, Object> myData = volatileUserData.get(u);
+
+ Generics pattern public class Context was added at revision b79c4d2fb4717dc1fa46be18edcf70be1123b284
+
+
+ Generics pattern Class<?> was added at revision b79c4d2fb4717dc1fa46be18edcf70be1123b284
+
+
+ Generics pattern Class<? extends T> was added at revision b79c4d2fb4717dc1fa46be18edcf70be1123b284
+
+
+ Generics pattern Map<String, String> map = OpenmrsUtil.getCoreRoles(); was added at revision b79c4d2fb4717dc1fa46be18edcf70be1123b284
+
+
+ Generics pattern Map<String, String> map = OpenmrsUtil.getCorePrivileges(); was added at revision b79c4d2fb4717dc1fa46be18edcf70be1123b284
+
+
+ Generics pattern new HashMap<String, Object>() was added at revision b79c4d2fb4717dc1fa46be18edcf70be1123b284
+
+Provider provider = (Provider) obj;
+isUnique=Context.getProviderService().isProviderIdentifierUnique(provider)
+boolean isUnique = Context.getProviderService().isProviderIdentifierUnique(provider);
+int numFound = 0;
+Advised advisedService = (Advised) services.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+serviceClass=source.getClass()
+Class serviceClass = source.getClass();
+existingAdvisors=getAddedAdvisors(serviceClass)
+Set<Advisor> existingAdvisors = getAddedAdvisors(serviceClass);
+Set<Advisor> existingAdvisors = getAddedAdvisors(serviceClass);
+existingAdvice=getAddedAdvice(serviceClass)
+Set<Advice> existingAdvice = getAddedAdvice(serviceClass);
+Set<Advice> existingAdvice = getAddedAdvice(serviceClass);
+Advised advisedService = (Advised) services.get(cls);
+advisorsToRemove=addedAdvisors.get(cls)
+Set<Advisor> advisorsToRemove = addedAdvisors.get(cls);
+Set<Advisor> advisorsToRemove = addedAdvisors.get(cls);
+result=addedAdvisors.get(cls)
+Set<Advisor> result = addedAdvisors.get(cls);
+Set<Advisor> result = addedAdvisors.get(cls);
+Advised advisedService = (Advised) services.get(cls);
+adviceToRemove=addedAdvice.get(cls)
+Set<Advice> adviceToRemove = addedAdvice.get(cls);
+Set<Advice> adviceToRemove = addedAdvice.get(cls);
+result=addedAdvice.get(cls)
+Set<Advice> result = addedAdvice.get(cls);
+Set<Advice> result = addedAdvice.get(cls);
+service=services.get(cls)
+Object service = services.get(cls);
+Advised cachedService = (Advised) services.get(cls);
+boolean noExistingService = cachedService == null;
+boolean replacingService = cachedService != null && cachedService != classInstance;
+boolean serviceAdvised = classInstance instanceof Advised;
+Advised advisedService;
+Class[] interfaces = { cls };
+ProxyFactory factory = new ProxyFactory(interfaces);
+String classString = (String) params.get(0);
+classInstance=params.get(1)
+Object classInstance = params.get(1);
+Class cls = null;
+m=getRegisteredComponents(applicationContext,type)
+Map<String, T> m = getRegisteredComponents(applicationContext, type);
+Map<String, T> m = getRegisteredComponents(applicationContext, type);
+Map<String, T> m = getRegisteredComponents(applicationContext, type);
+Map<String, T> components = new HashMap<String, T>();
+registeredComponents=context.getBeansOfType(type)
+Map registeredComponents = context.getBeansOfType(type);
+List<OpenmrsService> services = new ArrayList<OpenmrsService>();
+
+Diff of b79c4d2fb4717dc1fa46be18edcf70be1123b284 and 72e0169de9109a03333cbd4fc661b4fde63ef002:
+	--> Added type argument methods = 1
+	--> recency = years
+	--> Added wildcards = 2
+	--> recency = years
+	--> Added type declarations  = 5
+	--> recency = years
+	--> Added type parameter methods = 2
+	--> recency = years
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 15
+	--> recency = years
+	--> Added class instantiations = 19
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 1
+	--> recency = years
+
+ Reverted revision b79c4d2fb4717dc1fa46be18edcf70be1123b284 to 72e0169de9109a03333cbd4fc661b4fde63ef002
+
+
+****Parsing for addition at revision 72e0169de9109a03333cbd4fc661b4fde63ef002****
+
+Added AuditableInterceptor.java to .\OpenMRS\ repository source files.
+Added AuditLog.java to .\OpenMRS\ repository source files.
+Added HibernateAuditLogDAO.java to .\OpenMRS\ repository source files.
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+AuditLog auditLog = new AuditLog();
+modification=convertXMLCreate(id,entity,state,propertyNames)
+Blob modification = convertXMLCreate(id, entity, state, propertyNames);
+StringBuilder finalString = new StringBuilder();
+String returnXML = new String(finalString);
+createBlob=org.hibernate.Hibernate.createBlob(returnXML.getBytes())
+java.sql.Blob createBlob = org.hibernate.Hibernate.createBlob(returnXML.getBytes());
+boolean objectWasChanged = false;
+Date currentDate = new Date();
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+AuditLog auditLog = new AuditLog();
+modification=convertXMLUpdate(id,entity,previousState,currentState,propertyNames)
+Blob modification = convertXMLUpdate(id, entity, previousState, currentState, propertyNames);
+HibernateAuditLogDAO hibernateAuditLogDAO = new HibernateAuditLogDAO();
+StringBuilder finalString = new StringBuilder();
+String returnXML = new String(finalString);
+createBlob=org.hibernate.Hibernate.createBlob(returnXML.getBytes())
+java.sql.Blob createBlob = org.hibernate.Hibernate.createBlob(returnXML.getBytes());
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+AuditLog auditLog = new AuditLog();
+modification=convertXMLDelete(id,entity,state,propertyNames)
+Blob modification = convertXMLDelete(id, entity, state, propertyNames);
+StringBuilder finalString = new StringBuilder();
+String returnXML = new String(finalString);
+createBlob=org.hibernate.Hibernate.createBlob(returnXML.getBytes())
+java.sql.Blob createBlob = org.hibernate.Hibernate.createBlob(returnXML.getBytes());
+
+Diff of 72e0169de9109a03333cbd4fc661b4fde63ef002 and 52131bb411a74a691ea5582a81e7286af085f8ca:
+	--> Added type argument methods = 1
+	--> recency = years
+	--> Added wildcards = 2
+	--> recency = years
+	--> Added type declarations  = 5
+	--> recency = years
+	--> Added type parameter methods = 2
+	--> recency = years
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 15
+	--> recency = years
+	--> Added class instantiations = 19
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 1
+	--> recency = years
+
+ Reverted revision 72e0169de9109a03333cbd4fc661b4fde63ef002 to 52131bb411a74a691ea5582a81e7286af085f8ca
+
+
+****Parsing for addition at revision 52131bb411a74a691ea5582a81e7286af085f8ca****
+
+Added AuditableInterceptor.java to .\OpenMRS\ repository source files.
+Added AuditLog.java to .\OpenMRS\ repository source files.
+Added HibernateAuditLogDAO.java to .\OpenMRS\ repository source files.
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+AuditLog auditLog = new AuditLog();
+modification=convertXMLCreate(id,entity,state,propertyNames)
+Blob modification = convertXMLCreate(id, entity, state, propertyNames);
+StringBuilder finalString = new StringBuilder();
+String returnXML = new String(finalString);
+createBlob=org.hibernate.Hibernate.createBlob(returnXML.getBytes())
+java.sql.Blob createBlob = org.hibernate.Hibernate.createBlob(returnXML.getBytes());
+boolean objectWasChanged = false;
+Date currentDate = new Date();
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+AuditLog auditLog = new AuditLog();
+modification=convertXMLUpdate(id,entity,previousState,currentState,propertyNames)
+Blob modification = convertXMLUpdate(id, entity, previousState, currentState, propertyNames);
+HibernateAuditLogDAO hibernateAuditLogDAO = new HibernateAuditLogDAO();
+StringBuilder finalString = new StringBuilder();
+String returnXML = new String(finalString);
+createBlob=org.hibernate.Hibernate.createBlob(returnXML.getBytes())
+java.sql.Blob createBlob = org.hibernate.Hibernate.createBlob(returnXML.getBytes());
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+AuditLog auditLog = new AuditLog();
+modification=convertXMLDelete(id,entity,state,propertyNames)
+Blob modification = convertXMLDelete(id, entity, state, propertyNames);
+StringBuilder finalString = new StringBuilder();
+String returnXML = new String(finalString);
+createBlob=org.hibernate.Hibernate.createBlob(returnXML.getBytes())
+java.sql.Blob createBlob = org.hibernate.Hibernate.createBlob(returnXML.getBytes());
+
+Diff of 52131bb411a74a691ea5582a81e7286af085f8ca and 33c1577ca01a2c714d697fcb7320f2dc239f33f4:
+	--> Added type argument methods = 1
+	--> recency = years
+	--> Added wildcards = 2
+	--> recency = years
+	--> Added type declarations  = 5
+	--> recency = years
+	--> Added type parameter methods = 2
+	--> recency = years
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 15
+	--> recency = years
+	--> Added class instantiations = 19
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 1
+	--> recency = years
+
+ Reverted revision 52131bb411a74a691ea5582a81e7286af085f8ca to 33c1577ca01a2c714d697fcb7320f2dc239f33f4
+
+
+****Parsing for addition at revision 33c1577ca01a2c714d697fcb7320f2dc239f33f4****
+
+Added AuditableInterceptor.java to .\OpenMRS\ repository source files.
+Added AuditLog.java to .\OpenMRS\ repository source files.
+Added HibernateAuditLogDAO.java to .\OpenMRS\ repository source files.
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+AuditLog auditLog = new AuditLog();
+modification=convertXMLCreate(id,entity,state,propertyNames)
+Blob modification = convertXMLCreate(id, entity, state, propertyNames);
+StringBuilder finalString = new StringBuilder();
+String returnXML = new String(finalString);
+createBlob=org.hibernate.Hibernate.createBlob(returnXML.getBytes())
+java.sql.Blob createBlob = org.hibernate.Hibernate.createBlob(returnXML.getBytes());
+boolean objectWasChanged = false;
+Date currentDate = new Date();
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+AuditLog auditLog = new AuditLog();
+modification=convertXMLUpdate(id,entity,previousState,currentState,propertyNames)
+Blob modification = convertXMLUpdate(id, entity, previousState, currentState, propertyNames);
+HibernateAuditLogDAO hibernateAuditLogDAO = new HibernateAuditLogDAO();
+StringBuilder finalString = new StringBuilder();
+String returnXML = new String(finalString);
+createBlob=org.hibernate.Hibernate.createBlob(returnXML.getBytes())
+java.sql.Blob createBlob = org.hibernate.Hibernate.createBlob(returnXML.getBytes());
+authenticatedUser=Context.getAuthenticatedUser()
+User authenticatedUser = Context.getAuthenticatedUser();
+AuditLog auditLog = new AuditLog();
+modification=convertXMLDelete(id,entity,state,propertyNames)
+Blob modification = convertXMLDelete(id, entity, state, propertyNames);
+StringBuilder finalString = new StringBuilder();
+String returnXML = new String(finalString);
+createBlob=org.hibernate.Hibernate.createBlob(returnXML.getBytes())
+java.sql.Blob createBlob = org.hibernate.Hibernate.createBlob(returnXML.getBytes());
+
+Diff of 33c1577ca01a2c714d697fcb7320f2dc239f33f4 and 0aa56040ed684590bf39e8a4feb650547007afed:
+	--> Added type argument methods = 1
+	--> recency = years
+	--> Added wildcards = 2
+	--> recency = years
+	--> Added type declarations  = 5
+	--> recency = years
+	--> Added type parameter methods = 2
+	--> recency = years
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 15
+	--> recency = years
+	--> Added class instantiations = 19
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 1
+	--> recency = years
+
+ Reverted revision 33c1577ca01a2c714d697fcb7320f2dc239f33f4 to 0aa56040ed684590bf39e8a4feb650547007afed
+
+
+****Parsing for addition at revision 0aa56040ed684590bf39e8a4feb650547007afed****
+
+Added AuditLog.java to .\OpenMRS\ repository source files.
+Added HibernateAuditLogDAO.java to .\OpenMRS\ repository source files.
+
+ Generics pattern public class AuditLog was added at revision 0aa56040ed684590bf39e8a4feb650547007afed
+
+
+Diff of 0aa56040ed684590bf39e8a4feb650547007afed and 44716b0804aaeaa7c8ecd438ade73c70db647384:
+	--> Added type argument methods = 1
+	--> recency = years
+	--> Added wildcards = 2
+	--> recency = years
+	--> Added type declarations  = 6
+	--> recency = years
+	--> Added type parameter methods = 2
+	--> recency = years
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 15
+	--> recency = years
+	--> Added class instantiations = 19
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 1
+	--> recency = years
+
+ Reverted revision 0aa56040ed684590bf39e8a4feb650547007afed to 44716b0804aaeaa7c8ecd438ade73c70db647384
+
+************Analysis complete************
+Added generics to repository OpenMRS = 13
+
+Rohit Manohar added type argument method count = 1
+	--> recency = years
+Rohit Manohar added wildcard count = 2
+	--> recency = years
+Rohit Manohar added type declaration count = 6
+	--> recency = years
+Rohit Manohar added type parameter method count = 2
+	--> recency = years
+Rohit Manohar added type parameter field count = 0
+	--> recency = null
+Rohit Manohar added diamond count = 0
+	--> recency = null
+Rohit Manohar added method invocation count = 0
+	--> recency = null
+Rohit Manohar added implicit method invocation count = 15
+	--> recency = years
+Rohit Manohar added class instantiation count = 19
+	--> recency = years
+Rohit Manohar added nested count = 0
+	--> recency = null
+Rohit Manohar added bounds count = 1
+	--> recency = years
+File copied successfully!

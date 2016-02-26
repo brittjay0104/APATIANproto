@@ -1,0 +1,9 @@
+RecommendationPresentation-Code -- kjlubick -- Kevin Lubick
+https://github.com/kjlubick/RecommendationPresentation-Code.git
+git clone https://github.com/kjlubick/RecommendationPresentation-Code.git
+.\RecommendationPresentation-Code\
+.\RecommendationPresentation-Code\.git
+128
+Project cloned!
+NoHeadException thrown!
+File copied successfully!

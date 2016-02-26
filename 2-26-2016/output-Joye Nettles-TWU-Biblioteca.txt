@@ -1,0 +1,317 @@
+TWU-Biblioteca -- JoyeNettles -- Joye Nettles
+https://github.com/JoyeNettles/TWU-Biblioteca.git
+git clone https://github.com/JoyeNettles/TWU-Biblioteca.git
+.\TWU-Biblioteca\
+.\TWU-Biblioteca\.git
+0
+Project cloned!
+Joye Nettles is responsible for commit abdcddc997b58673ee4cc602d408695bc21e414a
+Added Biblioteca.java to .\TWU-Biblioteca\ repository source files.
+Added BibliotecaApp.java to .\TWU-Biblioteca\ repository source files.
+Added BibliotecaAppTest.java to .\TWU-Biblioteca\ repository source files.
+Added BibliotecaTest.java to .\TWU-Biblioteca\ repository source files.
+Added ExampleTest.java to .\TWU-Biblioteca\ repository source files.
+
+ ************ ANALYZING FOR USAGE PATTERN ADDITION ************
+
+************Analysis complete************
+Added generics to repository TWU-Biblioteca = 0
+
+Joye Nettles added type argument method count = 0
+	--> recency = null
+Joye Nettles added wildcard count = 0
+	--> recency = null
+Joye Nettles added type declaration count = 0
+	--> recency = null
+Joye Nettles added type parameter method count = 0
+	--> recency = null
+Joye Nettles added type parameter field count = 0
+	--> recency = null
+Joye Nettles added diamond count = 0
+	--> recency = null
+Joye Nettles added method invocation count = 0
+	--> recency = null
+Joye Nettles added implicit method invocation count = 0
+	--> recency = null
+Joye Nettles added class instantiation count = 0
+	--> recency = null
+Joye Nettles added nested count = 0
+	--> recency = null
+Joye Nettles added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository TWU-Biblioteca = 0
+
+Joye Nettles added type argument method count = 0
+	--> recency = null
+Joye Nettles added wildcard count = 0
+	--> recency = null
+Joye Nettles added type declaration count = 0
+	--> recency = null
+Joye Nettles added type parameter method count = 0
+	--> recency = null
+Joye Nettles added type parameter field count = 0
+	--> recency = null
+Joye Nettles added diamond count = 0
+	--> recency = null
+Joye Nettles added method invocation count = 0
+	--> recency = null
+Joye Nettles added implicit method invocation count = 0
+	--> recency = null
+Joye Nettles added class instantiation count = 0
+	--> recency = null
+Joye Nettles added nested count = 0
+	--> recency = null
+Joye Nettles added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository TWU-Biblioteca = 0
+
+Joye Nettles added type argument method count = 0
+	--> recency = null
+Joye Nettles added wildcard count = 0
+	--> recency = null
+Joye Nettles added type declaration count = 0
+	--> recency = null
+Joye Nettles added type parameter method count = 0
+	--> recency = null
+Joye Nettles added type parameter field count = 0
+	--> recency = null
+Joye Nettles added diamond count = 0
+	--> recency = null
+Joye Nettles added method invocation count = 0
+	--> recency = null
+Joye Nettles added implicit method invocation count = 0
+	--> recency = null
+Joye Nettles added class instantiation count = 0
+	--> recency = null
+Joye Nettles added nested count = 0
+	--> recency = null
+Joye Nettles added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository TWU-Biblioteca = 0
+
+Joye Nettles added type argument method count = 0
+	--> recency = null
+Joye Nettles added wildcard count = 0
+	--> recency = null
+Joye Nettles added type declaration count = 0
+	--> recency = null
+Joye Nettles added type parameter method count = 0
+	--> recency = null
+Joye Nettles added type parameter field count = 0
+	--> recency = null
+Joye Nettles added diamond count = 0
+	--> recency = null
+Joye Nettles added method invocation count = 0
+	--> recency = null
+Joye Nettles added implicit method invocation count = 0
+	--> recency = null
+Joye Nettles added class instantiation count = 0
+	--> recency = null
+Joye Nettles added nested count = 0
+	--> recency = null
+Joye Nettles added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository TWU-Biblioteca = 0
+
+Joye Nettles added type argument method count = 0
+	--> recency = null
+Joye Nettles added wildcard count = 0
+	--> recency = null
+Joye Nettles added type declaration count = 0
+	--> recency = null
+Joye Nettles added type parameter method count = 0
+	--> recency = null
+Joye Nettles added type parameter field count = 0
+	--> recency = null
+Joye Nettles added diamond count = 0
+	--> recency = null
+Joye Nettles added method invocation count = 0
+	--> recency = null
+Joye Nettles added implicit method invocation count = 0
+	--> recency = null
+Joye Nettles added class instantiation count = 0
+	--> recency = null
+Joye Nettles added nested count = 0
+	--> recency = null
+Joye Nettles added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository TWU-Biblioteca = 0
+
+Joye Nettles added type argument method count = 0
+	--> recency = null
+Joye Nettles added wildcard count = 0
+	--> recency = null
+Joye Nettles added type declaration count = 0
+	--> recency = null
+Joye Nettles added type parameter method count = 0
+	--> recency = null
+Joye Nettles added type parameter field count = 0
+	--> recency = null
+Joye Nettles added diamond count = 0
+	--> recency = null
+Joye Nettles added method invocation count = 0
+	--> recency = null
+Joye Nettles added implicit method invocation count = 0
+	--> recency = null
+Joye Nettles added class instantiation count = 0
+	--> recency = null
+Joye Nettles added nested count = 0
+	--> recency = null
+Joye Nettles added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository TWU-Biblioteca = 0
+
+Joye Nettles added type argument method count = 0
+	--> recency = null
+Joye Nettles added wildcard count = 0
+	--> recency = null
+Joye Nettles added type declaration count = 0
+	--> recency = null
+Joye Nettles added type parameter method count = 0
+	--> recency = null
+Joye Nettles added type parameter field count = 0
+	--> recency = null
+Joye Nettles added diamond count = 0
+	--> recency = null
+Joye Nettles added method invocation count = 0
+	--> recency = null
+Joye Nettles added implicit method invocation count = 0
+	--> recency = null
+Joye Nettles added class instantiation count = 0
+	--> recency = null
+Joye Nettles added nested count = 0
+	--> recency = null
+Joye Nettles added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository TWU-Biblioteca = 0
+
+Joye Nettles added type argument method count = 0
+	--> recency = null
+Joye Nettles added wildcard count = 0
+	--> recency = null
+Joye Nettles added type declaration count = 0
+	--> recency = null
+Joye Nettles added type parameter method count = 0
+	--> recency = null
+Joye Nettles added type parameter field count = 0
+	--> recency = null
+Joye Nettles added diamond count = 0
+	--> recency = null
+Joye Nettles added method invocation count = 0
+	--> recency = null
+Joye Nettles added implicit method invocation count = 0
+	--> recency = null
+Joye Nettles added class instantiation count = 0
+	--> recency = null
+Joye Nettles added nested count = 0
+	--> recency = null
+Joye Nettles added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository TWU-Biblioteca = 0
+
+Joye Nettles added type argument method count = 0
+	--> recency = null
+Joye Nettles added wildcard count = 0
+	--> recency = null
+Joye Nettles added type declaration count = 0
+	--> recency = null
+Joye Nettles added type parameter method count = 0
+	--> recency = null
+Joye Nettles added type parameter field count = 0
+	--> recency = null
+Joye Nettles added diamond count = 0
+	--> recency = null
+Joye Nettles added method invocation count = 0
+	--> recency = null
+Joye Nettles added implicit method invocation count = 0
+	--> recency = null
+Joye Nettles added class instantiation count = 0
+	--> recency = null
+Joye Nettles added nested count = 0
+	--> recency = null
+Joye Nettles added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository TWU-Biblioteca = 0
+
+Joye Nettles added type argument method count = 0
+	--> recency = null
+Joye Nettles added wildcard count = 0
+	--> recency = null
+Joye Nettles added type declaration count = 0
+	--> recency = null
+Joye Nettles added type parameter method count = 0
+	--> recency = null
+Joye Nettles added type parameter field count = 0
+	--> recency = null
+Joye Nettles added diamond count = 0
+	--> recency = null
+Joye Nettles added method invocation count = 0
+	--> recency = null
+Joye Nettles added implicit method invocation count = 0
+	--> recency = null
+Joye Nettles added class instantiation count = 0
+	--> recency = null
+Joye Nettles added nested count = 0
+	--> recency = null
+Joye Nettles added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository TWU-Biblioteca = 0
+
+Joye Nettles added type argument method count = 0
+	--> recency = null
+Joye Nettles added wildcard count = 0
+	--> recency = null
+Joye Nettles added type declaration count = 0
+	--> recency = null
+Joye Nettles added type parameter method count = 0
+	--> recency = null
+Joye Nettles added type parameter field count = 0
+	--> recency = null
+Joye Nettles added diamond count = 0
+	--> recency = null
+Joye Nettles added method invocation count = 0
+	--> recency = null
+Joye Nettles added implicit method invocation count = 0
+	--> recency = null
+Joye Nettles added class instantiation count = 0
+	--> recency = null
+Joye Nettles added nested count = 0
+	--> recency = null
+Joye Nettles added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository TWU-Biblioteca = 0
+
+Joye Nettles added type argument method count = 0
+	--> recency = null
+Joye Nettles added wildcard count = 0
+	--> recency = null
+Joye Nettles added type declaration count = 0
+	--> recency = null
+Joye Nettles added type parameter method count = 0
+	--> recency = null
+Joye Nettles added type parameter field count = 0
+	--> recency = null
+Joye Nettles added diamond count = 0
+	--> recency = null
+Joye Nettles added method invocation count = 0
+	--> recency = null
+Joye Nettles added implicit method invocation count = 0
+	--> recency = null
+Joye Nettles added class instantiation count = 0
+	--> recency = null
+Joye Nettles added nested count = 0
+	--> recency = null
+Joye Nettles added bounds count = 0
+	--> recency = null
+File copied successfully!

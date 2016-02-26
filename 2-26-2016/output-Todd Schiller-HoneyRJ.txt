@@ -1,0 +1,987 @@
+HoneyRJ -- twschiller -- Todd Schiller
+https://github.com/twschiller/HoneyRJ.git
+git clone https://github.com/twschiller/HoneyRJ.git
+.\HoneyRJ\
+.\HoneyRJ\.git
+0
+Project cloned!
+Todd Schiller is responsible for commit e46a0ec9a5c8d23c1852a476181f9b0961b84e1a
+Todd Schiller is responsible for commit b33e148838344dba634b298e19154bf7b9e8d0f2
+Todd Schiller is responsible for commit 88dd2de872fdafad1f63698d7c754e5674f7e2b9
+Todd Schiller is responsible for commit fe4f513748b3b393385be3b5df686aba7f22a57c
+Todd Schiller is responsible for commit 6d8d68c0d7f0bd3d89ac5271bfeea3fba5cbd5b1
+Todd Schiller is responsible for commit 8f187a66c456c3b117c8cfd49efe578a9bb7b022
+Todd Schiller is responsible for commit f04f5442cb820c130cd57a294bd16690e0c8c46d
+Todd Schiller is responsible for commit 18d1f0f2c4000d2f904a4359cb98d69f1047b92a
+Todd Schiller is responsible for commit 3bb05e1b98c7b284533206d6fbb9495dcde03881
+Todd Schiller is responsible for commit 80cce56e44d01003a5960fae21f42c21c36297a9
+Added HoneyRJGUI.java to .\HoneyRJ\ repository source files.
+Added LIModuleContainer.java to .\HoneyRJ\ repository source files.
+Added LIModuleGUI.java to .\HoneyRJ\ repository source files.
+Added HoneyRJ.java to .\HoneyRJ\ repository source files.
+Added HoneyRJException.java to .\HoneyRJ\ repository source files.
+Added HoneyRJMain.java to .\HoneyRJ\ repository source files.
+Added LogFile.java to .\HoneyRJ\ repository source files.
+Added LoggingException.java to .\HoneyRJ\ repository source files.
+Added LogRecord.java to .\HoneyRJ\ repository source files.
+Added LIHelper.java to .\HoneyRJ\ repository source files.
+Added LIModule.java to .\HoneyRJ\ repository source files.
+Added LIModuleException.java to .\HoneyRJ\ repository source files.
+Added LIModuleThread.java to .\HoneyRJ\ repository source files.
+Added LIProtocol.java to .\HoneyRJ\ repository source files.
+Added TALK_FIRST.java to .\HoneyRJ\ repository source files.
+Added FtpProtocol.java to .\HoneyRJ\ repository source files.
+Added IrcProtocol.java to .\HoneyRJ\ repository source files.
+Added SampleClientFirstProtocol.java to .\HoneyRJ\ repository source files.
+Added SampleServerFirstProtocol.java to .\HoneyRJ\ repository source files.
+
+ ************ ANALYZING FOR USAGE PATTERN ADDITION ************
+
+
+****Parsing for addition at revision e46a0ec9a5c8d23c1852a476181f9b0961b84e1a****
+
+Added HoneyRJGUI.java to .\HoneyRJ\ repository source files.
+Added LIModuleContainer.java to .\HoneyRJ\ repository source files.
+Added LIModuleGUI.java to .\HoneyRJ\ repository source files.
+Added HoneyRJ.java to .\HoneyRJ\ repository source files.
+Added HoneyRJException.java to .\HoneyRJ\ repository source files.
+Added HoneyRJMain.java to .\HoneyRJ\ repository source files.
+Added LogFile.java to .\HoneyRJ\ repository source files.
+Added LoggingException.java to .\HoneyRJ\ repository source files.
+Added LogRecord.java to .\HoneyRJ\ repository source files.
+Added LIHelper.java to .\HoneyRJ\ repository source files.
+Added LIModule.java to .\HoneyRJ\ repository source files.
+Added LIModuleException.java to .\HoneyRJ\ repository source files.
+Added LIModuleThread.java to .\HoneyRJ\ repository source files.
+Added LIProtocol.java to .\HoneyRJ\ repository source files.
+Added TALK_FIRST.java to .\HoneyRJ\ repository source files.
+Added FtpProtocol.java to .\HoneyRJ\ repository source files.
+Added IrcProtocol.java to .\HoneyRJ\ repository source files.
+Added SampleClientFirstProtocol.java to .\HoneyRJ\ repository source files.
+Added SampleServerFirstProtocol.java to .\HoneyRJ\ repository source files.
+JScrollPane moduleScroll = new JScrollPane(_moduleContainer);
+JLabel startLabel = new JLabel("Started");
+JLabel stopLabel = new JLabel("Stopped");
+JLabel pauseLabel = new JLabel("Paused");
+JLabel errorLabel = new JLabel("Error");
+JPanel legend = new JPanel();
+GridLayout legendGL = new GridLayout(0,2);
+JPanel masterButtons = new JPanel();
+JPanel topPanel = new JPanel();
+JLabel _mainInfo;
+port=moduleToBeDisconnected.getPort()
+int port = moduleToBeDisconnected.getPort();
+HoneyRJ honeyrj = null;
+LIProtocol ftpP = new FtpProtocol();
+LIModule ftpM = new LIModule(ftpP);
+LIProtocol ircP = new IrcProtocol();
+LIModule ircM = new LIModule(ircP);
+String filename = loggingForThread.getLoggingDirectory().getPath() + "\\" + loggingForThread.getProtocol() + "_" +loggingForThread.getStartedTime().getTime() + ".log";
+Vector<String> v = new Vector<String>();
+thisThread=Thread.currentThread()
+Thread thisThread = Thread.currentThread();
+PrintWriter out = null;
+BufferedReader in = null;
+String inputLine;
+Vector<String> outputLines;
+Vector<String> outputLines;
+LogRecord r = new LogRecord();
+LogRecord r = new LogRecord();
+Vector<String> resp = new Vector<String>();
+nP=Pattern.compile("^NICK (\\S+)")
+Pattern nP = Pattern.compile("^NICK (\\S+)");
+nM=nP.matcher(msg)
+Matcher nM = nP.matcher(msg);
+uP=Pattern.compile("USER (\\S+) (\\S+) (\\S+) (.+)$")
+Pattern uP = Pattern.compile("USER (\\S+) (\\S+) (\\S+) (.+)$");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+user=uM.matches()
+boolean user = uM.matches();
+mP=Pattern.compile("^MODE (\\S+) ([\\+-][iwso])$")
+Pattern mP = Pattern.compile("^MODE (\\S+) ([\\+-][iwso])$");
+mM=mP.matcher(msg)
+Matcher mM = mP.matcher(msg);
+uP=Pattern.compile("USER\\s(\\S+)\\s(\\S+)\\s(\\S+)\\s(.+)")
+Pattern uP = Pattern.compile("USER\\s(\\S+)\\s(\\S+)\\s(\\S+)\\s(.+)");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+mP=Pattern.compile("^USERHOST (\\S+)")
+Pattern mP = Pattern.compile("^USERHOST (\\S+)");
+mM=mP.matcher(msg)
+Matcher mM = mP.matcher(msg);
+uP=Pattern.compile("^(\\S+)")
+Pattern uP = Pattern.compile("^(\\S+)");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+
+Diff of e46a0ec9a5c8d23c1852a476181f9b0961b84e1a and b33e148838344dba634b298e19154bf7b9e8d0f2:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision e46a0ec9a5c8d23c1852a476181f9b0961b84e1a to b33e148838344dba634b298e19154bf7b9e8d0f2
+
+
+****Parsing for addition at revision b33e148838344dba634b298e19154bf7b9e8d0f2****
+
+Added HoneyRJGUI.java to .\HoneyRJ\ repository source files.
+Added LIModuleContainer.java to .\HoneyRJ\ repository source files.
+Added LIModuleGUI.java to .\HoneyRJ\ repository source files.
+Added HoneyRJ.java to .\HoneyRJ\ repository source files.
+Added HoneyRJException.java to .\HoneyRJ\ repository source files.
+Added HoneyRJMain.java to .\HoneyRJ\ repository source files.
+Added LogFile.java to .\HoneyRJ\ repository source files.
+Added LoggingException.java to .\HoneyRJ\ repository source files.
+Added LogRecord.java to .\HoneyRJ\ repository source files.
+Added LIHelper.java to .\HoneyRJ\ repository source files.
+Added LIModule.java to .\HoneyRJ\ repository source files.
+Added LIModuleException.java to .\HoneyRJ\ repository source files.
+Added LIModuleThread.java to .\HoneyRJ\ repository source files.
+Added LIProtocol.java to .\HoneyRJ\ repository source files.
+Added TALK_FIRST.java to .\HoneyRJ\ repository source files.
+Added FtpProtocol.java to .\HoneyRJ\ repository source files.
+Added IrcProtocol.java to .\HoneyRJ\ repository source files.
+Added SampleClientFirstProtocol.java to .\HoneyRJ\ repository source files.
+Added SampleServerFirstProtocol.java to .\HoneyRJ\ repository source files.
+JScrollPane moduleScroll = new JScrollPane(_moduleContainer);
+JLabel startLabel = new JLabel("Started");
+JLabel stopLabel = new JLabel("Stopped");
+JLabel pauseLabel = new JLabel("Paused");
+JLabel errorLabel = new JLabel("Error");
+JPanel legend = new JPanel();
+GridLayout legendGL = new GridLayout(0,2);
+JPanel masterButtons = new JPanel();
+JPanel topPanel = new JPanel();
+JLabel _mainInfo;
+port=moduleToBeDisconnected.getPort()
+int port = moduleToBeDisconnected.getPort();
+HoneyRJ honeyrj = null;
+LIProtocol ftpP = new FtpProtocol();
+LIModule ftpM = new LIModule(ftpP);
+LIProtocol ircP = new IrcProtocol();
+LIModule ircM = new LIModule(ircP);
+String filename = loggingForThread.getLoggingDirectory().getPath() + "\\" + loggingForThread.getProtocol() + "_" +loggingForThread.getStartedTime().getTime() + ".log";
+Vector<String> v = new Vector<String>();
+thisThread=Thread.currentThread()
+Thread thisThread = Thread.currentThread();
+PrintWriter out = null;
+BufferedReader in = null;
+String inputLine;
+Vector<String> outputLines;
+Vector<String> outputLines;
+LogRecord r = new LogRecord();
+LogRecord r = new LogRecord();
+Vector<String> resp = new Vector<String>();
+nP=Pattern.compile("^NICK (\\S+)")
+Pattern nP = Pattern.compile("^NICK (\\S+)");
+nM=nP.matcher(msg)
+Matcher nM = nP.matcher(msg);
+uP=Pattern.compile("USER (\\S+) (\\S+) (\\S+) (.+)$")
+Pattern uP = Pattern.compile("USER (\\S+) (\\S+) (\\S+) (.+)$");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+user=uM.matches()
+boolean user = uM.matches();
+mP=Pattern.compile("^MODE (\\S+) ([\\+-][iwso])$")
+Pattern mP = Pattern.compile("^MODE (\\S+) ([\\+-][iwso])$");
+mM=mP.matcher(msg)
+Matcher mM = mP.matcher(msg);
+uP=Pattern.compile("USER\\s(\\S+)\\s(\\S+)\\s(\\S+)\\s(.+)")
+Pattern uP = Pattern.compile("USER\\s(\\S+)\\s(\\S+)\\s(\\S+)\\s(.+)");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+mP=Pattern.compile("^USERHOST (\\S+)")
+Pattern mP = Pattern.compile("^USERHOST (\\S+)");
+mM=mP.matcher(msg)
+Matcher mM = mP.matcher(msg);
+uP=Pattern.compile("^(\\S+)")
+Pattern uP = Pattern.compile("^(\\S+)");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+
+Diff of b33e148838344dba634b298e19154bf7b9e8d0f2 and 88dd2de872fdafad1f63698d7c754e5674f7e2b9:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision b33e148838344dba634b298e19154bf7b9e8d0f2 to 88dd2de872fdafad1f63698d7c754e5674f7e2b9
+
+
+****Parsing for addition at revision 88dd2de872fdafad1f63698d7c754e5674f7e2b9****
+
+Added HoneyRJGUI.java to .\HoneyRJ\ repository source files.
+Added LIModuleContainer.java to .\HoneyRJ\ repository source files.
+Added LIModuleGUI.java to .\HoneyRJ\ repository source files.
+Added HoneyRJ.java to .\HoneyRJ\ repository source files.
+Added HoneyRJException.java to .\HoneyRJ\ repository source files.
+Added HoneyRJMain.java to .\HoneyRJ\ repository source files.
+Added LogFile.java to .\HoneyRJ\ repository source files.
+Added LoggingException.java to .\HoneyRJ\ repository source files.
+Added LogRecord.java to .\HoneyRJ\ repository source files.
+Added LIHelper.java to .\HoneyRJ\ repository source files.
+Added LIModule.java to .\HoneyRJ\ repository source files.
+Added LIModuleException.java to .\HoneyRJ\ repository source files.
+Added LIModuleThread.java to .\HoneyRJ\ repository source files.
+Added LIProtocol.java to .\HoneyRJ\ repository source files.
+Added TALK_FIRST.java to .\HoneyRJ\ repository source files.
+Added FtpProtocol.java to .\HoneyRJ\ repository source files.
+Added IrcProtocol.java to .\HoneyRJ\ repository source files.
+Added SampleClientFirstProtocol.java to .\HoneyRJ\ repository source files.
+Added SampleServerFirstProtocol.java to .\HoneyRJ\ repository source files.
+JScrollPane moduleScroll = new JScrollPane(_moduleContainer);
+JLabel startLabel = new JLabel("Started");
+JLabel stopLabel = new JLabel("Stopped");
+JLabel pauseLabel = new JLabel("Paused");
+JLabel errorLabel = new JLabel("Error");
+JPanel legend = new JPanel();
+GridLayout legendGL = new GridLayout(0,2);
+JPanel masterButtons = new JPanel();
+JPanel topPanel = new JPanel();
+port=moduleToBeDisconnected.getPort()
+int port = moduleToBeDisconnected.getPort();
+LIProtocol ftpP = new FtpProtocol();
+LIModule ftpM = new LIModule(ftpP);
+LIProtocol ircP = new IrcProtocol();
+LIModule ircM = new LIModule(ircP);
+String filename = loggingForThread.getLoggingDirectory().getPath() + "\\" + loggingForThread.getProtocol() + "_" +loggingForThread.getStartedTime().getTime() + ".log";
+Vector<String> v = new Vector<String>();
+thisThread=Thread.currentThread()
+Thread thisThread = Thread.currentThread();
+PrintWriter out = null;
+BufferedReader in = null;
+String inputLine;
+Vector<String> outputLines;
+Vector<String> outputLines;
+LogRecord r = new LogRecord();
+LogRecord r = new LogRecord();
+Vector<String> resp = new Vector<String>();
+nP=Pattern.compile("^NICK (\\S+)")
+Pattern nP = Pattern.compile("^NICK (\\S+)");
+nM=nP.matcher(msg)
+Matcher nM = nP.matcher(msg);
+uP=Pattern.compile("USER (\\S+) (\\S+) (\\S+) (.+)$")
+Pattern uP = Pattern.compile("USER (\\S+) (\\S+) (\\S+) (.+)$");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+user=uM.matches()
+boolean user = uM.matches();
+mP=Pattern.compile("^MODE (\\S+) ([\\+-][iwso])$")
+Pattern mP = Pattern.compile("^MODE (\\S+) ([\\+-][iwso])$");
+mM=mP.matcher(msg)
+Matcher mM = mP.matcher(msg);
+uP=Pattern.compile("USER\\s(\\S+)\\s(\\S+)\\s(\\S+)\\s(.+)")
+Pattern uP = Pattern.compile("USER\\s(\\S+)\\s(\\S+)\\s(\\S+)\\s(.+)");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+mP=Pattern.compile("^USERHOST (\\S+)")
+Pattern mP = Pattern.compile("^USERHOST (\\S+)");
+mM=mP.matcher(msg)
+Matcher mM = mP.matcher(msg);
+uP=Pattern.compile("^(\\S+)")
+Pattern uP = Pattern.compile("^(\\S+)");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+
+Diff of 88dd2de872fdafad1f63698d7c754e5674f7e2b9 and fe4f513748b3b393385be3b5df686aba7f22a57c:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 88dd2de872fdafad1f63698d7c754e5674f7e2b9 to fe4f513748b3b393385be3b5df686aba7f22a57c
+
+
+****Parsing for addition at revision fe4f513748b3b393385be3b5df686aba7f22a57c****
+
+Added HoneyRJGUI.java to .\HoneyRJ\ repository source files.
+Added LIModuleContainer.java to .\HoneyRJ\ repository source files.
+Added LIModuleGUI.java to .\HoneyRJ\ repository source files.
+Added HoneyRJ.java to .\HoneyRJ\ repository source files.
+Added HoneyRJException.java to .\HoneyRJ\ repository source files.
+Added HoneyRJMain.java to .\HoneyRJ\ repository source files.
+Added LogFile.java to .\HoneyRJ\ repository source files.
+Added LoggingException.java to .\HoneyRJ\ repository source files.
+Added LogRecord.java to .\HoneyRJ\ repository source files.
+Added LIHelper.java to .\HoneyRJ\ repository source files.
+Added LIModule.java to .\HoneyRJ\ repository source files.
+Added LIModuleException.java to .\HoneyRJ\ repository source files.
+Added LIModuleThread.java to .\HoneyRJ\ repository source files.
+Added LIProtocol.java to .\HoneyRJ\ repository source files.
+Added TALK_FIRST.java to .\HoneyRJ\ repository source files.
+Added FtpProtocol.java to .\HoneyRJ\ repository source files.
+Added IrcProtocol.java to .\HoneyRJ\ repository source files.
+Added SampleClientFirstProtocol.java to .\HoneyRJ\ repository source files.
+Added SampleServerFirstProtocol.java to .\HoneyRJ\ repository source files.
+JScrollPane moduleScroll = new JScrollPane(_moduleContainer);
+JLabel startLabel = new JLabel("Started");
+JLabel stopLabel = new JLabel("Stopped");
+JLabel pauseLabel = new JLabel("Paused");
+JLabel errorLabel = new JLabel("Error");
+JPanel legend = new JPanel();
+GridLayout legendGL = new GridLayout(0,2);
+JPanel masterButtons = new JPanel();
+JPanel topPanel = new JPanel();
+port=moduleToBeDisconnected.getPort()
+int port = moduleToBeDisconnected.getPort();
+LIProtocol ftpP = new FtpProtocol();
+LIModule ftpM = new LIModule(ftpP);
+LIProtocol ircP = new IrcProtocol();
+LIModule ircM = new LIModule(ircP);
+String filename = loggingForThread.getLoggingDirectory().getPath() + "\\" + loggingForThread.getProtocol() + "_" +loggingForThread.getStartedTime().getTime() + ".log";
+Vector<String> v = new Vector<String>();
+thisThread=Thread.currentThread()
+Thread thisThread = Thread.currentThread();
+PrintWriter out = null;
+BufferedReader in = null;
+String inputLine;
+Vector<String> outputLines;
+Vector<String> outputLines;
+LogRecord r = new LogRecord();
+LogRecord r = new LogRecord();
+Vector<String> resp = new Vector<String>();
+nP=Pattern.compile("^NICK (\\S+)")
+Pattern nP = Pattern.compile("^NICK (\\S+)");
+nM=nP.matcher(msg)
+Matcher nM = nP.matcher(msg);
+uP=Pattern.compile("USER (\\S+) (\\S+) (\\S+) (.+)$")
+Pattern uP = Pattern.compile("USER (\\S+) (\\S+) (\\S+) (.+)$");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+user=uM.matches()
+boolean user = uM.matches();
+mP=Pattern.compile("^MODE (\\S+) ([\\+-][iwso])$")
+Pattern mP = Pattern.compile("^MODE (\\S+) ([\\+-][iwso])$");
+mM=mP.matcher(msg)
+Matcher mM = mP.matcher(msg);
+uP=Pattern.compile("USER\\s(\\S+)\\s(\\S+)\\s(\\S+)\\s(.+)")
+Pattern uP = Pattern.compile("USER\\s(\\S+)\\s(\\S+)\\s(\\S+)\\s(.+)");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+mP=Pattern.compile("^USERHOST (\\S+)")
+Pattern mP = Pattern.compile("^USERHOST (\\S+)");
+mM=mP.matcher(msg)
+Matcher mM = mP.matcher(msg);
+uP=Pattern.compile("^(\\S+)")
+Pattern uP = Pattern.compile("^(\\S+)");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+
+Diff of fe4f513748b3b393385be3b5df686aba7f22a57c and 6d8d68c0d7f0bd3d89ac5271bfeea3fba5cbd5b1:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision fe4f513748b3b393385be3b5df686aba7f22a57c to 6d8d68c0d7f0bd3d89ac5271bfeea3fba5cbd5b1
+
+
+****Parsing for addition at revision 6d8d68c0d7f0bd3d89ac5271bfeea3fba5cbd5b1****
+
+Added HoneyRJGUI.java to .\HoneyRJ\ repository source files.
+Added LIModuleContainer.java to .\HoneyRJ\ repository source files.
+Added LIModuleGUI.java to .\HoneyRJ\ repository source files.
+Added HoneyRJ.java to .\HoneyRJ\ repository source files.
+Added HoneyRJException.java to .\HoneyRJ\ repository source files.
+Added HoneyRJMain.java to .\HoneyRJ\ repository source files.
+Added LogFile.java to .\HoneyRJ\ repository source files.
+Added LoggingException.java to .\HoneyRJ\ repository source files.
+Added LogRecord.java to .\HoneyRJ\ repository source files.
+Added LIHelper.java to .\HoneyRJ\ repository source files.
+Added LIModule.java to .\HoneyRJ\ repository source files.
+Added LIModuleException.java to .\HoneyRJ\ repository source files.
+Added LIModuleThread.java to .\HoneyRJ\ repository source files.
+Added LIProtocol.java to .\HoneyRJ\ repository source files.
+Added TALK_FIRST.java to .\HoneyRJ\ repository source files.
+Added FtpProtocol.java to .\HoneyRJ\ repository source files.
+Added IrcProtocol.java to .\HoneyRJ\ repository source files.
+Added SampleClientFirstProtocol.java to .\HoneyRJ\ repository source files.
+Added SampleServerFirstProtocol.java to .\HoneyRJ\ repository source files.
+JScrollPane moduleScroll = new JScrollPane(_moduleContainer);
+JLabel startLabel = new JLabel("Started");
+JLabel stopLabel = new JLabel("Stopped");
+JLabel pauseLabel = new JLabel("Paused");
+JLabel errorLabel = new JLabel("Error");
+JPanel legend = new JPanel();
+GridLayout legendGL = new GridLayout(0,2);
+JPanel masterButtons = new JPanel();
+JPanel topPanel = new JPanel();
+port=moduleToBeDisconnected.getPort()
+int port = moduleToBeDisconnected.getPort();
+LIProtocol ftpP = new FtpProtocol();
+LIModule ftpM = new LIModule(ftpP);
+LIProtocol ircP = new IrcProtocol();
+LIModule ircM = new LIModule(ircP);
+String filename = loggingForThread.getLoggingDirectory().getPath() + "\\" + loggingForThread.getProtocol() + "_" +loggingForThread.getStartedTime().getTime() + ".log";
+Vector<String> v = new Vector<String>();
+thisThread=Thread.currentThread()
+Thread thisThread = Thread.currentThread();
+PrintWriter out = null;
+BufferedReader in = null;
+String inputLine;
+Vector<String> outputLines;
+Vector<String> outputLines;
+LogRecord r = new LogRecord();
+LogRecord r = new LogRecord();
+Vector<String> resp = new Vector<String>();
+nP=Pattern.compile("^NICK (\\S+)")
+Pattern nP = Pattern.compile("^NICK (\\S+)");
+nM=nP.matcher(msg)
+Matcher nM = nP.matcher(msg);
+uP=Pattern.compile("USER (\\S+) (\\S+) (\\S+) (.+)$")
+Pattern uP = Pattern.compile("USER (\\S+) (\\S+) (\\S+) (.+)$");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+user=uM.matches()
+boolean user = uM.matches();
+mP=Pattern.compile("^MODE (\\S+) ([\\+-][iwso])$")
+Pattern mP = Pattern.compile("^MODE (\\S+) ([\\+-][iwso])$");
+mM=mP.matcher(msg)
+Matcher mM = mP.matcher(msg);
+uP=Pattern.compile("USER\\s(\\S+)\\s(\\S+)\\s(\\S+)\\s(.+)")
+Pattern uP = Pattern.compile("USER\\s(\\S+)\\s(\\S+)\\s(\\S+)\\s(.+)");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+mP=Pattern.compile("^USERHOST (\\S+)")
+Pattern mP = Pattern.compile("^USERHOST (\\S+)");
+mM=mP.matcher(msg)
+Matcher mM = mP.matcher(msg);
+uP=Pattern.compile("^(\\S+)")
+Pattern uP = Pattern.compile("^(\\S+)");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+
+Diff of 6d8d68c0d7f0bd3d89ac5271bfeea3fba5cbd5b1 and 8f187a66c456c3b117c8cfd49efe578a9bb7b022:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 6d8d68c0d7f0bd3d89ac5271bfeea3fba5cbd5b1 to 8f187a66c456c3b117c8cfd49efe578a9bb7b022
+
+
+****Parsing for addition at revision 8f187a66c456c3b117c8cfd49efe578a9bb7b022****
+
+Added HoneyRJGUI.java to .\HoneyRJ\ repository source files.
+Added LIModuleContainer.java to .\HoneyRJ\ repository source files.
+Added LIModuleGUI.java to .\HoneyRJ\ repository source files.
+Added HoneyRJ.java to .\HoneyRJ\ repository source files.
+Added HoneyRJException.java to .\HoneyRJ\ repository source files.
+Added HoneyRJMain.java to .\HoneyRJ\ repository source files.
+Added LogFile.java to .\HoneyRJ\ repository source files.
+Added LoggingException.java to .\HoneyRJ\ repository source files.
+Added LogRecord.java to .\HoneyRJ\ repository source files.
+Added LIHelper.java to .\HoneyRJ\ repository source files.
+Added LIModule.java to .\HoneyRJ\ repository source files.
+Added LIModuleException.java to .\HoneyRJ\ repository source files.
+Added LIModuleThread.java to .\HoneyRJ\ repository source files.
+Added LIProtocol.java to .\HoneyRJ\ repository source files.
+Added TALK_FIRST.java to .\HoneyRJ\ repository source files.
+Added FtpProtocol.java to .\HoneyRJ\ repository source files.
+Added IrcProtocol.java to .\HoneyRJ\ repository source files.
+Added SampleClientFirstProtocol.java to .\HoneyRJ\ repository source files.
+Added SampleServerFirstProtocol.java to .\HoneyRJ\ repository source files.
+JScrollPane moduleScroll = new JScrollPane(_moduleContainer);
+JLabel startLabel = new JLabel("Started");
+JLabel stopLabel = new JLabel("Stopped");
+JLabel pauseLabel = new JLabel("Paused");
+JLabel errorLabel = new JLabel("Error");
+JPanel legend = new JPanel();
+GridLayout legendGL = new GridLayout(0,2);
+JPanel masterButtons = new JPanel();
+JPanel topPanel = new JPanel();
+port=moduleToBeDisconnected.getPort()
+int port = moduleToBeDisconnected.getPort();
+LIProtocol ftpP = new FtpProtocol();
+LIModule ftpM = new LIModule(ftpP);
+LIProtocol ircP = new IrcProtocol();
+LIModule ircM = new LIModule(ircP);
+String filename = loggingForThread.getLoggingDirectory().getPath() + "\\" + loggingForThread.getProtocol() + "_" +loggingForThread.getStartedTime().getTime() + ".log";
+Vector<String> v = new Vector<String>();
+thisThread=Thread.currentThread()
+Thread thisThread = Thread.currentThread();
+PrintWriter out = null;
+BufferedReader in = null;
+String inputLine;
+Vector<String> outputLines;
+Vector<String> outputLines;
+LogRecord r = new LogRecord();
+LogRecord r = new LogRecord();
+Vector<String> resp = new Vector<String>();
+nP=Pattern.compile("^NICK (\\S+)")
+Pattern nP = Pattern.compile("^NICK (\\S+)");
+nM=nP.matcher(msg)
+Matcher nM = nP.matcher(msg);
+uP=Pattern.compile("USER (\\S+) (\\S+) (\\S+) (.+)$")
+Pattern uP = Pattern.compile("USER (\\S+) (\\S+) (\\S+) (.+)$");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+user=uM.matches()
+boolean user = uM.matches();
+mP=Pattern.compile("^MODE (\\S+) ([\\+-][iwso])$")
+Pattern mP = Pattern.compile("^MODE (\\S+) ([\\+-][iwso])$");
+mM=mP.matcher(msg)
+Matcher mM = mP.matcher(msg);
+uP=Pattern.compile("USER\\s(\\S+)\\s(\\S+)\\s(\\S+)\\s(.+)")
+Pattern uP = Pattern.compile("USER\\s(\\S+)\\s(\\S+)\\s(\\S+)\\s(.+)");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+mP=Pattern.compile("^USERHOST (\\S+)")
+Pattern mP = Pattern.compile("^USERHOST (\\S+)");
+mM=mP.matcher(msg)
+Matcher mM = mP.matcher(msg);
+uP=Pattern.compile("^(\\S+)")
+Pattern uP = Pattern.compile("^(\\S+)");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+
+Diff of 8f187a66c456c3b117c8cfd49efe578a9bb7b022 and f04f5442cb820c130cd57a294bd16690e0c8c46d:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 8f187a66c456c3b117c8cfd49efe578a9bb7b022 to f04f5442cb820c130cd57a294bd16690e0c8c46d
+
+
+****Parsing for addition at revision f04f5442cb820c130cd57a294bd16690e0c8c46d****
+
+Added HoneyRJGUI.java to .\HoneyRJ\ repository source files.
+Added LIModuleContainer.java to .\HoneyRJ\ repository source files.
+Added LIModuleGUI.java to .\HoneyRJ\ repository source files.
+Added HoneyRJ.java to .\HoneyRJ\ repository source files.
+Added HoneyRJException.java to .\HoneyRJ\ repository source files.
+Added HoneyRJMain.java to .\HoneyRJ\ repository source files.
+Added LogFile.java to .\HoneyRJ\ repository source files.
+Added LoggingException.java to .\HoneyRJ\ repository source files.
+Added LogRecord.java to .\HoneyRJ\ repository source files.
+Added LIHelper.java to .\HoneyRJ\ repository source files.
+Added LIModule.java to .\HoneyRJ\ repository source files.
+Added LIModuleException.java to .\HoneyRJ\ repository source files.
+Added LIModuleThread.java to .\HoneyRJ\ repository source files.
+Added LIProtocol.java to .\HoneyRJ\ repository source files.
+Added TALK_FIRST.java to .\HoneyRJ\ repository source files.
+Added FtpProtocol.java to .\HoneyRJ\ repository source files.
+Added IrcProtocol.java to .\HoneyRJ\ repository source files.
+Added SampleClientFirstProtocol.java to .\HoneyRJ\ repository source files.
+Added SampleServerFirstProtocol.java to .\HoneyRJ\ repository source files.
+JScrollPane moduleScroll = new JScrollPane(_moduleContainer);
+JLabel startLabel = new JLabel("Started");
+JLabel stopLabel = new JLabel("Stopped");
+JLabel pauseLabel = new JLabel("Paused");
+JLabel errorLabel = new JLabel("Error");
+JPanel legend = new JPanel();
+GridLayout legendGL = new GridLayout(0,2);
+JPanel masterButtons = new JPanel();
+JPanel topPanel = new JPanel();
+port=moduleToBeDisconnected.getPort()
+int port = moduleToBeDisconnected.getPort();
+LIProtocol ftpP = new FtpProtocol();
+LIModule ftpM = new LIModule(ftpP);
+LIProtocol ircP = new IrcProtocol();
+LIModule ircM = new LIModule(ircP);
+String filename = loggingForThread.getLoggingDirectory().getPath() + "\\" + loggingForThread.getProtocol() + "_" +loggingForThread.getStartedTime().getTime() + ".log";
+Vector<String> v = new Vector<String>();
+thisThread=Thread.currentThread()
+Thread thisThread = Thread.currentThread();
+PrintWriter out = null;
+BufferedReader in = null;
+String inputLine;
+Vector<String> outputLines;
+Vector<String> outputLines;
+LogRecord r = new LogRecord();
+LogRecord r = new LogRecord();
+Vector<String> resp = new Vector<String>();
+nP=Pattern.compile("^NICK (\\S+)")
+Pattern nP = Pattern.compile("^NICK (\\S+)");
+nM=nP.matcher(msg)
+Matcher nM = nP.matcher(msg);
+uP=Pattern.compile("USER (\\S+) (\\S+) (\\S+) (.+)$")
+Pattern uP = Pattern.compile("USER (\\S+) (\\S+) (\\S+) (.+)$");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+user=uM.matches()
+boolean user = uM.matches();
+mP=Pattern.compile("^MODE (\\S+) ([\\+-][iwso])$")
+Pattern mP = Pattern.compile("^MODE (\\S+) ([\\+-][iwso])$");
+mM=mP.matcher(msg)
+Matcher mM = mP.matcher(msg);
+uP=Pattern.compile("USER\\s(\\S+)\\s(\\S+)\\s(\\S+)\\s(.+)")
+Pattern uP = Pattern.compile("USER\\s(\\S+)\\s(\\S+)\\s(\\S+)\\s(.+)");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+mP=Pattern.compile("^USERHOST (\\S+)")
+Pattern mP = Pattern.compile("^USERHOST (\\S+)");
+mM=mP.matcher(msg)
+Matcher mM = mP.matcher(msg);
+uP=Pattern.compile("^(\\S+)")
+Pattern uP = Pattern.compile("^(\\S+)");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+
+Diff of f04f5442cb820c130cd57a294bd16690e0c8c46d and 18d1f0f2c4000d2f904a4359cb98d69f1047b92a:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision f04f5442cb820c130cd57a294bd16690e0c8c46d to 18d1f0f2c4000d2f904a4359cb98d69f1047b92a
+
+
+****Parsing for addition at revision 18d1f0f2c4000d2f904a4359cb98d69f1047b92a****
+
+Added HoneyRJGUI.java to .\HoneyRJ\ repository source files.
+Added LIModuleContainer.java to .\HoneyRJ\ repository source files.
+Added LIModuleGUI.java to .\HoneyRJ\ repository source files.
+Added HoneyRJ.java to .\HoneyRJ\ repository source files.
+Added HoneyRJException.java to .\HoneyRJ\ repository source files.
+Added HoneyRJMain.java to .\HoneyRJ\ repository source files.
+Added LogFile.java to .\HoneyRJ\ repository source files.
+Added LoggingException.java to .\HoneyRJ\ repository source files.
+Added LogRecord.java to .\HoneyRJ\ repository source files.
+Added LIHelper.java to .\HoneyRJ\ repository source files.
+Added LIModule.java to .\HoneyRJ\ repository source files.
+Added LIModuleException.java to .\HoneyRJ\ repository source files.
+Added LIModuleThread.java to .\HoneyRJ\ repository source files.
+Added LIProtocol.java to .\HoneyRJ\ repository source files.
+Added TALK_FIRST.java to .\HoneyRJ\ repository source files.
+Added FtpProtocol.java to .\HoneyRJ\ repository source files.
+Added IrcProtocol.java to .\HoneyRJ\ repository source files.
+Added SampleClientFirstProtocol.java to .\HoneyRJ\ repository source files.
+Added SampleServerFirstProtocol.java to .\HoneyRJ\ repository source files.
+JScrollPane moduleScroll = new JScrollPane(_moduleContainer);
+JLabel startLabel = new JLabel("Started");
+JLabel stopLabel = new JLabel("Stopped");
+JLabel pauseLabel = new JLabel("Paused");
+JLabel errorLabel = new JLabel("Error");
+JPanel legend = new JPanel();
+GridLayout legendGL = new GridLayout(0,2);
+JPanel masterButtons = new JPanel();
+JPanel topPanel = new JPanel();
+port=moduleToBeDisconnected.getPort()
+int port = moduleToBeDisconnected.getPort();
+LIProtocol ftpP = new FtpProtocol();
+LIModule ftpM = new LIModule(ftpP);
+LIProtocol ircP = new IrcProtocol();
+LIModule ircM = new LIModule(ircP);
+String filename = loggingForThread.getLoggingDirectory().getPath() + "\\" + loggingForThread.getProtocol() + "_" +loggingForThread.getStartedTime().getTime() + ".log";
+Vector<String> v = new Vector<String>();
+thisThread=Thread.currentThread()
+Thread thisThread = Thread.currentThread();
+PrintWriter out = null;
+BufferedReader in = null;
+String inputLine;
+Vector<String> outputLines;
+Vector<String> outputLines;
+LogRecord r = new LogRecord();
+LogRecord r = new LogRecord();
+Vector<String> resp = new Vector<String>();
+nP=Pattern.compile("^NICK (\\S+)")
+Pattern nP = Pattern.compile("^NICK (\\S+)");
+nM=nP.matcher(msg)
+Matcher nM = nP.matcher(msg);
+uP=Pattern.compile("USER (\\S+) (\\S+) (\\S+) (.+)$")
+Pattern uP = Pattern.compile("USER (\\S+) (\\S+) (\\S+) (.+)$");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+user=uM.matches()
+boolean user = uM.matches();
+mP=Pattern.compile("^MODE (\\S+) ([\\+-][iwso])$")
+Pattern mP = Pattern.compile("^MODE (\\S+) ([\\+-][iwso])$");
+mM=mP.matcher(msg)
+Matcher mM = mP.matcher(msg);
+uP=Pattern.compile("USER\\s(\\S+)\\s(\\S+)\\s(\\S+)\\s(.+)")
+Pattern uP = Pattern.compile("USER\\s(\\S+)\\s(\\S+)\\s(\\S+)\\s(.+)");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+mP=Pattern.compile("^USERHOST (\\S+)")
+Pattern mP = Pattern.compile("^USERHOST (\\S+)");
+mM=mP.matcher(msg)
+Matcher mM = mP.matcher(msg);
+uP=Pattern.compile("^(\\S+)")
+Pattern uP = Pattern.compile("^(\\S+)");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+
+Diff of 18d1f0f2c4000d2f904a4359cb98d69f1047b92a and 3bb05e1b98c7b284533206d6fbb9495dcde03881:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 18d1f0f2c4000d2f904a4359cb98d69f1047b92a to 3bb05e1b98c7b284533206d6fbb9495dcde03881
+
+
+****Parsing for addition at revision 3bb05e1b98c7b284533206d6fbb9495dcde03881****
+
+Added HoneyRJGUI.java to .\HoneyRJ\ repository source files.
+Added LIModuleContainer.java to .\HoneyRJ\ repository source files.
+Added LIModuleGUI.java to .\HoneyRJ\ repository source files.
+Added HoneyRJ.java to .\HoneyRJ\ repository source files.
+Added HoneyRJException.java to .\HoneyRJ\ repository source files.
+Added HoneyRJMain.java to .\HoneyRJ\ repository source files.
+Added LogFile.java to .\HoneyRJ\ repository source files.
+Added LoggingException.java to .\HoneyRJ\ repository source files.
+Added LogRecord.java to .\HoneyRJ\ repository source files.
+Added LIHelper.java to .\HoneyRJ\ repository source files.
+Added LIModule.java to .\HoneyRJ\ repository source files.
+Added LIModuleException.java to .\HoneyRJ\ repository source files.
+Added LIModuleThread.java to .\HoneyRJ\ repository source files.
+Added LIProtocol.java to .\HoneyRJ\ repository source files.
+Added TALK_FIRST.java to .\HoneyRJ\ repository source files.
+Added FtpProtocol.java to .\HoneyRJ\ repository source files.
+Added IrcProtocol.java to .\HoneyRJ\ repository source files.
+Added SampleClientFirstProtocol.java to .\HoneyRJ\ repository source files.
+Added SampleServerFirstProtocol.java to .\HoneyRJ\ repository source files.
+JScrollPane moduleScroll = new JScrollPane(_moduleContainer);
+JLabel startLabel = new JLabel("Started");
+JLabel stopLabel = new JLabel("Stopped");
+JLabel pauseLabel = new JLabel("Paused");
+JLabel errorLabel = new JLabel("Error");
+JPanel legend = new JPanel();
+GridLayout legendGL = new GridLayout(0,2);
+JPanel masterButtons = new JPanel();
+JPanel topPanel = new JPanel();
+port=moduleToBeDisconnected.getPort()
+int port = moduleToBeDisconnected.getPort();
+LIProtocol ftpP = new FtpProtocol();
+LIModule ftpM = new LIModule(ftpP);
+LIProtocol ircP = new IrcProtocol();
+LIModule ircM = new LIModule(ircP);
+String filename = loggingForThread.getLoggingDirectory().getPath() + "\\" + loggingForThread.getProtocol() + "_" +loggingForThread.getStartedTime().getTime() + ".log";
+Vector<String> v = new Vector<String>();
+thisThread=Thread.currentThread()
+Thread thisThread = Thread.currentThread();
+PrintWriter out = null;
+BufferedReader in = null;
+String inputLine;
+Vector<String> outputLines;
+Vector<String> outputLines;
+LogRecord r = new LogRecord();
+LogRecord r = new LogRecord();
+Vector<String> resp = new Vector<String>();
+nP=Pattern.compile("^NICK (\\S+)")
+Pattern nP = Pattern.compile("^NICK (\\S+)");
+nM=nP.matcher(msg)
+Matcher nM = nP.matcher(msg);
+uP=Pattern.compile("USER (\\S+) (\\S+) (\\S+) (.+)$")
+Pattern uP = Pattern.compile("USER (\\S+) (\\S+) (\\S+) (.+)$");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+user=uM.matches()
+boolean user = uM.matches();
+mP=Pattern.compile("^MODE (\\S+) ([\\+-][iwso])$")
+Pattern mP = Pattern.compile("^MODE (\\S+) ([\\+-][iwso])$");
+mM=mP.matcher(msg)
+Matcher mM = mP.matcher(msg);
+uP=Pattern.compile("USER\\s(\\S+)\\s(\\S+)\\s(\\S+)\\s(.+)")
+Pattern uP = Pattern.compile("USER\\s(\\S+)\\s(\\S+)\\s(\\S+)\\s(.+)");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+mP=Pattern.compile("^USERHOST (\\S+)")
+Pattern mP = Pattern.compile("^USERHOST (\\S+)");
+mM=mP.matcher(msg)
+Matcher mM = mP.matcher(msg);
+uP=Pattern.compile("^(\\S+)")
+Pattern uP = Pattern.compile("^(\\S+)");
+uM=uP.matcher(msg)
+Matcher uM = uP.matcher(msg);
+
+Diff of 3bb05e1b98c7b284533206d6fbb9495dcde03881 and 80cce56e44d01003a5960fae21f42c21c36297a9:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 3bb05e1b98c7b284533206d6fbb9495dcde03881 to 80cce56e44d01003a5960fae21f42c21c36297a9
+
+************Analysis complete************
+Added generics to repository HoneyRJ = 0
+
+Todd Schiller added type argument method count = 0
+	--> recency = null
+Todd Schiller added wildcard count = 0
+	--> recency = null
+Todd Schiller added type declaration count = 0
+	--> recency = null
+Todd Schiller added type parameter method count = 0
+	--> recency = null
+Todd Schiller added type parameter field count = 0
+	--> recency = null
+Todd Schiller added diamond count = 0
+	--> recency = null
+Todd Schiller added method invocation count = 0
+	--> recency = null
+Todd Schiller added implicit method invocation count = 0
+	--> recency = null
+Todd Schiller added class instantiation count = 0
+	--> recency = null
+Todd Schiller added nested count = 0
+	--> recency = null
+Todd Schiller added bounds count = 0
+	--> recency = null
+File copied successfully!

@@ -1,0 +1,577 @@
+java-downconvert -- twschiller -- Todd Schiller
+https://github.com/twschiller/java-downconvert.git
+git clone https://github.com/twschiller/java-downconvert.git
+.\java-downconvert\
+.\java-downconvert\.git
+0
+Project cloned!
+Todd Schiller is responsible for commit 613f08cddb3b7bb8fedd24edc2e5d1b55e9624ef
+Todd Schiller is responsible for commit 79f5bcd89d726ad636aa133d49642ea7339c992e
+Todd Schiller is responsible for commit 702950a24a2c3397efda4e0daf6913463f927c4b
+Added ConvertAllAction.java to .\java-downconvert\ repository source files.
+Added ConvertEnhancedForAction.java to .\java-downconvert\ repository source files.
+Added InsertCastsForGenericsAction.java to .\java-downconvert\ repository source files.
+Added InsertGenericsCommentsAction.java to .\java-downconvert\ repository source files.
+Added RemoveGenericsAction.java to .\java-downconvert\ repository source files.
+Added RemoveGenericsFromClassAction.java to .\java-downconvert\ repository source files.
+Added Activator.java to .\java-downconvert\ repository source files.
+Added ASTUtil.java to .\java-downconvert\ repository source files.
+Added ConvertEnhancedFor.java to .\java-downconvert\ repository source files.
+Added GlobalRewrite.java to .\java-downconvert\ repository source files.
+Added InsertCastsForGenerics.java to .\java-downconvert\ repository source files.
+Added InsertGenericsComments.java to .\java-downconvert\ repository source files.
+Added InsertGenericsJml.java to .\java-downconvert\ repository source files.
+Added RemoveGenerics.java to .\java-downconvert\ repository source files.
+Added RemoveGenericsFromClass.java to .\java-downconvert\ repository source files.
+Added EnhancedForTest.java to .\java-downconvert\ repository source files.
+Added GenericClassTest.java to .\java-downconvert\ repository source files.
+Added JmlCollectionsTest.java to .\java-downconvert\ repository source files.
+
+ ************ ANALYZING FOR USAGE PATTERN ADDITION ************
+
+
+****Parsing for addition at revision 613f08cddb3b7bb8fedd24edc2e5d1b55e9624ef****
+
+Added ConvertAllAction.java to .\java-downconvert\ repository source files.
+Added ConvertEnhancedForAction.java to .\java-downconvert\ repository source files.
+Added InsertCastsForGenericsAction.java to .\java-downconvert\ repository source files.
+Added InsertGenericsCommentsAction.java to .\java-downconvert\ repository source files.
+Added RemoveGenericsAction.java to .\java-downconvert\ repository source files.
+Added RemoveGenericsFromClassAction.java to .\java-downconvert\ repository source files.
+Added Activator.java to .\java-downconvert\ repository source files.
+Added ASTUtil.java to .\java-downconvert\ repository source files.
+Added ConvertEnhancedFor.java to .\java-downconvert\ repository source files.
+Added GlobalRewrite.java to .\java-downconvert\ repository source files.
+Added InsertCastsForGenerics.java to .\java-downconvert\ repository source files.
+Added InsertGenericsComments.java to .\java-downconvert\ repository source files.
+Added InsertGenericsJml.java to .\java-downconvert\ repository source files.
+Added RemoveGenerics.java to .\java-downconvert\ repository source files.
+Added RemoveGenericsFromClass.java to .\java-downconvert\ repository source files.
+Added EnhancedForTest.java to .\java-downconvert\ repository source files.
+Added GenericClassTest.java to .\java-downconvert\ repository source files.
+Added JmlCollectionsTest.java to .\java-downconvert\ repository source files.
+nt=ast.newParameterizedType(ast.newSimpleType(ast.newName(binding.getErasure().getQualifiedName())))
+ParameterizedType nt = ast.newParameterizedType(ast.newSimpleType(ast.newName(binding.getErasure().getQualifiedName())));
+location=before.getLocationInParent()
+StructuralPropertyDescriptor location = before.getLocationInParent();
+MethodInvocation method = (MethodInvocation) before.getParent();
+ClassInstanceCreation method = (ClassInstanceCreation) before.getParent();
+SwitchStatement swtch = (SwitchStatement) before.getParent();
+InfixExpression expr = (InfixExpression) before.getParent();
+TypeParameter param = (TypeParameter) before.getParent();
+TypeDeclaration dec = (TypeDeclaration) before.getParent();
+List<Statement> ss = new ArrayList<Statement>();
+Block block = (Block) node.getParent();
+replacement=replacements.get(j)
+Statement replacement = replacements.get(j);
+ConvertEnhancedFor c = new ConvertEnhancedFor(unit);
+ImportDeclaration d = (ImportDeclaration) i;
+i=ast.newImportDeclaration()
+ImportDeclaration i = ast.newImportDeclaration();
+expr=node.getExpression()
+Expression expr = node.getExpression();
+type=expr.resolveTypeBinding()
+ITypeBinding type = expr.resolveTypeBinding();
+block=ast.newBlock()
+Block block = ast.newBlock();
+iterator=ast.newMethodInvocation()
+MethodInvocation iterator = ast.newMethodInvocation();
+it=ast.newVariableDeclarationFragment()
+VariableDeclarationFragment it = ast.newVariableDeclarationFragment();
+itWithType=ast.newVariableDeclarationStatement(it)
+VariableDeclarationStatement itWithType = ast.newVariableDeclarationStatement(it);
+paramType=ast.newParameterizedType(ast.newSimpleType(ast.newName("Iterator")))
+ParameterizedType paramType = ast.newParameterizedType(ast.newSimpleType(ast.newName("Iterator")));
+loop=ast.newWhileStatement()
+WhileStatement loop = ast.newWhileStatement();
+hasNext=ast.newMethodInvocation()
+MethodInvocation hasNext = ast.newMethodInvocation();
+body=ast.newBlock()
+Block body = ast.newBlock();
+value=ast.newVariableDeclarationFragment()
+VariableDeclarationFragment value = ast.newVariableDeclarationFragment();
+next=ast.newMethodInvocation()
+MethodInvocation next = ast.newMethodInvocation();
+cast=ast.newCastExpression()
+CastExpression cast = ast.newCastExpression();
+valueWithType=ast.newVariableDeclarationStatement(value)
+VariableDeclarationStatement valueWithType = ast.newVariableDeclarationStatement(value);
+placeholder=ast.newEmptyStatement()
+Statement placeholder = ast.newEmptyStatement();
+block=ast.newBlock()
+Block block = ast.newBlock();
+loop=ast.newForStatement()
+ForStatement loop = ast.newForStatement();
+index=ast.newVariableDeclarationFragment()
+VariableDeclarationFragment index = ast.newVariableDeclarationFragment();
+indexWithType=ast.newVariableDeclarationExpression(index)
+VariableDeclarationExpression indexWithType = ast.newVariableDeclarationExpression(index);
+sizeCheck=ast.newInfixExpression()
+InfixExpression sizeCheck = ast.newInfixExpression();
+len=ast.newFieldAccess()
+FieldAccess len = ast.newFieldAccess();
+inc=ast.newPrefixExpression()
+PrefixExpression inc = ast.newPrefixExpression();
+body=ast.newBlock()
+Block body = ast.newBlock();
+value=ast.newVariableDeclarationFragment()
+VariableDeclarationFragment value = ast.newVariableDeclarationFragment();
+next=ast.newArrayAccess()
+ArrayAccess next = ast.newArrayAccess();
+cast=ast.newCastExpression()
+CastExpression cast = ast.newCastExpression();
+valueWithType=ast.newVariableDeclarationStatement(value)
+VariableDeclarationStatement valueWithType = ast.newVariableDeclarationStatement(value);
+placeholder=ast.newEmptyStatement()
+Statement placeholder = ast.newEmptyStatement();
+parser=ASTParser.newParser(AST.JLS3)
+ASTParser parser = ASTParser.newParser(AST.JLS3);
+workspace=ResourcesPlugin.getWorkspace()
+IWorkspace workspace = ResourcesPlugin.getWorkspace();
+root=workspace.getRoot()
+IWorkspaceRoot root = workspace.getRoot();
+projects=root.getProjects()
+IProject[] projects = root.getProjects();
+javaProject=JavaCore.create(project)
+IJavaProject javaProject = JavaCore.create(project);
+edit=editor.rewrite(parse(cu),new Document(cu.getSource()))
+TextEdit edit = editor.rewrite(parse(cu), new Document(cu.getSource()));
+bufferManager=FileBuffers.getTextFileBufferManager()
+ITextFileBufferManager bufferManager = FileBuffers.getTextFileBufferManager();
+path=cu.getPath()
+IPath path = cu.getPath();
+textFileBuffer=bufferManager.getTextFileBuffer(path)
+ITextFileBuffer textFileBuffer = bufferManager.getTextFileBuffer(path);
+document=textFileBuffer.getDocument()
+IDocument document = textFileBuffer.getDocument();
+InsertCastsForGenerics c = new InsertCastsForGenerics();
+method=node.resolveMethodBinding()
+IMethodBinding method = node.resolveMethodBinding();
+declaration=method.getMethodDeclaration()
+IMethodBinding declaration = method.getMethodDeclaration();
+rt=method.getReturnType()
+ITypeBinding rt = method.getReturnType();
+paren=ast.newParenthesizedExpression()
+ParenthesizedExpression paren = ast.newParenthesizedExpression();
+cast=ast.newCastExpression()
+CastExpression cast = ast.newCastExpression();
+content=source.get()
+String content = source.get();
+MultiTextEdit edits = new MultiTextEdit();
+ArrayList<Region> sorted = new ArrayList<Region>(GenericLocations.getGenericLocations(unit));
+sub=content.substring(r.getOffset(),r.getOffset() + r.getLength())
+String sub = content.substring(r.getOffset(), r.getOffset() + r.getLength());
+int open = 0;
+StringBuilder b = new StringBuilder();
+GenericLocations c = new GenericLocations();
+doc=node.getJavadoc()
+ASTNode doc = node.getJavadoc();
+MultiTextEdit edits = new MultiTextEdit();
+ArrayList<TypeRecord> sorted = new ArrayList<TypeRecord>(getTypeRecords(unit));
+lastLine=source.getLineOfOffset(r.region.getOffset() + r.region.getLength())
+int lastLine = source.getLineOfOffset(r.region.getOffset() + r.region.getLength());
+nextLineOffset=source.getLineOffset(lastLine + 1)
+int nextLineOffset = source.getLineOffset(lastLine + 1);
+line=source.get(source.getLineOffset(lastLine),source.getLineLength(lastLine))
+String line = source.get(source.getLineOffset(lastLine), source.getLineLength(lastLine));
+String content = null;
+InsertGenericsJml c = new InsertGenericsJml();
+ParameterizedType type = (ParameterizedType) node.getType();
+VariableDeclarationFragment fragment = (VariableDeclarationFragment) f;
+ParameterizedType type = (ParameterizedType) node.getType();
+VariableDeclarationFragment fragment = (VariableDeclarationFragment) f;
+RemoveGenerics c = new RemoveGenerics();
+RemoveGenericsFromClass c = new RemoveGenericsFromClass();
+binding=type.resolveBinding()
+ITypeBinding binding = type.resolveBinding();
+List<Integer> xs = new ArrayList<Integer>();
+List<List<Integer>> xs = new ArrayList<List<Integer>>();
+List<Integer> variableDeclaration = new ArrayList<Integer>();
+
+Diff of 613f08cddb3b7bb8fedd24edc2e5d1b55e9624ef and 79f5bcd89d726ad636aa133d49642ea7339c992e:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 613f08cddb3b7bb8fedd24edc2e5d1b55e9624ef to 79f5bcd89d726ad636aa133d49642ea7339c992e
+
+
+****Parsing for addition at revision 79f5bcd89d726ad636aa133d49642ea7339c992e****
+
+Added ConvertAllAction.java to .\java-downconvert\ repository source files.
+Added ConvertEnhancedForAction.java to .\java-downconvert\ repository source files.
+Added InsertCastsForGenericsAction.java to .\java-downconvert\ repository source files.
+Added InsertGenericsCommentsAction.java to .\java-downconvert\ repository source files.
+Added RemoveGenericsAction.java to .\java-downconvert\ repository source files.
+Added RemoveGenericsFromClassAction.java to .\java-downconvert\ repository source files.
+Added Activator.java to .\java-downconvert\ repository source files.
+Added ASTUtil.java to .\java-downconvert\ repository source files.
+Added ConvertEnhancedFor.java to .\java-downconvert\ repository source files.
+Added GlobalRewrite.java to .\java-downconvert\ repository source files.
+Added InsertCastsForGenerics.java to .\java-downconvert\ repository source files.
+Added InsertGenericsComments.java to .\java-downconvert\ repository source files.
+Added InsertGenericsJml.java to .\java-downconvert\ repository source files.
+Added RemoveGenerics.java to .\java-downconvert\ repository source files.
+Added RemoveGenericsFromClass.java to .\java-downconvert\ repository source files.
+Added EnhancedForTest.java to .\java-downconvert\ repository source files.
+Added GenericClassTest.java to .\java-downconvert\ repository source files.
+Added JmlCollectionsTest.java to .\java-downconvert\ repository source files.
+nt=ast.newParameterizedType(ast.newSimpleType(ast.newName(binding.getErasure().getQualifiedName())))
+ParameterizedType nt = ast.newParameterizedType(ast.newSimpleType(ast.newName(binding.getErasure().getQualifiedName())));
+location=before.getLocationInParent()
+StructuralPropertyDescriptor location = before.getLocationInParent();
+MethodInvocation method = (MethodInvocation) before.getParent();
+ClassInstanceCreation method = (ClassInstanceCreation) before.getParent();
+SwitchStatement swtch = (SwitchStatement) before.getParent();
+InfixExpression expr = (InfixExpression) before.getParent();
+TypeParameter param = (TypeParameter) before.getParent();
+TypeDeclaration dec = (TypeDeclaration) before.getParent();
+List<Statement> ss = new ArrayList<Statement>();
+Block block = (Block) node.getParent();
+replacement=replacements.get(j)
+Statement replacement = replacements.get(j);
+ConvertEnhancedFor c = new ConvertEnhancedFor(unit);
+ImportDeclaration d = (ImportDeclaration) i;
+i=ast.newImportDeclaration()
+ImportDeclaration i = ast.newImportDeclaration();
+expr=node.getExpression()
+Expression expr = node.getExpression();
+type=expr.resolveTypeBinding()
+ITypeBinding type = expr.resolveTypeBinding();
+block=ast.newBlock()
+Block block = ast.newBlock();
+iterator=ast.newMethodInvocation()
+MethodInvocation iterator = ast.newMethodInvocation();
+it=ast.newVariableDeclarationFragment()
+VariableDeclarationFragment it = ast.newVariableDeclarationFragment();
+itWithType=ast.newVariableDeclarationStatement(it)
+VariableDeclarationStatement itWithType = ast.newVariableDeclarationStatement(it);
+paramType=ast.newParameterizedType(ast.newSimpleType(ast.newName("Iterator")))
+ParameterizedType paramType = ast.newParameterizedType(ast.newSimpleType(ast.newName("Iterator")));
+loop=ast.newWhileStatement()
+WhileStatement loop = ast.newWhileStatement();
+hasNext=ast.newMethodInvocation()
+MethodInvocation hasNext = ast.newMethodInvocation();
+body=ast.newBlock()
+Block body = ast.newBlock();
+value=ast.newVariableDeclarationFragment()
+VariableDeclarationFragment value = ast.newVariableDeclarationFragment();
+next=ast.newMethodInvocation()
+MethodInvocation next = ast.newMethodInvocation();
+cast=ast.newCastExpression()
+CastExpression cast = ast.newCastExpression();
+valueWithType=ast.newVariableDeclarationStatement(value)
+VariableDeclarationStatement valueWithType = ast.newVariableDeclarationStatement(value);
+placeholder=ast.newEmptyStatement()
+Statement placeholder = ast.newEmptyStatement();
+block=ast.newBlock()
+Block block = ast.newBlock();
+loop=ast.newForStatement()
+ForStatement loop = ast.newForStatement();
+index=ast.newVariableDeclarationFragment()
+VariableDeclarationFragment index = ast.newVariableDeclarationFragment();
+indexWithType=ast.newVariableDeclarationExpression(index)
+VariableDeclarationExpression indexWithType = ast.newVariableDeclarationExpression(index);
+sizeCheck=ast.newInfixExpression()
+InfixExpression sizeCheck = ast.newInfixExpression();
+len=ast.newFieldAccess()
+FieldAccess len = ast.newFieldAccess();
+inc=ast.newPrefixExpression()
+PrefixExpression inc = ast.newPrefixExpression();
+body=ast.newBlock()
+Block body = ast.newBlock();
+value=ast.newVariableDeclarationFragment()
+VariableDeclarationFragment value = ast.newVariableDeclarationFragment();
+next=ast.newArrayAccess()
+ArrayAccess next = ast.newArrayAccess();
+cast=ast.newCastExpression()
+CastExpression cast = ast.newCastExpression();
+valueWithType=ast.newVariableDeclarationStatement(value)
+VariableDeclarationStatement valueWithType = ast.newVariableDeclarationStatement(value);
+placeholder=ast.newEmptyStatement()
+Statement placeholder = ast.newEmptyStatement();
+parser=ASTParser.newParser(AST.JLS3)
+ASTParser parser = ASTParser.newParser(AST.JLS3);
+workspace=ResourcesPlugin.getWorkspace()
+IWorkspace workspace = ResourcesPlugin.getWorkspace();
+root=workspace.getRoot()
+IWorkspaceRoot root = workspace.getRoot();
+projects=root.getProjects()
+IProject[] projects = root.getProjects();
+javaProject=JavaCore.create(project)
+IJavaProject javaProject = JavaCore.create(project);
+edit=editor.rewrite(parse(cu),new Document(cu.getSource()))
+TextEdit edit = editor.rewrite(parse(cu), new Document(cu.getSource()));
+bufferManager=FileBuffers.getTextFileBufferManager()
+ITextFileBufferManager bufferManager = FileBuffers.getTextFileBufferManager();
+path=cu.getPath()
+IPath path = cu.getPath();
+textFileBuffer=bufferManager.getTextFileBuffer(path)
+ITextFileBuffer textFileBuffer = bufferManager.getTextFileBuffer(path);
+document=textFileBuffer.getDocument()
+IDocument document = textFileBuffer.getDocument();
+InsertCastsForGenerics c = new InsertCastsForGenerics();
+method=node.resolveMethodBinding()
+IMethodBinding method = node.resolveMethodBinding();
+declaration=method.getMethodDeclaration()
+IMethodBinding declaration = method.getMethodDeclaration();
+rt=method.getReturnType()
+ITypeBinding rt = method.getReturnType();
+paren=ast.newParenthesizedExpression()
+ParenthesizedExpression paren = ast.newParenthesizedExpression();
+cast=ast.newCastExpression()
+CastExpression cast = ast.newCastExpression();
+content=source.get()
+String content = source.get();
+MultiTextEdit edits = new MultiTextEdit();
+ArrayList<Region> sorted = new ArrayList<Region>(GenericLocations.getGenericLocations(unit));
+sub=content.substring(r.getOffset(),r.getOffset() + r.getLength())
+String sub = content.substring(r.getOffset(), r.getOffset() + r.getLength());
+int open = 0;
+StringBuilder b = new StringBuilder();
+GenericLocations c = new GenericLocations();
+doc=node.getJavadoc()
+ASTNode doc = node.getJavadoc();
+MultiTextEdit edits = new MultiTextEdit();
+ArrayList<TypeRecord> sorted = new ArrayList<TypeRecord>(getTypeRecords(unit));
+lastLine=source.getLineOfOffset(r.region.getOffset() + r.region.getLength())
+int lastLine = source.getLineOfOffset(r.region.getOffset() + r.region.getLength());
+nextLineOffset=source.getLineOffset(lastLine + 1)
+int nextLineOffset = source.getLineOffset(lastLine + 1);
+line=source.get(source.getLineOffset(lastLine),source.getLineLength(lastLine))
+String line = source.get(source.getLineOffset(lastLine), source.getLineLength(lastLine));
+String content = null;
+InsertGenericsJml c = new InsertGenericsJml();
+ParameterizedType type = (ParameterizedType) node.getType();
+VariableDeclarationFragment fragment = (VariableDeclarationFragment) f;
+ParameterizedType type = (ParameterizedType) node.getType();
+VariableDeclarationFragment fragment = (VariableDeclarationFragment) f;
+RemoveGenerics c = new RemoveGenerics();
+RemoveGenericsFromClass c = new RemoveGenericsFromClass();
+binding=type.resolveBinding()
+ITypeBinding binding = type.resolveBinding();
+List<Integer> xs = new ArrayList<Integer>();
+List<List<Integer>> xs = new ArrayList<List<Integer>>();
+List<Integer> variableDeclaration = new ArrayList<Integer>();
+
+Diff of 79f5bcd89d726ad636aa133d49642ea7339c992e and c4a2bc1c0b0af4df58f985e828a4cc0c0cc17328:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 79f5bcd89d726ad636aa133d49642ea7339c992e to c4a2bc1c0b0af4df58f985e828a4cc0c0cc17328
+
+************Analysis complete************
+Added generics to repository java-downconvert = 0
+
+Todd Schiller added type argument method count = 0
+	--> recency = null
+Todd Schiller added wildcard count = 0
+	--> recency = null
+Todd Schiller added type declaration count = 0
+	--> recency = null
+Todd Schiller added type parameter method count = 0
+	--> recency = null
+Todd Schiller added type parameter field count = 0
+	--> recency = null
+Todd Schiller added diamond count = 0
+	--> recency = null
+Todd Schiller added method invocation count = 0
+	--> recency = null
+Todd Schiller added implicit method invocation count = 0
+	--> recency = null
+Todd Schiller added class instantiation count = 0
+	--> recency = null
+Todd Schiller added nested count = 0
+	--> recency = null
+Todd Schiller added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository java-downconvert = 0
+
+Todd Schiller added type argument method count = 0
+	--> recency = null
+Todd Schiller added wildcard count = 0
+	--> recency = null
+Todd Schiller added type declaration count = 0
+	--> recency = null
+Todd Schiller added type parameter method count = 0
+	--> recency = null
+Todd Schiller added type parameter field count = 0
+	--> recency = null
+Todd Schiller added diamond count = 0
+	--> recency = null
+Todd Schiller added method invocation count = 0
+	--> recency = null
+Todd Schiller added implicit method invocation count = 0
+	--> recency = null
+Todd Schiller added class instantiation count = 0
+	--> recency = null
+Todd Schiller added nested count = 0
+	--> recency = null
+Todd Schiller added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository java-downconvert = 0
+
+Todd Schiller added type argument method count = 0
+	--> recency = null
+Todd Schiller added wildcard count = 0
+	--> recency = null
+Todd Schiller added type declaration count = 0
+	--> recency = null
+Todd Schiller added type parameter method count = 0
+	--> recency = null
+Todd Schiller added type parameter field count = 0
+	--> recency = null
+Todd Schiller added diamond count = 0
+	--> recency = null
+Todd Schiller added method invocation count = 0
+	--> recency = null
+Todd Schiller added implicit method invocation count = 0
+	--> recency = null
+Todd Schiller added class instantiation count = 0
+	--> recency = null
+Todd Schiller added nested count = 0
+	--> recency = null
+Todd Schiller added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository java-downconvert = 0
+
+Todd Schiller added type argument method count = 0
+	--> recency = null
+Todd Schiller added wildcard count = 0
+	--> recency = null
+Todd Schiller added type declaration count = 0
+	--> recency = null
+Todd Schiller added type parameter method count = 0
+	--> recency = null
+Todd Schiller added type parameter field count = 0
+	--> recency = null
+Todd Schiller added diamond count = 0
+	--> recency = null
+Todd Schiller added method invocation count = 0
+	--> recency = null
+Todd Schiller added implicit method invocation count = 0
+	--> recency = null
+Todd Schiller added class instantiation count = 0
+	--> recency = null
+Todd Schiller added nested count = 0
+	--> recency = null
+Todd Schiller added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository java-downconvert = 0
+
+Todd Schiller added type argument method count = 0
+	--> recency = null
+Todd Schiller added wildcard count = 0
+	--> recency = null
+Todd Schiller added type declaration count = 0
+	--> recency = null
+Todd Schiller added type parameter method count = 0
+	--> recency = null
+Todd Schiller added type parameter field count = 0
+	--> recency = null
+Todd Schiller added diamond count = 0
+	--> recency = null
+Todd Schiller added method invocation count = 0
+	--> recency = null
+Todd Schiller added implicit method invocation count = 0
+	--> recency = null
+Todd Schiller added class instantiation count = 0
+	--> recency = null
+Todd Schiller added nested count = 0
+	--> recency = null
+Todd Schiller added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository java-downconvert = 0
+
+Todd Schiller added type argument method count = 0
+	--> recency = null
+Todd Schiller added wildcard count = 0
+	--> recency = null
+Todd Schiller added type declaration count = 0
+	--> recency = null
+Todd Schiller added type parameter method count = 0
+	--> recency = null
+Todd Schiller added type parameter field count = 0
+	--> recency = null
+Todd Schiller added diamond count = 0
+	--> recency = null
+Todd Schiller added method invocation count = 0
+	--> recency = null
+Todd Schiller added implicit method invocation count = 0
+	--> recency = null
+Todd Schiller added class instantiation count = 0
+	--> recency = null
+Todd Schiller added nested count = 0
+	--> recency = null
+Todd Schiller added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository java-downconvert = 0
+
+Todd Schiller added type argument method count = 0
+	--> recency = null
+Todd Schiller added wildcard count = 0
+	--> recency = null
+Todd Schiller added type declaration count = 0
+	--> recency = null
+Todd Schiller added type parameter method count = 0
+	--> recency = null
+Todd Schiller added type parameter field count = 0
+	--> recency = null
+Todd Schiller added diamond count = 0
+	--> recency = null
+Todd Schiller added method invocation count = 0
+	--> recency = null
+Todd Schiller added implicit method invocation count = 0
+	--> recency = null
+Todd Schiller added class instantiation count = 0
+	--> recency = null
+Todd Schiller added nested count = 0
+	--> recency = null
+Todd Schiller added bounds count = 0
+	--> recency = null
+File copied successfully!

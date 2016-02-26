@@ -1,0 +1,2334 @@
+ExtendsFX -- johnzeringue -- John Zeringue
+https://github.com/johnzeringue/ExtendsFX.git
+git clone https://github.com/johnzeringue/ExtendsFX.git
+.\ExtendsFX\
+.\ExtendsFX\.git
+0
+Project cloned!
+John Zeringue is responsible for commit 1ae1ae5e1e2b36d9514098671a5403b1f971af17
+John Zeringue is responsible for commit 93805dfbf60bbc54b99a36b6d2a0d874445ef370
+John Zeringue is responsible for commit 29a8778f18b2f68c8b1fc3b47d2d94915ce3a658
+John Zeringue is responsible for commit 49a05aeba6253227f8acee36ea375033637806f6
+John Zeringue is responsible for commit 4843273fe8e9901ec5ea913135745c30eebd6b0f
+John Zeringue is responsible for commit 07d9328d7534f3d7e55c416e9b1b3662c1397bb9
+John Zeringue is responsible for commit 38524ea1c28e7ea70a9428278e372f1a8f76eb3c
+John Zeringue is responsible for commit 44ac75b4858506589aadd663667ce85945403873
+John Zeringue is responsible for commit e27673bd4189b132df6b5d77d61c45cb7e40afea
+John Zeringue is responsible for commit 61c09dde90b7bf9067f5f45cf2333843bd6f3668
+John Zeringue is responsible for commit 9c83e338f76e8e448dd60bdeb124aadb84fc98db
+John Zeringue is responsible for commit 8a889fab4718793380712af41eea3554b8248f32
+John Zeringue is responsible for commit 756aff06eba6b1d81380d389c2be4e54ec2c2f22
+John Zeringue is responsible for commit 73060198cc89a0769b4b24b94a7ce913c718b925
+John Zeringue is responsible for commit c69fdadf37f2bb28d07c514b33f42c3c92b47453
+John Zeringue is responsible for commit bd129a1e4b07ee428fbaf114e0f03a6c8225e5d8
+John Zeringue is responsible for commit c3a750ba362306ce65270abbff364cd1617f60ab
+John Zeringue is responsible for commit c18551f370cfe9a023369ce255f9f10fd8808066
+John Zeringue is responsible for commit 03ac234c9b4e087b495544e3c060d1055ac3219f
+John Zeringue is responsible for commit 0b38a230050592a81253d1fa3dd1da5101fbeb28
+John Zeringue is responsible for commit a0c9bead2b3556114759a813375203d99fbb4bf2
+John Zeringue is responsible for commit f9280fd7132b0aacc628737fd912382fc4d037dd
+John Zeringue is responsible for commit eadea6facf3580b628b43dc33b7a7570f9903901
+John Zeringue is responsible for commit 577e048c8d63f75aa470022c18f78a17005c4a95
+John Zeringue is responsible for commit 99d64ad432df524e3fc17a3b1f5d7a97f3047146
+John Zeringue is responsible for commit 6cdd4cd98b7ff70b1eb9b6bbc234f3a41a2e3d0c
+John Zeringue is responsible for commit 21396279d515817be091647c86c3f06740e68c31
+John Zeringue is responsible for commit a46a4c89e0590a934d8b2d0ba42e33f4f71aa303
+John Zeringue is responsible for commit cfe23326093fd4f39bb988f4db6028727bea5212
+John Zeringue is responsible for commit 1d70ce798051df11ef7e5873fbb54db031967b7e
+John Zeringue is responsible for commit 55d2ff58ad1e42e65e143581d935bcfd09955220
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added ExtendsFXException.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomPane.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+
+ ************ ANALYZING FOR USAGE PATTERN ADDITION ************
+
+
+****Parsing for addition at revision 1ae1ae5e1e2b36d9514098671a5403b1f971af17****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added ExtendsFXException.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomPane.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of 1ae1ae5e1e2b36d9514098671a5403b1f971af17 and 93805dfbf60bbc54b99a36b6d2a0d874445ef370:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit '1ae1ae5e1e2b36d9514098671a5403b1f971af17' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision 93805dfbf60bbc54b99a36b6d2a0d874445ef370****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added ExtendsFXException.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomPane.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of 93805dfbf60bbc54b99a36b6d2a0d874445ef370 and 29a8778f18b2f68c8b1fc3b47d2d94915ce3a658:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 93805dfbf60bbc54b99a36b6d2a0d874445ef370 to 29a8778f18b2f68c8b1fc3b47d2d94915ce3a658
+
+
+****Parsing for addition at revision 29a8778f18b2f68c8b1fc3b47d2d94915ce3a658****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added ExtendsFXException.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomPane.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of 29a8778f18b2f68c8b1fc3b47d2d94915ce3a658 and 49a05aeba6253227f8acee36ea375033637806f6:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit '29a8778f18b2f68c8b1fc3b47d2d94915ce3a658' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision 49a05aeba6253227f8acee36ea375033637806f6****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added ExtendsFXException.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomPane.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of 49a05aeba6253227f8acee36ea375033637806f6 and 4843273fe8e9901ec5ea913135745c30eebd6b0f:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 49a05aeba6253227f8acee36ea375033637806f6 to 4843273fe8e9901ec5ea913135745c30eebd6b0f
+
+
+****Parsing for addition at revision 4843273fe8e9901ec5ea913135745c30eebd6b0f****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added ExtendsFXException.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomPane.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of 4843273fe8e9901ec5ea913135745c30eebd6b0f and 07d9328d7534f3d7e55c416e9b1b3662c1397bb9:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit '4843273fe8e9901ec5ea913135745c30eebd6b0f' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision 07d9328d7534f3d7e55c416e9b1b3662c1397bb9****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added ExtendsFXException.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomPane.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of 07d9328d7534f3d7e55c416e9b1b3662c1397bb9 and 38524ea1c28e7ea70a9428278e372f1a8f76eb3c:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 07d9328d7534f3d7e55c416e9b1b3662c1397bb9 to 38524ea1c28e7ea70a9428278e372f1a8f76eb3c
+
+
+****Parsing for addition at revision 38524ea1c28e7ea70a9428278e372f1a8f76eb3c****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added ExtendsFXException.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomPane.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of 38524ea1c28e7ea70a9428278e372f1a8f76eb3c and 44ac75b4858506589aadd663667ce85945403873:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit '38524ea1c28e7ea70a9428278e372f1a8f76eb3c' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision 44ac75b4858506589aadd663667ce85945403873****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added ExtendsFXException.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomPane.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of 44ac75b4858506589aadd663667ce85945403873 and e27673bd4189b132df6b5d77d61c45cb7e40afea:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 44ac75b4858506589aadd663667ce85945403873 to e27673bd4189b132df6b5d77d61c45cb7e40afea
+
+
+****Parsing for addition at revision e27673bd4189b132df6b5d77d61c45cb7e40afea****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added ExtendsFXException.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomPane.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of e27673bd4189b132df6b5d77d61c45cb7e40afea and 61c09dde90b7bf9067f5f45cf2333843bd6f3668:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit 'e27673bd4189b132df6b5d77d61c45cb7e40afea' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision 61c09dde90b7bf9067f5f45cf2333843bd6f3668****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added ExtendsFXException.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomPane.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of 61c09dde90b7bf9067f5f45cf2333843bd6f3668 and 9c83e338f76e8e448dd60bdeb124aadb84fc98db:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 61c09dde90b7bf9067f5f45cf2333843bd6f3668 to 9c83e338f76e8e448dd60bdeb124aadb84fc98db
+
+
+****Parsing for addition at revision 9c83e338f76e8e448dd60bdeb124aadb84fc98db****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added ExtendsFXException.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomPane.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of 9c83e338f76e8e448dd60bdeb124aadb84fc98db and 8a889fab4718793380712af41eea3554b8248f32:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit '9c83e338f76e8e448dd60bdeb124aadb84fc98db' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision 8a889fab4718793380712af41eea3554b8248f32****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added ExtendsFXException.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomPane.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of 8a889fab4718793380712af41eea3554b8248f32 and 756aff06eba6b1d81380d389c2be4e54ec2c2f22:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 8a889fab4718793380712af41eea3554b8248f32 to 756aff06eba6b1d81380d389c2be4e54ec2c2f22
+
+
+****Parsing for addition at revision 756aff06eba6b1d81380d389c2be4e54ec2c2f22****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added ExtendsFXException.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomPane.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of 756aff06eba6b1d81380d389c2be4e54ec2c2f22 and 73060198cc89a0769b4b24b94a7ce913c718b925:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 756aff06eba6b1d81380d389c2be4e54ec2c2f22 to 73060198cc89a0769b4b24b94a7ce913c718b925
+
+
+****Parsing for addition at revision 73060198cc89a0769b4b24b94a7ce913c718b925****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomPane.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of 73060198cc89a0769b4b24b94a7ce913c718b925 and c69fdadf37f2bb28d07c514b33f42c3c92b47453:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit '73060198cc89a0769b4b24b94a7ce913c718b925' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision c69fdadf37f2bb28d07c514b33f42c3c92b47453****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomPane.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of c69fdadf37f2bb28d07c514b33f42c3c92b47453 and bd129a1e4b07ee428fbaf114e0f03a6c8225e5d8:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision c69fdadf37f2bb28d07c514b33f42c3c92b47453 to bd129a1e4b07ee428fbaf114e0f03a6c8225e5d8
+
+
+****Parsing for addition at revision bd129a1e4b07ee428fbaf114e0f03a6c8225e5d8****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of bd129a1e4b07ee428fbaf114e0f03a6c8225e5d8 and c3a750ba362306ce65270abbff364cd1617f60ab:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit 'bd129a1e4b07ee428fbaf114e0f03a6c8225e5d8' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision c3a750ba362306ce65270abbff364cd1617f60ab****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+
+ Generics pattern public abstract class CustomAccordion<T extends CustomAccordion> was added at revision c3a750ba362306ce65270abbff364cd1617f60ab
+
+
+ Generics pattern public abstract class CustomDialogPane<T extends CustomDialogPane> was added at revision c3a750ba362306ce65270abbff364cd1617f60ab
+
+
+ Generics pattern public abstract class CustomMenuBar<T extends CustomMenuBar> was added at revision c3a750ba362306ce65270abbff364cd1617f60ab
+
+
+ Generics pattern public abstract class CustomToolBar<T extends ToolBar> was added at revision c3a750ba362306ce65270abbff364cd1617f60ab
+
+
+ Generics pattern public abstract class CustomBorderPane<T extends CustomBorderPane> was added at revision c3a750ba362306ce65270abbff364cd1617f60ab
+
+
+ Generics pattern public abstract class CustomFlowPane<T extends CustomFlowPane> was added at revision c3a750ba362306ce65270abbff364cd1617f60ab
+
+
+ Generics pattern public abstract class CustomGridPane<T extends CustomGridPane> was added at revision c3a750ba362306ce65270abbff364cd1617f60ab
+
+
+ Generics pattern public abstract class CustomHBox<T extends HBox> was added at revision c3a750ba362306ce65270abbff364cd1617f60ab
+
+
+ Generics pattern public abstract class CustomStackPane<T extends CustomStackPane> was added at revision c3a750ba362306ce65270abbff364cd1617f60ab
+
+
+ Generics pattern public abstract class CustomTilePane<T extends CustomTilePane> was added at revision c3a750ba362306ce65270abbff364cd1617f60ab
+
+
+ Generics pattern public abstract class CustomVBox<T extends CustomVBox> was added at revision c3a750ba362306ce65270abbff364cd1617f60ab
+
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of c3a750ba362306ce65270abbff364cd1617f60ab and c18551f370cfe9a023369ce255f9f10fd8808066:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 11
+	--> recency = year
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision c3a750ba362306ce65270abbff364cd1617f60ab to c18551f370cfe9a023369ce255f9f10fd8808066
+
+
+****Parsing for addition at revision c18551f370cfe9a023369ce255f9f10fd8808066****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of c18551f370cfe9a023369ce255f9f10fd8808066 and 03ac234c9b4e087b495544e3c060d1055ac3219f:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 11
+	--> recency = year
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit 'c18551f370cfe9a023369ce255f9f10fd8808066' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision 03ac234c9b4e087b495544e3c060d1055ac3219f****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of 03ac234c9b4e087b495544e3c060d1055ac3219f and 0b38a230050592a81253d1fa3dd1da5101fbeb28:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 11
+	--> recency = year
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 03ac234c9b4e087b495544e3c060d1055ac3219f to 0b38a230050592a81253d1fa3dd1da5101fbeb28
+
+
+****Parsing for addition at revision 0b38a230050592a81253d1fa3dd1da5101fbeb28****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of 0b38a230050592a81253d1fa3dd1da5101fbeb28 and a0c9bead2b3556114759a813375203d99fbb4bf2:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 11
+	--> recency = year
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit '0b38a230050592a81253d1fa3dd1da5101fbeb28' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision a0c9bead2b3556114759a813375203d99fbb4bf2****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of a0c9bead2b3556114759a813375203d99fbb4bf2 and f9280fd7132b0aacc628737fd912382fc4d037dd:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 11
+	--> recency = year
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision a0c9bead2b3556114759a813375203d99fbb4bf2 to f9280fd7132b0aacc628737fd912382fc4d037dd
+
+
+****Parsing for addition at revision f9280fd7132b0aacc628737fd912382fc4d037dd****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of f9280fd7132b0aacc628737fd912382fc4d037dd and eadea6facf3580b628b43dc33b7a7570f9903901:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 11
+	--> recency = year
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit 'f9280fd7132b0aacc628737fd912382fc4d037dd' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision eadea6facf3580b628b43dc33b7a7570f9903901****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of eadea6facf3580b628b43dc33b7a7570f9903901 and 577e048c8d63f75aa470022c18f78a17005c4a95:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 11
+	--> recency = year
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision eadea6facf3580b628b43dc33b7a7570f9903901 to 577e048c8d63f75aa470022c18f78a17005c4a95
+
+
+****Parsing for addition at revision 577e048c8d63f75aa470022c18f78a17005c4a95****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of 577e048c8d63f75aa470022c18f78a17005c4a95 and 99d64ad432df524e3fc17a3b1f5d7a97f3047146:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 11
+	--> recency = year
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit '577e048c8d63f75aa470022c18f78a17005c4a95' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision 99d64ad432df524e3fc17a3b1f5d7a97f3047146****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of 99d64ad432df524e3fc17a3b1f5d7a97f3047146 and 6cdd4cd98b7ff70b1eb9b6bbc234f3a41a2e3d0c:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 11
+	--> recency = year
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 99d64ad432df524e3fc17a3b1f5d7a97f3047146 to 6cdd4cd98b7ff70b1eb9b6bbc234f3a41a2e3d0c
+
+
+****Parsing for addition at revision 6cdd4cd98b7ff70b1eb9b6bbc234f3a41a2e3d0c****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of 6cdd4cd98b7ff70b1eb9b6bbc234f3a41a2e3d0c and 21396279d515817be091647c86c3f06740e68c31:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 11
+	--> recency = year
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit '6cdd4cd98b7ff70b1eb9b6bbc234f3a41a2e3d0c' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision 21396279d515817be091647c86c3f06740e68c31****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of 21396279d515817be091647c86c3f06740e68c31 and a46a4c89e0590a934d8b2d0ba42e33f4f71aa303:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 11
+	--> recency = year
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 21396279d515817be091647c86c3f06740e68c31 to a46a4c89e0590a934d8b2d0ba42e33f4f71aa303
+
+
+****Parsing for addition at revision a46a4c89e0590a934d8b2d0ba42e33f4f71aa303****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of a46a4c89e0590a934d8b2d0ba42e33f4f71aa303 and cfe23326093fd4f39bb988f4db6028727bea5212:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 11
+	--> recency = year
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision a46a4c89e0590a934d8b2d0ba42e33f4f71aa303 to cfe23326093fd4f39bb988f4db6028727bea5212
+
+
+****Parsing for addition at revision cfe23326093fd4f39bb988f4db6028727bea5212****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of cfe23326093fd4f39bb988f4db6028727bea5212 and 1d70ce798051df11ef7e5873fbb54db031967b7e:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 11
+	--> recency = year
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit 'cfe23326093fd4f39bb988f4db6028727bea5212' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision 1d70ce798051df11ef7e5873fbb54db031967b7e****
+
+Added ResourceBundle.java to .\ExtendsFX\ repository source files.
+Added ResourceBundles.java to .\ExtendsFX\ repository source files.
+Added CustomAccordion.java to .\ExtendsFX\ repository source files.
+Added CustomDialogPane.java to .\ExtendsFX\ repository source files.
+Added CustomMenuBar.java to .\ExtendsFX\ repository source files.
+Added CustomToolBar.java to .\ExtendsFX\ repository source files.
+Added CustomComponent.java to .\ExtendsFX\ repository source files.
+Added CustomBorderPane.java to .\ExtendsFX\ repository source files.
+Added CustomFlowPane.java to .\ExtendsFX\ repository source files.
+Added CustomGridPane.java to .\ExtendsFX\ repository source files.
+Added CustomHBox.java to .\ExtendsFX\ repository source files.
+Added CustomStackPane.java to .\ExtendsFX\ repository source files.
+Added CustomTilePane.java to .\ExtendsFX\ repository source files.
+Added CustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReader.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializer.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleBuilder.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleUtils.java to .\ExtendsFX\ repository source files.
+Added ResourceBundleTest.java to .\ExtendsFX\ repository source files.
+Added CustomGridPaneTest.java to .\ExtendsFX\ repository source files.
+Added CustomHBoxTest.java to .\ExtendsFX\ repository source files.
+Added CustomVBoxTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomGridPane.java to .\ExtendsFX\ repository source files.
+Added TestCustomHBox.java to .\ExtendsFX\ repository source files.
+Added TestCustomVBox.java to .\ExtendsFX\ repository source files.
+Added AnnotationReaderTest.java to .\ExtendsFX\ repository source files.
+Added CustomComponentInitializerTest.java to .\ExtendsFX\ repository source files.
+Added TestCustomComponent.java to .\ExtendsFX\ repository source files.
+fxmlPackage=customComponent.getClass().getPackage()
+Package fxmlPackage = customComponent.getClass().getPackage();
+fxmlPackageName=fxmlPackage.getName()
+String fxmlPackageName = fxmlPackage.getName();
+message=String.format("Expected %s in package %s.",fxmlResourceName(),fxmlPackageName)
+String message = String.format("Expected %s in package %s.",
+                fxmlResourceName(), fxmlPackageName);
+int last = baseNames.size() - 1;
+ResourceBundle parent = null;
+resourceBundles=getClass().getAnnotationsByType(ResourceBundle.class)
+ResourceBundle[] resourceBundles
+                = getClass().getAnnotationsByType(ResourceBundle.class);
+Scene scene = new Scene(customGridPane);
+Scene scene = new Scene(customHBox);
+Scene scene = new Scene(customVBox);
+
+Diff of 1d70ce798051df11ef7e5873fbb54db031967b7e and 55d2ff58ad1e42e65e143581d935bcfd09955220:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 11
+	--> recency = year
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 1d70ce798051df11ef7e5873fbb54db031967b7e to 55d2ff58ad1e42e65e143581d935bcfd09955220
+
+************Analysis complete************
+Added generics to repository ExtendsFX = 11
+
+John Zeringue added type argument method count = 0
+	--> recency = null
+John Zeringue added wildcard count = 0
+	--> recency = null
+John Zeringue added type declaration count = 11
+	--> recency = year
+John Zeringue added type parameter method count = 0
+	--> recency = null
+John Zeringue added type parameter field count = 0
+	--> recency = null
+John Zeringue added diamond count = 0
+	--> recency = null
+John Zeringue added method invocation count = 0
+	--> recency = null
+John Zeringue added implicit method invocation count = 0
+	--> recency = null
+John Zeringue added class instantiation count = 0
+	--> recency = null
+John Zeringue added nested count = 0
+	--> recency = null
+John Zeringue added bounds count = 0
+	--> recency = null
+File copied successfully!
