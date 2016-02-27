@@ -76,6 +76,7 @@ fluorite-eclipse, yyoon, YoungSeok Yoon
 azurite-eclipse, yyoon, YoungSeok Yoon
 
 vanadium/reader, yyoon, YoungSeok Yoon
+vanadium/java, yyoon, YoungSeok Yoon
 
 code-state-machine, matozoid, Danny van Bruggen 
 javaparser, matozoid, Danny van Bruggen
@@ -87,8 +88,7 @@ Topsoil, johnzeringue, John Zeringue
 ET_Redux, johnzeringue, John Zeringue
 ExtendsFX, johnzeringue, John Zeringue
 
-vanadium/reader, yyoon, YoungSeok Yoon
-vanadium/java, yyoon, YoungSeok Yoon
+
 CIRDLES/Topsoil, johnzeringue, John Zeringue
 CIRDLES/ET_Redux, johnzeringue, John Zeringue
 CIRDLES/CHRONI, johnzeringue, John Zeringue

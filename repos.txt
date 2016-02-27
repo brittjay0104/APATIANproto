@@ -4,13 +4,16 @@ novoda/merlin, ataulm, Ataul Munim
 novoda/landing-strip, ataulm, Ataul Munim
 iluwatar/java-design-patterns, mafagafogigante, Bernardo Sulzbach
 vanadium/reader, yyoon, YoungSeok Yoon
+vanadium/java, yyoon, YoungSeok Yoon
 laamella-gad/code-state-machine, matozoid, Danny van Bruggen
 laamella-gad/file-index, matozoid, Danny van Bruggen
 CIRDLES/Commons, johnzeringue, John Zeringue
 CIRDLES/MARS, johnzeringue, John Zeringue
+DeveloperLiberationFront/Pdf-Reviewer, jssmith1
+DeveloperLiberationFront/Spreadsheet-Common-Crawler, jssmith1
+kjlubick/DevOps-Project, jssmith1
 google/error-prone, eaftan, Eddie Aftandilian
 google/google-java-format, eaftan, Eddie Aftandilian
 google/guava, eaftan, Eddie Aftandilian
 bazelbuild/bazel, eaftan, Eddie Aftandilian
 google/auto, eaftan, Eddie Aftandilian
-
