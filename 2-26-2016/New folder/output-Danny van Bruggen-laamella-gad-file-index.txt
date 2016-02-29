@@ -1,0 +1,675 @@
+laamella-gad/file-index -- matozoid -- Danny van Bruggen
+https://github.com/laamella-gad/file-index.git
+git clone https://github.com/laamella-gad/file-index.git
+.\/file-index\
+.\/file-index\.git
+0
+Project cloned!
+Danny van Bruggen is responsible for commit 1557be5d6143ec53274297d5f5ad6bab57f83f72
+Danny van Bruggen is responsible for commit 93cff1242510a81a081886655e5ed0e6a7995069
+Danny van Bruggen is responsible for commit 96f72f5b54a8d4e24b0483052cad894d48cb6427
+Danny van Bruggen is responsible for commit a17cff91af346ec0ea005eab30a2af5c6802b4a4
+Danny van Bruggen is responsible for commit cef7eeaef4d2d10e47ced87f2587948b224ecf65
+Danny van Bruggen is responsible for commit d4f824e970f1ab2610a4d04dee1e401c6a9fa2a0
+Danny van Bruggen is responsible for commit c7a4439c65f0293b2d2e95de1926bf736f64c0f4
+Danny van Bruggen is responsible for commit 6c1020446a00f11541fe3b8cf62ace2176fb8cc2
+Added CachingMap.java to .\/file-index\ repository source files.
+Added FileArea.java to .\/file-index\ repository source files.
+Added FileAreaIndex.java to .\/file-index\ repository source files.
+Added FileLineIndexer.java to .\/file-index\ repository source files.
+Added FileLineMap.java to .\/file-index\ repository source files.
+Added FileLineParser.java to .\/file-index\ repository source files.
+Added LeastRecentlyUsedCache.java to .\/file-index\ repository source files.
+Added MinimalMap.java to .\/file-index\ repository source files.
+Added FileIndexTest.java to .\/file-index\ repository source files.
+Added FileLineIndexerTest.java to .\/file-index\ repository source files.
+Added FileLineMapTest.java to .\/file-index\ repository source files.
+Added FileLineNumberIndexer.java to .\/file-index\ repository source files.
+Added LeastRecentlyUsedCacheTest.java to .\/file-index\ repository source files.
+
+ ************ ANALYZING FOR USAGE PATTERN ADDITION ************
+
+
+****Parsing for addition at revision 1557be5d6143ec53274297d5f5ad6bab57f83f72****
+
+Added CachingMap.java to .\/file-index\ repository source files.
+Added FileArea.java to .\/file-index\ repository source files.
+Added FileAreaIndex.java to .\/file-index\ repository source files.
+Added FileLineIndexer.java to .\/file-index\ repository source files.
+Added FileLineMap.java to .\/file-index\ repository source files.
+Added FileLineParser.java to .\/file-index\ repository source files.
+Added LeastRecentlyUsedCache.java to .\/file-index\ repository source files.
+Added MinimalMap.java to .\/file-index\ repository source files.
+Added FileIndexTest.java to .\/file-index\ repository source files.
+Added FileLineIndexerTest.java to .\/file-index\ repository source files.
+Added FileLineMapTest.java to .\/file-index\ repository source files.
+Added FileLineNumberIndexer.java to .\/file-index\ repository source files.
+Added LeastRecentlyUsedCacheTest.java to .\/file-index\ repository source files.
+cachedValue=cache.get(key)
+final V cachedValue = cache.get(key);
+freshValue=mapToCache.get(key)
+final V freshValue = mapToCache.get(key);
+final FileAreaIndex<K> fileAreaIndex = new FileAreaIndex<K>();
+final FileArea area = new FileArea(startPosition, size);
+key=createKey(area,line)
+final K key = createKey(area, line);
+fileArea=fileAreaIndex.get(key)
+final FileArea fileArea = fileAreaIndex.get(key);
+final FileInputStream fileInputStream = new FileInputStream(file);
+channel=fileInputStream.getChannel()
+final FileChannel channel = fileInputStream.getChannel();
+map=channel.map(MapMode.READ_ONLY,0,channel.size())
+final MappedByteBuffer map = channel.map(MapMode.READ_ONLY, 0, channel.size());
+decoder=charset.newDecoder()
+final CharsetDecoder decoder = charset.newDecoder();
+out=CharBuffer.allocate(4096)
+final CharBuffer out = CharBuffer.allocate(4096);
+CoderResult result;
+c=out.get()
+final char c = out.get();
+final int hashTableCapacity = (int) Math.ceil(cacheSize / hashTableLoadFactor) + 1;
+final FileAreaIndex<String> index = new FileAreaIndex<String>();
+area=index.get("aap")
+final FileArea area = index.get("aap");
+final FileAreaIndex<String> index = new FileAreaIndex<String>();
+area=index.get("aap")
+final FileArea area = index.get("aap");
+area2=index.get("noot")
+final FileArea area2 = index.get("noot");
+final FileAreaIndex<String> index = new FileAreaIndex<String>();
+test1Url=getClass().getResource("/test1.txt")
+final URL test1Url = getClass().getResource("/test1.txt");
+final File file = new File(test1Url.getFile());
+index=new FileLineNumberIndexer().index(file,Charset.forName("UTF-8"))
+final FileAreaIndex<Integer> index = new FileLineNumberIndexer().index(file, Charset.forName("UTF-8"));
+test1Url=getClass().getResource("/test1.txt")
+final URL test1Url = getClass().getResource("/test1.txt");
+final File file = new File(test1Url.getFile());
+utf8=Charset.forName("UTF-8")
+final Charset utf8 = Charset.forName("UTF-8");
+index=new FileLineNumberIndexer().index(file,utf8)
+final FileAreaIndex<Integer> index = new FileLineNumberIndexer().index(file, utf8);
+final FileLineMap<Integer> map = new FileLineMap<Integer>(file, index, utf8);
+final LeastRecentlyUsedCache<String, String> c = new LeastRecentlyUsedCache<String, String>(3);
+
+Diff of 1557be5d6143ec53274297d5f5ad6bab57f83f72 and 93cff1242510a81a081886655e5ed0e6a7995069:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 1557be5d6143ec53274297d5f5ad6bab57f83f72 to 93cff1242510a81a081886655e5ed0e6a7995069
+
+
+****Parsing for addition at revision 93cff1242510a81a081886655e5ed0e6a7995069****
+
+Added CachingMap.java to .\/file-index\ repository source files.
+Added FileArea.java to .\/file-index\ repository source files.
+Added FileAreaIndex.java to .\/file-index\ repository source files.
+Added FileLineIndexer.java to .\/file-index\ repository source files.
+Added FileLineMap.java to .\/file-index\ repository source files.
+Added FileLineParser.java to .\/file-index\ repository source files.
+Added LeastRecentlyUsedCache.java to .\/file-index\ repository source files.
+Added MinimalMap.java to .\/file-index\ repository source files.
+Added FileIndexTest.java to .\/file-index\ repository source files.
+Added FileLineIndexerTest.java to .\/file-index\ repository source files.
+Added FileLineMapTest.java to .\/file-index\ repository source files.
+Added FileLineNumberIndexer.java to .\/file-index\ repository source files.
+Added LeastRecentlyUsedCacheTest.java to .\/file-index\ repository source files.
+cachedValue=cache.get(key)
+final V cachedValue = cache.get(key);
+freshValue=mapToCache.get(key)
+final V freshValue = mapToCache.get(key);
+final FileAreaIndex<K> fileAreaIndex = new FileAreaIndex<K>();
+final FileArea area = new FileArea(startPosition, size);
+key=createKey(area,line)
+final K key = createKey(area, line);
+fileArea=fileAreaIndex.get(key)
+final FileArea fileArea = fileAreaIndex.get(key);
+final FileInputStream fileInputStream = new FileInputStream(file);
+channel=fileInputStream.getChannel()
+final FileChannel channel = fileInputStream.getChannel();
+map=channel.map(MapMode.READ_ONLY,0,channel.size())
+final MappedByteBuffer map = channel.map(MapMode.READ_ONLY, 0, channel.size());
+decoder=charset.newDecoder()
+final CharsetDecoder decoder = charset.newDecoder();
+out=CharBuffer.allocate(4096)
+final CharBuffer out = CharBuffer.allocate(4096);
+CoderResult result;
+c=out.get()
+final char c = out.get();
+final int hashTableCapacity = (int) Math.ceil(cacheSize / hashTableLoadFactor) + 1;
+final FileAreaIndex<String> index = new FileAreaIndex<String>();
+area=index.get("aap")
+final FileArea area = index.get("aap");
+final FileAreaIndex<String> index = new FileAreaIndex<String>();
+area=index.get("aap")
+final FileArea area = index.get("aap");
+area2=index.get("noot")
+final FileArea area2 = index.get("noot");
+final FileAreaIndex<String> index = new FileAreaIndex<String>();
+test1Url=getClass().getResource("/test1.txt")
+final URL test1Url = getClass().getResource("/test1.txt");
+final File file = new File(test1Url.getFile());
+index=new FileLineNumberIndexer().index(file,Charset.forName("UTF-8"))
+final FileAreaIndex<Integer> index = new FileLineNumberIndexer().index(file, Charset.forName("UTF-8"));
+test1Url=getClass().getResource("/test1.txt")
+final URL test1Url = getClass().getResource("/test1.txt");
+final File file = new File(test1Url.getFile());
+utf8=Charset.forName("UTF-8")
+final Charset utf8 = Charset.forName("UTF-8");
+index=new FileLineNumberIndexer().index(file,utf8)
+final FileAreaIndex<Integer> index = new FileLineNumberIndexer().index(file, utf8);
+final FileLineMap<Integer> map = new FileLineMap<Integer>(file, index, utf8);
+final LeastRecentlyUsedCache<String, String> c = new LeastRecentlyUsedCache<String, String>(3);
+
+Diff of 93cff1242510a81a081886655e5ed0e6a7995069 and 96f72f5b54a8d4e24b0483052cad894d48cb6427:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 93cff1242510a81a081886655e5ed0e6a7995069 to 96f72f5b54a8d4e24b0483052cad894d48cb6427
+
+
+****Parsing for addition at revision 96f72f5b54a8d4e24b0483052cad894d48cb6427****
+
+Added CachingMap.java to .\/file-index\ repository source files.
+Added FileArea.java to .\/file-index\ repository source files.
+Added FileAreaIndex.java to .\/file-index\ repository source files.
+Added FileLineIndexer.java to .\/file-index\ repository source files.
+Added FileLineMap.java to .\/file-index\ repository source files.
+Added FileLineParser.java to .\/file-index\ repository source files.
+Added LeastRecentlyUsedCache.java to .\/file-index\ repository source files.
+Added MinimalMap.java to .\/file-index\ repository source files.
+Added FileIndexTest.java to .\/file-index\ repository source files.
+Added FileLineIndexerTest.java to .\/file-index\ repository source files.
+Added FileLineMapTest.java to .\/file-index\ repository source files.
+Added FileLineNumberIndexer.java to .\/file-index\ repository source files.
+Added LeastRecentlyUsedCacheTest.java to .\/file-index\ repository source files.
+cachedValue=cache.get(key)
+final V cachedValue = cache.get(key);
+freshValue=mapToCache.get(key)
+final V freshValue = mapToCache.get(key);
+final FileAreaIndex<K> fileAreaIndex = new FileAreaIndex<K>();
+final FileArea area = new FileArea(startPosition, size);
+key=createKey(area,line)
+final K key = createKey(area, line);
+fileArea=fileAreaIndex.get(key)
+final FileArea fileArea = fileAreaIndex.get(key);
+final FileInputStream fileInputStream = new FileInputStream(file);
+channel=fileInputStream.getChannel()
+final FileChannel channel = fileInputStream.getChannel();
+map=channel.map(MapMode.READ_ONLY,0,channel.size())
+final MappedByteBuffer map = channel.map(MapMode.READ_ONLY, 0, channel.size());
+decoder=charset.newDecoder()
+final CharsetDecoder decoder = charset.newDecoder();
+out=CharBuffer.allocate(4096)
+final CharBuffer out = CharBuffer.allocate(4096);
+CoderResult result;
+c=out.get()
+final char c = out.get();
+final int hashTableCapacity = (int) Math.ceil(cacheSize / hashTableLoadFactor) + 1;
+final FileAreaIndex<String> index = new FileAreaIndex<String>();
+area=index.get("aap")
+final FileArea area = index.get("aap");
+final FileAreaIndex<String> index = new FileAreaIndex<String>();
+area=index.get("aap")
+final FileArea area = index.get("aap");
+area2=index.get("noot")
+final FileArea area2 = index.get("noot");
+final FileAreaIndex<String> index = new FileAreaIndex<String>();
+test1Url=getClass().getResource("/test1.txt")
+final URL test1Url = getClass().getResource("/test1.txt");
+final File file = new File(test1Url.getFile());
+index=new FileLineNumberIndexer().index(file,Charset.forName("UTF-8"))
+final FileAreaIndex<Integer> index = new FileLineNumberIndexer().index(file, Charset.forName("UTF-8"));
+test1Url=getClass().getResource("/test1.txt")
+final URL test1Url = getClass().getResource("/test1.txt");
+final File file = new File(test1Url.getFile());
+utf8=Charset.forName("UTF-8")
+final Charset utf8 = Charset.forName("UTF-8");
+index=new FileLineNumberIndexer().index(file,utf8)
+final FileAreaIndex<Integer> index = new FileLineNumberIndexer().index(file, utf8);
+final FileLineMap<Integer> map = new FileLineMap<Integer>(file, index, utf8);
+final LeastRecentlyUsedCache<String, String> c = new LeastRecentlyUsedCache<String, String>(3);
+
+Diff of 96f72f5b54a8d4e24b0483052cad894d48cb6427 and a17cff91af346ec0ea005eab30a2af5c6802b4a4:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 96f72f5b54a8d4e24b0483052cad894d48cb6427 to a17cff91af346ec0ea005eab30a2af5c6802b4a4
+
+
+****Parsing for addition at revision a17cff91af346ec0ea005eab30a2af5c6802b4a4****
+
+Added CachingMap.java to .\/file-index\ repository source files.
+Added FileArea.java to .\/file-index\ repository source files.
+Added FileAreaIndex.java to .\/file-index\ repository source files.
+Added FileLineIndexer.java to .\/file-index\ repository source files.
+Added FileLineMap.java to .\/file-index\ repository source files.
+Added FileLineParser.java to .\/file-index\ repository source files.
+Added LeastRecentlyUsedCache.java to .\/file-index\ repository source files.
+Added MinimalMap.java to .\/file-index\ repository source files.
+Added FileIndexTest.java to .\/file-index\ repository source files.
+Added FileLineIndexerTest.java to .\/file-index\ repository source files.
+Added FileLineMapTest.java to .\/file-index\ repository source files.
+Added FileLineNumberIndexer.java to .\/file-index\ repository source files.
+Added LeastRecentlyUsedCacheTest.java to .\/file-index\ repository source files.
+cachedValue=cache.get(key)
+final V cachedValue = cache.get(key);
+freshValue=mapToCache.get(key)
+final V freshValue = mapToCache.get(key);
+final FileAreaIndex<K> fileAreaIndex = new FileAreaIndex<K>();
+final FileArea area = new FileArea(startPosition, size);
+key=createKey(area,line)
+final K key = createKey(area, line);
+fileArea=fileAreaIndex.get(key)
+final FileArea fileArea = fileAreaIndex.get(key);
+final FileInputStream fileInputStream = new FileInputStream(file);
+channel=fileInputStream.getChannel()
+final FileChannel channel = fileInputStream.getChannel();
+map=channel.map(MapMode.READ_ONLY,0,channel.size())
+final MappedByteBuffer map = channel.map(MapMode.READ_ONLY, 0, channel.size());
+decoder=charset.newDecoder()
+final CharsetDecoder decoder = charset.newDecoder();
+out=CharBuffer.allocate(4096)
+final CharBuffer out = CharBuffer.allocate(4096);
+CoderResult result;
+c=out.get()
+final char c = out.get();
+final int hashTableCapacity = (int) Math.ceil(cacheSize / hashTableLoadFactor) + 1;
+final FileAreaIndex<String> index = new FileAreaIndex<String>();
+area=index.get("aap")
+final FileArea area = index.get("aap");
+final FileAreaIndex<String> index = new FileAreaIndex<String>();
+area=index.get("aap")
+final FileArea area = index.get("aap");
+area2=index.get("noot")
+final FileArea area2 = index.get("noot");
+final FileAreaIndex<String> index = new FileAreaIndex<String>();
+test1Url=getClass().getResource("/test1.txt")
+final URL test1Url = getClass().getResource("/test1.txt");
+final File file = new File(test1Url.getFile());
+index=new FileLineNumberIndexer().index(file,Charset.forName("UTF-8"))
+final FileAreaIndex<Integer> index = new FileLineNumberIndexer().index(file, Charset.forName("UTF-8"));
+test1Url=getClass().getResource("/test1.txt")
+final URL test1Url = getClass().getResource("/test1.txt");
+final File file = new File(test1Url.getFile());
+utf8=Charset.forName("UTF-8")
+final Charset utf8 = Charset.forName("UTF-8");
+index=new FileLineNumberIndexer().index(file,utf8)
+final FileAreaIndex<Integer> index = new FileLineNumberIndexer().index(file, utf8);
+final FileLineMap<Integer> map = new FileLineMap<Integer>(file, index, utf8);
+final LeastRecentlyUsedCache<String, String> c = new LeastRecentlyUsedCache<String, String>(3);
+
+Diff of a17cff91af346ec0ea005eab30a2af5c6802b4a4 and cef7eeaef4d2d10e47ced87f2587948b224ecf65:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision a17cff91af346ec0ea005eab30a2af5c6802b4a4 to cef7eeaef4d2d10e47ced87f2587948b224ecf65
+
+
+****Parsing for addition at revision cef7eeaef4d2d10e47ced87f2587948b224ecf65****
+
+Added CachingMap.java to .\/file-index\ repository source files.
+Added FileArea.java to .\/file-index\ repository source files.
+Added FileAreaIndex.java to .\/file-index\ repository source files.
+Added FileLineIndexer.java to .\/file-index\ repository source files.
+Added FileLineMap.java to .\/file-index\ repository source files.
+Added FileLineParser.java to .\/file-index\ repository source files.
+Added LeastRecentlyUsedCache.java to .\/file-index\ repository source files.
+Added MinimalMap.java to .\/file-index\ repository source files.
+Added FileIndexTest.java to .\/file-index\ repository source files.
+Added FileLineIndexerTest.java to .\/file-index\ repository source files.
+Added FileLineMapTest.java to .\/file-index\ repository source files.
+Added FileLineNumberIndexer.java to .\/file-index\ repository source files.
+Added LeastRecentlyUsedCacheTest.java to .\/file-index\ repository source files.
+cachedValue=cache.get(key)
+final V cachedValue = cache.get(key);
+freshValue=mapToCache.get(key)
+final V freshValue = mapToCache.get(key);
+
+ Generics pattern new LeastRecentlyUsedCache<K, V>(cacheSize) was added at revision cef7eeaef4d2d10e47ced87f2587948b224ecf65
+
+
+ Generics pattern @Override public V get(final K key) throws IOException was added at revision cef7eeaef4d2d10e47ced87f2587948b224ecf65
+
+final FileAreaIndex<K> fileAreaIndex = new FileAreaIndex<K>();
+final FileArea area = new FileArea(startPosition, size);
+key=createKey(area,line)
+final K key = createKey(area, line);
+fileArea=fileAreaIndex.get(key)
+final FileArea fileArea = fileAreaIndex.get(key);
+final FileInputStream fileInputStream = new FileInputStream(file);
+channel=fileInputStream.getChannel()
+final FileChannel channel = fileInputStream.getChannel();
+map=channel.map(MapMode.READ_ONLY,0,channel.size())
+final MappedByteBuffer map = channel.map(MapMode.READ_ONLY, 0, channel.size());
+decoder=charset.newDecoder()
+final CharsetDecoder decoder = charset.newDecoder();
+out=CharBuffer.allocate(4096)
+final CharBuffer out = CharBuffer.allocate(4096);
+CoderResult result;
+c=out.get()
+final char c = out.get();
+final int hashTableCapacity = (int) Math.ceil(cacheSize / hashTableLoadFactor) + 1;
+final FileAreaIndex<String> index = new FileAreaIndex<String>();
+area=index.get("aap")
+final FileArea area = index.get("aap");
+final FileAreaIndex<String> index = new FileAreaIndex<String>();
+area=index.get("aap")
+final FileArea area = index.get("aap");
+area2=index.get("noot")
+final FileArea area2 = index.get("noot");
+final FileAreaIndex<String> index = new FileAreaIndex<String>();
+test1Url=getClass().getResource("/test1.txt")
+final URL test1Url = getClass().getResource("/test1.txt");
+final File file = new File(test1Url.getFile());
+index=new FileLineNumberIndexer().index(file,Charset.forName("UTF-8"))
+final FileAreaIndex<Integer> index = new FileLineNumberIndexer().index(file, Charset.forName("UTF-8"));
+test1Url=getClass().getResource("/test1.txt")
+final URL test1Url = getClass().getResource("/test1.txt");
+final File file = new File(test1Url.getFile());
+utf8=Charset.forName("UTF-8")
+final Charset utf8 = Charset.forName("UTF-8");
+index=new FileLineNumberIndexer().index(file,utf8)
+final FileAreaIndex<Integer> index = new FileLineNumberIndexer().index(file, utf8);
+final FileLineMap<Integer> map = new FileLineMap<Integer>(file, index, utf8);
+final LeastRecentlyUsedCache<String, String> c = new LeastRecentlyUsedCache<String, String>(3);
+
+Diff of cef7eeaef4d2d10e47ced87f2587948b224ecf65 and d4f824e970f1ab2610a4d04dee1e401c6a9fa2a0:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 1
+	--> recency = years
+	--> Added type parameter methods = 1
+	--> recency = years
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 2
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision cef7eeaef4d2d10e47ced87f2587948b224ecf65 to d4f824e970f1ab2610a4d04dee1e401c6a9fa2a0
+
+
+****Parsing for addition at revision d4f824e970f1ab2610a4d04dee1e401c6a9fa2a0****
+
+Added FileArea.java to .\/file-index\ repository source files.
+Added FileAreaIndex.java to .\/file-index\ repository source files.
+Added FileLineIndexer.java to .\/file-index\ repository source files.
+Added FileLineMap.java to .\/file-index\ repository source files.
+Added FileLineParser.java to .\/file-index\ repository source files.
+Added MinimalMap.java to .\/file-index\ repository source files.
+Added FileIndexTest.java to .\/file-index\ repository source files.
+Added FileLineDataSourceTest.java to .\/file-index\ repository source files.
+Added FileLineIndexerTest.java to .\/file-index\ repository source files.
+Added FileLineNumberIndexer.java to .\/file-index\ repository source files.
+final FileAreaIndex<K> fileAreaIndex = new FileAreaIndex<K>();
+final FileArea area = new FileArea(startPosition, size);
+key=createKey(area,line)
+final K key = createKey(area, line);
+fileArea=fileAreaIndex.get(key)
+final FileArea fileArea = fileAreaIndex.get(key);
+
+ Generics pattern public class FileLineMap<K extends Comparable<K>> was added at revision d4f824e970f1ab2610a4d04dee1e401c6a9fa2a0
+
+final FileInputStream fileInputStream = new FileInputStream(file);
+channel=fileInputStream.getChannel()
+final FileChannel channel = fileInputStream.getChannel();
+map=channel.map(MapMode.READ_ONLY,0,channel.size())
+final MappedByteBuffer map = channel.map(MapMode.READ_ONLY, 0, channel.size());
+decoder=charset.newDecoder()
+final CharsetDecoder decoder = charset.newDecoder();
+out=CharBuffer.allocate(4096)
+final CharBuffer out = CharBuffer.allocate(4096);
+CoderResult result;
+c=out.get()
+final char c = out.get();
+
+ Generics pattern V get(K key) throws IOException was added at revision d4f824e970f1ab2610a4d04dee1e401c6a9fa2a0
+
+final FileAreaIndex<String> index = new FileAreaIndex<String>();
+area=index.get("aap")
+final FileArea area = index.get("aap");
+final FileAreaIndex<String> index = new FileAreaIndex<String>();
+area=index.get("aap")
+final FileArea area = index.get("aap");
+area2=index.get("noot")
+final FileArea area2 = index.get("noot");
+final FileAreaIndex<String> index = new FileAreaIndex<String>();
+test1Url=getClass().getResource("/test1.txt")
+final URL test1Url = getClass().getResource("/test1.txt");
+final File file = new File(test1Url.getFile());
+utf8=Charset.forName("UTF-8")
+final Charset utf8 = Charset.forName("UTF-8");
+index=new FileLineNumberIndexer().index(file,utf8)
+final FileAreaIndex<Integer> index = new FileLineNumberIndexer().index(file, utf8);
+final FileLineMap<Integer> dataSource = new FileLineMap<Integer>(file, index, utf8);
+
+ Generics pattern new FileLineMap<Integer>(file, index, utf8) was added at revision d4f824e970f1ab2610a4d04dee1e401c6a9fa2a0
+
+test1Url=getClass().getResource("/test1.txt")
+final URL test1Url = getClass().getResource("/test1.txt");
+final File file = new File(test1Url.getFile());
+index=new FileLineNumberIndexer().index(file,Charset.forName("UTF-8"))
+final FileAreaIndex<Integer> index = new FileLineNumberIndexer().index(file, Charset.forName("UTF-8"));
+
+Diff of d4f824e970f1ab2610a4d04dee1e401c6a9fa2a0 and c7a4439c65f0293b2d2e95de1926bf736f64c0f4:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 5
+	--> recency = years
+	--> Added type parameter methods = 2
+	--> recency = years
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 3
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision d4f824e970f1ab2610a4d04dee1e401c6a9fa2a0 to c7a4439c65f0293b2d2e95de1926bf736f64c0f4
+
+
+****Parsing for addition at revision c7a4439c65f0293b2d2e95de1926bf736f64c0f4****
+
+Added CountingInputStream.java to .\/file-index\ repository source files.
+Added FileAreaIndex.java to .\/file-index\ repository source files.
+Added FileLineDataSource.java to .\/file-index\ repository source files.
+Added FileLineIndexer.java to .\/file-index\ repository source files.
+Added FileLineParser.java to .\/file-index\ repository source files.
+Added FileIndexTest.java to .\/file-index\ repository source files.
+Added FileLineDataSourceTest.java to .\/file-index\ repository source files.
+Added FileLineIndexerTest.java to .\/file-index\ repository source files.
+Added FileLineNumberIndexer.java to .\/file-index\ repository source files.
+fileArea=fileAreaIndex.get(key)
+final FileArea fileArea = fileAreaIndex.get(key);
+final FileAreaIndex<K> fileAreaIndex = new FileAreaIndex<K>();
+final FileArea area = new FileArea(startPosition, size);
+key=createKey(area,line)
+final K key = createKey(area, line);
+final FileInputStream fileInputStream = new FileInputStream(file);
+channel=fileInputStream.getChannel()
+final FileChannel channel = fileInputStream.getChannel();
+map=channel.map(MapMode.READ_ONLY,0,channel.size())
+final MappedByteBuffer map = channel.map(MapMode.READ_ONLY, 0, channel.size());
+decoder=charset.newDecoder()
+final CharsetDecoder decoder = charset.newDecoder();
+out=CharBuffer.allocate(4096)
+final CharBuffer out = CharBuffer.allocate(4096);
+CoderResult result;
+c=out.get()
+final char c = out.get();
+final FileAreaIndex<String> index = new FileAreaIndex<String>();
+area=index.get("aap")
+final FileArea area = index.get("aap");
+final FileAreaIndex<String> index = new FileAreaIndex<String>();
+area=index.get("aap")
+final FileArea area = index.get("aap");
+area2=index.get("noot")
+final FileArea area2 = index.get("noot");
+final FileAreaIndex<String> index = new FileAreaIndex<String>();
+test1Url=getClass().getResource("/test1.txt")
+final URL test1Url = getClass().getResource("/test1.txt");
+final File file = new File(test1Url.getFile());
+utf8=Charset.forName("UTF-8")
+final Charset utf8 = Charset.forName("UTF-8");
+index=new FileLineNumberIndexer().index(file,utf8)
+final FileAreaIndex<Integer> index = new FileLineNumberIndexer().index(file, utf8);
+final FileLineDataSource<Integer> dataSource = new FileLineDataSource<Integer>(file, index, utf8);
+test1Url=getClass().getResource("/test1.txt")
+final URL test1Url = getClass().getResource("/test1.txt");
+final File file = new File(test1Url.getFile());
+index=new FileLineNumberIndexer().index(file,Charset.forName("UTF-8"))
+final FileAreaIndex<Integer> index = new FileLineNumberIndexer().index(file, Charset.forName("UTF-8"));
+
+Diff of c7a4439c65f0293b2d2e95de1926bf736f64c0f4 and 6c1020446a00f11541fe3b8cf62ace2176fb8cc2:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 5
+	--> recency = years
+	--> Added type parameter methods = 2
+	--> recency = years
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 3
+	--> recency = years
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision c7a4439c65f0293b2d2e95de1926bf736f64c0f4 to 6c1020446a00f11541fe3b8cf62ace2176fb8cc2
+
+************Analysis complete************
+Added generics to repository laamella-gad/file-index = 5
+
+Danny van Bruggen added type argument method count = 0
+	--> recency = null
+Danny van Bruggen added wildcard count = 0
+	--> recency = null
+Danny van Bruggen added type declaration count = 5
+	--> recency = years
+Danny van Bruggen added type parameter method count = 2
+	--> recency = years
+Danny van Bruggen added type parameter field count = 0
+	--> recency = null
+Danny van Bruggen added diamond count = 0
+	--> recency = null
+Danny van Bruggen added method invocation count = 0
+	--> recency = null
+Danny van Bruggen added implicit method invocation count = 0
+	--> recency = null
+Danny van Bruggen added class instantiation count = 3
+	--> recency = years
+Danny van Bruggen added nested count = 0
+	--> recency = null
+Danny van Bruggen added bounds count = 0
+	--> recency = null

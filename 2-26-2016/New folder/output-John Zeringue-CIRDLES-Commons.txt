@@ -1,0 +1,838 @@
+CIRDLES/Commons -- johnzeringue -- John Zeringue
+https://github.com/CIRDLES/Commons.git
+git clone https://github.com/CIRDLES/Commons.git
+.\/Commons\
+.\/Commons\.git
+0
+Project cloned!
+John Zeringue is responsible for commit bc3878160501dd0cb821b36834a2a3359ce67b71
+John Zeringue is responsible for commit 1f8260a19289062f0d99fbe887501e4247bc5518
+John Zeringue is responsible for commit 0f628ccb6de42502731eb480be658529400e039e
+John Zeringue is responsible for commit f8354ffb90d83f1c26d520501f18696bf16d656c
+John Zeringue is responsible for commit e10ebcc7e1aaec1770fddc349289ad5d1d0faef3
+John Zeringue is responsible for commit 16b4a69ca67dda6ff2c65dd17e3ee9f75d303cba
+John Zeringue is responsible for commit c8bb13c6f7958b21746d85c96c7317e83e56dadb
+John Zeringue is responsible for commit 8b7120e34418f99bad6f5708732cbf3e5d3faa12
+John Zeringue is responsible for commit 3214847f03543f962b83faa2a19d366685d2e01e
+John Zeringue is responsible for commit ca89466aae47551f3f343443a36db970c8d0c372
+John Zeringue is responsible for commit 98d18713142b3686ab6a0e8454b5e59f9b0ce9e0
+John Zeringue is responsible for commit fbeee63eaa4cd3b0b8901ccb51e7ca8cce904d9a
+John Zeringue is responsible for commit 3ae03ea8fdd5a0b2999d3e53a8c04b1c56053cb4
+John Zeringue is responsible for commit 34090fe994da701325ed34d11ef2f2d675637f7b
+Added LevenshteinDistance.java to .\/Commons\ repository source files.
+Added ResourceExtractor.java to .\/Commons\ repository source files.
+Added LevenshteinDistanceTest.java to .\/Commons\ repository source files.
+Added ResourceExtractorTest.java to .\/Commons\ repository source files.
+
+ ************ ANALYZING FOR USAGE PATTERN ADDITION ************
+
+
+****Parsing for addition at revision bc3878160501dd0cb821b36834a2a3359ce67b71****
+
+Added LevenshteinDistance.java to .\/Commons\ repository source files.
+Added ResourceExtractor.java to .\/Commons\ repository source files.
+Added LevenshteinDistanceTest.java to .\/Commons\ repository source files.
+Added ResourceExtractorTest.java to .\/Commons\ repository source files.
+int result = Integer.MAX_VALUE;
+int result;
+substitutionCost=indicator(a.charAt(i - 1) != b.charAt(j - 1))
+int substitutionCost
+                    = indicator(a.charAt(i - 1) != b.charAt(j - 1));
+File result = null;
+resourcePath=extractResourceAsPath(name)
+Path resourcePath = extractResourceAsPath(name);
+InputStream result = null;
+Path result = null;
+resourceStream=getResourceAsStream(name)
+InputStream resourceStream = getResourceAsStream(name);
+tempFile=Files.createTempFile(null,null)
+Path tempFile = Files.createTempFile(null, null);
+file=resourceExtractor.extractResourceAsFile("resourceExtractorTest.txt")
+File file = resourceExtractor
+                .extractResourceAsFile("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(file, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("resourceExtractorTest.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(path, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("doesNotExist.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("doesNotExist.txt");
+
+Diff of bc3878160501dd0cb821b36834a2a3359ce67b71 and 1f8260a19289062f0d99fbe887501e4247bc5518:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit 'bc3878160501dd0cb821b36834a2a3359ce67b71' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision 1f8260a19289062f0d99fbe887501e4247bc5518****
+
+Added LevenshteinDistance.java to .\/Commons\ repository source files.
+Added ResourceExtractor.java to .\/Commons\ repository source files.
+Added LevenshteinDistanceTest.java to .\/Commons\ repository source files.
+Added ResourceExtractorTest.java to .\/Commons\ repository source files.
+int result = Integer.MAX_VALUE;
+int result;
+substitutionCost=indicator(a.charAt(i - 1) != b.charAt(j - 1))
+int substitutionCost
+                    = indicator(a.charAt(i - 1) != b.charAt(j - 1));
+File result = null;
+resourcePath=extractResourceAsPath(name)
+Path resourcePath = extractResourceAsPath(name);
+InputStream result = null;
+Path result = null;
+resourceStream=getResourceAsStream(name)
+InputStream resourceStream = getResourceAsStream(name);
+tempFile=Files.createTempFile(null,null)
+Path tempFile = Files.createTempFile(null, null);
+file=resourceExtractor.extractResourceAsFile("resourceExtractorTest.txt")
+File file = resourceExtractor
+                .extractResourceAsFile("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(file, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("resourceExtractorTest.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(path, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("doesNotExist.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("doesNotExist.txt");
+
+Diff of 1f8260a19289062f0d99fbe887501e4247bc5518 and 0f628ccb6de42502731eb480be658529400e039e:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 1f8260a19289062f0d99fbe887501e4247bc5518 to 0f628ccb6de42502731eb480be658529400e039e
+
+
+****Parsing for addition at revision 0f628ccb6de42502731eb480be658529400e039e****
+
+Added LevenshteinDistance.java to .\/Commons\ repository source files.
+Added ResourceExtractor.java to .\/Commons\ repository source files.
+Added LevenshteinDistanceTest.java to .\/Commons\ repository source files.
+Added ResourceExtractorTest.java to .\/Commons\ repository source files.
+int result = Integer.MAX_VALUE;
+int result;
+substitutionCost=indicator(a.charAt(i - 1) != b.charAt(j - 1))
+int substitutionCost
+                    = indicator(a.charAt(i - 1) != b.charAt(j - 1));
+File result = null;
+resourcePath=extractResourceAsPath(name)
+Path resourcePath = extractResourceAsPath(name);
+InputStream result = null;
+Path result = null;
+resourceStream=getResourceAsStream(name)
+InputStream resourceStream = getResourceAsStream(name);
+tempFile=Files.createTempFile(null,null)
+Path tempFile = Files.createTempFile(null, null);
+file=resourceExtractor.extractResourceAsFile("resourceExtractorTest.txt")
+File file = resourceExtractor
+                .extractResourceAsFile("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(file, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("resourceExtractorTest.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(path, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("doesNotExist.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("doesNotExist.txt");
+
+Diff of 0f628ccb6de42502731eb480be658529400e039e and f8354ffb90d83f1c26d520501f18696bf16d656c:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit '0f628ccb6de42502731eb480be658529400e039e' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision f8354ffb90d83f1c26d520501f18696bf16d656c****
+
+Added LevenshteinDistance.java to .\/Commons\ repository source files.
+Added ResourceExtractor.java to .\/Commons\ repository source files.
+Added LevenshteinDistanceTest.java to .\/Commons\ repository source files.
+Added ResourceExtractorTest.java to .\/Commons\ repository source files.
+int result = Integer.MAX_VALUE;
+int result;
+substitutionCost=indicator(a.charAt(i - 1) != b.charAt(j - 1))
+int substitutionCost
+                    = indicator(a.charAt(i - 1) != b.charAt(j - 1));
+File result = null;
+resourcePath=extractResourceAsPath(name)
+Path resourcePath = extractResourceAsPath(name);
+InputStream result = null;
+Path result = null;
+resourceStream=getResourceAsStream(name)
+InputStream resourceStream = getResourceAsStream(name);
+tempFile=Files.createTempFile(null,null)
+Path tempFile = Files.createTempFile(null, null);
+file=resourceExtractor.extractResourceAsFile("resourceExtractorTest.txt")
+File file = resourceExtractor
+                .extractResourceAsFile("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(file, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("resourceExtractorTest.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(path, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("doesNotExist.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("doesNotExist.txt");
+
+Diff of f8354ffb90d83f1c26d520501f18696bf16d656c and e10ebcc7e1aaec1770fddc349289ad5d1d0faef3:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision f8354ffb90d83f1c26d520501f18696bf16d656c to e10ebcc7e1aaec1770fddc349289ad5d1d0faef3
+
+
+****Parsing for addition at revision e10ebcc7e1aaec1770fddc349289ad5d1d0faef3****
+
+Added LevenshteinDistance.java to .\/Commons\ repository source files.
+Added ResourceExtractor.java to .\/Commons\ repository source files.
+Added LevenshteinDistanceTest.java to .\/Commons\ repository source files.
+Added ResourceExtractorTest.java to .\/Commons\ repository source files.
+int result = Integer.MAX_VALUE;
+int result;
+substitutionCost=indicator(a.charAt(i - 1) != b.charAt(j - 1))
+int substitutionCost
+                    = indicator(a.charAt(i - 1) != b.charAt(j - 1));
+File result = null;
+resourcePath=extractResourceAsPath(name)
+Path resourcePath = extractResourceAsPath(name);
+InputStream result = null;
+Path result = null;
+resourceStream=getResourceAsStream(name)
+InputStream resourceStream = getResourceAsStream(name);
+tempFile=Files.createTempFile(null,null)
+Path tempFile = Files.createTempFile(null, null);
+file=resourceExtractor.extractResourceAsFile("resourceExtractorTest.txt")
+File file = resourceExtractor
+                .extractResourceAsFile("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(file, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("resourceExtractorTest.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(path, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("doesNotExist.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("doesNotExist.txt");
+
+Diff of e10ebcc7e1aaec1770fddc349289ad5d1d0faef3 and 16b4a69ca67dda6ff2c65dd17e3ee9f75d303cba:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit 'e10ebcc7e1aaec1770fddc349289ad5d1d0faef3' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision 16b4a69ca67dda6ff2c65dd17e3ee9f75d303cba****
+
+Added LevenshteinDistance.java to .\/Commons\ repository source files.
+Added ResourceExtractor.java to .\/Commons\ repository source files.
+Added LevenshteinDistanceTest.java to .\/Commons\ repository source files.
+Added ResourceExtractorTest.java to .\/Commons\ repository source files.
+int result = Integer.MAX_VALUE;
+int result;
+substitutionCost=indicator(a.charAt(i - 1) != b.charAt(j - 1))
+int substitutionCost
+                    = indicator(a.charAt(i - 1) != b.charAt(j - 1));
+File result = null;
+resourcePath=extractResourceAsPath(name)
+Path resourcePath = extractResourceAsPath(name);
+InputStream result = null;
+Path result = null;
+resourceStream=getResourceAsStream(name)
+InputStream resourceStream = getResourceAsStream(name);
+tempFile=Files.createTempFile(null,null)
+Path tempFile = Files.createTempFile(null, null);
+file=resourceExtractor.extractResourceAsFile("resourceExtractorTest.txt")
+File file = resourceExtractor
+                .extractResourceAsFile("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(file, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("resourceExtractorTest.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(path, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("doesNotExist.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("doesNotExist.txt");
+
+Diff of 16b4a69ca67dda6ff2c65dd17e3ee9f75d303cba and c8bb13c6f7958b21746d85c96c7317e83e56dadb:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 16b4a69ca67dda6ff2c65dd17e3ee9f75d303cba to c8bb13c6f7958b21746d85c96c7317e83e56dadb
+
+
+****Parsing for addition at revision c8bb13c6f7958b21746d85c96c7317e83e56dadb****
+
+Added LevenshteinDistance.java to .\/Commons\ repository source files.
+Added ResourceExtractor.java to .\/Commons\ repository source files.
+Added LevenshteinDistanceTest.java to .\/Commons\ repository source files.
+Added ResourceExtractorTest.java to .\/Commons\ repository source files.
+int result = Integer.MAX_VALUE;
+int result;
+substitutionCost=indicator(a.charAt(i - 1) != b.charAt(j - 1))
+int substitutionCost
+                    = indicator(a.charAt(i - 1) != b.charAt(j - 1));
+File result = null;
+resourcePath=extractResourceAsPath(name)
+Path resourcePath = extractResourceAsPath(name);
+InputStream result = null;
+Path result = null;
+resourceStream=getResourceAsStream(name)
+InputStream resourceStream = getResourceAsStream(name);
+tempFile=Files.createTempFile(null,null)
+Path tempFile = Files.createTempFile(null, null);
+file=resourceExtractor.extractResourceAsFile("resourceExtractorTest.txt")
+File file = resourceExtractor
+                .extractResourceAsFile("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(file, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("resourceExtractorTest.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(path, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("doesNotExist.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("doesNotExist.txt");
+
+Diff of c8bb13c6f7958b21746d85c96c7317e83e56dadb and 8b7120e34418f99bad6f5708732cbf3e5d3faa12:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit 'c8bb13c6f7958b21746d85c96c7317e83e56dadb' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision 8b7120e34418f99bad6f5708732cbf3e5d3faa12****
+
+Added LevenshteinDistance.java to .\/Commons\ repository source files.
+Added ResourceExtractor.java to .\/Commons\ repository source files.
+Added LevenshteinDistanceTest.java to .\/Commons\ repository source files.
+Added ResourceExtractorTest.java to .\/Commons\ repository source files.
+int result = Integer.MAX_VALUE;
+int result;
+substitutionCost=indicator(a.charAt(i - 1) != b.charAt(j - 1))
+int substitutionCost
+                    = indicator(a.charAt(i - 1) != b.charAt(j - 1));
+File result = null;
+resourcePath=extractResourceAsPath(name)
+Path resourcePath = extractResourceAsPath(name);
+InputStream result = null;
+Path result = null;
+resourceStream=getResourceAsStream(name)
+InputStream resourceStream = getResourceAsStream(name);
+tempFile=Files.createTempFile(null,null)
+Path tempFile = Files.createTempFile(null, null);
+file=resourceExtractor.extractResourceAsFile("resourceExtractorTest.txt")
+File file = resourceExtractor
+                .extractResourceAsFile("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(file, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("resourceExtractorTest.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(path, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("doesNotExist.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("doesNotExist.txt");
+
+Diff of 8b7120e34418f99bad6f5708732cbf3e5d3faa12 and 3214847f03543f962b83faa2a19d366685d2e01e:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 8b7120e34418f99bad6f5708732cbf3e5d3faa12 to 3214847f03543f962b83faa2a19d366685d2e01e
+
+
+****Parsing for addition at revision 3214847f03543f962b83faa2a19d366685d2e01e****
+
+Added LevenshteinDistance.java to .\/Commons\ repository source files.
+Added ResourceExtractor.java to .\/Commons\ repository source files.
+Added LevenshteinDistanceTest.java to .\/Commons\ repository source files.
+Added ResourceExtractorTest.java to .\/Commons\ repository source files.
+int result = Integer.MAX_VALUE;
+int result;
+substitutionCost=indicator(a.charAt(i - 1) != b.charAt(j - 1))
+int substitutionCost
+                    = indicator(a.charAt(i - 1) != b.charAt(j - 1));
+File result = null;
+resourcePath=extractResourceAsPath(name)
+Path resourcePath = extractResourceAsPath(name);
+InputStream result = null;
+Path result = null;
+resourceStream=getResourceAsStream(name)
+InputStream resourceStream = getResourceAsStream(name);
+tempFile=Files.createTempFile(null,null)
+Path tempFile = Files.createTempFile(null, null);
+file=resourceExtractor.extractResourceAsFile("resourceExtractorTest.txt")
+File file = resourceExtractor
+                .extractResourceAsFile("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(file, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("resourceExtractorTest.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(path, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("doesNotExist.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("doesNotExist.txt");
+
+Diff of 3214847f03543f962b83faa2a19d366685d2e01e and ca89466aae47551f3f343443a36db970c8d0c372:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit '3214847f03543f962b83faa2a19d366685d2e01e' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision ca89466aae47551f3f343443a36db970c8d0c372****
+
+Added LevenshteinDistance.java to .\/Commons\ repository source files.
+Added ResourceExtractor.java to .\/Commons\ repository source files.
+Added LevenshteinDistanceTest.java to .\/Commons\ repository source files.
+Added ResourceExtractorTest.java to .\/Commons\ repository source files.
+int result = Integer.MAX_VALUE;
+int result;
+substitutionCost=indicator(a.charAt(i - 1) != b.charAt(j - 1))
+int substitutionCost
+                    = indicator(a.charAt(i - 1) != b.charAt(j - 1));
+File result = null;
+resourcePath=extractResourceAsPath(name)
+Path resourcePath = extractResourceAsPath(name);
+InputStream result = null;
+Path result = null;
+resourceStream=getResourceAsStream(name)
+InputStream resourceStream = getResourceAsStream(name);
+tempFile=Files.createTempFile(null,null)
+Path tempFile = Files.createTempFile(null, null);
+file=resourceExtractor.extractResourceAsFile("resourceExtractorTest.txt")
+File file = resourceExtractor
+                .extractResourceAsFile("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(file, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("resourceExtractorTest.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(path, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("doesNotExist.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("doesNotExist.txt");
+
+Diff of ca89466aae47551f3f343443a36db970c8d0c372 and 98d18713142b3686ab6a0e8454b5e59f9b0ce9e0:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision ca89466aae47551f3f343443a36db970c8d0c372 to 98d18713142b3686ab6a0e8454b5e59f9b0ce9e0
+
+
+****Parsing for addition at revision 98d18713142b3686ab6a0e8454b5e59f9b0ce9e0****
+
+Added LevenshteinDistance.java to .\/Commons\ repository source files.
+Added ResourceExtractor.java to .\/Commons\ repository source files.
+Added LevenshteinDistanceTest.java to .\/Commons\ repository source files.
+Added ResourceExtractorTest.java to .\/Commons\ repository source files.
+int result = Integer.MAX_VALUE;
+int result;
+substitutionCost=indicator(a.charAt(i - 1) != b.charAt(j - 1))
+int substitutionCost
+                    = indicator(a.charAt(i - 1) != b.charAt(j - 1));
+File result = null;
+resourcePath=extractResourceAsPath(name)
+Path resourcePath = extractResourceAsPath(name);
+InputStream result = null;
+Path result = null;
+resourceStream=getResourceAsStream(name)
+InputStream resourceStream = getResourceAsStream(name);
+tempFile=Files.createTempFile(null,null)
+Path tempFile = Files.createTempFile(null, null);
+file=resourceExtractor.extractResourceAsFile("resourceExtractorTest.txt")
+File file = resourceExtractor
+                .extractResourceAsFile("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(file, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("resourceExtractorTest.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(path, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("doesNotExist.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("doesNotExist.txt");
+
+Diff of 98d18713142b3686ab6a0e8454b5e59f9b0ce9e0 and fbeee63eaa4cd3b0b8901ccb51e7ca8cce904d9a:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit '98d18713142b3686ab6a0e8454b5e59f9b0ce9e0' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision fbeee63eaa4cd3b0b8901ccb51e7ca8cce904d9a****
+
+Added LevenshteinDistance.java to .\/Commons\ repository source files.
+Added ResourceExtractor.java to .\/Commons\ repository source files.
+Added LevenshteinDistanceTest.java to .\/Commons\ repository source files.
+Added ResourceExtractorTest.java to .\/Commons\ repository source files.
+int result = Integer.MAX_VALUE;
+int result;
+substitutionCost=indicator(a.charAt(i - 1) != b.charAt(j - 1))
+int substitutionCost
+                    = indicator(a.charAt(i - 1) != b.charAt(j - 1));
+File result = null;
+resourcePath=extractResourceAsPath(name)
+Path resourcePath = extractResourceAsPath(name);
+InputStream result = null;
+Path result = null;
+resourceStream=getResourceAsStream(name)
+InputStream resourceStream = getResourceAsStream(name);
+tempFile=Files.createTempFile(null,null)
+Path tempFile = Files.createTempFile(null, null);
+file=resourceExtractor.extractResourceAsFile("resourceExtractorTest.txt")
+File file = resourceExtractor
+                .extractResourceAsFile("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(file, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("resourceExtractorTest.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(path, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("doesNotExist.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("doesNotExist.txt");
+
+Diff of fbeee63eaa4cd3b0b8901ccb51e7ca8cce904d9a and 3ae03ea8fdd5a0b2999d3e53a8c04b1c56053cb4:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision fbeee63eaa4cd3b0b8901ccb51e7ca8cce904d9a to 3ae03ea8fdd5a0b2999d3e53a8c04b1c56053cb4
+
+
+****Parsing for addition at revision 3ae03ea8fdd5a0b2999d3e53a8c04b1c56053cb4****
+
+Added LevenshteinDistance.java to .\/Commons\ repository source files.
+Added ResourceExtractor.java to .\/Commons\ repository source files.
+Added LevenshteinDistanceTest.java to .\/Commons\ repository source files.
+Added ResourceExtractorTest.java to .\/Commons\ repository source files.
+int result = Integer.MAX_VALUE;
+int result;
+substitutionCost=indicator(a.charAt(i - 1) != b.charAt(j - 1))
+int substitutionCost
+                    = indicator(a.charAt(i - 1) != b.charAt(j - 1));
+File result = null;
+resourcePath=extractResourceAsPath(name)
+Path resourcePath = extractResourceAsPath(name);
+InputStream result = null;
+Path result = null;
+resourceStream=getResourceAsStream(name)
+InputStream resourceStream = getResourceAsStream(name);
+tempFile=Files.createTempFile(null,null)
+Path tempFile = Files.createTempFile(null, null);
+file=resourceExtractor.extractResourceAsFile("resourceExtractorTest.txt")
+File file = resourceExtractor
+                .extractResourceAsFile("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(file, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("resourceExtractorTest.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("resourceExtractorTest.txt");
+Scanner scanner = new Scanner(path, "UTF-8");
+path=resourceExtractor.extractResourceAsPath("doesNotExist.txt")
+Path path = resourceExtractor
+                .extractResourceAsPath("doesNotExist.txt");
+
+Diff of 3ae03ea8fdd5a0b2999d3e53a8c04b1c56053cb4 and 09740e362cb48756e9d30203a3dc9888b8be5fc0:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit '3ae03ea8fdd5a0b2999d3e53a8c04b1c56053cb4' because it has 2 parents, only commits with exactly one parent are supported
+************Analysis complete************
+Added generics to repository CIRDLES/Commons = 0
+
+John Zeringue added type argument method count = 0
+	--> recency = null
+John Zeringue added wildcard count = 0
+	--> recency = null
+John Zeringue added type declaration count = 0
+	--> recency = null
+John Zeringue added type parameter method count = 0
+	--> recency = null
+John Zeringue added type parameter field count = 0
+	--> recency = null
+John Zeringue added diamond count = 0
+	--> recency = null
+John Zeringue added method invocation count = 0
+	--> recency = null
+John Zeringue added implicit method invocation count = 0
+	--> recency = null
+John Zeringue added class instantiation count = 0
+	--> recency = null
+John Zeringue added nested count = 0
+	--> recency = null
+John Zeringue added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository CIRDLES/Commons = 0
+
+John Zeringue added type argument method count = 0
+	--> recency = null
+John Zeringue added wildcard count = 0
+	--> recency = null
+John Zeringue added type declaration count = 0
+	--> recency = null
+John Zeringue added type parameter method count = 0
+	--> recency = null
+John Zeringue added type parameter field count = 0
+	--> recency = null
+John Zeringue added diamond count = 0
+	--> recency = null
+John Zeringue added method invocation count = 0
+	--> recency = null
+John Zeringue added implicit method invocation count = 0
+	--> recency = null
+John Zeringue added class instantiation count = 0
+	--> recency = null
+John Zeringue added nested count = 0
+	--> recency = null
+John Zeringue added bounds count = 0
+	--> recency = null

@@ -1,0 +1,2677 @@
+CIRDLES/MARS -- johnzeringue -- John Zeringue
+https://github.com/CIRDLES/MARS.git
+git clone https://github.com/CIRDLES/MARS.git
+.\/MARS\
+.\/MARS\.git
+0
+Project cloned!
+John Zeringue is responsible for commit b29d0441c72d11dd7b9aaa5dc4a9b150042aa8b8
+John Zeringue is responsible for commit 2ca8503853e8c8928e237894512da7bb3e614f64
+John Zeringue is responsible for commit bdd1826c1afb7b9ba64c210541670786c8132991
+John Zeringue is responsible for commit 9413616cfd1604c5f1a90fff1d8c3d39417e6214
+John Zeringue is responsible for commit 3d321cad20e1865c89f212b63efdcdcf6d9d112d
+John Zeringue is responsible for commit 04cab23779b9001a4a92df90a3a92cc39e03ee38
+John Zeringue is responsible for commit 3e4c94269c034bb7a77832c983ba82aea978b4a9
+John Zeringue is responsible for commit 151721a2368eb375dcdc12955ffebf08ec7f3abb
+John Zeringue is responsible for commit 07b8fff5832393934953d9d18d3d4cc279038ce7
+John Zeringue is responsible for commit 3831d53ae72bdde4d800e89f0961dbae9ff944cd
+John Zeringue is responsible for commit 6038968bd3374073ef66bc1b13436fbebd80a8be
+John Zeringue is responsible for commit c3fc112aafe40d4ecfb4fc3e85e04dba00a465a7
+John Zeringue is responsible for commit 57428b55656e3f3c0a25c17363fd0bd8ba3d453a
+Added MarsException.java to .\/MARS\ repository source files.
+Added Sample.java to .\/MARS\ repository source files.
+Added SampleRegistryClient.java to .\/MARS\ repository source files.
+Added SampleSource.java to .\/MARS\ repository source files.
+Added SampleTest.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsException.java to .\/MARS\ repository source files.
+Added ScrippsSample.java to .\/MARS\ repository source files.
+Added ScrippsSampleAdapter.java to .\/MARS\ repository source files.
+Added ScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsSampleSourceAdapter.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSourceTest.java to .\/MARS\ repository source files.
+Added ScrippsSampleAdapterTest.java to .\/MARS\ repository source files.
+Added ScrippsSampleTest.java to .\/MARS\ repository source files.
+Added AppComponent.java to .\/MARS\ repository source files.
+Added BuilderModule.java to .\/MARS\ repository source files.
+Added ScrippsBuilderFactory.java to .\/MARS\ repository source files.
+Added CsvFileChooserButton.java to .\/MARS\ repository source files.
+Added ScrippsMenuBar.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added ScrippsImportWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindowFactory.java to .\/MARS\ repository source files.
+Added SesarLoginDialog.java to .\/MARS\ repository source files.
+Added SesarLoginDialogPane.java to .\/MARS\ repository source files.
+Added SesarLoginDialogView.java to .\/MARS\ repository source files.
+Added SesarModule.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindow.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindowFactory.java to .\/MARS\ repository source files.
+Added Main.java to .\/MARS\ repository source files.
+Added ScrippsApplication.java to .\/MARS\ repository source files.
+Added Classification.java to .\/MARS\ repository source files.
+Added IgneousDetails.java to .\/MARS\ repository source files.
+Added IgneousType.java to .\/MARS\ repository source files.
+Added MacrobiologyDetails.java to .\/MARS\ repository source files.
+Added MetamorphicDetails.java to .\/MARS\ repository source files.
+Added ObjectFactory.java to .\/MARS\ repository source files.
+Added OreDetails.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added Samples.java to .\/MARS\ repository source files.
+Added SedimentaryDetails.java to .\/MARS\ repository source files.
+Added SesarClient.java to .\/MARS\ repository source files.
+Added SesarException.java to .\/MARS\ repository source files.
+Added SesarTranslator.java to .\/MARS\ repository source files.
+Added SesarClientTest.java to .\/MARS\ repository source files.
+Added SesarTranslatorTest.java to .\/MARS\ repository source files.
+
+ ************ ANALYZING FOR USAGE PATTERN ADDITION ************
+
+************Analysis complete************
+Added generics to repository CIRDLES/MARS = 0
+
+John Zeringue added type argument method count = 0
+	--> recency = null
+John Zeringue added wildcard count = 0
+	--> recency = null
+John Zeringue added type declaration count = 0
+	--> recency = null
+John Zeringue added type parameter method count = 0
+	--> recency = null
+John Zeringue added type parameter field count = 0
+	--> recency = null
+John Zeringue added diamond count = 0
+	--> recency = null
+John Zeringue added method invocation count = 0
+	--> recency = null
+John Zeringue added implicit method invocation count = 0
+	--> recency = null
+John Zeringue added class instantiation count = 0
+	--> recency = null
+John Zeringue added nested count = 0
+	--> recency = null
+John Zeringue added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository CIRDLES/MARS = 0
+
+John Zeringue added type argument method count = 0
+	--> recency = null
+John Zeringue added wildcard count = 0
+	--> recency = null
+John Zeringue added type declaration count = 0
+	--> recency = null
+John Zeringue added type parameter method count = 0
+	--> recency = null
+John Zeringue added type parameter field count = 0
+	--> recency = null
+John Zeringue added diamond count = 0
+	--> recency = null
+John Zeringue added method invocation count = 0
+	--> recency = null
+John Zeringue added implicit method invocation count = 0
+	--> recency = null
+John Zeringue added class instantiation count = 0
+	--> recency = null
+John Zeringue added nested count = 0
+	--> recency = null
+John Zeringue added bounds count = 0
+	--> recency = null
+
+****Parsing for addition at revision b29d0441c72d11dd7b9aaa5dc4a9b150042aa8b8****
+
+Added MarsException.java to .\/MARS\ repository source files.
+Added Sample.java to .\/MARS\ repository source files.
+Added SampleRegistryClient.java to .\/MARS\ repository source files.
+Added SampleSource.java to .\/MARS\ repository source files.
+Added SampleTest.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsException.java to .\/MARS\ repository source files.
+Added ScrippsSample.java to .\/MARS\ repository source files.
+Added ScrippsSampleAdapter.java to .\/MARS\ repository source files.
+Added ScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsSampleSourceAdapter.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSourceTest.java to .\/MARS\ repository source files.
+Added ScrippsSampleAdapterTest.java to .\/MARS\ repository source files.
+Added ScrippsSampleTest.java to .\/MARS\ repository source files.
+Added AppComponent.java to .\/MARS\ repository source files.
+Added BuilderModule.java to .\/MARS\ repository source files.
+Added ScrippsBuilderFactory.java to .\/MARS\ repository source files.
+Added CsvFileChooserButton.java to .\/MARS\ repository source files.
+Added ScrippsMenuBar.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added ScrippsImportWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindowFactory.java to .\/MARS\ repository source files.
+Added SesarLoginDialog.java to .\/MARS\ repository source files.
+Added SesarLoginDialogPane.java to .\/MARS\ repository source files.
+Added SesarLoginDialogView.java to .\/MARS\ repository source files.
+Added SesarModule.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindow.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindowFactory.java to .\/MARS\ repository source files.
+Added Main.java to .\/MARS\ repository source files.
+Added ScrippsApplication.java to .\/MARS\ repository source files.
+Added Classification.java to .\/MARS\ repository source files.
+Added IgneousDetails.java to .\/MARS\ repository source files.
+Added IgneousType.java to .\/MARS\ repository source files.
+Added MacrobiologyDetails.java to .\/MARS\ repository source files.
+Added MetamorphicDetails.java to .\/MARS\ repository source files.
+Added ObjectFactory.java to .\/MARS\ repository source files.
+Added OreDetails.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added Samples.java to .\/MARS\ repository source files.
+Added SedimentaryDetails.java to .\/MARS\ repository source files.
+Added SesarClient.java to .\/MARS\ repository source files.
+Added SesarException.java to .\/MARS\ repository source files.
+Added SesarTranslator.java to .\/MARS\ repository source files.
+Added SesarClientTest.java to .\/MARS\ repository source files.
+Added SesarTranslatorTest.java to .\/MARS\ repository source files.
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+String result = null;
+ScrippsSample result = null;
+coreSample=coreSampleCsvReader.readNext()
+String[] coreSample = coreSampleCsvReader.readNext();
+coreInterval=coreIntervalCsvReader.readNext()
+String[] coreInterval = coreIntervalCsvReader.readNext();
+CSVReader coreSampleCsvReader = new CSVReader(readerFor(coreSampleCsv));
+CSVReader coreIntervalCsvReader = new CSVReader(readerFor(coreIntervalCsv));
+List<ScrippsSample> result = new ArrayList<>();
+ScrippsSample nextScrippsSample;
+coreSampleCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Sample.csv")
+Path coreSampleCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Sample.csv");
+coreIntervalCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Interval.csv")
+Path coreIntervalCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Interval.csv");
+facilityCode=scrippsSample.setFacilityCode("ABC").getFacilityCode()
+String facilityCode = scrippsSample
+                .setFacilityCode("ABC")
+                .getFacilityCode();
+shipCode=scrippsSample.setShipCode("123").getShipCode()
+String shipCode = scrippsSample
+                .setShipCode("123")
+                .getShipCode();
+platform=scrippsSample.setPlatform("Falcon").getPlatform()
+String platform = scrippsSample
+                .setPlatform("Falcon")
+                .getPlatform();
+cruise=scrippsSample.setCruise("CIRDLES").getCruise()
+String cruise = scrippsSample
+                .setCruise("CIRDLES")
+                .getCruise();
+sample=scrippsSample.setSample("CIRDLES-001").getSample()
+String sample = scrippsSample
+                .setSample("CIRDLES-001")
+                .getSample();
+device=scrippsSample.setDevice("core, gravity").getDevice()
+String device = scrippsSample
+                .setDevice("core, gravity")
+                .getDevice();
+beginDate=scrippsSample.setBeginDate("20000101").getBeginDate()
+String beginDate = scrippsSample
+                .setBeginDate("20000101")
+                .getBeginDate();
+endDate=scrippsSample.setEndDate("20000101").getEndDate()
+String endDate = scrippsSample
+                .setEndDate("20000101")
+                .getEndDate();
+lat=scrippsSample.setLat(new BigDecimal("32.7833")).getLat()
+BigDecimal lat = scrippsSample
+                .setLat(new BigDecimal("32.7833"))
+                .getLat();
+endLatmin=scrippsSample.setEndLatmin(new BigDecimal("32.7833")).getEndLatmin()
+BigDecimal endLatmin = scrippsSample
+                .setEndLatmin(new BigDecimal("32.7833"))
+                .getEndLatmin();
+lon=scrippsSample.setLon(new BigDecimal("-79.9333")).getLon()
+BigDecimal lon = scrippsSample
+                .setLon(new BigDecimal("-79.9333"))
+                .getLon();
+endLon=scrippsSample.setEndLon(new BigDecimal("-79.9333")).getEndLon()
+BigDecimal endLon = scrippsSample
+                .setEndLon(new BigDecimal("-79.9333"))
+                .getEndLon();
+waterDepth=scrippsSample.setWaterDepth(new BigDecimal("10")).getWaterDepth()
+BigDecimal waterDepth = scrippsSample
+                .setWaterDepth(new BigDecimal("10"))
+                .getWaterDepth();
+endWaterDepth=scrippsSample.setEndWaterDepth(new BigDecimal("10")).getEndWaterDepth()
+BigDecimal endWaterDepth = scrippsSample
+                .setEndWaterDepth(new BigDecimal("10"))
+                .getEndWaterDepth();
+Builder<?> builder;
+Builder<?> builder;
+FileChooser csvFileChooser = new FileChooser();
+ExtensionFilter csvExtensionFilter = new ExtensionFilter(
+                "Comma Separated (.csv)",
+                "*.csv");
+chosenFile=fileChooser.get()
+File chosenFile = fileChooser.get();
+ScrippsSampleSource sampleSource = new CsvScrippsSampleSource(
+                coreSamplesCsv.getPath(),
+                coreIntervalsCsv.getPath());
+verificationWindow=verificationWindowFactory.createScrippsVerificationWindow(sampleSource)
+Parent verificationWindow = verificationWindowFactory
+                .createScrippsVerificationWindow(sampleSource);
+Stage stage = new Stage();
+ScrippsSampleSourceAdapter sampleSource
+                = new ScrippsSampleSourceAdapter(scrippsSampleSource);
+verificationWindow=registrationWindowFactory.createScrippsRegistrationWindow(sampleSource)
+Parent verificationWindow = registrationWindowFactory
+                .createScrippsRegistrationWindow(sampleSource);
+Stage stage = new Stage();
+appComponent=DaggerAppComponent.create()
+AppComponent appComponent = DaggerAppComponent.create();
+parent=appComponent.scrippsImportWindow()
+Parent parent = appComponent.scrippsImportWindow();
+Scene scene = new Scene(parent);
+response=baseTarget.path(CREDENTIALS_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(Entity.text("" + "username=" + username + "\n"+ "password="+ password)).readEntity(String.class)
+String response = baseTarget.path(CREDENTIALS_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(Entity.text(""
+                        + "username=" + username + "\n"
+                        + "password=" + password))
+                .readEntity(String.class);
+samples=sampleMapper.translateToSesarSamples(sampleSource)
+Samples samples = sampleMapper.translateToSesarSamples(sampleSource);
+String samplesXml;
+jaxbContext=JAXBContext.newInstance(Samples.class)
+JAXBContext jaxbContext = JAXBContext.newInstance(Samples.class);
+marshaller=jaxbContext.createMarshaller()
+Marshaller marshaller = jaxbContext.createMarshaller();
+ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+Form uploadForm = new Form();
+response=baseTarget.path(UPLOAD_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(form(uploadForm))
+Response response = baseTarget.path(UPLOAD_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(form(uploadForm));
+XMLGregorianCalendar result = null;
+mappedSamplesSample=factory.createSamplesSample()
+Samples.Sample mappedSamplesSample = factory.createSamplesSample();
+mappedSamples=factory.createSamples()
+Samples mappedSamples = factory.createSamples();
+Samples samples = new Samples();
+Samples.Sample samplesSample = new Samples.Sample();
+Samples actual = mapper.translateToSesarSamples(() -> asList(sample));
+actualSample=actual.getSample().get(0)
+Samples.Sample actualSample = actual.getSample().get(0);
+Samples.Sample expectedSample = new Samples.Sample();
+
+Diff of b29d0441c72d11dd7b9aaa5dc4a9b150042aa8b8 and 2ca8503853e8c8928e237894512da7bb3e614f64:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit 'b29d0441c72d11dd7b9aaa5dc4a9b150042aa8b8' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision 2ca8503853e8c8928e237894512da7bb3e614f64****
+
+Added MarsException.java to .\/MARS\ repository source files.
+Added Sample.java to .\/MARS\ repository source files.
+Added SampleRegistryClient.java to .\/MARS\ repository source files.
+Added SampleSource.java to .\/MARS\ repository source files.
+Added SampleTest.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsException.java to .\/MARS\ repository source files.
+Added ScrippsSample.java to .\/MARS\ repository source files.
+Added ScrippsSampleAdapter.java to .\/MARS\ repository source files.
+Added ScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsSampleSourceAdapter.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSourceTest.java to .\/MARS\ repository source files.
+Added ScrippsSampleAdapterTest.java to .\/MARS\ repository source files.
+Added ScrippsSampleTest.java to .\/MARS\ repository source files.
+Added AppComponent.java to .\/MARS\ repository source files.
+Added BuilderModule.java to .\/MARS\ repository source files.
+Added ScrippsBuilderFactory.java to .\/MARS\ repository source files.
+Added CsvFileChooserButton.java to .\/MARS\ repository source files.
+Added ScrippsMenuBar.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added ScrippsImportWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindowFactory.java to .\/MARS\ repository source files.
+Added SesarLoginDialog.java to .\/MARS\ repository source files.
+Added SesarLoginDialogPane.java to .\/MARS\ repository source files.
+Added SesarLoginDialogView.java to .\/MARS\ repository source files.
+Added SesarModule.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindow.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindowFactory.java to .\/MARS\ repository source files.
+Added Main.java to .\/MARS\ repository source files.
+Added ScrippsApplication.java to .\/MARS\ repository source files.
+Added Classification.java to .\/MARS\ repository source files.
+Added IgneousDetails.java to .\/MARS\ repository source files.
+Added IgneousType.java to .\/MARS\ repository source files.
+Added MacrobiologyDetails.java to .\/MARS\ repository source files.
+Added MetamorphicDetails.java to .\/MARS\ repository source files.
+Added ObjectFactory.java to .\/MARS\ repository source files.
+Added OreDetails.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added Samples.java to .\/MARS\ repository source files.
+Added SedimentaryDetails.java to .\/MARS\ repository source files.
+Added SesarClient.java to .\/MARS\ repository source files.
+Added SesarException.java to .\/MARS\ repository source files.
+Added SesarTranslator.java to .\/MARS\ repository source files.
+Added SesarClientTest.java to .\/MARS\ repository source files.
+Added SesarTranslatorTest.java to .\/MARS\ repository source files.
+
+ Generics pattern public class SampleTest was added at revision 2ca8503853e8c8928e237894512da7bb3e614f64
+
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+String result = null;
+ScrippsSample result = null;
+coreSample=coreSampleCsvReader.readNext()
+String[] coreSample = coreSampleCsvReader.readNext();
+coreInterval=coreIntervalCsvReader.readNext()
+String[] coreInterval = coreIntervalCsvReader.readNext();
+CSVReader coreSampleCsvReader = new CSVReader(readerFor(coreSampleCsv));
+CSVReader coreIntervalCsvReader = new CSVReader(readerFor(coreIntervalCsv));
+List<ScrippsSample> result = new ArrayList<>();
+ScrippsSample nextScrippsSample;
+coreSampleCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Sample.csv")
+Path coreSampleCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Sample.csv");
+coreIntervalCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Interval.csv")
+Path coreIntervalCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Interval.csv");
+facilityCode=scrippsSample.setFacilityCode("ABC").getFacilityCode()
+String facilityCode = scrippsSample
+                .setFacilityCode("ABC")
+                .getFacilityCode();
+shipCode=scrippsSample.setShipCode("123").getShipCode()
+String shipCode = scrippsSample
+                .setShipCode("123")
+                .getShipCode();
+platform=scrippsSample.setPlatform("Falcon").getPlatform()
+String platform = scrippsSample
+                .setPlatform("Falcon")
+                .getPlatform();
+cruise=scrippsSample.setCruise("CIRDLES").getCruise()
+String cruise = scrippsSample
+                .setCruise("CIRDLES")
+                .getCruise();
+sample=scrippsSample.setSample("CIRDLES-001").getSample()
+String sample = scrippsSample
+                .setSample("CIRDLES-001")
+                .getSample();
+device=scrippsSample.setDevice("core, gravity").getDevice()
+String device = scrippsSample
+                .setDevice("core, gravity")
+                .getDevice();
+beginDate=scrippsSample.setBeginDate("20000101").getBeginDate()
+String beginDate = scrippsSample
+                .setBeginDate("20000101")
+                .getBeginDate();
+endDate=scrippsSample.setEndDate("20000101").getEndDate()
+String endDate = scrippsSample
+                .setEndDate("20000101")
+                .getEndDate();
+lat=scrippsSample.setLat(new BigDecimal("32.7833")).getLat()
+BigDecimal lat = scrippsSample
+                .setLat(new BigDecimal("32.7833"))
+                .getLat();
+endLatmin=scrippsSample.setEndLatmin(new BigDecimal("32.7833")).getEndLatmin()
+BigDecimal endLatmin = scrippsSample
+                .setEndLatmin(new BigDecimal("32.7833"))
+                .getEndLatmin();
+lon=scrippsSample.setLon(new BigDecimal("-79.9333")).getLon()
+BigDecimal lon = scrippsSample
+                .setLon(new BigDecimal("-79.9333"))
+                .getLon();
+endLon=scrippsSample.setEndLon(new BigDecimal("-79.9333")).getEndLon()
+BigDecimal endLon = scrippsSample
+                .setEndLon(new BigDecimal("-79.9333"))
+                .getEndLon();
+waterDepth=scrippsSample.setWaterDepth(new BigDecimal("10")).getWaterDepth()
+BigDecimal waterDepth = scrippsSample
+                .setWaterDepth(new BigDecimal("10"))
+                .getWaterDepth();
+endWaterDepth=scrippsSample.setEndWaterDepth(new BigDecimal("10")).getEndWaterDepth()
+BigDecimal endWaterDepth = scrippsSample
+                .setEndWaterDepth(new BigDecimal("10"))
+                .getEndWaterDepth();
+Builder<?> builder;
+Builder<?> builder;
+FileChooser csvFileChooser = new FileChooser();
+ExtensionFilter csvExtensionFilter = new ExtensionFilter(
+                "Comma Separated (.csv)",
+                "*.csv");
+chosenFile=fileChooser.get()
+File chosenFile = fileChooser.get();
+ScrippsSampleSource sampleSource = new CsvScrippsSampleSource(
+                coreSamplesCsv.getPath(),
+                coreIntervalsCsv.getPath());
+verificationWindow=verificationWindowFactory.createScrippsVerificationWindow(sampleSource)
+Parent verificationWindow = verificationWindowFactory
+                .createScrippsVerificationWindow(sampleSource);
+Stage stage = new Stage();
+ScrippsSampleSourceAdapter sampleSource
+                = new ScrippsSampleSourceAdapter(scrippsSampleSource);
+verificationWindow=registrationWindowFactory.createScrippsRegistrationWindow(sampleSource)
+Parent verificationWindow = registrationWindowFactory
+                .createScrippsRegistrationWindow(sampleSource);
+Stage stage = new Stage();
+appComponent=DaggerAppComponent.create()
+AppComponent appComponent = DaggerAppComponent.create();
+parent=appComponent.scrippsImportWindow()
+Parent parent = appComponent.scrippsImportWindow();
+Scene scene = new Scene(parent);
+response=baseTarget.path(CREDENTIALS_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(Entity.text("" + "username=" + username + "\n"+ "password="+ password)).readEntity(String.class)
+String response = baseTarget.path(CREDENTIALS_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(Entity.text(""
+                        + "username=" + username + "\n"
+                        + "password=" + password))
+                .readEntity(String.class);
+samples=sampleMapper.translateToSesarSamples(sampleSource)
+Samples samples = sampleMapper.translateToSesarSamples(sampleSource);
+String samplesXml;
+jaxbContext=JAXBContext.newInstance(Samples.class)
+JAXBContext jaxbContext = JAXBContext.newInstance(Samples.class);
+marshaller=jaxbContext.createMarshaller()
+Marshaller marshaller = jaxbContext.createMarshaller();
+ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+Form uploadForm = new Form();
+response=baseTarget.path(UPLOAD_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(form(uploadForm))
+Response response = baseTarget.path(UPLOAD_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(form(uploadForm));
+XMLGregorianCalendar result = null;
+mappedSamplesSample=factory.createSamplesSample()
+Samples.Sample mappedSamplesSample = factory.createSamplesSample();
+mappedSamples=factory.createSamples()
+Samples mappedSamples = factory.createSamples();
+Samples samples = new Samples();
+Samples.Sample samplesSample = new Samples.Sample();
+Samples actual = mapper.translateToSesarSamples(() -> asList(sample));
+actualSample=actual.getSample().get(0)
+Samples.Sample actualSample = actual.getSample().get(0);
+Samples.Sample expectedSample = new Samples.Sample();
+
+Diff of 2ca8503853e8c8928e237894512da7bb3e614f64 and bdd1826c1afb7b9ba64c210541670786c8132991:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 1
+	--> recency = months
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 2ca8503853e8c8928e237894512da7bb3e614f64 to bdd1826c1afb7b9ba64c210541670786c8132991
+
+
+****Parsing for addition at revision bdd1826c1afb7b9ba64c210541670786c8132991****
+
+Added MarsException.java to .\/MARS\ repository source files.
+Added Sample.java to .\/MARS\ repository source files.
+Added SampleRegistryClient.java to .\/MARS\ repository source files.
+Added SampleSource.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsException.java to .\/MARS\ repository source files.
+Added ScrippsSample.java to .\/MARS\ repository source files.
+Added ScrippsSampleAdapter.java to .\/MARS\ repository source files.
+Added ScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsSampleSourceAdapter.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSourceTest.java to .\/MARS\ repository source files.
+Added ScrippsSampleTest.java to .\/MARS\ repository source files.
+Added AppComponent.java to .\/MARS\ repository source files.
+Added BuilderModule.java to .\/MARS\ repository source files.
+Added ScrippsBuilderFactory.java to .\/MARS\ repository source files.
+Added CsvFileChooserButton.java to .\/MARS\ repository source files.
+Added ScrippsMenuBar.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added ScrippsImportWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindowFactory.java to .\/MARS\ repository source files.
+Added SesarLoginDialog.java to .\/MARS\ repository source files.
+Added SesarLoginDialogPane.java to .\/MARS\ repository source files.
+Added SesarLoginDialogView.java to .\/MARS\ repository source files.
+Added SesarModule.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindow.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindowFactory.java to .\/MARS\ repository source files.
+Added Main.java to .\/MARS\ repository source files.
+Added ScrippsApplication.java to .\/MARS\ repository source files.
+Added Classification.java to .\/MARS\ repository source files.
+Added IgneousDetails.java to .\/MARS\ repository source files.
+Added IgneousType.java to .\/MARS\ repository source files.
+Added MacrobiologyDetails.java to .\/MARS\ repository source files.
+Added MetamorphicDetails.java to .\/MARS\ repository source files.
+Added ObjectFactory.java to .\/MARS\ repository source files.
+Added OreDetails.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added Samples.java to .\/MARS\ repository source files.
+Added SedimentaryDetails.java to .\/MARS\ repository source files.
+Added SesarClient.java to .\/MARS\ repository source files.
+Added SesarException.java to .\/MARS\ repository source files.
+Added SesarTranslator.java to .\/MARS\ repository source files.
+Added SesarClientTest.java to .\/MARS\ repository source files.
+Added SesarTranslatorTest.java to .\/MARS\ repository source files.
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+String result = null;
+ScrippsSample result = null;
+coreSample=coreSampleCsvReader.readNext()
+String[] coreSample = coreSampleCsvReader.readNext();
+coreInterval=coreIntervalCsvReader.readNext()
+String[] coreInterval = coreIntervalCsvReader.readNext();
+CSVReader coreSampleCsvReader = new CSVReader(readerFor(coreSampleCsv));
+CSVReader coreIntervalCsvReader = new CSVReader(readerFor(coreIntervalCsv));
+List<ScrippsSample> result = new ArrayList<>();
+ScrippsSample nextScrippsSample;
+coreSampleCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Sample.csv")
+Path coreSampleCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Sample.csv");
+coreIntervalCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Interval.csv")
+Path coreIntervalCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Interval.csv");
+facilityCode=scrippsSample.setFacilityCode("ABC").getFacilityCode()
+String facilityCode = scrippsSample
+                .setFacilityCode("ABC")
+                .getFacilityCode();
+shipCode=scrippsSample.setShipCode("123").getShipCode()
+String shipCode = scrippsSample
+                .setShipCode("123")
+                .getShipCode();
+platform=scrippsSample.setPlatform("Falcon").getPlatform()
+String platform = scrippsSample
+                .setPlatform("Falcon")
+                .getPlatform();
+cruise=scrippsSample.setCruise("CIRDLES").getCruise()
+String cruise = scrippsSample
+                .setCruise("CIRDLES")
+                .getCruise();
+sample=scrippsSample.setSample("CIRDLES-001").getSample()
+String sample = scrippsSample
+                .setSample("CIRDLES-001")
+                .getSample();
+device=scrippsSample.setDevice("core, gravity").getDevice()
+String device = scrippsSample
+                .setDevice("core, gravity")
+                .getDevice();
+beginDate=scrippsSample.setBeginDate("20000101").getBeginDate()
+String beginDate = scrippsSample
+                .setBeginDate("20000101")
+                .getBeginDate();
+endDate=scrippsSample.setEndDate("20000101").getEndDate()
+String endDate = scrippsSample
+                .setEndDate("20000101")
+                .getEndDate();
+lat=scrippsSample.setLat(new BigDecimal("32.7833")).getLat()
+BigDecimal lat = scrippsSample
+                .setLat(new BigDecimal("32.7833"))
+                .getLat();
+endLatmin=scrippsSample.setEndLatmin(new BigDecimal("32.7833")).getEndLatmin()
+BigDecimal endLatmin = scrippsSample
+                .setEndLatmin(new BigDecimal("32.7833"))
+                .getEndLatmin();
+lon=scrippsSample.setLon(new BigDecimal("-79.9333")).getLon()
+BigDecimal lon = scrippsSample
+                .setLon(new BigDecimal("-79.9333"))
+                .getLon();
+endLon=scrippsSample.setEndLon(new BigDecimal("-79.9333")).getEndLon()
+BigDecimal endLon = scrippsSample
+                .setEndLon(new BigDecimal("-79.9333"))
+                .getEndLon();
+waterDepth=scrippsSample.setWaterDepth(new BigDecimal("10")).getWaterDepth()
+BigDecimal waterDepth = scrippsSample
+                .setWaterDepth(new BigDecimal("10"))
+                .getWaterDepth();
+endWaterDepth=scrippsSample.setEndWaterDepth(new BigDecimal("10")).getEndWaterDepth()
+BigDecimal endWaterDepth = scrippsSample
+                .setEndWaterDepth(new BigDecimal("10"))
+                .getEndWaterDepth();
+Builder<?> builder;
+Builder<?> builder;
+FileChooser csvFileChooser = new FileChooser();
+ExtensionFilter csvExtensionFilter = new ExtensionFilter(
+                "Comma Separated (.csv)",
+                "*.csv");
+chosenFile=fileChooser.get()
+File chosenFile = fileChooser.get();
+ScrippsSampleSource sampleSource = new CsvScrippsSampleSource(
+                coreSamplesCsv.getPath(),
+                coreIntervalsCsv.getPath());
+verificationWindow=verificationWindowFactory.createScrippsVerificationWindow(sampleSource)
+Parent verificationWindow = verificationWindowFactory
+                .createScrippsVerificationWindow(sampleSource);
+Stage stage = new Stage();
+ScrippsSampleSourceAdapter sampleSource
+                = new ScrippsSampleSourceAdapter(scrippsSampleSource);
+verificationWindow=registrationWindowFactory.createScrippsRegistrationWindow(sampleSource)
+Parent verificationWindow = registrationWindowFactory
+                .createScrippsRegistrationWindow(sampleSource);
+Stage stage = new Stage();
+appComponent=DaggerAppComponent.create()
+AppComponent appComponent = DaggerAppComponent.create();
+parent=appComponent.scrippsImportWindow()
+Parent parent = appComponent.scrippsImportWindow();
+Scene scene = new Scene(parent);
+response=baseTarget.path(CREDENTIALS_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(Entity.text("" + "username=" + username + "\n"+ "password="+ password)).readEntity(String.class)
+String response = baseTarget.path(CREDENTIALS_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(Entity.text(""
+                        + "username=" + username + "\n"
+                        + "password=" + password))
+                .readEntity(String.class);
+samples=sampleMapper.translateToSesarSamples(sampleSource)
+Samples samples = sampleMapper.translateToSesarSamples(sampleSource);
+String samplesXml;
+jaxbContext=JAXBContext.newInstance(Samples.class)
+JAXBContext jaxbContext = JAXBContext.newInstance(Samples.class);
+marshaller=jaxbContext.createMarshaller()
+Marshaller marshaller = jaxbContext.createMarshaller();
+ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+Form uploadForm = new Form();
+response=baseTarget.path(UPLOAD_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(form(uploadForm))
+Response response = baseTarget.path(UPLOAD_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(form(uploadForm));
+XMLGregorianCalendar result = null;
+mappedSamplesSample=factory.createSamplesSample()
+Samples.Sample mappedSamplesSample = factory.createSamplesSample();
+mappedSamples=factory.createSamples()
+Samples mappedSamples = factory.createSamples();
+Samples samples = new Samples();
+Samples.Sample samplesSample = new Samples.Sample();
+Samples actual = mapper.translateToSesarSamples(() -> asList(sample));
+actualSample=actual.getSample().get(0)
+Samples.Sample actualSample = actual.getSample().get(0);
+Samples.Sample expectedSample = new Samples.Sample();
+
+Diff of bdd1826c1afb7b9ba64c210541670786c8132991 and 9413616cfd1604c5f1a90fff1d8c3d39417e6214:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 1
+	--> recency = months
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit 'bdd1826c1afb7b9ba64c210541670786c8132991' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision 9413616cfd1604c5f1a90fff1d8c3d39417e6214****
+
+Added MarsException.java to .\/MARS\ repository source files.
+Added Sample.java to .\/MARS\ repository source files.
+Added SampleRegistryClient.java to .\/MARS\ repository source files.
+Added SampleSource.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsException.java to .\/MARS\ repository source files.
+Added ScrippsSample.java to .\/MARS\ repository source files.
+Added ScrippsSampleAdapter.java to .\/MARS\ repository source files.
+Added ScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsSampleSourceAdapter.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSourceTest.java to .\/MARS\ repository source files.
+Added ScrippsSampleTest.java to .\/MARS\ repository source files.
+Added AppComponent.java to .\/MARS\ repository source files.
+Added BuilderModule.java to .\/MARS\ repository source files.
+Added ScrippsBuilderFactory.java to .\/MARS\ repository source files.
+Added CsvFileChooserButton.java to .\/MARS\ repository source files.
+Added ScrippsMenuBar.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added ScrippsImportWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindowFactory.java to .\/MARS\ repository source files.
+Added SesarLoginDialog.java to .\/MARS\ repository source files.
+Added SesarLoginDialogPane.java to .\/MARS\ repository source files.
+Added SesarLoginDialogView.java to .\/MARS\ repository source files.
+Added SesarModule.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindow.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindowFactory.java to .\/MARS\ repository source files.
+Added Main.java to .\/MARS\ repository source files.
+Added ScrippsApplication.java to .\/MARS\ repository source files.
+Added Classification.java to .\/MARS\ repository source files.
+Added IgneousDetails.java to .\/MARS\ repository source files.
+Added IgneousType.java to .\/MARS\ repository source files.
+Added MacrobiologyDetails.java to .\/MARS\ repository source files.
+Added MetamorphicDetails.java to .\/MARS\ repository source files.
+Added ObjectFactory.java to .\/MARS\ repository source files.
+Added OreDetails.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added Samples.java to .\/MARS\ repository source files.
+Added SedimentaryDetails.java to .\/MARS\ repository source files.
+Added SesarClient.java to .\/MARS\ repository source files.
+Added SesarException.java to .\/MARS\ repository source files.
+Added SesarTranslator.java to .\/MARS\ repository source files.
+Added SesarClientTest.java to .\/MARS\ repository source files.
+Added SesarTranslatorTest.java to .\/MARS\ repository source files.
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+String result = null;
+ScrippsSample result = null;
+coreSample=coreSampleCsvReader.readNext()
+String[] coreSample = coreSampleCsvReader.readNext();
+coreInterval=coreIntervalCsvReader.readNext()
+String[] coreInterval = coreIntervalCsvReader.readNext();
+CSVReader coreSampleCsvReader = new CSVReader(readerFor(coreSampleCsv));
+CSVReader coreIntervalCsvReader = new CSVReader(readerFor(coreIntervalCsv));
+List<ScrippsSample> result = new ArrayList<>();
+ScrippsSample nextScrippsSample;
+coreSampleCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Sample.csv")
+Path coreSampleCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Sample.csv");
+coreIntervalCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Interval.csv")
+Path coreIntervalCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Interval.csv");
+facilityCode=scrippsSample.setFacilityCode("ABC").getFacilityCode()
+String facilityCode = scrippsSample
+                .setFacilityCode("ABC")
+                .getFacilityCode();
+shipCode=scrippsSample.setShipCode("123").getShipCode()
+String shipCode = scrippsSample
+                .setShipCode("123")
+                .getShipCode();
+platform=scrippsSample.setPlatform("Falcon").getPlatform()
+String platform = scrippsSample
+                .setPlatform("Falcon")
+                .getPlatform();
+cruise=scrippsSample.setCruise("CIRDLES").getCruise()
+String cruise = scrippsSample
+                .setCruise("CIRDLES")
+                .getCruise();
+sample=scrippsSample.setSample("CIRDLES-001").getSample()
+String sample = scrippsSample
+                .setSample("CIRDLES-001")
+                .getSample();
+device=scrippsSample.setDevice("core, gravity").getDevice()
+String device = scrippsSample
+                .setDevice("core, gravity")
+                .getDevice();
+beginDate=scrippsSample.setBeginDate("20000101").getBeginDate()
+String beginDate = scrippsSample
+                .setBeginDate("20000101")
+                .getBeginDate();
+endDate=scrippsSample.setEndDate("20000101").getEndDate()
+String endDate = scrippsSample
+                .setEndDate("20000101")
+                .getEndDate();
+lat=scrippsSample.setLat(new BigDecimal("32.7833")).getLat()
+BigDecimal lat = scrippsSample
+                .setLat(new BigDecimal("32.7833"))
+                .getLat();
+endLatmin=scrippsSample.setEndLatmin(new BigDecimal("32.7833")).getEndLatmin()
+BigDecimal endLatmin = scrippsSample
+                .setEndLatmin(new BigDecimal("32.7833"))
+                .getEndLatmin();
+lon=scrippsSample.setLon(new BigDecimal("-79.9333")).getLon()
+BigDecimal lon = scrippsSample
+                .setLon(new BigDecimal("-79.9333"))
+                .getLon();
+endLon=scrippsSample.setEndLon(new BigDecimal("-79.9333")).getEndLon()
+BigDecimal endLon = scrippsSample
+                .setEndLon(new BigDecimal("-79.9333"))
+                .getEndLon();
+waterDepth=scrippsSample.setWaterDepth(new BigDecimal("10")).getWaterDepth()
+BigDecimal waterDepth = scrippsSample
+                .setWaterDepth(new BigDecimal("10"))
+                .getWaterDepth();
+endWaterDepth=scrippsSample.setEndWaterDepth(new BigDecimal("10")).getEndWaterDepth()
+BigDecimal endWaterDepth = scrippsSample
+                .setEndWaterDepth(new BigDecimal("10"))
+                .getEndWaterDepth();
+Builder<?> builder;
+Builder<?> builder;
+FileChooser csvFileChooser = new FileChooser();
+ExtensionFilter csvExtensionFilter = new ExtensionFilter(
+                "Comma Separated (.csv)",
+                "*.csv");
+chosenFile=fileChooser.get()
+File chosenFile = fileChooser.get();
+ScrippsSampleSource sampleSource = new CsvScrippsSampleSource(
+                coreSamplesCsv.getPath(),
+                coreIntervalsCsv.getPath());
+verificationWindow=verificationWindowFactory.createScrippsVerificationWindow(sampleSource)
+Parent verificationWindow = verificationWindowFactory
+                .createScrippsVerificationWindow(sampleSource);
+Stage stage = new Stage();
+ScrippsSampleSourceAdapter sampleSource
+                = new ScrippsSampleSourceAdapter(scrippsSampleSource);
+verificationWindow=registrationWindowFactory.createScrippsRegistrationWindow(sampleSource)
+Parent verificationWindow = registrationWindowFactory
+                .createScrippsRegistrationWindow(sampleSource);
+Stage stage = new Stage();
+appComponent=DaggerAppComponent.create()
+AppComponent appComponent = DaggerAppComponent.create();
+parent=appComponent.scrippsImportWindow()
+Parent parent = appComponent.scrippsImportWindow();
+Scene scene = new Scene(parent);
+response=baseTarget.path(CREDENTIALS_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(Entity.text("" + "username=" + username + "\n"+ "password="+ password)).readEntity(String.class)
+String response = baseTarget.path(CREDENTIALS_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(Entity.text(""
+                        + "username=" + username + "\n"
+                        + "password=" + password))
+                .readEntity(String.class);
+samples=sampleMapper.translateToSesarSamples(sampleSource)
+Samples samples = sampleMapper.translateToSesarSamples(sampleSource);
+String samplesXml;
+jaxbContext=JAXBContext.newInstance(Samples.class)
+JAXBContext jaxbContext = JAXBContext.newInstance(Samples.class);
+marshaller=jaxbContext.createMarshaller()
+Marshaller marshaller = jaxbContext.createMarshaller();
+ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+Form uploadForm = new Form();
+response=baseTarget.path(UPLOAD_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(form(uploadForm))
+Response response = baseTarget.path(UPLOAD_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(form(uploadForm));
+XMLGregorianCalendar result = null;
+mappedSamplesSample=factory.createSamplesSample()
+Samples.Sample mappedSamplesSample = factory.createSamplesSample();
+mappedSamples=factory.createSamples()
+Samples mappedSamples = factory.createSamples();
+Samples samples = new Samples();
+Samples.Sample samplesSample = new Samples.Sample();
+Samples actual = mapper.translateToSesarSamples(() -> asList(sample));
+actualSample=actual.getSample().get(0)
+Samples.Sample actualSample = actual.getSample().get(0);
+Samples.Sample expectedSample = new Samples.Sample();
+
+Diff of 9413616cfd1604c5f1a90fff1d8c3d39417e6214 and 3d321cad20e1865c89f212b63efdcdcf6d9d112d:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 1
+	--> recency = months
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 9413616cfd1604c5f1a90fff1d8c3d39417e6214 to 3d321cad20e1865c89f212b63efdcdcf6d9d112d
+
+
+****Parsing for addition at revision 3d321cad20e1865c89f212b63efdcdcf6d9d112d****
+
+Added MarsException.java to .\/MARS\ repository source files.
+Added Sample.java to .\/MARS\ repository source files.
+Added SampleRegistryClient.java to .\/MARS\ repository source files.
+Added SampleSource.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsException.java to .\/MARS\ repository source files.
+Added ScrippsSample.java to .\/MARS\ repository source files.
+Added ScrippsSampleAdapter.java to .\/MARS\ repository source files.
+Added ScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsSampleSourceAdapter.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSourceTest.java to .\/MARS\ repository source files.
+Added ScrippsSampleTest.java to .\/MARS\ repository source files.
+Added AppComponent.java to .\/MARS\ repository source files.
+Added BuilderModule.java to .\/MARS\ repository source files.
+Added ScrippsBuilderFactory.java to .\/MARS\ repository source files.
+Added CsvFileChooserButton.java to .\/MARS\ repository source files.
+Added ScrippsMenuBar.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added ScrippsImportWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindowFactory.java to .\/MARS\ repository source files.
+Added SesarLoginDialog.java to .\/MARS\ repository source files.
+Added SesarLoginDialogPane.java to .\/MARS\ repository source files.
+Added SesarLoginDialogView.java to .\/MARS\ repository source files.
+Added SesarModule.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindow.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindowFactory.java to .\/MARS\ repository source files.
+Added Main.java to .\/MARS\ repository source files.
+Added ScrippsApplication.java to .\/MARS\ repository source files.
+Added Classification.java to .\/MARS\ repository source files.
+Added IgneousDetails.java to .\/MARS\ repository source files.
+Added IgneousType.java to .\/MARS\ repository source files.
+Added MacrobiologyDetails.java to .\/MARS\ repository source files.
+Added MetamorphicDetails.java to .\/MARS\ repository source files.
+Added ObjectFactory.java to .\/MARS\ repository source files.
+Added OreDetails.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added Samples.java to .\/MARS\ repository source files.
+Added SedimentaryDetails.java to .\/MARS\ repository source files.
+Added SesarClient.java to .\/MARS\ repository source files.
+Added SesarException.java to .\/MARS\ repository source files.
+Added SesarTranslator.java to .\/MARS\ repository source files.
+Added SesarClientTest.java to .\/MARS\ repository source files.
+Added SesarTranslatorTest.java to .\/MARS\ repository source files.
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+String result = null;
+ScrippsSample result = null;
+coreSample=coreSampleCsvReader.readNext()
+String[] coreSample = coreSampleCsvReader.readNext();
+coreInterval=coreIntervalCsvReader.readNext()
+String[] coreInterval = coreIntervalCsvReader.readNext();
+CSVReader coreSampleCsvReader = new CSVReader(readerFor(coreSampleCsv));
+CSVReader coreIntervalCsvReader = new CSVReader(readerFor(coreIntervalCsv));
+List<ScrippsSample> result = new ArrayList<>();
+ScrippsSample nextScrippsSample;
+coreSampleCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Sample.csv")
+Path coreSampleCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Sample.csv");
+coreIntervalCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Interval.csv")
+Path coreIntervalCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Interval.csv");
+facilityCode=scrippsSample.setFacilityCode("ABC").getFacilityCode()
+String facilityCode = scrippsSample
+                .setFacilityCode("ABC")
+                .getFacilityCode();
+shipCode=scrippsSample.setShipCode("123").getShipCode()
+String shipCode = scrippsSample
+                .setShipCode("123")
+                .getShipCode();
+platform=scrippsSample.setPlatform("Falcon").getPlatform()
+String platform = scrippsSample
+                .setPlatform("Falcon")
+                .getPlatform();
+cruise=scrippsSample.setCruise("CIRDLES").getCruise()
+String cruise = scrippsSample
+                .setCruise("CIRDLES")
+                .getCruise();
+sample=scrippsSample.setSample("CIRDLES-001").getSample()
+String sample = scrippsSample
+                .setSample("CIRDLES-001")
+                .getSample();
+device=scrippsSample.setDevice("core, gravity").getDevice()
+String device = scrippsSample
+                .setDevice("core, gravity")
+                .getDevice();
+beginDate=scrippsSample.setBeginDate("20000101").getBeginDate()
+String beginDate = scrippsSample
+                .setBeginDate("20000101")
+                .getBeginDate();
+endDate=scrippsSample.setEndDate("20000101").getEndDate()
+String endDate = scrippsSample
+                .setEndDate("20000101")
+                .getEndDate();
+lat=scrippsSample.setLat(new BigDecimal("32.7833")).getLat()
+BigDecimal lat = scrippsSample
+                .setLat(new BigDecimal("32.7833"))
+                .getLat();
+endLatmin=scrippsSample.setEndLatmin(new BigDecimal("32.7833")).getEndLatmin()
+BigDecimal endLatmin = scrippsSample
+                .setEndLatmin(new BigDecimal("32.7833"))
+                .getEndLatmin();
+lon=scrippsSample.setLon(new BigDecimal("-79.9333")).getLon()
+BigDecimal lon = scrippsSample
+                .setLon(new BigDecimal("-79.9333"))
+                .getLon();
+endLon=scrippsSample.setEndLon(new BigDecimal("-79.9333")).getEndLon()
+BigDecimal endLon = scrippsSample
+                .setEndLon(new BigDecimal("-79.9333"))
+                .getEndLon();
+waterDepth=scrippsSample.setWaterDepth(new BigDecimal("10")).getWaterDepth()
+BigDecimal waterDepth = scrippsSample
+                .setWaterDepth(new BigDecimal("10"))
+                .getWaterDepth();
+endWaterDepth=scrippsSample.setEndWaterDepth(new BigDecimal("10")).getEndWaterDepth()
+BigDecimal endWaterDepth = scrippsSample
+                .setEndWaterDepth(new BigDecimal("10"))
+                .getEndWaterDepth();
+Builder<?> builder;
+Builder<?> builder;
+FileChooser csvFileChooser = new FileChooser();
+ExtensionFilter csvExtensionFilter = new ExtensionFilter(
+                "Comma Separated (.csv)",
+                "*.csv");
+chosenFile=fileChooser.get()
+File chosenFile = fileChooser.get();
+ScrippsSampleSource sampleSource = new CsvScrippsSampleSource(
+                coreSamplesCsv.getPath(),
+                coreIntervalsCsv.getPath());
+verificationWindow=verificationWindowFactory.createScrippsVerificationWindow(sampleSource)
+Parent verificationWindow = verificationWindowFactory
+                .createScrippsVerificationWindow(sampleSource);
+Stage stage = new Stage();
+ScrippsSampleSourceAdapter sampleSource
+                = new ScrippsSampleSourceAdapter(scrippsSampleSource);
+verificationWindow=registrationWindowFactory.createScrippsRegistrationWindow(sampleSource)
+Parent verificationWindow = registrationWindowFactory
+                .createScrippsRegistrationWindow(sampleSource);
+Stage stage = new Stage();
+appComponent=DaggerAppComponent.create()
+AppComponent appComponent = DaggerAppComponent.create();
+parent=appComponent.scrippsImportWindow()
+Parent parent = appComponent.scrippsImportWindow();
+Scene scene = new Scene(parent);
+response=baseTarget.path(CREDENTIALS_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(Entity.text("" + "username=" + username + "\n"+ "password="+ password)).readEntity(String.class)
+String response = baseTarget.path(CREDENTIALS_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(Entity.text(""
+                        + "username=" + username + "\n"
+                        + "password=" + password))
+                .readEntity(String.class);
+samples=sampleMapper.translateToSesarSamples(sampleSource)
+Samples samples = sampleMapper.translateToSesarSamples(sampleSource);
+String samplesXml;
+jaxbContext=JAXBContext.newInstance(Samples.class)
+JAXBContext jaxbContext = JAXBContext.newInstance(Samples.class);
+marshaller=jaxbContext.createMarshaller()
+Marshaller marshaller = jaxbContext.createMarshaller();
+ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+Form uploadForm = new Form();
+response=baseTarget.path(UPLOAD_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(form(uploadForm))
+Response response = baseTarget.path(UPLOAD_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(form(uploadForm));
+XMLGregorianCalendar result = null;
+mappedSamplesSample=factory.createSamplesSample()
+Samples.Sample mappedSamplesSample = factory.createSamplesSample();
+mappedSamples=factory.createSamples()
+Samples mappedSamples = factory.createSamples();
+Samples samples = new Samples();
+Samples.Sample samplesSample = new Samples.Sample();
+Samples actual = mapper.translateToSesarSamples(() -> asList(sample));
+actualSample=actual.getSample().get(0)
+Samples.Sample actualSample = actual.getSample().get(0);
+Samples.Sample expectedSample = new Samples.Sample();
+
+Diff of 3d321cad20e1865c89f212b63efdcdcf6d9d112d and 04cab23779b9001a4a92df90a3a92cc39e03ee38:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 1
+	--> recency = months
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit '3d321cad20e1865c89f212b63efdcdcf6d9d112d' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision 04cab23779b9001a4a92df90a3a92cc39e03ee38****
+
+Added MarsException.java to .\/MARS\ repository source files.
+Added Sample.java to .\/MARS\ repository source files.
+Added SampleRegistryClient.java to .\/MARS\ repository source files.
+Added SampleSource.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsException.java to .\/MARS\ repository source files.
+Added ScrippsSample.java to .\/MARS\ repository source files.
+Added ScrippsSampleAdapter.java to .\/MARS\ repository source files.
+Added ScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsSampleSourceAdapter.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSourceTest.java to .\/MARS\ repository source files.
+Added ScrippsSampleTest.java to .\/MARS\ repository source files.
+Added AppComponent.java to .\/MARS\ repository source files.
+Added BuilderModule.java to .\/MARS\ repository source files.
+Added ScrippsBuilderFactory.java to .\/MARS\ repository source files.
+Added CsvFileChooserButton.java to .\/MARS\ repository source files.
+Added ScrippsMenuBar.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added ScrippsImportWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindowFactory.java to .\/MARS\ repository source files.
+Added SesarLoginDialog.java to .\/MARS\ repository source files.
+Added SesarLoginDialogPane.java to .\/MARS\ repository source files.
+Added SesarLoginDialogView.java to .\/MARS\ repository source files.
+Added SesarModule.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindow.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindowFactory.java to .\/MARS\ repository source files.
+Added Main.java to .\/MARS\ repository source files.
+Added ScrippsApplication.java to .\/MARS\ repository source files.
+Added Classification.java to .\/MARS\ repository source files.
+Added IgneousDetails.java to .\/MARS\ repository source files.
+Added IgneousType.java to .\/MARS\ repository source files.
+Added MacrobiologyDetails.java to .\/MARS\ repository source files.
+Added MetamorphicDetails.java to .\/MARS\ repository source files.
+Added ObjectFactory.java to .\/MARS\ repository source files.
+Added OreDetails.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added Samples.java to .\/MARS\ repository source files.
+Added SedimentaryDetails.java to .\/MARS\ repository source files.
+Added SesarClient.java to .\/MARS\ repository source files.
+Added SesarException.java to .\/MARS\ repository source files.
+Added SesarTranslator.java to .\/MARS\ repository source files.
+Added SesarClientTest.java to .\/MARS\ repository source files.
+Added SesarTranslatorTest.java to .\/MARS\ repository source files.
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+String result = null;
+ScrippsSample result = null;
+coreSample=coreSampleCsvReader.readNext()
+String[] coreSample = coreSampleCsvReader.readNext();
+coreInterval=coreIntervalCsvReader.readNext()
+String[] coreInterval = coreIntervalCsvReader.readNext();
+CSVReader coreSampleCsvReader = new CSVReader(readerFor(coreSampleCsv));
+CSVReader coreIntervalCsvReader = new CSVReader(readerFor(coreIntervalCsv));
+List<ScrippsSample> result = new ArrayList<>();
+ScrippsSample nextScrippsSample;
+coreSampleCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Sample.csv")
+Path coreSampleCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Sample.csv");
+coreIntervalCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Interval.csv")
+Path coreIntervalCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Interval.csv");
+facilityCode=scrippsSample.setFacilityCode("ABC").getFacilityCode()
+String facilityCode = scrippsSample
+                .setFacilityCode("ABC")
+                .getFacilityCode();
+shipCode=scrippsSample.setShipCode("123").getShipCode()
+String shipCode = scrippsSample
+                .setShipCode("123")
+                .getShipCode();
+platform=scrippsSample.setPlatform("Falcon").getPlatform()
+String platform = scrippsSample
+                .setPlatform("Falcon")
+                .getPlatform();
+cruise=scrippsSample.setCruise("CIRDLES").getCruise()
+String cruise = scrippsSample
+                .setCruise("CIRDLES")
+                .getCruise();
+sample=scrippsSample.setSample("CIRDLES-001").getSample()
+String sample = scrippsSample
+                .setSample("CIRDLES-001")
+                .getSample();
+device=scrippsSample.setDevice("core, gravity").getDevice()
+String device = scrippsSample
+                .setDevice("core, gravity")
+                .getDevice();
+beginDate=scrippsSample.setBeginDate("20000101").getBeginDate()
+String beginDate = scrippsSample
+                .setBeginDate("20000101")
+                .getBeginDate();
+endDate=scrippsSample.setEndDate("20000101").getEndDate()
+String endDate = scrippsSample
+                .setEndDate("20000101")
+                .getEndDate();
+lat=scrippsSample.setLat(new BigDecimal("32.7833")).getLat()
+BigDecimal lat = scrippsSample
+                .setLat(new BigDecimal("32.7833"))
+                .getLat();
+endLatmin=scrippsSample.setEndLatmin(new BigDecimal("32.7833")).getEndLatmin()
+BigDecimal endLatmin = scrippsSample
+                .setEndLatmin(new BigDecimal("32.7833"))
+                .getEndLatmin();
+lon=scrippsSample.setLon(new BigDecimal("-79.9333")).getLon()
+BigDecimal lon = scrippsSample
+                .setLon(new BigDecimal("-79.9333"))
+                .getLon();
+endLon=scrippsSample.setEndLon(new BigDecimal("-79.9333")).getEndLon()
+BigDecimal endLon = scrippsSample
+                .setEndLon(new BigDecimal("-79.9333"))
+                .getEndLon();
+waterDepth=scrippsSample.setWaterDepth(new BigDecimal("10")).getWaterDepth()
+BigDecimal waterDepth = scrippsSample
+                .setWaterDepth(new BigDecimal("10"))
+                .getWaterDepth();
+endWaterDepth=scrippsSample.setEndWaterDepth(new BigDecimal("10")).getEndWaterDepth()
+BigDecimal endWaterDepth = scrippsSample
+                .setEndWaterDepth(new BigDecimal("10"))
+                .getEndWaterDepth();
+Builder<?> builder;
+Builder<?> builder;
+FileChooser csvFileChooser = new FileChooser();
+ExtensionFilter csvExtensionFilter = new ExtensionFilter(
+                "Comma Separated (.csv)",
+                "*.csv");
+chosenFile=fileChooser.get()
+File chosenFile = fileChooser.get();
+ScrippsSampleSource sampleSource = new CsvScrippsSampleSource(
+                coreSamplesCsv.getPath(),
+                coreIntervalsCsv.getPath());
+verificationWindow=verificationWindowFactory.createScrippsVerificationWindow(sampleSource)
+Parent verificationWindow = verificationWindowFactory
+                .createScrippsVerificationWindow(sampleSource);
+Stage stage = new Stage();
+ScrippsSampleSourceAdapter sampleSource
+                = new ScrippsSampleSourceAdapter(scrippsSampleSource);
+verificationWindow=registrationWindowFactory.createScrippsRegistrationWindow(sampleSource)
+Parent verificationWindow = registrationWindowFactory
+                .createScrippsRegistrationWindow(sampleSource);
+Stage stage = new Stage();
+appComponent=DaggerAppComponent.create()
+AppComponent appComponent = DaggerAppComponent.create();
+parent=appComponent.scrippsImportWindow()
+Parent parent = appComponent.scrippsImportWindow();
+Scene scene = new Scene(parent);
+response=baseTarget.path(CREDENTIALS_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(Entity.text("" + "username=" + username + "\n"+ "password="+ password)).readEntity(String.class)
+String response = baseTarget.path(CREDENTIALS_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(Entity.text(""
+                        + "username=" + username + "\n"
+                        + "password=" + password))
+                .readEntity(String.class);
+samples=sampleMapper.translateToSesarSamples(sampleSource)
+Samples samples = sampleMapper.translateToSesarSamples(sampleSource);
+String samplesXml;
+jaxbContext=JAXBContext.newInstance(Samples.class)
+JAXBContext jaxbContext = JAXBContext.newInstance(Samples.class);
+marshaller=jaxbContext.createMarshaller()
+Marshaller marshaller = jaxbContext.createMarshaller();
+ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+Form uploadForm = new Form();
+response=baseTarget.path(UPLOAD_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(form(uploadForm))
+Response response = baseTarget.path(UPLOAD_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(form(uploadForm));
+XMLGregorianCalendar result = null;
+mappedSamplesSample=factory.createSamplesSample()
+Samples.Sample mappedSamplesSample = factory.createSamplesSample();
+mappedSamples=factory.createSamples()
+Samples mappedSamples = factory.createSamples();
+Samples samples = new Samples();
+Samples.Sample samplesSample = new Samples.Sample();
+Samples actual = mapper.translateToSesarSamples(() -> asList(sample));
+actualSample=actual.getSample().get(0)
+Samples.Sample actualSample = actual.getSample().get(0);
+Samples.Sample expectedSample = new Samples.Sample();
+
+Diff of 04cab23779b9001a4a92df90a3a92cc39e03ee38 and 3e4c94269c034bb7a77832c983ba82aea978b4a9:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 1
+	--> recency = months
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 04cab23779b9001a4a92df90a3a92cc39e03ee38 to 3e4c94269c034bb7a77832c983ba82aea978b4a9
+
+
+****Parsing for addition at revision 3e4c94269c034bb7a77832c983ba82aea978b4a9****
+
+Added MarsException.java to .\/MARS\ repository source files.
+Added Sample.java to .\/MARS\ repository source files.
+Added SampleRegistryClient.java to .\/MARS\ repository source files.
+Added SampleSource.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsException.java to .\/MARS\ repository source files.
+Added ScrippsSample.java to .\/MARS\ repository source files.
+Added ScrippsSampleAdapter.java to .\/MARS\ repository source files.
+Added ScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsSampleSourceAdapter.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSourceTest.java to .\/MARS\ repository source files.
+Added ScrippsSampleTest.java to .\/MARS\ repository source files.
+Added AppComponent.java to .\/MARS\ repository source files.
+Added BuilderModule.java to .\/MARS\ repository source files.
+Added ScrippsBuilderFactory.java to .\/MARS\ repository source files.
+Added CsvFileChooserButton.java to .\/MARS\ repository source files.
+Added ScrippsMenuBar.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added ScrippsImportWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindowFactory.java to .\/MARS\ repository source files.
+Added SesarLoginDialog.java to .\/MARS\ repository source files.
+Added SesarLoginDialogPane.java to .\/MARS\ repository source files.
+Added SesarLoginDialogView.java to .\/MARS\ repository source files.
+Added SesarModule.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindow.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindowFactory.java to .\/MARS\ repository source files.
+Added Main.java to .\/MARS\ repository source files.
+Added ScrippsApplication.java to .\/MARS\ repository source files.
+Added Classification.java to .\/MARS\ repository source files.
+Added IgneousDetails.java to .\/MARS\ repository source files.
+Added IgneousType.java to .\/MARS\ repository source files.
+Added MacrobiologyDetails.java to .\/MARS\ repository source files.
+Added MetamorphicDetails.java to .\/MARS\ repository source files.
+Added ObjectFactory.java to .\/MARS\ repository source files.
+Added OreDetails.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added Samples.java to .\/MARS\ repository source files.
+Added SedimentaryDetails.java to .\/MARS\ repository source files.
+Added SesarClient.java to .\/MARS\ repository source files.
+Added SesarException.java to .\/MARS\ repository source files.
+Added SesarTranslator.java to .\/MARS\ repository source files.
+Added SesarClientTest.java to .\/MARS\ repository source files.
+Added SesarTranslatorTest.java to .\/MARS\ repository source files.
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+String result = null;
+ScrippsSample result = null;
+coreSample=coreSampleCsvReader.readNext()
+String[] coreSample = coreSampleCsvReader.readNext();
+coreInterval=coreIntervalCsvReader.readNext()
+String[] coreInterval = coreIntervalCsvReader.readNext();
+CSVReader coreSampleCsvReader = new CSVReader(readerFor(coreSampleCsv));
+CSVReader coreIntervalCsvReader = new CSVReader(readerFor(coreIntervalCsv));
+List<ScrippsSample> result = new ArrayList<>();
+ScrippsSample nextScrippsSample;
+coreSampleCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Sample.csv")
+Path coreSampleCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Sample.csv");
+coreIntervalCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Interval.csv")
+Path coreIntervalCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Interval.csv");
+facilityCode=scrippsSample.setFacilityCode("ABC").getFacilityCode()
+String facilityCode = scrippsSample
+                .setFacilityCode("ABC")
+                .getFacilityCode();
+shipCode=scrippsSample.setShipCode("123").getShipCode()
+String shipCode = scrippsSample
+                .setShipCode("123")
+                .getShipCode();
+platform=scrippsSample.setPlatform("Falcon").getPlatform()
+String platform = scrippsSample
+                .setPlatform("Falcon")
+                .getPlatform();
+cruise=scrippsSample.setCruise("CIRDLES").getCruise()
+String cruise = scrippsSample
+                .setCruise("CIRDLES")
+                .getCruise();
+sample=scrippsSample.setSample("CIRDLES-001").getSample()
+String sample = scrippsSample
+                .setSample("CIRDLES-001")
+                .getSample();
+device=scrippsSample.setDevice("core, gravity").getDevice()
+String device = scrippsSample
+                .setDevice("core, gravity")
+                .getDevice();
+beginDate=scrippsSample.setBeginDate("20000101").getBeginDate()
+String beginDate = scrippsSample
+                .setBeginDate("20000101")
+                .getBeginDate();
+endDate=scrippsSample.setEndDate("20000101").getEndDate()
+String endDate = scrippsSample
+                .setEndDate("20000101")
+                .getEndDate();
+lat=scrippsSample.setLat(new BigDecimal("32.7833")).getLat()
+BigDecimal lat = scrippsSample
+                .setLat(new BigDecimal("32.7833"))
+                .getLat();
+endLatmin=scrippsSample.setEndLatmin(new BigDecimal("32.7833")).getEndLatmin()
+BigDecimal endLatmin = scrippsSample
+                .setEndLatmin(new BigDecimal("32.7833"))
+                .getEndLatmin();
+lon=scrippsSample.setLon(new BigDecimal("-79.9333")).getLon()
+BigDecimal lon = scrippsSample
+                .setLon(new BigDecimal("-79.9333"))
+                .getLon();
+endLon=scrippsSample.setEndLon(new BigDecimal("-79.9333")).getEndLon()
+BigDecimal endLon = scrippsSample
+                .setEndLon(new BigDecimal("-79.9333"))
+                .getEndLon();
+waterDepth=scrippsSample.setWaterDepth(new BigDecimal("10")).getWaterDepth()
+BigDecimal waterDepth = scrippsSample
+                .setWaterDepth(new BigDecimal("10"))
+                .getWaterDepth();
+endWaterDepth=scrippsSample.setEndWaterDepth(new BigDecimal("10")).getEndWaterDepth()
+BigDecimal endWaterDepth = scrippsSample
+                .setEndWaterDepth(new BigDecimal("10"))
+                .getEndWaterDepth();
+Builder<?> builder;
+Builder<?> builder;
+FileChooser csvFileChooser = new FileChooser();
+ExtensionFilter csvExtensionFilter = new ExtensionFilter(
+                "Comma Separated (.csv)",
+                "*.csv");
+chosenFile=fileChooser.get()
+File chosenFile = fileChooser.get();
+ScrippsSampleSource sampleSource = new CsvScrippsSampleSource(
+                coreSamplesCsv.getPath(),
+                coreIntervalsCsv.getPath());
+verificationWindow=verificationWindowFactory.createScrippsVerificationWindow(sampleSource)
+Parent verificationWindow = verificationWindowFactory
+                .createScrippsVerificationWindow(sampleSource);
+Stage stage = new Stage();
+ScrippsSampleSourceAdapter sampleSource
+                = new ScrippsSampleSourceAdapter(scrippsSampleSource);
+verificationWindow=registrationWindowFactory.createScrippsRegistrationWindow(sampleSource)
+Parent verificationWindow = registrationWindowFactory
+                .createScrippsRegistrationWindow(sampleSource);
+Stage stage = new Stage();
+appComponent=DaggerAppComponent.create()
+AppComponent appComponent = DaggerAppComponent.create();
+parent=appComponent.scrippsImportWindow()
+Parent parent = appComponent.scrippsImportWindow();
+Scene scene = new Scene(parent);
+response=baseTarget.path(CREDENTIALS_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(Entity.text("" + "username=" + username + "\n"+ "password="+ password)).readEntity(String.class)
+String response = baseTarget.path(CREDENTIALS_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(Entity.text(""
+                        + "username=" + username + "\n"
+                        + "password=" + password))
+                .readEntity(String.class);
+samples=sampleMapper.translateToSesarSamples(sampleSource)
+Samples samples = sampleMapper.translateToSesarSamples(sampleSource);
+String samplesXml;
+jaxbContext=JAXBContext.newInstance(Samples.class)
+JAXBContext jaxbContext = JAXBContext.newInstance(Samples.class);
+marshaller=jaxbContext.createMarshaller()
+Marshaller marshaller = jaxbContext.createMarshaller();
+ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+Form uploadForm = new Form();
+response=baseTarget.path(UPLOAD_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(form(uploadForm))
+Response response = baseTarget.path(UPLOAD_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(form(uploadForm));
+XMLGregorianCalendar result = null;
+mappedSamplesSample=factory.createSamplesSample()
+Samples.Sample mappedSamplesSample = factory.createSamplesSample();
+mappedSamples=factory.createSamples()
+Samples mappedSamples = factory.createSamples();
+Samples samples = new Samples();
+Samples.Sample samplesSample = new Samples.Sample();
+Samples actual = mapper.translateToSesarSamples(() -> asList(sample));
+actualSample=actual.getSample().get(0)
+Samples.Sample actualSample = actual.getSample().get(0);
+Samples.Sample expectedSample = new Samples.Sample();
+
+Diff of 3e4c94269c034bb7a77832c983ba82aea978b4a9 and 151721a2368eb375dcdc12955ffebf08ec7f3abb:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 1
+	--> recency = months
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit '3e4c94269c034bb7a77832c983ba82aea978b4a9' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision 151721a2368eb375dcdc12955ffebf08ec7f3abb****
+
+Added MarsException.java to .\/MARS\ repository source files.
+Added Sample.java to .\/MARS\ repository source files.
+Added SampleRegistryClient.java to .\/MARS\ repository source files.
+Added SampleSource.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsException.java to .\/MARS\ repository source files.
+Added ScrippsSample.java to .\/MARS\ repository source files.
+Added ScrippsSampleAdapter.java to .\/MARS\ repository source files.
+Added ScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsSampleSourceAdapter.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSourceTest.java to .\/MARS\ repository source files.
+Added ScrippsSampleTest.java to .\/MARS\ repository source files.
+Added AppComponent.java to .\/MARS\ repository source files.
+Added BuilderModule.java to .\/MARS\ repository source files.
+Added ScrippsBuilderFactory.java to .\/MARS\ repository source files.
+Added CsvFileChooserButton.java to .\/MARS\ repository source files.
+Added ScrippsMenuBar.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added ScrippsImportWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindowFactory.java to .\/MARS\ repository source files.
+Added SesarLoginDialog.java to .\/MARS\ repository source files.
+Added SesarLoginDialogPane.java to .\/MARS\ repository source files.
+Added SesarLoginDialogView.java to .\/MARS\ repository source files.
+Added SesarModule.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindow.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindowFactory.java to .\/MARS\ repository source files.
+Added Main.java to .\/MARS\ repository source files.
+Added ScrippsApplication.java to .\/MARS\ repository source files.
+Added Classification.java to .\/MARS\ repository source files.
+Added IgneousDetails.java to .\/MARS\ repository source files.
+Added IgneousType.java to .\/MARS\ repository source files.
+Added MacrobiologyDetails.java to .\/MARS\ repository source files.
+Added MetamorphicDetails.java to .\/MARS\ repository source files.
+Added ObjectFactory.java to .\/MARS\ repository source files.
+Added OreDetails.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added Samples.java to .\/MARS\ repository source files.
+Added SedimentaryDetails.java to .\/MARS\ repository source files.
+Added SesarClient.java to .\/MARS\ repository source files.
+Added SesarException.java to .\/MARS\ repository source files.
+Added SesarTranslator.java to .\/MARS\ repository source files.
+Added SesarClientTest.java to .\/MARS\ repository source files.
+Added SesarTranslatorTest.java to .\/MARS\ repository source files.
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+String result = null;
+ScrippsSample result = null;
+coreSample=coreSampleCsvReader.readNext()
+String[] coreSample = coreSampleCsvReader.readNext();
+coreInterval=coreIntervalCsvReader.readNext()
+String[] coreInterval = coreIntervalCsvReader.readNext();
+CSVReader coreSampleCsvReader = new CSVReader(readerFor(coreSampleCsv));
+CSVReader coreIntervalCsvReader = new CSVReader(readerFor(coreIntervalCsv));
+List<ScrippsSample> result = new ArrayList<>();
+ScrippsSample nextScrippsSample;
+coreSampleCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Sample.csv")
+Path coreSampleCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Sample.csv");
+coreIntervalCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Interval.csv")
+Path coreIntervalCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Interval.csv");
+facilityCode=scrippsSample.setFacilityCode("ABC").getFacilityCode()
+String facilityCode = scrippsSample
+                .setFacilityCode("ABC")
+                .getFacilityCode();
+shipCode=scrippsSample.setShipCode("123").getShipCode()
+String shipCode = scrippsSample
+                .setShipCode("123")
+                .getShipCode();
+platform=scrippsSample.setPlatform("Falcon").getPlatform()
+String platform = scrippsSample
+                .setPlatform("Falcon")
+                .getPlatform();
+cruise=scrippsSample.setCruise("CIRDLES").getCruise()
+String cruise = scrippsSample
+                .setCruise("CIRDLES")
+                .getCruise();
+sample=scrippsSample.setSample("CIRDLES-001").getSample()
+String sample = scrippsSample
+                .setSample("CIRDLES-001")
+                .getSample();
+device=scrippsSample.setDevice("core, gravity").getDevice()
+String device = scrippsSample
+                .setDevice("core, gravity")
+                .getDevice();
+beginDate=scrippsSample.setBeginDate("20000101").getBeginDate()
+String beginDate = scrippsSample
+                .setBeginDate("20000101")
+                .getBeginDate();
+endDate=scrippsSample.setEndDate("20000101").getEndDate()
+String endDate = scrippsSample
+                .setEndDate("20000101")
+                .getEndDate();
+lat=scrippsSample.setLat(new BigDecimal("32.7833")).getLat()
+BigDecimal lat = scrippsSample
+                .setLat(new BigDecimal("32.7833"))
+                .getLat();
+endLatmin=scrippsSample.setEndLatmin(new BigDecimal("32.7833")).getEndLatmin()
+BigDecimal endLatmin = scrippsSample
+                .setEndLatmin(new BigDecimal("32.7833"))
+                .getEndLatmin();
+lon=scrippsSample.setLon(new BigDecimal("-79.9333")).getLon()
+BigDecimal lon = scrippsSample
+                .setLon(new BigDecimal("-79.9333"))
+                .getLon();
+endLon=scrippsSample.setEndLon(new BigDecimal("-79.9333")).getEndLon()
+BigDecimal endLon = scrippsSample
+                .setEndLon(new BigDecimal("-79.9333"))
+                .getEndLon();
+waterDepth=scrippsSample.setWaterDepth(new BigDecimal("10")).getWaterDepth()
+BigDecimal waterDepth = scrippsSample
+                .setWaterDepth(new BigDecimal("10"))
+                .getWaterDepth();
+endWaterDepth=scrippsSample.setEndWaterDepth(new BigDecimal("10")).getEndWaterDepth()
+BigDecimal endWaterDepth = scrippsSample
+                .setEndWaterDepth(new BigDecimal("10"))
+                .getEndWaterDepth();
+Builder<?> builder;
+Builder<?> builder;
+FileChooser csvFileChooser = new FileChooser();
+ExtensionFilter csvExtensionFilter = new ExtensionFilter(
+                "Comma Separated (.csv)",
+                "*.csv");
+chosenFile=fileChooser.get()
+File chosenFile = fileChooser.get();
+ScrippsSampleSource sampleSource = new CsvScrippsSampleSource(
+                coreSamplesCsv.getPath(),
+                coreIntervalsCsv.getPath());
+verificationWindow=verificationWindowFactory.createScrippsVerificationWindow(sampleSource)
+Parent verificationWindow = verificationWindowFactory
+                .createScrippsVerificationWindow(sampleSource);
+Stage stage = new Stage();
+ScrippsSampleSourceAdapter sampleSource
+                = new ScrippsSampleSourceAdapter(scrippsSampleSource);
+verificationWindow=registrationWindowFactory.createScrippsRegistrationWindow(sampleSource)
+Parent verificationWindow = registrationWindowFactory
+                .createScrippsRegistrationWindow(sampleSource);
+Stage stage = new Stage();
+appComponent=DaggerAppComponent.create()
+AppComponent appComponent = DaggerAppComponent.create();
+parent=appComponent.scrippsImportWindow()
+Parent parent = appComponent.scrippsImportWindow();
+Scene scene = new Scene(parent);
+response=baseTarget.path(CREDENTIALS_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(Entity.text("" + "username=" + username + "\n"+ "password="+ password)).readEntity(String.class)
+String response = baseTarget.path(CREDENTIALS_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(Entity.text(""
+                        + "username=" + username + "\n"
+                        + "password=" + password))
+                .readEntity(String.class);
+samples=sampleMapper.translateToSesarSamples(sampleSource)
+Samples samples = sampleMapper.translateToSesarSamples(sampleSource);
+String samplesXml;
+jaxbContext=JAXBContext.newInstance(Samples.class)
+JAXBContext jaxbContext = JAXBContext.newInstance(Samples.class);
+marshaller=jaxbContext.createMarshaller()
+Marshaller marshaller = jaxbContext.createMarshaller();
+ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+Form uploadForm = new Form();
+response=baseTarget.path(UPLOAD_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(form(uploadForm))
+Response response = baseTarget.path(UPLOAD_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(form(uploadForm));
+XMLGregorianCalendar result = null;
+mappedSamplesSample=factory.createSamplesSample()
+Samples.Sample mappedSamplesSample = factory.createSamplesSample();
+mappedSamples=factory.createSamples()
+Samples mappedSamples = factory.createSamples();
+Samples samples = new Samples();
+Samples.Sample samplesSample = new Samples.Sample();
+Samples actual = mapper.translateToSesarSamples(() -> asList(sample));
+actualSample=actual.getSample().get(0)
+Samples.Sample actualSample = actual.getSample().get(0);
+Samples.Sample expectedSample = new Samples.Sample();
+
+Diff of 151721a2368eb375dcdc12955ffebf08ec7f3abb and 07b8fff5832393934953d9d18d3d4cc279038ce7:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 1
+	--> recency = months
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 151721a2368eb375dcdc12955ffebf08ec7f3abb to 07b8fff5832393934953d9d18d3d4cc279038ce7
+
+
+****Parsing for addition at revision 07b8fff5832393934953d9d18d3d4cc279038ce7****
+
+Added MarsException.java to .\/MARS\ repository source files.
+Added Sample.java to .\/MARS\ repository source files.
+Added SampleRegistryClient.java to .\/MARS\ repository source files.
+Added SampleSource.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsException.java to .\/MARS\ repository source files.
+Added ScrippsSample.java to .\/MARS\ repository source files.
+Added ScrippsSampleAdapter.java to .\/MARS\ repository source files.
+Added ScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsSampleSourceAdapter.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSourceTest.java to .\/MARS\ repository source files.
+Added ScrippsSampleTest.java to .\/MARS\ repository source files.
+Added AppComponent.java to .\/MARS\ repository source files.
+Added BuilderModule.java to .\/MARS\ repository source files.
+Added ScrippsBuilderFactory.java to .\/MARS\ repository source files.
+Added CsvFileChooserButton.java to .\/MARS\ repository source files.
+Added ScrippsMenuBar.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added ScrippsImportWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindowFactory.java to .\/MARS\ repository source files.
+Added SesarLoginDialog.java to .\/MARS\ repository source files.
+Added SesarLoginDialogPane.java to .\/MARS\ repository source files.
+Added SesarLoginDialogView.java to .\/MARS\ repository source files.
+Added SesarModule.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindow.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindowFactory.java to .\/MARS\ repository source files.
+Added Main.java to .\/MARS\ repository source files.
+Added ScrippsApplication.java to .\/MARS\ repository source files.
+Added Classification.java to .\/MARS\ repository source files.
+Added IgneousDetails.java to .\/MARS\ repository source files.
+Added IgneousType.java to .\/MARS\ repository source files.
+Added MacrobiologyDetails.java to .\/MARS\ repository source files.
+Added MetamorphicDetails.java to .\/MARS\ repository source files.
+Added ObjectFactory.java to .\/MARS\ repository source files.
+Added OreDetails.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added Samples.java to .\/MARS\ repository source files.
+Added SedimentaryDetails.java to .\/MARS\ repository source files.
+Added SesarClient.java to .\/MARS\ repository source files.
+Added SesarException.java to .\/MARS\ repository source files.
+Added SesarTranslator.java to .\/MARS\ repository source files.
+Added SesarClientTest.java to .\/MARS\ repository source files.
+Added SesarTranslatorTest.java to .\/MARS\ repository source files.
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+String result = null;
+ScrippsSample result = null;
+coreSample=coreSampleCsvReader.readNext()
+String[] coreSample = coreSampleCsvReader.readNext();
+coreInterval=coreIntervalCsvReader.readNext()
+String[] coreInterval = coreIntervalCsvReader.readNext();
+CSVReader coreSampleCsvReader = new CSVReader(readerFor(coreSampleCsv));
+CSVReader coreIntervalCsvReader = new CSVReader(readerFor(coreIntervalCsv));
+List<ScrippsSample> result = new ArrayList<>();
+ScrippsSample nextScrippsSample;
+coreSampleCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Sample.csv")
+Path coreSampleCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Sample.csv");
+coreIntervalCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Interval.csv")
+Path coreIntervalCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Interval.csv");
+facilityCode=scrippsSample.setFacilityCode("ABC").getFacilityCode()
+String facilityCode = scrippsSample
+                .setFacilityCode("ABC")
+                .getFacilityCode();
+shipCode=scrippsSample.setShipCode("123").getShipCode()
+String shipCode = scrippsSample
+                .setShipCode("123")
+                .getShipCode();
+platform=scrippsSample.setPlatform("Falcon").getPlatform()
+String platform = scrippsSample
+                .setPlatform("Falcon")
+                .getPlatform();
+cruise=scrippsSample.setCruise("CIRDLES").getCruise()
+String cruise = scrippsSample
+                .setCruise("CIRDLES")
+                .getCruise();
+sample=scrippsSample.setSample("CIRDLES-001").getSample()
+String sample = scrippsSample
+                .setSample("CIRDLES-001")
+                .getSample();
+device=scrippsSample.setDevice("core, gravity").getDevice()
+String device = scrippsSample
+                .setDevice("core, gravity")
+                .getDevice();
+beginDate=scrippsSample.setBeginDate("20000101").getBeginDate()
+String beginDate = scrippsSample
+                .setBeginDate("20000101")
+                .getBeginDate();
+endDate=scrippsSample.setEndDate("20000101").getEndDate()
+String endDate = scrippsSample
+                .setEndDate("20000101")
+                .getEndDate();
+lat=scrippsSample.setLat(new BigDecimal("32.7833")).getLat()
+BigDecimal lat = scrippsSample
+                .setLat(new BigDecimal("32.7833"))
+                .getLat();
+endLatmin=scrippsSample.setEndLatmin(new BigDecimal("32.7833")).getEndLatmin()
+BigDecimal endLatmin = scrippsSample
+                .setEndLatmin(new BigDecimal("32.7833"))
+                .getEndLatmin();
+lon=scrippsSample.setLon(new BigDecimal("-79.9333")).getLon()
+BigDecimal lon = scrippsSample
+                .setLon(new BigDecimal("-79.9333"))
+                .getLon();
+endLon=scrippsSample.setEndLon(new BigDecimal("-79.9333")).getEndLon()
+BigDecimal endLon = scrippsSample
+                .setEndLon(new BigDecimal("-79.9333"))
+                .getEndLon();
+waterDepth=scrippsSample.setWaterDepth(new BigDecimal("10")).getWaterDepth()
+BigDecimal waterDepth = scrippsSample
+                .setWaterDepth(new BigDecimal("10"))
+                .getWaterDepth();
+endWaterDepth=scrippsSample.setEndWaterDepth(new BigDecimal("10")).getEndWaterDepth()
+BigDecimal endWaterDepth = scrippsSample
+                .setEndWaterDepth(new BigDecimal("10"))
+                .getEndWaterDepth();
+Builder<?> builder;
+Builder<?> builder;
+FileChooser csvFileChooser = new FileChooser();
+ExtensionFilter csvExtensionFilter = new ExtensionFilter(
+                "Comma Separated (.csv)",
+                "*.csv");
+chosenFile=fileChooser.get()
+File chosenFile = fileChooser.get();
+ScrippsSampleSource sampleSource = new CsvScrippsSampleSource(
+                coreSamplesCsv.getPath(),
+                coreIntervalsCsv.getPath());
+verificationWindow=verificationWindowFactory.createScrippsVerificationWindow(sampleSource)
+Parent verificationWindow = verificationWindowFactory
+                .createScrippsVerificationWindow(sampleSource);
+Stage stage = new Stage();
+ScrippsSampleSourceAdapter sampleSource
+                = new ScrippsSampleSourceAdapter(scrippsSampleSource);
+verificationWindow=registrationWindowFactory.createScrippsRegistrationWindow(sampleSource)
+Parent verificationWindow = registrationWindowFactory
+                .createScrippsRegistrationWindow(sampleSource);
+Stage stage = new Stage();
+appComponent=DaggerAppComponent.create()
+AppComponent appComponent = DaggerAppComponent.create();
+parent=appComponent.scrippsImportWindow()
+Parent parent = appComponent.scrippsImportWindow();
+Scene scene = new Scene(parent);
+response=baseTarget.path(CREDENTIALS_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(Entity.text("" + "username=" + username + "\n"+ "password="+ password)).readEntity(String.class)
+String response = baseTarget.path(CREDENTIALS_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(Entity.text(""
+                        + "username=" + username + "\n"
+                        + "password=" + password))
+                .readEntity(String.class);
+samples=sampleMapper.translateToSesarSamples(sampleSource)
+Samples samples = sampleMapper.translateToSesarSamples(sampleSource);
+String samplesXml;
+jaxbContext=JAXBContext.newInstance(Samples.class)
+JAXBContext jaxbContext = JAXBContext.newInstance(Samples.class);
+marshaller=jaxbContext.createMarshaller()
+Marshaller marshaller = jaxbContext.createMarshaller();
+ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+Form uploadForm = new Form();
+response=baseTarget.path(UPLOAD_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(form(uploadForm))
+Response response = baseTarget.path(UPLOAD_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(form(uploadForm));
+XMLGregorianCalendar result = null;
+mappedSamplesSample=factory.createSamplesSample()
+Samples.Sample mappedSamplesSample = factory.createSamplesSample();
+mappedSamples=factory.createSamples()
+Samples mappedSamples = factory.createSamples();
+Samples samples = new Samples();
+Samples.Sample samplesSample = new Samples.Sample();
+Samples actual = mapper.translateToSesarSamples(() -> asList(sample));
+actualSample=actual.getSample().get(0)
+Samples.Sample actualSample = actual.getSample().get(0);
+Samples.Sample expectedSample = new Samples.Sample();
+
+Diff of 07b8fff5832393934953d9d18d3d4cc279038ce7 and 3831d53ae72bdde4d800e89f0961dbae9ff944cd:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 1
+	--> recency = months
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit '07b8fff5832393934953d9d18d3d4cc279038ce7' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision 3831d53ae72bdde4d800e89f0961dbae9ff944cd****
+
+Added MarsException.java to .\/MARS\ repository source files.
+Added Sample.java to .\/MARS\ repository source files.
+Added SampleRegistryClient.java to .\/MARS\ repository source files.
+Added SampleSource.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsException.java to .\/MARS\ repository source files.
+Added ScrippsSample.java to .\/MARS\ repository source files.
+Added ScrippsSampleAdapter.java to .\/MARS\ repository source files.
+Added ScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsSampleSourceAdapter.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSourceTest.java to .\/MARS\ repository source files.
+Added ScrippsSampleTest.java to .\/MARS\ repository source files.
+Added AppComponent.java to .\/MARS\ repository source files.
+Added BuilderModule.java to .\/MARS\ repository source files.
+Added ScrippsBuilderFactory.java to .\/MARS\ repository source files.
+Added CsvFileChooserButton.java to .\/MARS\ repository source files.
+Added ScrippsMenuBar.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added ScrippsImportWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindowFactory.java to .\/MARS\ repository source files.
+Added SesarLoginDialog.java to .\/MARS\ repository source files.
+Added SesarLoginDialogPane.java to .\/MARS\ repository source files.
+Added SesarLoginDialogView.java to .\/MARS\ repository source files.
+Added SesarModule.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindow.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindowFactory.java to .\/MARS\ repository source files.
+Added Main.java to .\/MARS\ repository source files.
+Added ScrippsApplication.java to .\/MARS\ repository source files.
+Added Classification.java to .\/MARS\ repository source files.
+Added IgneousDetails.java to .\/MARS\ repository source files.
+Added IgneousType.java to .\/MARS\ repository source files.
+Added MacrobiologyDetails.java to .\/MARS\ repository source files.
+Added MetamorphicDetails.java to .\/MARS\ repository source files.
+Added ObjectFactory.java to .\/MARS\ repository source files.
+Added OreDetails.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added Samples.java to .\/MARS\ repository source files.
+Added SedimentaryDetails.java to .\/MARS\ repository source files.
+Added SesarClient.java to .\/MARS\ repository source files.
+Added SesarException.java to .\/MARS\ repository source files.
+Added SesarTranslator.java to .\/MARS\ repository source files.
+Added SesarClientTest.java to .\/MARS\ repository source files.
+Added SesarTranslatorTest.java to .\/MARS\ repository source files.
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+String result = null;
+ScrippsSample result = null;
+coreSample=coreSampleCsvReader.readNext()
+String[] coreSample = coreSampleCsvReader.readNext();
+coreInterval=coreIntervalCsvReader.readNext()
+String[] coreInterval = coreIntervalCsvReader.readNext();
+CSVReader coreSampleCsvReader = new CSVReader(readerFor(coreSampleCsv));
+CSVReader coreIntervalCsvReader = new CSVReader(readerFor(coreIntervalCsv));
+List<ScrippsSample> result = new ArrayList<>();
+ScrippsSample nextScrippsSample;
+coreSampleCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Sample.csv")
+Path coreSampleCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Sample.csv");
+coreIntervalCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Interval.csv")
+Path coreIntervalCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Interval.csv");
+facilityCode=scrippsSample.setFacilityCode("ABC").getFacilityCode()
+String facilityCode = scrippsSample
+                .setFacilityCode("ABC")
+                .getFacilityCode();
+shipCode=scrippsSample.setShipCode("123").getShipCode()
+String shipCode = scrippsSample
+                .setShipCode("123")
+                .getShipCode();
+platform=scrippsSample.setPlatform("Falcon").getPlatform()
+String platform = scrippsSample
+                .setPlatform("Falcon")
+                .getPlatform();
+cruise=scrippsSample.setCruise("CIRDLES").getCruise()
+String cruise = scrippsSample
+                .setCruise("CIRDLES")
+                .getCruise();
+sample=scrippsSample.setSample("CIRDLES-001").getSample()
+String sample = scrippsSample
+                .setSample("CIRDLES-001")
+                .getSample();
+device=scrippsSample.setDevice("core, gravity").getDevice()
+String device = scrippsSample
+                .setDevice("core, gravity")
+                .getDevice();
+beginDate=scrippsSample.setBeginDate("20000101").getBeginDate()
+String beginDate = scrippsSample
+                .setBeginDate("20000101")
+                .getBeginDate();
+endDate=scrippsSample.setEndDate("20000101").getEndDate()
+String endDate = scrippsSample
+                .setEndDate("20000101")
+                .getEndDate();
+lat=scrippsSample.setLat(new BigDecimal("32.7833")).getLat()
+BigDecimal lat = scrippsSample
+                .setLat(new BigDecimal("32.7833"))
+                .getLat();
+endLatmin=scrippsSample.setEndLatmin(new BigDecimal("32.7833")).getEndLatmin()
+BigDecimal endLatmin = scrippsSample
+                .setEndLatmin(new BigDecimal("32.7833"))
+                .getEndLatmin();
+lon=scrippsSample.setLon(new BigDecimal("-79.9333")).getLon()
+BigDecimal lon = scrippsSample
+                .setLon(new BigDecimal("-79.9333"))
+                .getLon();
+endLon=scrippsSample.setEndLon(new BigDecimal("-79.9333")).getEndLon()
+BigDecimal endLon = scrippsSample
+                .setEndLon(new BigDecimal("-79.9333"))
+                .getEndLon();
+waterDepth=scrippsSample.setWaterDepth(new BigDecimal("10")).getWaterDepth()
+BigDecimal waterDepth = scrippsSample
+                .setWaterDepth(new BigDecimal("10"))
+                .getWaterDepth();
+endWaterDepth=scrippsSample.setEndWaterDepth(new BigDecimal("10")).getEndWaterDepth()
+BigDecimal endWaterDepth = scrippsSample
+                .setEndWaterDepth(new BigDecimal("10"))
+                .getEndWaterDepth();
+Builder<?> builder;
+Builder<?> builder;
+FileChooser csvFileChooser = new FileChooser();
+ExtensionFilter csvExtensionFilter = new ExtensionFilter(
+                "Comma Separated (.csv)",
+                "*.csv");
+chosenFile=fileChooser.get()
+File chosenFile = fileChooser.get();
+ScrippsSampleSource sampleSource = new CsvScrippsSampleSource(
+                coreSamplesCsv.getPath(),
+                coreIntervalsCsv.getPath());
+verificationWindow=verificationWindowFactory.createScrippsVerificationWindow(sampleSource)
+Parent verificationWindow = verificationWindowFactory
+                .createScrippsVerificationWindow(sampleSource);
+Stage stage = new Stage();
+ScrippsSampleSourceAdapter sampleSource
+                = new ScrippsSampleSourceAdapter(scrippsSampleSource);
+verificationWindow=registrationWindowFactory.createScrippsRegistrationWindow(sampleSource)
+Parent verificationWindow = registrationWindowFactory
+                .createScrippsRegistrationWindow(sampleSource);
+Stage stage = new Stage();
+appComponent=DaggerAppComponent.create()
+AppComponent appComponent = DaggerAppComponent.create();
+parent=appComponent.scrippsImportWindow()
+Parent parent = appComponent.scrippsImportWindow();
+Scene scene = new Scene(parent);
+response=baseTarget.path(CREDENTIALS_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(Entity.text("" + "username=" + username + "\n"+ "password="+ password)).readEntity(String.class)
+String response = baseTarget.path(CREDENTIALS_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(Entity.text(""
+                        + "username=" + username + "\n"
+                        + "password=" + password))
+                .readEntity(String.class);
+samples=sampleMapper.translateToSesarSamples(sampleSource)
+Samples samples = sampleMapper.translateToSesarSamples(sampleSource);
+String samplesXml;
+jaxbContext=JAXBContext.newInstance(Samples.class)
+JAXBContext jaxbContext = JAXBContext.newInstance(Samples.class);
+marshaller=jaxbContext.createMarshaller()
+Marshaller marshaller = jaxbContext.createMarshaller();
+ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+Form uploadForm = new Form();
+response=baseTarget.path(UPLOAD_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(form(uploadForm))
+Response response = baseTarget.path(UPLOAD_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(form(uploadForm));
+XMLGregorianCalendar result = null;
+mappedSamplesSample=factory.createSamplesSample()
+Samples.Sample mappedSamplesSample = factory.createSamplesSample();
+mappedSamples=factory.createSamples()
+Samples mappedSamples = factory.createSamples();
+Samples samples = new Samples();
+Samples.Sample samplesSample = new Samples.Sample();
+Samples actual = mapper.translateToSesarSamples(() -> asList(sample));
+actualSample=actual.getSample().get(0)
+Samples.Sample actualSample = actual.getSample().get(0);
+Samples.Sample expectedSample = new Samples.Sample();
+
+Diff of 3831d53ae72bdde4d800e89f0961dbae9ff944cd and 6038968bd3374073ef66bc1b13436fbebd80a8be:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 1
+	--> recency = months
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 3831d53ae72bdde4d800e89f0961dbae9ff944cd to 6038968bd3374073ef66bc1b13436fbebd80a8be
+
+
+****Parsing for addition at revision 6038968bd3374073ef66bc1b13436fbebd80a8be****
+
+Added MarsException.java to .\/MARS\ repository source files.
+Added Sample.java to .\/MARS\ repository source files.
+Added SampleRegistryClient.java to .\/MARS\ repository source files.
+Added SampleSource.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsException.java to .\/MARS\ repository source files.
+Added ScrippsSample.java to .\/MARS\ repository source files.
+Added ScrippsSampleAdapter.java to .\/MARS\ repository source files.
+Added ScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsSampleSourceAdapter.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSourceTest.java to .\/MARS\ repository source files.
+Added ScrippsSampleTest.java to .\/MARS\ repository source files.
+Added AppComponent.java to .\/MARS\ repository source files.
+Added BuilderModule.java to .\/MARS\ repository source files.
+Added ScrippsBuilderFactory.java to .\/MARS\ repository source files.
+Added CsvFileChooserButton.java to .\/MARS\ repository source files.
+Added ScrippsMenuBar.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added ScrippsImportWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindowFactory.java to .\/MARS\ repository source files.
+Added SesarLoginDialog.java to .\/MARS\ repository source files.
+Added SesarLoginDialogPane.java to .\/MARS\ repository source files.
+Added SesarLoginDialogView.java to .\/MARS\ repository source files.
+Added SesarModule.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindow.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindowFactory.java to .\/MARS\ repository source files.
+Added Main.java to .\/MARS\ repository source files.
+Added ScrippsApplication.java to .\/MARS\ repository source files.
+Added Classification.java to .\/MARS\ repository source files.
+Added IgneousDetails.java to .\/MARS\ repository source files.
+Added IgneousType.java to .\/MARS\ repository source files.
+Added MacrobiologyDetails.java to .\/MARS\ repository source files.
+Added MetamorphicDetails.java to .\/MARS\ repository source files.
+Added ObjectFactory.java to .\/MARS\ repository source files.
+Added OreDetails.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added Samples.java to .\/MARS\ repository source files.
+Added SedimentaryDetails.java to .\/MARS\ repository source files.
+Added SesarClient.java to .\/MARS\ repository source files.
+Added SesarException.java to .\/MARS\ repository source files.
+Added SesarTranslator.java to .\/MARS\ repository source files.
+Added SesarClientTest.java to .\/MARS\ repository source files.
+Added SesarTranslatorTest.java to .\/MARS\ repository source files.
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+String result = null;
+ScrippsSample result = null;
+coreSample=coreSampleCsvReader.readNext()
+String[] coreSample = coreSampleCsvReader.readNext();
+coreInterval=coreIntervalCsvReader.readNext()
+String[] coreInterval = coreIntervalCsvReader.readNext();
+CSVReader coreSampleCsvReader = new CSVReader(readerFor(coreSampleCsv));
+CSVReader coreIntervalCsvReader = new CSVReader(readerFor(coreIntervalCsv));
+List<ScrippsSample> result = new ArrayList<>();
+ScrippsSample nextScrippsSample;
+coreSampleCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Sample.csv")
+Path coreSampleCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Sample.csv");
+coreIntervalCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Interval.csv")
+Path coreIntervalCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Interval.csv");
+facilityCode=scrippsSample.setFacilityCode("ABC").getFacilityCode()
+String facilityCode = scrippsSample
+                .setFacilityCode("ABC")
+                .getFacilityCode();
+shipCode=scrippsSample.setShipCode("123").getShipCode()
+String shipCode = scrippsSample
+                .setShipCode("123")
+                .getShipCode();
+platform=scrippsSample.setPlatform("Falcon").getPlatform()
+String platform = scrippsSample
+                .setPlatform("Falcon")
+                .getPlatform();
+cruise=scrippsSample.setCruise("CIRDLES").getCruise()
+String cruise = scrippsSample
+                .setCruise("CIRDLES")
+                .getCruise();
+sample=scrippsSample.setSample("CIRDLES-001").getSample()
+String sample = scrippsSample
+                .setSample("CIRDLES-001")
+                .getSample();
+device=scrippsSample.setDevice("core, gravity").getDevice()
+String device = scrippsSample
+                .setDevice("core, gravity")
+                .getDevice();
+beginDate=scrippsSample.setBeginDate("20000101").getBeginDate()
+String beginDate = scrippsSample
+                .setBeginDate("20000101")
+                .getBeginDate();
+endDate=scrippsSample.setEndDate("20000101").getEndDate()
+String endDate = scrippsSample
+                .setEndDate("20000101")
+                .getEndDate();
+lat=scrippsSample.setLat(new BigDecimal("32.7833")).getLat()
+BigDecimal lat = scrippsSample
+                .setLat(new BigDecimal("32.7833"))
+                .getLat();
+endLatmin=scrippsSample.setEndLatmin(new BigDecimal("32.7833")).getEndLatmin()
+BigDecimal endLatmin = scrippsSample
+                .setEndLatmin(new BigDecimal("32.7833"))
+                .getEndLatmin();
+lon=scrippsSample.setLon(new BigDecimal("-79.9333")).getLon()
+BigDecimal lon = scrippsSample
+                .setLon(new BigDecimal("-79.9333"))
+                .getLon();
+endLon=scrippsSample.setEndLon(new BigDecimal("-79.9333")).getEndLon()
+BigDecimal endLon = scrippsSample
+                .setEndLon(new BigDecimal("-79.9333"))
+                .getEndLon();
+waterDepth=scrippsSample.setWaterDepth(new BigDecimal("10")).getWaterDepth()
+BigDecimal waterDepth = scrippsSample
+                .setWaterDepth(new BigDecimal("10"))
+                .getWaterDepth();
+endWaterDepth=scrippsSample.setEndWaterDepth(new BigDecimal("10")).getEndWaterDepth()
+BigDecimal endWaterDepth = scrippsSample
+                .setEndWaterDepth(new BigDecimal("10"))
+                .getEndWaterDepth();
+Builder<?> builder;
+Builder<?> builder;
+FileChooser csvFileChooser = new FileChooser();
+ExtensionFilter csvExtensionFilter = new ExtensionFilter(
+                "Comma Separated (.csv)",
+                "*.csv");
+chosenFile=fileChooser.get()
+File chosenFile = fileChooser.get();
+ScrippsSampleSource sampleSource = new CsvScrippsSampleSource(
+                coreSamplesCsv.getPath(),
+                coreIntervalsCsv.getPath());
+verificationWindow=verificationWindowFactory.createScrippsVerificationWindow(sampleSource)
+Parent verificationWindow = verificationWindowFactory
+                .createScrippsVerificationWindow(sampleSource);
+Stage stage = new Stage();
+ScrippsSampleSourceAdapter sampleSource
+                = new ScrippsSampleSourceAdapter(scrippsSampleSource);
+verificationWindow=registrationWindowFactory.createScrippsRegistrationWindow(sampleSource)
+Parent verificationWindow = registrationWindowFactory
+                .createScrippsRegistrationWindow(sampleSource);
+Stage stage = new Stage();
+appComponent=DaggerAppComponent.create()
+AppComponent appComponent = DaggerAppComponent.create();
+parent=appComponent.scrippsImportWindow()
+Parent parent = appComponent.scrippsImportWindow();
+Scene scene = new Scene(parent);
+response=baseTarget.path(CREDENTIALS_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(Entity.text("" + "username=" + username + "\n"+ "password="+ password)).readEntity(String.class)
+String response = baseTarget.path(CREDENTIALS_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(Entity.text(""
+                        + "username=" + username + "\n"
+                        + "password=" + password))
+                .readEntity(String.class);
+samples=sampleMapper.translateToSesarSamples(sampleSource)
+Samples samples = sampleMapper.translateToSesarSamples(sampleSource);
+String samplesXml;
+jaxbContext=JAXBContext.newInstance(Samples.class)
+JAXBContext jaxbContext = JAXBContext.newInstance(Samples.class);
+marshaller=jaxbContext.createMarshaller()
+Marshaller marshaller = jaxbContext.createMarshaller();
+ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+Form uploadForm = new Form();
+response=baseTarget.path(UPLOAD_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(form(uploadForm))
+Response response = baseTarget.path(UPLOAD_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(form(uploadForm));
+XMLGregorianCalendar result = null;
+mappedSamplesSample=factory.createSamplesSample()
+Samples.Sample mappedSamplesSample = factory.createSamplesSample();
+mappedSamples=factory.createSamples()
+Samples mappedSamples = factory.createSamples();
+Samples samples = new Samples();
+Samples.Sample samplesSample = new Samples.Sample();
+Samples actual = mapper.translateToSesarSamples(() -> asList(sample));
+actualSample=actual.getSample().get(0)
+Samples.Sample actualSample = actual.getSample().get(0);
+Samples.Sample expectedSample = new Samples.Sample();
+
+Diff of 6038968bd3374073ef66bc1b13436fbebd80a8be and c3fc112aafe40d4ecfb4fc3e85e04dba00a465a7:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 1
+	--> recency = months
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit '6038968bd3374073ef66bc1b13436fbebd80a8be' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision c3fc112aafe40d4ecfb4fc3e85e04dba00a465a7****
+
+Added MarsException.java to .\/MARS\ repository source files.
+Added Sample.java to .\/MARS\ repository source files.
+Added SampleRegistryClient.java to .\/MARS\ repository source files.
+Added SampleSource.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsException.java to .\/MARS\ repository source files.
+Added ScrippsSample.java to .\/MARS\ repository source files.
+Added ScrippsSampleAdapter.java to .\/MARS\ repository source files.
+Added ScrippsSampleSource.java to .\/MARS\ repository source files.
+Added ScrippsSampleSourceAdapter.java to .\/MARS\ repository source files.
+Added CsvScrippsSampleSourceTest.java to .\/MARS\ repository source files.
+Added ScrippsSampleTest.java to .\/MARS\ repository source files.
+Added AppComponent.java to .\/MARS\ repository source files.
+Added BuilderModule.java to .\/MARS\ repository source files.
+Added ScrippsBuilderFactory.java to .\/MARS\ repository source files.
+Added CsvFileChooserButton.java to .\/MARS\ repository source files.
+Added ScrippsMenuBar.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added ScrippsImportWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindow.java to .\/MARS\ repository source files.
+Added ScrippsRegistrationWindowFactory.java to .\/MARS\ repository source files.
+Added SesarLoginDialog.java to .\/MARS\ repository source files.
+Added SesarLoginDialogPane.java to .\/MARS\ repository source files.
+Added SesarLoginDialogView.java to .\/MARS\ repository source files.
+Added SesarModule.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindow.java to .\/MARS\ repository source files.
+Added ScrippsVerificationWindowFactory.java to .\/MARS\ repository source files.
+Added Main.java to .\/MARS\ repository source files.
+Added ScrippsApplication.java to .\/MARS\ repository source files.
+Added Classification.java to .\/MARS\ repository source files.
+Added IgneousDetails.java to .\/MARS\ repository source files.
+Added IgneousType.java to .\/MARS\ repository source files.
+Added MacrobiologyDetails.java to .\/MARS\ repository source files.
+Added MetamorphicDetails.java to .\/MARS\ repository source files.
+Added ObjectFactory.java to .\/MARS\ repository source files.
+Added OreDetails.java to .\/MARS\ repository source files.
+Added package-info.java to .\/MARS\ repository source files.
+Added Samples.java to .\/MARS\ repository source files.
+Added SedimentaryDetails.java to .\/MARS\ repository source files.
+Added SesarClient.java to .\/MARS\ repository source files.
+Added SesarException.java to .\/MARS\ repository source files.
+Added SesarTranslator.java to .\/MARS\ repository source files.
+Added SesarClientTest.java to .\/MARS\ repository source files.
+Added SesarTranslatorTest.java to .\/MARS\ repository source files.
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+headers=csvReader.readNext()
+String[] headers = csvReader.readNext();
+String result = null;
+ScrippsSample result = null;
+coreSample=coreSampleCsvReader.readNext()
+String[] coreSample = coreSampleCsvReader.readNext();
+coreInterval=coreIntervalCsvReader.readNext()
+String[] coreInterval = coreIntervalCsvReader.readNext();
+CSVReader coreSampleCsvReader = new CSVReader(readerFor(coreSampleCsv));
+CSVReader coreIntervalCsvReader = new CSVReader(readerFor(coreIntervalCsv));
+List<ScrippsSample> result = new ArrayList<>();
+ScrippsSample nextScrippsSample;
+coreSampleCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Sample.csv")
+Path coreSampleCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Sample.csv");
+coreIntervalCsv=RESOURCE_EXTRACTOR.extractResourceAsPath("SHOW-H Core Interval.csv")
+Path coreIntervalCsv = RESOURCE_EXTRACTOR
+                .extractResourceAsPath("SHOW-H Core Interval.csv");
+facilityCode=scrippsSample.setFacilityCode("ABC").getFacilityCode()
+String facilityCode = scrippsSample
+                .setFacilityCode("ABC")
+                .getFacilityCode();
+shipCode=scrippsSample.setShipCode("123").getShipCode()
+String shipCode = scrippsSample
+                .setShipCode("123")
+                .getShipCode();
+platform=scrippsSample.setPlatform("Falcon").getPlatform()
+String platform = scrippsSample
+                .setPlatform("Falcon")
+                .getPlatform();
+cruise=scrippsSample.setCruise("CIRDLES").getCruise()
+String cruise = scrippsSample
+                .setCruise("CIRDLES")
+                .getCruise();
+sample=scrippsSample.setSample("CIRDLES-001").getSample()
+String sample = scrippsSample
+                .setSample("CIRDLES-001")
+                .getSample();
+device=scrippsSample.setDevice("core, gravity").getDevice()
+String device = scrippsSample
+                .setDevice("core, gravity")
+                .getDevice();
+beginDate=scrippsSample.setBeginDate("20000101").getBeginDate()
+String beginDate = scrippsSample
+                .setBeginDate("20000101")
+                .getBeginDate();
+endDate=scrippsSample.setEndDate("20000101").getEndDate()
+String endDate = scrippsSample
+                .setEndDate("20000101")
+                .getEndDate();
+lat=scrippsSample.setLat(new BigDecimal("32.7833")).getLat()
+BigDecimal lat = scrippsSample
+                .setLat(new BigDecimal("32.7833"))
+                .getLat();
+endLatmin=scrippsSample.setEndLatmin(new BigDecimal("32.7833")).getEndLatmin()
+BigDecimal endLatmin = scrippsSample
+                .setEndLatmin(new BigDecimal("32.7833"))
+                .getEndLatmin();
+lon=scrippsSample.setLon(new BigDecimal("-79.9333")).getLon()
+BigDecimal lon = scrippsSample
+                .setLon(new BigDecimal("-79.9333"))
+                .getLon();
+endLon=scrippsSample.setEndLon(new BigDecimal("-79.9333")).getEndLon()
+BigDecimal endLon = scrippsSample
+                .setEndLon(new BigDecimal("-79.9333"))
+                .getEndLon();
+waterDepth=scrippsSample.setWaterDepth(new BigDecimal("10")).getWaterDepth()
+BigDecimal waterDepth = scrippsSample
+                .setWaterDepth(new BigDecimal("10"))
+                .getWaterDepth();
+endWaterDepth=scrippsSample.setEndWaterDepth(new BigDecimal("10")).getEndWaterDepth()
+BigDecimal endWaterDepth = scrippsSample
+                .setEndWaterDepth(new BigDecimal("10"))
+                .getEndWaterDepth();
+Builder<?> builder;
+Builder<?> builder;
+FileChooser csvFileChooser = new FileChooser();
+ExtensionFilter csvExtensionFilter = new ExtensionFilter(
+                "Comma Separated (.csv)",
+                "*.csv");
+chosenFile=fileChooser.get()
+File chosenFile = fileChooser.get();
+ScrippsSampleSource sampleSource = new CsvScrippsSampleSource(
+                coreSamplesCsv.getPath(),
+                coreIntervalsCsv.getPath());
+verificationWindow=verificationWindowFactory.createScrippsVerificationWindow(sampleSource)
+Parent verificationWindow = verificationWindowFactory
+                .createScrippsVerificationWindow(sampleSource);
+Stage stage = new Stage();
+ScrippsSampleSourceAdapter sampleSource
+                = new ScrippsSampleSourceAdapter(scrippsSampleSource);
+verificationWindow=registrationWindowFactory.createScrippsRegistrationWindow(sampleSource)
+Parent verificationWindow = registrationWindowFactory
+                .createScrippsRegistrationWindow(sampleSource);
+Stage stage = new Stage();
+appComponent=DaggerAppComponent.create()
+AppComponent appComponent = DaggerAppComponent.create();
+parent=appComponent.scrippsImportWindow()
+Parent parent = appComponent.scrippsImportWindow();
+Scene scene = new Scene(parent);
+response=baseTarget.path(CREDENTIALS_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(Entity.text("" + "username=" + username + "\n"+ "password="+ password)).readEntity(String.class)
+String response = baseTarget.path(CREDENTIALS_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(Entity.text(""
+                        + "username=" + username + "\n"
+                        + "password=" + password))
+                .readEntity(String.class);
+samples=sampleMapper.translateToSesarSamples(sampleSource)
+Samples samples = sampleMapper.translateToSesarSamples(sampleSource);
+String samplesXml;
+jaxbContext=JAXBContext.newInstance(Samples.class)
+JAXBContext jaxbContext = JAXBContext.newInstance(Samples.class);
+marshaller=jaxbContext.createMarshaller()
+Marshaller marshaller = jaxbContext.createMarshaller();
+ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+Form uploadForm = new Form();
+response=baseTarget.path(UPLOAD_PATH).request(MediaType.APPLICATION_XML_TYPE,MediaType.TEXT_XML_TYPE).post(form(uploadForm))
+Response response = baseTarget.path(UPLOAD_PATH)
+                .request(
+                        MediaType.APPLICATION_XML_TYPE,
+                        MediaType.TEXT_XML_TYPE)
+                .post(form(uploadForm));
+XMLGregorianCalendar result = null;
+mappedSamplesSample=factory.createSamplesSample()
+Samples.Sample mappedSamplesSample = factory.createSamplesSample();
+mappedSamples=factory.createSamples()
+Samples mappedSamples = factory.createSamples();
+Samples samples = new Samples();
+Samples.Sample samplesSample = new Samples.Sample();
+Samples actual = mapper.translateToSesarSamples(() -> asList(sample));
+actualSample=actual.getSample().get(0)
+Samples.Sample actualSample = actual.getSample().get(0);
+Samples.Sample expectedSample = new Samples.Sample();
+
+Diff of c3fc112aafe40d4ecfb4fc3e85e04dba00a465a7 and 57428b55656e3f3c0a25c17363fd0bd8ba3d453a:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 1
+	--> recency = months
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision c3fc112aafe40d4ecfb4fc3e85e04dba00a465a7 to 57428b55656e3f3c0a25c17363fd0bd8ba3d453a
+
+************Analysis complete************
+Added generics to repository CIRDLES/MARS = 1
+
+John Zeringue added type argument method count = 0
+	--> recency = null
+John Zeringue added wildcard count = 0
+	--> recency = null
+John Zeringue added type declaration count = 1
+	--> recency = months
+John Zeringue added type parameter method count = 0
+	--> recency = null
+John Zeringue added type parameter field count = 0
+	--> recency = null
+John Zeringue added diamond count = 0
+	--> recency = null
+John Zeringue added method invocation count = 0
+	--> recency = null
+John Zeringue added implicit method invocation count = 0
+	--> recency = null
+John Zeringue added class instantiation count = 0
+	--> recency = null
+John Zeringue added nested count = 0
+	--> recency = null
+John Zeringue added bounds count = 0
+	--> recency = null
