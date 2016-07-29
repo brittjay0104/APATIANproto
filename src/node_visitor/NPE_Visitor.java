@@ -59,7 +59,7 @@ public class NPE_Visitor extends ASTVisitor{
 		MethodDeclaration md = getMethodDeclaration(node);
 		if(md != null){
 			
-			String method = md.getName().toString();			
+			String method = md.getName().toString();
 		
 		//System.out.println(method);
 		//System.out.println(src);

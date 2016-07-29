@@ -3,6 +3,7 @@ package code_parser;
 import static code_parser.ModelRepository.CHECK_SEPERATOR;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,6 +13,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import node_visitor.ExceptionsVisitor;
 import node_visitor.GenericsVisitor;
 import node_visitor.GenericsVisitor_2;
 import node_visitor.Log4JVisitor;
@@ -38,12 +40,15 @@ import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTParser;
 import org.eclipse.jdt.core.dom.CompilationUnit;
 
+import developer_creator.RunAnalysis;
+
 public class ModelParser {
 
 	List<String> expressions;
 	List<String> ifAndNext;
 	List<String> nullVariables;
 	List<String> nullFields;
+	List<String> directories = new ArrayList<String>();
 
 	/**
 	 * Creates new ModelParser (and list of methods/startPositions for comparison after each
@@ -282,6 +287,104 @@ public class ModelParser {
 //			}			
 //		}
 
+	}
+	
+	//parseForExceptions
+	public void parseForExceptions(ModelSourceFile file) throws IOException{
+		
+		//System.out.println("IN parseForExceptions");
+		ASTParser parser = ASTParser.newParser(AST.JLS4);
+
+		String src = readFiletoString(file.getSourceFile().getCanonicalPath());
+
+		file.setSource(src.toCharArray());
+		
+		Map options = JavaCore.getOptions();
+		JavaCore.setComplianceOptions(JavaCore.VERSION_1_6, options);
+		parser.setCompilerOptions(options);
+
+		
+		parser.setResolveBindings(true);
+		parser.setStatementsRecovery(true);
+		parser.setSource(src.toCharArray());
+		
+		//parser.setEnvironment(null, new String[] {".\\/exception-test\\"}, null, true);
+		
+		String repoName = RunAnalysis.getRepoName();
+		String dir = ".\\" + repoName.substring(repoName.indexOf("/")) + "\\";
+		
+		directories.add(dir);
+		
+		//System.out.println(dir);
+		
+		findSubDir(dir);
+		
+		String [] directories = (String[]) this.directories.toArray(new String[0]);
+		
+		//System.out.println(directories[1]);
+		// System.out.println("about to loop and find subdirectories");
+		
+		parser.setEnvironment(directories, directories, null, true);
+		parser.setUnitName(file.getName());
+		parser.setKind(ASTParser.K_COMPILATION_UNIT);
+
+		CompilationUnit cu = (CompilationUnit) parser.createAST(null);
+		
+		ExceptionsVisitor visitor = new ExceptionsVisitor(file);
+		cu.accept(visitor);
+		
+		List<String> throwsMethods = visitor.getThrowsMethods();
+		List<String> tryStatements = visitor.getTryStatements();
+		List<String> throwStatements = visitor.getThrowStatements();
+		List<String> exceptionClasses = visitor.getExceptionClasses();
+		
+		/*for (String s: allGenerics){
+			//System.out.println("Generics usage --> " + s);
+			file.addGeneric(s);
+		}*/
+		
+		//System.out.println("reaching changed part");
+		
+		for (String throwsMethod : throwsMethods){
+			file.addThrowsMethod(throwsMethod);
+		}
+		
+		for (String tryStatement : tryStatements){
+			file.addTryStatement(tryStatement);
+		}
+		
+		for (String throwStatement : throwStatements){
+			file.addThrowStatement(throwStatement);
+		}
+		
+		for (String exceptionClass : exceptionClasses){
+			file.addExceptionClass(exceptionClass);
+		}
+
+//
+
+	}
+	
+	public void findSubDir(String dir){
+		File file = new File(dir);
+		String[] directories = file.list();
+		
+		//System.out.println(new File(dir + directories[0]).isDirectory());
+		
+		
+		for(String name : directories){
+			//System.out.println(dir + name);
+			//System.out.println(new File(dir + name).isDirectory());
+			if(new File(dir + name).isDirectory()){
+				//System.out.println(dir + name);
+				//System.out.println("calling findSubDir on " + dir + name + "\\");
+				findSubDir(dir + name + "\\");
+				this.directories.add(dir + name);
+				
+			}
+		}
+		
+		return;
 	}
 	
 	public boolean containsField(List<NODP> currNodp, String field, String type){

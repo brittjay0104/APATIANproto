@@ -1,0 +1,61 @@
+google/google-java-format -- eaftan -- Eddie Aftandilian
+https://github.com/google/google-java-format.git
+git clone https://github.com/google/google-java-format.git
+.\/google-java-format\
+.\/google-java-format\.git
+0
+Project cloned!
+Eddie Aftandilian is responsible for commit 8a3b74e4d6d69a71d9f72ca150884033e82328eb
+Eddie Aftandilian is responsible for commit 934ba46adc26484b6ff9e6ee64abe86ddb1b9d5f
+Added CloseOp.java to .\/google-java-format\ repository source files.
+Added CommentsHelper.java to .\/google-java-format\ repository source files.
+Added Doc.java to .\/google-java-format\ repository source files.
+Added DocBuilder.java to .\/google-java-format\ repository source files.
+Added FormatterDiagnostic.java to .\/google-java-format\ repository source files.
+Added Indent.java to .\/google-java-format\ repository source files.
+Added Input.java to .\/google-java-format\ repository source files.
+Added InputOutput.java to .\/google-java-format\ repository source files.
+Added CommandLineOptions.java to .\/google-java-format\ repository source files.
+Added CommandLineOptionsParser.java to .\/google-java-format\ repository source files.
+Added FormatFileCallable.java to .\/google-java-format\ repository source files.
+Added Formatter.java to .\/google-java-format\ repository source files.
+Added FormatterException.java to .\/google-java-format\ repository source files.
+Added GoogleJavaFormatVersion.java to .\/google-java-format\ repository source files.
+Added ImportOrderer.java to .\/google-java-format\ repository source files.
+Added JavaCommentsHelper.java to .\/google-java-format\ repository source files.
+Added CharStream.java to .\/google-java-format\ repository source files.
+Added JavadocFormatter.java to .\/google-java-format\ repository source files.
+Added JavadocLexer.java to .\/google-java-format\ repository source files.
+Added JavadocWriter.java to .\/google-java-format\ repository source files.
+Added Token.java to .\/google-java-format\ repository source files.
+Added JavaFormatterOptions.java to .\/google-java-format\ repository source files.
+Added JavaInput.java to .\/google-java-format\ repository source files.
+Added JavaInputAstVisitor.java to .\/google-java-format\ repository source files.
+Added JavaOutput.java to .\/google-java-format\ repository source files.
+Added Main.java to .\/google-java-format\ repository source files.
+Added ModifierOrderer.java to .\/google-java-format\ repository source files.
+Added RemoveUnusedImports.java to .\/google-java-format\ repository source files.
+Added Replacement.java to .\/google-java-format\ repository source files.
+Added TypeNameClassifier.java to .\/google-java-format\ repository source files.
+Added UsageException.java to .\/google-java-format\ repository source files.
+Added Op.java to .\/google-java-format\ repository source files.
+Added OpenOp.java to .\/google-java-format\ repository source files.
+Added OpsBuilder.java to .\/google-java-format\ repository source files.
+Added Output.java to .\/google-java-format\ repository source files.
+Added CommandLineFlagsTest.java to .\/google-java-format\ repository source files.
+Added CommandLineOptionsParserTest.java to .\/google-java-format\ repository source files.
+Added DiagnosticTest.java to .\/google-java-format\ repository source files.
+Added FormatterIntegrationTest.java to .\/google-java-format\ repository source files.
+Added FormatterTest.java to .\/google-java-format\ repository source files.
+Added ImportOrdererTest.java to .\/google-java-format\ repository source files.
+Added JavadocFormattingTest.java to .\/google-java-format\ repository source files.
+Added LineRangesToCharRangesTest.java to .\/google-java-format\ repository source files.
+Added MainTest.java to .\/google-java-format\ repository source files.
+Added ModifierOrdererTest.java to .\/google-java-format\ repository source files.
+Added PartialFormattingTest.java to .\/google-java-format\ repository source files.
+Added RemoveUnusedImportsTest.java to .\/google-java-format\ repository source files.
+Added TypeNameClassifierTest.java to .\/google-java-format\ repository source files.
+Added CodeStyleManagerDecorator.java to .\/google-java-format\ repository source files.
+Added GoogleJavaFormatAction.java to .\/google-java-format\ repository source files.
+Added GoogleJavaFormatCodeStyleManager.java to .\/google-java-format\ repository source files.
+Added GoogleJavaFormatCodeStyleManagerTest.java to .\/google-java-format\ repository source files.

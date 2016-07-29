@@ -1,0 +1,9 @@
+novoda/spikes -- ataulm -- Ataul Munim
+https://github.com/novoda/spikes.git
+git clone https://github.com/novoda/spikes.git
+.\/spikes\
+.\/spikes\.git
+128
+Project cloned!
+NoHeadException thrown!
+File copied successfully!

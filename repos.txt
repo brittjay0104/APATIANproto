@@ -1,5 +1,5 @@
-google/error-prone, eaftan, Eddie Aftandilian
 google/google-java-format, eaftan, Eddie Aftandilian
+google/error-prone, eaftan, Eddie Aftandilian
 google/guava, eaftan, Eddie Aftandilian
 bazelbuild/bazel, eaftan, Eddie Aftandilian
 google/auto, eaftan, Eddie Aftandilian

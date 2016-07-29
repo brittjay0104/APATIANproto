@@ -36,7 +36,6 @@ public class RunAnalysis {
 //		ModelParser p = new ModelParser();
 //		
 //		p.parseForGenerics(f);
-		
 
 
 		File repos = new File("repos.txt");
@@ -74,10 +73,16 @@ public class RunAnalysis {
 					
 					if (line.contains("/")){
 						opFile2 = opFile.replace("/", "-");
-						System.setOut(new PrintStream(new FileOutputStream(opFile2)));
+						
+						//System.setOut(new PrintStream(new FileOutputStream(opFile2))); //comment to log to console.
 						
 						// create files to populate after analysis
 						f1 = new File(opFile2);
+						
+						if(!f1.exists()){
+							f1.createNewFile();
+						}
+						
 						f2 = new File("./archived-output/02-08-2016/" + opFile2);
 						
 						is = new FileInputStream(f1);
@@ -226,7 +231,7 @@ public class RunAnalysis {
 	private static String getUserName(){
 		return userName;
 	}
-	private static String getRepoName(){
+	public static String getRepoName(){
 		return repoName;
 	}
 	

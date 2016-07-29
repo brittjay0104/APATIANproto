@@ -24,6 +24,12 @@ public class ModelSourceFile {
 	Repository repo;
 	public char[] source;
 	private ArrayList<ModelCommit> commits;
+	
+	//exceptions
+	public List<String> throwsMethods;
+	public List<String> tryStatements;
+	public List<String> throwStatements;
+	public List<String> exceptionClasses;
 
 	public HashMap<String, ArrayList<String>> invocs;
 	public HashMap<String, ArrayList<String>> nullVars;
@@ -92,6 +98,12 @@ public class ModelSourceFile {
 		collVars = new ArrayList<String>();
 		optVars = new ArrayList<String>();
 		catchBlocks = new ArrayList<String>();
+		
+		//exceptions
+		throwsMethods = new ArrayList<String>();
+		tryStatements = new ArrayList<String>();
+		throwStatements = new ArrayList<String>();
+		exceptionClasses = new ArrayList<String>();
 
 		allGenerics = new ArrayList<String>();
 		generics = new HashMap<String, List<String>>();
@@ -226,6 +238,47 @@ public class ModelSourceFile {
 
 		return null;
 	}
+	
+	//exceptions
+	public List<String> getThrowsMethods(){
+		return throwsMethods;
+	}
+	
+	public List<String> getTryStatements(){
+		return tryStatements;
+	}
+	
+	public List<String> getThrowStatements(){
+		return throwStatements;
+	}
+	
+	public List<String> getExceptionClasses(){
+		return exceptionClasses;
+	}
+	
+	//adders
+	
+	public void addThrowsMethod(String throwsMethod){
+		throwsMethods.add(throwsMethod);
+		return;
+	}
+	
+	public void addTryStatement(String tryStatement){
+		tryStatements.add(tryStatement);
+		return;
+	}
+	
+	public void addThrowStatement(String throwStatement){
+		throwStatements.add(throwStatement);
+		return;
+	}
+	
+	public void addExceptionClass(String exceptionClass){
+		exceptionClasses.add(exceptionClass);
+		return;
+	}
+	
+	//end exceptions
 	
 	public HashMap<String, ArrayList<String>> getNullVars(){
 		return nullVars;

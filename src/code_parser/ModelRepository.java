@@ -555,6 +555,9 @@ public class ModelRepository {
 //			// passing in ifAndNext
 //			additionDiff(directory, f, checks, previousHash, currentHash, dev);
 			
+			//COMMENTED OUT FOR TESTING
+			
+			
 		
 			ArrayList<List<String>> npes = parser.parseForNPEAvoidance(f);
 			
@@ -587,8 +590,6 @@ public class ModelRepository {
 			}
 			additionDiff(directory, f, nodps, previousHash, currentHash, dev);
 			
-			
-			
 			// GENERICS
 			parser.parseForGenerics(f);
 			
@@ -597,8 +598,47 @@ public class ModelRepository {
 			for (String s: generics){
 				addUsagePattern(s);
 			}
-			genericsAdditionDiff(directory, f, generics, previousHash, currentHash, dev, currentCommit);			
-					
+			genericsAdditionDiff(directory, f, generics, previousHash, currentHash, dev, currentCommit);
+			
+			
+			
+			//END COMMENT
+			
+			//EXCEPTIONS
+			
+			//System.out.println("About to run parseForExceptions in ModelRepository");
+			parser.parseForExceptions(f);
+			
+			/*
+			List<String> throwsMethods = f.getThrowsMethods();
+			for (String throwMethod: throwsMethods){
+				addUsagePattern(throwMethod);
+			}
+			
+			exceptionsAdditionDiff(directory, f, throwsMethods, previousHash, currentHash, dev);
+			
+			List<String> tryStatements = f.getTryStatements();
+			for (String tryStatement: tryStatements){
+				addUsagePattern(tryStatement);
+			}
+			
+			exceptionsAdditionDiff(directory, f, tryStatements, previousHash, currentHash, dev);
+			
+			List<String> throwStatements = f.getThrowStatements();
+			for (String throwStatement: throwStatements){
+				addUsagePattern(throwStatement);
+			}
+			
+			exceptionsAdditionDiff(directory, f, throwStatements, previousHash, currentHash, dev);
+			
+			List<String> exceptionClasses = f.getExceptionClasses();
+			for (String exceptionClass: exceptionClasses){
+				addUsagePattern(exceptionClass);
+			}
+			
+			exceptionsAdditionDiff(directory, f, exceptionClasses, previousHash, currentHash, dev);
+			
+			*/
 		}
 	}
 
@@ -1222,7 +1262,7 @@ public class ModelRepository {
 		
 		
 	}
-
+	
 	private String checkDifference(RevCommit timeDiff) {
 		PersonIdent author = timeDiff.getAuthorIdent();
 		java.util.Date authorDate = author.getWhen();
@@ -1709,6 +1749,185 @@ public class ModelRepository {
 		}
 		
 		return false;
+	}
+	
+	
+public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<String> checks, String oldH, String newH, ModelDeveloper developer) {
+		
+		File repoDir = new File(directory);
+		
+		//int addedNullChecks = 0;
+		//int derefNullChecks = 0;
+		
+		//int addedCollVar = 0;
+		//int addedOptVar = 0;		
+		//int addedCatchBlock = 0;
+		//int addedNODP = 0;
+		
+		int addedThrowsMethods = 0;
+		int addedTryStatements = 0;
+		int addedThrowStatements = 0;
+		int addedExceptionClasses = 0;
+		
+		Git git;
+		//current revision
+		String currentHash = newH;
+
+		try {
+		
+			git = Git.open(repoDir);
+			// next to current version in repository (older)
+			String previousHash = getOldHash(newH);
+
+
+			Repository repo = git.getRepository();
+			
+			ObjectId headId = repo.resolve(currentHash + "^{tree}");
+			ObjectId oldId = repo.resolve(previousHash + "^{tree}");
+
+			ObjectReader reader = repo.newObjectReader();
+			
+
+			CanonicalTreeParser oldTreeIter = new CanonicalTreeParser();
+			oldTreeIter.reset(reader, oldId);
+			CanonicalTreeParser newTreeIter = new CanonicalTreeParser();
+			newTreeIter.reset(reader, headId);
+			
+			List<DiffEntry> diffs;
+
+			diffs = git.diff()
+					.setNewTree(newTreeIter)
+					.setOldTree(oldTreeIter)
+					.call();
+
+			ByteArrayOutputStream out = new ByteArrayOutputStream();
+			DiffFormatter df = new DiffFormatter(out);
+			df.setRepository(repo);
+			df.setDetectRenames(true);
+	
+			
+			//System.out.println("******************** ADDITION DIFF *************************");
+			
+			
+			for(DiffEntry diff : diffs)
+			{
+				
+				RenameDetector rd = df.getRenameDetector();
+				
+				List<DiffEntry> compute = rd.compute();
+				
+				if (!(compute.isEmpty())){
+					System.out.println("This diff is a file rename!");
+				}
+
+				df.format(diff);
+				diff.getOldId();
+				String diffText = out.toString("UTF-8");
+				
+				if (diffText.contains(file.getName())){
+//					if (currentHash.equals("6a9bda47c7c18265dcc682be5513a82db528cdfd") & file.getName().equals("NullObjectPattern_test.java")){
+//						System.out.println(diffText);
+//					}	
+					
+					BufferedReader br = new BufferedReader(new StringReader(diffText));
+					String line = null;
+					
+					//System.out.println(diffText);
+					
+					while((line = br.readLine())!= null){ 
+						line = line.trim();
+						
+						line = line.replaceAll("\t", " ");
+						
+						// iterate over parser checks for addition
+						if (line.startsWith("+")){
+							// TODO method for incrementing total LOC added?
+							for (String check: checks){
+								
+//								System.out.println("Diff line --> " + line);
+//								System.out.println("Usage pattern --> " + check);
+								
+								if (file.getThrowsMethods().contains(check)){
+									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
+									pattern = pattern.trim();
+									
+									//System.out.println("line:\n" + line);
+									//System.out.println("pattern:\n" + pattern);
+									if (line.contains(pattern)){
+										
+										addedThrowsMethods = checkAddedNull(addedThrowsMethods, currentHash, diffText, check);
+									}
+									
+								} else if (file.getTryStatements().contains(check)){
+									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
+									String p = pattern.trim();
+									
+									if (line.contains(p)){
+										addedTryStatements = checkAddedNull(addedTryStatements, currentHash, diffText, check);
+									}
+									
+								} else if (file.getThrowStatements().contains(check)){
+									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
+									String p = pattern.trim();
+									
+									if (line.contains(p)){
+										addedThrowStatements = checkAddedNull(addedThrowStatements, currentHash, diffText, check);
+									}
+								} else if (file.getExceptionClasses().contains(check)){
+									// check for return statement addition (presumably last piece)
+									String pattern = check.substring(check.lastIndexOf(CHECK_SEPERATOR)+1, check.length());
+									String p = pattern.trim();
+									
+									if (line.contains(p)){
+										addedExceptionClasses = checkAddedNull(addedExceptionClasses, currentHash, diffText, check);
+									} 
+									
+								}
+								
+							}
+						}						
+					}
+				}
+				
+				out.reset();
+			}
+						
+			// add counts from analysis to developer counts (if within threshold)
+			if (addedThrowsMethods > 0 && addedThrowsMethods <= 10){
+				if (developer.getCommits().contains(currentHash)){
+					//developer.setAddedNullCounts(addedThrowsMethods);
+					System.out.println("Got to developer.setAddedNullCounts");
+				}
+			}
+			
+			if (addedTryStatements > 0 && addedTryStatements <= 10){
+				if (developer.getCommits().contains(currentHash)){
+					//developer.setAddedCollCounts(addedTryStatements);
+					System.out.println("Got to developer.setAddedCollCounts");
+				}
+			}
+			
+			if (addedThrowStatements > 0 && addedThrowStatements <= 10){
+				if (developer.getCommits().contains(currentHash)){
+					//developer.setAddedOptCounts(addedThrowStatements);
+					System.out.println("Got to developer.setAddedOptCounts");
+				}
+				
+			}
+			
+			if (addedExceptionClasses > 0 && addedExceptionClasses <= 10){
+				if (developer.getCommits().contains(currentHash)){
+					//developer.setAddedCatchCounts(addedExceptionClasses);
+					System.out.println("Got to developer.setAddedCatchCounts");
+				}
+			}
+			
+			
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		} catch (GitAPIException e) {
+			System.out.println("GitAPIException caught!");
+		}
 	}
 
 

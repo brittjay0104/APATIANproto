@@ -1,0 +1,4441 @@
+novoda/landing-strip -- ataulm -- Ataul Munim
+https://github.com/novoda/landing-strip.git
+git clone https://github.com/novoda/landing-strip.git
+.\/landing-strip\
+.\/landing-strip\.git
+0
+Project cloned!
+Ataul Munim is responsible for commit f114013e76efd09a8a29a1b3743df9311f83d6d9
+Ataul Munim is responsible for commit ccc4b8284bc634b46f6627b7aa1e3e23e8f5d168
+Ataul Munim is responsible for commit 3ca26235981b729c8733c6a689bdca3dcb2c4566
+Ataul Munim is responsible for commit f13aff538590bb4e583f65e9ddb082aab9718b35
+Ataul Munim is responsible for commit 1ba105ce32b9769efb3933b74b8b736b463f4bd3
+Ataul Munim is responsible for commit a52608cb051ad8793b1425918fe14070c8f11ec5
+Ataul Munim is responsible for commit 44002cfc7040a12e3ffe5f81554c54721d3b5abd
+Ataul Munim is responsible for commit 6e74e7bd3b03d37a0f223eacadda7b7bc2b4e6a0
+Ataul Munim is responsible for commit 8893b0893208f8d7d81409b6bc32e988d1db555f
+Ataul Munim is responsible for commit ba4f42bb6866972076e521475f547ea1ecb17f2c
+Ataul Munim is responsible for commit 0199c5bcc3ab62a0b36499ce071bcfb8046605ea
+Ataul Munim is responsible for commit 80ab5dc1e391d71d01f8cb96e347f5db779f488d
+Ataul Munim is responsible for commit 21b51ac9175fe7de18346394e4f8ad48f4100e9a
+Ataul Munim is responsible for commit 63e6e62b09dc8bca1fd845f123d02394b363c58c
+Added Exposer.java to .\/landing-strip\ repository source files.
+Added Attributes.java to .\/landing-strip\ repository source files.
+Added Coordinates.java to .\/landing-strip\ repository source files.
+Added FastForwarder.java to .\/landing-strip\ repository source files.
+Added IndicatorCoordinatesCalculator.java to .\/landing-strip\ repository source files.
+Added LandingStrip.java to .\/landing-strip\ repository source files.
+Added MutableCoordinates.java to .\/landing-strip\ repository source files.
+Added OnPageChangedListenerCollection.java to .\/landing-strip\ repository source files.
+Added OnPagerAdapterChangedListener.java to .\/landing-strip\ repository source files.
+Added PagerAdapterObserver.java to .\/landing-strip\ repository source files.
+Added Scrollable.java to .\/landing-strip\ repository source files.
+Added ScrollingPageChangeListener.java to .\/landing-strip\ repository source files.
+Added ScrollOffsetCalculator.java to .\/landing-strip\ repository source files.
+Added State.java to .\/landing-strip\ repository source files.
+Added TabsContainer.java to .\/landing-strip\ repository source files.
+Added CustomLandingStrip.java to .\/landing-strip\ repository source files.
+Added CustomTabActivity.java to .\/landing-strip\ repository source files.
+Added ExampleRainbowLandingStrip.java to .\/landing-strip\ repository source files.
+Added FixedWidthTabActivity.java to .\/landing-strip\ repository source files.
+Added MultipleListenersActivity.java to .\/landing-strip\ repository source files.
+Added NoFragmentsSimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+Added Data.java to .\/landing-strip\ repository source files.
+Added DemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added SmallDemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerFragment.java to .\/landing-strip\ repository source files.
+Added DemoViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapterState.java to .\/landing-strip\ repository source files.
+Added SimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+
+ ************ ANALYZING FOR USAGE PATTERN ADDITION ************
+
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+
+****Parsing for addition at revision f114013e76efd09a8a29a1b3743df9311f83d6d9****
+
+Added Exposer.java to .\/landing-strip\ repository source files.
+Added Attributes.java to .\/landing-strip\ repository source files.
+Added Coordinates.java to .\/landing-strip\ repository source files.
+Added FastForwarder.java to .\/landing-strip\ repository source files.
+Added IndicatorCoordinatesCalculator.java to .\/landing-strip\ repository source files.
+Added LandingStrip.java to .\/landing-strip\ repository source files.
+Added MutableCoordinates.java to .\/landing-strip\ repository source files.
+Added OnPageChangedListenerCollection.java to .\/landing-strip\ repository source files.
+Added OnPagerAdapterChangedListener.java to .\/landing-strip\ repository source files.
+Added PagerAdapterObserver.java to .\/landing-strip\ repository source files.
+Added Scrollable.java to .\/landing-strip\ repository source files.
+Added ScrollingPageChangeListener.java to .\/landing-strip\ repository source files.
+Added ScrollOffsetCalculator.java to .\/landing-strip\ repository source files.
+Added State.java to .\/landing-strip\ repository source files.
+Added TabsContainer.java to .\/landing-strip\ repository source files.
+Added CustomLandingStrip.java to .\/landing-strip\ repository source files.
+Added CustomTabActivity.java to .\/landing-strip\ repository source files.
+Added ExampleRainbowLandingStrip.java to .\/landing-strip\ repository source files.
+Added FixedWidthTabActivity.java to .\/landing-strip\ repository source files.
+Added MultipleListenersActivity.java to .\/landing-strip\ repository source files.
+Added NoFragmentsSimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+Added Data.java to .\/landing-strip\ repository source files.
+Added DemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added SmallDemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerFragment.java to .\/landing-strip\ repository source files.
+Added DemoViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapterState.java to .\/landing-strip\ repository source files.
+Added SimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+.\/landing-strip
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+in visit TypeDeclaration node
+node is defined
+RuntimeException
+node is defined
+Exception
+exception subclass found!
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+
+Diff of f114013e76efd09a8a29a1b3743df9311f83d6d9 and fcf50f11f0bf1f8ff41cd7cf8920717f704fc9bf:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision f114013e76efd09a8a29a1b3743df9311f83d6d9 to fcf50f11f0bf1f8ff41cd7cf8920717f704fc9bf
+
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+
+****Parsing for addition at revision ccc4b8284bc634b46f6627b7aa1e3e23e8f5d168****
+
+Added Exposer.java to .\/landing-strip\ repository source files.
+Added Attributes.java to .\/landing-strip\ repository source files.
+Added Coordinates.java to .\/landing-strip\ repository source files.
+Added FastForwarder.java to .\/landing-strip\ repository source files.
+Added IndicatorCoordinatesCalculator.java to .\/landing-strip\ repository source files.
+Added LandingStrip.java to .\/landing-strip\ repository source files.
+Added MutableCoordinates.java to .\/landing-strip\ repository source files.
+Added OnPageChangedListenerCollection.java to .\/landing-strip\ repository source files.
+Added OnPagerAdapterChangedListener.java to .\/landing-strip\ repository source files.
+Added PagerAdapterObserver.java to .\/landing-strip\ repository source files.
+Added Scrollable.java to .\/landing-strip\ repository source files.
+Added ScrollingPageChangeListener.java to .\/landing-strip\ repository source files.
+Added ScrollOffsetCalculator.java to .\/landing-strip\ repository source files.
+Added State.java to .\/landing-strip\ repository source files.
+Added TabsContainer.java to .\/landing-strip\ repository source files.
+Added CustomLandingStrip.java to .\/landing-strip\ repository source files.
+Added CustomTabActivity.java to .\/landing-strip\ repository source files.
+Added ExampleRainbowLandingStrip.java to .\/landing-strip\ repository source files.
+Added FixedWidthTabActivity.java to .\/landing-strip\ repository source files.
+Added MultipleListenersActivity.java to .\/landing-strip\ repository source files.
+Added NoFragmentsSimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+Added Data.java to .\/landing-strip\ repository source files.
+Added DemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added SmallDemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerFragment.java to .\/landing-strip\ repository source files.
+Added DemoViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapterState.java to .\/landing-strip\ repository source files.
+Added SimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+.\/landing-strip
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+in visit TypeDeclaration node
+node is defined
+RuntimeException
+node is defined
+Exception
+exception subclass found!
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+
+Diff of ccc4b8284bc634b46f6627b7aa1e3e23e8f5d168 and 3ca26235981b729c8733c6a689bdca3dcb2c4566:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision ccc4b8284bc634b46f6627b7aa1e3e23e8f5d168 to 3ca26235981b729c8733c6a689bdca3dcb2c4566
+
+
+****Parsing for addition at revision 3ca26235981b729c8733c6a689bdca3dcb2c4566****
+
+Added Exposer.java to .\/landing-strip\ repository source files.
+Added Attributes.java to .\/landing-strip\ repository source files.
+Added Coordinates.java to .\/landing-strip\ repository source files.
+Added FastForwarder.java to .\/landing-strip\ repository source files.
+Added IndicatorCoordinatesCalculator.java to .\/landing-strip\ repository source files.
+Added LandingStrip.java to .\/landing-strip\ repository source files.
+Added MutableCoordinates.java to .\/landing-strip\ repository source files.
+Added OnPageChangedListenerCollection.java to .\/landing-strip\ repository source files.
+Added OnPagerAdapterChangedListener.java to .\/landing-strip\ repository source files.
+Added PagerAdapterObserver.java to .\/landing-strip\ repository source files.
+Added Scrollable.java to .\/landing-strip\ repository source files.
+Added ScrollingPageChangeListener.java to .\/landing-strip\ repository source files.
+Added ScrollOffsetCalculator.java to .\/landing-strip\ repository source files.
+Added State.java to .\/landing-strip\ repository source files.
+Added TabsContainer.java to .\/landing-strip\ repository source files.
+Added CustomLandingStrip.java to .\/landing-strip\ repository source files.
+Added CustomTabActivity.java to .\/landing-strip\ repository source files.
+Added ExampleRainbowLandingStrip.java to .\/landing-strip\ repository source files.
+Added FixedWidthTabActivity.java to .\/landing-strip\ repository source files.
+Added MultipleListenersActivity.java to .\/landing-strip\ repository source files.
+Added NoFragmentsSimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+Added Data.java to .\/landing-strip\ repository source files.
+Added DemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added SmallDemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerFragment.java to .\/landing-strip\ repository source files.
+Added DemoViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapterState.java to .\/landing-strip\ repository source files.
+Added SimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+.\/landing-strip
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+in visit TypeDeclaration node
+node is defined
+RuntimeException
+node is defined
+Exception
+exception subclass found!
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+
+Diff of 3ca26235981b729c8733c6a689bdca3dcb2c4566 and f13aff538590bb4e583f65e9ddb082aab9718b35:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 3ca26235981b729c8733c6a689bdca3dcb2c4566 to f13aff538590bb4e583f65e9ddb082aab9718b35
+
+
+****Parsing for addition at revision f13aff538590bb4e583f65e9ddb082aab9718b35****
+
+Added Exposer.java to .\/landing-strip\ repository source files.
+Added Attributes.java to .\/landing-strip\ repository source files.
+Added Coordinates.java to .\/landing-strip\ repository source files.
+Added FastForwarder.java to .\/landing-strip\ repository source files.
+Added IndicatorCoordinatesCalculator.java to .\/landing-strip\ repository source files.
+Added LandingStrip.java to .\/landing-strip\ repository source files.
+Added MutableCoordinates.java to .\/landing-strip\ repository source files.
+Added OnPageChangedListenerCollection.java to .\/landing-strip\ repository source files.
+Added OnPagerAdapterChangedListener.java to .\/landing-strip\ repository source files.
+Added PagerAdapterObserver.java to .\/landing-strip\ repository source files.
+Added Scrollable.java to .\/landing-strip\ repository source files.
+Added ScrollingPageChangeListener.java to .\/landing-strip\ repository source files.
+Added ScrollOffsetCalculator.java to .\/landing-strip\ repository source files.
+Added State.java to .\/landing-strip\ repository source files.
+Added TabsContainer.java to .\/landing-strip\ repository source files.
+Added CustomLandingStrip.java to .\/landing-strip\ repository source files.
+Added CustomTabActivity.java to .\/landing-strip\ repository source files.
+Added ExampleRainbowLandingStrip.java to .\/landing-strip\ repository source files.
+Added FixedWidthTabActivity.java to .\/landing-strip\ repository source files.
+Added MultipleListenersActivity.java to .\/landing-strip\ repository source files.
+Added NoFragmentsSimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+Added Data.java to .\/landing-strip\ repository source files.
+Added DemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added SmallDemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerFragment.java to .\/landing-strip\ repository source files.
+Added DemoViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapterState.java to .\/landing-strip\ repository source files.
+Added SimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+.\/landing-strip
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+in visit TypeDeclaration node
+node is defined
+RuntimeException
+node is defined
+Exception
+exception subclass found!
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+
+Diff of f13aff538590bb4e583f65e9ddb082aab9718b35 and 1ba105ce32b9769efb3933b74b8b736b463f4bd3:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision f13aff538590bb4e583f65e9ddb082aab9718b35 to 1ba105ce32b9769efb3933b74b8b736b463f4bd3
+
+
+****Parsing for addition at revision 1ba105ce32b9769efb3933b74b8b736b463f4bd3****
+
+Added Exposer.java to .\/landing-strip\ repository source files.
+Added Attributes.java to .\/landing-strip\ repository source files.
+Added Coordinates.java to .\/landing-strip\ repository source files.
+Added FastForwarder.java to .\/landing-strip\ repository source files.
+Added IndicatorCoordinatesCalculator.java to .\/landing-strip\ repository source files.
+Added LandingStrip.java to .\/landing-strip\ repository source files.
+Added MutableCoordinates.java to .\/landing-strip\ repository source files.
+Added OnPageChangedListenerCollection.java to .\/landing-strip\ repository source files.
+Added OnPagerAdapterChangedListener.java to .\/landing-strip\ repository source files.
+Added PagerAdapterObserver.java to .\/landing-strip\ repository source files.
+Added Scrollable.java to .\/landing-strip\ repository source files.
+Added ScrollingPageChangeListener.java to .\/landing-strip\ repository source files.
+Added ScrollOffsetCalculator.java to .\/landing-strip\ repository source files.
+Added State.java to .\/landing-strip\ repository source files.
+Added TabsContainer.java to .\/landing-strip\ repository source files.
+Added CustomLandingStrip.java to .\/landing-strip\ repository source files.
+Added CustomTabActivity.java to .\/landing-strip\ repository source files.
+Added ExampleRainbowLandingStrip.java to .\/landing-strip\ repository source files.
+Added FixedWidthTabActivity.java to .\/landing-strip\ repository source files.
+Added MultipleListenersActivity.java to .\/landing-strip\ repository source files.
+Added NoFragmentsSimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+Added Data.java to .\/landing-strip\ repository source files.
+Added DemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added SmallDemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerFragment.java to .\/landing-strip\ repository source files.
+Added DemoViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapterState.java to .\/landing-strip\ repository source files.
+Added SimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+.\/landing-strip
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+in visit TypeDeclaration node
+node is defined
+RuntimeException
+node is defined
+Exception
+exception subclass found!
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+
+Diff of 1ba105ce32b9769efb3933b74b8b736b463f4bd3 and 2d8dc71912caacf95e9c8fe27a691a58af8975ae:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit '1ba105ce32b9769efb3933b74b8b736b463f4bd3' because it has 2 parents, only commits with exactly one parent are supported
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+
+****Parsing for addition at revision a52608cb051ad8793b1425918fe14070c8f11ec5****
+
+Added Exposer.java to .\/landing-strip\ repository source files.
+Added Attributes.java to .\/landing-strip\ repository source files.
+Added Coordinates.java to .\/landing-strip\ repository source files.
+Added FastForwarder.java to .\/landing-strip\ repository source files.
+Added IndicatorCoordinatesCalculator.java to .\/landing-strip\ repository source files.
+Added LandingStrip.java to .\/landing-strip\ repository source files.
+Added MutableCoordinates.java to .\/landing-strip\ repository source files.
+Added OnPageChangedListenerCollection.java to .\/landing-strip\ repository source files.
+Added OnPagerAdapterChangedListener.java to .\/landing-strip\ repository source files.
+Added PagerAdapterObserver.java to .\/landing-strip\ repository source files.
+Added Scrollable.java to .\/landing-strip\ repository source files.
+Added ScrollingPageChangeListener.java to .\/landing-strip\ repository source files.
+Added ScrollOffsetCalculator.java to .\/landing-strip\ repository source files.
+Added State.java to .\/landing-strip\ repository source files.
+Added TabsContainer.java to .\/landing-strip\ repository source files.
+Added CustomLandingStrip.java to .\/landing-strip\ repository source files.
+Added CustomTabActivity.java to .\/landing-strip\ repository source files.
+Added ExampleRainbowLandingStrip.java to .\/landing-strip\ repository source files.
+Added FixedWidthTabActivity.java to .\/landing-strip\ repository source files.
+Added MultipleListenersActivity.java to .\/landing-strip\ repository source files.
+Added NoFragmentsSimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+Added Data.java to .\/landing-strip\ repository source files.
+Added DemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added SmallDemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerFragment.java to .\/landing-strip\ repository source files.
+Added DemoViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapterState.java to .\/landing-strip\ repository source files.
+Added SimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+.\/landing-strip
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+in visit TypeDeclaration node
+node is defined
+RuntimeException
+node is defined
+Exception
+exception subclass found!
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+
+Diff of a52608cb051ad8793b1425918fe14070c8f11ec5 and 44002cfc7040a12e3ffe5f81554c54721d3b5abd:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision a52608cb051ad8793b1425918fe14070c8f11ec5 to 44002cfc7040a12e3ffe5f81554c54721d3b5abd
+
+
+****Parsing for addition at revision 44002cfc7040a12e3ffe5f81554c54721d3b5abd****
+
+Added Exposer.java to .\/landing-strip\ repository source files.
+Added Attributes.java to .\/landing-strip\ repository source files.
+Added Coordinates.java to .\/landing-strip\ repository source files.
+Added FastForwarder.java to .\/landing-strip\ repository source files.
+Added IndicatorCoordinatesCalculator.java to .\/landing-strip\ repository source files.
+Added LandingStrip.java to .\/landing-strip\ repository source files.
+Added MutableCoordinates.java to .\/landing-strip\ repository source files.
+Added OnPageChangedListenerCollection.java to .\/landing-strip\ repository source files.
+Added OnPagerAdapterChangedListener.java to .\/landing-strip\ repository source files.
+Added PagerAdapterObserver.java to .\/landing-strip\ repository source files.
+Added Scrollable.java to .\/landing-strip\ repository source files.
+Added ScrollingPageChangeListener.java to .\/landing-strip\ repository source files.
+Added ScrollOffsetCalculator.java to .\/landing-strip\ repository source files.
+Added State.java to .\/landing-strip\ repository source files.
+Added TabsContainer.java to .\/landing-strip\ repository source files.
+Added CustomLandingStrip.java to .\/landing-strip\ repository source files.
+Added CustomTabActivity.java to .\/landing-strip\ repository source files.
+Added ExampleRainbowLandingStrip.java to .\/landing-strip\ repository source files.
+Added FixedWidthTabActivity.java to .\/landing-strip\ repository source files.
+Added MultipleListenersActivity.java to .\/landing-strip\ repository source files.
+Added NoFragmentsSimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+Added Data.java to .\/landing-strip\ repository source files.
+Added DemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added SmallDemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerFragment.java to .\/landing-strip\ repository source files.
+Added DemoViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapterState.java to .\/landing-strip\ repository source files.
+Added SimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+.\/landing-strip
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+in visit TypeDeclaration node
+node is defined
+RuntimeException
+node is defined
+Exception
+exception subclass found!
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+
+Diff of 44002cfc7040a12e3ffe5f81554c54721d3b5abd and 6e74e7bd3b03d37a0f223eacadda7b7bc2b4e6a0:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 44002cfc7040a12e3ffe5f81554c54721d3b5abd to 6e74e7bd3b03d37a0f223eacadda7b7bc2b4e6a0
+
+
+****Parsing for addition at revision 6e74e7bd3b03d37a0f223eacadda7b7bc2b4e6a0****
+
+Added Exposer.java to .\/landing-strip\ repository source files.
+Added Attributes.java to .\/landing-strip\ repository source files.
+Added Coordinates.java to .\/landing-strip\ repository source files.
+Added FastForwarder.java to .\/landing-strip\ repository source files.
+Added IndicatorCoordinatesCalculator.java to .\/landing-strip\ repository source files.
+Added LandingStrip.java to .\/landing-strip\ repository source files.
+Added MutableCoordinates.java to .\/landing-strip\ repository source files.
+Added OnPageChangedListenerCollection.java to .\/landing-strip\ repository source files.
+Added OnPagerAdapterChangedListener.java to .\/landing-strip\ repository source files.
+Added PagerAdapterObserver.java to .\/landing-strip\ repository source files.
+Added Scrollable.java to .\/landing-strip\ repository source files.
+Added ScrollingPageChangeListener.java to .\/landing-strip\ repository source files.
+Added ScrollOffsetCalculator.java to .\/landing-strip\ repository source files.
+Added State.java to .\/landing-strip\ repository source files.
+Added TabsContainer.java to .\/landing-strip\ repository source files.
+Added CustomLandingStrip.java to .\/landing-strip\ repository source files.
+Added CustomTabActivity.java to .\/landing-strip\ repository source files.
+Added ExampleRainbowLandingStrip.java to .\/landing-strip\ repository source files.
+Added FixedWidthTabActivity.java to .\/landing-strip\ repository source files.
+Added MultipleListenersActivity.java to .\/landing-strip\ repository source files.
+Added NoFragmentsSimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+Added Data.java to .\/landing-strip\ repository source files.
+Added DemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added SmallDemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerFragment.java to .\/landing-strip\ repository source files.
+Added DemoViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapterState.java to .\/landing-strip\ repository source files.
+Added SimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+.\/landing-strip
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+in visit TypeDeclaration node
+node is defined
+RuntimeException
+node is defined
+Exception
+exception subclass found!
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+
+Diff of 6e74e7bd3b03d37a0f223eacadda7b7bc2b4e6a0 and 8893b0893208f8d7d81409b6bc32e988d1db555f:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 6e74e7bd3b03d37a0f223eacadda7b7bc2b4e6a0 to 8893b0893208f8d7d81409b6bc32e988d1db555f
+
+
+****Parsing for addition at revision 8893b0893208f8d7d81409b6bc32e988d1db555f****
+
+Added Exposer.java to .\/landing-strip\ repository source files.
+Added Attributes.java to .\/landing-strip\ repository source files.
+Added Coordinates.java to .\/landing-strip\ repository source files.
+Added FastForwarder.java to .\/landing-strip\ repository source files.
+Added IndicatorCoordinatesCalculator.java to .\/landing-strip\ repository source files.
+Added LandingStrip.java to .\/landing-strip\ repository source files.
+Added MutableCoordinates.java to .\/landing-strip\ repository source files.
+Added OnPageChangedListenerCollection.java to .\/landing-strip\ repository source files.
+Added OnPagerAdapterChangedListener.java to .\/landing-strip\ repository source files.
+Added PagerAdapterObserver.java to .\/landing-strip\ repository source files.
+Added Scrollable.java to .\/landing-strip\ repository source files.
+Added ScrollingPageChangeListener.java to .\/landing-strip\ repository source files.
+Added ScrollOffsetCalculator.java to .\/landing-strip\ repository source files.
+Added State.java to .\/landing-strip\ repository source files.
+Added TabsContainer.java to .\/landing-strip\ repository source files.
+Added CustomLandingStrip.java to .\/landing-strip\ repository source files.
+Added CustomTabActivity.java to .\/landing-strip\ repository source files.
+Added ExampleRainbowLandingStrip.java to .\/landing-strip\ repository source files.
+Added FixedWidthTabActivity.java to .\/landing-strip\ repository source files.
+Added MultipleListenersActivity.java to .\/landing-strip\ repository source files.
+Added NoFragmentsSimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+Added Data.java to .\/landing-strip\ repository source files.
+Added DemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added SmallDemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerFragment.java to .\/landing-strip\ repository source files.
+Added DemoViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapterState.java to .\/landing-strip\ repository source files.
+Added SimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+.\/landing-strip
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+in visit TypeDeclaration node
+node is defined
+RuntimeException
+node is defined
+Exception
+exception subclass found!
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+
+Diff of 8893b0893208f8d7d81409b6bc32e988d1db555f and ba4f42bb6866972076e521475f547ea1ecb17f2c:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 8893b0893208f8d7d81409b6bc32e988d1db555f to ba4f42bb6866972076e521475f547ea1ecb17f2c
+
+
+****Parsing for addition at revision ba4f42bb6866972076e521475f547ea1ecb17f2c****
+
+Added Exposer.java to .\/landing-strip\ repository source files.
+Added Attributes.java to .\/landing-strip\ repository source files.
+Added Coordinates.java to .\/landing-strip\ repository source files.
+Added FastForwarder.java to .\/landing-strip\ repository source files.
+Added IndicatorCoordinatesCalculator.java to .\/landing-strip\ repository source files.
+Added LandingStrip.java to .\/landing-strip\ repository source files.
+Added MutableCoordinates.java to .\/landing-strip\ repository source files.
+Added OnPageChangedListenerCollection.java to .\/landing-strip\ repository source files.
+Added OnPagerAdapterChangedListener.java to .\/landing-strip\ repository source files.
+Added PagerAdapterObserver.java to .\/landing-strip\ repository source files.
+Added Scrollable.java to .\/landing-strip\ repository source files.
+Added ScrollingPageChangeListener.java to .\/landing-strip\ repository source files.
+Added ScrollOffsetCalculator.java to .\/landing-strip\ repository source files.
+Added State.java to .\/landing-strip\ repository source files.
+Added TabsContainer.java to .\/landing-strip\ repository source files.
+Added CustomLandingStrip.java to .\/landing-strip\ repository source files.
+Added CustomTabActivity.java to .\/landing-strip\ repository source files.
+Added ExampleRainbowLandingStrip.java to .\/landing-strip\ repository source files.
+Added FixedWidthTabActivity.java to .\/landing-strip\ repository source files.
+Added MultipleListenersActivity.java to .\/landing-strip\ repository source files.
+Added NoFragmentsSimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+Added Data.java to .\/landing-strip\ repository source files.
+Added DemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added SmallDemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerFragment.java to .\/landing-strip\ repository source files.
+Added DemoViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapterState.java to .\/landing-strip\ repository source files.
+Added SimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+.\/landing-strip
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+in visit TypeDeclaration node
+node is defined
+RuntimeException
+node is defined
+Exception
+exception subclass found!
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+
+Diff of ba4f42bb6866972076e521475f547ea1ecb17f2c and 0199c5bcc3ab62a0b36499ce071bcfb8046605ea:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision ba4f42bb6866972076e521475f547ea1ecb17f2c to 0199c5bcc3ab62a0b36499ce071bcfb8046605ea
+
+
+****Parsing for addition at revision 0199c5bcc3ab62a0b36499ce071bcfb8046605ea****
+
+Added Exposer.java to .\/landing-strip\ repository source files.
+Added Attributes.java to .\/landing-strip\ repository source files.
+Added Coordinates.java to .\/landing-strip\ repository source files.
+Added FastForwarder.java to .\/landing-strip\ repository source files.
+Added IndicatorCoordinatesCalculator.java to .\/landing-strip\ repository source files.
+Added LandingStrip.java to .\/landing-strip\ repository source files.
+Added MutableCoordinates.java to .\/landing-strip\ repository source files.
+Added OnPageChangedListenerCollection.java to .\/landing-strip\ repository source files.
+Added OnPagerAdapterChangedListener.java to .\/landing-strip\ repository source files.
+Added PagerAdapterObserver.java to .\/landing-strip\ repository source files.
+Added Scrollable.java to .\/landing-strip\ repository source files.
+Added ScrollingPageChangeListener.java to .\/landing-strip\ repository source files.
+Added ScrollOffsetCalculator.java to .\/landing-strip\ repository source files.
+Added State.java to .\/landing-strip\ repository source files.
+Added TabsContainer.java to .\/landing-strip\ repository source files.
+Added CustomLandingStrip.java to .\/landing-strip\ repository source files.
+Added CustomTabActivity.java to .\/landing-strip\ repository source files.
+Added ExampleRainbowLandingStrip.java to .\/landing-strip\ repository source files.
+Added FixedWidthTabActivity.java to .\/landing-strip\ repository source files.
+Added MultipleListenersActivity.java to .\/landing-strip\ repository source files.
+Added NoFragmentsSimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+Added Data.java to .\/landing-strip\ repository source files.
+Added DemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added SmallDemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerFragment.java to .\/landing-strip\ repository source files.
+Added DemoViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapterState.java to .\/landing-strip\ repository source files.
+Added SimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+.\/landing-strip
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+in visit TypeDeclaration node
+node is defined
+RuntimeException
+node is defined
+Exception
+exception subclass found!
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+
+Diff of 0199c5bcc3ab62a0b36499ce071bcfb8046605ea and 80ab5dc1e391d71d01f8cb96e347f5db779f488d:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 0199c5bcc3ab62a0b36499ce071bcfb8046605ea to 80ab5dc1e391d71d01f8cb96e347f5db779f488d
+
+
+****Parsing for addition at revision 80ab5dc1e391d71d01f8cb96e347f5db779f488d****
+
+Added Exposer.java to .\/landing-strip\ repository source files.
+Added Attributes.java to .\/landing-strip\ repository source files.
+Added Coordinates.java to .\/landing-strip\ repository source files.
+Added FastForwarder.java to .\/landing-strip\ repository source files.
+Added IndicatorCoordinatesCalculator.java to .\/landing-strip\ repository source files.
+Added LandingStrip.java to .\/landing-strip\ repository source files.
+Added MutableCoordinates.java to .\/landing-strip\ repository source files.
+Added OnPageChangedListenerCollection.java to .\/landing-strip\ repository source files.
+Added OnPagerAdapterChangedListener.java to .\/landing-strip\ repository source files.
+Added PagerAdapterObserver.java to .\/landing-strip\ repository source files.
+Added Scrollable.java to .\/landing-strip\ repository source files.
+Added ScrollingPageChangeListener.java to .\/landing-strip\ repository source files.
+Added ScrollOffsetCalculator.java to .\/landing-strip\ repository source files.
+Added State.java to .\/landing-strip\ repository source files.
+Added TabsContainer.java to .\/landing-strip\ repository source files.
+Added CustomLandingStrip.java to .\/landing-strip\ repository source files.
+Added CustomTabActivity.java to .\/landing-strip\ repository source files.
+Added ExampleRainbowLandingStrip.java to .\/landing-strip\ repository source files.
+Added FixedWidthTabActivity.java to .\/landing-strip\ repository source files.
+Added MultipleListenersActivity.java to .\/landing-strip\ repository source files.
+Added NoFragmentsSimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+Added Data.java to .\/landing-strip\ repository source files.
+Added DemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added SmallDemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerFragment.java to .\/landing-strip\ repository source files.
+Added DemoViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapterState.java to .\/landing-strip\ repository source files.
+Added SimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+.\/landing-strip
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+in visit TypeDeclaration node
+node is defined
+RuntimeException
+node is defined
+Exception
+exception subclass found!
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+
+Diff of 80ab5dc1e391d71d01f8cb96e347f5db779f488d and 21b51ac9175fe7de18346394e4f8ad48f4100e9a:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 80ab5dc1e391d71d01f8cb96e347f5db779f488d to 21b51ac9175fe7de18346394e4f8ad48f4100e9a
+
+
+****Parsing for addition at revision 21b51ac9175fe7de18346394e4f8ad48f4100e9a****
+
+Added Exposer.java to .\/landing-strip\ repository source files.
+Added Attributes.java to .\/landing-strip\ repository source files.
+Added Coordinates.java to .\/landing-strip\ repository source files.
+Added FastForwarder.java to .\/landing-strip\ repository source files.
+Added IndicatorCoordinatesCalculator.java to .\/landing-strip\ repository source files.
+Added LandingStrip.java to .\/landing-strip\ repository source files.
+Added MutableCoordinates.java to .\/landing-strip\ repository source files.
+Added OnPageChangedListenerCollection.java to .\/landing-strip\ repository source files.
+Added OnPagerAdapterChangedListener.java to .\/landing-strip\ repository source files.
+Added PagerAdapterObserver.java to .\/landing-strip\ repository source files.
+Added Scrollable.java to .\/landing-strip\ repository source files.
+Added ScrollingPageChangeListener.java to .\/landing-strip\ repository source files.
+Added ScrollOffsetCalculator.java to .\/landing-strip\ repository source files.
+Added State.java to .\/landing-strip\ repository source files.
+Added TabsContainer.java to .\/landing-strip\ repository source files.
+Added CustomLandingStrip.java to .\/landing-strip\ repository source files.
+Added CustomTabActivity.java to .\/landing-strip\ repository source files.
+Added ExampleRainbowLandingStrip.java to .\/landing-strip\ repository source files.
+Added FixedWidthTabActivity.java to .\/landing-strip\ repository source files.
+Added MultipleListenersActivity.java to .\/landing-strip\ repository source files.
+Added NoFragmentsSimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+Added Data.java to .\/landing-strip\ repository source files.
+Added DemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added SmallDemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerFragment.java to .\/landing-strip\ repository source files.
+Added DemoViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapterState.java to .\/landing-strip\ repository source files.
+Added SimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+.\/landing-strip
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+in visit TypeDeclaration node
+node is defined
+RuntimeException
+node is defined
+Exception
+exception subclass found!
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+
+Diff of 21b51ac9175fe7de18346394e4f8ad48f4100e9a and 63e6e62b09dc8bca1fd845f123d02394b363c58c:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 21b51ac9175fe7de18346394e4f8ad48f4100e9a to 63e6e62b09dc8bca1fd845f123d02394b363c58c
+
+
+****Parsing for addition at revision 63e6e62b09dc8bca1fd845f123d02394b363c58c****
+
+Added Exposer.java to .\/landing-strip\ repository source files.
+Added Attributes.java to .\/landing-strip\ repository source files.
+Added Coordinates.java to .\/landing-strip\ repository source files.
+Added FastForwarder.java to .\/landing-strip\ repository source files.
+Added IndicatorCoordinatesCalculator.java to .\/landing-strip\ repository source files.
+Added LandingStrip.java to .\/landing-strip\ repository source files.
+Added MutableCoordinates.java to .\/landing-strip\ repository source files.
+Added OnPageChangedListenerCollection.java to .\/landing-strip\ repository source files.
+Added OnPagerAdapterChangedListener.java to .\/landing-strip\ repository source files.
+Added PagerAdapterObserver.java to .\/landing-strip\ repository source files.
+Added Scrollable.java to .\/landing-strip\ repository source files.
+Added ScrollingPageChangeListener.java to .\/landing-strip\ repository source files.
+Added ScrollOffsetCalculator.java to .\/landing-strip\ repository source files.
+Added State.java to .\/landing-strip\ repository source files.
+Added TabsContainer.java to .\/landing-strip\ repository source files.
+Added CustomLandingStrip.java to .\/landing-strip\ repository source files.
+Added CustomTabActivity.java to .\/landing-strip\ repository source files.
+Added ExampleRainbowLandingStrip.java to .\/landing-strip\ repository source files.
+Added FixedWidthTabActivity.java to .\/landing-strip\ repository source files.
+Added MultipleListenersActivity.java to .\/landing-strip\ repository source files.
+Added NoFragmentsSimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+Added Data.java to .\/landing-strip\ repository source files.
+Added DemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added SmallDemoFragmentPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerFragment.java to .\/landing-strip\ repository source files.
+Added DemoViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapter.java to .\/landing-strip\ repository source files.
+Added ViewPagerAdapterState.java to .\/landing-strip\ repository source files.
+Added SimpleTextTabActivity.java to .\/landing-strip\ repository source files.
+.\/landing-strip
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+in visit TypeDeclaration node
+node is defined
+RuntimeException
+node is defined
+Exception
+exception subclass found!
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+.\/landing-strip
+in visit TypeDeclaration node
+.\/landing-strip
+in visit TypeDeclaration node
+node is null
+
+Diff of 63e6e62b09dc8bca1fd845f123d02394b363c58c and d7f442bdbd1f8a98f82acf05f55958c1d43088d5:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 63e6e62b09dc8bca1fd845f123d02394b363c58c to d7f442bdbd1f8a98f82acf05f55958c1d43088d5
+
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository novoda/landing-strip = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+File copied successfully!

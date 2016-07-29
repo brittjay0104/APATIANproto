@@ -1,0 +1,5 @@
+google/guava -- eaftan -- Eddie Aftandilian
+https://github.com/google/guava.git
+git clone https://github.com/google/guava.git
+.\/guava\
+.\/guava\.git

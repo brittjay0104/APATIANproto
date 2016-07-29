@@ -1,0 +1,5727 @@
+ouchadam/lol-dr -- ataulm -- Ataul Munim
+https://github.com/ouchadam/lol-dr.git
+git clone https://github.com/ouchadam/lol-dr.git
+.\/lol-dr\
+.\/lol-dr\.git
+0
+Project cloned!
+Ataul Munim is responsible for commit aa266c3212c81571b1e325aea138f71af2c551a2
+Ataul Munim is responsible for commit 66fb5e15c9008a2d83abf46e0ce7435a7aae7bbd
+Ataul Munim is responsible for commit f6d352a503c60625c30cd77a8a56e9c85cbb90b5
+Ataul Munim is responsible for commit d9d3e1e938d8928667a3e3e8b403e9ec29df1c31
+Ataul Munim is responsible for commit 7b3a9954d968f377e9980129aac2bdffc2394bfa
+Ataul Munim is responsible for commit e3b03082afa779dcf4c299cecec467219039c183
+Ataul Munim is responsible for commit 169682d8d702a1d2902610804ae833010dd5fc33
+Ataul Munim is responsible for commit f280c555e2cbf7c8700bbf33b34b726949df6aab
+Ataul Munim is responsible for commit 90e03dc6733fd5a6a5f1cd3dc4d3bf77d7e1b37d
+Ataul Munim is responsible for commit 52cf5020b95f83236857cfd2b698c049b9bb9acd
+Ataul Munim is responsible for commit dd04503f485e8e358152afb9724d1631ce01db15
+Ataul Munim is responsible for commit 8b17c6d50db95e2c56fe31fdf64213370884c4e4
+Ataul Munim is responsible for commit de2159c5d6d27a580b0db93cb03cc310f20f145d
+Ataul Munim is responsible for commit 5e52c4b0ea24d54b0bfac11d398caeec1d87fcea
+Ataul Munim is responsible for commit af5916354d7f381c867d20d5f790f6451210d6bd
+Ataul Munim is responsible for commit ebcda8c66d0d4b8c0361fb56fb717d33eb47d3c5
+Ataul Munim is responsible for commit 17c44e24aced34a92c0328b43b5da6098a822854
+Ataul Munim is responsible for commit 4533afee82e21dad3f6f354dd262adb6804e0497
+Ataul Munim is responsible for commit 2397ae430ddf415f64dccd726439d8e5aa480977
+Ataul Munim is responsible for commit 72c90ebef39675aca8438ee883d79a1b3a0a0103
+Ataul Munim is responsible for commit 178e8f3945e61211a2f128744db90e02e5de460f
+Ataul Munim is responsible for commit b48ae4eba63871a91e3d6b20b07e4af8c2bd183b
+Ataul Munim is responsible for commit 7e8c539ce5f60f5b56d08e51f686b985a91fe701
+Ataul Munim is responsible for commit d654bf68baead9110400d0493196d03f83361201
+Ataul Munim is responsible for commit 4c2e046a12114e2fe178cb348c926dab129bda02
+Ataul Munim is responsible for commit 334002445a692e469fbc5ac9d9209dbadcd0f035
+Ataul Munim is responsible for commit 5a5b76991e75f8b52104126cd90fa3a7ea4d544d
+Ataul Munim is responsible for commit d8042ab691fa1f1685fc2691a3a8bfd5921e6a4f
+Ataul Munim is responsible for commit 17216a16fe28bb10935b05464a1594457923b5ee
+Ataul Munim is responsible for commit 5d5ac06e0c66473af9ed0011614a7d7a53833fb5
+Ataul Munim is responsible for commit d09a82c9e0352cd31eacfc58412eb235954553a1
+Added AccountService.java to .\/lol-dr\ repository source files.
+Added AnonToken.java to .\/lol-dr\ repository source files.
+Added AnonTokenStorage.java to .\/lol-dr\ repository source files.
+Added Authenticator.java to .\/lol-dr\ repository source files.
+Added Foo.java to .\/lol-dr\ repository source files.
+Added OAuthSignInActivity.java to .\/lol-dr\ repository source files.
+Added RefreshTokenResponse.java to .\/lol-dr\ repository source files.
+Added Token.java to .\/lol-dr\ repository source files.
+Added TokenAcquirer.java to .\/lol-dr\ repository source files.
+Added TokenResponse.java to .\/lol-dr\ repository source files.
+Added UserFetcher.java to .\/lol-dr\ repository source files.
+Added UserToken.java to .\/lol-dr\ repository source files.
+Added CacheRepository.java to .\/lol-dr\ repository source files.
+Added CacheSource.java to .\/lol-dr\ repository source files.
+Added ApplicationTest.java to .\/lol-dr\ repository source files.
+Added BaseActivity.java to .\/lol-dr\ repository source files.
+Added SimpleDate.java to .\/lol-dr\ repository source files.
+Added DebugActivity.java to .\/lol-dr\ repository source files.
+Added SubscriptionDataProvider.java to .\/lol-dr\ repository source files.
+Added SubscriptionProvider.java to .\/lol-dr\ repository source files.
+Added Executor.java to .\/lol-dr\ repository source files.
+Added FeedDataProvider.java to .\/lol-dr\ repository source files.
+Added FeedService.java to .\/lol-dr\ repository source files.
+Added MarshallerFactory.java to .\/lol-dr\ repository source files.
+Added FeedActivity.java to .\/lol-dr\ repository source files.
+Added PostProvider.java to .\/lol-dr\ repository source files.
+Added LogSubscriber.java to .\/lol-dr\ repository source files.
+Added CommentProvider.java to .\/lol-dr\ repository source files.
+Added PostActivity.java to .\/lol-dr\ repository source files.
+Added PostDetailsProvider.java to .\/lol-dr\ repository source files.
+Added PostSummarySimpleDateFormatter.java to .\/lol-dr\ repository source files.
+Added SearchActivity.java to .\/lol-dr\ repository source files.
+Added UserTokenProvider.java to .\/lol-dr\ repository source files.
+Added ApiRepository.java to .\/lol-dr\ repository source files.
+Added AuthInteceptor.java to .\/lol-dr\ repository source files.
+Added CacheRepo.java to .\/lol-dr\ repository source files.
+Added Data.java to .\/lol-dr\ repository source files.
+Added DeserializerFactory.java to .\/lol-dr\ repository source files.
+Added FeedDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDetailsDeserializer.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDeserializer.java to .\/lol-dr\ repository source files.
+Added Repository.java to .\/lol-dr\ repository source files.
+Added FeedSerilizer.java to .\/lol-dr\ repository source files.
+Added TokenProvider.java to .\/lol-dr\ repository source files.
+Added PostDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDefaultDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsMineDeserializerTest.java to .\/lol-dr\ repository source files.
+Added BindableViewHolder.java to .\/lol-dr\ repository source files.
+Added DataSource.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added DrawerPresenter.java to .\/lol-dr\ repository source files.
+Added PostSummaryAdapter.java to .\/lol-dr\ repository source files.
+Added PostSummaryViewHolder.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added CommentViewHolder.java to .\/lol-dr\ repository source files.
+Added LinkDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added PostDetailsAdapter.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added SelfDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added ViewHolderFactory.java to .\/lol-dr\ repository source files.
+Added SourceProvider.java to .\/lol-dr\ repository source files.
+Added Ui.java to .\/lol-dr\ repository source files.
+
+ ************ ANALYZING FOR USAGE PATTERN ADDITION ************
+
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+
+****Parsing for addition at revision aa266c3212c81571b1e325aea138f71af2c551a2****
+
+Added AccountService.java to .\/lol-dr\ repository source files.
+Added AnonToken.java to .\/lol-dr\ repository source files.
+Added AnonTokenStorage.java to .\/lol-dr\ repository source files.
+Added Authenticator.java to .\/lol-dr\ repository source files.
+Added Foo.java to .\/lol-dr\ repository source files.
+Added OAuthSignInActivity.java to .\/lol-dr\ repository source files.
+Added RefreshTokenResponse.java to .\/lol-dr\ repository source files.
+Added Token.java to .\/lol-dr\ repository source files.
+Added TokenAcquirer.java to .\/lol-dr\ repository source files.
+Added TokenResponse.java to .\/lol-dr\ repository source files.
+Added UserFetcher.java to .\/lol-dr\ repository source files.
+Added UserToken.java to .\/lol-dr\ repository source files.
+Added CacheRepository.java to .\/lol-dr\ repository source files.
+Added CacheSource.java to .\/lol-dr\ repository source files.
+Added ApplicationTest.java to .\/lol-dr\ repository source files.
+Added BaseActivity.java to .\/lol-dr\ repository source files.
+Added SimpleDate.java to .\/lol-dr\ repository source files.
+Added DebugActivity.java to .\/lol-dr\ repository source files.
+Added SubscriptionDataProvider.java to .\/lol-dr\ repository source files.
+Added SubscriptionProvider.java to .\/lol-dr\ repository source files.
+Added Executor.java to .\/lol-dr\ repository source files.
+Added FeedDataProvider.java to .\/lol-dr\ repository source files.
+Added FeedService.java to .\/lol-dr\ repository source files.
+Added MarshallerFactory.java to .\/lol-dr\ repository source files.
+Added FeedActivity.java to .\/lol-dr\ repository source files.
+Added PostProvider.java to .\/lol-dr\ repository source files.
+Added LogSubscriber.java to .\/lol-dr\ repository source files.
+Added CommentProvider.java to .\/lol-dr\ repository source files.
+Added PostActivity.java to .\/lol-dr\ repository source files.
+Added PostDetailsProvider.java to .\/lol-dr\ repository source files.
+Added PostSummarySimpleDateFormatter.java to .\/lol-dr\ repository source files.
+Added SearchActivity.java to .\/lol-dr\ repository source files.
+Added UserTokenProvider.java to .\/lol-dr\ repository source files.
+Added ApiRepository.java to .\/lol-dr\ repository source files.
+Added AuthInteceptor.java to .\/lol-dr\ repository source files.
+Added CacheRepo.java to .\/lol-dr\ repository source files.
+Added Data.java to .\/lol-dr\ repository source files.
+Added DeserializerFactory.java to .\/lol-dr\ repository source files.
+Added FeedDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDetailsDeserializer.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDeserializer.java to .\/lol-dr\ repository source files.
+Added Repository.java to .\/lol-dr\ repository source files.
+Added FeedSerilizer.java to .\/lol-dr\ repository source files.
+Added TokenProvider.java to .\/lol-dr\ repository source files.
+Added PostDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDefaultDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsMineDeserializerTest.java to .\/lol-dr\ repository source files.
+Added BindableViewHolder.java to .\/lol-dr\ repository source files.
+Added DataSource.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added DrawerPresenter.java to .\/lol-dr\ repository source files.
+Added PostSummaryAdapter.java to .\/lol-dr\ repository source files.
+Added PostSummaryViewHolder.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added CommentViewHolder.java to .\/lol-dr\ repository source files.
+Added LinkDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added PostDetailsAdapter.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added SelfDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added ViewHolderFactory.java to .\/lol-dr\ repository source files.
+Added SourceProvider.java to .\/lol-dr\ repository source files.
+Added Ui.java to .\/lol-dr\ repository source files.
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+thrown exception found!
+thrown exception found!
+thrown exception found!
+try statment found!
+throw statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+thrown exception found!
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+try statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+throw statment found!
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+throw statment found!
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+
+Diff of aa266c3212c81571b1e325aea138f71af2c551a2 and 66fb5e15c9008a2d83abf46e0ce7435a7aae7bbd:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision aa266c3212c81571b1e325aea138f71af2c551a2 to 66fb5e15c9008a2d83abf46e0ce7435a7aae7bbd
+
+
+****Parsing for addition at revision 66fb5e15c9008a2d83abf46e0ce7435a7aae7bbd****
+
+Added AccountService.java to .\/lol-dr\ repository source files.
+Added AnonToken.java to .\/lol-dr\ repository source files.
+Added AnonTokenStorage.java to .\/lol-dr\ repository source files.
+Added Authenticator.java to .\/lol-dr\ repository source files.
+Added Foo.java to .\/lol-dr\ repository source files.
+Added OAuthSignInActivity.java to .\/lol-dr\ repository source files.
+Added RefreshTokenResponse.java to .\/lol-dr\ repository source files.
+Added Token.java to .\/lol-dr\ repository source files.
+Added TokenAcquirer.java to .\/lol-dr\ repository source files.
+Added TokenResponse.java to .\/lol-dr\ repository source files.
+Added UserFetcher.java to .\/lol-dr\ repository source files.
+Added UserToken.java to .\/lol-dr\ repository source files.
+Added CacheRepository.java to .\/lol-dr\ repository source files.
+Added CacheSource.java to .\/lol-dr\ repository source files.
+Added ApplicationTest.java to .\/lol-dr\ repository source files.
+Added BaseActivity.java to .\/lol-dr\ repository source files.
+Added SimpleDate.java to .\/lol-dr\ repository source files.
+Added DebugActivity.java to .\/lol-dr\ repository source files.
+Added SubscriptionDataProvider.java to .\/lol-dr\ repository source files.
+Added SubscriptionProvider.java to .\/lol-dr\ repository source files.
+Added Executor.java to .\/lol-dr\ repository source files.
+Added FeedDataProvider.java to .\/lol-dr\ repository source files.
+Added FeedService.java to .\/lol-dr\ repository source files.
+Added MarshallerFactory.java to .\/lol-dr\ repository source files.
+Added FeedActivity.java to .\/lol-dr\ repository source files.
+Added PostProvider.java to .\/lol-dr\ repository source files.
+Added LogSubscriber.java to .\/lol-dr\ repository source files.
+Added CommentProvider.java to .\/lol-dr\ repository source files.
+Added PostActivity.java to .\/lol-dr\ repository source files.
+Added PostDetailsProvider.java to .\/lol-dr\ repository source files.
+Added PostSummarySimpleDateFormatter.java to .\/lol-dr\ repository source files.
+Added SearchActivity.java to .\/lol-dr\ repository source files.
+Added UserTokenProvider.java to .\/lol-dr\ repository source files.
+Added ApiRepository.java to .\/lol-dr\ repository source files.
+Added AuthInteceptor.java to .\/lol-dr\ repository source files.
+Added CacheRepo.java to .\/lol-dr\ repository source files.
+Added Data.java to .\/lol-dr\ repository source files.
+Added DeserializerFactory.java to .\/lol-dr\ repository source files.
+Added FeedDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDetailsDeserializer.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDeserializer.java to .\/lol-dr\ repository source files.
+Added Repository.java to .\/lol-dr\ repository source files.
+Added FeedSerilizer.java to .\/lol-dr\ repository source files.
+Added TokenProvider.java to .\/lol-dr\ repository source files.
+Added PostDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDefaultDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsMineDeserializerTest.java to .\/lol-dr\ repository source files.
+Added BindableViewHolder.java to .\/lol-dr\ repository source files.
+Added DataSource.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added DrawerPresenter.java to .\/lol-dr\ repository source files.
+Added PostSummaryAdapter.java to .\/lol-dr\ repository source files.
+Added PostSummaryViewHolder.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added CommentViewHolder.java to .\/lol-dr\ repository source files.
+Added LinkDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added PostDetailsAdapter.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added SelfDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added ViewHolderFactory.java to .\/lol-dr\ repository source files.
+Added SourceProvider.java to .\/lol-dr\ repository source files.
+Added Ui.java to .\/lol-dr\ repository source files.
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+thrown exception found!
+thrown exception found!
+thrown exception found!
+try statment found!
+throw statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+thrown exception found!
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+try statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+throw statment found!
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+throw statment found!
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+
+Diff of 66fb5e15c9008a2d83abf46e0ce7435a7aae7bbd and f6d352a503c60625c30cd77a8a56e9c85cbb90b5:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 66fb5e15c9008a2d83abf46e0ce7435a7aae7bbd to f6d352a503c60625c30cd77a8a56e9c85cbb90b5
+
+
+****Parsing for addition at revision f6d352a503c60625c30cd77a8a56e9c85cbb90b5****
+
+Added AccountService.java to .\/lol-dr\ repository source files.
+Added AnonToken.java to .\/lol-dr\ repository source files.
+Added AnonTokenStorage.java to .\/lol-dr\ repository source files.
+Added Authenticator.java to .\/lol-dr\ repository source files.
+Added Foo.java to .\/lol-dr\ repository source files.
+Added OAuthSignInActivity.java to .\/lol-dr\ repository source files.
+Added RefreshTokenResponse.java to .\/lol-dr\ repository source files.
+Added Token.java to .\/lol-dr\ repository source files.
+Added TokenAcquirer.java to .\/lol-dr\ repository source files.
+Added TokenResponse.java to .\/lol-dr\ repository source files.
+Added UserFetcher.java to .\/lol-dr\ repository source files.
+Added UserToken.java to .\/lol-dr\ repository source files.
+Added CacheRepository.java to .\/lol-dr\ repository source files.
+Added CacheSource.java to .\/lol-dr\ repository source files.
+Added ApplicationTest.java to .\/lol-dr\ repository source files.
+Added BaseActivity.java to .\/lol-dr\ repository source files.
+Added SimpleDate.java to .\/lol-dr\ repository source files.
+Added DebugActivity.java to .\/lol-dr\ repository source files.
+Added SubscriptionDataProvider.java to .\/lol-dr\ repository source files.
+Added SubscriptionProvider.java to .\/lol-dr\ repository source files.
+Added Executor.java to .\/lol-dr\ repository source files.
+Added FeedDataProvider.java to .\/lol-dr\ repository source files.
+Added FeedService.java to .\/lol-dr\ repository source files.
+Added MarshallerFactory.java to .\/lol-dr\ repository source files.
+Added FeedActivity.java to .\/lol-dr\ repository source files.
+Added PostProvider.java to .\/lol-dr\ repository source files.
+Added LogSubscriber.java to .\/lol-dr\ repository source files.
+Added CommentProvider.java to .\/lol-dr\ repository source files.
+Added PostActivity.java to .\/lol-dr\ repository source files.
+Added PostDetailsProvider.java to .\/lol-dr\ repository source files.
+Added PostSummarySimpleDateFormatter.java to .\/lol-dr\ repository source files.
+Added SearchActivity.java to .\/lol-dr\ repository source files.
+Added UserTokenProvider.java to .\/lol-dr\ repository source files.
+Added ApiRepository.java to .\/lol-dr\ repository source files.
+Added AuthInteceptor.java to .\/lol-dr\ repository source files.
+Added CacheRepo.java to .\/lol-dr\ repository source files.
+Added Data.java to .\/lol-dr\ repository source files.
+Added DeserializerFactory.java to .\/lol-dr\ repository source files.
+Added FeedDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDetailsDeserializer.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDeserializer.java to .\/lol-dr\ repository source files.
+Added Repository.java to .\/lol-dr\ repository source files.
+Added FeedSerilizer.java to .\/lol-dr\ repository source files.
+Added TokenProvider.java to .\/lol-dr\ repository source files.
+Added PostDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDefaultDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsMineDeserializerTest.java to .\/lol-dr\ repository source files.
+Added BindableViewHolder.java to .\/lol-dr\ repository source files.
+Added DataSource.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added DrawerPresenter.java to .\/lol-dr\ repository source files.
+Added PostSummaryAdapter.java to .\/lol-dr\ repository source files.
+Added PostSummaryViewHolder.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added CommentViewHolder.java to .\/lol-dr\ repository source files.
+Added LinkDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added PostDetailsAdapter.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added SelfDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added ViewHolderFactory.java to .\/lol-dr\ repository source files.
+Added SourceProvider.java to .\/lol-dr\ repository source files.
+Added Ui.java to .\/lol-dr\ repository source files.
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+thrown exception found!
+thrown exception found!
+thrown exception found!
+try statment found!
+throw statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+thrown exception found!
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+try statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+throw statment found!
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+throw statment found!
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+
+Diff of f6d352a503c60625c30cd77a8a56e9c85cbb90b5 and d9d3e1e938d8928667a3e3e8b403e9ec29df1c31:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision f6d352a503c60625c30cd77a8a56e9c85cbb90b5 to d9d3e1e938d8928667a3e3e8b403e9ec29df1c31
+
+
+****Parsing for addition at revision d9d3e1e938d8928667a3e3e8b403e9ec29df1c31****
+
+Added AccountService.java to .\/lol-dr\ repository source files.
+Added AnonToken.java to .\/lol-dr\ repository source files.
+Added AnonTokenStorage.java to .\/lol-dr\ repository source files.
+Added Authenticator.java to .\/lol-dr\ repository source files.
+Added Foo.java to .\/lol-dr\ repository source files.
+Added OAuthSignInActivity.java to .\/lol-dr\ repository source files.
+Added RefreshTokenResponse.java to .\/lol-dr\ repository source files.
+Added Token.java to .\/lol-dr\ repository source files.
+Added TokenAcquirer.java to .\/lol-dr\ repository source files.
+Added TokenResponse.java to .\/lol-dr\ repository source files.
+Added UserFetcher.java to .\/lol-dr\ repository source files.
+Added UserToken.java to .\/lol-dr\ repository source files.
+Added CacheRepository.java to .\/lol-dr\ repository source files.
+Added CacheSource.java to .\/lol-dr\ repository source files.
+Added ApplicationTest.java to .\/lol-dr\ repository source files.
+Added BaseActivity.java to .\/lol-dr\ repository source files.
+Added SimpleDate.java to .\/lol-dr\ repository source files.
+Added DebugActivity.java to .\/lol-dr\ repository source files.
+Added SubscriptionDataProvider.java to .\/lol-dr\ repository source files.
+Added SubscriptionProvider.java to .\/lol-dr\ repository source files.
+Added Executor.java to .\/lol-dr\ repository source files.
+Added FeedDataProvider.java to .\/lol-dr\ repository source files.
+Added FeedService.java to .\/lol-dr\ repository source files.
+Added MarshallerFactory.java to .\/lol-dr\ repository source files.
+Added FeedActivity.java to .\/lol-dr\ repository source files.
+Added PostProvider.java to .\/lol-dr\ repository source files.
+Added LogSubscriber.java to .\/lol-dr\ repository source files.
+Added CommentProvider.java to .\/lol-dr\ repository source files.
+Added PostActivity.java to .\/lol-dr\ repository source files.
+Added PostDetailsProvider.java to .\/lol-dr\ repository source files.
+Added PostSummarySimpleDateFormatter.java to .\/lol-dr\ repository source files.
+Added SearchActivity.java to .\/lol-dr\ repository source files.
+Added UserTokenProvider.java to .\/lol-dr\ repository source files.
+Added ApiRepository.java to .\/lol-dr\ repository source files.
+Added AuthInteceptor.java to .\/lol-dr\ repository source files.
+Added CacheRepo.java to .\/lol-dr\ repository source files.
+Added Data.java to .\/lol-dr\ repository source files.
+Added DeserializerFactory.java to .\/lol-dr\ repository source files.
+Added FeedDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDetailsDeserializer.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDeserializer.java to .\/lol-dr\ repository source files.
+Added Repository.java to .\/lol-dr\ repository source files.
+Added FeedSerilizer.java to .\/lol-dr\ repository source files.
+Added TokenProvider.java to .\/lol-dr\ repository source files.
+Added PostDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDefaultDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsMineDeserializerTest.java to .\/lol-dr\ repository source files.
+Added BindableViewHolder.java to .\/lol-dr\ repository source files.
+Added DataSource.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added DrawerPresenter.java to .\/lol-dr\ repository source files.
+Added PostSummaryAdapter.java to .\/lol-dr\ repository source files.
+Added PostSummaryViewHolder.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added CommentViewHolder.java to .\/lol-dr\ repository source files.
+Added LinkDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added PostDetailsAdapter.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added SelfDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added ViewHolderFactory.java to .\/lol-dr\ repository source files.
+Added SourceProvider.java to .\/lol-dr\ repository source files.
+Added Ui.java to .\/lol-dr\ repository source files.
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+thrown exception found!
+thrown exception found!
+thrown exception found!
+try statment found!
+throw statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+thrown exception found!
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+try statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+throw statment found!
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+throw statment found!
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+
+Diff of d9d3e1e938d8928667a3e3e8b403e9ec29df1c31 and 7b3a9954d968f377e9980129aac2bdffc2394bfa:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision d9d3e1e938d8928667a3e3e8b403e9ec29df1c31 to 7b3a9954d968f377e9980129aac2bdffc2394bfa
+
+
+****Parsing for addition at revision 7b3a9954d968f377e9980129aac2bdffc2394bfa****
+
+Added AccountService.java to .\/lol-dr\ repository source files.
+Added AnonToken.java to .\/lol-dr\ repository source files.
+Added AnonTokenStorage.java to .\/lol-dr\ repository source files.
+Added Authenticator.java to .\/lol-dr\ repository source files.
+Added Foo.java to .\/lol-dr\ repository source files.
+Added OAuthSignInActivity.java to .\/lol-dr\ repository source files.
+Added RefreshTokenResponse.java to .\/lol-dr\ repository source files.
+Added Token.java to .\/lol-dr\ repository source files.
+Added TokenAcquirer.java to .\/lol-dr\ repository source files.
+Added TokenResponse.java to .\/lol-dr\ repository source files.
+Added UserFetcher.java to .\/lol-dr\ repository source files.
+Added UserToken.java to .\/lol-dr\ repository source files.
+Added CacheRepository.java to .\/lol-dr\ repository source files.
+Added CacheSource.java to .\/lol-dr\ repository source files.
+Added ApplicationTest.java to .\/lol-dr\ repository source files.
+Added BaseActivity.java to .\/lol-dr\ repository source files.
+Added SimpleDate.java to .\/lol-dr\ repository source files.
+Added DebugActivity.java to .\/lol-dr\ repository source files.
+Added SubscriptionDataProvider.java to .\/lol-dr\ repository source files.
+Added SubscriptionProvider.java to .\/lol-dr\ repository source files.
+Added Executor.java to .\/lol-dr\ repository source files.
+Added FeedDataProvider.java to .\/lol-dr\ repository source files.
+Added FeedService.java to .\/lol-dr\ repository source files.
+Added MarshallerFactory.java to .\/lol-dr\ repository source files.
+Added FeedActivity.java to .\/lol-dr\ repository source files.
+Added PostProvider.java to .\/lol-dr\ repository source files.
+Added LogSubscriber.java to .\/lol-dr\ repository source files.
+Added CommentProvider.java to .\/lol-dr\ repository source files.
+Added PostActivity.java to .\/lol-dr\ repository source files.
+Added PostDetailsProvider.java to .\/lol-dr\ repository source files.
+Added PostSummarySimpleDateFormatter.java to .\/lol-dr\ repository source files.
+Added SearchActivity.java to .\/lol-dr\ repository source files.
+Added UserTokenProvider.java to .\/lol-dr\ repository source files.
+Added ApiRepository.java to .\/lol-dr\ repository source files.
+Added AuthInteceptor.java to .\/lol-dr\ repository source files.
+Added CacheRepo.java to .\/lol-dr\ repository source files.
+Added Data.java to .\/lol-dr\ repository source files.
+Added DeserializerFactory.java to .\/lol-dr\ repository source files.
+Added FeedDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDetailsDeserializer.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDeserializer.java to .\/lol-dr\ repository source files.
+Added Repository.java to .\/lol-dr\ repository source files.
+Added FeedSerilizer.java to .\/lol-dr\ repository source files.
+Added TokenProvider.java to .\/lol-dr\ repository source files.
+Added PostDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDefaultDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsMineDeserializerTest.java to .\/lol-dr\ repository source files.
+Added BindableViewHolder.java to .\/lol-dr\ repository source files.
+Added DataSource.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added DrawerPresenter.java to .\/lol-dr\ repository source files.
+Added PostSummaryAdapter.java to .\/lol-dr\ repository source files.
+Added PostSummaryViewHolder.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added CommentViewHolder.java to .\/lol-dr\ repository source files.
+Added LinkDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added PostDetailsAdapter.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added SelfDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added ViewHolderFactory.java to .\/lol-dr\ repository source files.
+Added SourceProvider.java to .\/lol-dr\ repository source files.
+Added Ui.java to .\/lol-dr\ repository source files.
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+thrown exception found!
+thrown exception found!
+thrown exception found!
+try statment found!
+throw statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+thrown exception found!
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+try statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+throw statment found!
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+throw statment found!
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+
+Diff of 7b3a9954d968f377e9980129aac2bdffc2394bfa and aadc74ac66389e0c56acb988a4e755aed1ccb677:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 7b3a9954d968f377e9980129aac2bdffc2394bfa to aadc74ac66389e0c56acb988a4e755aed1ccb677
+
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+
+****Parsing for addition at revision e3b03082afa779dcf4c299cecec467219039c183****
+
+Added AccountService.java to .\/lol-dr\ repository source files.
+Added AnonToken.java to .\/lol-dr\ repository source files.
+Added AnonTokenStorage.java to .\/lol-dr\ repository source files.
+Added Authenticator.java to .\/lol-dr\ repository source files.
+Added Foo.java to .\/lol-dr\ repository source files.
+Added OAuthSignInActivity.java to .\/lol-dr\ repository source files.
+Added RefreshTokenResponse.java to .\/lol-dr\ repository source files.
+Added Token.java to .\/lol-dr\ repository source files.
+Added TokenAcquirer.java to .\/lol-dr\ repository source files.
+Added TokenResponse.java to .\/lol-dr\ repository source files.
+Added UserFetcher.java to .\/lol-dr\ repository source files.
+Added UserToken.java to .\/lol-dr\ repository source files.
+Added CacheRepository.java to .\/lol-dr\ repository source files.
+Added CacheSource.java to .\/lol-dr\ repository source files.
+Added ApplicationTest.java to .\/lol-dr\ repository source files.
+Added BaseActivity.java to .\/lol-dr\ repository source files.
+Added SimpleDate.java to .\/lol-dr\ repository source files.
+Added DebugActivity.java to .\/lol-dr\ repository source files.
+Added SubscriptionDataProvider.java to .\/lol-dr\ repository source files.
+Added SubscriptionProvider.java to .\/lol-dr\ repository source files.
+Added Executor.java to .\/lol-dr\ repository source files.
+Added FeedDataProvider.java to .\/lol-dr\ repository source files.
+Added FeedService.java to .\/lol-dr\ repository source files.
+Added MarshallerFactory.java to .\/lol-dr\ repository source files.
+Added FeedActivity.java to .\/lol-dr\ repository source files.
+Added PostProvider.java to .\/lol-dr\ repository source files.
+Added LogSubscriber.java to .\/lol-dr\ repository source files.
+Added CommentProvider.java to .\/lol-dr\ repository source files.
+Added PostActivity.java to .\/lol-dr\ repository source files.
+Added PostDetailsProvider.java to .\/lol-dr\ repository source files.
+Added PostSummarySimpleDateFormatter.java to .\/lol-dr\ repository source files.
+Added SearchActivity.java to .\/lol-dr\ repository source files.
+Added UserTokenProvider.java to .\/lol-dr\ repository source files.
+Added ApiRepository.java to .\/lol-dr\ repository source files.
+Added AuthInteceptor.java to .\/lol-dr\ repository source files.
+Added CacheRepo.java to .\/lol-dr\ repository source files.
+Added Data.java to .\/lol-dr\ repository source files.
+Added DeserializerFactory.java to .\/lol-dr\ repository source files.
+Added FeedDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDetailsDeserializer.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDeserializer.java to .\/lol-dr\ repository source files.
+Added Repository.java to .\/lol-dr\ repository source files.
+Added FeedSerilizer.java to .\/lol-dr\ repository source files.
+Added TokenProvider.java to .\/lol-dr\ repository source files.
+Added PostDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDefaultDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsMineDeserializerTest.java to .\/lol-dr\ repository source files.
+Added BindableViewHolder.java to .\/lol-dr\ repository source files.
+Added DataSource.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added DrawerPresenter.java to .\/lol-dr\ repository source files.
+Added PostSummaryAdapter.java to .\/lol-dr\ repository source files.
+Added PostSummaryViewHolder.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added CommentViewHolder.java to .\/lol-dr\ repository source files.
+Added LinkDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added PostDetailsAdapter.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added SelfDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added ViewHolderFactory.java to .\/lol-dr\ repository source files.
+Added SourceProvider.java to .\/lol-dr\ repository source files.
+Added Ui.java to .\/lol-dr\ repository source files.
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+thrown exception found!
+thrown exception found!
+thrown exception found!
+try statment found!
+throw statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+thrown exception found!
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+try statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+throw statment found!
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+throw statment found!
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+
+Diff of e3b03082afa779dcf4c299cecec467219039c183 and 722bf9d5fa0dc31548ccb002a7647b72c69c619b:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit 'e3b03082afa779dcf4c299cecec467219039c183' because it has 2 parents, only commits with exactly one parent are supported
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+
+****Parsing for addition at revision 169682d8d702a1d2902610804ae833010dd5fc33****
+
+Added AccountService.java to .\/lol-dr\ repository source files.
+Added AnonToken.java to .\/lol-dr\ repository source files.
+Added AnonTokenStorage.java to .\/lol-dr\ repository source files.
+Added Authenticator.java to .\/lol-dr\ repository source files.
+Added Foo.java to .\/lol-dr\ repository source files.
+Added OAuthSignInActivity.java to .\/lol-dr\ repository source files.
+Added RefreshTokenResponse.java to .\/lol-dr\ repository source files.
+Added Token.java to .\/lol-dr\ repository source files.
+Added TokenAcquirer.java to .\/lol-dr\ repository source files.
+Added TokenResponse.java to .\/lol-dr\ repository source files.
+Added UserFetcher.java to .\/lol-dr\ repository source files.
+Added UserToken.java to .\/lol-dr\ repository source files.
+Added CacheRepository.java to .\/lol-dr\ repository source files.
+Added CacheSource.java to .\/lol-dr\ repository source files.
+Added ApplicationTest.java to .\/lol-dr\ repository source files.
+Added BaseActivity.java to .\/lol-dr\ repository source files.
+Added SimpleDate.java to .\/lol-dr\ repository source files.
+Added DebugActivity.java to .\/lol-dr\ repository source files.
+Added SubscriptionDataProvider.java to .\/lol-dr\ repository source files.
+Added SubscriptionProvider.java to .\/lol-dr\ repository source files.
+Added Executor.java to .\/lol-dr\ repository source files.
+Added FeedDataProvider.java to .\/lol-dr\ repository source files.
+Added FeedService.java to .\/lol-dr\ repository source files.
+Added MarshallerFactory.java to .\/lol-dr\ repository source files.
+Added FeedActivity.java to .\/lol-dr\ repository source files.
+Added PostProvider.java to .\/lol-dr\ repository source files.
+Added LogSubscriber.java to .\/lol-dr\ repository source files.
+Added CommentProvider.java to .\/lol-dr\ repository source files.
+Added PostActivity.java to .\/lol-dr\ repository source files.
+Added PostDetailsProvider.java to .\/lol-dr\ repository source files.
+Added PostSummarySimpleDateFormatter.java to .\/lol-dr\ repository source files.
+Added SearchActivity.java to .\/lol-dr\ repository source files.
+Added UserTokenProvider.java to .\/lol-dr\ repository source files.
+Added ApiRepository.java to .\/lol-dr\ repository source files.
+Added AuthInteceptor.java to .\/lol-dr\ repository source files.
+Added CacheRepo.java to .\/lol-dr\ repository source files.
+Added Data.java to .\/lol-dr\ repository source files.
+Added DeserializerFactory.java to .\/lol-dr\ repository source files.
+Added FeedDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDetailsDeserializer.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDeserializer.java to .\/lol-dr\ repository source files.
+Added Repository.java to .\/lol-dr\ repository source files.
+Added FeedSerilizer.java to .\/lol-dr\ repository source files.
+Added TokenProvider.java to .\/lol-dr\ repository source files.
+Added PostDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDefaultDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsMineDeserializerTest.java to .\/lol-dr\ repository source files.
+Added BindableViewHolder.java to .\/lol-dr\ repository source files.
+Added DataSource.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added DrawerPresenter.java to .\/lol-dr\ repository source files.
+Added PostSummaryAdapter.java to .\/lol-dr\ repository source files.
+Added PostSummaryViewHolder.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added CommentViewHolder.java to .\/lol-dr\ repository source files.
+Added LinkDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added PostDetailsAdapter.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added SelfDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added ViewHolderFactory.java to .\/lol-dr\ repository source files.
+Added SourceProvider.java to .\/lol-dr\ repository source files.
+Added Ui.java to .\/lol-dr\ repository source files.
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+thrown exception found!
+thrown exception found!
+thrown exception found!
+try statment found!
+throw statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+thrown exception found!
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+try statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+throw statment found!
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+throw statment found!
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+
+Diff of 169682d8d702a1d2902610804ae833010dd5fc33 and f280c555e2cbf7c8700bbf33b34b726949df6aab:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit '169682d8d702a1d2902610804ae833010dd5fc33' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision f280c555e2cbf7c8700bbf33b34b726949df6aab****
+
+Added AccountService.java to .\/lol-dr\ repository source files.
+Added AnonToken.java to .\/lol-dr\ repository source files.
+Added AnonTokenStorage.java to .\/lol-dr\ repository source files.
+Added Authenticator.java to .\/lol-dr\ repository source files.
+Added Foo.java to .\/lol-dr\ repository source files.
+Added OAuthSignInActivity.java to .\/lol-dr\ repository source files.
+Added RefreshTokenResponse.java to .\/lol-dr\ repository source files.
+Added Token.java to .\/lol-dr\ repository source files.
+Added TokenAcquirer.java to .\/lol-dr\ repository source files.
+Added TokenResponse.java to .\/lol-dr\ repository source files.
+Added UserFetcher.java to .\/lol-dr\ repository source files.
+Added UserToken.java to .\/lol-dr\ repository source files.
+Added CacheRepository.java to .\/lol-dr\ repository source files.
+Added CacheSource.java to .\/lol-dr\ repository source files.
+Added ApplicationTest.java to .\/lol-dr\ repository source files.
+Added BaseActivity.java to .\/lol-dr\ repository source files.
+Added SimpleDate.java to .\/lol-dr\ repository source files.
+Added DebugActivity.java to .\/lol-dr\ repository source files.
+Added SubscriptionDataProvider.java to .\/lol-dr\ repository source files.
+Added SubscriptionProvider.java to .\/lol-dr\ repository source files.
+Added Executor.java to .\/lol-dr\ repository source files.
+Added FeedDataProvider.java to .\/lol-dr\ repository source files.
+Added FeedService.java to .\/lol-dr\ repository source files.
+Added MarshallerFactory.java to .\/lol-dr\ repository source files.
+Added FeedActivity.java to .\/lol-dr\ repository source files.
+Added PostProvider.java to .\/lol-dr\ repository source files.
+Added LogSubscriber.java to .\/lol-dr\ repository source files.
+Added CommentProvider.java to .\/lol-dr\ repository source files.
+Added PostActivity.java to .\/lol-dr\ repository source files.
+Added PostDetailsProvider.java to .\/lol-dr\ repository source files.
+Added PostSummarySimpleDateFormatter.java to .\/lol-dr\ repository source files.
+Added SearchActivity.java to .\/lol-dr\ repository source files.
+Added UserTokenProvider.java to .\/lol-dr\ repository source files.
+Added ApiRepository.java to .\/lol-dr\ repository source files.
+Added AuthInteceptor.java to .\/lol-dr\ repository source files.
+Added CacheRepo.java to .\/lol-dr\ repository source files.
+Added Data.java to .\/lol-dr\ repository source files.
+Added DeserializerFactory.java to .\/lol-dr\ repository source files.
+Added FeedDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDetailsDeserializer.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDeserializer.java to .\/lol-dr\ repository source files.
+Added Repository.java to .\/lol-dr\ repository source files.
+Added FeedSerilizer.java to .\/lol-dr\ repository source files.
+Added TokenProvider.java to .\/lol-dr\ repository source files.
+Added PostDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDefaultDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsMineDeserializerTest.java to .\/lol-dr\ repository source files.
+Added BindableViewHolder.java to .\/lol-dr\ repository source files.
+Added DataSource.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added DrawerPresenter.java to .\/lol-dr\ repository source files.
+Added PostSummaryAdapter.java to .\/lol-dr\ repository source files.
+Added PostSummaryViewHolder.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added CommentViewHolder.java to .\/lol-dr\ repository source files.
+Added LinkDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added PostDetailsAdapter.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added SelfDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added ViewHolderFactory.java to .\/lol-dr\ repository source files.
+Added SourceProvider.java to .\/lol-dr\ repository source files.
+Added Ui.java to .\/lol-dr\ repository source files.
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+thrown exception found!
+thrown exception found!
+thrown exception found!
+try statment found!
+throw statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+thrown exception found!
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+try statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+throw statment found!
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+throw statment found!
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+
+Diff of f280c555e2cbf7c8700bbf33b34b726949df6aab and 90e03dc6733fd5a6a5f1cd3dc4d3bf77d7e1b37d:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit 'f280c555e2cbf7c8700bbf33b34b726949df6aab' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision 90e03dc6733fd5a6a5f1cd3dc4d3bf77d7e1b37d****
+
+Added AccountService.java to .\/lol-dr\ repository source files.
+Added AnonToken.java to .\/lol-dr\ repository source files.
+Added AnonTokenStorage.java to .\/lol-dr\ repository source files.
+Added Authenticator.java to .\/lol-dr\ repository source files.
+Added Foo.java to .\/lol-dr\ repository source files.
+Added OAuthSignInActivity.java to .\/lol-dr\ repository source files.
+Added RefreshTokenResponse.java to .\/lol-dr\ repository source files.
+Added Token.java to .\/lol-dr\ repository source files.
+Added TokenAcquirer.java to .\/lol-dr\ repository source files.
+Added TokenResponse.java to .\/lol-dr\ repository source files.
+Added UserFetcher.java to .\/lol-dr\ repository source files.
+Added UserToken.java to .\/lol-dr\ repository source files.
+Added CacheRepository.java to .\/lol-dr\ repository source files.
+Added CacheSource.java to .\/lol-dr\ repository source files.
+Added ApplicationTest.java to .\/lol-dr\ repository source files.
+Added BaseActivity.java to .\/lol-dr\ repository source files.
+Added SimpleDate.java to .\/lol-dr\ repository source files.
+Added DebugActivity.java to .\/lol-dr\ repository source files.
+Added SubscriptionDataProvider.java to .\/lol-dr\ repository source files.
+Added SubscriptionProvider.java to .\/lol-dr\ repository source files.
+Added Executor.java to .\/lol-dr\ repository source files.
+Added FeedDataProvider.java to .\/lol-dr\ repository source files.
+Added FeedService.java to .\/lol-dr\ repository source files.
+Added MarshallerFactory.java to .\/lol-dr\ repository source files.
+Added FeedActivity.java to .\/lol-dr\ repository source files.
+Added PostProvider.java to .\/lol-dr\ repository source files.
+Added LogSubscriber.java to .\/lol-dr\ repository source files.
+Added CommentProvider.java to .\/lol-dr\ repository source files.
+Added PostActivity.java to .\/lol-dr\ repository source files.
+Added PostDetailsProvider.java to .\/lol-dr\ repository source files.
+Added PostSummarySimpleDateFormatter.java to .\/lol-dr\ repository source files.
+Added SearchActivity.java to .\/lol-dr\ repository source files.
+Added UserTokenProvider.java to .\/lol-dr\ repository source files.
+Added ApiRepository.java to .\/lol-dr\ repository source files.
+Added AuthInteceptor.java to .\/lol-dr\ repository source files.
+Added CacheRepo.java to .\/lol-dr\ repository source files.
+Added Data.java to .\/lol-dr\ repository source files.
+Added DeserializerFactory.java to .\/lol-dr\ repository source files.
+Added FeedDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDetailsDeserializer.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDeserializer.java to .\/lol-dr\ repository source files.
+Added Repository.java to .\/lol-dr\ repository source files.
+Added FeedSerilizer.java to .\/lol-dr\ repository source files.
+Added TokenProvider.java to .\/lol-dr\ repository source files.
+Added PostDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDefaultDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsMineDeserializerTest.java to .\/lol-dr\ repository source files.
+Added BindableViewHolder.java to .\/lol-dr\ repository source files.
+Added DataSource.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added DrawerPresenter.java to .\/lol-dr\ repository source files.
+Added PostSummaryAdapter.java to .\/lol-dr\ repository source files.
+Added PostSummaryViewHolder.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added CommentViewHolder.java to .\/lol-dr\ repository source files.
+Added LinkDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added PostDetailsAdapter.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added SelfDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added ViewHolderFactory.java to .\/lol-dr\ repository source files.
+Added SourceProvider.java to .\/lol-dr\ repository source files.
+Added Ui.java to .\/lol-dr\ repository source files.
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+thrown exception found!
+thrown exception found!
+thrown exception found!
+try statment found!
+throw statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+thrown exception found!
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+try statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+throw statment found!
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+throw statment found!
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+
+Diff of 90e03dc6733fd5a6a5f1cd3dc4d3bf77d7e1b37d and 6cd82fa6b6840d1369a4035345b2c4e5029f9e7a:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 90e03dc6733fd5a6a5f1cd3dc4d3bf77d7e1b37d to 6cd82fa6b6840d1369a4035345b2c4e5029f9e7a
+
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+************Analysis complete************
+Added generics to repository ouchadam/lol-dr = 0
+
+Ataul Munim added type argument method count = 0
+	--> recency = null
+Ataul Munim added wildcard count = 0
+	--> recency = null
+Ataul Munim added type declaration count = 0
+	--> recency = null
+Ataul Munim added type parameter method count = 0
+	--> recency = null
+Ataul Munim added type parameter field count = 0
+	--> recency = null
+Ataul Munim added diamond count = 0
+	--> recency = null
+Ataul Munim added method invocation count = 0
+	--> recency = null
+Ataul Munim added implicit method invocation count = 0
+	--> recency = null
+Ataul Munim added class instantiation count = 0
+	--> recency = null
+Ataul Munim added nested count = 0
+	--> recency = null
+Ataul Munim added bounds count = 0
+	--> recency = null
+
+****Parsing for addition at revision 52cf5020b95f83236857cfd2b698c049b9bb9acd****
+
+Added AccountService.java to .\/lol-dr\ repository source files.
+Added AnonToken.java to .\/lol-dr\ repository source files.
+Added AnonTokenStorage.java to .\/lol-dr\ repository source files.
+Added Authenticator.java to .\/lol-dr\ repository source files.
+Added Foo.java to .\/lol-dr\ repository source files.
+Added OAuthSignInActivity.java to .\/lol-dr\ repository source files.
+Added RefreshTokenResponse.java to .\/lol-dr\ repository source files.
+Added Token.java to .\/lol-dr\ repository source files.
+Added TokenAcquirer.java to .\/lol-dr\ repository source files.
+Added TokenResponse.java to .\/lol-dr\ repository source files.
+Added UserFetcher.java to .\/lol-dr\ repository source files.
+Added UserToken.java to .\/lol-dr\ repository source files.
+Added CacheRepository.java to .\/lol-dr\ repository source files.
+Added CacheSource.java to .\/lol-dr\ repository source files.
+Added ApplicationTest.java to .\/lol-dr\ repository source files.
+Added BaseActivity.java to .\/lol-dr\ repository source files.
+Added SimpleDate.java to .\/lol-dr\ repository source files.
+Added DebugActivity.java to .\/lol-dr\ repository source files.
+Added SubscriptionDataProvider.java to .\/lol-dr\ repository source files.
+Added SubscriptionProvider.java to .\/lol-dr\ repository source files.
+Added Executor.java to .\/lol-dr\ repository source files.
+Added FeedDataProvider.java to .\/lol-dr\ repository source files.
+Added FeedService.java to .\/lol-dr\ repository source files.
+Added MarshallerFactory.java to .\/lol-dr\ repository source files.
+Added FeedActivity.java to .\/lol-dr\ repository source files.
+Added PostProvider.java to .\/lol-dr\ repository source files.
+Added LogSubscriber.java to .\/lol-dr\ repository source files.
+Added CommentProvider.java to .\/lol-dr\ repository source files.
+Added PostActivity.java to .\/lol-dr\ repository source files.
+Added PostDetailsProvider.java to .\/lol-dr\ repository source files.
+Added PostSummarySimpleDateFormatter.java to .\/lol-dr\ repository source files.
+Added SearchActivity.java to .\/lol-dr\ repository source files.
+Added UserTokenProvider.java to .\/lol-dr\ repository source files.
+Added ApiRepository.java to .\/lol-dr\ repository source files.
+Added AuthInteceptor.java to .\/lol-dr\ repository source files.
+Added CacheRepo.java to .\/lol-dr\ repository source files.
+Added Data.java to .\/lol-dr\ repository source files.
+Added DeserializerFactory.java to .\/lol-dr\ repository source files.
+Added FeedDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDetailsDeserializer.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDeserializer.java to .\/lol-dr\ repository source files.
+Added Repository.java to .\/lol-dr\ repository source files.
+Added FeedSerilizer.java to .\/lol-dr\ repository source files.
+Added TokenProvider.java to .\/lol-dr\ repository source files.
+Added PostDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDefaultDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsMineDeserializerTest.java to .\/lol-dr\ repository source files.
+Added BindableViewHolder.java to .\/lol-dr\ repository source files.
+Added DataSource.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added DrawerPresenter.java to .\/lol-dr\ repository source files.
+Added PostSummaryAdapter.java to .\/lol-dr\ repository source files.
+Added PostSummaryViewHolder.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added CommentViewHolder.java to .\/lol-dr\ repository source files.
+Added LinkDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added PostDetailsAdapter.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added SelfDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added ViewHolderFactory.java to .\/lol-dr\ repository source files.
+Added SourceProvider.java to .\/lol-dr\ repository source files.
+Added Ui.java to .\/lol-dr\ repository source files.
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+thrown exception found!
+thrown exception found!
+thrown exception found!
+try statment found!
+throw statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+thrown exception found!
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+try statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+throw statment found!
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+throw statment found!
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+
+Diff of 52cf5020b95f83236857cfd2b698c049b9bb9acd and dd04503f485e8e358152afb9724d1631ce01db15:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+
+ Reverted revision 52cf5020b95f83236857cfd2b698c049b9bb9acd to dd04503f485e8e358152afb9724d1631ce01db15
+
+
+****Parsing for addition at revision dd04503f485e8e358152afb9724d1631ce01db15****
+
+Added AccountService.java to .\/lol-dr\ repository source files.
+Added AnonToken.java to .\/lol-dr\ repository source files.
+Added AnonTokenStorage.java to .\/lol-dr\ repository source files.
+Added Authenticator.java to .\/lol-dr\ repository source files.
+Added Foo.java to .\/lol-dr\ repository source files.
+Added OAuthSignInActivity.java to .\/lol-dr\ repository source files.
+Added RefreshTokenResponse.java to .\/lol-dr\ repository source files.
+Added Token.java to .\/lol-dr\ repository source files.
+Added TokenAcquirer.java to .\/lol-dr\ repository source files.
+Added TokenResponse.java to .\/lol-dr\ repository source files.
+Added UserFetcher.java to .\/lol-dr\ repository source files.
+Added UserToken.java to .\/lol-dr\ repository source files.
+Added CacheRepository.java to .\/lol-dr\ repository source files.
+Added CacheSource.java to .\/lol-dr\ repository source files.
+Added ApplicationTest.java to .\/lol-dr\ repository source files.
+Added BaseActivity.java to .\/lol-dr\ repository source files.
+Added SimpleDate.java to .\/lol-dr\ repository source files.
+Added DebugActivity.java to .\/lol-dr\ repository source files.
+Added SubscriptionDataProvider.java to .\/lol-dr\ repository source files.
+Added SubscriptionProvider.java to .\/lol-dr\ repository source files.
+Added Executor.java to .\/lol-dr\ repository source files.
+Added FeedDataProvider.java to .\/lol-dr\ repository source files.
+Added FeedService.java to .\/lol-dr\ repository source files.
+Added MarshallerFactory.java to .\/lol-dr\ repository source files.
+Added FeedActivity.java to .\/lol-dr\ repository source files.
+Added PostProvider.java to .\/lol-dr\ repository source files.
+Added LogSubscriber.java to .\/lol-dr\ repository source files.
+Added CommentProvider.java to .\/lol-dr\ repository source files.
+Added PostActivity.java to .\/lol-dr\ repository source files.
+Added PostDetailsProvider.java to .\/lol-dr\ repository source files.
+Added PostSummarySimpleDateFormatter.java to .\/lol-dr\ repository source files.
+Added SearchActivity.java to .\/lol-dr\ repository source files.
+Added UserTokenProvider.java to .\/lol-dr\ repository source files.
+Added ApiRepository.java to .\/lol-dr\ repository source files.
+Added AuthInteceptor.java to .\/lol-dr\ repository source files.
+Added CacheRepo.java to .\/lol-dr\ repository source files.
+Added Data.java to .\/lol-dr\ repository source files.
+Added DeserializerFactory.java to .\/lol-dr\ repository source files.
+Added FeedDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDetailsDeserializer.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDeserializer.java to .\/lol-dr\ repository source files.
+Added Repository.java to .\/lol-dr\ repository source files.
+Added FeedSerilizer.java to .\/lol-dr\ repository source files.
+Added TokenProvider.java to .\/lol-dr\ repository source files.
+Added PostDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDefaultDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsMineDeserializerTest.java to .\/lol-dr\ repository source files.
+Added BindableViewHolder.java to .\/lol-dr\ repository source files.
+Added DataSource.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added DrawerPresenter.java to .\/lol-dr\ repository source files.
+Added PostSummaryAdapter.java to .\/lol-dr\ repository source files.
+Added PostSummaryViewHolder.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added CommentViewHolder.java to .\/lol-dr\ repository source files.
+Added LinkDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added PostDetailsAdapter.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added SelfDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added ViewHolderFactory.java to .\/lol-dr\ repository source files.
+Added SourceProvider.java to .\/lol-dr\ repository source files.
+Added Ui.java to .\/lol-dr\ repository source files.
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+thrown exception found!
+thrown exception found!
+thrown exception found!
+try statment found!
+throw statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+thrown exception found!
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+try statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+throw statment found!
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+throw statment found!
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+thrown exception found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+node is null
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+throw statment found!
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+in visit TypeDeclaration node
+
+Diff of dd04503f485e8e358152afb9724d1631ce01db15 and 8b17c6d50db95e2c56fe31fdf64213370884c4e4:
+	--> Added type argument methods = 0
+	--> recency = null
+	--> Added wildcards = 0
+	--> recency = null
+	--> Added type declarations  = 0
+	--> recency = null
+	--> Added type parameter methods = 0
+	--> recency = null
+	--> Added type parameter fields = 0
+	--> recency = null
+	--> Added diamonds = 0
+	--> recency = null
+	--> Added explicit method invocations = 0
+	--> recency = null
+	--> Added implicit method invocations = 0
+	--> recency = null
+	--> Added class instantiations = 0
+	--> recency = null
+	--> Added nested = 0
+	--> recency = null
+	--> Added bounds = 0
+	--> recency = null
+GitAPIException thrown!
+Cannot revert commit 'dd04503f485e8e358152afb9724d1631ce01db15' because it has 2 parents, only commits with exactly one parent are supported
+
+****Parsing for addition at revision 8b17c6d50db95e2c56fe31fdf64213370884c4e4****
+
+Added AccountService.java to .\/lol-dr\ repository source files.
+Added AnonToken.java to .\/lol-dr\ repository source files.
+Added AnonTokenStorage.java to .\/lol-dr\ repository source files.
+Added Authenticator.java to .\/lol-dr\ repository source files.
+Added Foo.java to .\/lol-dr\ repository source files.
+Added OAuthSignInActivity.java to .\/lol-dr\ repository source files.
+Added RefreshTokenResponse.java to .\/lol-dr\ repository source files.
+Added Token.java to .\/lol-dr\ repository source files.
+Added TokenAcquirer.java to .\/lol-dr\ repository source files.
+Added TokenResponse.java to .\/lol-dr\ repository source files.
+Added UserFetcher.java to .\/lol-dr\ repository source files.
+Added UserToken.java to .\/lol-dr\ repository source files.
+Added CacheRepository.java to .\/lol-dr\ repository source files.
+Added CacheSource.java to .\/lol-dr\ repository source files.
+Added ApplicationTest.java to .\/lol-dr\ repository source files.
+Added BaseActivity.java to .\/lol-dr\ repository source files.
+Added SimpleDate.java to .\/lol-dr\ repository source files.
+Added DebugActivity.java to .\/lol-dr\ repository source files.
+Added SubscriptionDataProvider.java to .\/lol-dr\ repository source files.
+Added SubscriptionProvider.java to .\/lol-dr\ repository source files.
+Added Executor.java to .\/lol-dr\ repository source files.
+Added FeedDataProvider.java to .\/lol-dr\ repository source files.
+Added FeedService.java to .\/lol-dr\ repository source files.
+Added MarshallerFactory.java to .\/lol-dr\ repository source files.
+Added FeedActivity.java to .\/lol-dr\ repository source files.
+Added PostProvider.java to .\/lol-dr\ repository source files.
+Added LogSubscriber.java to .\/lol-dr\ repository source files.
+Added CommentProvider.java to .\/lol-dr\ repository source files.
+Added PostActivity.java to .\/lol-dr\ repository source files.
+Added PostDetailsProvider.java to .\/lol-dr\ repository source files.
+Added PostSummarySimpleDateFormatter.java to .\/lol-dr\ repository source files.
+Added SearchActivity.java to .\/lol-dr\ repository source files.
+Added UserTokenProvider.java to .\/lol-dr\ repository source files.
+Added ApiRepository.java to .\/lol-dr\ repository source files.
+Added AuthInteceptor.java to .\/lol-dr\ repository source files.
+Added CacheRepo.java to .\/lol-dr\ repository source files.
+Added Data.java to .\/lol-dr\ repository source files.
+Added DeserializerFactory.java to .\/lol-dr\ repository source files.
+Added FeedDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDeserializer.java to .\/lol-dr\ repository source files.
+Added PostDetailsDeserializer.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDeserializer.java to .\/lol-dr\ repository source files.
+Added Repository.java to .\/lol-dr\ repository source files.
+Added FeedSerilizer.java to .\/lol-dr\ repository source files.
+Added TokenProvider.java to .\/lol-dr\ repository source files.
+Added PostDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsDefaultDeserializerTest.java to .\/lol-dr\ repository source files.
+Added SubscriptionsMineDeserializerTest.java to .\/lol-dr\ repository source files.
+Added BindableViewHolder.java to .\/lol-dr\ repository source files.
+Added DataSource.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added DrawerPresenter.java to .\/lol-dr\ repository source files.
+Added PostSummaryAdapter.java to .\/lol-dr\ repository source files.
+Added PostSummaryViewHolder.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added CommentViewHolder.java to .\/lol-dr\ repository source files.
+Added LinkDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added PostDetailsAdapter.java to .\/lol-dr\ repository source files.
+Added Presenter.java to .\/lol-dr\ repository source files.
+Added SelfDetailsViewHolder.java to .\/lol-dr\ repository source files.
+Added ViewHolderFactory.java to .\/lol-dr\ repository source files.
+Added SourceProvider.java to .\/lol-dr\ repository source files.
+Added Ui.java to .\/lol-dr\ repository source files.
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+thrown exception found!
+thrown exception found!
+thrown exception found!
+try statment found!
+throw statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+thrown exception found!
+thrown exception found!
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+thrown exception found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+node is null
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+try statment found!
+throw statment found!
+try statment found!
+throw statment found!
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
+in visit TypeDeclaration node
+.\/lol-dr
