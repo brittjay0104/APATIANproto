@@ -4,6 +4,7 @@ package node_visitor;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 import org.eclipse.core.runtime.NullProgressMonitor;
@@ -12,11 +13,13 @@ import org.eclipse.jdt.core.ITypeHierarchy;
 import org.eclipse.jdt.core.JavaModelException;
 import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.ASTVisitor;
+import org.eclipse.jdt.core.dom.CatchClause;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
 import org.eclipse.jdt.core.dom.ThrowStatement;
 import org.eclipse.jdt.core.dom.TryStatement;
 import org.eclipse.jdt.core.dom.TypeDeclaration;
 import org.eclipse.jdt.core.dom.ITypeBinding;
+import org.eclipse.jdt.core.dom.Initializer;
 
 import code_parser.ModelSourceFile;
 
@@ -29,11 +32,36 @@ public class ExceptionsVisitor extends ASTVisitor {
 	// Try statements
 	List<String> tryStatements = new ArrayList<String>();
 	
+	// Static try statements
+	List<String> staticTryStatements = new ArrayList<String>();
+	
+	// Classes that extend an exception
+	List<String> tryWithResources = new ArrayList<String>();
+	
+	// Catch blocks
+	List<String> catchBlocks = new ArrayList<String>();
+	
+	// Finally blocks
+	List<String> finallyBlocks = new ArrayList<String>();
+
 	// Throw statements (TBD)
 	List<String> throwStatements = new ArrayList<String>();
 	
 	// Classes that extend an exception
 	List<String> exceptionClasses = new ArrayList<String>();
+	
+	// Checked and Unchecked Exceptions
+	List<String> uncheckedExceptions = new ArrayList<String>();
+	List<String> checkedExceptions = new ArrayList<String>();
+	
+	// List of all unchecked exceptions
+	List<String> unchecked = Arrays.asList("AnnotationTypeMismatchException", "ArithmeticException", "ArrayStoreException", "BufferOverflowException", "BufferUnderflowException", "CannotRedoException", "CannotUndoException", "ClassCastException", "CMMException"
+			, "ConcurrentModificationException", "DataBindingException", "DOMException", "EmptyStackException", "EnumConstantNotPresentException", "EventException", "FileSystemAlreadyExistsException", "FileSystemNotFoundException", "IllegalArgumentException"
+			, "IllegalMonitorStateException", "IllegalPathStateException", "IllegalStateException", "IllformedLocaleException", "ImagingOpException", "IncompleteAnnotationException", "IndexOutOfBoundsException", "JMRuntimeException", "LSException", "MalformedParameterizedTypeException"
+			, "MirroredTypesException", "MissingResourceException", "NegativeArraySizeException", "NoSuchElementException", "NoSuchMechanismException", "NullPointerException", "ProfileDataException", "ProviderException", "ProviderNotFoundException", "RasterFormatException"
+			, "RejectedExecutionException", "RuntimeException", "SecurityException", "SystemException", "TypeConstraintException", "TypeNotPresentException", "UndeclaredThrowableException", "UnknownEntityException", "UnmodifiableSetException", "UnsupportedOperationException"
+			, "WebServiceException", "WrongMethodTypeException");
+	
 	
 	// The source file
 	// Note: This seems to be present in all "Visitor" classes in this package,
@@ -85,6 +113,13 @@ public class ExceptionsVisitor extends ASTVisitor {
 		return null;
 	}
 	
+	private Initializer getInitializer(ASTNode node) {
+		if (node.getParent() != null){
+			return node instanceof Initializer ? (Initializer)node : getInitializer(node.getParent());			
+		}
+		
+		return null;
+	}
 	
 	
 	// Get throwsMethods
@@ -97,6 +132,26 @@ public class ExceptionsVisitor extends ASTVisitor {
 		return tryStatements;
 	}
 	
+	// Get static tryStatements
+	public List<String> getStaticTryStatements(){
+		return staticTryStatements;
+	}
+	
+	// Get try-with-resources statements
+	public List<String> getTryWithResourceStatements() {
+		return tryWithResources;
+	}
+	
+	// Get catch blocks 
+	public List<String> getCatchBlocks(){
+		return catchBlocks;
+	}
+	
+	// Get try-with-resources statements
+	public List<String> getFinallyBlock() {
+		return finallyBlocks;
+	}
+	
 	// Get throwStatements (TBD)
 	public List<String> getThrowStatements() {
 		return throwStatements;
@@ -107,6 +162,13 @@ public class ExceptionsVisitor extends ASTVisitor {
 		return exceptionClasses;
 	}
 	
+	public List<String> getUncheckedExceptions(){
+		return uncheckedExceptions;
+	}
+	
+	public List<String> getCheckedExceptions(){
+		return checkedExceptions;
+	}
 	
 	/**
 	 * When visiting a TryStatement, add the statement to our tryStatements
@@ -114,23 +176,210 @@ public class ExceptionsVisitor extends ASTVisitor {
 	 */
 	public boolean visit(TryStatement node) {
 		
+		// check for nested try statements??
+		if (node.getParent() instanceof TryStatement){
+			
+		}
+
+		Initializer init = getInitializer(node);
 		MethodDeclaration md = getMethodDeclaration(node);
+		
+		// check for try/catch in static block		
+		if (init != null){
+			List inits = init.modifiers();
+			StringBuffer sb = new StringBuffer();
+			for (Object i : inits){
+				sb.append(i.toString());
+			}
+			
+			String initializer = sb.toString();
+			
+			String src = findSourceForNode(node);
+			
+			String[] tryLines = src.split("\n");
+			String tryLine = "";
+			
+			if (!tryLines[0].trim().contains("try")){
+				tryLine = tryLines[0].trim();
+			} else if (tryLines[0].trim().contains("try") && (!tryLines[1].trim().equals("\n") || !tryLines[1].trim().equals("}"))) {
+				tryLine = tryLines[1].trim();				
+			} else {
+				
+			}
+			
+			if (!tryLine.equals("")){
+				String tryBlock = initializer + CHECK_SEPERATOR + tryLine;
+				tryStatements.add(tryBlock);				
+			}
+			
+			// Get resources for try-with-resources statement
+			if (node.resources() != null){
+				for (Object resource : node.resources()){
+					String source = src.substring(0, src.indexOf("{"));
+					if (source.contains("\n")){
+						source = source.substring(0, source.indexOf("\n"));
+					}
+					String tryResource = initializer + CHECK_SEPERATOR + source.trim() + CHECK_SEPERATOR + resource.toString();
+					tryWithResources.add(tryResource);
+					System.out.println("try with resource found!");
+				}
+			}
+			
+			// Check for finally block
+			if (node.getFinally() != null){
+				String finallyBlock = node.getFinally().toString();
+				String[] lines = finallyBlock.split("\n");
+				String line = "";
+				
+				if (lines[0].trim().equals("{") && (!lines[1].trim().equals("\n") || !lines[1].trim().equals("{"))){
+					line = lines[1].trim();					
+				} else if (!lines[0].trim().equals("{")) {
+					line = lines[0].trim();															
+				} else {
+					
+				}
+				if (!line.equals("")){
+					finallyBlocks.add(initializer + CHECK_SEPERATOR + line.trim());
+					System.out.println("finally block found!");					
+				}
+			}
+			
+			System.out.println("try statement found!");
+		}
+		
 		if (md != null) {
 			
-			tryStatements.add(md.getName().toString() + CHECK_SEPERATOR + findSourceForNode(node));
+			String methodName = md.getName().toString();
+			String src = findSourceForNode(node);
 			
-			System.out.println("try statment found!");
+			String[] tryLines = src.split("\n");
+			String tryLine = "";
+			
+			if (!tryLines[0].trim().contains("try")){
+				tryLine = tryLines[0].trim();
+			} else if (tryLines[0].trim().contains("try") && (!tryLines[1].trim().equals("\n") || !tryLines[1].trim().equals("}"))) {
+				tryLine = tryLines[1].trim();				
+			} else {
+				
+			}
+			
+			if (!tryLine.equals("")){
+				String tryBlock = methodName + CHECK_SEPERATOR + tryLine;
+				tryStatements.add(tryBlock);				
+			}
+			
+			// Get resources for try-with-resources statement
+			if (node.resources() != null){
+				for (Object resource : node.resources()){
+					String source = src.substring(0, src.indexOf("{"));
+					if (source.contains("\n")){
+						source = source.substring(0, source.indexOf("\n"));
+					}
+					String tryResource = methodName + CHECK_SEPERATOR + source.trim() + CHECK_SEPERATOR + resource.toString();
+					tryWithResources.add(tryResource);
+					System.out.println("try with resource found!");
+				}
+			}
+			
+			// Check for finally block
+			if (node.getFinally() != null){
+				String finallyBlock = node.getFinally().toString();
+				String[] lines = finallyBlock.split("\n");
+				String line = "";
+				
+				if (lines[0].trim().equals("{") && (!lines[1].trim().equals("\n") || !lines[1].trim().equals("{"))){
+					line = lines[1].trim();					
+				} else if (!lines[0].trim().equals("{")) {
+					line = lines[0].trim();															
+				} else {
+					
+				}
+				if (!line.equals("")){
+					finallyBlocks.add(methodName + CHECK_SEPERATOR + line.trim());
+					System.out.println("finally block found!");					
+				}
+			}
+			
+			System.out.println("try statement found!");
 		}
+		return true;
+	}
+
+
+
+	public boolean visit (CatchClause node){
+		Initializer init = getInitializer(node);
+		MethodDeclaration md = getMethodDeclaration(node);
+		
+		if (init != null){
+			List inits = init.modifiers();
+			StringBuffer sb = new StringBuffer();
+			for (Object i : inits){
+				sb.append(i.toString());
+			}
+			
+			String initializer = sb.toString();
+			String except = node.getException().toString().trim();
+			String exception = except.substring(0, except.indexOf(" "));
+			String catchBlock = node.toString();
+			String catchLine = catchBlock.substring(0, catchBlock.indexOf("{"));
+			
+			String catchSrc = initializer + CHECK_SEPERATOR + catchLine.trim();
+			
+			catchBlocks.add(catchSrc);
+			
+			if (unchecked.contains(exception)){
+				uncheckedExceptions.add(catchSrc);
+			} else {
+				checkedExceptions.add(catchSrc);
+			}
+		}
+
+		if (md != null){
+			String methodName = md.getName().toString();
+			String except = node.getException().toString().trim();
+			String exception = except.substring(0, except.indexOf(" "));
+			String catchBlock = node.toString();
+			String catchLine = catchBlock.substring(0, catchBlock.indexOf("{"));
+			
+			String catchSrc = methodName + CHECK_SEPERATOR + catchLine.trim();
+			
+			catchBlocks.add(catchSrc);
+			
+			if (unchecked.contains(exception)){
+				uncheckedExceptions.add(catchSrc);
+			} else {
+				checkedExceptions.add(catchSrc);
+			}
+			
+			// multi-catch = UNION_TYPE > 1??
+			
+		}
+		
 		return true;
 	}
 	
 	
 	public boolean visit(ThrowStatement node){
 		MethodDeclaration md = getMethodDeclaration(node);
+		
 		if (md != null) {
-			throwStatements.add(md.getName().toString() + CHECK_SEPERATOR + findSourceForNode(node));
+			String src = findSourceForNode(node);
+			String throwStatement = md.getName().toString() + CHECK_SEPERATOR + src;
+			throwStatements.add(throwStatement);
 			
-			System.out.println("throw statment found!");
+			System.out.println("throw statement found!");
+			
+			for (String e : unchecked){
+				if (src.contains(e)){
+					uncheckedExceptions.add(throwStatement);
+				}
+			}
+			
+			if (!unchecked.contains(throwStatement)){
+				checkedExceptions.add(throwStatement);
+			}
+			
 		}
 		return true;
 	}
@@ -145,10 +394,24 @@ public class ExceptionsVisitor extends ASTVisitor {
 			List thrownExceptions = node.thrownExceptions();
 			if(!thrownExceptions.isEmpty()){
 				
-				//Store more information here??
-				throwsMethods.add(md.getName().toString() + CHECK_SEPERATOR + findSourceForNode(node));
-
-				System.out.println("thrown exception found!");
+				for (Object except : thrownExceptions){
+					String exception = except.toString();
+					
+					//Store more information here??
+					String src = findSourceForNode(node);
+					String source = src.substring(0, src.indexOf("{"));
+					String throwsMethod = md.getName().toString() + CHECK_SEPERATOR + source.trim();
+					throwsMethods.add(throwsMethod);
+					
+					System.out.println("thrown exception found!");	
+					
+					if (unchecked.contains(exception)){
+						uncheckedExceptions.add(throwsMethod);
+					} else {
+						checkedExceptions.add(throwsMethod);
+					}
+				}
+				
 			}
 			
 		}
@@ -159,15 +422,27 @@ public class ExceptionsVisitor extends ASTVisitor {
 	public boolean visit(TypeDeclaration node) {
 		//System.out.print(node.getName().toString());
 		
-		//MethodDeclaration md = getMethodDeclaration(node);
+		MethodDeclaration md = getMethodDeclaration(node);
 		
 		// check if superclass is an exception
-		
-		if (node.getSuperclassType() != null && descendsFromException(node.getSuperclassType().resolveBinding())) {
-			exceptionClasses.add(node.getName().toString() + CHECK_SEPERATOR + findSourceForNode(node));
+		if (node.getSuperclassType() != null && node.getSuperclassType().toString().contains("Exception")) {
+			String superClass = node.getSuperclassType().toString();
+			String src = findSourceForNode(node);
+			String source = src.substring(0, src.indexOf("{"));
+			
+			String exceptionClass = node.getName().toString() + CHECK_SEPERATOR + source.trim();
+			exceptionClasses.add(exceptionClass);
 			//System.out.println("\nexception subclass found!");
 			
 			System.out.println("exception subclass found!");
+			
+			// check if a checked or unchecked exception
+			if (unchecked.contains(superClass)){
+				uncheckedExceptions.add(exceptionClass);
+			} else {
+				checkedExceptions.add(exceptionClass);
+			}
+			
 		}
 		else {
 			//System.out.println("");

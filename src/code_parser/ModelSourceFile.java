@@ -28,9 +28,15 @@ public class ModelSourceFile {
 	//exceptions
 	public List<String> throwsMethods;
 	public List<String> tryStatements;
+	public List<String> catchBlocks;
+	public List<String> tryWithResources;
+	public List<String> finallyBlocks;
 	public List<String> throwStatements;
 	public List<String> exceptionClasses;
-
+	public List<String> uncheckedExceptions;
+	public List<String> checkedExceptions;
+	
+	// null
 	public HashMap<String, ArrayList<String>> invocs;
 	public HashMap<String, ArrayList<String>> nullVars;
 	public HashMap<String, ArrayList<String>> nullAssignments;
@@ -44,7 +50,6 @@ public class ModelSourceFile {
 	public List<String> NODPs;
 	public List<String> collVars;
 	public List<String> optVars;
-	public List<String> catchBlocks;
 	
 //	public List<String> genericFields;
 //	public List<String> genericMethods;
@@ -102,8 +107,13 @@ public class ModelSourceFile {
 		//exceptions
 		throwsMethods = new ArrayList<String>();
 		tryStatements = new ArrayList<String>();
+		catchBlocks = new ArrayList<String>();
+		tryWithResources = new ArrayList<String>();
+		finallyBlocks = new ArrayList<String>();
 		throwStatements = new ArrayList<String>();
 		exceptionClasses = new ArrayList<String>();
+		checkedExceptions = new ArrayList<String>();
+		uncheckedExceptions = new ArrayList<String>();		
 
 		allGenerics = new ArrayList<String>();
 		generics = new HashMap<String, List<String>>();
@@ -248,12 +258,33 @@ public class ModelSourceFile {
 		return tryStatements;
 	}
 	
+	public List<String> getCatchBlocks(){
+		return catchBlocks;
+	}
+	
+	public List<String> getTryWithResources(){
+		return tryWithResources;
+	}
+	
+	public List<String> getFinallyBlocks(){
+		return finallyBlocks;
+	}
+	
 	public List<String> getThrowStatements(){
 		return throwStatements;
 	}
 	
 	public List<String> getExceptionClasses(){
 		return exceptionClasses;
+	}
+	
+	
+	public List<String> getCheckedExceptions(){
+		return checkedExceptions;
+	}
+	
+	public List<String> getUncheckedExceptions(){
+		return uncheckedExceptions;
 	}
 	
 	//adders
@@ -268,6 +299,21 @@ public class ModelSourceFile {
 		return;
 	}
 	
+	public void addCatchBlock(String catchBlock){
+		catchBlocks.add(catchBlock);
+		return;
+	}
+	
+	public void addTryWithResource(String tryWithResource){
+		tryWithResources.add(tryWithResource);
+		return;
+	}
+	
+	public void addFinallyBlock(String finallyBlock){
+		finallyBlocks.add(finallyBlock);
+		return;
+	}
+	
 	public void addThrowStatement(String throwStatement){
 		throwStatements.add(throwStatement);
 		return;
@@ -275,6 +321,17 @@ public class ModelSourceFile {
 	
 	public void addExceptionClass(String exceptionClass){
 		exceptionClasses.add(exceptionClass);
+		return;
+	}
+	
+	
+	public void addCheckedException(String checkedException){
+		checkedExceptions.add(checkedException);
+		return;
+	}
+	
+	public void addUncheckedException(String uncheckedException){
+		uncheckedExceptions.add(uncheckedException);
 		return;
 	}
 	
@@ -389,12 +446,6 @@ public class ModelSourceFile {
 	public void addOptVar(String optVar){
 		if (!(optVars.contains(optVar))){
 			optVars.add(optVar);
-		}
-	}
-	
-	public void addCatchBlock(String cblock){
-		if (!(catchBlocks.contains(cblock))){
-			catchBlocks.add(cblock);
 		}
 	}
 
@@ -590,10 +641,6 @@ public class ModelSourceFile {
 	
 	public List<String> getOptVars(){
 		return optVars;
-	}
-	
-	public List<String> getCatchBlocks(){
-		return catchBlocks;
 	}
 
 }

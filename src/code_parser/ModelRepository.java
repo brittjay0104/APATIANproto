@@ -63,6 +63,7 @@ public class ModelRepository {
 
 	// for recency
 	HashMap <String, String> recency = new HashMap<String, String>();
+	//generics
 	private int classInstanceDC = 1;
 	private int expMethInvocDC = 1;
 	private int impMethInvocDC = 1;
@@ -74,6 +75,19 @@ public class ModelRepository {
 	private int typeParamFieldDC = 1;
 	private int diamondDC = 1;
 	private int boundsDC = 1;
+	
+	//exceptions
+	private int throwsMethodDC = 1;
+	private int tryStatementDC = 1;
+	private int catchBlockDC = 1;
+	private int tryWithResourceDC = 1;
+	private int finallyBlockDC = 1;
+	private int throwStatementDC = 1;
+	private int exceptionClassDC = 1;
+	private int checkedExceptionDC = 1;
+	private int uncheckedExceptionDC = 1;
+	private boolean isChecked = false;
+	private boolean isUnchecked = false;
 
 
 	public ModelRepository() {
@@ -452,30 +466,50 @@ public class ModelRepository {
 		
 		
 		// GENERICS
-		System.out.println("Added generics to repository " + repoName + " = " + dev.getAllAddedGenerics());
-		System.out.println("");
-		System.out.println(devName + " added type argument method count = " + dev.getAddedTypeArgumentMethods());
-		System.out.println("	--> recency = " + recency.get("type argument methods"));
-		System.out.println(devName + " added wildcard count = " + dev.getAddedWildcard());
-		System.out.println("	--> recency = " + recency.get("wildcards"));
-		System.out.println(devName + " added type declaration count = " + dev.getAddedTypeDecs());
-		System.out.println("	--> recency = " + recency.get("type declarations"));
-		System.out.println(devName + " added type parameter method count = " + dev.getAddedTypeParamMethods());
-		System.out.println("	--> recency = " + recency.get("type parameter methods"));
-		System.out.println(devName + " added type parameter field count = " + dev.getAddedTypeParamFields());
-		System.out.println("	--> recency = " + recency.get("type parameter fields"));
-		System.out.println(devName + " added diamond count = " + dev.getAddedDiamond());
-		System.out.println("	--> recency = " + recency.get("diamonds"));
-		System.out.println(devName + " added method invocation count = " + dev.getAddedMethodInvocs());
-		System.out.println("	--> recency = " + recency.get("method invocations"));
-		System.out.println(devName + " added implicit method invocation count = " + dev.getAddedImpMethInvocs());
-		System.out.println("	--> recency = " + recency.get("implicit method invocations"));
-		System.out.println(devName + " added class instantiation count = " + dev.getAddedClassInstances());
-		System.out.println("	--> recency = " + recency.get("class instantiations"));
-		System.out.println(devName + " added nested count = " + dev.getAddedNested());
-		System.out.println("	--> recency = " + recency.get("nested"));
-		System.out.println(devName + " added bounds count = " + dev.getAddedBounds());
-		System.out.println("	--> recency = " + recency.get("bounds"));
+//		System.out.println("Added generics to repository " + repoName + " = " + dev.getAllAddedGenerics());
+//		System.out.println("");
+//		System.out.println(devName + " added type argument method count = " + dev.getAddedTypeArgumentMethods());
+//		System.out.println("	--> recency = " + recency.get("type argument methods"));
+//		System.out.println(devName + " added wildcard count = " + dev.getAddedWildcard());
+//		System.out.println("	--> recency = " + recency.get("wildcards"));
+//		System.out.println(devName + " added type declaration count = " + dev.getAddedTypeDecs());
+//		System.out.println("	--> recency = " + recency.get("type declarations"));
+//		System.out.println(devName + " added type parameter method count = " + dev.getAddedTypeParamMethods());
+//		System.out.println("	--> recency = " + recency.get("type parameter methods"));
+//		System.out.println(devName + " added type parameter field count = " + dev.getAddedTypeParamFields());
+//		System.out.println("	--> recency = " + recency.get("type parameter fields"));
+//		System.out.println(devName + " added diamond count = " + dev.getAddedDiamond());
+//		System.out.println("	--> recency = " + recency.get("diamonds"));
+//		System.out.println(devName + " added method invocation count = " + dev.getAddedMethodInvocs());
+//		System.out.println("	--> recency = " + recency.get("method invocations"));
+//		System.out.println(devName + " added implicit method invocation count = " + dev.getAddedImpMethInvocs());
+//		System.out.println("	--> recency = " + recency.get("implicit method invocations"));
+//		System.out.println(devName + " added class instantiation count = " + dev.getAddedClassInstances());
+//		System.out.println("	--> recency = " + recency.get("class instantiations"));
+//		System.out.println(devName + " added nested count = " + dev.getAddedNested());
+//		System.out.println("	--> recency = " + recency.get("nested"));
+//		System.out.println(devName + " added bounds count = " + dev.getAddedBounds());
+//		System.out.println("	--> recency = " + recency.get("bounds"));
+		
+		// EXCEPTIONS
+		System.out.println(devName + " added throws method count = " + dev.getAddedThrowsMethods());
+		System.out.println("	--> recency = " + recency.get("throws methods"));
+		System.out.println(devName + " added try statement count = " + dev.getAddedTryStatements());
+		System.out.println("	--> recency = " + recency.get("try statements"));
+		System.out.println(devName + " added catch block count = " + dev.getAddedCatchBlocks());
+		System.out.println("	--> recency = " + recency.get("catch blocks"));
+		System.out.println(devName + " added try with resources count = " + dev.getAddedTryWithResources());
+		System.out.println("	--> recency = " + recency.get("try with resources"));
+		System.out.println(devName + " added finally block count = " + dev.getAddedFinallyBlocks()); 
+		System.out.println("	--> recency = " + recency.get("finally blocks"));
+		System.out.println(devName + " added throw statement count = " + dev.getAddedThrowStatements());
+		System.out.println("	--> recency = " + recency.get("throw statements"));
+		System.out.println(devName + " added exception class count = " + dev.getAddedExceptionClasses());
+		System.out.println("	--> recency = " + recency.get("exception classes"));
+		System.out.println(devName + " added checked exception count = " + dev.getAddedCheckedExceptions());
+		System.out.println("	--> recency = " + recency.get("checked exceptions"));
+		System.out.println(devName + " added unchecked exception count = " + dev.getAddedUncheckedExceptions());
+		System.out.println("	--> recency = " + recency.get("unchecked exceptions"));
 		
 	}
 
@@ -493,29 +527,48 @@ public class ModelRepository {
 //		System.out.println("	--> Added Null Object Design Patterns = " + dev.getAddedNODPCounts());
 		
 		// GENERICS
-		System.out.println("	--> Added type argument methods = " + dev.getAddedTypeArgumentMethods());
-		System.out.println("	--> recency = " + recency.get("type argument methods"));
-		System.out.println("	--> Added wildcards = " + dev.getAddedWildcard());
-		System.out.println("	--> recency = " + recency.get("wildcards"));
-		System.out.println("	--> Added type declarations  = " + dev.getAddedTypeDecs());
-		System.out.println("	--> recency = " + recency.get("type declarations"));
-		System.out.println("	--> Added type parameter methods = " + dev.getAddedTypeParamMethods());
-		System.out.println("	--> recency = " + recency.get("type parameter methods"));
-		System.out.println("	--> Added type parameter fields = " + dev.getAddedTypeParamFields());
-		System.out.println("	--> recency = " + recency.get("type parameter fields"));
-		System.out.println("	--> Added diamonds = " + dev.getAddedDiamond());
-		System.out.println("	--> recency = " + recency.get("diamonds"));
-		System.out.println("	--> Added explicit method invocations = " + dev.getAddedMethodInvocs());
-		System.out.println("	--> recency = " + recency.get("method invocations"));
-		System.out.println("	--> Added implicit method invocations = " + dev.getAddedImpMethInvocs());
-		System.out.println("	--> recency = " + recency.get("implicit method invocations"));
-		System.out.println("	--> Added class instantiations = " + dev.getAddedClassInstances());
-		System.out.println("	--> recency = " + recency.get("class instantiations"));
-		System.out.println("	--> Added nested = " + dev.getAddedNested());
-		System.out.println("	--> recency = " + recency.get("nesteds"));
-		System.out.println("	--> Added bounds = " + dev.getAddedBounds());
-		System.out.println("	--> recency = " + recency.get("bounds"));
+//		System.out.println("	--> Added type argument methods = " + dev.getAddedTypeArgumentMethods());
+//		System.out.println("	--> recency = " + recency.get("type argument methods"));
+//		System.out.println("	--> Added wildcards = " + dev.getAddedWildcard());
+//		System.out.println("	--> recency = " + recency.get("wildcards"));
+//		System.out.println("	--> Added type declarations  = " + dev.getAddedTypeDecs());
+//		System.out.println("	--> recency = " + recency.get("type declarations"));
+//		System.out.println("	--> Added type parameter methods = " + dev.getAddedTypeParamMethods());
+//		System.out.println("	--> recency = " + recency.get("type parameter methods"));
+//		System.out.println("	--> Added type parameter fields = " + dev.getAddedTypeParamFields());
+//		System.out.println("	--> recency = " + recency.get("type parameter fields"));
+//		System.out.println("	--> Added diamonds = " + dev.getAddedDiamond());
+//		System.out.println("	--> recency = " + recency.get("diamonds"));
+//		System.out.println("	--> Added explicit method invocations = " + dev.getAddedMethodInvocs());
+//		System.out.println("	--> recency = " + recency.get("method invocations"));
+//		System.out.println("	--> Added implicit method invocations = " + dev.getAddedImpMethInvocs());
+//		System.out.println("	--> recency = " + recency.get("implicit method invocations"));
+//		System.out.println("	--> Added class instantiations = " + dev.getAddedClassInstances());
+//		System.out.println("	--> recency = " + recency.get("class instantiations"));
+//		System.out.println("	--> Added nested = " + dev.getAddedNested());
+//		System.out.println("	--> recency = " + recency.get("nesteds"));
+//		System.out.println("	--> Added bounds = " + dev.getAddedBounds());
+//		System.out.println("	--> recency = " + recency.get("bounds"));
 		
+		// EXCEPTIONS
+		System.out.println("	--> Added throws methods = " + dev.getAddedThrowsMethods());
+		System.out.println("	--> recency = " + recency.get("throws methods"));
+		System.out.println("	--> Added try statements = " + dev.getAddedTryStatements());
+		System.out.println("	--> recency = " + recency.get("try statements"));
+		System.out.println("	--> Added catch blocks = " + dev.getAddedCatchBlocks());
+		System.out.println("	--> recency = " + recency.get("catch blocks"));
+		System.out.println("	--> Added try with resources = " + dev.getAddedTryWithResources());
+		System.out.println("	--> recency = " + recency.get("try with resources"));
+		System.out.println("	--> Added finally blocks = " + dev.getAddedFinallyBlocks()); 
+		System.out.println("	--> recency = " + recency.get("finally blocks"));
+		System.out.println("	--> Added throw statement = " + dev.getAddedThrowStatements());
+		System.out.println("	--> recency = " + recency.get("throw statements"));
+		System.out.println("	--> Added exception classes = " + dev.getAddedExceptionClasses());
+		System.out.println("	--> recency = " + recency.get("exception classes"));
+		System.out.println("	--> Added checked exceptions = " + dev.getAddedCheckedExceptions());
+		System.out.println("	--> recency = " + recency.get("checked exceptions"));
+		System.out.println("	--> Added unchecked exceptions = " + dev.getAddedUncheckedExceptions());
+		System.out.println("	--> recency = " + recency.get("unchecked exceptions"));
 	
 
 	}
@@ -609,36 +662,71 @@ public class ModelRepository {
 			//System.out.println("About to run parseForExceptions in ModelRepository");
 			parser.parseForExceptions(f);
 			
-			/*
+			
+			
 			List<String> throwsMethods = f.getThrowsMethods();
 			for (String throwMethod: throwsMethods){
 				addUsagePattern(throwMethod);
 			}
 			
-			exceptionsAdditionDiff(directory, f, throwsMethods, previousHash, currentHash, dev);
+			exceptionsAdditionDiff(directory, f, throwsMethods, previousHash, currentHash, dev, currentCommit);
 			
 			List<String> tryStatements = f.getTryStatements();
 			for (String tryStatement: tryStatements){
 				addUsagePattern(tryStatement);
 			}
 			
-			exceptionsAdditionDiff(directory, f, tryStatements, previousHash, currentHash, dev);
+			exceptionsAdditionDiff(directory, f, tryStatements, previousHash, currentHash, dev, currentCommit);
+			
+			List<String> catchBlocks = f.getCatchBlocks();
+			for (String catchBlock: catchBlocks){
+				addUsagePattern(catchBlock);
+			}
+			
+			exceptionsAdditionDiff(directory, f, catchBlocks, previousHash, currentHash, dev, currentCommit);
+			
+			List<String> tryWithResources = f.getTryWithResources();
+			for (String tryWithResource: tryWithResources){
+				addUsagePattern(tryWithResource);
+			}
+			
+			exceptionsAdditionDiff(directory, f, tryWithResources, previousHash, currentHash, dev, currentCommit);
+			
+			List<String> finallyBlocks = f.getFinallyBlocks();
+			for (String finallyBlock: finallyBlocks){
+				addUsagePattern(finallyBlock);
+			}
+			
+			exceptionsAdditionDiff(directory, f, finallyBlocks, previousHash, currentHash, dev, currentCommit);			
 			
 			List<String> throwStatements = f.getThrowStatements();
 			for (String throwStatement: throwStatements){
 				addUsagePattern(throwStatement);
 			}
 			
-			exceptionsAdditionDiff(directory, f, throwStatements, previousHash, currentHash, dev);
+			exceptionsAdditionDiff(directory, f, throwStatements, previousHash, currentHash, dev, currentCommit);
 			
 			List<String> exceptionClasses = f.getExceptionClasses();
 			for (String exceptionClass: exceptionClasses){
 				addUsagePattern(exceptionClass);
 			}
 			
-			exceptionsAdditionDiff(directory, f, exceptionClasses, previousHash, currentHash, dev);
+			exceptionsAdditionDiff(directory, f, exceptionClasses, previousHash, currentHash, dev, currentCommit);
 			
-			*/
+			List<String> checkedExceptions = f.getCheckedExceptions();
+			for (String checked: checkedExceptions){
+				addUsagePattern(checked);
+			}
+			
+			exceptionsAdditionDiff(directory, f, checkedExceptions, previousHash, currentHash, dev, currentCommit);
+			
+			List<String> uncheckedExceptions = f.getUncheckedExceptions();
+			for (String unchecked: uncheckedExceptions){
+				addUsagePattern(unchecked);
+			}
+			
+			exceptionsAdditionDiff(directory, f, uncheckedExceptions, previousHash, currentHash, dev, currentCommit);
+			
 		}
 	}
 
@@ -1703,6 +1791,8 @@ public class ModelRepository {
 		return false;
 	}
 	
+	
+	
 	private boolean isCheckAddition (String diff, String ifAndNext){
 	
 		// null check
@@ -1752,22 +1842,19 @@ public class ModelRepository {
 	}
 	
 	
-public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<String> checks, String oldH, String newH, ModelDeveloper developer) {
+public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<String> checks, String oldH, String newH, ModelDeveloper developer, RevCommit timeDiff) {
 		
 		File repoDir = new File(directory);
 		
-		//int addedNullChecks = 0;
-		//int derefNullChecks = 0;
-		
-		//int addedCollVar = 0;
-		//int addedOptVar = 0;		
-		//int addedCatchBlock = 0;
-		//int addedNODP = 0;
-		
 		int addedThrowsMethods = 0;
 		int addedTryStatements = 0;
+		int addedCatchBlocks = 0;
+		int addedTryWithResources = 0;
+		int addedFinallyBlocks = 0;
 		int addedThrowStatements = 0;
 		int addedExceptionClasses = 0;
+		int addedCheckedExceptions = 0;
+		int addedUncheckedExceptions = 0;
 		
 		Git git;
 		//current revision
@@ -1825,9 +1912,6 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 				String diffText = out.toString("UTF-8");
 				
 				if (diffText.contains(file.getName())){
-//					if (currentHash.equals("6a9bda47c7c18265dcc682be5513a82db528cdfd") & file.getName().equals("NullObjectPattern_test.java")){
-//						System.out.println(diffText);
-//					}	
 					
 					BufferedReader br = new BufferedReader(new StringReader(diffText));
 					String line = null;
@@ -1844,8 +1928,8 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 							// TODO method for incrementing total LOC added?
 							for (String check: checks){
 								
-//								System.out.println("Diff line --> " + line);
-//								System.out.println("Usage pattern --> " + check);
+								//System.out.println("Diff line --> " + line);
+								//System.out.println("Usage pattern --> " + check);
 								
 								if (file.getThrowsMethods().contains(check)){
 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
@@ -1853,37 +1937,260 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 									
 									//System.out.println("line:\n" + line);
 									//System.out.println("pattern:\n" + pattern);
-									if (line.contains(pattern)){
-										
-										addedThrowsMethods = checkAddedNull(addedThrowsMethods, currentHash, diffText, check);
-									}
 									
+									if (line.contains(pattern)){
+										//System.out.println(pattern + " added here!");
+										addedThrowsMethods = checkAddedExceptions(addedThrowsMethods, currentHash, diffText, pattern, file);
+										
+										if (throwsMethodDC == 1){
+											String difference = checkDifference(timeDiff);
+											throwsMethodDC +=1;													
+											recency.put("throws methods", difference);
+										}
+										
+										if (isChecked == true){
+											addedCheckedExceptions += 1;
+											isChecked = false;
+											
+											if (checkedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												checkedExceptionDC +=1;													
+												recency.put("checked exceptions", difference);
+											}
+										}
+										
+										if (isUnchecked == true){
+											addedUncheckedExceptions += 1;
+											isUnchecked = false;
+											
+											if (uncheckedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												uncheckedExceptionDC +=1;													
+												recency.put("unchecked exceptions", difference);
+											}
+										}
+									}									
 								} else if (file.getTryStatements().contains(check)){
 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
-									String p = pattern.trim();
+									pattern = pattern.trim();
 									
-									if (line.contains(p)){
-										addedTryStatements = checkAddedNull(addedTryStatements, currentHash, diffText, check);
+									if (line.contains(pattern)){
+										//System.out.println(pattern + " added here!");
+										addedTryStatements = checkAddedExceptions(addedTryStatements, currentHash, diffText, pattern, file);
+										
+										if (tryStatementDC == 1){
+											String difference = checkDifference(timeDiff);
+											tryStatementDC +=1;													
+											recency.put("try statements", difference);
+										}
+										
+										if (isChecked == true){
+											addedCheckedExceptions += 1;
+											isChecked = false;
+											
+											if (checkedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												checkedExceptionDC +=1;													
+												recency.put("checked exceptions", difference);
+											}
+										}
+										
+										if (isUnchecked == true){
+											addedUncheckedExceptions += 1;
+											isUnchecked = false;
+											
+											if (uncheckedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												uncheckedExceptionDC +=1;													
+												recency.put("unchecked exceptions", difference);
+											}
+										}
+									}
+								} else if (file.getCatchBlocks().contains(check)){
+									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
+									pattern = pattern.trim();
+									
+									if (line.contains(pattern)){
+										//System.out.println(pattern + " added here!");
+										addedCatchBlocks = checkAddedExceptions(addedCatchBlocks, currentHash, diffText, pattern, file);
+										
+										if (catchBlockDC == 1){
+											String difference = checkDifference(timeDiff);
+											catchBlockDC +=1;													
+											recency.put("catch blocks", difference);
+										}
+										
+										if (isChecked == true){
+											addedCheckedExceptions += 1;
+											isChecked = false;
+											
+											if (checkedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												checkedExceptionDC +=1;													
+												recency.put("checked exceptions", difference);
+											}
+										}
+										
+										if (isUnchecked == true){
+											addedUncheckedExceptions += 1;
+											isUnchecked = false;
+											
+											if (uncheckedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												uncheckedExceptionDC +=1;													
+												recency.put("unchecked exceptions", difference);
+											}
+										}
 									}
 									
-								} else if (file.getThrowStatements().contains(check)){
+								} else if (file.getTryWithResources().contains(check)){
+									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.lastIndexOf(CHECK_SEPERATOR));
+									pattern = pattern.trim();
+									// TODO check if resource was added as opposed to entire block
+									String resource = check.substring(check.lastIndexOf(CHECK_SEPERATOR), check.length());
+									
+									if (line.contains(pattern)){
+										//System.out.println(pattern + " added here!");
+										addedTryWithResources = checkAddedExceptions(addedTryWithResources, currentHash, diffText, pattern, file);
+										
+										if (tryWithResourceDC == 1){
+											String difference = checkDifference(timeDiff);
+											tryWithResourceDC +=1;													
+											recency.put("try with resources", difference);
+										}
+										
+										if (isChecked == true){
+											addedCheckedExceptions += 1;
+											isChecked = false;
+											
+											if (checkedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												checkedExceptionDC +=1;													
+												recency.put("checked exceptions", difference);
+											}
+										}
+										
+										if (isUnchecked == true){
+											addedUncheckedExceptions += 1;
+											isUnchecked = false;
+											
+											if (uncheckedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												uncheckedExceptionDC +=1;													
+												recency.put("unchecked exceptions", difference);
+											}
+										}
+									}
+								} else if (file.getFinallyBlocks().contains(check)){
+									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
+									pattern = pattern.trim();
+									
+									if (line.contains(pattern)){
+										//System.out.println(pattern + " added here!");
+										addedFinallyBlocks = checkAddedExceptions(addedFinallyBlocks, currentHash, diffText, pattern, file);
+										
+										if (finallyBlockDC == 1){
+											String difference = checkDifference(timeDiff);
+											finallyBlockDC +=1;													
+											recency.put("finally blocks", difference);
+										}
+										
+										if (isChecked == true){
+											addedCheckedExceptions += 1;
+											isChecked = false;
+											
+											if (checkedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												checkedExceptionDC +=1;													
+												recency.put("checked exceptions", difference);
+											}
+										}
+										
+										if (isUnchecked == true){
+											addedUncheckedExceptions += 1;
+											isUnchecked = false;
+											
+											if (uncheckedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												uncheckedExceptionDC +=1;													
+												recency.put("unchecked exceptions", difference);
+											}
+										}
+									}									
+ 								} else if (file.getThrowStatements().contains(check)){
 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
 									String p = pattern.trim();
 									
 									if (line.contains(p)){
-										addedThrowStatements = checkAddedNull(addedThrowStatements, currentHash, diffText, check);
+										//System.out.println(pattern + " added here!");
+										addedThrowStatements = checkAddedExceptions(addedThrowStatements, currentHash, diffText, pattern, file);
+										
+										if (throwStatementDC == 1){
+											String difference = checkDifference(timeDiff);
+											throwStatementDC +=1;													
+											recency.put("throw statements", difference);
+										}
+										
+										if (isChecked == true){
+											addedCheckedExceptions += 1;
+											isChecked = false;
+											
+											if (checkedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												checkedExceptionDC +=1;													
+												recency.put("checked exceptions", difference);
+											}
+										}
+										
+										if (isUnchecked == true){
+											addedUncheckedExceptions += 1;
+											isUnchecked = false;
+											
+											if (uncheckedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												uncheckedExceptionDC +=1;													
+												recency.put("unchecked exceptions", difference);
+											}
+										}
 									}
 								} else if (file.getExceptionClasses().contains(check)){
-									// check for return statement addition (presumably last piece)
 									String pattern = check.substring(check.lastIndexOf(CHECK_SEPERATOR)+1, check.length());
-									String p = pattern.trim();
+									pattern = pattern.trim();
 									
-									if (line.contains(p)){
-										addedExceptionClasses = checkAddedNull(addedExceptionClasses, currentHash, diffText, check);
+									if (line.contains(pattern)){
+										//System.out.println(pattern + " added here!");
+										addedExceptionClasses = checkAddedExceptions(addedExceptionClasses, currentHash, diffText, pattern, file);
+										
+										if (exceptionClassDC == 1){
+											String difference = checkDifference(timeDiff);
+											exceptionClassDC +=1;													
+											recency.put("exception classes", difference);
+										}
+										
+										if (isChecked == true){
+											addedCheckedExceptions += 1;
+											isChecked = false;
+											
+											if (checkedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												checkedExceptionDC +=1;													
+												recency.put("checked exceptions", difference);
+											}
+										}
+										
+										if (isUnchecked == true){
+											addedUncheckedExceptions += 1;
+											isUnchecked = false;
+											
+											if (uncheckedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												uncheckedExceptionDC +=1;													
+												recency.put("unchecked exceptions", difference);
+											}
+										}
 									} 
 									
-								}
-								
+								} 								
 							}
 						}						
 					}
@@ -1895,30 +2202,55 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 			// add counts from analysis to developer counts (if within threshold)
 			if (addedThrowsMethods > 0 && addedThrowsMethods <= 10){
 				if (developer.getCommits().contains(currentHash)){
-					//developer.setAddedNullCounts(addedThrowsMethods);
-					System.out.println("Got to developer.setAddedNullCounts");
+					developer.setAddedThrowsMethods(addedThrowsMethods);
 				}
 			}
 			
 			if (addedTryStatements > 0 && addedTryStatements <= 10){
 				if (developer.getCommits().contains(currentHash)){
-					//developer.setAddedCollCounts(addedTryStatements);
-					System.out.println("Got to developer.setAddedCollCounts");
+					developer.setAddedTryStatements(addedTryStatements);
+				}
+			}
+			
+			if (addedCatchBlocks > 0 && addedCatchBlocks <= 10){
+				if (developer.getCommits().contains(currentHash)){
+					developer.setAddedCatchBlocks(addedCatchBlocks);
+				}
+			}
+			
+			if (addedTryWithResources > 0 && addedTryWithResources <= 10){
+				if (developer.getCommits().contains(currentHash)){
+					developer.setAddedTryWithResources(addedTryWithResources);
+				}
+			}
+			
+			if (addedFinallyBlocks > 0 && addedFinallyBlocks <= 10){
+				if (developer.getCommits().contains(currentHash)){
+					developer.setAddedFinallyBlocks(addedFinallyBlocks);
 				}
 			}
 			
 			if (addedThrowStatements > 0 && addedThrowStatements <= 10){
 				if (developer.getCommits().contains(currentHash)){
-					//developer.setAddedOptCounts(addedThrowStatements);
-					System.out.println("Got to developer.setAddedOptCounts");
+					developer.setAddedThrowStatements(addedThrowStatements);
 				}
-				
 			}
 			
 			if (addedExceptionClasses > 0 && addedExceptionClasses <= 10){
 				if (developer.getCommits().contains(currentHash)){
-					//developer.setAddedCatchCounts(addedExceptionClasses);
-					System.out.println("Got to developer.setAddedCatchCounts");
+					developer.setAddedExceptionClasses(addedExceptionClasses);
+				}
+			}
+			
+			if (addedCheckedExceptions > 0 && addedCheckedExceptions <= 10){
+				if (developer.getCommits().contains(currentHash)){
+					developer.setAddedCheckedExceptions(addedCheckedExceptions);
+				}
+			}
+			
+			if (addedUncheckedExceptions > 0 && addedUncheckedExceptions <= 10){
+				if (developer.getCommits().contains(currentHash)){
+					developer.setAddedUncheckedExceptions(addedUncheckedExceptions);
 				}
 			}
 			
@@ -1930,7 +2262,41 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 		}
 	}
 
+	private int checkAddedExceptions(int added, String newHash, String diffText, String pattern, ModelSourceFile file){
 
+		if (isExceptionsAddition(diffText, pattern)){
+			System.out.println("Exceptions usage pattern was added at revision " + newHash);
+				
+			added +=1;
+			
+			for (String type : file.getCheckedExceptions()){
+				if (type.contains(pattern)){
+					isChecked = true;
+				}
+			}
+			
+			for (String type : file.getUncheckedExceptions()){
+				if (type.contains(pattern)){
+					isUnchecked = true;
+				}
+			}
+		}
+			
+			
+		return added;
+	}
+	
+	private boolean isExceptionsAddition(String diffText, String code){
+		int count = 0;		
+
+		count = StringUtils.countMatches(diffText, code);
+		
+		if (count == 1){
+			return true;
+		}			
+		
+		return false;
+	}
 
 
 }

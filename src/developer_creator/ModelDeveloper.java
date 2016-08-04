@@ -32,6 +32,16 @@ public class ModelDeveloper {
 	private int addedNested;
 	private int addedBounds;
 	
+	private int addedThrowsMethods;
+	private int addedTryStatements;
+	private int addedCatchBlocks;
+	private int addedTryWithResources;
+	private int addedFinallyBlock;
+	private int addedThrowStatements;
+	private int addedExceptionsClasses;
+	private int addedCheckedExceptions;
+	private int addedUncheckedExceptions;
+	
 	private int derefCounts;
 	private String name;
 	private String username;
@@ -42,6 +52,16 @@ public class ModelDeveloper {
 	public String pseudoName;
 	
 	public ModelDeveloper (String id) {
+		addedThrowsMethods = 0;
+		addedTryStatements = 0;
+		addedCatchBlocks = 0;
+		addedTryWithResources = 0;
+		addedFinallyBlock = 0;
+		addedThrowStatements = 0;
+		addedExceptionsClasses = 0;
+		addedCheckedExceptions = 0;
+		addedUncheckedExceptions = 0;
+		
 		removedNullCounts = 0;
 		addedNullCounts = 0;
 		removedNODPCounts = 0;
@@ -54,7 +74,6 @@ public class ModelDeveloper {
 		addedCatchCounts = 0;
 		
 		allAddedGenerics = 0;
-		
 		
 		addedTypeArgumentMethods = 0;
 		addedWildcard = 0;
@@ -78,6 +97,12 @@ public class ModelDeveloper {
 	
 	public void setPseudoName(String name){
 		pseudoName = name;
+		
+		try{
+			
+		} finally {
+			
+		}
 	}
 	
 	public void addRepository(ModelRepository repo){
@@ -111,7 +136,79 @@ public class ModelDeveloper {
 	public ArrayList<String> getCommits(){
 		return commits;
 	}
-
+	
+	public void setAddedThrowsMethods(int addedException){
+		addedThrowsMethods = addedThrowsMethods + addedException;
+	}
+	
+	public int getAddedThrowsMethods(){
+		return addedThrowsMethods;
+	}
+	
+	public void setAddedTryStatements(int addedException){
+		addedTryStatements = addedTryStatements + addedException;
+	}
+	
+	public int getAddedTryStatements(){
+		return addedTryStatements;
+	}
+	
+	public void setAddedCatchBlocks(int addedException){
+		addedCatchBlocks = addedCatchBlocks + addedException;
+	}
+	
+	public int getAddedCatchBlocks(){
+		return addedCatchBlocks;
+	}
+	
+	public void setAddedTryWithResources(int addedException){
+		addedTryWithResources = addedTryWithResources + addedException;
+	}
+	
+	public int getAddedTryWithResources(){
+		return addedTryWithResources;
+	}
+	
+	public void setAddedFinallyBlocks(int addedException){
+		addedFinallyBlock = addedFinallyBlock + addedException;
+	}
+	
+	public int getAddedFinallyBlocks(){
+		return addedFinallyBlock;
+	}
+	
+	public void setAddedThrowStatements(int addedException){
+		addedThrowStatements = addedThrowStatements + addedException;
+	}
+	
+	public int getAddedThrowStatements(){
+		return addedThrowStatements;
+	}
+	
+	public void setAddedExceptionClasses(int addedException){
+		addedExceptionsClasses = addedExceptionsClasses + addedException;
+	}
+	
+	public int getAddedExceptionClasses(){
+		return addedExceptionsClasses;
+	}
+	
+	public void setAddedCheckedExceptions(int addedException){
+		addedCheckedExceptions = addedCheckedExceptions + addedException;
+	}
+	
+	public int getAddedCheckedExceptions(){
+		return addedCheckedExceptions;
+	}
+	
+	public void setAddedUncheckedExceptions(int addedException){
+		addedUncheckedExceptions = addedUncheckedExceptions + addedException;
+	}
+	
+	public int getAddedUncheckedExceptions(){
+		return addedUncheckedExceptions;
+	}
+	
 	public void setAddedTypeArgumentMethods(int addedGenerics){
 		addedTypeArgumentMethods = addedTypeArgumentMethods + addedGenerics;
 	}

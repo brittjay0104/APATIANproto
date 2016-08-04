@@ -151,3 +151,9 @@ Big-Data, 9sau, Saurabh Jain
 OpenMRS, rohitmanohar, Rohit Manohar
 A-Sharp-Mind, ryan-joseph, Ryan Joseph
 Narvaro, ryan-joseph, Ryan Joseph
+
+google/google-java-format, eaftan, Eddie Aftandilian
+google/error-prone, eaftan, Eddie Aftandilian
+google/guava, eaftan, Eddie Aftandilian
+bazelbuild/bazel, eaftan, Eddie Aftandilian
+google/auto, eaftan, Eddie Aftandilian

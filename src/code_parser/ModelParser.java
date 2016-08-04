@@ -311,20 +311,20 @@ public class ModelParser {
 		//parser.setEnvironment(null, new String[] {".\\/exception-test\\"}, null, true);
 		
 		String repoName = RunAnalysis.getRepoName();
-		String dir = ".\\" + repoName.substring(repoName.indexOf("/")) + "\\";
+		//String dir = ".\\" + repoName.substring(repoName.indexOf("/")) + "\\";
 		
-		directories.add(dir);
+		//directories.add(dir);
 		
 		//System.out.println(dir);
 		
-		findSubDir(dir);
+		//findSubDir(dir);
 		
-		String [] directories = (String[]) this.directories.toArray(new String[0]);
+		//String [] directories = (String[]) this.directories.toArray(new String[0]);
 		
 		//System.out.println(directories[1]);
 		// System.out.println("about to loop and find subdirectories");
 		
-		parser.setEnvironment(directories, directories, null, true);
+		//parser.setEnvironment(directories, directories, null, true);
 		parser.setUnitName(file.getName());
 		parser.setKind(ASTParser.K_COMPILATION_UNIT);
 
@@ -335,31 +335,63 @@ public class ModelParser {
 		
 		List<String> throwsMethods = visitor.getThrowsMethods();
 		List<String> tryStatements = visitor.getTryStatements();
+		List<String> catchBlocks = visitor.getCatchBlocks();
+		List<String> tryWithResources = visitor.getTryWithResourceStatements();
+		List<String> finallyBlocks = visitor.getFinallyBlock();
 		List<String> throwStatements = visitor.getThrowStatements();
 		List<String> exceptionClasses = visitor.getExceptionClasses();
+		List<String> uncheckedExceptions = visitor.getUncheckedExceptions();
+		List<String> checkedExceptions = visitor.getCheckedExceptions();
 		
-		/*for (String s: allGenerics){
-			//System.out.println("Generics usage --> " + s);
-			file.addGeneric(s);
-		}*/
 		
 		//System.out.println("reaching changed part");
 		
 		for (String throwsMethod : throwsMethods){
+			//System.out.println("Method throws --> " + throwsMethod);
 			file.addThrowsMethod(throwsMethod);
 		}
 		
 		for (String tryStatement : tryStatements){
+			//System.out.println("Try statement --> " + tryStatement);
 			file.addTryStatement(tryStatement);
 		}
 		
+		for (String catchBlock : catchBlocks){
+			//System.out.println("Catch block --> " + catchBlock);
+			file.addCatchBlock(catchBlock);
+		}
+		
+		for (String tryWithResource : tryWithResources){
+			//System.out.println("Try with resource --> " + tryWithResource);
+			file.addTryWithResource(tryWithResource);
+		}
+		
+		for (String finallyBlock : finallyBlocks){
+			//System.out.println("Finally block --> " + finallyBlock);
+			file.addFinallyBlock(finallyBlock);
+		}
+		
 		for (String throwStatement : throwStatements){
+			//System.out.println("Throw statement --> " + throwStatement);
 			file.addThrowStatement(throwStatement);
 		}
 		
 		for (String exceptionClass : exceptionClasses){
+			//System.out.println("Exception class --> " + exceptionClass);
 			file.addExceptionClass(exceptionClass);
 		}
+		
+		
+		for (String checkedException : checkedExceptions){
+			//System.out.println("Checked exception --> " + checkedException);
+			file.addCheckedException(checkedException);
+		}
+		
+		for (String uncheckedException : uncheckedExceptions){
+			//System.out.println("Unchecked exception --> " + uncheckedException);
+			file.addUncheckedException(uncheckedException);
+		}
+		
 
 //
 
@@ -704,6 +736,7 @@ public class ModelParser {
 	 * @param file
 	 * @return
 	 */
+	
 	public static List<String> readFile(String file) {
 		List<String> retList = new ArrayList<String>();
 		BufferedReader br = null;
