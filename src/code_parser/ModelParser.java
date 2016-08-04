@@ -335,9 +335,15 @@ public class ModelParser {
 		
 		List<String> throwsMethods = visitor.getThrowsMethods();
 		List<String> tryStatements = visitor.getTryStatements();
+		List<String> staticTryStatements = visitor.getStaticTryStatements();
 		List<String> catchBlocks = visitor.getCatchBlocks();
+		List<String> staticCatchBlocks = visitor.getStaticCatchBlocks();
+		List<String> multiCatchBlocks = visitor.getMultiCatchBlocks();
+		List<String> staticMultiCatchBlocks = visitor.getStaticMultiCatchBlocks();
 		List<String> tryWithResources = visitor.getTryWithResourceStatements();
+		List<String> staticTryWithResources = visitor.getStaticTryWithResourceStatements();
 		List<String> finallyBlocks = visitor.getFinallyBlock();
+		List<String> staticFinallyBlocks = visitor.getStaticFinallyBlock();
 		List<String> throwStatements = visitor.getThrowStatements();
 		List<String> exceptionClasses = visitor.getExceptionClasses();
 		List<String> uncheckedExceptions = visitor.getUncheckedExceptions();
@@ -356,9 +362,29 @@ public class ModelParser {
 			file.addTryStatement(tryStatement);
 		}
 		
+		for (String tryStatement : staticTryStatements){
+			//System.out.println("Try statement --> " + tryStatement);
+			file.addStaticTryStatement(tryStatement);
+		}
+		
 		for (String catchBlock : catchBlocks){
 			//System.out.println("Catch block --> " + catchBlock);
 			file.addCatchBlock(catchBlock);
+		}
+		
+		for (String catchBlock : staticCatchBlocks){
+			//System.out.println("Catch block --> " + catchBlock);
+			file.addStaticCatchBlock(catchBlock);
+		}
+		
+		for (String catchBlock : multiCatchBlocks){
+			//System.out.println("Catch block --> " + catchBlock);
+			file.addMultiCatchBlock(catchBlock);
+		}
+		
+		for (String catchBlock : staticMultiCatchBlocks){
+			//System.out.println("Catch block --> " + catchBlock);
+			file.addStaticMultiCatchBlock(catchBlock);
 		}
 		
 		for (String tryWithResource : tryWithResources){
@@ -366,9 +392,19 @@ public class ModelParser {
 			file.addTryWithResource(tryWithResource);
 		}
 		
+		for (String tryWithResource : staticTryWithResources){
+			//System.out.println("Try with resource --> " + tryWithResource);
+			file.addStaticTryWithResource(tryWithResource);
+		}
+		
 		for (String finallyBlock : finallyBlocks){
 			//System.out.println("Finally block --> " + finallyBlock);
 			file.addFinallyBlock(finallyBlock);
+		}
+		
+		for (String finallyBlock : staticFinallyBlocks){
+			//System.out.println("Finally block --> " + finallyBlock);
+			file.addStaticFinallyBlock(finallyBlock);
 		}
 		
 		for (String throwStatement : throwStatements){

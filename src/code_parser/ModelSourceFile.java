@@ -28,9 +28,15 @@ public class ModelSourceFile {
 	//exceptions
 	public List<String> throwsMethods;
 	public List<String> tryStatements;
+	public List<String> staticTryStatements;
 	public List<String> catchBlocks;
+	public List<String> staticCatchBlocks;
+	public List<String> multiCatchBlocks;
+	public List<String> staticMultiCatchBlocks;
 	public List<String> tryWithResources;
+	public List<String> staticTryWithResources;
 	public List<String> finallyBlocks;
+	public List<String> staticFinallyBlocks;
 	public List<String> throwStatements;
 	public List<String> exceptionClasses;
 	public List<String> uncheckedExceptions;
@@ -107,9 +113,15 @@ public class ModelSourceFile {
 		//exceptions
 		throwsMethods = new ArrayList<String>();
 		tryStatements = new ArrayList<String>();
+		staticTryStatements = new ArrayList<String>();
 		catchBlocks = new ArrayList<String>();
+		staticCatchBlocks = new ArrayList<String>();
+		multiCatchBlocks = new ArrayList<String>();
+		staticMultiCatchBlocks = new ArrayList<String>();
 		tryWithResources = new ArrayList<String>();
+		staticTryWithResources = new ArrayList<String>();
 		finallyBlocks = new ArrayList<String>();
+		staticFinallyBlocks = new ArrayList<String>();
 		throwStatements = new ArrayList<String>();
 		exceptionClasses = new ArrayList<String>();
 		checkedExceptions = new ArrayList<String>();
@@ -299,8 +311,28 @@ public class ModelSourceFile {
 		return;
 	}
 	
+	public void addStaticTryStatement(String tryStatement){
+		staticTryStatements.add(tryStatement);
+		return;
+	}
+	
 	public void addCatchBlock(String catchBlock){
 		catchBlocks.add(catchBlock);
+		return;
+	}
+	
+	public void addStaticCatchBlock(String catchBlock){
+		staticCatchBlocks.add(catchBlock);
+		return;
+	}
+	
+	public void addMultiCatchBlock(String catchBlock){
+		multiCatchBlocks.add(catchBlock);
+		return;
+	}
+	
+	public void addStaticMultiCatchBlock(String catchBlock){
+		staticMultiCatchBlocks.add(catchBlock);
 		return;
 	}
 	
@@ -309,8 +341,18 @@ public class ModelSourceFile {
 		return;
 	}
 	
+	public void addStaticTryWithResource(String tryWithResource){
+		staticTryWithResources.add(tryWithResource);
+		return;
+	}
+	
 	public void addFinallyBlock(String finallyBlock){
 		finallyBlocks.add(finallyBlock);
+		return;
+	}
+	
+	public void addStaticFinallyBlock(String finallyBlock){
+		staticFinallyBlocks.add(finallyBlock);
 		return;
 	}
 	

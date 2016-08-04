@@ -38,12 +38,27 @@ public class ExceptionsVisitor extends ASTVisitor {
 	// Classes that extend an exception
 	List<String> tryWithResources = new ArrayList<String>();
 	
+	// Static try with resources
+	List<String> staticTryWithResources = new ArrayList<String>();
+	
 	// Catch blocks
 	List<String> catchBlocks = new ArrayList<String>();
+	
+	// Static catch blocks
+	List<String> staticCatchBlocks = new ArrayList<String>();
+	
+	// Multi-catch blocks
+	List<String> multiCatchBlocks = new ArrayList<String>();
+		
+	// Static multi-catch blocks
+	List<String> staticMultiCatchBlocks = new ArrayList<String>();
 	
 	// Finally blocks
 	List<String> finallyBlocks = new ArrayList<String>();
 
+	// Static finally blocks
+	List<String> staticFinallyBlocks = new ArrayList<String>();
+	
 	// Throw statements (TBD)
 	List<String> throwStatements = new ArrayList<String>();
 	
@@ -142,14 +157,39 @@ public class ExceptionsVisitor extends ASTVisitor {
 		return tryWithResources;
 	}
 	
+	// Get static try-with-resources statements
+	public List<String> getStaticTryWithResourceStatements() {
+		return staticTryWithResources;
+	}
+	
 	// Get catch blocks 
 	public List<String> getCatchBlocks(){
 		return catchBlocks;
 	}
 	
+	// Get static catch blocks 
+	public List<String> getStaticCatchBlocks(){
+		return staticCatchBlocks;
+	}
+
+	// Get multi catch blocks 
+	public List<String> getMultiCatchBlocks(){
+		return multiCatchBlocks;
+	}
+	
+	// Get static multi catch blocks 
+	public List<String> getStaticMultiCatchBlocks(){
+		return staticMultiCatchBlocks;
+	}
+	
 	// Get try-with-resources statements
 	public List<String> getFinallyBlock() {
 		return finallyBlocks;
+	}
+	
+	// Get static try-with-resources statements
+	public List<String> getStaticFinallyBlock() {
+		return staticFinallyBlocks;
 	}
 	
 	// Get throwStatements (TBD)
@@ -209,7 +249,7 @@ public class ExceptionsVisitor extends ASTVisitor {
 			
 			if (!tryLine.equals("")){
 				String tryBlock = initializer + CHECK_SEPERATOR + tryLine;
-				tryStatements.add(tryBlock);				
+				staticTryStatements.add(tryBlock);				
 			}
 			
 			// Get resources for try-with-resources statement
@@ -220,7 +260,7 @@ public class ExceptionsVisitor extends ASTVisitor {
 						source = source.substring(0, source.indexOf("\n"));
 					}
 					String tryResource = initializer + CHECK_SEPERATOR + source.trim() + CHECK_SEPERATOR + resource.toString();
-					tryWithResources.add(tryResource);
+					staticTryWithResources.add(tryResource);
 					System.out.println("try with resource found!");
 				}
 			}
@@ -239,7 +279,7 @@ public class ExceptionsVisitor extends ASTVisitor {
 					
 				}
 				if (!line.equals("")){
-					finallyBlocks.add(initializer + CHECK_SEPERATOR + line.trim());
+					staticFinallyBlocks.add(initializer + CHECK_SEPERATOR + line.trim());
 					System.out.println("finally block found!");					
 				}
 			}
@@ -326,12 +366,18 @@ public class ExceptionsVisitor extends ASTVisitor {
 			
 			String catchSrc = initializer + CHECK_SEPERATOR + catchLine.trim();
 			
-			catchBlocks.add(catchSrc);
+			staticCatchBlocks.add(catchSrc);
 			
 			if (unchecked.contains(exception)){
 				uncheckedExceptions.add(catchSrc);
 			} else {
 				checkedExceptions.add(catchSrc);
+			}
+			
+			// multi-catch = UNION_TYPE > 1 is not null??
+			
+			if (node.getException().getType().isUnionType()){
+				staticMultiCatchBlocks.add(catchSrc);
 			}
 		}
 
@@ -352,8 +398,9 @@ public class ExceptionsVisitor extends ASTVisitor {
 				checkedExceptions.add(catchSrc);
 			}
 			
-			// multi-catch = UNION_TYPE > 1??
-			
+			if (node.getException().getType().isUnionType()){
+				multiCatchBlocks.add(catchSrc);
+			}
 		}
 		
 		return true;
