@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
+import java.util.regex.Pattern;
 
 import org.eclipse.core.runtime.NullProgressMonitor;
 import org.eclipse.jdt.core.IType;
@@ -19,6 +20,7 @@ import org.eclipse.jdt.core.dom.ThrowStatement;
 import org.eclipse.jdt.core.dom.TryStatement;
 import org.eclipse.jdt.core.dom.TypeDeclaration;
 import org.eclipse.jdt.core.dom.ITypeBinding;
+import org.eclipse.jdt.core.dom.IVariableBinding;
 import org.eclipse.jdt.core.dom.Initializer;
 
 import code_parser.ModelSourceFile;
@@ -355,11 +357,11 @@ public class ExceptionsVisitor extends ASTVisitor {
 			List inits = init.modifiers();
 			StringBuffer sb = new StringBuffer();
 			for (Object i : inits){
-				sb.append(i.toString());
+				sb.append(findSourceForNode((ASTNode)i));
 			}
 			
 			String initializer = sb.toString();
-			String except = node.getException().toString().trim();
+			String except = findSourceForNode(node.getException()).trim();
 			String exception = except.substring(0, except.indexOf(" "));
 			String catchBlock = node.toString();
 			String catchLine = catchBlock.substring(0, catchBlock.indexOf("{"));
@@ -368,13 +370,29 @@ public class ExceptionsVisitor extends ASTVisitor {
 			
 			staticCatchBlocks.add(catchSrc);
 			
+			if (except.contains("|")){
+				String[] exceptions = except.split(Pattern.quote("|"));
+				
+				for (String s: exceptions){
+					for (String e : uncheckedExceptions){
+						if (s.contains(e)){
+							uncheckedExceptions.add(catchSrc);
+						}
+					}
+					
+					for (String e : checkedExceptions){
+						if (s.contains(e)){
+							checkedExceptions.add(catchSrc);
+						}
+					}
+				}
+			}
+			
 			if (unchecked.contains(exception)){
 				uncheckedExceptions.add(catchSrc);
 			} else {
 				checkedExceptions.add(catchSrc);
 			}
-			
-			// multi-catch = UNION_TYPE > 1 is not null??
 			
 			if (node.getException().getType().isUnionType()){
 				staticMultiCatchBlocks.add(catchSrc);
@@ -391,6 +409,24 @@ public class ExceptionsVisitor extends ASTVisitor {
 			String catchSrc = methodName + CHECK_SEPERATOR + catchLine.trim();
 			
 			catchBlocks.add(catchSrc);
+			
+			if (except.contains("|")){
+				String[] exceptions = except.split(Pattern.quote("|"));
+				
+				for (String s: exceptions){
+					for (String e : uncheckedExceptions){
+						if (s.contains(e)){
+							uncheckedExceptions.add(catchSrc);
+						}
+					}
+					
+					for (String e : checkedExceptions){
+						if (s.contains(e)){
+							checkedExceptions.add(catchSrc);
+						}
+					}
+				}
+			}
 			
 			if (unchecked.contains(exception)){
 				uncheckedExceptions.add(catchSrc);

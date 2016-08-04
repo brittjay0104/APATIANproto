@@ -270,16 +270,40 @@ public class ModelSourceFile {
 		return tryStatements;
 	}
 	
+	public List<String> getStaticTryStatements(){
+		return staticTryStatements;
+	}
+	
 	public List<String> getCatchBlocks(){
 		return catchBlocks;
+	}
+	
+	public List<String> getStaticCatchBlocks(){
+		return staticCatchBlocks;
+	}
+	
+	public List<String> getMultiCatchBlocks(){
+		return multiCatchBlocks;
+	}
+	
+	public List<String> getStaticMultiCatchBlocks(){
+		return staticMultiCatchBlocks;
 	}
 	
 	public List<String> getTryWithResources(){
 		return tryWithResources;
 	}
 	
+	public List<String> getStaticTryWithResources(){
+		return staticTryWithResources;
+	}
+	
 	public List<String> getFinallyBlocks(){
 		return finallyBlocks;
+	}
+	
+	public List<String> getStaticFinallyBlocks(){
+		return staticFinallyBlocks;
 	}
 	
 	public List<String> getThrowStatements(){

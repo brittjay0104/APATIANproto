@@ -79,9 +79,15 @@ public class ModelRepository {
 	//exceptions
 	private int throwsMethodDC = 1;
 	private int tryStatementDC = 1;
+	private int staticTryStatementDC = 1;
 	private int catchBlockDC = 1;
+	private int staticCatchBlockDC = 1;
+	private int multiCatchBlockDC = 1;
+	private int staticMultiCatchBlockDC = 1;
 	private int tryWithResourceDC = 1;
+	private int staticTryWithResourceDC = 1;
 	private int finallyBlockDC = 1;
+	private int staticFinallyBlockDC = 1;
 	private int throwStatementDC = 1;
 	private int exceptionClassDC = 1;
 	private int checkedExceptionDC = 1;
@@ -662,8 +668,6 @@ public class ModelRepository {
 			//System.out.println("About to run parseForExceptions in ModelRepository");
 			parser.parseForExceptions(f);
 			
-			
-			
 			List<String> throwsMethods = f.getThrowsMethods();
 			for (String throwMethod: throwsMethods){
 				addUsagePattern(throwMethod);
@@ -678,12 +682,40 @@ public class ModelRepository {
 			
 			exceptionsAdditionDiff(directory, f, tryStatements, previousHash, currentHash, dev, currentCommit);
 			
+			List<String> staticTryStatements = f.getStaticTryStatements();
+			for (String tryStatement: staticTryStatements){
+				addUsagePattern(tryStatement);
+			}
+			
+			exceptionsAdditionDiff(directory, f, staticTryStatements, previousHash, currentHash, dev, currentCommit);
+			
 			List<String> catchBlocks = f.getCatchBlocks();
 			for (String catchBlock: catchBlocks){
 				addUsagePattern(catchBlock);
 			}
 			
 			exceptionsAdditionDiff(directory, f, catchBlocks, previousHash, currentHash, dev, currentCommit);
+			
+			List<String> staticCatchBlocks = f.getStaticCatchBlocks();
+			for (String catchBlock: staticCatchBlocks){
+				addUsagePattern(catchBlock);
+			}
+			
+			exceptionsAdditionDiff(directory, f, staticCatchBlocks, previousHash, currentHash, dev, currentCommit);
+			
+			List<String> multiCatchBlocks = f.getMultiCatchBlocks();
+			for (String catchBlock: multiCatchBlocks){
+				addUsagePattern(catchBlock);
+			}
+			
+			exceptionsAdditionDiff(directory, f, multiCatchBlocks, previousHash, currentHash, dev, currentCommit);
+			
+			List<String> staticMultiCatchBlocks = f.getStaticMultiCatchBlocks();
+			for (String catchBlock: staticMultiCatchBlocks){
+				addUsagePattern(catchBlock);
+			}
+			
+			exceptionsAdditionDiff(directory, f, staticMultiCatchBlocks, previousHash, currentHash, dev, currentCommit);
 			
 			List<String> tryWithResources = f.getTryWithResources();
 			for (String tryWithResource: tryWithResources){
@@ -692,12 +724,26 @@ public class ModelRepository {
 			
 			exceptionsAdditionDiff(directory, f, tryWithResources, previousHash, currentHash, dev, currentCommit);
 			
+			List<String> staticTryWithResources = f.getStaticTryWithResources();
+			for (String tryWithResource: staticTryWithResources){
+				addUsagePattern(tryWithResource);
+			}
+			
+			exceptionsAdditionDiff(directory, f, staticTryWithResources, previousHash, currentHash, dev, currentCommit);
+			
 			List<String> finallyBlocks = f.getFinallyBlocks();
 			for (String finallyBlock: finallyBlocks){
 				addUsagePattern(finallyBlock);
 			}
 			
-			exceptionsAdditionDiff(directory, f, finallyBlocks, previousHash, currentHash, dev, currentCommit);			
+			exceptionsAdditionDiff(directory, f, finallyBlocks, previousHash, currentHash, dev, currentCommit);	
+			
+			List<String> staticFinallyBlocks = f.getStaticFinallyBlocks();
+			for (String finallyBlock: staticFinallyBlocks){
+				addUsagePattern(finallyBlock);
+			}
+			
+			exceptionsAdditionDiff(directory, f, staticFinallyBlocks, previousHash, currentHash, dev, currentCommit);
 			
 			List<String> throwStatements = f.getThrowStatements();
 			for (String throwStatement: throwStatements){
@@ -1848,9 +1894,15 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 		
 		int addedThrowsMethods = 0;
 		int addedTryStatements = 0;
+		int addedStaticTryStatements = 0;
 		int addedCatchBlocks = 0;
+		int addedStaticCatchBlocks = 0;
+		int addedMultiCatchBlocks = 0;
+		int addedStaticMultiCatchBlocks = 0;
 		int addedTryWithResources = 0;
+		int addedStaticTryWithResources = 0;
 		int addedFinallyBlocks = 0;
+		int addedStaticFinallyBlocks = 0;
 		int addedThrowStatements = 0;
 		int addedExceptionClasses = 0;
 		int addedCheckedExceptions = 0;
@@ -2006,7 +2058,43 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 											}
 										}
 									}
-								} else if (file.getCatchBlocks().contains(check)){
+								} else if (file.getStaticTryStatements().contains(check)){
+									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
+									pattern = pattern.trim();
+									
+									if (line.contains(pattern)){
+										//System.out.println(pattern + " added here!");
+										addedStaticTryStatements = checkAddedExceptions(addedStaticTryStatements, currentHash, diffText, pattern, file);
+										
+										if (staticTryStatementDC == 1){
+											String difference = checkDifference(timeDiff);
+											staticTryStatementDC +=1;													
+											recency.put("static try statements", difference);
+										}
+										
+										if (isChecked == true){
+											addedCheckedExceptions += 1;
+											isChecked = false;
+											
+											if (checkedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												checkedExceptionDC +=1;													
+												recency.put("checked exceptions", difference);
+											}
+										}
+										
+										if (isUnchecked == true){
+											addedUncheckedExceptions += 1;
+											isUnchecked = false;
+											
+											if (uncheckedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												uncheckedExceptionDC +=1;													
+												recency.put("unchecked exceptions", difference);
+											}
+										}
+									}
+								}else if (file.getCatchBlocks().contains(check)){
 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
 									pattern = pattern.trim();
 									
@@ -2043,7 +2131,116 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 										}
 									}
 									
-								} else if (file.getTryWithResources().contains(check)){
+								} else if (file.getStaticCatchBlocks().contains(check)){
+									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
+									pattern = pattern.trim();
+									
+									if (line.contains(pattern)){
+										//System.out.println(pattern + " added here!");
+										addedStaticCatchBlocks = checkAddedExceptions(addedStaticCatchBlocks, currentHash, diffText, pattern, file);
+										
+										if (staticCatchBlockDC == 1){
+											String difference = checkDifference(timeDiff);
+											staticCatchBlockDC +=1;													
+											recency.put("static catch blocks", difference);
+										}
+										
+										if (isChecked == true){
+											addedCheckedExceptions += 1;
+											isChecked = false;
+											
+											if (checkedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												checkedExceptionDC +=1;													
+												recency.put("checked exceptions", difference);
+											}
+										}
+										
+										if (isUnchecked == true){
+											addedUncheckedExceptions += 1;
+											isUnchecked = false;
+											
+											if (uncheckedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												uncheckedExceptionDC +=1;													
+												recency.put("unchecked exceptions", difference);
+											}
+										}
+									}
+								} else if (file.getMultiCatchBlocks().contains(check)){
+									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
+									pattern = pattern.trim();
+									
+									if (line.contains(pattern)){
+										//System.out.println(pattern + " added here!");
+										addedMultiCatchBlocks = checkAddedExceptions(addedMultiCatchBlocks, currentHash, diffText, pattern, file);
+										
+										if (multiCatchBlockDC == 1){
+											String difference = checkDifference(timeDiff);
+											multiCatchBlockDC +=1;													
+											recency.put("multi-catch blocks", difference);
+										}
+										
+										if (isChecked == true){
+											addedCheckedExceptions += 1;
+											isChecked = false;
+											
+											if (checkedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												checkedExceptionDC +=1;													
+												recency.put("checked exceptions", difference);
+											}
+										}
+										
+										if (isUnchecked == true){
+											addedUncheckedExceptions += 1;
+											isUnchecked = false;
+											
+											if (uncheckedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												uncheckedExceptionDC +=1;													
+												recency.put("unchecked exceptions", difference);
+											}
+										}
+									}
+								}else if (file.getStaticMultiCatchBlocks().contains(check)){
+									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
+									pattern = pattern.trim();
+									
+									if (line.contains(pattern)){
+										//System.out.println(pattern + " added here!");
+										addedStaticMultiCatchBlocks = checkAddedExceptions(addedStaticMultiCatchBlocks, currentHash, diffText, pattern, file);
+										
+										if (staticMultiCatchBlockDC == 1){
+											String difference = checkDifference(timeDiff);
+											staticMultiCatchBlockDC +=1;													
+											recency.put("static multi-catch blocks", difference);
+										}
+										
+										if (isChecked == true){
+											addedCheckedExceptions += 1;
+											isChecked = false;
+											
+											if (checkedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												checkedExceptionDC +=1;													
+												recency.put("checked exceptions", difference);
+											}
+										}
+										
+										if (isUnchecked == true){
+											addedUncheckedExceptions += 1;
+											isUnchecked = false;
+											
+											if (uncheckedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												uncheckedExceptionDC +=1;													
+												recency.put("unchecked exceptions", difference);
+											}
+										}
+									}
+									
+								}else if (file.getTryWithResources().contains(check)){
 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.lastIndexOf(CHECK_SEPERATOR));
 									pattern = pattern.trim();
 									// TODO check if resource was added as opposed to entire block
@@ -2081,7 +2278,46 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 											}
 										}
 									}
-								} else if (file.getFinallyBlocks().contains(check)){
+								} else if (file.getStaticTryWithResources().contains(check)){
+									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.lastIndexOf(CHECK_SEPERATOR));
+									pattern = pattern.trim();
+									// TODO check if resource was added as opposed to entire block
+									String resource = check.substring(check.lastIndexOf(CHECK_SEPERATOR), check.length());
+									
+									if (line.contains(pattern)){
+										//System.out.println(pattern + " added here!");
+										addedStaticTryWithResources = checkAddedExceptions(addedStaticTryWithResources, currentHash, diffText, pattern, file);
+										
+										if (staticTryWithResourceDC == 1){
+											String difference = checkDifference(timeDiff);
+											staticTryWithResourceDC +=1;													
+											recency.put("static try with resources", difference);
+										}
+										
+										if (isChecked == true){
+											addedCheckedExceptions += 1;
+											isChecked = false;
+											
+											if (checkedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												checkedExceptionDC +=1;													
+												recency.put("checked exceptions", difference);
+											}
+										}
+										
+										if (isUnchecked == true){
+											addedUncheckedExceptions += 1;
+											isUnchecked = false;
+											
+											if (uncheckedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												uncheckedExceptionDC +=1;													
+												recency.put("unchecked exceptions", difference);
+											}
+										}
+									}
+									
+								}else if (file.getFinallyBlocks().contains(check)){
 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
 									pattern = pattern.trim();
 									
@@ -2117,6 +2353,42 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 											}
 										}
 									}									
+ 								} else if (file.getStaticFinallyBlocks().contains(check)){
+ 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
+									pattern = pattern.trim();
+									
+									if (line.contains(pattern)){
+										//System.out.println(pattern + " added here!");
+										addedStaticFinallyBlocks = checkAddedExceptions(addedStaticFinallyBlocks, currentHash, diffText, pattern, file);
+										
+										if (staticFinallyBlockDC == 1){
+											String difference = checkDifference(timeDiff);
+											staticFinallyBlockDC +=1;													
+											recency.put("static finally blocks", difference);
+										}
+										
+										if (isChecked == true){
+											addedCheckedExceptions += 1;
+											isChecked = false;
+											
+											if (checkedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												checkedExceptionDC +=1;													
+												recency.put("checked exceptions", difference);
+											}
+										}
+										
+										if (isUnchecked == true){
+											addedUncheckedExceptions += 1;
+											isUnchecked = false;
+											
+											if (uncheckedExceptionDC == 1){
+												String difference = checkDifference(timeDiff);
+												uncheckedExceptionDC +=1;													
+												recency.put("unchecked exceptions", difference);
+											}
+										}
+									}
  								} else if (file.getThrowStatements().contains(check)){
 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
 									String p = pattern.trim();

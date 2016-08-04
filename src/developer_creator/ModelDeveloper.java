@@ -34,9 +34,15 @@ public class ModelDeveloper {
 	
 	private int addedThrowsMethods;
 	private int addedTryStatements;
+	private int addedStaticTryStatements;
 	private int addedCatchBlocks;
+	private int addedStaticCatchBlocks;
+	private int addedMultiCatchBlocks;
+	private int addedStaticMultiCatchBlocks;
 	private int addedTryWithResources;
+	private int addedStaticTryWithResources;
 	private int addedFinallyBlock;
+	private int addedStaticFinallyBlock;
 	private int addedThrowStatements;
 	private int addedExceptionsClasses;
 	private int addedCheckedExceptions;
@@ -153,12 +159,44 @@ public class ModelDeveloper {
 		return addedTryStatements;
 	}
 	
+	public void setAddedStaticTryStatements(int addedException){
+		addedStaticTryStatements = addedStaticTryStatements + addedException;
+	}
+	
+	public int getAddedStaticTryStatements(){
+		return addedStaticTryStatements;
+	}
+	
 	public void setAddedCatchBlocks(int addedException){
 		addedCatchBlocks = addedCatchBlocks + addedException;
 	}
 	
 	public int getAddedCatchBlocks(){
 		return addedCatchBlocks;
+	}
+	
+	public void setAddedStaticCatchBlocks(int addedException){
+		addedStaticCatchBlocks = addedStaticCatchBlocks + addedException;
+	}
+	
+	public int getAddedStaticCatchBlocks(){
+		return addedStaticCatchBlocks;
+	}
+	
+	public void setAddedMultiCatchBlocks(int addedException){
+		addedMultiCatchBlocks = addedMultiCatchBlocks + addedException;
+	}
+	
+	public int getAddedMultiCatchBlocks(){
+		return addedMultiCatchBlocks;
+	}
+	
+	public void setAddedStaticMultiCatchBlocks(int addedException){
+		addedStaticMultiCatchBlocks = addedStaticMultiCatchBlocks + addedException;
+	}
+	
+	public int getAddedStaticMultiCatchBlocks(){
+		return addedStaticMultiCatchBlocks;
 	}
 	
 	public void setAddedTryWithResources(int addedException){
@@ -169,12 +207,28 @@ public class ModelDeveloper {
 		return addedTryWithResources;
 	}
 	
+	public void setAddedStaticTryWithResources(int addedException){
+		addedStaticTryWithResources = addedStaticTryWithResources + addedException;
+	}
+	
+	public int getAddedStaticTryWithResources(){
+		return addedStaticTryWithResources;
+	}
+	
 	public void setAddedFinallyBlocks(int addedException){
 		addedFinallyBlock = addedFinallyBlock + addedException;
 	}
 	
 	public int getAddedFinallyBlocks(){
 		return addedFinallyBlock;
+	}
+	
+	public void setAddedStaticFinallyBlocks(int addedException){
+		addedStaticFinallyBlock = addedStaticFinallyBlock + addedException;
+	}
+	
+	public int getAddedStaticFinallyBlocks(){
+		return addedStaticFinallyBlock;
 	}
 	
 	public void setAddedThrowStatements(int addedException){
