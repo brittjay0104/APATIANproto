@@ -551,4 +551,25 @@ public class ExceptionsVisitor extends ASTVisitor {
 			return descendsFromException(node.getSuperclass());
 		}
 	}
+
+
+
+	/*
+	 * How many interesting things did you find?
+	 */
+	public int findings() {
+		return 	throwsMethods.size() + 
+				tryStatements.size() + 
+				staticTryStatements.size() + 
+				catchBlocks.size() + 
+				staticCatchBlocks.size() + 
+				multiCatchBlocks.size() + 
+				staticMultiCatchBlocks.size() + 
+				finallyBlocks.size() + 
+				staticFinallyBlocks.size() + 
+				throwStatements.size() + 
+				exceptionClasses.size() + 
+				uncheckedExceptions.size() + 
+				checkedExceptions.size();
+	}
 }
