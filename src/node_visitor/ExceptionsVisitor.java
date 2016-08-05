@@ -238,18 +238,18 @@ public class ExceptionsVisitor extends ASTVisitor {
 			
 			String src = findSourceForNode(node);
 			
-			String[] tryLines = src.split("\n");
+			List statements = node.getBody().statements();
 			String tryLine = "";
-			
-			if (!tryLines[0].trim().contains("try")){
-				tryLine = tryLines[0].trim();
-			} else if (tryLines[0].trim().contains("try") && (!tryLines[1].trim().equals("\n") || !tryLines[1].trim().equals("}"))) {
-				tryLine = tryLines[1].trim();				
-			} else {
-				
+			// has nested try
+			for (Object statement : statements){
+				if (statement != null){
+					String stmt = statement.toString();
+					tryLine = stmt.substring(0, stmt.indexOf("\n"));
+					break;
+				}
 			}
 			
-			if (!tryLine.equals("")){
+			if (tryLine != "" && tryLine != "\n" && tryLine != "\t"){
 				String tryBlock = initializer + CHECK_SEPERATOR + tryLine;
 				staticTryStatements.add(tryBlock);				
 			}
@@ -279,7 +279,7 @@ public class ExceptionsVisitor extends ASTVisitor {
 					line = lines[0].trim();															
 				} else {
 					
-				}
+				} 
 				if (!line.equals("")){
 					staticFinallyBlocks.add(initializer + CHECK_SEPERATOR + line.trim());
 					System.out.println("finally block found!");					
@@ -294,21 +294,22 @@ public class ExceptionsVisitor extends ASTVisitor {
 			String methodName = md.getName().toString();
 			String src = findSourceForNode(node);
 			
-			String[] tryLines = src.split("\n");
+			List statements = node.getBody().statements();
 			String tryLine = "";
-			
-			if (!tryLines[0].trim().contains("try")){
-				tryLine = tryLines[0].trim();
-			} else if (tryLines[0].trim().contains("try") && (!tryLines[1].trim().equals("\n") || !tryLines[1].trim().equals("}"))) {
-				tryLine = tryLines[1].trim();				
-			} else {
-				
+			// has nested try
+			for (Object statement : statements){
+				if (statement != null){
+					String stmt = statement.toString();
+					tryLine = stmt.substring(0, stmt.indexOf("\n"));
+					break;
+				}
 			}
 			
-			if (!tryLine.equals("")){
+			if (tryLine != "" && tryLine != "\n" && tryLine != "\t"){
 				String tryBlock = methodName + CHECK_SEPERATOR + tryLine;
-				tryStatements.add(tryBlock);				
+				tryStatements.add(tryBlock);					
 			}
+			
 			
 			// Get resources for try-with-resources statement
 			if (node.resources() != null){

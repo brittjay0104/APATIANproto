@@ -1,10 +1,11 @@
+import java.io.BufferedReader;
 
 public class InitializerTryCatch_2 {
 
 	{
 		try{
-			
-		}catch(Exception e){
+			BufferedReader br = new BufferedReader(null);		
+		} catch(Exception e){
 			
 		}
 	}
