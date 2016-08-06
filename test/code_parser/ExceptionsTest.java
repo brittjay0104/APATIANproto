@@ -53,13 +53,7 @@ public class ExceptionsTest extends TestCase{
     }
 
 	@Before
-	public void setUp() throws IOException{
-		file = new ModelSourceFile(inputFile);
-		
-		ModelParser p = new ModelParser();
-		
-		p.parseForExceptions(file);
-		
+	public void setUp() throws IOException{		
 		assertTrue(inputFile.exists());
 	}
 	
@@ -79,130 +73,6 @@ public class ExceptionsTest extends TestCase{
 		cu.accept(visitor);
 		
 		assertEquals(getExpectedResult(),visitor.findings());
-	}
-	
-	@Test
-	public void testExceptionDecl() {
-		
-		List<String> expectedResults = new ArrayList<String>();
-		List<String> actualResults = new ArrayList<String>();
-		
-		expectedResults.add("public class ExceptionDecl_2 extends Exception");
-		
-		assertTrue(expectedResults.size() == file.getThrowsMethods().size());
-		
-		for (String result : file.getThrowsMethods()){
-			result = result.substring(result.indexOf(CHECK_SEPERATOR), result.length());
-			actualResults.add(result);
-		}
-		
-		assertEquals(expectedResults.get(0), actualResults.get(0));
-	}
-	
-	@Test
-	public void testInitializerStaticTryCatch(){
-		List<String> expectedTryResults = new ArrayList<String>();
-		List<String> expectedCatchResults = new ArrayList<String>();
-		List<String> actualTryResults = new ArrayList<String>();
-		List<String> actualCatchResults = new ArrayList<String>();
-		
-		expectedTryResults.add("BufferedReader br = new BufferedReader(null);");
-		expectedTryResults.add("File file = new File (\"static-try.txt\");");
-		expectedCatchResults.add("catch (Exception e)");
-		expectedCatchResults.add("catch(IOException e)");
-		
-		assertTrue(expectedTryResults.size() == file.getStaticTryStatements().size());
-		assertTrue(expectedCatchResults.size() == file.getStaticCatchBlocks().size());
-		
-		for (String result : file.getStaticTryStatements()){
-			result = result.substring(result.indexOf(CHECK_SEPERATOR), result.length());
-			actualTryResults.add(result);
-		}
-		
-		assertEquals(expectedTryResults.get(0), actualTryResults.get(0));
-		
-		for (String result : file.getStaticCatchBlocks()){
-			result = result.substring(result.indexOf(CHECK_SEPERATOR), result.length());
-			actualCatchResults.add(result);
-		}
-		
-		assertEquals(expectedCatchResults.get(0), actualCatchResults.get(0));
-	}
-	
-	@Test
-	public void testMultiCatch(){
-		List<String> expectedResults = new ArrayList<String>();
-		List<String> actualResults = new ArrayList<String>();
-		
-		expectedResults.add("catch(IOException | SQLException e)");
-		
-		assertTrue(expectedResults.size() == file.getMultiCatchBlocks().size());
-		
-		for (String result : file.getMultiCatchBlocks()){
-			result = result.substring(result.indexOf(CHECK_SEPERATOR), result.length());
-			actualResults.add(result);
-		}
-		
-		assertEquals(expectedResults.get(0), actualResults.get(0));
-		
-	}
-	
-	@Test
-	public void testNothing() {
-		List<String> expectedResults = new ArrayList<String>();
-		List<String> actualResults = new ArrayList<String>();
-		
-		assertTrue(expectedResults.size() == file.getThrowsMethods().size());
-		
-		assertTrue(actualResults.size() == 0);
-	}
-	
-	@Test
-	public void testSimpleTryCatch() {
-		List<String> expectedTryResults = new ArrayList<String>();
-		List<String> expectedCatchResults = new ArrayList<String>();
-		List<String> actualTryResults = new ArrayList<String>();
-		List<String> actualCatchResults = new ArrayList<String>();
-		
-		expectedTryResults.add("File f = new File(\"output.txt\");");
-		expectedCatchResults.add("catch(Exception e)");
-		
-		assertTrue(expectedTryResults.size() == file.getTryStatements().size());
-		assertTrue(expectedCatchResults.size() == file.getCatchBlocks().size());
-		
-		for (String result : file.getTryStatements()){
-			result = result.substring(result.indexOf(CHECK_SEPERATOR), result.length());
-			actualTryResults.add(result);
-		}
-		
-		for (String result : file.getCatchBlocks()){
-			result = result.substring(result.indexOf(CHECK_SEPERATOR), result.length());
-			actualCatchResults.add(result);
-		}
-		assertEquals(expectedTryResults.get(0), actualTryResults.get(0));
-		assertEquals(expectedCatchResults.get(0), actualCatchResults.get(0));	
-	}
-	
-	@Test 
-	public void testThrowsMethod() {
-		
-		List<String> expectedResults = new ArrayList<String>();
-		List<String> actualResults = new ArrayList<String>();
-		
-		expectedResults.add("public void exceptionTest() throws Exception");
-		
-		assertTrue(expectedResults.size() == file.getThrowsMethods().size());
-		
-		for (String result : file.getThrowsMethods()){
-			result = result.substring(result.indexOf(CHECK_SEPERATOR), result.length());
-			actualResults.add(result);
-		}
-		assertEquals(expectedResults.get(0), actualResults.get(0));
-	}
-	
-	@Test
-	public void testTryWithResources(){
-		
 	}
 	
 	/**
