@@ -36,8 +36,6 @@ public class ExceptionsTest extends TestCase{
 
 	@Parameter
 	public File inputFile;
-	private ModelSourceFile file;
-	public static final char CHECK_SEPERATOR = Character.MAX_VALUE;
 	
 	@Parameters(name="{0}")
     public static Collection<Object[]> params() {
@@ -82,6 +80,14 @@ public class ExceptionsTest extends TestCase{
 		String name = inputFile.getName();
 		return Integer.parseInt(name.substring(name.indexOf('_')+1,//chop off head
 								name.length()-5));					//chop of .java
+	}
+	/**
+	 * Returns the expected output (from the comment in inputfile)
+	 */
+	private String getExpectedOutput(){
+		
+		
+		return "";
 	}
 
 	private char[] fileContents() throws FileNotFoundException, IOException {

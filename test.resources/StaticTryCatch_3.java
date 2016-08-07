@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class StaticTryCatch_2 {
+public class StaticTryCatch_3 {
 
 	static {
 		try{

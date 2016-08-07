@@ -1,6 +1,6 @@
 import java.io.BufferedReader;
 
-public class InitializerTryCatch_2 {
+public class InitializerTryCatch_3 {
 
 	{
 		try{

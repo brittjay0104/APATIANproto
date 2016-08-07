@@ -1,6 +1,6 @@
 import java.io.File;
 
-public class SimpleTryCatch_2 {
+public class SimpleTryCatch_3 {
 
 	void m(){
 		try{
