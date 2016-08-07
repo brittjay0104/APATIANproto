@@ -4,6 +4,9 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
+// try - try (BufferedReader br = new BufferedReader(new FileReader(new File("file.txt"))))
+// catch - catch (FileNotFoundException e) , catch (IOException e)
+// checked - catch (FileNotFoundException e) , catch (IOException e)
 public class SimpleTryWithResources_5 {
 	
 	public String createTry() {

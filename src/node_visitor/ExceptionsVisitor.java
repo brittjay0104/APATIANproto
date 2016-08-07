@@ -286,7 +286,7 @@ public class ExceptionsVisitor extends ASTVisitor {
 				}
 			}
 			
-			System.out.println("try statement found!");
+			//System.out.println("try statement found!");
 		}
 		
 		if (md != null) {
