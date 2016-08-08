@@ -69,8 +69,13 @@ public class ExceptionsTest extends TestCase{
 		file.setSource(result);
 		ExceptionsVisitor visitor = new ExceptionsVisitor(file);
 		cu.accept(visitor);
+		int es = getExpectedOutput().size();
+		int as = visitor.fullFindings().size();
 		
 		assertEquals(getExpectedResult(),visitor.findings());
+		//(getExpectedOutput().size(), visitor.fullFindings().size());
+		// TODO this need to be updated - compare findings one by one (loop)?
+		//assertEquals(getExpectedOutput(), visitor.fullFindings());
 	}
 	
 	/**
@@ -83,11 +88,24 @@ public class ExceptionsTest extends TestCase{
 	}
 	/**
 	 * Returns the expected output (from the comment in inputfile)
+	 * @throws FileNotFoundException, IOException
 	 */
-	private String getExpectedOutput(){
+	private List<String> getExpectedOutput() throws FileNotFoundException, IOException {
+		List<String> expectedOutput = new ArrayList<String>();
+		FileInputStream fis = new FileInputStream(inputFile);
 		
+		BufferedReader br = new BufferedReader(new InputStreamReader(fis));
+		String line = null;
 		
-		return "";
+		while ((line = br.readLine()) != null && line.startsWith("//")){
+			String output = line.substring(line.indexOf("-")+1, line.length()).trim();
+			
+			expectedOutput.add(output);
+		}
+		
+		br.close();
+		
+		return expectedOutput;
 	}
 
 	private char[] fileContents() throws FileNotFoundException, IOException {

@@ -71,6 +71,9 @@ public class ExceptionsVisitor extends ASTVisitor {
 	List<String> uncheckedExceptions = new ArrayList<String>();
 	List<String> checkedExceptions = new ArrayList<String>();
 	
+	//all exceptions patterns
+	List<String> allExceptions = new ArrayList<String>();
+	
 	// List of all unchecked exceptions
 	List<String> unchecked = Arrays.asList("AnnotationTypeMismatchException", "ArithmeticException", "ArrayStoreException", "BufferOverflowException", "BufferUnderflowException", "CannotRedoException", "CannotUndoException", "ClassCastException", "CMMException"
 			, "ConcurrentModificationException", "DataBindingException", "DOMException", "EmptyStackException", "EnumConstantNotPresentException", "EventException", "FileSystemAlreadyExistsException", "FileSystemNotFoundException", "IllegalArgumentException"
@@ -377,22 +380,22 @@ public class ExceptionsVisitor extends ASTVisitor {
 				for (String s: exceptions){
 					for (String e : uncheckedExceptions){
 						if (s.contains(e)){
-							uncheckedExceptions.add(catchSrc);
+							uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + catchSrc);
 						}
 					}
 					
 					for (String e : checkedExceptions){
 						if (s.contains(e)){
-							checkedExceptions.add(catchSrc);
+							checkedExceptions.add("checked" + CHECK_SEPERATOR + catchSrc);
 						}
 					}
 				}
 			}
 			
 			if (unchecked.contains(exception)){
-				uncheckedExceptions.add(catchSrc);
+				uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + catchSrc);
 			} else {
-				checkedExceptions.add(catchSrc);
+				checkedExceptions.add("checked" + CHECK_SEPERATOR + catchSrc);
 			}
 			
 			if (node.getException().getType().isUnionType()){
@@ -417,13 +420,13 @@ public class ExceptionsVisitor extends ASTVisitor {
 				for (String s: exceptions){
 					for (String e : uncheckedExceptions){
 						if (s.contains(e)){
-							uncheckedExceptions.add(catchSrc);
+							uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + catchSrc);
 						}
 					}
 					
 					for (String e : checkedExceptions){
 						if (s.contains(e)){
-							checkedExceptions.add(catchSrc);
+							checkedExceptions.add("checked" + CHECK_SEPERATOR + catchSrc);
 						}
 					}
 				}
@@ -432,11 +435,11 @@ public class ExceptionsVisitor extends ASTVisitor {
 			if (unchecked.contains(exception)){
 				uncheckedExceptions.add(catchSrc);
 			} else {
-				checkedExceptions.add(catchSrc);
+				checkedExceptions.add("unchecked" + CHECK_SEPERATOR + catchSrc);
 			}
 			
 			if (node.getException().getType().isUnionType()){
-				multiCatchBlocks.add(catchSrc);
+				multiCatchBlocks.add("checked" + CHECK_SEPERATOR + catchSrc);
 			}
 		}
 		
@@ -456,12 +459,12 @@ public class ExceptionsVisitor extends ASTVisitor {
 			
 			for (String e : unchecked){
 				if (src.contains(e)){
-					uncheckedExceptions.add(throwStatement);
+					uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + throwStatement);
 				}
 			}
 			
 			if (!unchecked.contains(throwStatement)){
-				checkedExceptions.add(throwStatement);
+				checkedExceptions.add("checked" + CHECK_SEPERATOR + throwStatement);
 			}
 			
 		}
@@ -490,9 +493,9 @@ public class ExceptionsVisitor extends ASTVisitor {
 					System.out.println("thrown exception found!");	
 					
 					if (unchecked.contains(exception)){
-						uncheckedExceptions.add(throwsMethod);
+						uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + throwsMethod);
 					} else {
-						checkedExceptions.add(throwsMethod);
+						checkedExceptions.add("checked" + CHECK_SEPERATOR + throwsMethod);
 					}
 				}
 				
@@ -522,9 +525,9 @@ public class ExceptionsVisitor extends ASTVisitor {
 			
 			// check if a checked or unchecked exception
 			if (unchecked.contains(superClass)){
-				uncheckedExceptions.add(exceptionClass);
+				uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + exceptionClass);
 			} else {
-				checkedExceptions.add(exceptionClass);
+				checkedExceptions.add("checked" + CHECK_SEPERATOR + exceptionClass);
 			}
 			
 		}
@@ -561,7 +564,9 @@ public class ExceptionsVisitor extends ASTVisitor {
 	public int findings() {
 		return 	throwsMethods.size() + 
 				tryStatements.size() + 
+				tryWithResources.size() +
 				staticTryStatements.size() + 
+				staticTryWithResources.size() + 
 				catchBlocks.size() + 
 				staticCatchBlocks.size() + 
 				multiCatchBlocks.size() + 
@@ -572,5 +577,54 @@ public class ExceptionsVisitor extends ASTVisitor {
 				exceptionClasses.size() + 
 				uncheckedExceptions.size() + 
 				checkedExceptions.size();
+	}
+	
+	/*
+	 * Did I find the right interesting things?
+	 */
+	public List<String> fullFindings(){
+		List<String> findings = new ArrayList<String>();
+		
+		if (throwsMethods != null){
+			findings.addAll(throwsMethods);
+		} 
+		if (tryStatements != null){
+			findings.addAll(tryStatements);
+		} 
+		if (staticTryStatements != null){
+			findings.addAll(staticTryStatements);
+		} 
+		if (catchBlocks != null){
+			findings.addAll(catchBlocks);
+		} 
+		if (staticCatchBlocks != null){
+			findings.addAll(staticCatchBlocks);
+		} 
+		if (multiCatchBlocks != null){
+			findings.addAll(multiCatchBlocks);
+		} 
+		if (staticMultiCatchBlocks != null){
+			findings.addAll(staticMultiCatchBlocks);
+		} 
+		if (finallyBlocks != null){
+			findings.addAll(finallyBlocks);
+		} 
+		if (staticFinallyBlocks != null){
+			findings.addAll(staticFinallyBlocks);
+		}
+		if (throwStatements != null){
+			findings.addAll(throwStatements);
+		} 
+		if (exceptionClasses != null){
+			findings.addAll(exceptionClasses);
+		}
+		if (uncheckedExceptions != null){
+			findings.addAll(uncheckedExceptions);
+		} 
+		if (checkedExceptions != null){
+			findings.addAll(checkedExceptions);
+		}
+		
+		return findings;
 	}
 }

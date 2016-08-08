@@ -1,4 +1,3 @@
-
 // throws method - public void exceptionTest() throws Exception
 // throw statement - throw new Exception();
 // checked - public void exceptionTest() throws Exception , throw new Exception();
