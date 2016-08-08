@@ -1,7 +1,9 @@
 // try - int data = input.read();
 // try with resource- try(FileInputStream input = new FileInputStream("file.txt"))
-// catch - catch (FileNotFoundException e) , catch (IOException e)
-// checked - catch (FileNotFoundException e) , catch (IOException e)
+// catch - catch (FileNotFoundException e) 
+// catch - catch (IOException e)
+// checked - catch (FileNotFoundException e) 
+// checked - catch (IOException e)
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

@@ -69,13 +69,13 @@ public class ExceptionsTest extends TestCase{
 		file.setSource(result);
 		ExceptionsVisitor visitor = new ExceptionsVisitor(file);
 		cu.accept(visitor);
-		int es = getExpectedOutput().size();
-		int as = visitor.fullFindings().size();
-		
+
+		int exp = getExpectedOutput().size();
+		int actual = visitor.fullFindings().size();
 		assertEquals(getExpectedResult(),visitor.findings());
-		//(getExpectedOutput().size(), visitor.fullFindings().size());
+		assertEquals(getExpectedOutput().size(), visitor.fullFindings().size());
 		// TODO this need to be updated - compare findings one by one (loop)?
-		//assertEquals(getExpectedOutput(), visitor.fullFindings());
+	
 	}
 	
 	/**
@@ -98,9 +98,9 @@ public class ExceptionsTest extends TestCase{
 		String line = null;
 		
 		while ((line = br.readLine()) != null && line.startsWith("//")){
-			String output = line.substring(line.indexOf("-")+1, line.length()).trim();
+			//String output = line.substring(line.indexOf("-")+1, line.length()).trim();
 			
-			expectedOutput.add(output);
+			expectedOutput.add(line);
 		}
 		
 		br.close();

@@ -18,6 +18,7 @@ import org.eclipse.jdt.core.dom.CatchClause;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
 import org.eclipse.jdt.core.dom.ThrowStatement;
 import org.eclipse.jdt.core.dom.TryStatement;
+import org.eclipse.jdt.core.dom.Type;
 import org.eclipse.jdt.core.dom.TypeDeclaration;
 import org.eclipse.jdt.core.dom.ITypeBinding;
 import org.eclipse.jdt.core.dom.IVariableBinding;
@@ -591,9 +592,15 @@ public class ExceptionsVisitor extends ASTVisitor {
 		if (tryStatements != null){
 			findings.addAll(tryStatements);
 		} 
+		if (tryWithResources != null){
+			findings.addAll(tryWithResources);
+		}
 		if (staticTryStatements != null){
 			findings.addAll(staticTryStatements);
 		} 
+		if (staticTryWithResources != null){
+			findings.addAll(staticTryWithResources);
+		}
 		if (catchBlocks != null){
 			findings.addAll(catchBlocks);
 		} 
