@@ -5,10 +5,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.regex.Pattern;
 
-import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.CatchClause;
+import org.eclipse.jdt.core.dom.ClassInstanceCreation;
 import org.eclipse.jdt.core.dom.ITypeBinding;
-import org.eclipse.jdt.core.dom.Initializer;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
 import org.eclipse.jdt.core.dom.ThrowStatement;
 import org.eclipse.jdt.core.dom.TryStatement;
@@ -114,30 +113,14 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		
 		catchBlocks.add(catchSrc);
 		
+		//TODO: too much string. ask for node.getException(), go through each one
 		if (except.contains("|")){
-			String[] exceptions = except.split(Pattern.quote("|"));
-			
-			for (String s: exceptions){
-				for (String e : uncheckedExceptions){
-					if (s.contains(e)){
-						uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + catchSrc);
-					}
-				}
-				
-				for (String e : checkedExceptions){
-					if (s.contains(e)){
-						checkedExceptions.add("checked" + CHECK_SEPERATOR + catchSrc);
-					}
-				}
+			for (String s: except.split(Pattern.quote("|"))){				
+				addExceptionKind(s.trim(), catchSrc);
 			}
 		}
 		
-		//TODO why add "unchecked/checked" here and not later?
-		if (unchecked.contains(exception)){
-			uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + catchSrc);
-		} else {
-			checkedExceptions.add("checked" + CHECK_SEPERATOR + catchSrc);
-		}
+		addExceptionKind(exception, catchSrc);
 		
 		if (node.getException().getType().isUnionType()){
 			multiCatchBlocks.add(catchSrc);
@@ -148,7 +131,7 @@ public class ExceptionsVisitor extends AbstractVisitor {
 	
 	public boolean visit(ThrowStatement node){
 		
-		String sig = super.signatureOfParent(node);
+		String sig = signatureOfParent(node);
 
 		String src = findSourceForNode(node);
 		String throwStatement = sig + CHECK_SEPERATOR + src;
@@ -156,15 +139,7 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		
 		System.out.println("throw statement found!");
 		
-		for (String e : unchecked){
-			if (src.contains(e)){
-				uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + throwStatement);
-			}
-		}
-		
-		if (!unchecked.contains(throwStatement)){
-			checkedExceptions.add("checked" + CHECK_SEPERATOR + throwStatement);
-		}
+		addExceptionKind(((ClassInstanceCreation)node.getExpression()).getType().toString(),throwStatement);
 			
 		return true;
 	}
@@ -184,11 +159,7 @@ public class ExceptionsVisitor extends AbstractVisitor {
 			
 			System.out.println("thrown exception found!");	
 			
-			if (unchecked.contains(exception)){
-				uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + throwsMethod);
-			} else {
-				checkedExceptions.add("checked" + CHECK_SEPERATOR + throwsMethod);
-			}
+			addExceptionKind(exception, throwsMethod);
 		}
 		return true;
 	}
@@ -208,13 +179,7 @@ public class ExceptionsVisitor extends AbstractVisitor {
 			
 			System.out.println("exception subclass found!");
 			
-			// check if a checked or unchecked exception
-			if (unchecked.contains(superClass)){
-				uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + exceptionClass);
-			} else {
-				checkedExceptions.add("checked" + CHECK_SEPERATOR + exceptionClass);
-			}
-			
+			addExceptionKind(superClass, exceptionClass);			
 		}
 		else {
 			//System.out.println("");
@@ -237,6 +202,14 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		}
 		else {
 			return descendsFromException(node.getSuperclass());
+		}
+	}
+	
+	private void addExceptionKind(String exception, String context) {
+		if (unchecked.contains(exception)){
+			uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + context);
+		} else {
+			checkedExceptions.add("checked" + CHECK_SEPERATOR + context);
 		}
 	}
 }
