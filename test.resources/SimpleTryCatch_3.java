@@ -1,6 +1,7 @@
-// try - File f = new File("output.txt");
-// catch - catch(Exception e)
-// checked - catch(Exception e)
+// tryStatements = 1
+// catchBlocks = 1
+// checkedExceptions = 1
+
 import java.io.File;
 
 public class SimpleTryCatch_3 {

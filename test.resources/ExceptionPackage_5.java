@@ -1,7 +1,6 @@
-// throwStatements - throw new NoSuchElementException();
-// checkedExceptions - throw new NoSuchElementException();
-// uncheckedExceptions - public void useException() throws NoSuchElementException 
-// uncheckedExceptions - throw new NoSuchElementException()
+// throwsMethods = 1
+// throwStatements = 1
+// uncheckedExceptions = 2
 public class ExceptionPackage_5 {
 	
 	public void useException() throws NoSuchElementException {

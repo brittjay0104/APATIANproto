@@ -1,6 +1,7 @@
-// try - File file = new File ("static-try.txt");
-// catch - catch(IOException e)
-// checked - catch(IOException e)
+// tryStatements = 1
+// catchBlocks = 1
+// checkedExceptions = 1
+
 
 import java.io.File;
 import java.io.FileNotFoundException;
