@@ -41,7 +41,6 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		super(file);
 	}
 	
-	
 	/**
 	 * When visiting a TryStatement, add the statement to our tryStatements
 	 *   array.
@@ -184,95 +183,58 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		Initializer init = getInitializer(node);
 		MethodDeclaration md = getMethodDeclaration(node);
 		
-		if (init != null){
-			List inits = init.modifiers();
+		String signature;
+		if (md != null){
+			signature = md.getName().toString();
+		}else if (init != null){
 			StringBuffer sb = new StringBuffer();
-			for (Object i : inits){
+			for (Object i : init.modifiers()){
 				sb.append(findSourceForNode((ASTNode)i));
 			}
+			signature = sb.toString();
+		}else{
+			throw new RuntimeException("Unknown container for catch clause!");
+		}
+		
+		String except = findSourceForNode(node.getException()).trim();
+		String exception = except.substring(0, except.indexOf(" "));
+		String catchBlock = node.toString();
+		String catchLine = catchBlock.substring(0, catchBlock.indexOf("{"));
+		String catchSrc = signature + CHECK_SEPERATOR + catchLine.trim();
+		
+		catchBlocks.add(catchSrc);
+		
+		if (except.contains("|")){
+			String[] exceptions = except.split(Pattern.quote("|"));
 			
-			String initializer = sb.toString();
-			String except = findSourceForNode(node.getException()).trim();
-			String exception = except.substring(0, except.indexOf(" "));
-			String catchBlock = node.toString();
-			String catchLine = catchBlock.substring(0, catchBlock.indexOf("{"));
-			
-			String catchSrc = initializer + CHECK_SEPERATOR + catchLine.trim();
-			
-			catchBlocks.add(catchSrc);
-			
-			if (except.contains("|")){
-				String[] exceptions = except.split(Pattern.quote("|"));
-				
-				for (String s: exceptions){
-					for (String e : uncheckedExceptions){
-						if (s.contains(e)){
-							uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + catchSrc);
-						}
-					}
-					
-					for (String e : checkedExceptions){
-						if (s.contains(e)){
-							checkedExceptions.add("checked" + CHECK_SEPERATOR + catchSrc);
-						}
+			for (String s: exceptions){
+				for (String e : uncheckedExceptions){
+					if (s.contains(e)){
+						uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + catchSrc);
 					}
 				}
-			}
-			
-			if (unchecked.contains(exception)){
-				uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + catchSrc);
-			} else {
-				checkedExceptions.add("checked" + CHECK_SEPERATOR + catchSrc);
-			}
-			
-			if (node.getException().getType().isUnionType()){
-				multiCatchBlocks.add(catchSrc);
+				
+				for (String e : checkedExceptions){
+					if (s.contains(e)){
+						checkedExceptions.add("checked" + CHECK_SEPERATOR + catchSrc);
+					}
+				}
 			}
 		}
-
-		if (md != null){
-			String methodName = md.getName().toString();
-			String except = node.getException().toString().trim();
-			String exception = except.substring(0, except.indexOf(" "));
-			String catchBlock = node.toString();
-			String catchLine = catchBlock.substring(0, catchBlock.indexOf("{"));
-			
-			String catchSrc = methodName + CHECK_SEPERATOR + catchLine.trim();
-			
-			catchBlocks.add(catchSrc);
-			
-			if (except.contains("|")){
-				String[] exceptions = except.split(Pattern.quote("|"));
-				
-				for (String s: exceptions){
-					for (String e : uncheckedExceptions){
-						if (s.contains(e)){
-							uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + catchSrc);
-						}
-					}
-					
-					for (String e : checkedExceptions){
-						if (s.contains(e)){
-							checkedExceptions.add("checked" + CHECK_SEPERATOR + catchSrc);
-						}
-					}
-				}
-			}
-			
-			if (unchecked.contains(exception)){
-				uncheckedExceptions.add(catchSrc);
-			} else {
-				checkedExceptions.add("unchecked" + CHECK_SEPERATOR + catchSrc);
-			}
-			
-			if (node.getException().getType().isUnionType()){
-				multiCatchBlocks.add("checked" + CHECK_SEPERATOR + catchSrc);
-			}
+		
+		//TODO why add "unchecked/checked" here and not later?
+		if (unchecked.contains(exception)){
+			uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + catchSrc);
+		} else {
+			checkedExceptions.add("checked" + CHECK_SEPERATOR + catchSrc);
+		}
+		
+		if (node.getException().getType().isUnionType()){
+			multiCatchBlocks.add(catchSrc);
 		}
 		
 		return true;
 	}
-	
 	
 	public boolean visit(ThrowStatement node){
 		MethodDeclaration md = getMethodDeclaration(node);
