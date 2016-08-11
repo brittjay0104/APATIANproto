@@ -7,7 +7,6 @@ import java.util.regex.Pattern;
 
 import org.eclipse.jdt.core.dom.CatchClause;
 import org.eclipse.jdt.core.dom.ClassInstanceCreation;
-import org.eclipse.jdt.core.dom.ITypeBinding;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
 import org.eclipse.jdt.core.dom.ThrowStatement;
 import org.eclipse.jdt.core.dom.TryStatement;
@@ -180,22 +179,6 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		
 		
 		return true;
-	}
-	
-	private boolean descendsFromException(ITypeBinding node){
-		if (node == null) {
-			return false;
-		}
-		else {
-			//System.out.print(" < " + node.getName());
-		}
-		
-		if (node.getPackage().getName().equals("java.lang") && node.getName().equals("Exception")) {
-			return true;
-		}
-		else {
-			return descendsFromException(node.getSuperclass());
-		}
 	}
 	
 	private void addExceptionKind(String exception, String context) {
