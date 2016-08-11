@@ -328,73 +328,55 @@ public class ModelParser {
 		ExceptionsVisitor visitor = new ExceptionsVisitor(file);
 		cu.accept(visitor);
 		
-		List<String> throwsMethods = visitor.getThrowsMethods();
-		List<String> tryStatements = visitor.getTryStatements();
-		List<String> catchBlocks = visitor.getCatchBlocks();
-		List<String> multiCatchBlocks = visitor.getMultiCatchBlocks();
-		List<String> tryWithResources = visitor.getTryWithResourceStatements();
-		List<String> finallyBlocks = visitor.getFinallyBlock();
-		List<String> staticFinallyBlocks = visitor.getStaticFinallyBlock();
-		List<String> throwStatements = visitor.getThrowStatements();
-		List<String> exceptionClasses = visitor.getExceptionClasses();
-		List<String> uncheckedExceptions = visitor.getUncheckedExceptions();
-		List<String> checkedExceptions = visitor.getCheckedExceptions();
-		
-		
 		//System.out.println("reaching changed part");
 		
-		for (String throwsMethod : throwsMethods){
+		for (String throwsMethod : visitor.throwsMethods){
 			//System.out.println("Method throws --> " + throwsMethod);
 			file.addThrowsMethod(throwsMethod);
 		}
 		
-		for (String tryStatement : tryStatements){
+		for (String tryStatement : visitor.tryStatements){
 			//System.out.println("Try statement --> " + tryStatement);
 			file.addTryStatement(tryStatement);
 		}
 		
-		for (String catchBlock : catchBlocks){
+		for (String catchBlock : visitor.catchBlocks){
 			//System.out.println("Catch block --> " + catchBlock);
 			file.addCatchBlock(catchBlock);
 		}
 		
-		for (String catchBlock : multiCatchBlocks){
+		for (String catchBlock : visitor.multiCatchBlocks){
 			//System.out.println("Catch block --> " + catchBlock);
 			file.addMultiCatchBlock(catchBlock);
 		}
 		
-		for (String tryWithResource : tryWithResources){
+		for (String tryWithResource : visitor.tryWithResources){
 			//System.out.println("Try with resource --> " + tryWithResource);
 			file.addTryWithResource(tryWithResource);
 		}
 		
-		for (String finallyBlock : finallyBlocks){
+		for (String finallyBlock : visitor.finallyBlocks){
 			//System.out.println("Finally block --> " + finallyBlock);
 			file.addFinallyBlock(finallyBlock);
 		}
 		
-		for (String finallyBlock : staticFinallyBlocks){
-			//System.out.println("Finally block --> " + finallyBlock);
-			file.addStaticFinallyBlock(finallyBlock);
-		}
-		
-		for (String throwStatement : throwStatements){
+		for (String throwStatement : visitor.throwStatements){
 			//System.out.println("Throw statement --> " + throwStatement);
 			file.addThrowStatement(throwStatement);
 		}
 		
-		for (String exceptionClass : exceptionClasses){
+		for (String exceptionClass : visitor.exceptionClasses){
 			//System.out.println("Exception class --> " + exceptionClass);
 			file.addExceptionClass(exceptionClass);
 		}
 		
 		
-		for (String checkedException : checkedExceptions){
+		for (String checkedException : visitor.checkedExceptions){
 			//System.out.println("Checked exception --> " + checkedException);
 			file.addCheckedException(checkedException);
 		}
 		
-		for (String uncheckedException : uncheckedExceptions){
+		for (String uncheckedException : visitor.uncheckedExceptions){
 			//System.out.println("Unchecked exception --> " + uncheckedException);
 			file.addUncheckedException(uncheckedException);
 		}

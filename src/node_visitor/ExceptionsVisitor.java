@@ -30,35 +30,32 @@ import code_parser.ModelSourceFile;
 
 public class ExceptionsVisitor extends ASTVisitor {
 	// Methods that declare "throws"
-	List<String> throwsMethods = new ArrayList<String>();
+	public List<String> throwsMethods = new ArrayList<String>();
 	
 	// Try statements
-	List<String> tryStatements = new ArrayList<String>();
+	public List<String> tryStatements = new ArrayList<String>();
 		
 	// Classes that extend an exception
-	List<String> tryWithResources = new ArrayList<String>();
+	public List<String> tryWithResources = new ArrayList<String>();
 		
 	// Catch blocks
-	List<String> catchBlocks = new ArrayList<String>();
+	public List<String> catchBlocks = new ArrayList<String>();
 		
 	// Multi-catch blocks
-	List<String> multiCatchBlocks = new ArrayList<String>();
+	public List<String> multiCatchBlocks = new ArrayList<String>();
 			
 	// Finally blocks
-	List<String> finallyBlocks = new ArrayList<String>();
-
-	// Static finally blocks
-	List<String> staticFinallyBlocks = new ArrayList<String>();
+	public List<String> finallyBlocks = new ArrayList<String>();
 	
 	// Throw statements (TBD)
-	List<String> throwStatements = new ArrayList<String>();
+	public List<String> throwStatements = new ArrayList<String>();
 	
 	// Classes that extend an exception
-	List<String> exceptionClasses = new ArrayList<String>();
+	public List<String> exceptionClasses = new ArrayList<String>();
 	
 	// Checked and Unchecked Exceptions
-	List<String> uncheckedExceptions = new ArrayList<String>();
-	List<String> checkedExceptions = new ArrayList<String>();
+	public List<String> uncheckedExceptions = new ArrayList<String>();
+	public List<String> checkedExceptions = new ArrayList<String>();
 	
 	//all exceptions patterns
 	List<String> allExceptions = new ArrayList<String>();
@@ -131,59 +128,6 @@ public class ExceptionsVisitor extends ASTVisitor {
 	}
 	
 	
-	// Get throwsMethods
-	public List<String> getThrowsMethods() {
-		return throwsMethods;
-	}
-	
-	// Get tryStatements
-	public List<String> getTryStatements() {
-		return tryStatements;
-	}
-	
-	// Get try-with-resources statements
-	public List<String> getTryWithResourceStatements() {
-		return tryWithResources;
-	}
-	
-	// Get catch blocks 
-	public List<String> getCatchBlocks(){
-		return catchBlocks;
-	}
-
-	// Get multi catch blocks 
-	public List<String> getMultiCatchBlocks(){
-		return multiCatchBlocks;
-	}
-	
-	// Get try-with-resources statements
-	public List<String> getFinallyBlock() {
-		return finallyBlocks;
-	}
-	
-	// Get static try-with-resources statements
-	public List<String> getStaticFinallyBlock() {
-		return staticFinallyBlocks;
-	}
-	
-	// Get throwStatements (TBD)
-	public List<String> getThrowStatements() {
-		return throwStatements;
-	}
-	
-	// Get exceptionClasses
-	public List<String> getExceptionClasses() {
-		return exceptionClasses;
-	}
-	
-	public List<String> getUncheckedExceptions(){
-		return uncheckedExceptions;
-	}
-	
-	public List<String> getCheckedExceptions(){
-		return checkedExceptions;
-	}
-	
 	/**
 	 * When visiting a TryStatement, add the statement to our tryStatements
 	 *   array.
@@ -253,7 +197,7 @@ public class ExceptionsVisitor extends ASTVisitor {
 					
 				} 
 				if (!line.equals("")){
-					staticFinallyBlocks.add(initializer + CHECK_SEPERATOR + line.trim());
+					finallyBlocks.add(initializer + CHECK_SEPERATOR + line.trim());
 					System.out.println("finally block found!");					
 				}
 			}
