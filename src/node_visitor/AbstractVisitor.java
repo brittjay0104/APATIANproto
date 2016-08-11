@@ -29,7 +29,26 @@ public abstract class AbstractVisitor extends ASTVisitor {
 		}
 	}
 
-	protected MethodDeclaration getMethodDeclaration(ASTNode node) {
+	protected String signatureOfParent(ASTNode node) {
+		Initializer init = getInitializer(node);
+		MethodDeclaration md = getMethodDeclaration(node);
+		
+		String signature;
+		if (md != null){
+			signature = md.getName().toString();
+		}else if (init != null){
+			StringBuffer sb = new StringBuffer();
+			for (Object i : init.modifiers()){
+				sb.append(findSourceForNode((ASTNode)i));
+			}
+			signature = sb.toString();
+		}else{
+			throw new RuntimeException("Unknown container for " + node.getClass());
+		}
+		return signature;
+	}
+
+	private MethodDeclaration getMethodDeclaration(ASTNode node) {
 		if (node.getParent() != null){
 			return node instanceof MethodDeclaration ? (MethodDeclaration)node : getMethodDeclaration(node.getParent());			
 		}
@@ -37,7 +56,7 @@ public abstract class AbstractVisitor extends ASTVisitor {
 		return null;
 	}
 
-	protected Initializer getInitializer(ASTNode node) {
+	private Initializer getInitializer(ASTNode node) {
 		if (node.getParent() != null){
 			return node instanceof Initializer ? (Initializer)node : getInitializer(node.getParent());			
 		}

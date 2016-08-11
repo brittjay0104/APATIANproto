@@ -147,57 +147,50 @@ public class ExceptionsVisitor extends AbstractVisitor {
 	}
 	
 	public boolean visit(ThrowStatement node){
-		MethodDeclaration md = getMethodDeclaration(node);
 		
-		if (md != null) {
-			String src = findSourceForNode(node);
-			String throwStatement = md.getName().toString() + CHECK_SEPERATOR + src;
-			throwStatements.add(throwStatement);
-			
-			System.out.println("throw statement found!");
-			
-			for (String e : unchecked){
-				if (src.contains(e)){
-					uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + throwStatement);
-				}
+		String sig = super.signatureOfParent(node);
+
+		String src = findSourceForNode(node);
+		String throwStatement = sig + CHECK_SEPERATOR + src;
+		throwStatements.add(throwStatement);
+		
+		System.out.println("throw statement found!");
+		
+		for (String e : unchecked){
+			if (src.contains(e)){
+				uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + throwStatement);
 			}
-			
-			if (!unchecked.contains(throwStatement)){
-				checkedExceptions.add("checked" + CHECK_SEPERATOR + throwStatement);
-			}
-			
 		}
+		
+		if (!unchecked.contains(throwStatement)){
+			checkedExceptions.add("checked" + CHECK_SEPERATOR + throwStatement);
+		}
+			
 		return true;
 	}
 	
 	
 	public boolean visit(MethodDeclaration node) {
-		//checking for thrown exceptions
 		
-		MethodDeclaration md = getMethodDeclaration(node);
-		
-		if(md != null){
-			List thrownExceptions = node.thrownExceptions();
-			if(!thrownExceptions.isEmpty()){
+		List thrownExceptions = node.thrownExceptions();
+		if(!thrownExceptions.isEmpty()){
+			
+			for (Object except : thrownExceptions){
+				String exception = except.toString();
 				
-				for (Object except : thrownExceptions){
-					String exception = except.toString();
-					
-					//Store more information here??
-					String src = findSourceForNode(node);
-					String source = src.substring(0, src.indexOf("{"));
-					String throwsMethod = md.getName().toString() + CHECK_SEPERATOR + source.trim();
-					throwsMethods.add(throwsMethod);
-					
-					System.out.println("thrown exception found!");	
-					
-					if (unchecked.contains(exception)){
-						uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + throwsMethod);
-					} else {
-						checkedExceptions.add("checked" + CHECK_SEPERATOR + throwsMethod);
-					}
+				//Store more information here??
+				String src = findSourceForNode(node);
+				String source = src.substring(0, src.indexOf("{"));
+				String throwsMethod = node.getName().toString() + CHECK_SEPERATOR + source.trim();
+				throwsMethods.add(throwsMethod);
+				
+				System.out.println("thrown exception found!");	
+				
+				if (unchecked.contains(exception)){
+					uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + throwsMethod);
+				} else {
+					checkedExceptions.add("checked" + CHECK_SEPERATOR + throwsMethod);
 				}
-				
 			}
 			
 		}
@@ -206,9 +199,6 @@ public class ExceptionsVisitor extends AbstractVisitor {
 	
 	
 	public boolean visit(TypeDeclaration node) {
-		//System.out.print(node.getName().toString());
-		
-		MethodDeclaration md = getMethodDeclaration(node);
 		
 		// check if superclass is an exception
 		if (node.getSuperclassType() != null && node.getSuperclassType().toString().contains("Exception")) {
@@ -238,7 +228,6 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		return true;
 	}
 	
-	
 	private boolean descendsFromException(ITypeBinding node){
 		if (node == null) {
 			return false;
@@ -253,24 +242,5 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		else {
 			return descendsFromException(node.getSuperclass());
 		}
-	}
-	
-	private String signatureOfParent(ASTNode node) {
-		Initializer init = getInitializer(node);
-		MethodDeclaration md = getMethodDeclaration(node);
-		
-		String signature;
-		if (md != null){
-			signature = md.getName().toString();
-		}else if (init != null){
-			StringBuffer sb = new StringBuffer();
-			for (Object i : init.modifiers()){
-				sb.append(findSourceForNode((ASTNode)i));
-			}
-			signature = sb.toString();
-		}else{
-			throw new RuntimeException("Unknown container for catch clause!");
-		}
-		return signature;
 	}
 }
