@@ -6,14 +6,8 @@
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.List;
 
 public class Multicatch_8 {
-	public List<String> tryStatements;
-	public List<String> throwStatements;
-	public List<String> multiCatchBlocks;
-	public List<String> checkedExceptions;
-	
 	void m(){
 		try{
 			if(1==1)
@@ -22,10 +16,5 @@ public class Multicatch_8 {
 		}catch(IOException | SQLException e){
 			
 		}
-	}
-	
-	public static void populateField()
-	{
-		
 	}
 }
