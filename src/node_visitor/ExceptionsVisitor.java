@@ -172,27 +172,23 @@ public class ExceptionsVisitor extends AbstractVisitor {
 	
 	public boolean visit(MethodDeclaration node) {
 		
-		List thrownExceptions = node.thrownExceptions();
-		if(!thrownExceptions.isEmpty()){
+		for (Object except : node.thrownExceptions()){
+		
+			String exception = except.toString();
 			
-			for (Object except : thrownExceptions){
-				String exception = except.toString();
-				
-				//Store more information here??
-				String src = findSourceForNode(node);
-				String source = src.substring(0, src.indexOf("{"));
-				String throwsMethod = node.getName().toString() + CHECK_SEPERATOR + source.trim();
-				throwsMethods.add(throwsMethod);
-				
-				System.out.println("thrown exception found!");	
-				
-				if (unchecked.contains(exception)){
-					uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + throwsMethod);
-				} else {
-					checkedExceptions.add("checked" + CHECK_SEPERATOR + throwsMethod);
-				}
+			//Store more information here??
+			String src = findSourceForNode(node);
+			String source = src.substring(0, src.indexOf("{"));
+			String throwsMethod = node.getName().toString() + CHECK_SEPERATOR + source.trim();
+			throwsMethods.add(throwsMethod);
+			
+			System.out.println("thrown exception found!");	
+			
+			if (unchecked.contains(exception)){
+				uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + throwsMethod);
+			} else {
+				checkedExceptions.add("checked" + CHECK_SEPERATOR + throwsMethod);
 			}
-			
 		}
 		return true;
 	}
