@@ -1,11 +1,8 @@
-// try - if (1==1) throw new IOException();
-// throw - throw new IOException();
-// throw - throw new SQLException();
-// multicatch - catch (IOException | SQLException e)
-// checked - throw new IOException();
-// checked - throw new SQLException();
-// checked - catch(IOException | SQLException e) 
-// checked - scatch(IOException | SQLException e)
+// tryStatements = 1
+// catchBlocks = 1
+// checkedExceptions = 4
+// multiCatchBlocks = 1
+// throwStatements = 2
 
 import java.io.IOException;
 import java.sql.SQLException;

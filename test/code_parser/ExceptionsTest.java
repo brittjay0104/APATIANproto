@@ -6,21 +6,16 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.Reader;
-import java.sql.SQLException;
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.LinkedList;
 import java.util.List;
 
 import org.eclipse.core.runtime.NullProgressMonitor;
 import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTParser;
 import org.eclipse.jdt.core.dom.CompilationUnit;
-
-import junit.framework.*;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -70,12 +65,35 @@ public class ExceptionsTest extends TestCase{
 		ExceptionsVisitor visitor = new ExceptionsVisitor(file);
 		cu.accept(visitor);
 
-		int exp = getExpectedOutput().size();
-		int actual = visitor.fullFindings().size();
-		assertEquals(getExpectedResult(),visitor.findings());
-		assertEquals(getExpectedOutput().size(), visitor.fullFindings().size());
-		// TODO this need to be updated - compare findings one by one (loop)?
+		for(String exp : getExpectedOutput()){
+			String[] split = exp.split(" ");
+
+			int actual = actual(visitor, split);
+		    
+			assertEquals("Expected: " + exp,Integer.parseInt(split[3]),actual);
+		}
 	
+	}
+
+	private int actual(ExceptionsVisitor visitor, String[] split) {
+		Class<?> c = visitor.getClass();
+
+		Field f = null;
+		try {
+			f = c.getDeclaredField(split[1]);
+		} catch (NoSuchFieldException _) {
+			throw new RuntimeException("Test framework couldn't find field " + split[1]);
+		} catch (SecurityException _){
+			fail("Test framework couldn't access field " + split[0]);
+		}
+		int actualResult = -1;
+		try {
+			f.setAccessible(true);
+			actualResult = ((List<String>) f.get(visitor)).size();
+		} catch (IllegalArgumentException | IllegalAccessException _) {
+			throw new RuntimeException("Test framework couldn't access field " + split[0]);
+		}
+		return actualResult;
 	}
 	
 	/**

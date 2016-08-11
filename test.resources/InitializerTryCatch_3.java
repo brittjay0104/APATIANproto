@@ -1,6 +1,6 @@
-// try - BufferedReader br = new BufferedReader(null);
-// catch - catch(Exception e)
-// checked - catch(Exception e)
+// tryStatements = 1
+// catchBlocks = 1
+// checkedExceptions = 1
 
 import java.io.BufferedReader;
 

@@ -1,9 +1,7 @@
-// try - test = br.readLine();
-// try with resource - try (BufferedReader br = new BufferedReader(new FileReader(new File("file.txt"))))
-// catch - catch (FileNotFoundException e)
-// catch - catch (IOException e)
-// checked - catch (FileNotFoundException e) 
-// checked - catch (IOException e)
+// tryWithResources = 1
+// catchBlocks = 2
+// checkedExceptions = 2
+
 
 import java.io.BufferedReader;
 import java.io.File;
