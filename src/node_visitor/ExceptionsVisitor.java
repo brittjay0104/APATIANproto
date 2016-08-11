@@ -47,154 +47,64 @@ public class ExceptionsVisitor extends AbstractVisitor {
 	 */
 	public boolean visit(TryStatement node) {
 		
-		// check for nested try statements??
-		if (node.getParent() instanceof TryStatement){
-			
-		}
-
-		Initializer init = getInitializer(node);
-		MethodDeclaration md = getMethodDeclaration(node);
+		String sig = signatureOfParent(node);		
+		String src = findSourceForNode(node);
 		
-		// check for try/catch in static block		
-		if (init != null){
-			List inits = init.modifiers();
-			StringBuffer sb = new StringBuffer();
-			for (Object i : inits){
-				sb.append(i.toString());
+		List statements = node.getBody().statements();
+		String tryLine = "";
+		// has nested try
+		for (Object statement : statements){
+			if (statement != null){
+				String stmt = statement.toString();
+				tryLine = stmt.substring(0, stmt.indexOf("\n"));
+				break;
 			}
-			
-			String initializer = sb.toString();
-			
-			String src = findSourceForNode(node);
-			
-			List statements = node.getBody().statements();
-			String tryLine = "";
-			// has nested try
-			for (Object statement : statements){
-				if (statement != null){
-					String stmt = statement.toString();
-					tryLine = stmt.substring(0, stmt.indexOf("\n"));
-					break;
-				}
-			}
-			
-			if (tryLine != "" && tryLine != "\n" && tryLine != "\t"){
-				String tryBlock = initializer + CHECK_SEPERATOR + tryLine;
-				tryStatements.add(tryBlock);				
-			}
-			
-			// Get resources for try-with-resources statement
-			if (node.resources() != null){
-				for (Object resource : node.resources()){
-					String source = src.substring(0, src.indexOf("{"));
-					if (source.contains("\n")){
-						source = source.substring(0, source.indexOf("\n"));
-					}
-					String tryResource = initializer + CHECK_SEPERATOR + source.trim() + CHECK_SEPERATOR + resource.toString();
-					tryWithResources.add(tryResource);
-					System.out.println("try with resource found!");
-				}
-			}
-			
-			// Check for finally block
-			if (node.getFinally() != null){
-				String finallyBlock = node.getFinally().toString();
-				String[] lines = finallyBlock.split("\n");
-				String line = "";
-				
-				if (lines[0].trim().equals("{") && (!lines[1].trim().equals("\n") || !lines[1].trim().equals("{"))){
-					line = lines[1].trim();					
-				} else if (!lines[0].trim().equals("{")) {
-					line = lines[0].trim();															
-				} else {
-					
-				} 
-				if (!line.equals("")){
-					finallyBlocks.add(initializer + CHECK_SEPERATOR + line.trim());
-					System.out.println("finally block found!");					
-				}
-			}
-			
-			//System.out.println("try statement found!");
 		}
 		
-		if (md != null) {
-			
-			String methodName = md.getName().toString();
-			String src = findSourceForNode(node);
-			
-			List statements = node.getBody().statements();
-			String tryLine = "";
-			// has nested try
-			for (Object statement : statements){
-				if (statement != null){
-					String stmt = statement.toString();
-					tryLine = stmt.substring(0, stmt.indexOf("\n"));
-					break;
-				}
-			}
-			
-			if (tryLine != "" && tryLine != "\n" && tryLine != "\t"){
-				String tryBlock = methodName + CHECK_SEPERATOR + tryLine;
-				tryStatements.add(tryBlock);					
-			}
-			
-			
-			// Get resources for try-with-resources statement
-			if (node.resources() != null){
-				for (Object resource : node.resources()){
-					String source = src.substring(0, src.indexOf("{"));
-					if (source.contains("\n")){
-						source = source.substring(0, source.indexOf("\n"));
-					}
-					String tryResource = methodName + CHECK_SEPERATOR + source.trim() + CHECK_SEPERATOR + resource.toString();
-					tryWithResources.add(tryResource);
-					System.out.println("try with resource found!");
-				}
-			}
-			
-			// Check for finally block
-			if (node.getFinally() != null){
-				String finallyBlock = node.getFinally().toString();
-				String[] lines = finallyBlock.split("\n");
-				String line = "";
-				
-				if (lines[0].trim().equals("{") && (!lines[1].trim().equals("\n") || !lines[1].trim().equals("{"))){
-					line = lines[1].trim();					
-				} else if (!lines[0].trim().equals("{")) {
-					line = lines[0].trim();															
-				} else {
-					
-				}
-				if (!line.equals("")){
-					finallyBlocks.add(methodName + CHECK_SEPERATOR + line.trim());
-					System.out.println("finally block found!");					
-				}
-			}
-			
+		if (tryLine != "" && tryLine != "\n" && tryLine != "\t"){
+			String tryBlock = sig + CHECK_SEPERATOR + tryLine;
+			tryStatements.add(tryBlock);
 			System.out.println("try statement found!");
 		}
+		
+		
+		// Get resources for try-with-resources statement
+		if (node.resources() != null){
+			for (Object resource : node.resources()){
+				String source = src.substring(0, src.indexOf("{"));
+				if (source.contains("\n")){
+					source = source.substring(0, source.indexOf("\n"));
+				}
+				String tryResource = sig + CHECK_SEPERATOR + source.trim() + CHECK_SEPERATOR + resource.toString();
+				tryWithResources.add(tryResource);
+				System.out.println("try with resource found!");
+			}
+		}
+		
+		// Check for finally block
+		if (node.getFinally() != null){
+			String finallyBlock = node.getFinally().toString();
+			String[] lines = finallyBlock.split("\n");
+			String line = "";
+			
+			if (lines[0].trim().equals("{") && (!lines[1].trim().equals("\n") || !lines[1].trim().equals("{"))){
+				line = lines[1].trim();					
+			} else if (!lines[0].trim().equals("{")) {
+				line = lines[0].trim();															
+			} else {
+				
+			}
+			if (!line.equals("")){
+				finallyBlocks.add(sig + CHECK_SEPERATOR + line.trim());
+				System.out.println("finally block found!");					
+			}
+		}
+		
 		return true;
 	}
 
-
-
 	public boolean visit (CatchClause node){
-		Initializer init = getInitializer(node);
-		MethodDeclaration md = getMethodDeclaration(node);
-		
-		String signature;
-		if (md != null){
-			signature = md.getName().toString();
-		}else if (init != null){
-			StringBuffer sb = new StringBuffer();
-			for (Object i : init.modifiers()){
-				sb.append(findSourceForNode((ASTNode)i));
-			}
-			signature = sb.toString();
-		}else{
-			throw new RuntimeException("Unknown container for catch clause!");
-		}
+		String signature = signatureOfParent(node);
 		
 		String except = findSourceForNode(node.getException()).trim();
 		String exception = except.substring(0, except.indexOf(" "));
@@ -343,5 +253,24 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		else {
 			return descendsFromException(node.getSuperclass());
 		}
+	}
+	
+	private String signatureOfParent(ASTNode node) {
+		Initializer init = getInitializer(node);
+		MethodDeclaration md = getMethodDeclaration(node);
+		
+		String signature;
+		if (md != null){
+			signature = md.getName().toString();
+		}else if (init != null){
+			StringBuffer sb = new StringBuffer();
+			for (Object i : init.modifiers()){
+				sb.append(findSourceForNode((ASTNode)i));
+			}
+			signature = sb.toString();
+		}else{
+			throw new RuntimeException("Unknown container for catch clause!");
+		}
+		return signature;
 	}
 }
