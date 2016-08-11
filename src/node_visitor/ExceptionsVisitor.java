@@ -47,33 +47,26 @@ public class ExceptionsVisitor extends AbstractVisitor {
 	public boolean visit(TryStatement node) {
 		
 		String sig = signatureOfParent(node);		
-		String src = findSourceForNode(node);
-		
-		List statements = node.getBody().statements();
-		String tryLine = "";
-		// has nested try
-		for (Object statement : statements){
-			if (statement != null){
+		for (Object statement : node.getBody().statements()){
 				String stmt = statement.toString();
-				tryLine = stmt.substring(0, stmt.indexOf("\n"));
+				String tryLine = stmt.substring(0, stmt.indexOf("\n"));
+				if (tryLine != "" && tryLine != "\n" && tryLine != "\t"){
+					String tryBlock = sig + CHECK_SEPERATOR + tryLine;
+					tryStatements.add(tryBlock);
+					System.out.println("try statement found!");
+				}
 				break;
-			}
-		}
-		
-		if (tryLine != "" && tryLine != "\n" && tryLine != "\t"){
-			String tryBlock = sig + CHECK_SEPERATOR + tryLine;
-			tryStatements.add(tryBlock);
-			System.out.println("try statement found!");
 		}
 		
 		
 		// Get resources for try-with-resources statement
+		String src = findSourceForNode(node);
+		String source = src.substring(0, src.indexOf("{"));
+		if (source.contains("\n")){
+			source = source.substring(0, source.indexOf("\n"));
+		}
 		if (node.resources() != null){
 			for (Object resource : node.resources()){
-				String source = src.substring(0, src.indexOf("{"));
-				if (source.contains("\n")){
-					source = source.substring(0, source.indexOf("\n"));
-				}
 				String tryResource = sig + CHECK_SEPERATOR + source.trim() + CHECK_SEPERATOR + resource.toString();
 				tryWithResources.add(tryResource);
 				System.out.println("try with resource found!");
