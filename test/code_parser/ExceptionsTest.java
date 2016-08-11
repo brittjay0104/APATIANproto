@@ -24,6 +24,7 @@ import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
 
 import junit.framework.TestCase;
+import node_visitor.AbstractVisitor;
 import node_visitor.ExceptionsVisitor;
 
 @RunWith(Parameterized.class)
@@ -62,7 +63,7 @@ public class ExceptionsTest extends TestCase{
  
 		ModelSourceFile file = new ModelSourceFile(inputFile);
 		file.setSource(result);
-		ExceptionsVisitor visitor = new ExceptionsVisitor(file);
+		AbstractVisitor visitor = new ExceptionsVisitor(file);
 		cu.accept(visitor);
 
 		for(String exp : getExpectedOutput()){
@@ -75,7 +76,7 @@ public class ExceptionsTest extends TestCase{
 	
 	}
 
-	private int actual(ExceptionsVisitor visitor, String[] split) {
+	private int actual(AbstractVisitor visitor, String[] split) {
 		Class<?> c = visitor.getClass();
 
 		Field f = null;

@@ -1,14 +1,11 @@
 package node_visitor;
 
-
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Pattern;
 
 import org.eclipse.jdt.core.dom.ASTNode;
-import org.eclipse.jdt.core.dom.ASTVisitor;
 import org.eclipse.jdt.core.dom.CatchClause;
 import org.eclipse.jdt.core.dom.ITypeBinding;
 import org.eclipse.jdt.core.dom.Initializer;
@@ -19,9 +16,7 @@ import org.eclipse.jdt.core.dom.TypeDeclaration;
 
 import code_parser.ModelSourceFile;
 
-
-
-public class ExceptionsVisitor extends ASTVisitor {
+public class ExceptionsVisitor extends AbstractVisitor {
 	// Methods that declare "throws"
 	public List<String> throwsMethods = new ArrayList<String>();
 	
@@ -61,63 +56,8 @@ public class ExceptionsVisitor extends ASTVisitor {
 			, "RejectedExecutionException", "RuntimeException", "SecurityException", "SystemException", "TypeConstraintException", "TypeNotPresentException", "UndeclaredThrowableException", "UnknownEntityException", "UnmodifiableSetException", "UnsupportedOperationException"
 			, "WebServiceException", "WrongMethodTypeException");
 	
-	
-	// The source file
-	// Note: This seems to be present in all "Visitor" classes in this package,
-	//   so it probably should be pulled into an abstract parent class
-	// TODO: Pull into abstract parent class
-	private char[] source;
-	
-	// Some separator character for printing
-	// Note: This seems to be present in many "Visitor" classes in this package,
-	//   so it probably should be pulled into an abstract parent class
-	// TODO: Pull into abstract parent class
-	public static final char CHECK_SEPERATOR = Character.MAX_VALUE;
-	
-	
-	
-	/**
-	 * Constructor
-	 * @param file
-	 */
 	public ExceptionsVisitor(ModelSourceFile file) {
-		this.source = file.getSource();
-	}
-	
-	
-	
-	// Note: This seems to be present in all "Visitor" classes in this package,
-	//   so it probably should be pulled into an abstract parent class
-	// TODO: Pull into abstract parent  class
-	private String findSourceForNode(ASTNode node) {
-		try {
-			return new String(Arrays.copyOfRange(source, node.getStartPosition(), node.getStartPosition() + node.getLength()));
-		}
-		catch (Exception e) {
-			System.err.println("OMG PROBLEM MAKING SOURCE FOR "+node);
-			return "";
-		}
-	}
-	
-	
-	
-	// Note: This seems to be present in all "Visitor" classes in this package,
-	//   so it probably should be pulled into an abstract parent class
-	// TODO: Pull into abstract parent class
-	public MethodDeclaration getMethodDeclaration(ASTNode node){
-		if (node.getParent() != null){
-			return node instanceof MethodDeclaration ? (MethodDeclaration)node : getMethodDeclaration(node.getParent());			
-		}
-		
-		return null;
-	}
-	
-	private Initializer getInitializer(ASTNode node) {
-		if (node.getParent() != null){
-			return node instanceof Initializer ? (Initializer)node : getInitializer(node.getParent());			
-		}
-		
-		return null;
+		super(file);
 	}
 	
 	
