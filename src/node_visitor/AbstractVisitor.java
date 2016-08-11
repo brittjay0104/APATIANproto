@@ -11,6 +11,7 @@ import code_parser.ModelSourceFile;
 
 public abstract class AbstractVisitor extends ASTVisitor {
 
+	//TODO only one subclass currently; should have more
 	private char[] source;
 	public static final char CHECK_SEPERATOR = Character.MAX_VALUE;
 

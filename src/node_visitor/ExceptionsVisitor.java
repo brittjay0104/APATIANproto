@@ -18,32 +18,16 @@ import code_parser.ModelSourceFile;
 
 public class ExceptionsVisitor extends AbstractVisitor {
 	// Methods that declare "throws"
-	public List<String> throwsMethods = new ArrayList<String>();
-	
-	// Try statements
-	public List<String> tryStatements = new ArrayList<String>();
-		
-	// Classes that extend an exception
-	public List<String> tryWithResources = new ArrayList<String>();
-		
-	// Catch blocks
-	public List<String> catchBlocks = new ArrayList<String>();
-		
-	// Multi-catch blocks
-	public List<String> multiCatchBlocks = new ArrayList<String>();
-			
-	// Finally blocks
-	public List<String> finallyBlocks = new ArrayList<String>();
-	
-	// Throw statements (TBD)
-	public List<String> throwStatements = new ArrayList<String>();
-	
-	// Classes that extend an exception
-	public List<String> exceptionClasses = new ArrayList<String>();
-	
-	// Checked and Unchecked Exceptions
-	public List<String> uncheckedExceptions = new ArrayList<String>();
-	public List<String> checkedExceptions = new ArrayList<String>();
+	public List<String> throwsMethods = new ArrayList<>(),
+						tryStatements = new ArrayList<>(),
+						tryWithResources = new ArrayList<>(),
+						catchBlocks = new ArrayList<>(),
+						multiCatchBlocks = new ArrayList<>(),
+						finallyBlocks = new ArrayList<>(),
+						throwStatements = new ArrayList<>(),
+						exceptionClasses = new ArrayList<>(),
+						uncheckedExceptions = new ArrayList<>(),
+						checkedExceptions = new ArrayList<>();
 	
 	//all exceptions patterns
 	List<String> allExceptions = new ArrayList<String>();
