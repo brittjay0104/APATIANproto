@@ -34,28 +34,16 @@ public class ExceptionsVisitor extends ASTVisitor {
 	
 	// Try statements
 	List<String> tryStatements = new ArrayList<String>();
-	
-	// Static try statements
-	List<String> staticTryStatements = new ArrayList<String>();
-	
+		
 	// Classes that extend an exception
 	List<String> tryWithResources = new ArrayList<String>();
-	
-	// Static try with resources
-	List<String> staticTryWithResources = new ArrayList<String>();
-	
+		
 	// Catch blocks
 	List<String> catchBlocks = new ArrayList<String>();
-	
-	// Static catch blocks
-	List<String> staticCatchBlocks = new ArrayList<String>();
-	
+		
 	// Multi-catch blocks
 	List<String> multiCatchBlocks = new ArrayList<String>();
-		
-	// Static multi-catch blocks
-	List<String> staticMultiCatchBlocks = new ArrayList<String>();
-	
+			
 	// Finally blocks
 	List<String> finallyBlocks = new ArrayList<String>();
 
@@ -153,39 +141,19 @@ public class ExceptionsVisitor extends ASTVisitor {
 		return tryStatements;
 	}
 	
-	// Get static tryStatements
-	public List<String> getStaticTryStatements(){
-		return staticTryStatements;
-	}
-	
 	// Get try-with-resources statements
 	public List<String> getTryWithResourceStatements() {
 		return tryWithResources;
-	}
-	
-	// Get static try-with-resources statements
-	public List<String> getStaticTryWithResourceStatements() {
-		return staticTryWithResources;
 	}
 	
 	// Get catch blocks 
 	public List<String> getCatchBlocks(){
 		return catchBlocks;
 	}
-	
-	// Get static catch blocks 
-	public List<String> getStaticCatchBlocks(){
-		return staticCatchBlocks;
-	}
 
 	// Get multi catch blocks 
 	public List<String> getMultiCatchBlocks(){
 		return multiCatchBlocks;
-	}
-	
-	// Get static multi catch blocks 
-	public List<String> getStaticMultiCatchBlocks(){
-		return staticMultiCatchBlocks;
 	}
 	
 	// Get try-with-resources statements
@@ -255,7 +223,7 @@ public class ExceptionsVisitor extends ASTVisitor {
 			
 			if (tryLine != "" && tryLine != "\n" && tryLine != "\t"){
 				String tryBlock = initializer + CHECK_SEPERATOR + tryLine;
-				staticTryStatements.add(tryBlock);				
+				tryStatements.add(tryBlock);				
 			}
 			
 			// Get resources for try-with-resources statement
@@ -266,7 +234,7 @@ public class ExceptionsVisitor extends ASTVisitor {
 						source = source.substring(0, source.indexOf("\n"));
 					}
 					String tryResource = initializer + CHECK_SEPERATOR + source.trim() + CHECK_SEPERATOR + resource.toString();
-					staticTryWithResources.add(tryResource);
+					tryWithResources.add(tryResource);
 					System.out.println("try with resource found!");
 				}
 			}
@@ -373,7 +341,7 @@ public class ExceptionsVisitor extends ASTVisitor {
 			
 			String catchSrc = initializer + CHECK_SEPERATOR + catchLine.trim();
 			
-			staticCatchBlocks.add(catchSrc);
+			catchBlocks.add(catchSrc);
 			
 			if (except.contains("|")){
 				String[] exceptions = except.split(Pattern.quote("|"));
@@ -400,7 +368,7 @@ public class ExceptionsVisitor extends ASTVisitor {
 			}
 			
 			if (node.getException().getType().isUnionType()){
-				staticMultiCatchBlocks.add(catchSrc);
+				multiCatchBlocks.add(catchSrc);
 			}
 		}
 
@@ -555,83 +523,5 @@ public class ExceptionsVisitor extends ASTVisitor {
 		else {
 			return descendsFromException(node.getSuperclass());
 		}
-	}
-
-
-
-	/*
-	 * How many interesting things did you find?
-	 */
-	public int findings() {
-		return 	throwsMethods.size() + 
-				tryStatements.size() + 
-				tryWithResources.size() +
-				staticTryStatements.size() + 
-				staticTryWithResources.size() + 
-				catchBlocks.size() + 
-				staticCatchBlocks.size() + 
-				multiCatchBlocks.size() + 
-				staticMultiCatchBlocks.size() + 
-				finallyBlocks.size() + 
-				staticFinallyBlocks.size() + 
-				throwStatements.size() + 
-				exceptionClasses.size() + 
-				uncheckedExceptions.size() + 
-				checkedExceptions.size();
-	}
-	
-	/*
-	 * Did I find the right interesting things?
-	 */
-	public List<String> fullFindings(){
-		List<String> findings = new ArrayList<String>();
-		
-		if (throwsMethods != null){
-			findings.addAll(throwsMethods);
-		} 
-		if (tryStatements != null){
-			findings.addAll(tryStatements);
-		} 
-		if (tryWithResources != null){
-			findings.addAll(tryWithResources);
-		}
-		if (staticTryStatements != null){
-			findings.addAll(staticTryStatements);
-		} 
-		if (staticTryWithResources != null){
-			findings.addAll(staticTryWithResources);
-		}
-		if (catchBlocks != null){
-			findings.addAll(catchBlocks);
-		} 
-		if (staticCatchBlocks != null){
-			findings.addAll(staticCatchBlocks);
-		} 
-		if (multiCatchBlocks != null){
-			findings.addAll(multiCatchBlocks);
-		} 
-		if (staticMultiCatchBlocks != null){
-			findings.addAll(staticMultiCatchBlocks);
-		} 
-		if (finallyBlocks != null){
-			findings.addAll(finallyBlocks);
-		} 
-		if (staticFinallyBlocks != null){
-			findings.addAll(staticFinallyBlocks);
-		}
-		if (throwStatements != null){
-			findings.addAll(throwStatements);
-		} 
-		if (exceptionClasses != null){
-			findings.addAll(exceptionClasses);
-		}
-		if (uncheckedExceptions != null){
-			findings.addAll(uncheckedExceptions);
-		} 
-		if (checkedExceptions != null){
-			findings.addAll(checkedExceptions);
-		}
-		
-		return findings;
 	}
 }

@@ -1,7 +1,5 @@
 package code_parser;
 
-import static code_parser.ModelRepository.CHECK_SEPERATOR;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -13,17 +11,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import node_visitor.ExceptionsVisitor;
-import node_visitor.GenericsVisitor;
-import node_visitor.GenericsVisitor_2;
-import node_visitor.Log4JVisitor;
-import node_visitor.NODP;
-import node_visitor.NODP_Visitor;
-import node_visitor.NPE_Visitor;
-import node_visitor.NoNullCheckVisitor;
-import node_visitor.NullCheckVisitor;
-import node_visitor.StringMethodVisitor;
-
 import org.eclipse.core.resources.IFolder;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IProjectDescription;
@@ -34,13 +21,21 @@ import org.eclipse.jdt.core.ICompilationUnit;
 import org.eclipse.jdt.core.IJavaProject;
 import org.eclipse.jdt.core.IPackageFragment;
 import org.eclipse.jdt.core.IPackageFragmentRoot;
-import org.eclipse.jdt.core.IType;
 import org.eclipse.jdt.core.JavaCore;
 import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTParser;
 import org.eclipse.jdt.core.dom.CompilationUnit;
 
 import developer_creator.RunAnalysis;
+import node_visitor.ExceptionsVisitor;
+import node_visitor.GenericsVisitor_2;
+import node_visitor.Log4JVisitor;
+import node_visitor.NODP;
+import node_visitor.NODP_Visitor;
+import node_visitor.NPE_Visitor;
+import node_visitor.NoNullCheckVisitor;
+import node_visitor.NullCheckVisitor;
+import node_visitor.StringMethodVisitor;
 
 public class ModelParser {
 
@@ -335,13 +330,9 @@ public class ModelParser {
 		
 		List<String> throwsMethods = visitor.getThrowsMethods();
 		List<String> tryStatements = visitor.getTryStatements();
-		List<String> staticTryStatements = visitor.getStaticTryStatements();
 		List<String> catchBlocks = visitor.getCatchBlocks();
-		List<String> staticCatchBlocks = visitor.getStaticCatchBlocks();
 		List<String> multiCatchBlocks = visitor.getMultiCatchBlocks();
-		List<String> staticMultiCatchBlocks = visitor.getStaticMultiCatchBlocks();
 		List<String> tryWithResources = visitor.getTryWithResourceStatements();
-		List<String> staticTryWithResources = visitor.getStaticTryWithResourceStatements();
 		List<String> finallyBlocks = visitor.getFinallyBlock();
 		List<String> staticFinallyBlocks = visitor.getStaticFinallyBlock();
 		List<String> throwStatements = visitor.getThrowStatements();
@@ -362,19 +353,9 @@ public class ModelParser {
 			file.addTryStatement(tryStatement);
 		}
 		
-		for (String tryStatement : staticTryStatements){
-			//System.out.println("Try statement --> " + tryStatement);
-			file.addStaticTryStatement(tryStatement);
-		}
-		
 		for (String catchBlock : catchBlocks){
 			//System.out.println("Catch block --> " + catchBlock);
 			file.addCatchBlock(catchBlock);
-		}
-		
-		for (String catchBlock : staticCatchBlocks){
-			//System.out.println("Catch block --> " + catchBlock);
-			file.addStaticCatchBlock(catchBlock);
 		}
 		
 		for (String catchBlock : multiCatchBlocks){
@@ -382,19 +363,9 @@ public class ModelParser {
 			file.addMultiCatchBlock(catchBlock);
 		}
 		
-		for (String catchBlock : staticMultiCatchBlocks){
-			//System.out.println("Catch block --> " + catchBlock);
-			file.addStaticMultiCatchBlock(catchBlock);
-		}
-		
 		for (String tryWithResource : tryWithResources){
 			//System.out.println("Try with resource --> " + tryWithResource);
 			file.addTryWithResource(tryWithResource);
-		}
-		
-		for (String tryWithResource : staticTryWithResources){
-			//System.out.println("Try with resource --> " + tryWithResource);
-			file.addStaticTryWithResource(tryWithResource);
 		}
 		
 		for (String finallyBlock : finallyBlocks){
