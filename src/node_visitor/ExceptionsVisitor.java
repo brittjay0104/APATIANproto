@@ -1,6 +1,5 @@
 package node_visitor;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
@@ -30,11 +29,8 @@ public class ExceptionsVisitor extends AbstractVisitor {
 						uncheckedExceptions = new LinkedList<>(),
 						checkedExceptions = new LinkedList<>();
 	
-	//all exceptions patterns
-	List<String> allExceptions = new ArrayList<String>();
-	
 	// List of all unchecked exceptions
-	List<String> unchecked = Arrays.asList("AnnotationTypeMismatchException", "ArithmeticException", "ArrayStoreException", "BufferOverflowException", "BufferUnderflowException", "CannotRedoException", "CannotUndoException", "ClassCastException", "CMMException"
+	private List<String> unchecked = Arrays.asList("AnnotationTypeMismatchException", "ArithmeticException", "ArrayStoreException", "BufferOverflowException", "BufferUnderflowException", "CannotRedoException", "CannotUndoException", "ClassCastException", "CMMException"
 			, "ConcurrentModificationException", "DataBindingException", "DOMException", "EmptyStackException", "EnumConstantNotPresentException", "EventException", "FileSystemAlreadyExistsException", "FileSystemNotFoundException", "IllegalArgumentException"
 			, "IllegalMonitorStateException", "IllegalPathStateException", "IllegalStateException", "IllformedLocaleException", "ImagingOpException", "IncompleteAnnotationException", "IndexOutOfBoundsException", "JMRuntimeException", "LSException", "MalformedParameterizedTypeException"
 			, "MirroredTypesException", "MissingResourceException", "NegativeArraySizeException", "NoSuchElementException", "NoSuchMechanismException", "NullPointerException", "ProfileDataException", "ProviderException", "ProviderNotFoundException", "RasterFormatException"
