@@ -2,6 +2,7 @@ package node_visitor;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.regex.Pattern;
 
@@ -18,16 +19,16 @@ import code_parser.ModelSourceFile;
 
 public class ExceptionsVisitor extends AbstractVisitor {
 	// Methods that declare "throws"
-	public List<String> throwsMethods = new ArrayList<>(),
-						tryStatements = new ArrayList<>(),
-						tryWithResources = new ArrayList<>(),
-						catchBlocks = new ArrayList<>(),
-						multiCatchBlocks = new ArrayList<>(),
-						finallyBlocks = new ArrayList<>(),
-						throwStatements = new ArrayList<>(),
-						exceptionClasses = new ArrayList<>(),
-						uncheckedExceptions = new ArrayList<>(),
-						checkedExceptions = new ArrayList<>();
+	public List<String> throwsMethods = new LinkedList<>(),
+						tryStatements = new LinkedList<>(),
+						tryWithResources = new LinkedList<>(),
+						catchBlocks = new LinkedList<>(),
+						multiCatchBlocks = new LinkedList<>(),
+						finallyBlocks = new LinkedList<>(),
+						throwStatements = new LinkedList<>(),
+						exceptionClasses = new LinkedList<>(),
+						uncheckedExceptions = new LinkedList<>(),
+						checkedExceptions = new LinkedList<>();
 	
 	//all exceptions patterns
 	List<String> allExceptions = new ArrayList<String>();
