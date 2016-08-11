@@ -1,4 +1,3 @@
-// throwsMethods - public void useException() throws NoSuchElementException
 // throwStatements - throw new NoSuchElementException();
 // checkedExceptions - throw new NoSuchElementException();
 // uncheckedExceptions - public void useException() throws NoSuchElementException 

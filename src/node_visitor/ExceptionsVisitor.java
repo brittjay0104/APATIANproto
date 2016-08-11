@@ -8,6 +8,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.regex.Pattern;
 
+import javax.lang.model.type.UnionType;
+
 import org.eclipse.core.runtime.NullProgressMonitor;
 import org.eclipse.jdt.core.IType;
 import org.eclipse.jdt.core.ITypeHierarchy;
@@ -20,8 +22,10 @@ import org.eclipse.jdt.core.dom.ThrowStatement;
 import org.eclipse.jdt.core.dom.TryStatement;
 import org.eclipse.jdt.core.dom.Type;
 import org.eclipse.jdt.core.dom.TypeDeclaration;
+import org.eclipse.jdt.core.dom.VariableDeclaration;
 import org.eclipse.jdt.core.dom.ITypeBinding;
 import org.eclipse.jdt.core.dom.IVariableBinding;
+import org.eclipse.jdt.core.dom.ImportDeclaration;
 import org.eclipse.jdt.core.dom.Initializer;
 
 import code_parser.ModelSourceFile;
@@ -76,13 +80,16 @@ public class ExceptionsVisitor extends ASTVisitor {
 	List<String> allExceptions = new ArrayList<String>();
 	
 	// List of all unchecked exceptions
-	List<String> unchecked = Arrays.asList("AnnotationTypeMismatchException", "ArithmeticException", "ArrayStoreException", "BufferOverflowException", "BufferUnderflowException", "CannotRedoException", "CannotUndoException", "ClassCastException", "CMMException"
-			, "ConcurrentModificationException", "DataBindingException", "DOMException", "EmptyStackException", "EnumConstantNotPresentException", "EventException", "FileSystemAlreadyExistsException", "FileSystemNotFoundException", "IllegalArgumentException"
-			, "IllegalMonitorStateException", "IllegalPathStateException", "IllegalStateException", "IllformedLocaleException", "ImagingOpException", "IncompleteAnnotationException", "IndexOutOfBoundsException", "JMRuntimeException", "LSException", "MalformedParameterizedTypeException"
-			, "MirroredTypesException", "MissingResourceException", "NegativeArraySizeException", "NoSuchElementException", "NoSuchMechanismException", "NullPointerException", "ProfileDataException", "ProviderException", "ProviderNotFoundException", "RasterFormatException"
-			, "RejectedExecutionException", "RuntimeException", "SecurityException", "SystemException", "TypeConstraintException", "TypeNotPresentException", "UndeclaredThrowableException", "UnknownEntityException", "UnmodifiableSetException", "UnsupportedOperationException"
-			, "WebServiceException", "WrongMethodTypeException");
+	List<String> unchecked = Arrays.asList("java.lang.annotation.AnnotationTypeMismatchException", "java.lang.ArithmeticException", "java.lang.ArrayStoreException", "java.nio.BufferOverflowException", "java.nio.BufferUnderflowException", "javax.swing.undo.CannotRedoException", 
+			"javax.swing.undo.CannotUndoException", "java.lang.ClassCastException", "java.awt.color.CMMException", "java.util.ConcurrentModificationException", "javax.xml.bind.DataBindingException", "org.w3c.dom.DOMException", "java.util.EmptyStackException", 
+			"java.lang.EnumConstantNotPresentException", "org.w3c.dom.events.EventException", "java.nio.file.FileSystemAlreadyExistsException", "java.nio.file.FileSystemNotFoundException", "java.lang.IllegalArgumentException", "java.lang.IllegalMonitorStateException", 
+			"java.awt.geom.IllegalPathStateException", "java.lang.IllegalStateException", "java.util.IllformedLocaleException", "java.awt.image.ImagingOpException", "java.lang.annotation.IncompleteAnnotationException", "java.lang.IndexOutOfBoundsException", 
+			"javax.management.JMRuntimeException", "org.w3c.dom.ls.LSException", "java.lang.reflect.MalformedParameterizedTypeException", "javax.lang.model.type.MirroredTypesException", "java.util.MissingResourceException", "java.lang.NegativeArraySizeException", 
+			"java.util.NoSuchElementException", "javax.xml.crypto.NoSuchMechanismException", "java.lang.NullPointerException", "java.awt.color.ProfileDataException", "java.security.ProviderException", "java.nio.file.ProviderNotFoundException", "java.awt.image.RasterFormatException", 
+			"java.util.concurrent.RejectedExecutionException", "java.lang.RuntimeException", "java.lang.SecurityException", "org.omg.CORBA.SystemException", "javax.xml.bind.TypeConstraintException", "java.lang.TypeNotPresentException", "java.lang.reflect.UndeclaredThrowableException", 
+			"javax.lang.model.UnknownEntityException", "javax.print.attribute.UnmodifiableSetException", "java.lang.UnsupportedOperationException", "javax.xml.ws.WebServiceException", "java.lang.invoke.WrongMethodTypeException");
 	
+	List<String> importDeclarations = new ArrayList<String>();
 	
 	// The source file
 	// Note: This seems to be present in all "Visitor" classes in this package,
@@ -140,6 +147,14 @@ public class ExceptionsVisitor extends ASTVisitor {
 		}
 		
 		return null;
+	}
+	
+	public boolean visit(ImportDeclaration node){
+		
+		String importStatement = node.getName().getFullyQualifiedName();
+		importDeclarations.add(importStatement);
+		
+		return true;
 	}
 	
 	
@@ -375,31 +390,87 @@ public class ExceptionsVisitor extends ASTVisitor {
 			
 			staticCatchBlocks.add(catchSrc);
 			
-			if (except.contains("|")){
-				String[] exceptions = except.split(Pattern.quote("|"));
-				
-				for (String s: exceptions){
-					for (String e : uncheckedExceptions){
-						if (s.contains(e)){
-							uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + catchSrc);
-						}
-					}
-					
-					for (String e : checkedExceptions){
-						if (s.contains(e)){
-							checkedExceptions.add("checked" + CHECK_SEPERATOR + catchSrc);
+			// check import statements
+			boolean found = false;
+			// check import statements (java.lang or whatever if name matches)
+			if (importDeclarations != null){
+				for (String i : importDeclarations){
+					// if the exception is found in one of the import statements, put in proper list based on that
+					if (i.contains(exception)){
+						if (unchecked.contains(i)){
+							uncheckedExceptions.add(catchSrc + CHECK_SEPERATOR + exception);
+							found = true;
+						} else {
+							checkedExceptions.add(catchSrc + CHECK_SEPERATOR + exception);
+							found = true;
 						}
 					}
 				}
+			} 
+			//check for type declarations in this file
+			if (exceptionClasses != null){
+				for (String c : exceptionClasses){
+					// if the exception was declared in the file
+					if(c.contains(exception)){
+						if (unchecked.contains(exception)){
+							uncheckedExceptions.add(catchSrc + CHECK_SEPERATOR + exception);
+							found = true;
+						} else {
+							checkedExceptions.add(catchSrc + CHECK_SEPERATOR + exception);
+							found = true;
+						}
+					}
+				}
+				
+			}
+			if (!found){
+				uncheckedExceptions.add(catchSrc + CHECK_SEPERATOR + exception);
 			}
 			
-			if (unchecked.contains(exception)){
-				uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + catchSrc);
-			} else {
-				checkedExceptions.add("checked" + CHECK_SEPERATOR + catchSrc);
-			}
-			
+			// get exceptions in multi-catch			
 			if (node.getException().getType().isUnionType()){
+				String e = node.getException().getType().toString();
+				
+				String[] exceptions = e.split(Pattern.quote("|"));
+				
+				for (String s: exceptions){
+					found = false;
+					// check import statements (java.lang or whatever if name matches)
+					if (importDeclarations != null){
+						for (String i : importDeclarations){
+							// if the exception is found in one of the import statements, put in proper list based on that
+							if (i.contains(s)){
+								if (unchecked.contains(i)){
+									uncheckedExceptions.add(catchSrc + CHECK_SEPERATOR + s);
+									found = true;
+								} else {
+									checkedExceptions.add(catchSrc + CHECK_SEPERATOR + s);
+									found = true;
+								}
+							}
+						}
+					} 
+					//check for type declarations in this file
+					if (exceptionClasses != null){
+						for (String c : exceptionClasses){
+							// if the exception was declared in the file
+							if(c.contains(s)){
+								if (unchecked.contains(s)){
+									uncheckedExceptions.add(catchSrc + CHECK_SEPERATOR + s);
+									found = true;
+								} else {
+									checkedExceptions.add(catchSrc + CHECK_SEPERATOR + s);
+									found = true;
+								}
+							}
+						}
+						
+					} 
+					if (!found){
+						// the exception is defined elsewhere or is java.lang; assume unchecked
+						uncheckedExceptions.add(catchSrc + CHECK_SEPERATOR + s);
+					}
+				}
 				staticMultiCatchBlocks.add(catchSrc);
 			}
 		}
@@ -415,33 +486,89 @@ public class ExceptionsVisitor extends ASTVisitor {
 			
 			catchBlocks.add(catchSrc);
 			
-			if (except.contains("|")){
-				String[] exceptions = except.split(Pattern.quote("|"));
-				
-				for (String s: exceptions){
-					for (String e : uncheckedExceptions){
-						if (s.contains(e)){
-							uncheckedExceptions.add("unchecked" + CHECK_SEPERATOR + catchSrc);
-						}
-					}
-					
-					for (String e : checkedExceptions){
-						if (s.contains(e)){
-							checkedExceptions.add("checked" + CHECK_SEPERATOR + catchSrc);
+			boolean found = false;
+			// check import statements (java.lang or whatever if name matches)
+			if (importDeclarations != null){
+				for (String i : importDeclarations){
+					// if the exception is found in one of the import statements, put in proper list based on that
+					if (i.contains(exception)){
+						if (unchecked.contains(i)){
+							uncheckedExceptions.add(catchSrc + CHECK_SEPERATOR + exception);
+							found = true;
+						} else {
+							checkedExceptions.add(catchSrc + CHECK_SEPERATOR + exception);
+							found = true;
 						}
 					}
 				}
+			} 
+			//check for type declarations in this file
+			if (exceptionClasses != null){
+				for (String c : exceptionClasses){
+					// if the exception was declared in the file
+					if(c.contains(exception)){
+						if (unchecked.contains(exception)){
+							uncheckedExceptions.add(catchSrc + CHECK_SEPERATOR + exception);
+							found = true;
+						} else {
+							checkedExceptions.add(catchSrc + CHECK_SEPERATOR + exception);
+							found = true;
+						}
+					}
+				}
+				
+			} 
+			if (!found){
+				// the exception is defined elsewhere or is java.lang; assume unchecked
+					uncheckedExceptions.add(catchSrc + CHECK_SEPERATOR + exception);
 			}
-			
-			if (unchecked.contains(exception)){
-				uncheckedExceptions.add(catchSrc);
-			} else {
-				checkedExceptions.add("unchecked" + CHECK_SEPERATOR + catchSrc);
-			}
+				
 			
 			if (node.getException().getType().isUnionType()){
-				multiCatchBlocks.add("checked" + CHECK_SEPERATOR + catchSrc);
-			}
+				String e = node.getException().getType().toString();
+				
+				String[] exceptions = e.split(Pattern.quote("|"));
+				
+				for (String s: exceptions){
+					found = false;
+					// check import statements (java.lang or whatever if name matches)
+					if (importDeclarations != null){
+						for (String i : importDeclarations){
+							// if the exception is found in one of the import statements, put in proper list based on that
+							if (i.contains(s)){
+								if (unchecked.contains(i)){
+									uncheckedExceptions.add(catchSrc + CHECK_SEPERATOR + s);
+									found = true;
+								} else {
+									checkedExceptions.add(catchSrc + CHECK_SEPERATOR + s);
+									found = true;
+								}
+							}
+						}
+					} 
+					//check for type declarations in this file
+					if (exceptionClasses != null){
+						for (String c : exceptionClasses){
+							// if the exception was declared in the file
+							if(c.contains(s)){
+								if (unchecked.contains(s)){
+									uncheckedExceptions.add(catchSrc + CHECK_SEPERATOR + s);
+									found = true;
+								} else {
+									checkedExceptions.add(catchSrc + CHECK_SEPERATOR + s);
+									found = true;
+								}
+							}
+						}
+						
+					} 
+					if (!found){
+						// the exception is defined elsewhere or is java.lang; assume unchecked
+						uncheckedExceptions.add(catchSrc + CHECK_SEPERATOR + s);
+					}
+				}
+				multiCatchBlocks.add(catchSrc);
+			} 
 		}
 		
 		return true;

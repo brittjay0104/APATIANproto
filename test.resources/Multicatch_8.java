@@ -22,9 +22,10 @@ public class Multicatch_8 {
 			if(1==1)
 				throw new IOException();
 			throw new SQLException();
-		}catch(IOException | SQLException e){
 			
-		}
+		} catch(IOException | SQLException | RuntimeException e){
+			
+		} 
 	}
 	
 	public static void populateField()
