@@ -30,6 +30,8 @@ import node_visitor.ExceptionsVisitor;
 @RunWith(Parameterized.class)
 public class ExceptionsTest extends TestCase{
 
+	//TODO throw error if no assertions in test cases
+	
 	@Parameter
 	public File inputFile;
 	
