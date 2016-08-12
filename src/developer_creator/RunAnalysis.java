@@ -29,7 +29,7 @@ public class RunAnalysis {
 	
 
 	public static void main(String[] args) throws Exception {
-		ModelSourceFile f = new ModelSourceFile(new File("test.resources/Multicatch_8.java"));
+		ModelSourceFile f = new ModelSourceFile(new File("../test/src/IndirectThrow.java"));
 //		ModelSourceFile f = new ModelSourceFile(new File("src/util/Configuration.java"));
 		
 		ModelParser p = new ModelParser();
@@ -165,6 +165,7 @@ public class RunAnalysis {
 		System.out.println(localRepoDir);
 		String repoLocalFile = localRepoDir + ".git";
 		System.out.println(repoLocalFile);
+		String jarFile = localRepoDir.substring(localRepoDir.indexOf("/")+1, localRepoDir.lastIndexOf("/"))  + ".jar";
 		
 		Runtime rt = Runtime.getRuntime();
 
@@ -185,12 +186,17 @@ public class RunAnalysis {
 
 		// set repository history
 		ModelRepository repository = new ModelRepository(new File(repoLocalFile));
+		repository.setJarFile(jarFile);
 		Git gitHub = repository.getGitRepository();
 
 		if (repository.setRepositoryRevisionHistory(gitHub, dev) != null) {
 
 			// set source files for each directory
 			repository.setSourceFiles(localRepoDir);
+			
+			// create jar file and add path to ModelSourceFile
+			// TODO does the folder have to be the level up from individual files...or can it be any folder at the top of all source files?
+			repository.createJarFile(localRepoDir, jarFile);
 
 			// set history for each file
 			for (ModelSourceFile f : repository.getSourceFiles()) {

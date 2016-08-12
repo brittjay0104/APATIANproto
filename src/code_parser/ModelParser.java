@@ -1,7 +1,10 @@
 package code_parser;
 
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,6 +13,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.jar.Attributes;
+import java.util.jar.JarEntry;
+import java.util.jar.JarOutputStream;
+import java.util.jar.Manifest;
 
 import org.eclipse.core.resources.IFolder;
 import org.eclipse.core.resources.IProject;
@@ -285,45 +292,42 @@ public class ModelParser {
 	}
 	
 	//parseForExceptions
-	public void parseForExceptions(ModelSourceFile file) throws IOException{
+	public void parseForExceptions(ModelSourceFile file, String directory, String jarFile) throws IOException{
 		
 		//System.out.println("IN parseForExceptions");
 		ASTParser parser = ASTParser.newParser(AST.JLS4);
+		parser.setResolveBindings(true);
+		parser.setStatementsRecovery(true);
+		parser.setKind(ASTParser.K_COMPILATION_UNIT);
+		
+		parser.setBindingsRecovery(true);
 
+		String unitName = file.getName();
+		parser.setUnitName(unitName);
+		
+		// can I do file.getSourceFile().getPath()?
+		String [] sources = {directory};
+		
+		String[] classpath = {jarFile};
+		
 		String src = readFiletoString(file.getSourceFile().getCanonicalPath());
 
+		parser.setEnvironment(classpath, sources, new String[] { "UTF-8"}, true);
 		file.setSource(src.toCharArray());
 		
 		Map options = JavaCore.getOptions();
-		JavaCore.setComplianceOptions(JavaCore.VERSION_1_6, options);
+		//JavaCore.setComplianceOptions(JavaCore.VERSION_1_6, options);
 		parser.setCompilerOptions(options);
 
-		
-		parser.setResolveBindings(true);
-		parser.setStatementsRecovery(true);
 		parser.setSource(src.toCharArray());
-		
-		//parser.setEnvironment(null, new String[] {".\\/exception-test\\"}, null, true);
-		
+			
 		String repoName = RunAnalysis.getRepoName();
-		//String dir = ".\\" + repoName.substring(repoName.indexOf("/")) + "\\";
-		
-		//directories.add(dir);
-		
-		//System.out.println(dir);
-		
-		//findSubDir(dir);
-		
-		//String [] directories = (String[]) this.directories.toArray(new String[0]);
-		
-		//System.out.println(directories[1]);
-		// System.out.println("about to loop and find subdirectories");
-		
-		//parser.setEnvironment(directories, directories, null, true);
-		parser.setUnitName(file.getName());
-		parser.setKind(ASTParser.K_COMPILATION_UNIT);
 
 		CompilationUnit cu = (CompilationUnit) parser.createAST(null);
+		
+		if (cu.getAST().hasBindingsRecovery()){
+			System.out.println("it worked!");
+		}
 		
 		ExceptionsVisitor visitor = new ExceptionsVisitor(file);
 		cu.accept(visitor);
@@ -385,7 +389,7 @@ public class ModelParser {
 //
 
 	}
-	
+
 	public void findSubDir(String dir){
 		File file = new File(dir);
 		String[] directories = file.list();

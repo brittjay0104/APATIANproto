@@ -4,29 +4,22 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.regex.Pattern;
 
-import javax.lang.model.type.UnionType;
-
-import org.eclipse.core.runtime.NullProgressMonitor;
-import org.eclipse.jdt.core.IType;
-import org.eclipse.jdt.core.ITypeHierarchy;
-import org.eclipse.jdt.core.JavaModelException;
 import org.eclipse.jdt.core.dom.ASTNode;
-import org.eclipse.jdt.core.dom.ASTVisitor;
-
 import org.eclipse.jdt.core.dom.CatchClause;
 import org.eclipse.jdt.core.dom.ClassInstanceCreation;
+import org.eclipse.jdt.core.dom.Expression;
+import org.eclipse.jdt.core.dom.ITypeBinding;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
+import org.eclipse.jdt.core.dom.MethodInvocation;
+import org.eclipse.jdt.core.dom.ReturnStatement;
 import org.eclipse.jdt.core.dom.ThrowStatement;
 import org.eclipse.jdt.core.dom.TryStatement;
+import org.eclipse.jdt.core.dom.Type;
 import org.eclipse.jdt.core.dom.TypeDeclaration;
 
-import org.eclipse.jdt.core.dom.VariableDeclaration;
-import org.eclipse.jdt.core.dom.ITypeBinding;
-import org.eclipse.jdt.core.dom.IVariableBinding;
-import org.eclipse.jdt.core.dom.ImportDeclaration;
-import org.eclipse.jdt.core.dom.Initializer;
 
 
 import code_parser.ModelSourceFile;
@@ -44,6 +37,8 @@ public class ExceptionsVisitor extends AbstractVisitor {
 						uncheckedExceptions = new LinkedList<>(),
 						checkedExceptions = new LinkedList<>();
 	
+	public List<MethodDeclaration> allMethodDeclarations = new LinkedList<>();
+	
 	// List of all unchecked exceptions
 	List<String> unchecked = Arrays.asList("java.lang.annotation.AnnotationTypeMismatchException", "java.lang.ArithmeticException", "java.lang.ArrayStoreException", "java.nio.BufferOverflowException", "java.nio.BufferUnderflowException", "javax.swing.undo.CannotRedoException", 
 			"javax.swing.undo.CannotUndoException", "java.lang.ClassCastException", "java.awt.color.CMMException", "java.util.ConcurrentModificationException", "javax.xml.bind.DataBindingException", "org.w3c.dom.DOMException", "java.util.EmptyStackException", 
@@ -60,6 +55,12 @@ public class ExceptionsVisitor extends AbstractVisitor {
 	public ExceptionsVisitor(ModelSourceFile file) {
 		super(file);
 	}
+	
+//	public void preVisit (ASTNode node) {
+//		if (node instanceof MethodDeclaration){
+//			allMethodDeclarations.add((MethodDeclaration)node);
+//		}
+//	}
 	
 	/**
 	 * When visiting a TryStatement, add the statement to our tryStatements
@@ -181,7 +182,16 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		
 		System.out.println("throw statement found!");
 		
-		addExceptionKind(((ClassInstanceCreation)node.getExpression()).getType().toString(),throwStatement);
+		Expression n = node.getExpression();		
+		
+		if (n instanceof MethodInvocation){
+			ITypeBinding tb = n.resolveTypeBinding();
+			// get full name
+			String name = tb.getQualifiedName();
+			System.out.println(name);
+			//addExceptionKind(,throwStatement);
+
+		}
 			
 		return true;
 	}
@@ -238,4 +248,5 @@ public class ExceptionsVisitor extends AbstractVisitor {
 			checkedExceptions.add(context + CHECK_SEPERATOR + exception);
 		}
 	}
+
 }

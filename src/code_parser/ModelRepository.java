@@ -1,8 +1,11 @@
 package code_parser;
 
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.StringReader;
 import java.sql.Date;
@@ -14,6 +17,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.TimeUnit;
+import java.util.jar.JarEntry;
+import java.util.jar.JarOutputStream;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;
@@ -94,6 +99,9 @@ public class ModelRepository {
 	private int uncheckedExceptionDC = 1;
 	private boolean isChecked = false;
 	private boolean isUnchecked = false;
+	
+	String jarFile;
+	String sourceDir;
 
 
 	public ModelRepository() {
@@ -168,6 +176,14 @@ public class ModelRepository {
 	public void setRepoPath(){
 
 	}
+	
+	public void setJarFile (String file){
+		jarFile = file;
+	}
+	
+	public void setSourceDirectory (String dir){
+		sourceDir = dir;
+	}
 
 	/**
 	 *
@@ -230,6 +246,64 @@ public class ModelRepository {
 			//file.setRepository(repository);
 		}
 
+	}
+	
+	/**
+	 * Create jar for project source code.
+	 * @param directory
+	 * @param jarFile
+	 * @throws IOException 
+	 */
+	public void createJarFile(String directory, String jarFile) throws IOException {
+//		Manifest manifest = new Manifest();
+//		manifest.getMainAttributes().put(Attributes.Name.MANIFEST_VERSION, "1.0");
+		JarOutputStream target = new JarOutputStream(new FileOutputStream(jarFile));
+		add(new File(directory), target);
+		target.close();
+	}
+	
+	private void add(File source, JarOutputStream target) throws IOException {
+		BufferedInputStream in = null;
+		  try
+		  {
+		    if (source.isDirectory())
+		    {
+		      String name = source.getPath().replace("\\", "/");
+		      if (!name.isEmpty())
+		      {
+		        if (!name.endsWith("/"))
+		          name += "/";
+		        JarEntry entry = new JarEntry(name);
+		        entry.setTime(source.lastModified());
+		        target.putNextEntry(entry);
+		        target.closeEntry();
+		      }
+		      for (File nestedFile: source.listFiles())
+		        add(nestedFile, target);
+		      return;
+		    }
+
+		    JarEntry entry = new JarEntry(source.getPath().replace("\\", "/"));
+		    entry.setTime(source.lastModified());
+		    target.putNextEntry(entry);
+		    in = new BufferedInputStream(new FileInputStream(source));
+
+		    byte[] buffer = new byte[1024];
+		    while (true)
+		    {
+		      int count = in.read(buffer);
+		      if (count == -1)
+		        break;
+		      target.write(buffer, 0, count);
+		    }
+		    target.closeEntry();
+		  }
+		  finally
+		  {
+		    if (in != null)
+		      in.close();
+		  }
+		
 	}
 	
 	public void addChangedFile(ModelSourceFile file){
@@ -690,7 +764,7 @@ public class ModelRepository {
 			//EXCEPTIONS
 			
 			//System.out.println("About to run parseForExceptions in ModelRepository");
-			parser.parseForExceptions(f);
+			parser.parseForExceptions(f, sourceDir, jarFile);
 			
 			List<String> throwsMethods = f.getThrowsMethods();
 			for (String throwMethod: throwsMethods){
