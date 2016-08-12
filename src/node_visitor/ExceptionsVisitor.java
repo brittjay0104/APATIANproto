@@ -127,9 +127,9 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		
 		catchBlocks.add(catchSrc);
 		
-		boolean found = false;
+
 		// check import statements
-		determineExceptionKind(exception, catchSrc, found);
+		determineExceptionKind(exception, catchSrc);
 		
 		
 		if (node.getException().getType().isUnionType()){
@@ -137,8 +137,7 @@ public class ExceptionsVisitor extends AbstractVisitor {
 			String[] exceptions = e.split(Pattern.quote("|"));
 			
 			for (String s : exceptions){
-				found = false;
-				determineExceptionKind(s, catchSrc, found);
+				determineExceptionKind(s, catchSrc);
 			}
 			
 			multiCatchBlocks.add(catchSrc);
@@ -147,11 +146,12 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		return true;
 	}
 
-	private void determineExceptionKind(String exception, String catchSrc, boolean found) {
+	private void determineExceptionKind(String exception, String source) {
+		boolean found = false;
 		if (importDeclarations != null){
 			for (String i : importDeclarations){
 				if (i.contains(exception)){
-					addExceptionKind(exception, catchSrc);
+					addExceptionKind(exception, source);
 					found = true;
 				}
 			}
@@ -159,15 +159,16 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		//check for type declarations in this file
 		if (exceptionClasses != null){
 			for (String c : exceptionClasses){
+				exception = exception.substring(exception.lastIndexOf("."), exception.length());
 				if (c.contains(exception)){
-					addExceptionKind(exception, catchSrc);
+					addExceptionKind(exception, source);
 					found = true;
 				}
 			}
 		}
 		// the exception is defined elsewhere or is java.lang; assume unchecked
 		if (!found){
-			uncheckedExceptions.add(catchSrc + CHECK_SEPERATOR + exception);
+			uncheckedExceptions.add(source + CHECK_SEPERATOR + exception);
 		}
 		
 	}
@@ -188,9 +189,7 @@ public class ExceptionsVisitor extends AbstractVisitor {
 			ITypeBinding tb = n.resolveTypeBinding();
 			// get full name
 			String name = tb.getQualifiedName();
-			System.out.println(name);
-			//addExceptionKind(,throwStatement);
-
+			determineExceptionKind(name, throwStatement);
 		}
 			
 		return true;

@@ -34,7 +34,7 @@ public class RunAnalysis {
 		
 		ModelParser p = new ModelParser();
 		
-		p.parseForExceptions(f);
+		p.parseForExceptions(f, "../test/src/", "test.jar");
 
 //		File repos = new File("repos.txt");
 //		
