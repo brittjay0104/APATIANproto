@@ -169,7 +169,15 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		}
 		// the exception is defined elsewhere or is java.lang; assume unchecked
 		if (!found){
-			uncheckedExceptions.add(source + CHECK_SEPERATOR + exception);
+			for (String uc : unchecked){
+				if (uc.equals(exception)){
+					uncheckedExceptions.add(source + CHECK_SEPERATOR + exception);
+					found = true;
+				}
+			}
+			if (!found){
+				checkedExceptions.add(source + CHECK_SEPERATOR + exception);
+			}
 		}
 		
 	}
@@ -198,21 +206,20 @@ public class ExceptionsVisitor extends AbstractVisitor {
 	
 	
 	public boolean visit(MethodDeclaration node) {
+		String src = findSourceForNode(node);
+		String source = src.substring(0, src.indexOf("{"));
+		String throwsMethod = node.getName().toString() + CHECK_SEPERATOR + source.trim();
+		throwsMethods.add(throwsMethod);
 		
-		for (Object except : node.thrownExceptions()){
-			
-			String exception = except.toString();
-			
-			//Store more information here??
-			String src = findSourceForNode(node);
-			String source = src.substring(0, src.indexOf("{"));
-			String throwsMethod = node.getName().toString() + CHECK_SEPERATOR + source.trim();
-			throwsMethods.add(throwsMethod);
-			
-			System.out.println("thrown exception found!");	
-			
-			addExceptionKind(exception, throwsMethod);
+		IMethodBinding mb = node.resolveBinding();
+		
+		ITypeBinding[] types = mb.getExceptionTypes();
+		
+		for (ITypeBinding t : types){
+			String name = t.getSuperclass().getQualifiedName();
+			determineExceptionKind(name, throwsMethod);
 		}
+		
 		return true;
 	}
 	
