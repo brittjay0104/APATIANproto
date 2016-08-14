@@ -61,11 +61,20 @@ public class ExceptionsTest extends TestCase{
 		ASTParser parser = ASTParser.newParser(AST.JLS4);
 		parser.setSource(result);
 		parser.setKind(ASTParser.K_COMPILATION_UNIT);
-		CompilationUnit cu = (CompilationUnit) parser.createAST(new NullProgressMonitor());
- 
+		parser.setResolveBindings(true);
+		parser.setStatementsRecovery(true);
+		parser.setBindingsRecovery(true);
+		parser.setUnitName(inputFile.getName());
+		
+		String [] sources = {"test.resources/"};
+		String[] classpath = {"ap.jar"};
+		parser.setEnvironment(classpath, sources, new String[] { "UTF-8"}, true);
+		
 		ModelSourceFile file = new ModelSourceFile(inputFile);
 		file.setSource(result);
 		AbstractVisitor visitor = new ExceptionsVisitor(file);
+		
+		CompilationUnit cu = (CompilationUnit) parser.createAST(new NullProgressMonitor());
 		cu.accept(visitor);
 
 		for(String exp : getExpectedOutput()){
@@ -73,7 +82,7 @@ public class ExceptionsTest extends TestCase{
 
 			int actual = actual(visitor, split);
 		    
-			assertEquals("Expected: " + exp,Integer.parseInt(split[3]),actual);
+			assertEquals("Expected: " + exp,Integer.parseInt(split[3]), actual);
 		}
 	
 	}

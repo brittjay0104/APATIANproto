@@ -320,14 +320,12 @@ public class ModelParser {
 		parser.setCompilerOptions(options);
 
 		parser.setSource(src.toCharArray());
-			
-		String repoName = RunAnalysis.getRepoName();
 
 		CompilationUnit cu = (CompilationUnit) parser.createAST(null);
 		
-		if (cu.getAST().hasBindingsRecovery()){
-			System.out.println("it worked!");
-		}
+//		if (cu.getAST().hasBindingsRecovery()){
+//			System.out.println("it worked!");
+//		}
 		
 		ExceptionsVisitor visitor = new ExceptionsVisitor(file);
 		cu.accept(visitor);

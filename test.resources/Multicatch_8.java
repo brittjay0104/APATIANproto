@@ -1,6 +1,7 @@
 // tryStatements = 1
 // catchBlocks = 1
 // checkedExceptions = 4
+// uncheckedExceptions = 1
 // multiCatchBlocks = 1
 // throwStatements = 2
 

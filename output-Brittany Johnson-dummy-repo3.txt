@@ -1,0 +1,47 @@
+dummy-repo3 -- brittjay0104 -- Brittany Johnson
+https://github.com/brittjay0104/dummy-repo3.git
+git clone https://github.com/brittjay0104/dummy-repo3.git
+./dummy-repo3/
+./dummy-repo3/.git
+0
+Project cloned!
+Brittany Johnson is responsible for commit 9f3f40b80d42844c1f03ed01457710958a32ef77
+Brittany Johnson is responsible for commit e9cf7c27dde2cca743997e63a7735ac4c694b085
+Brittany Johnson is responsible for commit 7130776a9681d0bd2add8b56a43cf0924da5eeb0
+Brittany Johnson is responsible for commit b1903f59856677ed433db6324ad87f6785657b26
+Brittany Johnson is responsible for commit 8a60b03b645dd9820905a839030d5491e29ca708
+Brittany Johnson is responsible for commit c6fba007c39b2aa13cbaf2149204cf1df9d66eff
+Brittany Johnson is responsible for commit 6e34751861ace918c1a11403488249b52ad6743f
+Brittany Johnson is responsible for commit d6684f68173c2c4c5c85e5966df55da9e8efa567
+Brittany Johnson is responsible for commit 73dbeab9f6e4566c66b52915097f1f69b2a47107
+Brittany Johnson is responsible for commit 03524a37d16323a98629d692948809b157956ec0
+Brittany Johnson is responsible for commit acb3b873cd1727fb9dd90a0e5b19f4f9cd597b69
+Brittany Johnson is responsible for commit 97b840ac44bfada6438d81669b5e474c01094f7d
+Brittany Johnson is responsible for commit 4cadd07a27ed1b35b73d91abb9f5b990248f7f39
+Brittany Johnson is responsible for commit 7b5c0f8636370f9c903d5cda5353949c5668e4dd
+Brittany Johnson is responsible for commit 541010765841f100ae169617bef0b74658fcf45e
+Brittany Johnson is responsible for commit 81e8e10db8eeb72947dce3a93ccf321b20fae0c5
+Brittany Johnson is responsible for commit 8ae6f1b662a3b1bce3bc6d68a9280e51aa81b65b
+Brittany Johnson is responsible for commit 1537817083c8156db730090728e770346c60e2de
+Brittany Johnson is responsible for commit ca6943e2c0d57ca0f7f93b50c43a66c67bb75584
+Brittany Johnson is responsible for commit adcd7da1cb4a5da6f00d6402e7ad55e99ca6e5fe
+Brittany Johnson is responsible for commit 8bf78f65b9d7091fcf5801ccc9749fa95cad65dd
+Brittany Johnson is responsible for commit b1eb5c7913a48fc32b14ac574bb083bc4b8b420f
+Brittany Johnson is responsible for commit 906f7aaff4b72be59893c7d19561680cf9eec15d
+Brittany Johnson is responsible for commit db0ec14a3940e0b2143e3ef5388e24df349cdab8
+Brittany Johnson is responsible for commit 23de72296d40ecff16cc257be2895884dc0bfbed
+Brittany Johnson is responsible for commit 1103532657974d248d3fb11435d24517038aaee4
+Brittany Johnson is responsible for commit 365cc50fb28186309bcba1a14a373a06d349a51d
+Brittany Johnson is responsible for commit 6a9bda47c7c18265dcc682be5513a82db528cdfd
+Brittany Johnson is responsible for commit 8cf75c0547a098c00681bfde63fc246f4e278696
+Brittany Johnson is responsible for commit 6cc49806961fcbb536f5f386d3bdd0724f6beaff
+Brittany Johnson is responsible for commit 48ac7505f6c0c6a9c33c56514a6dcab2875917fc
+Brittany Johnson is responsible for commit 2285a05c8a6abe5489c6c9cc9ddf0c3caed7f0db
+Brittany Johnson is responsible for commit f29e26e40d3a244499ae41fb825264ffa230815b
+Brittany Johnson is responsible for commit da6b1b03cc7d21c11e543c8549fcfda5b7511583
+Brittany Johnson is responsible for commit dcf67baa545756ab03d2000c4edf326e09009f4e
+Added Box.java to ./dummy-repo3/ repository source files.
+Added C.java to ./dummy-repo3/ repository source files.
+Added NullObjectPattern_test.java to ./dummy-repo3/ repository source files.
+Added Test.java to ./dummy-repo3/ repository source files.
+Added testClass.java to ./dummy-repo3/ repository source files.

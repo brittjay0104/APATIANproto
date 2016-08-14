@@ -29,12 +29,12 @@ public class RunAnalysis {
 	
 
 	public static void main(String[] args) throws Exception {
-		ModelSourceFile f = new ModelSourceFile(new File("../test/src/IndirectThrow.java"));
+		ModelSourceFile f = new ModelSourceFile(new File("./test.resources/Multicatch_8.java"));
 //		ModelSourceFile f = new ModelSourceFile(new File("src/util/Configuration.java"));
 		
 		ModelParser p = new ModelParser();
 		
-		p.parseForExceptions(f, "../test/src/", "test.jar");
+		p.parseForExceptions(f, "./test.resources/", "multicatch.jar");
 
 //		File repos = new File("repos.txt");
 //		

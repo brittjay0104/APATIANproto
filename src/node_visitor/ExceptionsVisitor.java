@@ -11,6 +11,7 @@ import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.CatchClause;
 import org.eclipse.jdt.core.dom.ClassInstanceCreation;
 import org.eclipse.jdt.core.dom.Expression;
+import org.eclipse.jdt.core.dom.IMethodBinding;
 import org.eclipse.jdt.core.dom.ITypeBinding;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
 import org.eclipse.jdt.core.dom.MethodInvocation;
@@ -199,7 +200,7 @@ public class ExceptionsVisitor extends AbstractVisitor {
 	public boolean visit(MethodDeclaration node) {
 		
 		for (Object except : node.thrownExceptions()){
-		
+			
 			String exception = except.toString();
 			
 			//Store more information here??
