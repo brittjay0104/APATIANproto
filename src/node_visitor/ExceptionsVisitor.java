@@ -4,24 +4,19 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
 import java.util.regex.Pattern;
 
-import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.CatchClause;
-import org.eclipse.jdt.core.dom.ClassInstanceCreation;
 import org.eclipse.jdt.core.dom.Expression;
 import org.eclipse.jdt.core.dom.IMethodBinding;
 import org.eclipse.jdt.core.dom.ITypeBinding;
+import org.eclipse.jdt.core.dom.IVariableBinding;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
-import org.eclipse.jdt.core.dom.MethodInvocation;
-import org.eclipse.jdt.core.dom.ReturnStatement;
+import org.eclipse.jdt.core.dom.SimpleType;
 import org.eclipse.jdt.core.dom.ThrowStatement;
 import org.eclipse.jdt.core.dom.TryStatement;
-import org.eclipse.jdt.core.dom.Type;
 import org.eclipse.jdt.core.dom.TypeDeclaration;
-
-
+import org.eclipse.jdt.core.dom.UnionType;
 
 import code_parser.ModelSourceFile;
 
@@ -120,25 +115,28 @@ public class ExceptionsVisitor extends AbstractVisitor {
 
 	public boolean visit (CatchClause node){
 		String signature = signatureOfParent(node);
-		String except = findSourceForNode(node.getException()).trim();
-		String exception = except.substring(0, except.indexOf(" "));
 		String catchBlock = node.toString();
 		String catchLine = catchBlock.substring(0, catchBlock.indexOf("{"));
 		String catchSrc = signature + CHECK_SEPERATOR + catchLine.trim();
 		
+		
 		catchBlocks.add(catchSrc);
 		
+		IVariableBinding vb = node.getException().resolveBinding();
+		String exception = vb.getType().getQualifiedName();
+		if (!catchSrc.contains("|")){
+			determineExceptionKind(exception, catchSrc);			
+		}
 
-		// check import statements
-		determineExceptionKind(exception, catchSrc);
-		
-		
 		if (node.getException().getType().isUnionType()){
-			String e = node.getException().getType().toString();
-			String[] exceptions = e.split(Pattern.quote("|"));
+			vb = node.getException().resolveBinding();
+			UnionType t = (UnionType) node.getException().getType();
+			List types = t.types();
 			
-			for (String s : exceptions){
-				determineExceptionKind(s, catchSrc);
+			for (Object type: types){
+				SimpleType e = (SimpleType)type;
+				String except = e.resolveBinding().getQualifiedName();
+				determineExceptionKind(except, catchSrc);
 			}
 			
 			multiCatchBlocks.add(catchSrc);
@@ -192,12 +190,14 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		
 		System.out.println("throw statement found!");
 		
-		Expression n = node.getExpression();		
-		
-		if (n instanceof MethodInvocation){
-			ITypeBinding tb = n.resolveTypeBinding();
-			// get full name
+		Expression n = node.getExpression();
+
+		ITypeBinding tb = n.resolveTypeBinding();
+		if (tb.getQualifiedName().contains(".")){
 			String name = tb.getQualifiedName();
+			determineExceptionKind(name, throwStatement);
+		} else {
+			String name = tb.getSuperclass().getQualifiedName();
 			determineExceptionKind(name, throwStatement);
 		}
 			
