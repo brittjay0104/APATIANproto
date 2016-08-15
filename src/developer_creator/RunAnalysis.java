@@ -196,6 +196,7 @@ public class RunAnalysis {
 			
 			// create jar file and add path to ModelSourceFile
 			// TODO does the folder have to be the level up from individual files...or can it be any folder at the top of all source files?
+			// TODO does this need to get done at each revision?
 			repository.createJarFile(localRepoDir, jarFile);
 
 			// set history for each file
@@ -205,7 +206,7 @@ public class RunAnalysis {
 
 			// Analyze ASTs for all revisions for usage patterns (and addition)
 			System.out.println("\n ************ ANALYZING FOR USAGE PATTERN ADDITION ************\n");
-			repository.revertAndAnalyzeForPatternAddition(gitHub, localRepoDir, dev, repoName);
+			repository.revertAndAnalyzeForPatternAddition(gitHub, localRepoDir, dev, repoName, jarFile);
 			
 //			clearDirectory(directory);
 //			directory.delete();

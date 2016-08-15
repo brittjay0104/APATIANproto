@@ -427,7 +427,7 @@ public class ModelRepository {
 	 * @param directory - String path to the directory of the repository in file system (without .git)
 	 * @throws IOException
 	 */
-	public void revertAndAnalyzeForPatternAddition(Git git, String directory, ModelDeveloper dev, String repoName) throws IOException{
+	public void revertAndAnalyzeForPatternAddition(Git git, String directory, ModelDeveloper dev, String repoName, String jarFile) throws IOException{
 
 		ArrayList<String> commits = dev.getCommits();
 		String devName = dev.getDevName();
@@ -449,6 +449,8 @@ public class ModelRepository {
  				
 				//pass in how long ago commit made?
 				setAndParseSource(directory, previousHash, currentHash, dev, current);
+				
+				createJarFile(directory, jarFile);
 				
 				diffPrettyPrint(dev, currentHash, previousHash);
 				
@@ -645,8 +647,6 @@ public class ModelRepository {
 		System.out.println("	--> recency = " + recency.get("try with resources"));
 		System.out.println("	--> Added finally blocks = " + dev.getAddedFinallyBlocks()); 
 		System.out.println("	--> recency = " + recency.get("finally blocks"));
-		System.out.println("	--> Added static finally blocks = " + dev.getAddedStaticFinallyBlocks()); 
-		System.out.println("	--> recency = " + recency.get("static finally blocks"));
 		System.out.println("	--> Added throw statement = " + dev.getAddedThrowStatements());
 		System.out.println("	--> recency = " + recency.get("throw statements"));
 		System.out.println("	--> Added exception classes = " + dev.getAddedExceptionClasses());
@@ -746,7 +746,7 @@ public class ModelRepository {
 			//EXCEPTIONS
 			
 			//System.out.println("About to run parseForExceptions in ModelRepository");
-			parser.parseForExceptions(f, sourceDir, jarFile);
+			parser.parseForExceptions(f, directory, jarFile);
 			
 			List<String> throwsMethods = f.getThrowsMethods();
 			for (String throwMethod: throwsMethods){
@@ -1974,15 +1974,10 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 		
 		int addedThrowsMethods = 0;
 		int addedTryStatements = 0;
-		int addedStaticTryStatements = 0;
 		int addedCatchBlocks = 0;
-		int addedStaticCatchBlocks = 0;
 		int addedMultiCatchBlocks = 0;
-		int addedStaticMultiCatchBlocks = 0;
 		int addedTryWithResources = 0;
-		int addedStaticTryWithResources = 0;
 		int addedFinallyBlocks = 0;
-		int addedStaticFinallyBlocks = 0;
 		int addedThrowStatements = 0;
 		int addedExceptionClasses = 0;
 		int addedCheckedExceptions = 0;
@@ -2102,7 +2097,8 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 											}
 										}
 									}									
-								} else if (file.getTryStatements().contains(check)){
+								} 
+								if (file.getTryStatements().contains(check)){
 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
 									pattern = pattern.trim();
 									
@@ -2138,7 +2134,8 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 											}
 										}
 									}
-								} else if (file.getCatchBlocks().contains(check)){
+								} 
+								if (file.getCatchBlocks().contains(check)){
 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
 									pattern = pattern.trim();
 									
@@ -2175,7 +2172,8 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 										}
 									}
 									
-								} else if (file.getMultiCatchBlocks().contains(check)){
+								} 
+								if (file.getMultiCatchBlocks().contains(check)){
 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
 									pattern = pattern.trim();
 									
@@ -2211,7 +2209,8 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 											}
 										}
 									}
-								} else if (file.getTryWithResources().contains(check)){
+								} 
+								if (file.getTryWithResources().contains(check)){
 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.lastIndexOf(CHECK_SEPERATOR));
 									pattern = pattern.trim();
 									// TODO check if resource was added as opposed to entire block
@@ -2249,7 +2248,8 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 											}
 										}
 									}
-								} else if (file.getFinallyBlocks().contains(check)){
+								} 
+								if (file.getFinallyBlocks().contains(check)){
 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
 									pattern = pattern.trim();
 									
@@ -2285,7 +2285,8 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 											}
 										}
 									}									
- 								} else if (file.getThrowStatements().contains(check)){
+ 								} 
+								if (file.getThrowStatements().contains(check)){
 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
 									String p = pattern.trim();
 									
@@ -2321,7 +2322,8 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 											}
 										}
 									}
-								} else if (file.getExceptionClasses().contains(check)){
+								} 
+								if (file.getExceptionClasses().contains(check)){
 									String pattern = check.substring(check.lastIndexOf(CHECK_SEPERATOR)+1, check.length());
 									pattern = pattern.trim();
 									
