@@ -86,6 +86,11 @@ public class ExceptionsTest extends TestCase{
 		}
 	
 	}
+	
+	@Test
+	public void testcase_2(){
+		
+	}
 
 	private int actual(AbstractVisitor visitor, String[] split) {
 		Class<?> c = visitor.getClass();

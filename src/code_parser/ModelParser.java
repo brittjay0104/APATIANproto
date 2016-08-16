@@ -321,14 +321,15 @@ public class ModelParser {
 
 		parser.setSource(src.toCharArray());
 
-		CompilationUnit cu = (CompilationUnit) parser.createAST(null);
-		
+
+		CompilationUnit cu = (CompilationUnit) parser.createAST(null);			
+		ExceptionsVisitor visitor = new ExceptionsVisitor(file);
+		cu.accept(visitor);
+	
 //		if (cu.getAST().hasBindingsRecovery()){
 //			System.out.println("it worked!");
 //		}
 		
-		ExceptionsVisitor visitor = new ExceptionsVisitor(file);
-		cu.accept(visitor);
 		
 		//System.out.println("reaching changed part");
 		
@@ -382,8 +383,7 @@ public class ModelParser {
 			//System.out.println("Unchecked exception --> " + uncheckedException);
 			file.addUncheckedException(uncheckedException);
 		}
-		
-
+	
 //
 
 	}

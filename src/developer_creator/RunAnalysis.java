@@ -196,7 +196,6 @@ public class RunAnalysis {
 			
 			// create jar file and add path to ModelSourceFile
 			// TODO does the folder have to be the level up from individual files...or can it be any folder at the top of all source files?
-			// TODO does this need to get done at each revision?
 			repository.createJarFile(localRepoDir, jarFile);
 
 			// set history for each file

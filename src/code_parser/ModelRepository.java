@@ -449,9 +449,7 @@ public class ModelRepository {
  				
 				//pass in how long ago commit made?
 				setAndParseSource(directory, previousHash, currentHash, dev, current);
-				
-				createJarFile(directory, jarFile);
-				
+					
 				diffPrettyPrint(dev, currentHash, previousHash);
 				
 				try{
