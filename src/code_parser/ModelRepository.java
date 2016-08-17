@@ -11,11 +11,13 @@ import java.io.StringReader;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.jar.JarEntry;
 import java.util.jar.JarOutputStream;
@@ -760,13 +762,6 @@ public class ModelRepository {
 			
 			exceptionsAdditionDiff(directory, f, tryStatements, previousHash, currentHash, dev, currentCommit);
 			
-			List<String> staticTryStatements = f.getStaticTryStatements();
-			for (String tryStatement: staticTryStatements){
-				addUsagePattern(tryStatement);
-			}
-			
-			exceptionsAdditionDiff(directory, f, staticTryStatements, previousHash, currentHash, dev, currentCommit);
-			
 			List<String> catchBlocks = f.getCatchBlocks();
 			for (String catchBlock: catchBlocks){
 				addUsagePattern(catchBlock);
@@ -774,27 +769,13 @@ public class ModelRepository {
 			
 			exceptionsAdditionDiff(directory, f, catchBlocks, previousHash, currentHash, dev, currentCommit);
 			
-			List<String> staticCatchBlocks = f.getStaticCatchBlocks();
-			for (String catchBlock: staticCatchBlocks){
-				addUsagePattern(catchBlock);
-			}
-			
-			exceptionsAdditionDiff(directory, f, staticCatchBlocks, previousHash, currentHash, dev, currentCommit);
-			
 			List<String> multiCatchBlocks = f.getMultiCatchBlocks();
 			for (String catchBlock: multiCatchBlocks){
 				addUsagePattern(catchBlock);
 			}
 			
 			exceptionsAdditionDiff(directory, f, multiCatchBlocks, previousHash, currentHash, dev, currentCommit);
-			
-			List<String> staticMultiCatchBlocks = f.getStaticMultiCatchBlocks();
-			for (String catchBlock: staticMultiCatchBlocks){
-				addUsagePattern(catchBlock);
-			}
-			
-			exceptionsAdditionDiff(directory, f, staticMultiCatchBlocks, previousHash, currentHash, dev, currentCommit);
-			
+						
 			List<String> tryWithResources = f.getTryWithResources();
 			for (String tryWithResource: tryWithResources){
 				addUsagePattern(tryWithResource);
@@ -802,26 +783,12 @@ public class ModelRepository {
 			
 			exceptionsAdditionDiff(directory, f, tryWithResources, previousHash, currentHash, dev, currentCommit);
 			
-			List<String> staticTryWithResources = f.getStaticTryWithResources();
-			for (String tryWithResource: staticTryWithResources){
-				addUsagePattern(tryWithResource);
-			}
-			
-			exceptionsAdditionDiff(directory, f, staticTryWithResources, previousHash, currentHash, dev, currentCommit);
-			
 			List<String> finallyBlocks = f.getFinallyBlocks();
 			for (String finallyBlock: finallyBlocks){
 				addUsagePattern(finallyBlock);
 			}
 			
 			exceptionsAdditionDiff(directory, f, finallyBlocks, previousHash, currentHash, dev, currentCommit);	
-			
-			List<String> staticFinallyBlocks = f.getStaticFinallyBlocks();
-			for (String finallyBlock: staticFinallyBlocks){
-				addUsagePattern(finallyBlock);
-			}
-			
-			exceptionsAdditionDiff(directory, f, staticFinallyBlocks, previousHash, currentHash, dev, currentCommit);
 			
 			List<String> throwStatements = f.getThrowStatements();
 			for (String throwStatement: throwStatements){
@@ -837,19 +804,19 @@ public class ModelRepository {
 			
 			exceptionsAdditionDiff(directory, f, exceptionClasses, previousHash, currentHash, dev, currentCommit);
 			
-			List<String> checkedExceptions = f.getCheckedExceptions();
-			for (String checked: checkedExceptions){
-				addUsagePattern(checked);
-			}
+//			List<String> checkedExceptions = f.getCheckedExceptions();
+//			for (String checked: checkedExceptions){
+//				addUsagePattern(checked);
+//			}
+//			
+//			exceptionsAdditionDiff(directory, f, checkedExceptions, previousHash, currentHash, dev, currentCommit);
 			
-			exceptionsAdditionDiff(directory, f, checkedExceptions, previousHash, currentHash, dev, currentCommit);
+//			List<String> uncheckedExceptions = f.getUncheckedExceptions();
+//			for (String unchecked: uncheckedExceptions){
+//				addUsagePattern(unchecked);
+//			}
 			
-			List<String> uncheckedExceptions = f.getUncheckedExceptions();
-			for (String unchecked: uncheckedExceptions){
-				addUsagePattern(unchecked);
-			}
-			
-			exceptionsAdditionDiff(directory, f, uncheckedExceptions, previousHash, currentHash, dev, currentCommit);
+//			exceptionsAdditionDiff(directory, f, uncheckedExceptions, previousHash, currentHash, dev, currentCommit);
 			
 		}
 	}
@@ -2050,11 +2017,18 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 						
 						// iterate over parser checks for addition
 						if (line.startsWith("+")){
-							// TODO method for incrementing total LOC added?
+							// remove duplicates from checks
+							Set<String> hs = new HashSet<String>();
+							hs.addAll(checks);
+							checks.clear();
+							checks.addAll(hs);
+							
 							for (String check: checks){
 								
-								//System.out.println("Diff line --> " + line);
-								//System.out.println("Usage pattern --> " + check);
+								System.out.println("Current revision --> " + currentHash);
+								System.out.println("Previous revision --> " + previousHash);
+								System.out.println("Diff line --> " + line);
+								System.out.println("Usage pattern --> " + check);
 								
 								if (file.getThrowsMethods().contains(check)){
 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
@@ -2173,8 +2147,8 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 								} 
 								if (file.getMultiCatchBlocks().contains(check)){
 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());
-									pattern = pattern.trim();
-									
+									pattern = pattern.trim().replace(" ", "");
+									line = line.replace(" ", "");
 									if (line.contains(pattern)){
 										//System.out.println(pattern + " added here!");
 										addedMultiCatchBlocks = checkAddedExceptions(addedMultiCatchBlocks, currentHash, diffText, pattern, file);
@@ -2386,6 +2360,12 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 				}
 			}
 			
+			if (addedMultiCatchBlocks > 0 && addedMultiCatchBlocks <= 10){
+				if (developer.getCommits().contains(currentHash)){
+					developer.setAddedMultiCatchBlocks(addedMultiCatchBlocks);
+				}
+			}
+			
 			if (addedTryWithResources > 0 && addedTryWithResources <= 10){
 				if (developer.getCommits().contains(currentHash)){
 					developer.setAddedTryWithResources(addedTryWithResources);
@@ -2457,6 +2437,9 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 	private boolean isExceptionsAddition(String diffText, String code){
 		int count = 0;		
 
+		diffText = diffText.replace(" ", "");
+		code = code.replace(" ", "");
+		
 		count = StringUtils.countMatches(diffText, code);
 		
 		if (count == 1){

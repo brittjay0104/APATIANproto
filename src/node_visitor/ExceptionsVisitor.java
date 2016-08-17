@@ -71,7 +71,7 @@ public class ExceptionsVisitor extends AbstractVisitor {
 				if (tryLine != "" && tryLine != "\n" && tryLine != "\t"){
 					String tryBlock = sig + CHECK_SEPERATOR + tryLine;
 					tryStatements.add(tryBlock);
-					System.out.println("try statement found!");
+					//System.out.println("try statement found!");
 				}
 				break;
 		}
@@ -87,7 +87,7 @@ public class ExceptionsVisitor extends AbstractVisitor {
 			for (Object resource : node.resources()){
 				String tryResource = sig + CHECK_SEPERATOR + source.trim() + CHECK_SEPERATOR + resource.toString();
 				tryWithResources.add(tryResource);
-				System.out.println("try with resource found!");
+				//System.out.println("try with resource found!");
 			}
 		}
 		
@@ -106,7 +106,7 @@ public class ExceptionsVisitor extends AbstractVisitor {
 			}
 			if (!line.equals("")){
 				finallyBlocks.add(sig + CHECK_SEPERATOR + line.trim());
-				System.out.println("finally block found!");					
+				//System.out.println("finally block found!");					
 			}
 		}
 		
@@ -188,7 +188,7 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		String throwStatement = sig + CHECK_SEPERATOR + src;
 		throwStatements.add(throwStatement);
 		
-		System.out.println("throw statement found!");
+		//System.out.println("throw statement found!");
 		
 		Expression n = node.getExpression();
 
@@ -209,11 +209,13 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		String src = findSourceForNode(node);
 		String source = src.substring(0, src.indexOf("{"));
 		String throwsMethod = node.getName().toString() + CHECK_SEPERATOR + source.trim();
-		throwsMethods.add(throwsMethod);
 		
 		IMethodBinding mb = node.resolveBinding();
 		
 		ITypeBinding[] types = mb.getExceptionTypes();
+		if (types.length > 0){
+			throwsMethods.add(throwsMethod);			
+		}
 		
 		for (ITypeBinding t : types){
 			String name = t.getSuperclass().getQualifiedName();
@@ -236,7 +238,7 @@ public class ExceptionsVisitor extends AbstractVisitor {
 			exceptionClasses.add(exceptionClass);
 			//System.out.println("\nexception subclass found!");
 			
-			System.out.println("exception subclass found!");
+			//System.out.println("exception subclass found!");
 			
 			addExceptionKind(superClass, exceptionClass);			
 		}

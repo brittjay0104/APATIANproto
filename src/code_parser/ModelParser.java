@@ -383,7 +383,6 @@ public class ModelParser {
 			//System.out.println("Unchecked exception --> " + uncheckedException);
 			file.addUncheckedException(uncheckedException);
 		}
-	
 //
 
 	}
