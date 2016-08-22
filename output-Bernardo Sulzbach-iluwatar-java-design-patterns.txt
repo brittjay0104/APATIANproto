@@ -1,5 +1,0 @@
-iluwatar/java-design-patterns -- mafagafogigante -- Bernardo Sulzbach
-https://github.com/iluwatar/java-design-patterns.git
-git clone https://github.com/iluwatar/java-design-patterns.git
-.\/java-design-patterns\
-.\/java-design-patterns\.git

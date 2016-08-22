@@ -1,9 +1,0 @@
-bazelbuild/bazel -- eaftan -- Eddie Aftandilian
-https://github.com/bazelbuild/bazel.git
-git clone https://github.com/bazelbuild/bazel.git
-.\/bazel\
-.\/bazel\.git
-128
-Project cloned!
-NoHeadException thrown!
-File copied successfully!

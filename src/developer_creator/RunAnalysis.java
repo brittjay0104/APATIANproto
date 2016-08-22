@@ -49,7 +49,7 @@ public class RunAnalysis {
 			while (sc.hasNextLine()){
 				String line = sc.nextLine();
 				
-				// master branch
+				// master branch-
 				if (StringUtils.countMatches(line, ",") == 2 || StringUtils.countMatches(line, ",") == 1){
 					
 					RunAnalysis.setRepoName(line.substring(0, line.indexOf(",")));
@@ -107,7 +107,7 @@ public class RunAnalysis {
 					System.setOut(new PrintStream(new FileOutputStream(opFile)));
 					
 					f1 = new File(opFile);
-					f2 = new File("./archived-output/08-02-2016/" + opFile);
+					f2 = new File("./archived-output/o/" + opFile);
 					
 					is = new FileInputStream(f1);
 					os = new FileOutputStream(f2);
@@ -165,7 +165,7 @@ public class RunAnalysis {
 		System.out.println(localRepoDir);
 		String repoLocalFile = localRepoDir + ".git";
 		System.out.println(repoLocalFile);
-		String jarFile = localRepoDir.substring(localRepoDir.indexOf("/")+1, localRepoDir.lastIndexOf("/"))  + ".jar";
+		String jarFile = localRepoDir.substring(localRepoDir.indexOf("\\")+1, localRepoDir.lastIndexOf("\\"))  + ".jar";
 		
 		Runtime rt = Runtime.getRuntime();
 
