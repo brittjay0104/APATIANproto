@@ -1,5 +1,0 @@
-google/auto -- eaftan -- Eddie Aftandilian
-https://github.com/google/auto.git
-git clone https://github.com/google/auto.git
-.\/auto\
-.\/auto\.git
