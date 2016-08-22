@@ -213,20 +213,28 @@ public class ExceptionsVisitor extends AbstractVisitor {
 	
 	public boolean visit(MethodDeclaration node) {
 		String src = findSourceForNode(node);
-		String source = src.substring(0, src.indexOf("{"));
+		String source = "";
+		if (src.contains("{")){
+			source = src.substring(0, src.indexOf("{"));			
+		} else {
+			source = src;
+		}
 		String throwsMethod = node.getName().toString() + CHECK_SEPERATOR + source.trim();
 		
 		IMethodBinding mb = node.resolveBinding();
 		
-		ITypeBinding[] types = mb.getExceptionTypes();
-		if (types.length > 0){
-			throwsMethods.add(throwsMethod);			
+		if (mb != null){
+			ITypeBinding[] types = mb.getExceptionTypes();
+			if (types.length > 0){
+				throwsMethods.add(throwsMethod);			
+			}
+			
+			for (ITypeBinding t : types){
+				String name = t.getSuperclass().getQualifiedName();
+				determineExceptionKind(name, throwsMethod);
+			}
 		}
 		
-		for (ITypeBinding t : types){
-			String name = t.getSuperclass().getQualifiedName();
-			determineExceptionKind(name, throwsMethod);
-		}
 		
 		return true;
 	}
