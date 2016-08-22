@@ -31,7 +31,8 @@ public class ExceptionsVisitor extends AbstractVisitor {
 						throwStatements = new LinkedList<>(),
 						exceptionClasses = new LinkedList<>(),
 						uncheckedExceptions = new LinkedList<>(),
-						checkedExceptions = new LinkedList<>();
+						checkedExceptions = new LinkedList<>(),
+						catchExceptions = new LinkedList<>();
 	
 	public List<MethodDeclaration> allMethodDeclarations = new LinkedList<>();
 	
@@ -65,6 +66,7 @@ public class ExceptionsVisitor extends AbstractVisitor {
 	public boolean visit(TryStatement node) {
 		
 		String sig = signatureOfParent(node);		
+		
 		for (Object statement : node.getBody().statements()){
 				String stmt = statement.toString();
 				String tryLine = stmt.substring(0, stmt.indexOf("\n"));
@@ -125,7 +127,11 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		IVariableBinding vb = node.getException().resolveBinding();
 		String exception = vb.getType().getQualifiedName();
 		if (!catchSrc.contains("|")){
-			determineExceptionKind(exception, catchSrc);			
+			determineExceptionKind(exception, catchSrc);
+			String e = exception.substring(exception.lastIndexOf("."), exception.length());
+			if (e.equals("Exception")){
+				catchExceptions.add(catchSrc);
+			}
 		}
 
 		if (node.getException().getType().isUnionType()){

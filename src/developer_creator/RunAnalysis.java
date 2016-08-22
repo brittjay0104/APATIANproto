@@ -29,13 +29,11 @@ public class RunAnalysis {
 	
 
 	public static void main(String[] args) throws Exception {
-//		ModelSourceFile f = new ModelSourceFile(new File("./test.resources/Multicatch_8.java"));
+//		ModelSourceFile f = new ModelSourceFile(new File("./test.resources/InitializerTryCatchFinally.java"));
 ////		ModelSourceFile f = new ModelSourceFile(new File("src/util/Configuration.java"));
 //		
 //		ModelParser p = new ModelParser();
-//		
-//		p.parseForExceptions(f, "./test.resources/", "multicatch.jar");
-
+		
 		File repos = new File("repos.txt");
 		
 		InputStream is = null;
@@ -49,7 +47,7 @@ public class RunAnalysis {
 			while (sc.hasNextLine()){
 				String line = sc.nextLine();
 				
-				// master branch-
+				// master branch
 				if (StringUtils.countMatches(line, ",") == 2 || StringUtils.countMatches(line, ",") == 1){
 					
 					RunAnalysis.setRepoName(line.substring(0, line.indexOf(",")));
@@ -107,7 +105,7 @@ public class RunAnalysis {
 					System.setOut(new PrintStream(new FileOutputStream(opFile)));
 					
 					f1 = new File(opFile);
-					f2 = new File("./archived-output/o/" + opFile);
+					f2 = new File("./archived-output/08-02-2016/" + opFile);
 					
 					is = new FileInputStream(f1);
 					os = new FileOutputStream(f2);
