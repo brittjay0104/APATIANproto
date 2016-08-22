@@ -41,6 +41,7 @@ public class ModelSourceFile {
 	public List<String> exceptionClasses;
 	public List<String> uncheckedExceptions;
 	public List<String> checkedExceptions;
+	public List<String> catchExceptions;
 	
 	// null
 	public HashMap<String, ArrayList<String>> invocs;
@@ -125,7 +126,8 @@ public class ModelSourceFile {
 		throwStatements = new ArrayList<String>();
 		exceptionClasses = new ArrayList<String>();
 		checkedExceptions = new ArrayList<String>();
-		uncheckedExceptions = new ArrayList<String>();		
+		uncheckedExceptions = new ArrayList<String>();
+		catchExceptions = new ArrayList<String>();
 
 		allGenerics = new ArrayList<String>();
 		generics = new HashMap<String, List<String>>();
@@ -323,6 +325,10 @@ public class ModelSourceFile {
 		return uncheckedExceptions;
 	}
 	
+	public List<String> getCatchExceptions(){
+		return catchExceptions;
+	}
+	
 	//adders
 	
 	public void addThrowsMethod(String throwsMethod){
@@ -398,6 +404,11 @@ public class ModelSourceFile {
 	
 	public void addUncheckedException(String uncheckedException){
 		uncheckedExceptions.add(uncheckedException);
+		return;
+	}
+	
+	public void addCatchException(String catchException){
+		catchExceptions.add(catchException);
 		return;
 	}
 	

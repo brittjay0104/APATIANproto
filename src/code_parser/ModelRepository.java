@@ -594,6 +594,7 @@ public class ModelRepository {
 		System.out.println("	--> recency = " + recency.get("checked exceptions"));
 		System.out.println(devName + " added unchecked exception count = " + dev.getAddedUncheckedExceptions());
 		System.out.println("	--> recency = " + recency.get("unchecked exceptions"));
+		System.out.println(devName + " added catch exception count = " + dev.getAddedCatchExceptions());
 		
 	}
 
@@ -655,6 +656,8 @@ public class ModelRepository {
 		System.out.println("	--> recency = " + recency.get("checked exceptions"));
 		System.out.println("	--> Added unchecked exceptions = " + dev.getAddedUncheckedExceptions());
 		System.out.println("	--> recency = " + recency.get("unchecked exceptions"));
+		
+		System.out.println("	--> Added catch exceptions = " + dev.getAddedCatchExceptions());
 	
 
 	}
@@ -1940,6 +1943,7 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 		int addedThrowsMethods = 0;
 		int addedTryStatements = 0;
 		int addedCatchBlocks = 0;
+		int addedCatchExceptions = 0;
 		int addedMultiCatchBlocks = 0;
 		int addedTryWithResources = 0;
 		int addedFinallyBlocks = 0;
@@ -2114,6 +2118,10 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 									if (line.contains(pattern)){
 										//System.out.println(pattern + " added here!");
 										addedCatchBlocks = checkAddedExceptions(addedCatchBlocks, currentHash, diffText, pattern, file);
+										
+										if (file.getCatchExceptions().contains(check) && isExceptionsAddition(diffText, pattern)){
+											addedCatchExceptions += 1;
+										}
 										
 										if (catchBlockDC == 1){
 											String difference = checkDifference(timeDiff);
@@ -2357,6 +2365,12 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 			if (addedCatchBlocks > 0 && addedCatchBlocks <= 10){
 				if (developer.getCommits().contains(currentHash)){
 					developer.setAddedCatchBlocks(addedCatchBlocks);
+				}
+			}
+			
+			if (addedCatchExceptions > 0 && addedCatchExceptions <= 10){
+				if (developer.getCommits().contains(currentHash)){
+					developer.setAddedCatchExceptions(addedCatchExceptions);
 				}
 			}
 			

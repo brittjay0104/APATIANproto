@@ -29,120 +29,120 @@ public class RunAnalysis {
 	
 
 	public static void main(String[] args) throws Exception {
-//		ModelSourceFile f = new ModelSourceFile(new File("./test.resources/Multicatch_8.java"));
-////		ModelSourceFile f = new ModelSourceFile(new File("src/util/Configuration.java"));
+		ModelSourceFile f = new ModelSourceFile(new File("./test.resources/InitializerTryCatchFinally.java"));
+//		ModelSourceFile f = new ModelSourceFile(new File("src/util/Configuration.java"));
+		
+		ModelParser p = new ModelParser();
+		
+		p.parseForExceptions(f, "./test.resources/", "trycatchfinally.jar");
+
+//		File repos = new File("repos.txt");
 //		
-//		ModelParser p = new ModelParser();
+//		InputStream is = null;
+//		OutputStream os = null;
 //		
-//		p.parseForExceptions(f, "./test.resources/", "multicatch.jar");
-
-		File repos = new File("repos.txt");
-		
-		InputStream is = null;
-		OutputStream os = null;
-		
-		// read in list of repos; analyze for each line
-		Scanner sc = new Scanner (repos);
-		
-		try {
-			
-			while (sc.hasNextLine()){
-				String line = sc.nextLine();
-				
-				// master branch
-				if (StringUtils.countMatches(line, ",") == 2 || StringUtils.countMatches(line, ",") == 1){
-					
-					RunAnalysis.setRepoName(line.substring(0, line.indexOf(",")));
-					RunAnalysis.setDeveloperName(line.substring(line.lastIndexOf(",")+2, line.length()));
-					RunAnalysis.setUserName(line.substring(line.indexOf(",")+2, line.lastIndexOf(",")));
-					
-					//RunAnalysis.setUserName(line.substring(line.indexOf(",")+2, line.length()));
-					
-					String dName = RunAnalysis.getDeveloperName();
-					String rName = RunAnalysis.getRepoName();
-					String uName = RunAnalysis.getUserName();
-					
-					Configuration config = new Configuration(dName, rName);
-					String opFile = config.getOpFile();
-					
-					String opFile2 = "";
-					File f1;
-					File f2;
-					
-////					if (line.contains("/")){
-////						opFile2 = opFile.replace("/", "-");
-////						
-////						//System.setOut(new PrintStream(new FileOutputStream(opFile2))); //comment to log to console.
-////						
-////						// create files to populate after analysis
-////						f1 = new File(opFile2);
-////						
-////						if(!f1.exists()){
-////							f1.createNewFile();
-////						}
-////						
-////						f2 = new File("./archived-output/08-01-2016/" + opFile2);
-////						
-////						is = new FileInputStream(f1);
-////						os = new FileOutputStream(f2);
-////						
-////						byte[] buffer = new byte[1024];
-////						
-////						System.out.println(rName + " -- " + uName + " -- " + dName);
-////						
-////						runAnalysis("");
-////						
-////						// move file to folder for archived output
-////						int length;
-////						//copy file contents in bytes
-////						while ((length = is.read(buffer)) > 0){
-////							os.write(buffer, 0, length);
-////						}
-////						
-////						f1.delete();
-////						
-////						System.out.println("File copied successfully!");
-////					}
-					
-					System.setOut(new PrintStream(new FileOutputStream(opFile)));
-					
-					f1 = new File(opFile);
-					f2 = new File("./archived-output/08-02-2016/" + opFile);
-					
-					is = new FileInputStream(f1);
-					os = new FileOutputStream(f2);
-					
-					byte[] buffer = new byte[1024];
-					
-					System.out.println(rName + " -- " + uName + " -- " + dName);
-					
-					runAnalysis("");
-					
-					// move file to folder for archived output
-					int length;
-					//copy file contents in bytes
-					while ((length = is.read(buffer)) > 0){
-						os.write(buffer, 0, length);
-					}
-					
-					f1.delete();
-					
-					System.out.println("File copied successfully!");
-				}
-
-				// TODO other branches of current master branch (3 ','s)
-				// clone with url then checkout branch to analyze?
-			}
-
-			sc.close();
-			is.close();  
-			os.close();
-			
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e){
-			e.printStackTrace();
-		}
+//		// read in list of repos; analyze for each line
+//		Scanner sc = new Scanner (repos);
+//		
+//		try {
+//			
+//			while (sc.hasNextLine()){
+//				String line = sc.nextLine();
+//				
+//				// master branch
+//				if (StringUtils.countMatches(line, ",") == 2 || StringUtils.countMatches(line, ",") == 1){
+//					
+//					RunAnalysis.setRepoName(line.substring(0, line.indexOf(",")));
+//					RunAnalysis.setDeveloperName(line.substring(line.lastIndexOf(",")+2, line.length()));
+//					RunAnalysis.setUserName(line.substring(line.indexOf(",")+2, line.lastIndexOf(",")));
+//					
+//					//RunAnalysis.setUserName(line.substring(line.indexOf(",")+2, line.length()));
+//					
+//					String dName = RunAnalysis.getDeveloperName();
+//					String rName = RunAnalysis.getRepoName();
+//					String uName = RunAnalysis.getUserName();
+//					
+//					Configuration config = new Configuration(dName, rName);
+//					String opFile = config.getOpFile();
+//					
+//					String opFile2 = "";
+//					File f1;
+//					File f2;
+//					
+//////					if (line.contains("/")){
+//////						opFile2 = opFile.replace("/", "-");
+//////						
+//////						//System.setOut(new PrintStream(new FileOutputStream(opFile2))); //comment to log to console.
+//////						
+//////						// create files to populate after analysis
+//////						f1 = new File(opFile2);
+//////						
+//////						if(!f1.exists()){
+//////							f1.createNewFile();
+//////						}
+//////						
+//////						f2 = new File("./archived-output/08-01-2016/" + opFile2);
+//////						
+//////						is = new FileInputStream(f1);
+//////						os = new FileOutputStream(f2);
+//////						
+//////						byte[] buffer = new byte[1024];
+//////						
+//////						System.out.println(rName + " -- " + uName + " -- " + dName);
+//////						
+//////						runAnalysis("");
+//////						
+//////						// move file to folder for archived output
+//////						int length;
+//////						//copy file contents in bytes
+//////						while ((length = is.read(buffer)) > 0){
+//////							os.write(buffer, 0, length);
+//////						}
+//////						
+//////						f1.delete();
+//////						
+//////						System.out.println("File copied successfully!");
+//////					}
+//					
+//					System.setOut(new PrintStream(new FileOutputStream(opFile)));
+//					
+//					f1 = new File(opFile);
+//					f2 = new File("./archived-output/08-02-2016/" + opFile);
+//					
+//					is = new FileInputStream(f1);
+//					os = new FileOutputStream(f2);
+//					
+//					byte[] buffer = new byte[1024];
+//					
+//					System.out.println(rName + " -- " + uName + " -- " + dName);
+//					
+//					runAnalysis("");
+//					
+//					// move file to folder for archived output
+//					int length;
+//					//copy file contents in bytes
+//					while ((length = is.read(buffer)) > 0){
+//						os.write(buffer, 0, length);
+//					}
+//					
+//					f1.delete();
+//					
+//					System.out.println("File copied successfully!");
+//				}
+//
+//				// TODO other branches of current master branch (3 ','s)
+//				// clone with url then checkout branch to analyze?
+//			}
+//
+//			sc.close();
+//			is.close();  
+//			os.close();
+//			
+//		} catch (FileNotFoundException e) {
+//			e.printStackTrace();
+//		} catch (IOException e){
+//			e.printStackTrace();
+//		}
 
 	}
 	
