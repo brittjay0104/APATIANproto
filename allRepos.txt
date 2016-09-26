@@ -158,7 +158,8 @@ google/guava, eaftan, Eddie Aftandilian
 bazelbuild/bazel, eaftan, Eddie Aftandilian
 google/auto, eaftan, Eddie Aftandilian
 
- 
+ -----RE-RUN for catch exception check!!-----
+
 TodoBackend-Spring, pamo, Pamela Ocampo
 fb-contrib-eclipse-quick-fixes, kjlubick, Kevin Lubick
 RecommendationPresentation-Code, kjlubick, Kevin Lubick
@@ -195,3 +196,84 @@ com.ianbull.p2.touchpoint.example, irbull, Ian Bull
 tycho_sample, irbull, Ian Bull
 Android-Password-Store, bltavares, Bruno Lara Tavares
 portal-de-servicos, bltavares, Bruno Lara Tavares
+spring-boot, tshepor2001, Tshepo
+gauge, tshepor2001, Tshepo
+FeatureToggle, tshepor2001, Tshepo 
+banditmodelextension, klerisson, Klerisson Paixao
+blinky, klerisson, Klerisson Paixao
+eclipseRecorder, klerisson, Klerisson Paixao
+metricminer2, klerisson, Klerisson Paixao
+Mallet, klerisson, Klerisson Paixao
+gumtree, klerisson, Klerisson Paixao
+recorderInfra, klerisson, Klerisson Paixao
+ChangePropagation, klerisson, Klerisson Paixao
+bandit, klerisson, Klerisson Paixao
+prefrec, klerisson, Klerisson Paixao
+tracegrasp, klerisson, Klerisson Paixao
+mining-cyclic-rules, klerisson, Klerisson Paixao
+NaiveBayesClassifier, klerisson, Klerisson Paixao
+coverage-exploiter, klerisson, Klerisson Paixao
+java-dependency-extractor, schadr, Adrian Schroeter
+tddforandroid, xpmatteo, Matteo Vaccari
+unit-doctor, xpmatteo, Matteo Vaccari
+fairy-fingers, xpmatteo, Matteo Vaccari
+aw-servlet-exercises, xpmatteo, Matteo Vaccari
+hangman, xpmatteo, Matteo Vaccari
+ocp-kata, xpmatteo, Matteo Vaccari
+tdd4android, xpmatteo, Matteo Vaccari
+birthday-greetings-kata, xpmatteo, Matteo Vaccari
+life, xpmatteo, Matteo Vaccari
+aw-supermarket-checkout-stage-3-client-side-mvc, xpmatteo, Matteo Vaccari
+aw-supermarket-checkout-stage-2-authentication, xpmatteo, Matteo Vaccari
+aw-supermarket-checkout-stage-1-persistence, xpmatteo, Matteo Vaccari
+aw-supermarket-checkout-stage-0-mvc, xpmatteo, Matteo Vaccari
+aw-single-page-webapp-exercise, xpmatteo, Matteo Vaccari
+
+checkstyle, miguelaferreira, Miguel Ferreira
+metricminer2, miguelaferreira, Miguel Ferreira
+throttle-concurrent-builds-plugin, miguelaferreira, Miguel Ferreira
+hefesto, ahdncordeiro, André Cordeiro
+Inventory, ahdncordeiro, André Cordeiro
+home-stock, ahdncordeiro, André Cordeiro
+Rubik-Cube, ahdncordeiro, André Cordeiro
+bejeweled_Experiment, michaelhilton, Michael Hilton
+besouro, michaelhilton, Michael Hilton
+intellijRecorder, michaelhilton, Michael Hilton
+cobertura, michaelhilton, Michael Hilton
+eclipseReplayer, michaelhilton, Michael Hilton
+CommandLineReplayProject, michaelhilton, Michael Hilton
+gumtree, michaelhilton, Michael Hilton
+clientRecorder, michaelhilton, Michael Hilton
+TestGumtreePositions, michaelhilton, Michael Hilton
+Assignment-0, michaelhilton, Michael Hilton
+Group05, michaelhilton, Michael Hilton
+Assignment-1, michaelhilton, Michael Hilton
+samplePeerReview, michaelhilton, Michael Hilton
+Blackjack-21, michaelhilton, Michael Hilton
+junit, avandeursen, Arie van Deursen
+jpacman-framework-v5, avandeursen, Arie van Deursen
+jpacman-framework-jroosen, avandeursen, Arie van Deursen
+operias, avandeursen, Arie van Deursen
+spicy-stonehenge, avandeursen, Arie van Deursen
+functional-programming-java7-to-scala, ark3u0, Steven Garcia
+tictactoe, ark3u0, Steven Garcia
+twu-biblioteca-ashray, ashraymehta, Ashray Mehta
+SalesTaxRedone, ashraymehta, Ashray Mehta
+TaxCalculator, ashraymehta, Ashray Mehta
+GameOfLife-Week2, ashraymehta, Ashray Mehta
+GameOfLife-Week1, ashraymehta, Ashray Mehta
+TWUIntroductoryAssignments, ashraymehta, Ashray Mehta
+MedidorNivelYVelocidadBluetooth, emmeblm, Luisa Emme
+AndroidProjects, emmeblm, Luisa Emme
+TemporizadorServiciosApp, emmeblm, Luisa Emme
+twu-biblioteca-LuisaMariaEmme, emmeblm, Luisa Emme
+IntroductoryProgrammingExercises, emmeblm, Luisa Emme
+TWU51, pecey, Palash Chatterjee
+twu-biblioteca-palash, pecey, Palash Chatterjee
+udacity-nanodegree-portfolio, pecey, Palash Chatterjee
+hangman, pecey, Palash Chatterjee
+elevator-game, eraserqueen, Dominique Rolin
+shokunin-russianpeasant, eraserqueen, Dominique Rolin
+azurite-eclipse, yyoon, YoungSeok Yoon
+fluorite-eclipse, yyoon, YoungSeok Yoon
+

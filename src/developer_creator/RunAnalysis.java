@@ -105,7 +105,7 @@ public class RunAnalysis {
 					System.setOut(new PrintStream(new FileOutputStream(opFile)));
 					
 					f1 = new File(opFile);
-					f2 = new File("./archived-output/08-02-2016/" + opFile);
+					f2 = new File("./archived-output/o/" + opFile);
 					
 					is = new FileInputStream(f1);
 					os = new FileOutputStream(f2);

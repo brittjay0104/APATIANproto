@@ -13,6 +13,9 @@ public class Configuration {
 	public String opFile;
 	
 	public Configuration (String developer, String repo){
+		if (developer.contains("\"")){
+			developer = developer.replace("\"", "-");
+		}
 		opFile = "output-" + developer + "-" + repo + ".txt";
 	}
 	
