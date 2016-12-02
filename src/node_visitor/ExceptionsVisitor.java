@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.regex.Pattern;
 
 import org.eclipse.jdt.core.dom.CatchClause;
 import org.eclipse.jdt.core.dom.Expression;
@@ -20,6 +19,26 @@ import org.eclipse.jdt.core.dom.UnionType;
 
 import code_parser.ModelSourceFile;
 
+/**
+ * This class collects Exception related information from a source file.
+ * Specifically we collect following information :
+ * <ul>
+ * <li>Methods that <code>throw</code> exceptions </li>
+ * <li>Information about <code>try</code> statements </li>
+ * <li>Information about <code>try with resources</code> statements </li>
+ * <li>Information about <code>catch</code> blocks </li>
+ * <li>Information about multi-<code>catch</code> blocks </li>
+ * <li>Information about <code>finally</code> blocks </li>
+ * <li>Information about <code>throws</code> statements </li>
+ * <li>Information about <code>Exception</code> classes </li>
+ * <li>Information about checked <code>Exceptions</code> </li>
+ * <li>Information about unchecked <code>Exceptions</code> </li>
+ * <li>Information about caught <code>Exceptions</code> </li>
+ * <li>Information about <code>try</code> statements </li>		
+ * </ul>
+ * @author ??
+ *
+ */
 public class ExceptionsVisitor extends AbstractVisitor {
 	// Methods that declare "throws"
 	public List<String> throwsMethods = new LinkedList<>(),
