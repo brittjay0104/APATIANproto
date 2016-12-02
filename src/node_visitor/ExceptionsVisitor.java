@@ -155,7 +155,7 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		if (node.getException().getType().isUnionType()){
 			vb = node.getException().resolveBinding();
 			UnionType t = (UnionType) node.getException().getType();
-			List types = t.types();
+			List<?> types = t.types();
 			
 			for (Object type: types){
 				SimpleType e = (SimpleType)type;
