@@ -4,7 +4,7 @@ import code_parser.ModelSourceFile;
 
 /**
  * Class to visit Variable Decelerations and Extract <i>STUFF</i>
- * //TODO Fisx description  
+ * //TODO Fix description  
  * @author Rahul Pandita
  *
  */
