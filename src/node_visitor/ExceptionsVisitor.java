@@ -33,8 +33,7 @@ import code_parser.ModelSourceFile;
  * <li>Information about <code>Exception</code> classes </li>
  * <li>Information about checked <code>Exceptions</code> </li>
  * <li>Information about unchecked <code>Exceptions</code> </li>
- * <li>Information about caught <code>Exceptions</code> </li>
- * <li>Information about <code>try</code> statements </li>		
+ * <li>Information about caught <code>Exceptions</code> </li>s		
  * </ul>
  * @author ??
  *
