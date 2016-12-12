@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.eclipse.jdt.core.dom.FieldDeclaration;
+import org.eclipse.jdt.core.dom.MethodDeclaration;
+import org.eclipse.jdt.core.dom.SingleVariableDeclaration;
 import org.eclipse.jdt.core.dom.VariableDeclarationFragment;
 import org.eclipse.jdt.core.dom.VariableDeclarationStatement;
 
@@ -38,6 +40,23 @@ public class VariablesVisitor extends AbstractVisitor {
 		processVariableDeclerationFragments(node.fragments(), node.toString(), node.getModifiers(), VariableType.LOCAL);
 		return super.visit(node);
 	}
+	
+	@Override
+	public boolean visit(MethodDeclaration node) {
+		SingleVariableDeclaration param;
+		for(Object obj : node.parameters()){
+			if(obj instanceof SingleVariableDeclaration){
+				param = (SingleVariableDeclaration) obj;
+				allVariableData.add(new VariableData(param.getModifiers(), param.getName().getIdentifier(), param.getName().resolveBinding().getName(), node.toString(), VariableType.PARAMETER));
+			}
+			else
+			{
+				System.err.println("Unexpected Type!!");
+			}
+				
+		}
+		return super.visit(node);
+	}
 
 	private void processVariableDeclerationFragments(List<?> fragments, String srcLineStr, int modifier, VariableType variableType) {
 		
@@ -52,11 +71,14 @@ public class VariablesVisitor extends AbstractVisitor {
 				type = decFragment.getName().resolveTypeBinding().getName();
 				allVariableData.add(new VariableData(modifier, name, type, srcLineStr, variableType));
 			}
+			else
+			{
+				System.err.println("Unexpected Type !");
+			}
 		}
 	}
 
 	public List<VariableData> getAllVariableData() {
 		return allVariableData;
 	}
-
 }
