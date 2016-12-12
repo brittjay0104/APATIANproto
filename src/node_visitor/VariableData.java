@@ -4,6 +4,12 @@ import org.eclipse.jdt.core.dom.Modifier;
 
 public class VariableData {
 	
+	public static enum  VariableType {
+		FIELD,
+		LOCAL,
+		PARAMETER
+	}
+	
 	private int modifier;
 	
 	private String name;
@@ -12,16 +18,15 @@ public class VariableData {
 	
 	private String srcLineStr;
 	
-	private boolean classMember;
+	private VariableType variableType;
 	
 	
-	
-	public VariableData(int modifier, String name, String type, String srcLineStr, boolean classMember) {
+	public VariableData(int modifier, String name, String type, String srcLineStr, VariableType variableType) {
 		this.modifier = modifier;
 		this.srcLineStr = srcLineStr;
 		this.type = type;
 		this.name = name;
-		this.classMember = classMember;
+		this.variableType  = variableType;
 		
 	}
 	
@@ -57,14 +62,14 @@ public class VariableData {
 		this.srcLineStr = srcLineStr;
 	}
 
-	public boolean isClassMember() {
-		return classMember;
+	public VariableType getVaraibleType() {
+		return variableType;
 	}
 
-	public void setClassMember(boolean classMember) {
-		this.classMember = classMember;
+	public void setVaraibleType(VariableType variableType) {
+		this.variableType = variableType;
 	}
-	
+
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub

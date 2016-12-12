@@ -8,6 +8,7 @@ import org.eclipse.jdt.core.dom.VariableDeclarationFragment;
 import org.eclipse.jdt.core.dom.VariableDeclarationStatement;
 
 import code_parser.ModelSourceFile;
+import node_visitor.VariableData.VariableType;
 
 /**
  * Class to visit Variable Decelerations and Extract <i>STUFF</i> 
@@ -27,18 +28,18 @@ public class VariablesVisitor extends AbstractVisitor {
 
 	@Override
 	public boolean visit(FieldDeclaration node) {
-		processVariableDeclerationFragments(node.fragments(), node.toString(), node.getModifiers(), true);
+		processVariableDeclerationFragments(node.fragments(), node.toString(), node.getModifiers(), VariableType.FIELD);
 		return super.visit(node);
 	}
 
 	@Override
 	public boolean visit(VariableDeclarationStatement node) {
 
-		processVariableDeclerationFragments(node.fragments(), node.toString(), node.getModifiers(), false);
+		processVariableDeclerationFragments(node.fragments(), node.toString(), node.getModifiers(), VariableType.LOCAL);
 		return super.visit(node);
 	}
 
-	private void processVariableDeclerationFragments(List<?> fragments, String srcLineStr, int modifier, boolean classMember) {
+	private void processVariableDeclerationFragments(List<?> fragments, String srcLineStr, int modifier, VariableType variableType) {
 		
 		String name;
 		String type;
@@ -49,7 +50,7 @@ public class VariablesVisitor extends AbstractVisitor {
 				decFragment = (VariableDeclarationFragment) fragObject;
 				name = decFragment.getName().getIdentifier();
 				type = decFragment.getName().resolveTypeBinding().getName();
-				allVariableData.add(new VariableData(modifier, name, type, srcLineStr, classMember));
+				allVariableData.add(new VariableData(modifier, name, type, srcLineStr, variableType));
 			}
 		}
 	}
