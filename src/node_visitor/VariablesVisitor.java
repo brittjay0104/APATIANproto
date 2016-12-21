@@ -36,8 +36,7 @@ public class VariablesVisitor extends AbstractVisitor {
 
 	@Override
 	public boolean visit(VariableDeclarationStatement node) {
-
-		processVariableDeclerationFragments(node.fragments(), node.toString(), node.getModifiers(), VariableType.LOCAL);
+		processVariableDeclerationFragments(node.fragments(), node.toString(), node.getModifiers() , VariableType.LOCAL);
 		return super.visit(node);
 	}
 	

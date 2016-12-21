@@ -84,7 +84,6 @@ public class VariablesTest extends TestCase{
 			int actual = actual(visitor, split);
 			
 			assertEquals("Expected: " + data, Integer.parseInt(split[3]) , actual);
-//			System.out.println(data);
 		}
 	
 	}
