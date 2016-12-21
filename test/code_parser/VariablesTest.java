@@ -2,9 +2,12 @@ package code_parser;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -21,6 +24,7 @@ import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
 
 import junit.framework.TestCase;
+import node_visitor.AbstractVisitor;
 import node_visitor.VariableData;
 import node_visitor.VariablesVisitor;
 
@@ -35,7 +39,7 @@ public class VariablesTest extends TestCase{
 	@Parameters(name="{0}")
     public static Collection<Object[]> params() {
     	
-    	File[] javaFiles = new File("test.resources//").listFiles();
+    	File[] javaFiles = new File("test.resources/test/resources/variables//").listFiles();
     	
     	Collection<Object[]> files = new ArrayList<Object[]>();
     	for(File jFile : javaFiles){
@@ -63,7 +67,7 @@ public class VariablesTest extends TestCase{
 		parser.setBindingsRecovery(true);
 		parser.setUnitName(inputFile.getName());
 		
-		String [] sources = {"test.resources/"};
+		String [] sources = {"test.resources/test/resources/variables/"};
 		String[] classpath = {"ap.jar"};
 		parser.setEnvironment(classpath, sources, new String[] { "UTF-8"}, true);
 		
@@ -74,8 +78,13 @@ public class VariablesTest extends TestCase{
 		CompilationUnit cu = (CompilationUnit) parser.createAST(new NullProgressMonitor());
 		cu.accept(visitor);
 
-		for(VariableData data : visitor.getAllVariableData()){
-			System.out.println(data);
+		for(String data : getExpectedOutput()){
+			String[] split = data.split(" ");
+			
+			int actual = actual(visitor, split);
+			
+			assertEquals("Expected: " + data, Integer.parseInt(split[3]) , actual);
+//			System.out.println(data);
 		}
 	
 	}
@@ -84,6 +93,50 @@ public class VariablesTest extends TestCase{
 	public void testcase_2(){
 		
 	}
+	
+	private int actual (AbstractVisitor visitor, String[] split){
+		Class<?> c = visitor.getClass();
+
+		Field f = null;
+		try {
+			f = c.getDeclaredField(split[1]);
+		} catch (NoSuchFieldException _) {
+			throw new RuntimeException("Test framework couldn't find field " + split[1]);
+		} catch (SecurityException _){
+			fail("Test framework couldn't access field " + split[0]);
+		}
+		int actualResult = -1;
+		try {
+			f.setAccessible(true);
+			actualResult = ((List<String>) f.get(visitor)).size();
+		} catch (IllegalArgumentException | IllegalAccessException _) {
+			throw new RuntimeException("Test framework couldn't access field " + split[0]);
+		}
+		return actualResult;
+	}
+	
+	/**
+	 * Returns the expected output (from the comment in inputfile)
+	 * @throws FileNotFoundException, IOException
+	 */
+	private List<String> getExpectedOutput() throws FileNotFoundException, IOException {
+		List<String> expectedOutput = new ArrayList<String>();
+		FileInputStream fis = new FileInputStream(inputFile);
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(fis));
+		String line = null;
+		
+		while ((line = br.readLine()) != null && line.startsWith("//")){
+			//String output = line.substring(line.indexOf("-")+1, line.length()).trim();
+			
+			expectedOutput.add(line);
+		}
+		
+		br.close();
+		
+		return expectedOutput;
+	}
+	
 
 	private char[] fileContents() throws FileNotFoundException, IOException {
 		StringBuffer sb = new StringBuffer();

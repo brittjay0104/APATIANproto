@@ -1,3 +1,4 @@
+package test.resources.exceptions;
 // tryStatements = 2
 // catchBlocks = 2
 // finallyBlocks = 1

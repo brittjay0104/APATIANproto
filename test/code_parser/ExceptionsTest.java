@@ -38,7 +38,7 @@ public class ExceptionsTest extends TestCase{
 	@Parameters(name="{0}")
     public static Collection<Object[]> params() {
     	
-    	File[] javaFiles = new File("test.resources//").listFiles();
+    	File[] javaFiles = new File("test.resources/test/resources/exceptions//").listFiles();
     	
     	Collection<Object[]> files = new ArrayList<Object[]>();
     	for(File jFile : javaFiles){
@@ -66,7 +66,7 @@ public class ExceptionsTest extends TestCase{
 		parser.setBindingsRecovery(true);
 		parser.setUnitName(inputFile.getName());
 		
-		String [] sources = {"test.resources/"};
+		String [] sources = {"test.resources/test/resources/exceptions/"};
 		String[] classpath = {"ap.jar"};
 		parser.setEnvironment(classpath, sources, new String[] { "UTF-8"}, true);
 		

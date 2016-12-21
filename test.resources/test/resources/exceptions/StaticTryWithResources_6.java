@@ -1,3 +1,4 @@
+package test.resources.exceptions;
 // tryWithResources = 1
 // catchBlocks = 2
 // checkedExceptions = 2
