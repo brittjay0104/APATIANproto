@@ -1,5 +1,7 @@
 package node_visitor;
 
+import java.util.List;
+
 import org.eclipse.jdt.core.dom.Modifier;
 
 public class VariableData {
@@ -9,33 +11,36 @@ public class VariableData {
 		LOCAL,
 		PARAMETER
 	}
-	
-	private int modifier;
+
+	private int modifiers;
 	
 	private String name;
 	
 	private String type;
+	
+	private boolean isPrimitive;
 	
 	private String srcLineStr;
 	
 	private VariableType variableType;
 	
 	
-	public VariableData(int modifier, String name, String type, String srcLineStr, VariableType variableType) {
-		this.modifier = modifier;
+	public VariableData(int modifiers, String name, String type, String srcLineStr, VariableType variableType, boolean primitive) {
+		this.modifiers = modifiers;
 		this.srcLineStr = srcLineStr;
 		this.type = type;
+		this.isPrimitive = primitive;
 		this.name = name;
 		this.variableType  = variableType;
 		
 	}
 	
-	public int getModifier() {
-		return modifier;
+	public int getModifiers() {
+		return modifiers;
 	}
 
-	public void setModifier(int modifier) {
-		this.modifier = modifier;
+	public void setModifier(int modifiers) {
+		this.modifiers = modifiers;
 	}
 
 	public String getName() {
@@ -52,6 +57,14 @@ public class VariableData {
 
 	public void setType(String type) {
 		this.type = type;
+	}
+	
+	public boolean getIsPrimitive(){
+		return isPrimitive;
+	}
+	
+	public void setIsPrimitive(boolean primitive){
+		this.isPrimitive = primitive;
 	}
 
 	public String getSrcLineStr() {
@@ -74,17 +87,17 @@ public class VariableData {
 	public String toString() {
 		// TODO Auto-generated method stub
 		StringBuffer buff = new StringBuffer();
-		buff.append(Modifier.isAbstract(modifier)?"abstract ":"");
-		buff.append(Modifier.isFinal(modifier)?"final ":"");
-		buff.append(Modifier.isNative(modifier)?"native ":"");
-		buff.append(Modifier.isPrivate(modifier)?"private ":"");
-		buff.append(Modifier.isProtected(modifier)?"protected ":"");
-		buff.append(Modifier.isPublic(modifier)?"public ":"");
-		buff.append(Modifier.isStatic(modifier)?"static ":"");
-		buff.append(Modifier.isStrictfp(modifier)?"strictfp ":"");
-		buff.append(Modifier.isSynchronized(modifier)?"synchronized ":"");
-		buff.append(Modifier.isTransient(modifier)?"transient ":"");
-		buff.append(Modifier.isVolatile(modifier)?"volatile ":"");
+		buff.append(Modifier.isAbstract(modifiers)?"abstract ":"");
+		buff.append(Modifier.isFinal(modifiers)?"final ":"");
+		buff.append(Modifier.isNative(modifiers)?"native ":"");
+		buff.append(Modifier.isPrivate(modifiers)?"private ":"");
+		buff.append(Modifier.isProtected(modifiers)?"protected ":"");
+		buff.append(Modifier.isPublic(modifiers)?"public ":"");
+		buff.append(Modifier.isStatic(modifiers)?"static ":"");
+		buff.append(Modifier.isStrictfp(modifiers)?"strictfp ":"");
+		buff.append(Modifier.isSynchronized(modifiers)?"synchronized ":"");
+		buff.append(Modifier.isTransient(modifiers)?"transient ":"");
+		buff.append(Modifier.isVolatile(modifiers)?"volatile ":"");
 		//"\u03D5" represents absence of modifiers
 		buff.append((buff.toString().trim().length()==0)?"\u03D5":"");
 		buff.append(", ").append(type).append(", ").append(name).append(", ").append("\n\t").append(srcLineStr);

@@ -46,7 +46,11 @@ public class VariablesVisitor extends AbstractVisitor {
 		for(Object obj : node.parameters()){
 			if(obj instanceof SingleVariableDeclaration){
 				param = (SingleVariableDeclaration) obj;
-				allVariableData.add(new VariableData(param.getModifiers(), param.getName().getIdentifier(), param.getName().resolveBinding().getName(), node.toString(), VariableType.PARAMETER));
+				if (param.getType().isPrimitiveType()){
+					allVariableData.add(new VariableData(param.getModifiers(), param.getName().getIdentifier(), param.getName().resolveBinding().getName(), node.toString(), VariableType.PARAMETER, true));
+				} else {
+					allVariableData.add(new VariableData(param.getModifiers(), param.getName().getIdentifier(), param.getName().resolveBinding().getName(), node.toString(), VariableType.PARAMETER, false));					
+				}
 			}
 			else
 			{
@@ -68,7 +72,8 @@ public class VariablesVisitor extends AbstractVisitor {
 				decFragment = (VariableDeclarationFragment) fragObject;
 				name = decFragment.getName().getIdentifier();
 				type = decFragment.getName().resolveTypeBinding().getName();
-				allVariableData.add(new VariableData(modifier, name, type, srcLineStr, variableType));
+				boolean isPrimitive = decFragment.getName().resolveTypeBinding().isPrimitive();
+				allVariableData.add(new VariableData(modifier, name, type, srcLineStr, variableType, isPrimitive));
 			}
 			else
 			{
