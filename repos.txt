@@ -1,9 +1,1 @@
-connect, irbull, Ian Bull
-tabris-js-extension, irbull, Ian Bull
-pi4j, irbull, Ian Bull
-tycho-java8-example, irbull, Ian Bull
-org.eclipse.rap.example.controlexample, irbull, Ian Bull
-tycho_sample, irbull, Ian Bull
-cosmic, miguelaferreira, Miguel Ferreira
-metricminer2, Klerissonpaixao, Klerisson Paixao
-rt.eclipse.p2, irbull, Ian Bull
+DeveloperLiberationFront/Program-Navigation-Plugin, chbrown13, Chris

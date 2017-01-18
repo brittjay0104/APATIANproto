@@ -34,3 +34,5 @@ output-Ian Bull-tycho_sample.txt
 output-Miguel Ferreira-cosmic.txt
 rt.eclipse.p2/
 tycho_sample/
+*.jar
+*.txt

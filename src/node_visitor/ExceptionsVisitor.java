@@ -168,7 +168,10 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		//check for type declarations in this file
 		if (exceptionClasses != null){
 			for (String c : exceptionClasses){
-				exception = exception.substring(exception.lastIndexOf("."), exception.length());
+				if (exception.contains(".")){
+					exception = exception.substring(exception.lastIndexOf("."), exception.length());					
+				}
+				
 				if (c.contains(exception)){
 					addExceptionKind(exception, source);
 					found = true;

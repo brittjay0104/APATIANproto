@@ -277,3 +277,12 @@ shokunin-russianpeasant, eraserqueen, Dominique Rolin
 azurite-eclipse, yyoon, YoungSeok Yoon
 fluorite-eclipse, yyoon, YoungSeok Yoon
 
+
+DeveloperLiberationFront/Program-Navigation-Plugin, chbrown13, Chris
+DeveloperLiberationFront/Program-Navigation-Plugin, chbrown13, Chris
+
+aarahman, akondrahman/extSimpleDB, Akond A. Rahman 
+
+CSC116, sherryxzhu, Sherry Xueer Zhu
+Just-Java-App, sherryxzhu, Sherry Xueer Zhu
+
