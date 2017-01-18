@@ -25,10 +25,11 @@ import org.junit.runners.Parameterized.Parameters;
 
 import junit.framework.TestCase;
 import node_visitor.AbstractVisitor;
-import node_visitor.ExceptionsVisitor;
+import node_visitor.VariableData;
+import node_visitor.VariablesVisitor;
 
 @RunWith(Parameterized.class)
-public class ExceptionsTest extends TestCase{
+public class VariablesTest extends TestCase{
 
 	//TODO throw error if no assertions in test cases
 	
@@ -38,7 +39,7 @@ public class ExceptionsTest extends TestCase{
 	@Parameters(name="{0}")
     public static Collection<Object[]> params() {
     	
-    	File[] javaFiles = new File("test.resources/test/resources/exceptions//").listFiles();
+    	File[] javaFiles = new File("test.resources/test/resources/variables//").listFiles();
     	
     	Collection<Object[]> files = new ArrayList<Object[]>();
     	for(File jFile : javaFiles){
@@ -66,23 +67,23 @@ public class ExceptionsTest extends TestCase{
 		parser.setBindingsRecovery(true);
 		parser.setUnitName(inputFile.getName());
 		
-		String [] sources = {"test.resources/test/resources/exceptions/"};
+		String [] sources = {"test.resources/test/resources/variables/"};
 		String[] classpath = {"ap.jar"};
 		parser.setEnvironment(classpath, sources, new String[] { "UTF-8"}, true);
 		
 		ModelSourceFile file = new ModelSourceFile(inputFile);
 		file.setSource(result);
-		AbstractVisitor visitor = new ExceptionsVisitor(file);
+		VariablesVisitor visitor = new VariablesVisitor(file);
 		
 		CompilationUnit cu = (CompilationUnit) parser.createAST(new NullProgressMonitor());
 		cu.accept(visitor);
 
-		for(String exp : getExpectedOutput()){
-			String[] split = exp.split(" ");
-
+		for(String data : getExpectedOutput()){
+			String[] split = data.split(" ");
+			
 			int actual = actual(visitor, split);
-		    
-			assertEquals("Expected: " + exp,Integer.parseInt(split[3]), actual);
+			
+			assertEquals("Expected: " + data, Integer.parseInt(split[3]) , actual);
 		}
 	
 	}
@@ -91,8 +92,8 @@ public class ExceptionsTest extends TestCase{
 	public void testcase_2(){
 		
 	}
-
-	private int actual(AbstractVisitor visitor, String[] split) {
+	
+	private int actual (AbstractVisitor visitor, String[] split){
 		Class<?> c = visitor.getClass();
 
 		Field f = null;
@@ -114,14 +115,6 @@ public class ExceptionsTest extends TestCase{
 	}
 	
 	/**
-	 * Returns the expected result (from the inputfilename)
-	 */
-	private int getExpectedResult(){		
-		String name = inputFile.getName();
-		return Integer.parseInt(name.substring(name.indexOf('_')+1,//chop off head
-								name.length()-5));					//chop of .java
-	}
-	/**
 	 * Returns the expected output (from the comment in inputfile)
 	 * @throws FileNotFoundException, IOException
 	 */
@@ -142,6 +135,7 @@ public class ExceptionsTest extends TestCase{
 		
 		return expectedOutput;
 	}
+	
 
 	private char[] fileContents() throws FileNotFoundException, IOException {
 		StringBuffer sb = new StringBuffer();

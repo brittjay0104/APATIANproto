@@ -1,8 +1,6 @@
 package node_visitor;
 
 import java.util.Arrays;
-import java.util.List;
-import java.util.regex.Pattern;
 
 import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.ASTVisitor;

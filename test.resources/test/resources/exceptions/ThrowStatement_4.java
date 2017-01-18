@@ -1,3 +1,4 @@
+package test.resources.exceptions;
 // checkedExceptions = 2
 // throwsMethods = 1
 // throwStatements = 1

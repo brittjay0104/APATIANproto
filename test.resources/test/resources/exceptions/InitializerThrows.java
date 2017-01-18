@@ -1,3 +1,4 @@
+package test.resources.exceptions;
 // uncheckedExceptions = 1
 
 public class InitializerThrows {
