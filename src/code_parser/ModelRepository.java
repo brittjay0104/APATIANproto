@@ -28,6 +28,7 @@ import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.LogCommand;
 import org.eclipse.jgit.api.errors.ConcurrentRefUpdateException;
 import org.eclipse.jgit.api.errors.GitAPIException;
+import org.eclipse.jgit.api.errors.JGitInternalException;
 import org.eclipse.jgit.api.errors.NoHeadException;
 import org.eclipse.jgit.api.errors.NoMessageException;
 import org.eclipse.jgit.api.errors.UnmergedPathsException;
@@ -37,6 +38,7 @@ import org.eclipse.jgit.diff.DiffEntry.ChangeType;
 import org.eclipse.jgit.diff.DiffFormatter;
 import org.eclipse.jgit.diff.RenameDetector;
 import org.eclipse.jgit.errors.RepositoryNotFoundException;
+import org.eclipse.jgit.errors.UnmergedPathException;
 import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.ObjectReader;
 import org.eclipse.jgit.lib.PersonIdent;
@@ -475,6 +477,10 @@ public class ModelRepository {
 					System.out.println("NoMessageException thrown!");
 				} catch (UnmergedPathsException e) {
 					System.out.println("Paths did not successfully merge!");
+					continue;
+				} catch (JGitInternalException e) {
+					System.out.println("Something's not right...");
+					continue;
 				} catch (ConcurrentRefUpdateException e) {
 					System.out.println("ConcurrentRefUpdateException thrown!");
 				} catch (WrongRepositoryStateException e) {
@@ -2114,10 +2120,10 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 							
 							for (String check: checks){
 								
-								System.out.println("Current revision --> " + currentHash);
-								System.out.println("Previous revision --> " + previousHash);
-								System.out.println("Diff line --> " + line);
-								System.out.println("Usage pattern --> " + check);
+								//System.out.println("Current revision --> " + currentHash);
+								//System.out.println("Previous revision --> " + previousHash);
+								//System.out.println("Diff line --> " + line);
+								//System.out.println("Usage pattern --> " + check);
 								
 								if (file.getThrowsMethods().contains(check)){
 									String pattern = check.substring(check.indexOf(CHECK_SEPERATOR)+1, check.length());

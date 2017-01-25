@@ -24,3 +24,15 @@ dummy-repo3/
 console-output.txt
 archived-output/
 error-prone/
+CSC510-Group-M/
+ck/
+connect/
+cosmic.jar
+cosmic/
+output-Ian Bull-tabris-js-extension.txt
+output-Ian Bull-tycho_sample.txt
+output-Miguel Ferreira-cosmic.txt
+rt.eclipse.p2/
+tycho_sample/
+*.jar
+*.txt

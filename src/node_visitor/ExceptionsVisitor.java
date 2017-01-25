@@ -143,27 +143,40 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		catchBlocks.add(catchSrc);
 		
 		IVariableBinding vb = node.getException().resolveBinding();
-		String exception = vb.getType().getQualifiedName();
-		if (!catchSrc.contains("|")){
-			determineExceptionKind(exception, catchSrc);
-			String e = exception.substring(exception.lastIndexOf("."), exception.length());
-			if (e.equals("Exception")){
-				catchExceptions.add(catchSrc);
+		//String tb = vb.getType().getName();
+		if (vb != null) {
+			String exception = vb.getType().getQualifiedName();
+			if (!catchSrc.contains("|")){
+				determineExceptionKind(exception, catchSrc);
+				String e = exception.substring(exception.lastIndexOf(".")+1, exception.length());
+				if (e.equals("Exception")){
+					catchExceptions.add(catchSrc);
+				}
 			}
+<<<<<<< HEAD
+=======
 		}
 
 		if (node.getException().getType().isUnionType()){
 			vb = node.getException().resolveBinding();
 			UnionType t = (UnionType) node.getException().getType();
 			List<?> types = t.types();
+>>>>>>> 8fb477ff1c27381fa24c2d70472bc0dc9877edcd
 			
-			for (Object type: types){
-				SimpleType e = (SimpleType)type;
-				String except = e.resolveBinding().getQualifiedName();
-				determineExceptionKind(except, catchSrc);
+			if (node.getException().getType().isUnionType()){
+				vb = node.getException().resolveBinding();
+				UnionType t = (UnionType) node.getException().getType();
+				List types = t.types();
+				
+				for (Object type: types){
+					SimpleType e = (SimpleType)type;
+					String except = e.resolveBinding().getQualifiedName();
+					determineExceptionKind(except, catchSrc);
+				}
+				
+				multiCatchBlocks.add(catchSrc);
 			}
 			
-			multiCatchBlocks.add(catchSrc);
 		}
 		
 		return true;
@@ -182,7 +195,10 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		//check for type declarations in this file
 		if (exceptionClasses != null){
 			for (String c : exceptionClasses){
-				exception = exception.substring(exception.lastIndexOf("."), exception.length());
+				if (exception.contains(".")){
+					exception = exception.substring(exception.lastIndexOf("."), exception.length());					
+				}
+				
 				if (c.contains(exception)){
 					addExceptionKind(exception, source);
 					found = true;
@@ -217,12 +233,14 @@ public class ExceptionsVisitor extends AbstractVisitor {
 		Expression n = node.getExpression();
 
 		ITypeBinding tb = n.resolveTypeBinding();
-		if (tb.getQualifiedName().contains(".")){
-			String name = tb.getQualifiedName();
-			determineExceptionKind(name, throwStatement);
-		} else {
-			String name = tb.getSuperclass().getQualifiedName();
-			determineExceptionKind(name, throwStatement);
+		if (tb != null){
+			if (tb.getQualifiedName().contains(".")){
+				String name = tb.getQualifiedName();
+				determineExceptionKind(name, throwStatement);
+			} else {
+				String name = tb.getSuperclass().getQualifiedName();
+				determineExceptionKind(name, throwStatement);
+			}			
 		}
 			
 		return true;
