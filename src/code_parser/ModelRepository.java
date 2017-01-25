@@ -49,6 +49,7 @@ import com.gitblit.models.PathModel.PathChangeModel;
 import com.gitblit.utils.JGitUtils;
 
 import developer_creator.ModelDeveloper;
+import node_visitor.VariableData;
 
 public class ModelRepository {
 
@@ -86,15 +87,10 @@ public class ModelRepository {
 	//exceptions
 	private int throwsMethodDC = 1;
 	private int tryStatementDC = 1;
-	private int staticTryStatementDC = 1;
 	private int catchBlockDC = 1;
-	private int staticCatchBlockDC = 1;
 	private int multiCatchBlockDC = 1;
-	private int staticMultiCatchBlockDC = 1;
 	private int tryWithResourceDC = 1;
-	private int staticTryWithResourceDC = 1;
 	private int finallyBlockDC = 1;
-	private int staticFinallyBlockDC = 1;
 	private int throwStatementDC = 1;
 	private int exceptionClassDC = 1;
 	private int checkedExceptionDC = 1;
@@ -102,6 +98,21 @@ public class ModelRepository {
 	private boolean isChecked = false;
 	private boolean isUnchecked = false;
 	
+	// variables
+	private int primitiveDC = 1;
+	private int nonPrimitiveDC = 1;
+	private int fieldDC = 1;
+	private int localVariableDC = 1;
+	private int parameterDC = 1;
+	private int publicVariableDC = 1;
+	private int privateVariableDC = 1;
+	private int protectedVariableDC = 1;
+	private int staticVariableDC = 1;
+	private int finalVariableDC = 1;
+	private int transientVariableDC = 1;
+	private int volatileVariableDC = 1;	
+	
+	// general objects 
 	String jarFile;
 	String sourceDir;
 
@@ -574,26 +585,60 @@ public class ModelRepository {
 //		System.out.println("	--> recency = " + recency.get("bounds"));
 		
 		// EXCEPTIONS
-		System.out.println(devName + " added throws method count = " + dev.getAddedThrowsMethods());
-		System.out.println("	--> recency = " + recency.get("throws methods"));
-		System.out.println(devName + " added try statement count = " + dev.getAddedTryStatements());
-		System.out.println("	--> recency = " + recency.get("try statements"));
-		System.out.println(devName + " added catch block count = " + dev.getAddedCatchBlocks());
-		System.out.println("	--> recency = " + recency.get("catch blocks"));
-		System.out.println(devName + " added multi-catch block count = " + dev.getAddedMultiCatchBlocks());
-		System.out.println("	--> recency = " + recency.get("multi-catch blocks"));
-		System.out.println(devName + " added try with resources count = " + dev.getAddedTryWithResources());
-		System.out.println("	--> recency = " + recency.get("try with resources"));
-		System.out.println(devName + " added finally block count = " + dev.getAddedFinallyBlocks()); 
-		System.out.println("	--> recency = " + recency.get("finally blocks"));
-		System.out.println(devName + " added throw statement count = " + dev.getAddedThrowStatements());
-		System.out.println("	--> recency = " + recency.get("throw statements"));
+//		System.out.println(devName + " added throws method count = " + dev.getAddedThrowsMethods());
+//		System.out.println("	--> recency = " + recency.get("throws methods"));
+//		System.out.println(devName + " added try statement count = " + dev.getAddedTryStatements());
+//		System.out.println("	--> recency = " + recency.get("try statements"));
+//		System.out.println(devName + " added catch block count = " + dev.getAddedCatchBlocks());
+//		System.out.println("	--> recency = " + recency.get("catch blocks"));
+//		System.out.println(devName + " added multi-catch block count = " + dev.getAddedMultiCatchBlocks());
+//		System.out.println("	--> recency = " + recency.get("multi-catch blocks"));
+//		System.out.println(devName + " added try with resources count = " + dev.getAddedTryWithResources());
+//		System.out.println("	--> recency = " + recency.get("try with resources"));
+//		System.out.println(devName + " added finally block count = " + dev.getAddedFinallyBlocks()); 
+//		System.out.println("	--> recency = " + recency.get("finally blocks"));
+//		System.out.println(devName + " added throw statement count = " + dev.getAddedThrowStatements());
+//		System.out.println("	--> recency = " + recency.get("throw statements"));
+//		System.out.println(devName + " added exception class count = " + dev.getAddedExceptionClasses());
+//		System.out.println("	--> recency = " + recency.get("exception classes"));
+//		System.out.println(devName + " added checked exception count = " + dev.getAddedCheckedExceptions());
+//		System.out.println("	--> recency = " + recency.get("checked exceptions"));
+//		System.out.println(devName + " added unchecked exception count = " + dev.getAddedUncheckedExceptions());
+//		System.out.println("	--> recency = " + recency.get("unchecked exceptions"));
+//		System.out.println(devName + " added catch exception count = " + dev.getAddedCatchExceptions());
+		
+		// VARIABLES
+		System.out.println(devName + " added primitive variable count = " + dev.getAddedPrimitives());
+		System.out.println("	--> recency = " + recency.get("primitive variables"));
+		
+		System.out.println(devName + " added non-primitive variable count = " + dev.getAddedNonPrimitives());
+		System.out.println("	--> recency = " + recency.get("non primitive variables"));
+		
+		System.out.println(devName + " added field count = " + dev.getAddedFields());
+		System.out.println("	--> recency = " + recency.get("fields"));
+		
+		System.out.println(devName + " added local variable count = " + dev.getAddedLocalVariables());
+		System.out.println("	--> recency = " + recency.get("local variables"));
+		
+		System.out.println(devName + " added parameter count = " + dev.getAddedParameters());
+		System.out.println("	--> recency = " + recency.get("parameters"));
+		
+		System.out.println(devName + " added public variable count = " + dev.getAddedPublicVariables()); 
+		System.out.println("	--> recency = " + recency.get("public variables"));
+		
+		System.out.println(devName + " added private variable count = " + dev.getAddedPrivateVariables());
+		System.out.println("	--> recency = " + recency.get("private variables"));
+		
+		// HERE!!
 		System.out.println(devName + " added exception class count = " + dev.getAddedExceptionClasses());
 		System.out.println("	--> recency = " + recency.get("exception classes"));
+		
 		System.out.println(devName + " added checked exception count = " + dev.getAddedCheckedExceptions());
 		System.out.println("	--> recency = " + recency.get("checked exceptions"));
+		
 		System.out.println(devName + " added unchecked exception count = " + dev.getAddedUncheckedExceptions());
 		System.out.println("	--> recency = " + recency.get("unchecked exceptions"));
+		
 		System.out.println(devName + " added catch exception count = " + dev.getAddedCatchExceptions());
 		
 	}
@@ -636,29 +681,65 @@ public class ModelRepository {
 //		System.out.println("	--> recency = " + recency.get("bounds"));
 		
 		// EXCEPTIONS
-		System.out.println("	--> Added throws methods = " + dev.getAddedThrowsMethods());
-		System.out.println("	--> recency = " + recency.get("throws methods"));
-		System.out.println("	--> Added try statements = " + dev.getAddedTryStatements());
-		System.out.println("	--> recency = " + recency.get("try statements"));
-		System.out.println("	--> Added catch blocks = " + dev.getAddedCatchBlocks());
-		System.out.println("	--> recency = " + recency.get("catch blocks"));
-		System.out.println("	--> Added multi-catch blocks = " + dev.getAddedMultiCatchBlocks());
-		System.out.println("	--> recency = " + recency.get("multi-catch blocks"));
-		System.out.println("	--> Added try with resources = " + dev.getAddedTryWithResources());
-		System.out.println("	--> recency = " + recency.get("try with resources"));
-		System.out.println("	--> Added finally blocks = " + dev.getAddedFinallyBlocks()); 
-		System.out.println("	--> recency = " + recency.get("finally blocks"));
-		System.out.println("	--> Added throw statement = " + dev.getAddedThrowStatements());
-		System.out.println("	--> recency = " + recency.get("throw statements"));
-		System.out.println("	--> Added exception classes = " + dev.getAddedExceptionClasses());
-		System.out.println("	--> recency = " + recency.get("exception classes"));
-		System.out.println("	--> Added checked exceptions = " + dev.getAddedCheckedExceptions());
-		System.out.println("	--> recency = " + recency.get("checked exceptions"));
-		System.out.println("	--> Added unchecked exceptions = " + dev.getAddedUncheckedExceptions());
-		System.out.println("	--> recency = " + recency.get("unchecked exceptions"));
+//		System.out.println("	--> Added throws methods = " + dev.getAddedThrowsMethods());
+//		System.out.println("	--> recency = " + recency.get("throws methods"));
+//		System.out.println("	--> Added try statements = " + dev.getAddedTryStatements());
+//		System.out.println("	--> recency = " + recency.get("try statements"));
+//		System.out.println("	--> Added catch blocks = " + dev.getAddedCatchBlocks());
+//		System.out.println("	--> recency = " + recency.get("catch blocks"));
+//		System.out.println("	--> Added multi-catch blocks = " + dev.getAddedMultiCatchBlocks());
+//		System.out.println("	--> recency = " + recency.get("multi-catch blocks"));
+//		System.out.println("	--> Added try with resources = " + dev.getAddedTryWithResources());
+//		System.out.println("	--> recency = " + recency.get("try with resources"));
+//		System.out.println("	--> Added finally blocks = " + dev.getAddedFinallyBlocks()); 
+//		System.out.println("	--> recency = " + recency.get("finally blocks"));
+//		System.out.println("	--> Added throw statement = " + dev.getAddedThrowStatements());
+//		System.out.println("	--> recency = " + recency.get("throw statements"));
+//		System.out.println("	--> Added exception classes = " + dev.getAddedExceptionClasses());
+//		System.out.println("	--> recency = " + recency.get("exception classes"));
+//		System.out.println("	--> Added checked exceptions = " + dev.getAddedCheckedExceptions());
+//		System.out.println("	--> recency = " + recency.get("checked exceptions"));
+//		System.out.println("	--> Added unchecked exceptions = " + dev.getAddedUncheckedExceptions());
+//		System.out.println("	--> recency = " + recency.get("unchecked exceptions"));
+//		
+//		System.out.println("	--> Added catch exceptions = " + dev.getAddedCatchExceptions());
 		
-		System.out.println("	--> Added catch exceptions = " + dev.getAddedCatchExceptions());
-	
+		// VARIABLES
+		System.out.println("	--> Added primitive types = " + dev.getAddedPrimitives());
+		System.out.println("	--> recency = " + recency.get("primitive variables"));
+		
+		System.out.println("	--> Added non-primitive types = " + dev.getAddedNonPrimitives());
+		System.out.println("	--> recency = " + recency.get("non primitive variables"));
+		
+		System.out.println("	--> Added fields = " + dev.getAddedFields());
+		System.out.println("	--> recency = " + recency.get("fields"));
+		
+		System.out.println("	--> Added local variables = " + dev.getAddedLocalVariables());
+		System.out.println("	--> recency = " + recency.get("local variables"));
+		
+		System.out.println("	--> Added parameters = " + dev.getAddedParameters());
+		System.out.println("	--> recency = " + recency.get("parameters"));
+		
+		System.out.println("	--> Added public variables = " + dev.getAddedPublicVariables()); 
+		System.out.println("	--> recency = " + recency.get("public variables"));
+		
+		System.out.println("	--> Added private variables = " + dev.getAddedPrivateVariables());
+		System.out.println("	--> recency = " + recency.get("private variables"));
+		
+		System.out.println("	--> Added protected variables = " + dev.getAddedProtectedVariables());
+		System.out.println("	--> recency = " + recency.get("protected variables"));
+		
+		System.out.println("	--> Added static variables = " + dev.getAddedStaticVariables());
+		System.out.println("	--> recency = " + recency.get("static variables"));
+		
+		System.out.println("	--> Added final variables = " + dev.getAddedFinalVariables());
+		System.out.println("	--> recency = " + recency.get("final variables"));
+		
+		System.out.println("	--> Added transient variables = " + dev.getAddedTransientVariables());
+		System.out.println("	--> recency = " + recency.get("transient variables"));
+		
+		System.out.println("	--> Added volatile variables = " + dev.getAddedVolatileVariables());
+		System.out.println("	--> recency = " + recency.get("volatile variables"));
 
 	}
 	
@@ -820,6 +901,10 @@ public class ModelRepository {
 //			}
 			
 //			exceptionsAdditionDiff(directory, f, uncheckedExceptions, previousHash, currentHash, dev, currentCommit);
+			
+			
+			//VARIABLES
+			parser.parseForVariables(f, directory, jarFile);
 			
 		}
 	}
@@ -2424,6 +2509,437 @@ public void exceptionsAdditionDiff(String directory, ModelSourceFile file, List<
 		}
 	}
 
+public void variablesAdditionDiff(String directory, ModelSourceFile file, List<VariableData> datas, String oldH, String newH, ModelDeveloper developer, RevCommit timeDiff){
+	File repoDir = new File(directory);
+	
+	int addedPrimitives = 0;
+	int addedNonPrimitives = 0;
+	int addedFields = 0;
+	int addedLocalVariables = 0;
+	int addedParameters = 0;
+	int addedPublicVariables = 0;
+	int addedPrivateVariables = 0;
+	int addedProtectedVariables = 0;
+	int addedStaticVariables = 0;
+	int addedFinalVariables = 0;
+	int addedTransientVariables = 0;
+	int addedVolatileVariables = 0;
+	
+	Git git;
+	//current revision
+	String currentHash = newH;
+
+	try {
+	
+		git = Git.open(repoDir);
+		// next to current version in repository (older)
+		String previousHash = getOldHash(newH);
+
+
+		Repository repo = git.getRepository();
+		
+		ObjectId headId = repo.resolve(currentHash + "^{tree}");
+		ObjectId oldId = repo.resolve(previousHash + "^{tree}");
+
+		ObjectReader reader = repo.newObjectReader();
+		
+
+		CanonicalTreeParser oldTreeIter = new CanonicalTreeParser();
+		oldTreeIter.reset(reader, oldId);
+		CanonicalTreeParser newTreeIter = new CanonicalTreeParser();
+		newTreeIter.reset(reader, headId);
+		
+		List<DiffEntry> diffs;
+
+		diffs = git.diff()
+				.setNewTree(newTreeIter)
+				.setOldTree(oldTreeIter)
+				.call();
+
+		ByteArrayOutputStream out = new ByteArrayOutputStream();
+		DiffFormatter df = new DiffFormatter(out);
+		df.setRepository(repo);
+		df.setDetectRenames(true);
+
+		
+		//System.out.println("******************** ADDITION DIFF *************************");
+		
+		
+		for(DiffEntry diff : diffs)
+		{
+			
+			RenameDetector rd = df.getRenameDetector();
+			
+			List<DiffEntry> compute = rd.compute();
+			
+			if (!(compute.isEmpty())){
+				System.out.println("This diff is a file rename!");
+			}
+
+			df.format(diff);
+			diff.getOldId();
+			String diffText = out.toString("UTF-8");
+			
+			if (diffText.contains(file.getName())){
+				
+				BufferedReader br = new BufferedReader(new StringReader(diffText));
+				String line = null;
+				
+				//System.out.println(diffText);
+				
+				while((line = br.readLine())!= null){ 
+					line = line.trim();
+					
+					line = line.replaceAll("\t", " ");
+					
+					// iterate over parser checks for addition
+					if (line.startsWith("+")){
+						// remove duplicates from checks
+						Set<VariableData> hs = new HashSet<VariableData>();
+						hs.addAll(datas);
+						datas.clear();
+						datas.addAll(hs);
+						
+						for (VariableData data: datas){
+							
+//							System.out.println("Current revision --> " + currentHash);
+//							System.out.println("Previous revision --> " + previousHash);
+//							System.out.println("Diff line --> " + line);
+//							System.out.println("Usage pattern --> " + check);
+							
+							// traverse primitive variables in file
+							for (VariableData prim: file.getPrimitives()){
+								// find data point of interest (if exists) in list of primitive variables
+								if (prim.getSrcLineStr().equals(data.getSrcLineStr())){
+									String source = data.getSrcLineStr();
+									source = source.trim();
+									
+									//System.out.println("line:\n" + line);
+									//System.out.println("pattern:\n" + pattern);
+									
+									if (line.contains(source)){
+										//System.out.println(pattern + " added here!");
+										addedPrimitives = checkAddedVariables(addedPrimitives, currentHash, diffText, source, file);
+										
+										if (primitiveDC == 1){
+											String difference = checkDifference(timeDiff);
+											primitiveDC +=1;													
+											recency.put("primitive variables", difference);
+										}
+										
+									}
+								}
+							}
+							
+							for (VariableData nonPrim: file.getNonPrimitives()){
+								if (nonPrim.getSrcLineStr().equals(data.getSrcLineStr())){
+									String source = data.getSrcLineStr();
+									source = source.trim();
+									
+									if (line.contains(source)){
+										//System.out.println(pattern + " added here!");
+										addedNonPrimitives = checkAddedVariables(addedNonPrimitives, currentHash, diffText, source, file);
+										
+										if (nonPrimitiveDC == 1){
+											String difference = checkDifference(timeDiff);
+											nonPrimitiveDC +=1;													
+											recency.put("non primitive variables", difference);
+										}
+									}
+								}
+							}
+
+							for (VariableData field: file.getFields()){
+								if (field.getSrcLineStr().equals(data.getSrcLineStr())){
+									String source = data.getSrcLineStr();
+									source = source.trim();
+									
+									if (line.contains(source)){
+										//System.out.println(pattern + " added here!");
+										addedFields = checkAddedVariables(addedFields, currentHash, diffText, source, file);
+										
+										if (fieldDC == 1){
+											String difference = checkDifference(timeDiff);
+											fieldDC +=1;													
+											recency.put("fields", difference);
+										}
+									}
+								}
+							}							
+
+							for (VariableData localVar: file.getLocalVariables()){
+								if (localVar.getSrcLineStr().equals(data.getSrcLineStr())){
+									String source = data.getSrcLineStr();
+									source = source.trim();
+									
+									if (line.contains(source)){
+										//System.out.println(pattern + " added here!");
+										addedLocalVariables = checkAddedVariables(addedLocalVariables, currentHash, diffText, source, file);
+										
+										if (localVariableDC == 1){
+											String difference = checkDifference(timeDiff);
+											localVariableDC +=1;													
+											recency.put("local variables", difference);
+										}
+									}
+								}
+							}
+							
+							for (VariableData param: file.getParameters()){
+								if (param.getSrcLineStr().equals(data.getSrcLineStr())){
+									String source = data.getSrcLineStr();
+									source = source.trim();
+									
+									if (line.contains(source)){
+										//System.out.println(pattern + " added here!");
+										addedParameters = checkAddedVariables(addedParameters, currentHash, diffText, source, file);
+										
+										if (parameterDC == 1){
+											String difference = checkDifference(timeDiff);
+											parameterDC +=1;													
+											recency.put("parameters", difference);
+										}
+									}
+								}
+							}
+							
+							for (VariableData publicVar: file.getPublicVariables()){
+								if (publicVar.getSrcLineStr().equals(data.getSrcLineStr())){
+									String source = data.getSrcLineStr();
+									source = source.trim();
+									
+									if (line.contains(source)){
+										//System.out.println(pattern + " added here!");
+										addedPublicVariables = checkAddedVariables(addedPublicVariables, currentHash, diffText, source, file);
+										
+										if (publicVariableDC == 1){
+											String difference = checkDifference(timeDiff);
+											publicVariableDC +=1;													
+											recency.put("public variables", difference);
+										}
+									}
+								}
+							}
+							
+							for (VariableData privateVar: file.getPrivateVariables()){
+								if (privateVar.getSrcLineStr().equals(data.getSrcLineStr())){
+									String source = data.getSrcLineStr();
+									source = source.trim();
+									
+									if (line.contains(source)){
+										//System.out.println(pattern + " added here!");
+										addedPrivateVariables = checkAddedVariables(addedPrivateVariables, currentHash, diffText, source, file);
+										
+										if (privateVariableDC == 1){
+											String difference = checkDifference(timeDiff);
+											privateVariableDC +=1;													
+											recency.put("private variables", difference);
+										}
+									}
+								}
+							}
+							
+							for (VariableData protectedVar: file.getProtectedVariables()){
+								if (protectedVar.getSrcLineStr().equals(data.getSrcLineStr())){
+									String source = data.getSrcLineStr();
+									source = source.trim();
+									
+									if (line.contains(source)){
+										//System.out.println(pattern + " added here!");
+										addedProtectedVariables = checkAddedVariables(addedProtectedVariables, currentHash, diffText, source, file);
+										
+										if (protectedVariableDC == 1){
+											String difference = checkDifference(timeDiff);
+											protectedVariableDC +=1;													
+											recency.put("protected variables", difference);
+										}
+									}
+								}
+							}
+							
+							for (VariableData staticVar: file.getStaticVariables()){
+								if (staticVar.getSrcLineStr().equals(data.getSrcLineStr())){
+									String source = data.getSrcLineStr();
+									source = source.trim();
+									
+									if (line.contains(source)){
+										//System.out.println(pattern + " added here!");
+										addedStaticVariables = checkAddedVariables(addedStaticVariables, currentHash, diffText, source, file);
+										
+										if (staticVariableDC == 1){
+											String difference = checkDifference(timeDiff);
+											staticVariableDC +=1;													
+											recency.put("static variables", difference);
+										}
+									}
+								}
+							}
+							
+							for (VariableData finalVar: file.getFinalVariables()){
+								if (finalVar.getSrcLineStr().equals(data.getSrcLineStr())){
+									String source = data.getSrcLineStr();
+									source = source.trim();
+									
+									if (line.contains(source)){
+										//System.out.println(pattern + " added here!");
+										addedFinalVariables = checkAddedVariables(addedFinalVariables, currentHash, diffText, source, file);
+										
+										if (finalVariableDC == 1){
+											String difference = checkDifference(timeDiff);
+											finalVariableDC +=1;													
+											recency.put("final variables", difference);
+										}
+									}
+								}
+							}
+							
+							for (VariableData transientVar: file.getTransientVariables()){
+								if (transientVar.getSrcLineStr().equals(data.getSrcLineStr())){
+									String source = data.getSrcLineStr();
+									source = source.trim();
+									
+									if (line.contains(source)){
+										//System.out.println(pattern + " added here!");
+										addedTransientVariables = checkAddedVariables(addedTransientVariables, currentHash, diffText, source, file);
+										
+										if (transientVariableDC == 1){
+											String difference = checkDifference(timeDiff);
+											transientVariableDC +=1;													
+											recency.put("transient variables", difference);
+										}
+									}
+								}
+							}
+							
+							for (VariableData volatileVar: file.getVolatileVariables()){
+								if (volatileVar.getSrcLineStr().equals(data.getSrcLineStr())){
+									String source = data.getSrcLineStr();
+									source = source.trim();
+									
+									if (line.contains(source)){
+										//System.out.println(pattern + " added here!");
+										addedVolatileVariables = checkAddedVariables(addedVolatileVariables, currentHash, diffText, source, file);
+										
+										if (volatileVariableDC == 1){
+											String difference = checkDifference(timeDiff);
+											volatileVariableDC +=1;													
+											recency.put("volatile variables", difference);
+										}
+									}
+								}
+							}
+						}
+					}						
+				}
+			}
+			
+			out.reset();
+		}
+					
+		// add counts from analysis to developer counts (if within threshold)
+		if (addedPrimitives > 0 && addedPrimitives <= 10){
+			if (developer.getCommits().contains(currentHash)){
+				developer.setAddedPrimitives(addedPrimitives);
+			}
+		}
+		
+		if (addedNonPrimitives > 0 && addedNonPrimitives <= 10){
+			if (developer.getCommits().contains(currentHash)){
+				developer.setAddedNonPrimitives(addedNonPrimitives);
+			}
+		}
+		
+		if (addedFields > 0 && addedFields <= 10){
+			if (developer.getCommits().contains(currentHash)){
+				developer.setAddedFields(addedFields);;
+			}
+		}
+		
+		if (addedLocalVariables > 0 && addedLocalVariables <= 10){
+			if (developer.getCommits().contains(currentHash)){
+				developer.setAddedLocalVariables(addedLocalVariables);
+			}
+		}
+		
+		if (addedParameters > 0 && addedParameters <= 10){
+			if (developer.getCommits().contains(currentHash)){
+				developer.setAddedParameters(addedParameters);
+			}
+		}
+		
+		if (addedPublicVariables > 0 && addedPublicVariables <= 10){
+			if (developer.getCommits().contains(currentHash)){
+				developer.setAddedPublicVariables(addedPublicVariables);
+			}
+		}
+		
+		if (addedPrivateVariables > 0 && addedPrivateVariables <= 10){
+			if (developer.getCommits().contains(currentHash)){
+				developer.setAddedPrivateVariables(addedPrivateVariables);
+			}
+		}
+		
+		if (addedProtectedVariables > 0 && addedProtectedVariables <= 10){
+			if (developer.getCommits().contains(currentHash)){
+				developer.setAddedProtectedVariables(addedProtectedVariables);
+			}
+		}
+		
+		if (addedStaticVariables > 0 && addedStaticVariables <= 10){
+			if (developer.getCommits().contains(currentHash)){
+				developer.setAddedStaticVariables(addedStaticVariables);;
+			}
+		}
+		
+		if (addedFinalVariables > 0 && addedFinalVariables <= 10){
+			if (developer.getCommits().contains(currentHash)){
+				developer.setAddedFinalVariables(addedFinalVariables);
+			}
+		}
+		
+		if (addedTransientVariables > 0 && addedTransientVariables <= 10){
+			if (developer.getCommits().contains(currentHash)){
+				developer.setAddedTransientVariables(addedTransientVariables);
+			}
+		}
+		
+		if (addedVolatileVariables > 0 && addedVolatileVariables <= 10){
+			if (developer.getCommits().contains(currentHash)){
+				developer.setAddedVolatileVariables(addedVolatileVariables);
+			}
+		}
+		
+		
+	} catch (IOException e1) {
+		e1.printStackTrace();
+	} catch (GitAPIException e) {
+		System.out.println("GitAPIException caught!");
+	}
+}
+	private int checkAddedVariables(int added, String newHash, String diffText, String pattern, ModelSourceFile file){
+		if (isVariablesAddition(diffText, pattern)){
+			System.out.println("Variable was added at revision " + newHash);
+				
+			added +=1;
+		}
+		return added;
+	}
+	
+	private boolean isVariablesAddition(String diffText, String code){
+		int count = 0;		
+
+		diffText = diffText.replace(" ", "");
+		code = code.replace(" ", "");
+		
+		count = StringUtils.countMatches(diffText, code);
+		
+		if (count == 1){
+			return true;
+		}			
+		
+		return false;
+	}
+	
 	private int checkAddedExceptions(int added, String newHash, String diffText, String pattern, ModelSourceFile file){
 
 		if (isExceptionsAddition(diffText, pattern)){

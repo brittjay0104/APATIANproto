@@ -1,7 +1,5 @@
 package node_visitor;
 
-import java.util.List;
-
 import org.eclipse.jdt.core.dom.Modifier;
 
 public class VariableData {
@@ -75,11 +73,11 @@ public class VariableData {
 		this.srcLineStr = srcLineStr;
 	}
 
-	public VariableType getVaraibleType() {
+	public VariableType getVariableType() {
 		return variableType;
 	}
 
-	public void setVaraibleType(VariableType variableType) {
+	public void setVariableType(VariableType variableType) {
 		this.variableType = variableType;
 	}
 

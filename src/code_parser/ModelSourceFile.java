@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 import node_visitor.NODP;
+import node_visitor.VariableData;
 
 import org.eclipse.jdt.core.dom.ASTNode;
 
@@ -42,6 +43,20 @@ public class ModelSourceFile {
 	public List<String> uncheckedExceptions;
 	public List<String> checkedExceptions;
 	public List<String> catchExceptions;
+	
+	//variables
+	private List<VariableData> primitives;
+	private List<VariableData> nonPrimitives;
+	private List<VariableData> fields;
+	private List<VariableData> localVariables;
+	private List<VariableData> parameters;
+	private List<VariableData> publicVariables;
+	private List<VariableData> privateVariables;
+	private List<VariableData> protectedVariables;
+	private List<VariableData> staticVariables;
+	private List<VariableData> finalVariables;
+	private List<VariableData> transientVariables;
+	private List<VariableData> volatileVariables;
 	
 	// null
 	public HashMap<String, ArrayList<String>> invocs;
@@ -414,6 +429,102 @@ public class ModelSourceFile {
 	
 	//end exceptions
 	
+	public List<VariableData> getPrimitives() {
+		return primitives;
+	}
+
+	public void addPrimitive(VariableData primitive) {
+		this.primitives.add(primitive);
+	}
+
+	public List<VariableData> getNonPrimitives() {
+		return nonPrimitives;
+	}
+
+	public void addNonPrimitives(VariableData nonPrimitive) {
+		this.nonPrimitives.add(nonPrimitive);
+	}
+
+	public List<VariableData> getFields() {
+		return fields;
+	}
+
+	public void addField(VariableData field) {
+		this.fields.add(field);
+	}
+
+	public List<VariableData> getLocalVariables() {
+		return localVariables;
+	}
+
+	public void addLocalVariable(VariableData localVariable) {
+		this.localVariables.add(localVariable);
+	}
+
+	public List<VariableData> getParameters() {
+		return parameters;
+	}
+
+	public void addParameter(VariableData parameter) {
+		this.parameters.add(parameter);
+	}
+
+	public List<VariableData> getPublicVariables() {
+		return publicVariables;
+	}
+
+	public void addPublicVariable(VariableData publicVariable) {
+		this.publicVariables.add(publicVariable);
+	}
+
+	public List<VariableData> getPrivateVariables() {
+		return privateVariables;
+	}
+
+	public void addPrivateVariable(VariableData privateVariable) {
+		this.privateVariables.add(privateVariable);
+	}
+
+	public List<VariableData> getProtectedVariables() {
+		return protectedVariables;
+	}
+
+	public void addProtectedVariable(VariableData protectedVariable) {
+		this.protectedVariables.add(protectedVariable);
+	}
+
+	public List<VariableData> getStaticVariables() {
+		return staticVariables;
+	}
+
+	public void addStaticVariable(VariableData staticVariable) {
+		this.staticVariables.add(staticVariable);
+	}
+
+	public List<VariableData> getFinalVariables() {
+		return finalVariables;
+	}
+
+	public void addFinalVariable(VariableData finalVariable) {
+		this.finalVariables.add(finalVariable);
+	}
+
+	public List<VariableData> getTransientVariables() {
+		return transientVariables;
+	}
+
+	public void addTransientVariable(VariableData transientVariable) {
+		this.transientVariables.add(transientVariable);
+	}
+
+	public List<VariableData> getVolatileVariables() {
+		return volatileVariables;
+	}
+
+	public void addVolatileVariable(VariableData volatileVariable) {
+		this.volatileVariables.add(volatileVariable);
+	}
+
 	public HashMap<String, ArrayList<String>> getNullVars(){
 		return nullVars;
 	}

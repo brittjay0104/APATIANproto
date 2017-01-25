@@ -44,6 +44,19 @@ public class ModelDeveloper {
 	private int addedCheckedExceptions;
 	private int addedUncheckedExceptions;
 	
+	private int addedPrimitives;
+	private int addedNonPrimitives;
+	private int addedFields;
+	private int addedLocalVariables;
+	private int addedParameters;
+	private int addedPublicVariables;
+	private int addedPrivateVariables;
+	private int addedProtectedVariables;
+	private int addedStaticVariables;
+	private int addedFinalVariables;
+	private int addedTransientVariables;
+	private int addedVolatileVariables;
+	
 	private int derefCounts;
 	private String name;
 	private String username;
@@ -54,6 +67,20 @@ public class ModelDeveloper {
 	public String pseudoName;
 	
 	public ModelDeveloper (String id) {
+		
+		addedPrimitives = 0;
+		addedNonPrimitives = 0;
+		addedFields = 0;
+		addedLocalVariables = 0;
+		addedParameters = 0;
+		addedPublicVariables = 0;
+		addedPrivateVariables = 0;
+		addedProtectedVariables = 0;
+		addedStaticVariables = 0;
+		addedFinalVariables = 0;
+		addedTransientVariables = 0;
+		addedVolatileVariables = 0;
+		
 		addedThrowsMethods = 0;
 		addedTryStatements = 0;
 		addedCatchBlocks = 0;
@@ -138,6 +165,102 @@ public class ModelDeveloper {
 	
 	public ArrayList<String> getCommits(){
 		return commits;
+	}
+	
+	public int getAddedPrimitives() {
+		return addedPrimitives;
+	}
+
+	public void setAddedPrimitives(int addedPrimitives) {
+		this.addedPrimitives = this.addedPrimitives + addedPrimitives;
+	}
+	
+	public int getAddedNonPrimitives() {
+		return addedNonPrimitives;
+	}
+
+	public void setAddedNonPrimitives(int addedNonPrimitives) {
+		this.addedNonPrimitives = this.addedNonPrimitives + addedNonPrimitives;
+	}
+	
+	public int getAddedFields() {
+		return addedFields;
+	}
+
+	public void setAddedFields(int addedFields) {
+		this.addedFields = this.addedFields + addedFields;
+	}
+	
+	public int getAddedLocalVariables() {
+		return addedLocalVariables;
+	}
+
+	public void setAddedLocalVariables(int addedLocalVariables) {
+		this.addedLocalVariables = this.addedLocalVariables + addedLocalVariables;
+	}
+	
+	public int getAddedParameters() {
+		return addedParameters;
+	}
+
+	public void setAddedParameters(int addedParameters) {
+		this.addedParameters = this.addedParameters + addedParameters;
+	}
+	
+	public int getAddedPublicVariables() {
+		return addedPublicVariables;
+	}
+
+	public void setAddedPublicVariables(int addedPublicVariables) {
+		this.addedPublicVariables = this.addedPublicVariables + addedPublicVariables;
+	}
+
+	public int getAddedPrivateVariables() {
+		return addedPrivateVariables;
+	}
+
+	public void setAddedPrivateVariables(int addedPrivateVariables) {
+		this.addedPrivateVariables = this.addedPrivateVariables + addedPrivateVariables;
+	}
+	
+	public int getAddedProtectedVariables() {
+		return addedProtectedVariables;
+	}
+
+	public void setAddedProtectedVariables(int addedProtectedVariables) {
+		this.addedProtectedVariables = this.addedProtectedVariables + addedProtectedVariables;
+	}
+	
+	public int getAddedStaticVariables() {
+		return addedStaticVariables;
+	}
+
+	public void setAddedStaticVariables(int addedStaticVariables) {
+		this.addedStaticVariables = this.addedStaticVariables + addedStaticVariables;
+	}
+	
+	public int getAddedFinalVariables() {
+		return addedFinalVariables;
+	}
+
+	public void setAddedFinalVariables(int addedFinalVariables) {
+		this.addedFinalVariables = this.addedFinalVariables + addedFinalVariables;
+	}
+	
+	public int getAddedTransientVariables() {
+		return addedTransientVariables;
+	}
+
+	public void setAddedTransientVariables(int addedTransientVariables) {
+		this.addedTransientVariables = this.addedTransientVariables + addedTransientVariables;
+	}
+	
+	public int getAddedVolatileVariables() {
+		return addedVolatileVariables;
+	}
+
+	public void setAddedVolatileVariables(int addedVolatileVariables) {
+		this.addedVolatileVariables = this.addedVolatileVariables + addedVolatileVariables;
 	}
 	
 	public void setAddedThrowsMethods(int addedException){

@@ -7,6 +7,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -43,6 +44,9 @@ import node_visitor.NPE_Visitor;
 import node_visitor.NoNullCheckVisitor;
 import node_visitor.NullCheckVisitor;
 import node_visitor.StringMethodVisitor;
+import node_visitor.VariableData;
+import node_visitor.VariableData.VariableType;
+import node_visitor.VariablesVisitor;
 
 public class ModelParser {
 
@@ -389,6 +393,105 @@ public class ModelParser {
 		}
 //
 
+	}
+	
+	public void parseForVariables(ModelSourceFile file, String directory, String jarFile) throws IOException{
+		//System.out.println("IN parseForExceptions");
+		ASTParser parser = ASTParser.newParser(AST.JLS4);
+		parser.setResolveBindings(true);
+		parser.setStatementsRecovery(true);
+		parser.setKind(ASTParser.K_COMPILATION_UNIT);
+		
+		parser.setBindingsRecovery(true);
+
+		String unitName = file.getName();
+		parser.setUnitName(unitName);
+		
+		// can I do file.getSourceFile().getPath()?
+		String [] sources = {directory};
+		
+		String[] classpath = {jarFile};
+		
+		String src = readFiletoString(file.getSourceFile().getCanonicalPath());
+
+		parser.setEnvironment(classpath, sources, new String[] { "UTF-8"}, true);
+		file.setSource(src.toCharArray());
+		
+		Map options = JavaCore.getOptions();
+		//JavaCore.setComplianceOptions(JavaCore.VERSION_1_6, options);
+		parser.setCompilerOptions(options);
+
+		parser.setSource(src.toCharArray());
+
+
+		CompilationUnit cu = (CompilationUnit) parser.createAST(null);			
+		VariablesVisitor visitor = new VariablesVisitor(file);
+		cu.accept(visitor);
+		
+		for (VariableData data: visitor.getAllVariableData()){
+			// separate out the data being collected (see list)
+			
+			//primitive data types
+			if (data.getIsPrimitive() == true){
+				file.addPrimitive(data);
+			}
+			
+			// non-primitive data types
+			if (data.getIsPrimitive() == false){
+				file.addNonPrimitives(data);
+			}
+			
+			// fields
+			if (data.getVariableType() == VariableType.FIELD){
+				file.addField(data);
+			}
+			
+			// local variables
+			if (data.getVariableType() == VariableType.LOCAL){
+				file.addLocalVariable(data);
+			}
+			
+			// parameters
+			if (data.getVariableType() == VariableType.PARAMETER){
+				file.addParameter(data);
+			}
+			
+			// public
+			if (data.getModifiers() == Modifier.PUBLIC){
+				file.addPublicVariable(data);
+			}
+			
+			// private
+			if (data.getModifiers() == Modifier.PRIVATE){
+				file.addPrivateVariable(data);
+			}			
+			// protected
+			if (data.getModifiers() == Modifier.PROTECTED){
+				file.addProtectedVariable(data);
+			}	
+			
+			// static
+			if (data.getModifiers() == Modifier.STATIC){
+				file.addStaticVariable(data);
+			}
+			
+			// final
+			if (data.getModifiers() == Modifier.FINAL){
+				file.addFinalVariable(data);
+			}
+			
+			// transient
+			if (data.getModifiers() == Modifier.TRANSIENT){
+				file.addTransientVariable(data);
+			}
+			
+			// volatile
+			if (data.getModifiers() == Modifier.VOLATILE){
+				file.addVolatileVariable(data);
+			}
+			
+		}
+		
 	}
 
 	public void findSubDir(String dir){
